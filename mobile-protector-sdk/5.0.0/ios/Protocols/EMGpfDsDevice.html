@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>EMGpfDsDevice Protocol Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">EzioMobileSdk </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Gemalto</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/codeWithAuthInput:error:">- codeWithAuthInput:error:</option>
+		
+		<option value="//api/name/dynamicSignatureWithAuthInput:challenge:domain:transactionData:error:">- dynamicSignatureWithAuthInput:challenge:domain:transactionData:error:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">EMGpfDsDevice Protocol Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Conforms to</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>EMGpfDsDevice.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>   A protocol defining a Dynamic Signature (DS) device using the
+   Gemalto Proprietary Formatting (GPF) for generating OTPs.</p>
+
+<p>   This works using the Gemalto VAS Authentication Server. For pure CAP
+   authentication servers should use [EMDsDevice capParametersWithChallenge:domain:dsCapMode:transactionData:] or [EMDsDevice capParametersWithDomain:dsCapMode:transactionData:] instead.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/codeWithAuthInput:error:" title="codeWithAuthInput:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/codeWithAuthInput:error:">&ndash;&nbsp;codeWithAuthInput:error:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Generates a code.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;EMSecureString&gt;)codeWithAuthInput:(id&lt;EMAuthInput&gt;)<em>authInput</em> error:(NSError **)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>authInput</code></th>
+						<td><p>the authInput.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>If an error occurs, upon return contains an NSError object that describes the problem. If you are not interested in possible errors, you may pass in <code>NULL</code>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The code.</p>
+			</div>
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>3.2</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Note that a code in practice is a CAP mode2 OTP with a prefixed
+sequence number formatting applied. Example: 010 543 203.
+Use [EMToolBox formatOtpWithType:otp:] to format the token.</p><div class="warning"><p><strong>Warning:</strong> Use this method only after upgrading to multi-authentication mode.</p></div><div class="warning"><p><strong>Warning:</strong> Depending of the <a href="../Protocols/EMAuthInput.html">EMAuthInput</a> type you are using, you may have to use this function asynchronously, please @see <a href="../Protocols/EMAuthInput.html">EMAuthInput</a> for more details</p></div>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p>upgradeToMultiAuthMode:error: in <a href="../Protocols/EMToken.html">EMToken</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMGpfDsDevice.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/dynamicSignatureWithAuthInput:challenge:domain:transactionData:error:" title="dynamicSignatureWithAuthInput:challenge:domain:transactionData:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/dynamicSignatureWithAuthInput:challenge:domain:transactionData:error:">&ndash;&nbsp;dynamicSignatureWithAuthInput:challenge:domain:transactionData:error:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Generates a dynamic signature.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;EMSecureString&gt;)dynamicSignatureWithAuthInput:(id&lt;EMAuthInput&gt;)<em>authInput</em> challenge:(id&lt;EMSecureString&gt;)<em>challenge</em> domain:(EMDomainType)<em>domain</em> transactionData:(id&lt;EMDsTransactionData&gt;)<em>transactionData</em> error:(NSError **)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>authInput</code></th>
+						<td><p>The authInput.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>challenge</code></th>
+						<td><p>The challenge. The challenge can be <code>nil</code> in connected mode.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>domain</code></th>
+						<td><p>The secure domain.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>transactionData</code></th>
+						<td><p>The transaction data. The transaction data can be <code>nil</code>.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>If an error occurs, upon return contains an NSError object that describes the problem. If you are not interested in possible errors, you may pass in <code>NULL</code>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The signature.</p>
+			</div>
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>3.2</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Note that a dynamic signature in practice is a CAP mode3 TDS OTP with
+prefixed sequence number and formatting applied. Example: 010 543 203.
+Use [EMToolBox prefixSequenceNumberToOtp:token:tokenVersionLength:] to prefix the sequence number.
+Use [EMToolBox formatOtpWithType:otp:] to format the token.</p><div class="warning"><p><strong>Warning:</strong> Use this method only after upgrading to multi-authentication mode.</p></div>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p>upgradeToMultiAuthMode:error: in <a href="../Protocols/EMToken.html">EMToken</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMGpfDsDevice.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2019 Gemalto. All rights reserved. Updated: 2019-04-11</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

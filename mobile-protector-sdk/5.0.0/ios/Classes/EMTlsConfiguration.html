@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>EMTlsConfiguration Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">EzioMobileSdk </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Gemalto</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/certificates">certificates</option>
+		
+		<option value="//api/name/hostnameMismatchAllowed">hostnameMismatchAllowed</option>
+		
+		<option value="//api/name/insecureConnectionAllowed">insecureConnectionAllowed</option>
+		
+		<option value="//api/name/selfSignedCertAllowed">selfSignedCertAllowed</option>
+		
+		<option value="//api/name/timeout">timeout</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/init">- init</option>
+		
+		<option value="//api/name/initWithCertificates:insecureConnectionAllowed:selfSignedCertAllowed:hostnameMismatchAllowed:timeout:">- initWithCertificates:insecureConnectionAllowed:selfSignedCertAllowed:hostnameMismatchAllowed:timeout:</option>
+		
+		<option value="//api/name/initWithInsecureConnectionAllowed:selfSignedCertAllowed:hostnameMismatchAllowed:">- initWithInsecureConnectionAllowed:selfSignedCertAllowed:hostnameMismatchAllowed:</option>
+		
+		<option value="//api/name/initWithInsecureConnectionAllowed:selfSignedCertAllowed:hostnameMismatchAllowed:timeout:">- initWithInsecureConnectionAllowed:selfSignedCertAllowed:hostnameMismatchAllowed:timeout:</option>
+		
+		<option value="//api/name/initWithTimeout:">- initWithTimeout:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">EMTlsConfiguration Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>EMTlsConfiguration.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>   A class representing a TLS configuration.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/init" title="init"></a>
+	<h3 class="method-title"><code><a href="#//api/name/init">&ndash;&nbsp;init</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>   Constructs a <code>EMTlsConfiguration</code> object whose settings are
+   all <code>NO</code>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)init</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>New instance of a EMTlsConfiguration.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>   This is the most secure configuration for the communication link.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMTlsConfiguration.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initWithTimeout:" title="initWithTimeout:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithTimeout:">&ndash;&nbsp;initWithTimeout:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Constructs a <code>EMTlsConfiguration</code> object whose settings are
+all <code>NO</code>, with ability to set <a href="#//api/name/timeout">timeout</a> interval.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)initWithTimeout:(NSTimeInterval)<em>timeout</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>timeout</code></th>
+						<td><p>The <a href="#//api/name/timeout">timeout</a> of the connection in seconds.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>New instance of a EMTlsConfiguration.</p>
+			</div>
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>3.0</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This is the most secure configuration for the communication link.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMTlsConfiguration.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initWithInsecureConnectionAllowed:selfSignedCertAllowed:hostnameMismatchAllowed:" title="initWithInsecureConnectionAllowed:selfSignedCertAllowed:hostnameMismatchAllowed:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithInsecureConnectionAllowed:selfSignedCertAllowed:hostnameMismatchAllowed:">&ndash;&nbsp;initWithInsecureConnectionAllowed:selfSignedCertAllowed:hostnameMismatchAllowed:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>   Constructs a <code>EMTlsConfiguration</code> object whose settings are
+   configured in this constructor.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)initWithInsecureConnectionAllowed:(BOOL)<em>insecureConnectionAllowed</em> selfSignedCertAllowed:(BOOL)<em>selfSignedCertAllowed</em> hostnameMismatchAllowed:(BOOL)<em>hostnameMismatchAllowed</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>insecureConnectionAllowed</code></th>
+						<td><p>If <code>YES</code>, then either an unencrypted
+   (http) or an encrypted (https) connection is allowed.  If <code>NO</code>, then
+   only encrypted connections are allowed.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>selfSignedCertAllowed</code></th>
+						<td><p>If <code>YES</code>, then a connection will accept a
+   self signed server certificate.  If <code>NO</code>, then a connection whose
+   server certificate is not signed by a certificate authority on the
+   device is rejected.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>hostnameMismatchAllowed</code></th>
+						<td><p>If <code>YES</code>, then a connection will accept a
+   server certificate whose common name (CN) does not match the URL&rsquo;s
+   domain.  If <code>NO</code>, then a connection whose server certificate&rsquo;s CN does
+   not match the URL&rsquo;s domain is rejected.  This setting is ignored if self
+   signed <a href="#//api/name/certificates">certificates</a> are allowed.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>New instance of a EMTlsConfiguration.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> It is not recommended to override these settings in a
+   production environment.  Allowing any of these configurations will
+   reduce the security of the communication link with the server.</p></div><div class="warning"><p><strong>Warning:</strong> The insecure permits could only used in debug build for
+   test purpose. They were not allowed to be used in release mode since
+   3.0 version.</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMTlsConfiguration.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initWithInsecureConnectionAllowed:selfSignedCertAllowed:hostnameMismatchAllowed:timeout:" title="initWithInsecureConnectionAllowed:selfSignedCertAllowed:hostnameMismatchAllowed:timeout:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithInsecureConnectionAllowed:selfSignedCertAllowed:hostnameMismatchAllowed:timeout:">&ndash;&nbsp;initWithInsecureConnectionAllowed:selfSignedCertAllowed:hostnameMismatchAllowed:timeout:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>   Constructs a <code>EMTlsConfiguration</code> object whose settings are
+   configured in this constructor.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)initWithInsecureConnectionAllowed:(BOOL)<em>insecureConnectionAllowed</em> selfSignedCertAllowed:(BOOL)<em>selfSignedCertAllowed</em> hostnameMismatchAllowed:(BOOL)<em>hostnameMismatchAllowed</em> timeout:(NSTimeInterval)<em>timeout</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>insecureConnectionAllowed</code></th>
+						<td><p>If <code>YES</code>, then either an unencrypted
+   (http) or an encrypted (https) connection is allowed.  If <code>NO</code>, then
+   only encrypted connections are allowed.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>selfSignedCertAllowed</code></th>
+						<td><p>If <code>YES</code>, then a connection will accept a
+   self signed server certificate.  If <code>NO</code>, then a connection whose
+   server certificate is not signed by a certificate authority on the
+   device is rejected.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>hostnameMismatchAllowed</code></th>
+						<td><p>If <code>YES</code>, then a connection will accept a
+   server certificate whose common name (CN) does not match the URL&rsquo;s
+   domain.  If <code>NO</code>, then a connection whose server certificate&rsquo;s CN does
+   not match the URL&rsquo;s domain is rejected.  This setting is ignored if self
+   signed <a href="#//api/name/certificates">certificates</a> are allowed.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>timeout</code></th>
+						<td><p>The <a href="#//api/name/timeout">timeout</a> of the connection in seconds.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>New instance of a EMTlsConfiguration.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> It is not recommended to override these settings in a
+   production environment.  Allowing any of these configurations will
+   reduce the security of the communication link with the server.</p></div><div class="warning"><p><strong>Warning:</strong> The insecure permits could only used in debug build for
+   test purpose. They were not allowed to be used in release mode since
+   3.0 version.</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMTlsConfiguration.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initWithCertificates:insecureConnectionAllowed:selfSignedCertAllowed:hostnameMismatchAllowed:timeout:" title="initWithCertificates:insecureConnectionAllowed:selfSignedCertAllowed:hostnameMismatchAllowed:timeout:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithCertificates:insecureConnectionAllowed:selfSignedCertAllowed:hostnameMismatchAllowed:timeout:">&ndash;&nbsp;initWithCertificates:insecureConnectionAllowed:selfSignedCertAllowed:hostnameMismatchAllowed:timeout:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Constructs a <em>EMTlsConfiguration</em> object whose settings are
+configured in this constructor. This API will do the certificate
+pinning check.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)initWithCertificates:(NSArray *)<em>certificates</em> insecureConnectionAllowed:(BOOL)<em>insecureConnectionAllowed</em> selfSignedCertAllowed:(BOOL)<em>selfSignedCertAllowed</em> hostnameMismatchAllowed:(BOOL)<em>hostnameMismatchAllowed</em> timeout:(NSTimeInterval)<em>timeout</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>certificates</code></th>
+						<td><p>List of <a href="#//api/name/certificates">certificates</a> data to be checked for pinning.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>insecureConnectionAllowed</code></th>
+						<td><p>If <code>YES</code>, then either an unencrypted
+(http) or an encrypted (https) connection is allowed.  If <code>NO</code>, then
+only encrypted connections are allowed.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>selfSignedCertAllowed</code></th>
+						<td><p>If <code>YES</code>, then a connection will accept a
+self signed server certificate.  If <code>NO</code>, then a connection whose
+server certificate is not signed by a certificate authority on the
+device is rejected.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>hostnameMismatchAllowed</code></th>
+						<td><p>If <code>YES</code>, then a connection will accept a
+server certificate whose common name (CN) does not match the URL&rsquo;s
+domain.  If <code>NO</code>, then a connection whose server certificate&rsquo;s CN does
+not match the URL&rsquo;s domain is rejected.  This setting is ignored if self
+signed <a href="#//api/name/certificates">certificates</a> are allowed.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>timeout</code></th>
+						<td><p>The <a href="#//api/name/timeout">timeout</a> of the connection in seconds.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>New instance of a <em>EMTlsConfiguration</em>.</p>
+			</div>
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>4.5</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> It is not recommended to override these settings in a
+production environment other than the <a href="#//api/name/certificates">certificates</a> to pin.
+Allowing any of these configurations will reduce the security
+of the communication link with the server.</p></div><div class="warning"><p><strong>Warning:</strong> The insecure permits could only used in debug build for
+test purpose. They were not allowed to be used in release mode since
+3.0 version.</p></div><div class="warning"><p><strong>Warning:</strong> iOS client only allows certificate from the content of file
+with the following format: X.509 Certificate (DER)</p></div><div class="warning"><p><strong>Warning:</strong> iOS client does not support certificate from the content of file
+with the following format: (1) X.509 Certificate (PEM), (2) X.509
+Certificate with chain (PEM), (3) X.509 Certificate (PKCS#7), and (4) X.509
+Certificate with chain (PKCS#7).</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMTlsConfiguration.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/insecureConnectionAllowed" title="insecureConnectionAllowed"></a>
+	<h3 class="method-title"><code><a href="#//api/name/insecureConnectionAllowed">&nbsp;&nbsp;insecureConnectionAllowed</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>   Whether or not an insecure connection is allowed.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, getter=isInsecureConnectionAllowed) BOOL insecureConnectionAllowed</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>If <code>YES</code>, then either an unencrypted (http) or an encrypted
+   (https) connection is allowed.  If <code>NO</code>, then only encrypted
+   connections are allowed.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMTlsConfiguration.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/selfSignedCertAllowed" title="selfSignedCertAllowed"></a>
+	<h3 class="method-title"><code><a href="#//api/name/selfSignedCertAllowed">&nbsp;&nbsp;selfSignedCertAllowed</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>   Whether or not self signed certificate is allowed.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, getter=isSelfSignedCertAllowed) BOOL selfSignedCertAllowed</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>If <code>YES</code>, then a connection will accept a self signed server
+   certificate.  If <code>NO</code>, then a connection whose server certificate is
+   not signed by a certificate authority on the device is rejected.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMTlsConfiguration.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/hostnameMismatchAllowed" title="hostnameMismatchAllowed"></a>
+	<h3 class="method-title"><code><a href="#//api/name/hostnameMismatchAllowed">&nbsp;&nbsp;hostnameMismatchAllowed</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>   Whether or not to allow mismatch between common name (CN) of the server <a href="#//api/name/certificates">certificates</a> and
+   domain name of the URL.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, getter=isHostnameMismatchAllowed) BOOL hostnameMismatchAllowed</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>If <code>YES</code>, then a connection will accept a server certificate
+    whose common name (CN) does not match the URL&rsquo;s domain.
+    If <code>NO</code>, then the connection is rejected.
+    This setting is ignored if self signed <a href="#//api/name/certificates">certificates</a> are allowed.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMTlsConfiguration.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/timeout" title="timeout"></a>
+	<h3 class="method-title"><code><a href="#//api/name/timeout">&nbsp;&nbsp;timeout</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>   Gets the timeout of the connection.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readonly) NSTimeInterval timeout</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Returns the timeout in seconds.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMTlsConfiguration.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/certificates" title="certificates"></a>
+	<h3 class="method-title"><code><a href="#//api/name/certificates">&nbsp;&nbsp;certificates</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get the certificates.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSArray *certificates</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Returns the certificates.</p>
+			</div>
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>4.5</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMTlsConfiguration.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2019 Gemalto. All rights reserved. Updated: 2019-04-11</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

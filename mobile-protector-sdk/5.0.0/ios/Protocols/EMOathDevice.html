@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>EMOathDevice Protocol Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">EzioMobileSdk </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Gemalto</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/hotpWithAuthInput:error:">- hotpWithAuthInput:error:</option>
+		
+		<option value="//api/name/lastOtpLifespan">- lastOtpLifespan</option>
+		
+		<option value="//api/name/ocraOtpWithAuthInput:serverChallengeQuestion:clientChallengeQuestion:passwordHash:session:error:">- ocraOtpWithAuthInput:serverChallengeQuestion:clientChallengeQuestion:passwordHash:session:error:</option>
+		
+		<option value="//api/name/ocraPasswordHash:error:">- ocraPasswordHash:error:</option>
+		
+		<option value="//api/name/totpWithAuthInput:error:">- totpWithAuthInput:error:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">EMOathDevice Protocol Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Conforms to</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>EMOathDevice.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>A protocol defining a device that generates OATH based OTPs.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/hotpWithAuthInput:error:" title="hotpWithAuthInput:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/hotpWithAuthInput:error:">&ndash;&nbsp;hotpWithAuthInput:error:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Gets an event based OTP (HOTP).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;EMSecureString&gt;)hotpWithAuthInput:(id&lt;EMAuthInput&gt;)<em>authInput</em> error:(NSError **)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>authInput</code></th>
+						<td><p>The authInput.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>If an error occurs, upon return contains an NSError object that describes the problem. If you are not interested in possible errors, you may pass in <code>NULL</code>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The OTP.</p>
+			</div>
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>3.2</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> Use this method only after upgrading to multi-authentication mode.</p></div><div class="warning"><p><strong>Warning:</strong> Depending of the <a href="../Protocols/EMAuthInput.html">EMAuthInput</a> type you are using, you may have to use this function asynchronously, please @see <a href="../Protocols/EMAuthInput.html">EMAuthInput</a> for more details</p></div>
+			</div>
+			
+
+			
+			<div class="method-subsection arguments-section exceptions">
+				<h4 class="method-subtitle exception-title">Exceptions</h4>
+				<table class="argument-def exception-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>NSInternalInconsistencyException</code></th>
+						<td><p>When the associated token has the <code>EMTokenCapabilityDUAL_SEED</code> capability since only time based algorithms are supported for this capability. See <a href="../Constants/EMTokenCapability.html">EMTokenCapability</a></p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p>upgradeToMultiAuthMode:error: in <a href="../Protocols/EMToken.html">EMToken</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMOathDevice.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/totpWithAuthInput:error:" title="totpWithAuthInput:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/totpWithAuthInput:error:">&ndash;&nbsp;totpWithAuthInput:error:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Gets a time based OTP (TOTP).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;EMSecureString&gt;)totpWithAuthInput:(id&lt;EMAuthInput&gt;)<em>authInput</em> error:(NSError **)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>authInput</code></th>
+						<td><p>The authInput.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>If an error occurs, upon return contains an NSError object that describes the problem. If you are not interested in possible errors, you may pass in <code>NULL</code>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The OTP.</p>
+			</div>
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>3.2</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> Use this method only after upgrading to multi-authentication mode.</p></div><div class="warning"><p><strong>Warning:</strong> Depending of the <a href="../Protocols/EMAuthInput.html">EMAuthInput</a> type you are using, you may have to use this function asynchronously, please @see <a href="../Protocols/EMAuthInput.html">EMAuthInput</a> for more details</p></div>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p>upgradeToMultiAuthMode:error: in <a href="../Protocols/EMToken.html">EMToken</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMOathDevice.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ocraOtpWithAuthInput:serverChallengeQuestion:clientChallengeQuestion:passwordHash:session:error:" title="ocraOtpWithAuthInput:serverChallengeQuestion:clientChallengeQuestion:passwordHash:session:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ocraOtpWithAuthInput:serverChallengeQuestion:clientChallengeQuestion:passwordHash:session:error:">&ndash;&nbsp;ocraOtpWithAuthInput:serverChallengeQuestion:clientChallengeQuestion:passwordHash:session:error:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Gets an OCRA OTP.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;EMSecureString&gt;)ocraOtpWithAuthInput:(id&lt;EMAuthInput&gt;)<em>authInput</em> serverChallengeQuestion:(id&lt;EMSecureByteArray&gt;)<em>serverChallengeQuestion</em> clientChallengeQuestion:(id&lt;EMSecureByteArray&gt;)<em>clientChallengeQuestion</em> passwordHash:(id&lt;EMSecureByteArray&gt;)<em>passwordHash</em> session:(id&lt;EMSecureByteArray&gt;)<em>session</em> error:(NSError **)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>authInput</code></th>
+						<td><p>The authInput.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>serverChallengeQuestion</code></th>
+						<td><p>The server question. mandatory field, cannot be <code>nil</code>.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>clientChallengeQuestion</code></th>
+						<td><p>The client question, <code>nil</code> if not used.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>passwordHash</code></th>
+						<td><p>The hash value of password, <code>nil</code> if not used. If used, length must be compliant with hash algorithm defined in OCRA device settings.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>session</code></th>
+						<td><p>The session data, <code>nil</code> if not used.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>If an error occurs, upon return contains an NSError object that describes the problem. If you are not interested in possible errors, you may pass in <code>NULL</code>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The OTP.</p>
+			</div>
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>3.2</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> Use this method only after upgrading to multi-authentication mode.</p></div><div class="warning"><p><strong>Warning:</strong> Depending of the <a href="../Protocols/EMAuthInput.html">EMAuthInput</a> type you are using, you may have to use this function asynchronously, please @see <a href="../Protocols/EMAuthInput.html">EMAuthInput</a> for more details</p></div>
+			</div>
+			
+
+			
+			<div class="method-subsection arguments-section exceptions">
+				<h4 class="method-subtitle exception-title">Exceptions</h4>
+				<table class="argument-def exception-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>NSInvalidArgumentException</code></th>
+						<td><p>When the serverChallengeQuestion or the
+<code>clientChallengeQuestion</code> is longer than the value returned by
+<a href="../Protocols/EMSoftOathSettings.html#//api/name/ocraMaximumChallengeQuestionLength">[EMSoftOathSettings ocraMaximumChallengeQuestionLength]</a>.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>NSInvalidArgumentException</code></th>
+						<td><p>When the passwordHash is <code>nil</code> but the
+value returned by <a href="../Protocols/EMSoftOathSettings.html#//api/name/ocraPasswordHashAlgorithm">[EMSoftOathSettings ocraPasswordHashAlgorithm]</a>
+is not NONE or when the passwordHash length is not compliant with the
+value returned by <a href="../Protocols/EMSoftOathSettings.html#//api/name/ocraPasswordHashAlgorithm">[EMSoftOathSettings ocraPasswordHashAlgorithm]</a>.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>NSInvalidArgumentException</code></th>
+						<td><p>When the session is not <code>nil</code> but the
+value returned by <a href="../Protocols/EMSoftOathSettings.html#//api/name/ocraSessionLength">[EMSoftOathSettings ocraSessionLength]</a>
+is <code>-1</code> or vice versa.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>NSInvalidArgumentException</code></th>
+						<td><p>When the session&rsquo;s byte length is
+longer than the value returned by <a href="../Protocols/EMSoftOathSettings.html#//api/name/ocraSessionLength">[EMSoftOathSettings ocraSessionLength]</a>.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>NSInvalidArgumentException</code></th>
+						<td><p>When the session cannot be decoded using
+UTF-8.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>NSInvalidArgumentException</code></th>
+						<td><p>When the token&rsquo;s key length is not
+compatible with the OCRA hash algorithm (see
+<a href="../Protocols/EMSoftOathSettings.html#//api/name/ocraHashAlgorithm">[EMSoftOathSettings ocraHashAlgorithm]</a>).</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>NSInternalInconsistencyException</code></th>
+						<td><p>When the associated token has the
+<code>EMTokenCapabilityDUAL_SEED</code> capability and the OCRA suite is event based since
+only time based algorithms are supported for this capability. See <a href="../Constants/EMTokenCapability.html">EMTokenCapability</a>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p>upgradeToMultiAuthMode:error: in <a href="../Protocols/EMToken.html">EMToken</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMOathDevice.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ocraPasswordHash:error:" title="ocraPasswordHash:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ocraPasswordHash:error:">&ndash;&nbsp;ocraPasswordHash:error:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Gets password hash value according the algorithm defined by device settings.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;EMSecureString&gt;)ocraPasswordHash:(id&lt;EMSecureString&gt;)<em>password</em> error:(NSError **)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>password</code></th>
+						<td><p>The password, can be <code>nil</code>.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>If an error occurs, upon return contains an NSError object that describes the problem. If you are not interested in possible errors, you may pass in <code>NULL</code>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<ul>
+<li> The hash value of the password.</li>
+<li> <code>nil</code> if password is <code>nil</code> or hash algorithm
+for OCRA password is set to <code>EMOcraPasswordNone</code> by the
+device settings</li>
+</ul>
+
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMOathDevice.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/lastOtpLifespan" title="lastOtpLifespan"></a>
+	<h3 class="method-title"><code><a href="#//api/name/lastOtpLifespan">&ndash;&nbsp;lastOtpLifespan</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns lifespan of the last OTP computed by this device.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSInteger)lastOtpLifespan</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<ul>
+<li> In case last OTP computed with this device is time-based
+<ul>
+<li> If positive, the last OTP is still valid according current time and device's
+timestep settings. The returned value indicates the remaining seconds
+before the OTP becomes obsolete.</li>
+<li> If negative, the last OTP computed is obsolete. The absolute
+value indicates the time elapsed since the OTP has become obsolete.</li>
+</ul>
+</li>
+<li> In case last OTP computed with this device is event-based, or no OTP has
+been computed yet, the function returns <code>NSIntegerMax</code></li>
+</ul>
+
+			</div>
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>2.3</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The following example illustrates the usage.</p>
+
+<p>// Create OATH settings
+id<EMMutableSoftOathSettings> oathSettings = &hellip;</p>
+
+<p>// Set up OATH time-based settings (for example a 30 seconds timestep)
+[oathSettings setTotpTimestepSize:30];</p>
+
+<p>// Create a OATH device
+id<EMOathDevice> device = &hellip;</p>
+
+<p>// Compute a time-based OTP with device (with pin EMSecureString)
+[device getTotpWithPin:pin];</p>
+
+<p>// Each time selector [&hellip; lastOtpLifespan] is called, it returns the
+// remaining lifespan in seconds of the last time-based OTP. Lifespan is
+// computed with respect of device&rsquo;s settings (in this example it returns
+// the lifespan according the 30-seconds timestep).
+NSInteger lifespan = [device lastOtpLifespan];</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMOathDevice.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2019 Gemalto. All rights reserved. Updated: 2019-04-11</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

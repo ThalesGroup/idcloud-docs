@@ -1,0 +1,2479 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>EMStatus Constants Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">EzioMobileSdk </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Gemalto</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">EMStatus Constants Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Declared in</th>
+	<td>em_status.h</td>
+</tr><tr>
+	<th>Availability</th>
+	<td>3.0
+     </td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+
+                    
+                    <h3 class="subsubtitle method-title">EMStatus</h3>
+                    
+					
+					<div class="section section-overview">
+                        <p>General status sodes for EzioMobileSDK operations.</p>
+					</div>
+					
+					
+                    <div class="section">
+                        <!-- display enum values -->
+                        
+                        <h4 class="method-subtitle">Definition</h4>
+                        <code>typedef NS_ENUM(NSInteger, EMStatus ) {<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_SUCCESS</a> = 0,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_UNSPECIFIED_ERROR</a> = -100,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_INVALID_ARGUMENT</a> = -101,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_BUFFER_TOO_SMALL</a> = -102,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_BUFFER_TOO_LARGE</a> = -103,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_BODY_PARSE_ERROR</a> = -104,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_CRYPTO_ERROR</a> = -105,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_WRAPPED_COUNTER</a> = -106,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_OOM</a> = -107,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_INVALID_CHECK_DIGIT</a> = -108,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_SEC_RAND_ERROR</a> = -109,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_IO_UNINITIALIZED_KEY</a> = -110,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_IO_UNEXPECTED_KEY</a> = -111,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_EXISTING_KEYCHAIN_ELEMENT</a> = -112,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_UNKNOWN_KEYCHAIN_ELEMENT</a> = -113,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_UNEXPECTED_KEYCHAIN_ERROR</a> = -114,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_CRYPTO_INVALID_IV_LENGTH</a> = -115,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_CRYPTO_UNKNOWN_MODE</a> = -116,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_CRYPTO_UNKNOWN_ALGO</a> = -117,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_SECURE_SCHEME_INVALID_FOR_EEK</a> = -118,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_SECURE_SCHEME_INVALID_FOR_SEK</a> = -119,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_SECURE_SCHEME_INVALID_FOR_SAK</a> = -120,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_FAIL_TO_COPY_AN_OBJECT</a> = -121,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_FAIL_TO_COMPUTE_LEGACY_FP</a> = -122,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_ILLEGAL_STATE</a> = -123,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_FAIL_NATIVE_CTOR</a> = -124,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_INVALID_TOKEN_TYPE</a> = -125,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_INVALID_HMAC</a> = -126,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_OPERATION_NOT_SUPPORTED_IN_DUAL_SEED_MODE</a> = -127,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_INVALID_CHARACTER_IN_PIN</a> = -128,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_INVALID_INDEX_IN_PIN</a> = -129,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_INVALID_MOTHER_KEY</a> = -130,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_MOTHER_KEY_COLLISION</a> = -131,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_INVALID_UUID_LENGTH</a> = -132,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_FINGERPRINT_DOMAIN_ERRROR</a> = -133,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_DATABASE_ERROR</a> = -300,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_DATABASE_NO_RECORD_FOUND</a> = -301,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_OOB_REGISTRATION_FAILED</a> = -400,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_OOB_INVALID_REGISTRATION_DATA</a> = -401,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_OOB_UNREGISTRATION_FAILED</a> = -402,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_OOB_NOTIFICATION_FAILED</a> = -403,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_OOB_MESSAGE_FAILED</a> = -404,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_OOB_INIT_FAILED</a> = -405,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_OOB_SEND_JSON_CREATION</a> = -500,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_PASSWORD_MANAGER_GENERIC_FAILURE</a> = -600,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_PASSWORD_MANAGER_NOT_LOGGED_IN</a> = -601,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_PASSWORD_MANAGER_PASSWORD_NOT_SET</a> = -602,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_PASSWORD_MANAGER_INCORRECT_PASSWORD</a> = -603,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_PASSWORD_MANAGER_UNKNOWN_INTERNAL_ERROR</a> = -604,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_PASSWORD_MANAGER_DUPLICATE_PASSWORDID</a> = -605,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_SECURE_STORAGE_GENERIC_FAILURE</a> = -701,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_SECURE_STORAGE_PROPERTY_NOT_EXIST</a> = -702,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_SECURE_STORAGE_WITH_IDENTIFIER_EXISTS_WITH_DIFFERENT_SECURITY</a> = -703,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_BIO_FINGERPRINT_API_NOT_SUPPORTED</a> = -800,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_AUTHENTICATION_FAILED</a> = -801,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_AUTHENTICATION_CANCEL</a> = -802,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_AUTHENTICATION_ALREADY_REGISTERED</a> = -803,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_AUTHENTICATION_CANCELED_USER_FALLBACK</a> = -804,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_AUTHENTICATION_CANCELED_BY_SYSTEM</a> = -805,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_AUTHENTICATION_ERROR_PASSCODE_NOT_SET</a> = -806,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_AUTHENTICATION_ERROR_NOT_AVAILABLE</a> = -807,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_AUTHENTICATION_ERROR_NOT_ENROLLED</a> = -808,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_AUTHENTICATION_ERROR_API_LOCKED</a> = -809,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_AUTHENTICATION_CHANGEPIN_NOT_AVAILABLE</a> = -810,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_AUTHENTICATION_CANCELED_BY_USER</a> = -811,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_AUTHENTICATION_TOUCH_ID_LOCKOUT</a> = -812,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_AUTHENTICATION_BIOMETRY_LOCKOUT</a> = ,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_AUTHENTICATION_CANCELED_BY_APP</a> = -813,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_AUTHENTICATION_USER_FALLBACK_IS_NOT_SUPPORTED</a> = -814,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_SYSTEM_FACEID_API_NOT_SUPPORTED</a> = -815,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_BIO_FINGERPRINT_API_NOT_CONFIGURED</a> = -816,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_SYSTEM_FACEID_API_NOT_CONFIGURED</a> = -817,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_BIO_FINGERPRINT_SERVICE_NOT_SUPPORTED</a> = -818,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_SYSTEM_FACEID_SERVICE_NOT_SUPPORTED</a> = -819,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_AUTOENROLMENT_GENERIC_FAILED</a> = -900,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_AUTHENTICATION_FACIAL_TIMEOUT</a> = -1000,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_AUTHENTICATION_FACIAL_CANCELED</a> = -1001,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_AUTHENTICATION_FACIAL_BAD_QUALITY</a> = -1002,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_AUTHENTICATION_FACIAL_USER_EXISTS</a> = -1003,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_AUTHENTICATION_FACIAL_MATCH_NOT_FOUND</a> = -1004,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_AUTHENTICATION_FACIAL_NOT_SUPPORTED</a> = -1005,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_AUTHENTICATION_FACIAL_NOT_ACTIVATED</a> = -1006,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_AUTHENTICATION_FACIAL_REQUIRES_LIVENESS_ACTION</a> = -1007,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_AUTHENTICATION_FACIAL_USER_NOT_FOUND</a> = -1008,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_AUTHENTICATION_FACIAL_FACE_NOT_FOUND</a> = -1009,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_AUTHENTICATION_FACIAL_LIVENESS_CHECK_FAILED</a> = -1010,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_AUTHENTICATION_FACIAL_NOT_INITIALIZED</a> = -1011,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_AUTHENTICATION_FACIAL_INITIALIZATION_ERROR</a> = -1012,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_AUTHENTICATION_FACIAL_ALREADY_INITIALIZED</a> = -1013,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_AUTHENTICATION_FACIAL_CAMERA_NOT_FOUND</a> = -1014,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_AUTHENTICATION_FACIAL_ALREADY_EXTRACTING</a> = -1015,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_AUTHENTICATION_FACIAL_USER_REENROLL_NEEDED</a> = -1016,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_AUTHENTICATION_FACIAL_ERROR</a> = -1017,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_AUTHENTICATION_FACIAL_REQUIRED_LIVE_ACTION</a> = -1018,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_AUTHENTICATION_FACIAL_SUCCESS</a> = -1019,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_AUTHENTICATION_LICENSE_ERROR</a> = -1020,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_AUTHENTICATION_FACIAL_NONE</a> = -1021,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_AUTHENTICATION_FACIAL_GENERIC_API_ERROR</a> = -1022,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_AUTHENTICATION_FACIAL_WRAPPER_INITIALIZATION_ERROR</a> = -1023,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_AUTHENTICATION_CONFIGURE_LICENSE_ERROR</a> = 1100,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_MSP_SUCCESS</a> = -1200,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_MSP_UNKNOWN_DATA_FORMAT</a> = -1201,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_MSP_INVALID_FRAME_SIGNATURE</a> = -1202,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_MSP_DEOBFUSCATION</a> = -1203,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_MSP_NOT_SUPPORTED_FRAME</a> = -1204,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_MSP_NOT_SUPPORTED_DEVICE</a> = -1205,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_MSP_NOT_SUPPORTED_UPGRADE</a> = -1206,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_MSP_INVALID_PARAMETER</a> = -1207,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_MSP_MEMORY_ALLOCATION</a> = -1208,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_GLOBAL_DB_WRONG_ENCRYPTION</a> = -1400,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_GLOBAL_DB_NO_RECORD_FOUND</a> = -1401,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_GLOBAL_DB_MUTEX_ERROR</a> = -1402,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_GLOBAL_DB_READ_ONLY_TRANS</a> = -1403,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_GLOBAL_DB_SQL_ERROR</a> = -1404,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_GLOBAL_DB_CANT_REMOVE_COLUMN</a> = -1405,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_GLOBAL_DB_WRONG_TABLE_VERSION</a> = -1406,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_GLOBAL_DB_MIGRATION_ERROR</a> = -1407,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_INCORRECT_JSON_DATA</a> = -1500,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_TOKEN_IS_NOT_SUPPORTED</a> = -1600,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_KEY_NEED_TO_REPROVISION</a> = -1700,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_LIBRARY_NEED_TO_UPGRADE</a> = -1701,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EM_STATUS_KEY_FORMAT_UNKNOWN</a> = -1702,<br>
+                            
+                            };</code>
+                    
+                    </div>
+                    
+                    <div class="section section-methods">
+                        <h4 class="method-subtitle">Constants</h4>
+                        <dl class="termdef">
+                            
+                            <dt><a name="" title="EM_STATUS_SUCCESS"></a><code>EM_STATUS_SUCCESS</code></dt>
+<dd>
+
+
+<p>Operation has succeeded.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_UNSPECIFIED_ERROR"></a><code>EM_STATUS_UNSPECIFIED_ERROR</code></dt>
+<dd>
+
+
+<p>Unspecified error.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_INVALID_ARGUMENT"></a><code>EM_STATUS_INVALID_ARGUMENT</code></dt>
+<dd>
+
+
+<p>One or more arguments are invalid.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_BUFFER_TOO_SMALL"></a><code>EM_STATUS_BUFFER_TOO_SMALL</code></dt>
+<dd>
+
+
+<p>An output buffer has insufficient size.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_BUFFER_TOO_LARGE"></a><code>EM_STATUS_BUFFER_TOO_LARGE</code></dt>
+<dd>
+
+
+<p>An input buffer is larger than the supported size.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_BODY_PARSE_ERROR"></a><code>EM_STATUS_BODY_PARSE_ERROR</code></dt>
+<dd>
+
+
+<p>The response body is malformed.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_CRYPTO_ERROR"></a><code>EM_STATUS_CRYPTO_ERROR</code></dt>
+<dd>
+
+
+<p>A cryptographic operation could not be performed.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_WRAPPED_COUNTER"></a><code>EM_STATUS_WRAPPED_COUNTER</code></dt>
+<dd>
+
+
+<p>Occurs when the counter has reached its max value.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_OOM"></a><code>EM_STATUS_OOM</code></dt>
+<dd>
+
+
+<p>Out of memory.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_INVALID_CHECK_DIGIT"></a><code>EM_STATUS_INVALID_CHECK_DIGIT</code></dt>
+<dd>
+
+
+<p>A check digit failed, e.g. verhoeff.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_SEC_RAND_ERROR"></a><code>EM_STATUS_SEC_RAND_ERROR</code></dt>
+<dd>
+
+
+<p>Secure Random error.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_IO_UNINITIALIZED_KEY"></a><code>EM_STATUS_IO_UNINITIALIZED_KEY</code></dt>
+<dd>
+
+
+<p>Value for Token IO key is not set yet.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_IO_UNEXPECTED_KEY"></a><code>EM_STATUS_IO_UNEXPECTED_KEY</code></dt>
+<dd>
+
+
+<p>Unknown key value for Token IO.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_EXISTING_KEYCHAIN_ELEMENT"></a><code>EM_STATUS_EXISTING_KEYCHAIN_ELEMENT</code></dt>
+<dd>
+
+
+<p>Keychain element is already present.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_UNKNOWN_KEYCHAIN_ELEMENT"></a><code>EM_STATUS_UNKNOWN_KEYCHAIN_ELEMENT</code></dt>
+<dd>
+
+
+<p>Unknown keychain element.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_UNEXPECTED_KEYCHAIN_ERROR"></a><code>EM_STATUS_UNEXPECTED_KEYCHAIN_ERROR</code></dt>
+<dd>
+
+
+<p>An error occured during keychain operation.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_CRYPTO_INVALID_IV_LENGTH"></a><code>EM_STATUS_CRYPTO_INVALID_IV_LENGTH</code></dt>
+<dd>
+
+
+<p>Invalid IV length for the corresponding algorithm.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_CRYPTO_UNKNOWN_MODE"></a><code>EM_STATUS_CRYPTO_UNKNOWN_MODE</code></dt>
+<dd>
+
+
+<p>Unknown mode of operation for crypto.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_CRYPTO_UNKNOWN_ALGO"></a><code>EM_STATUS_CRYPTO_UNKNOWN_ALGO</code></dt>
+<dd>
+
+
+<p>Unknown crypto algorithm</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_SECURE_SCHEME_INVALID_FOR_EEK"></a><code>EM_STATUS_SECURE_SCHEME_INVALID_FOR_EEK</code></dt>
+<dd>
+
+
+<p>Secure scheme version for EEK is not supported.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_SECURE_SCHEME_INVALID_FOR_SEK"></a><code>EM_STATUS_SECURE_SCHEME_INVALID_FOR_SEK</code></dt>
+<dd>
+
+
+<p>Secure scheme version for SEK is not supported.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_SECURE_SCHEME_INVALID_FOR_SAK"></a><code>EM_STATUS_SECURE_SCHEME_INVALID_FOR_SAK</code></dt>
+<dd>
+
+
+<p>Secure scheme version for SAK is not supported.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_FAIL_TO_COPY_AN_OBJECT"></a><code>EM_STATUS_FAIL_TO_COPY_AN_OBJECT</code></dt>
+<dd>
+
+
+<p>An error occured when copying a CFType.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_FAIL_TO_COMPUTE_LEGACY_FP"></a><code>EM_STATUS_FAIL_TO_COMPUTE_LEGACY_FP</code></dt>
+<dd>
+
+
+<p>Legacy fingerprint generated an error.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_ILLEGAL_STATE"></a><code>EM_STATUS_ILLEGAL_STATE</code></dt>
+<dd>
+
+
+<p>Object is in illegal state.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_FAIL_NATIVE_CTOR"></a><code>EM_STATUS_FAIL_NATIVE_CTOR</code></dt>
+<dd>
+
+
+<p>A native constructor has failed.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_INVALID_TOKEN_TYPE"></a><code>EM_STATUS_INVALID_TOKEN_TYPE</code></dt>
+<dd>
+
+
+<p>The token type is invalid for the requested operation.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_INVALID_HMAC"></a><code>EM_STATUS_INVALID_HMAC</code></dt>
+<dd>
+
+
+<p>HMAC verification failed.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_OPERATION_NOT_SUPPORTED_IN_DUAL_SEED_MODE"></a><code>EM_STATUS_OPERATION_NOT_SUPPORTED_IN_DUAL_SEED_MODE</code></dt>
+<dd>
+
+
+<p>Operation is not supported in dual seeds mode.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_INVALID_CHARACTER_IN_PIN"></a><code>EM_STATUS_INVALID_CHARACTER_IN_PIN</code></dt>
+<dd>
+
+
+<p>Invalid input character in PIN.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_INVALID_INDEX_IN_PIN"></a><code>EM_STATUS_INVALID_INDEX_IN_PIN</code></dt>
+<dd>
+
+
+<p>Invalid index character in PIN data.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_INVALID_MOTHER_KEY"></a><code>EM_STATUS_INVALID_MOTHER_KEY</code></dt>
+<dd>
+
+
+<p>Mother key not valid</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_MOTHER_KEY_COLLISION"></a><code>EM_STATUS_MOTHER_KEY_COLLISION</code></dt>
+<dd>
+
+
+<p>&lt; Data corruption reprovision needed</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_INVALID_UUID_LENGTH"></a><code>EM_STATUS_INVALID_UUID_LENGTH</code></dt>
+<dd>
+
+
+<p>Invalid uuid length</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_FINGERPRINT_DOMAIN_ERRROR"></a><code>EM_STATUS_FINGERPRINT_DOMAIN_ERRROR</code></dt>
+<dd>
+
+
+<p>Fingerprint domain error</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_DATABASE_ERROR"></a><code>EM_STATUS_DATABASE_ERROR</code></dt>
+<dd>
+
+
+<p>Database error.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_DATABASE_NO_RECORD_FOUND"></a><code>EM_STATUS_DATABASE_NO_RECORD_FOUND</code></dt>
+<dd>
+
+
+<p>Database no record found..</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_OOB_REGISTRATION_FAILED"></a><code>EM_STATUS_OOB_REGISTRATION_FAILED</code></dt>
+<dd>
+
+
+<p>The registration request failed. Something wrong with IPMS (see OOB_SUB_CODE).</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_OOB_INVALID_REGISTRATION_DATA"></a><code>EM_STATUS_OOB_INVALID_REGISTRATION_DATA</code></dt>
+<dd>
+
+
+<p>Invalide OOB Registration data.  Some data may be <code>nil</code> method may be unsupported.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_OOB_UNREGISTRATION_FAILED"></a><code>EM_STATUS_OOB_UNREGISTRATION_FAILED</code></dt>
+<dd>
+
+
+<p>The unregistration request failed. Something wrong with IPMS (see OOB_SUB_CODE).</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_OOB_NOTIFICATION_FAILED"></a><code>EM_STATUS_OOB_NOTIFICATION_FAILED</code></dt>
+<dd>
+
+
+<p>The notification profile request failed. Something wrong with IPMS (see OOB_SUB_CODE).</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_OOB_MESSAGE_FAILED"></a><code>EM_STATUS_OOB_MESSAGE_FAILED</code></dt>
+<dd>
+
+
+<p>The message request failed. Something wrong with IPMS (see OOB_SUB_CODE).</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_OOB_INIT_FAILED"></a><code>EM_STATUS_OOB_INIT_FAILED</code></dt>
+<dd>
+
+
+<p>The oob initialization failed.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_OOB_SEND_JSON_CREATION"></a><code>EM_STATUS_OOB_SEND_JSON_CREATION</code></dt>
+<dd>
+
+
+<p>An error occured when serializing the message in JSON.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_PASSWORD_MANAGER_GENERIC_FAILURE"></a><code>EM_STATUS_PASSWORD_MANAGER_GENERIC_FAILURE</code></dt>
+<dd>
+
+
+<p>Generic password failure, e.g. error in operation such as wiping password that does not exist, etc.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_PASSWORD_MANAGER_NOT_LOGGED_IN"></a><code>EM_STATUS_PASSWORD_MANAGER_NOT_LOGGED_IN</code></dt>
+<dd>
+
+
+<p>User has not logged in. Requires log-in to continue</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_PASSWORD_MANAGER_PASSWORD_NOT_SET"></a><code>EM_STATUS_PASSWORD_MANAGER_PASSWORD_NOT_SET</code></dt>
+<dd>
+
+
+<p>Operation could not proceed correctly because the password was not set.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_PASSWORD_MANAGER_INCORRECT_PASSWORD"></a><code>EM_STATUS_PASSWORD_MANAGER_INCORRECT_PASSWORD</code></dt>
+<dd>
+
+
+<p>The password supplied was not correct, or was trying to perform operation while not logged in.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_PASSWORD_MANAGER_UNKNOWN_INTERNAL_ERROR"></a><code>EM_STATUS_PASSWORD_MANAGER_UNKNOWN_INTERNAL_ERROR</code></dt>
+<dd>
+
+
+<p>Unexpected error in password storage access even if conditions are met.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_PASSWORD_MANAGER_DUPLICATE_PASSWORDID"></a><code>EM_STATUS_PASSWORD_MANAGER_DUPLICATE_PASSWORDID</code></dt>
+<dd>
+
+
+<p>Duplicate Password Id Exists.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_SECURE_STORAGE_GENERIC_FAILURE"></a><code>EM_STATUS_SECURE_STORAGE_GENERIC_FAILURE</code></dt>
+<dd>
+
+
+<p>Generic secure storage failure, e.g.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_SECURE_STORAGE_PROPERTY_NOT_EXIST"></a><code>EM_STATUS_SECURE_STORAGE_PROPERTY_NOT_EXIST</code></dt>
+<dd>
+
+
+<p>Property not exist</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_SECURE_STORAGE_WITH_IDENTIFIER_EXISTS_WITH_DIFFERENT_SECURITY"></a><code>EM_STATUS_SECURE_STORAGE_WITH_IDENTIFIER_EXISTS_WITH_DIFFERENT_SECURITY</code></dt>
+<dd>
+
+
+<p>Property storage with different security level exist</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_BIO_FINGERPRINT_API_NOT_SUPPORTED"></a><code>EM_STATUS_BIO_FINGERPRINT_API_NOT_SUPPORTED</code></dt>
+<dd>
+
+
+<p>Biometric fingerprint is not supported</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_AUTHENTICATION_FAILED"></a><code>EM_STATUS_AUTHENTICATION_FAILED</code></dt>
+<dd>
+
+
+<p>User can not be authenticate</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_AUTHENTICATION_CANCEL"></a><code>EM_STATUS_AUTHENTICATION_CANCEL</code></dt>
+<dd>
+
+
+<p>User cancel the authentication</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_AUTHENTICATION_ALREADY_REGISTERED"></a><code>EM_STATUS_AUTHENTICATION_ALREADY_REGISTERED</code></dt>
+<dd>
+
+
+<p>Bio fingerprintis already activate for this token and user</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_AUTHENTICATION_CANCELED_USER_FALLBACK"></a><code>EM_STATUS_AUTHENTICATION_CANCELED_USER_FALLBACK</code></dt>
+<dd>
+
+
+<p>Authentication was canceled, because the user tapped the fallback button (Enter Password).</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_AUTHENTICATION_CANCELED_BY_SYSTEM"></a><code>EM_STATUS_AUTHENTICATION_CANCELED_BY_SYSTEM</code></dt>
+<dd>
+
+
+<p>Authentication was canceled by system (e.g. another application went to foreground).</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_AUTHENTICATION_ERROR_PASSCODE_NOT_SET"></a><code>EM_STATUS_AUTHENTICATION_ERROR_PASSCODE_NOT_SET</code></dt>
+<dd>
+
+
+<p>Authentication could not start, because passcode is not set on the device.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_AUTHENTICATION_ERROR_NOT_AVAILABLE"></a><code>EM_STATUS_AUTHENTICATION_ERROR_NOT_AVAILABLE</code></dt>
+<dd>
+
+
+<p>Authentication could not start, because BIO fingerprint is not available on the device.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_AUTHENTICATION_ERROR_NOT_ENROLLED"></a><code>EM_STATUS_AUTHENTICATION_ERROR_NOT_ENROLLED</code></dt>
+<dd>
+
+
+<p>Authentication could not start, because  BIO fingerprint has no enrolled fingers.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_AUTHENTICATION_ERROR_API_LOCKED"></a><code>EM_STATUS_AUTHENTICATION_ERROR_API_LOCKED</code></dt>
+<dd>
+
+
+<p>Authentication was not successful, because there were too many failed  BIO fingerprint attempts and
+         api is now locked. Passcode is required to unlock it, e.g. using bio fingerprint api
+         will ask for passcode as a prerequisite.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_AUTHENTICATION_CHANGEPIN_NOT_AVAILABLE"></a><code>EM_STATUS_AUTHENTICATION_CHANGEPIN_NOT_AVAILABLE</code></dt>
+<dd>
+
+
+<p>Change pin action is forbiden while BioFpMode is active</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_AUTHENTICATION_CANCELED_BY_USER"></a><code>EM_STATUS_AUTHENTICATION_CANCELED_BY_USER</code></dt>
+<dd>
+
+
+<p>Authentication was canceled by user (e.g. tapped Cancel button).</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_AUTHENTICATION_TOUCH_ID_LOCKOUT"></a><code>EM_STATUS_AUTHENTICATION_TOUCH_ID_LOCKOUT</code></dt>
+<dd>
+
+
+<p>Authentication was not successful, because there were too many failed Touch ID attempts and
+         Touch ID is now locked. Passcode is required to unlock Touch ID, e.g. evaluating
+         LAPolicyDeviceOwnerAuthenticationWithBiometrics will ask for passcode as a prerequisite.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_AUTHENTICATION_BIOMETRY_LOCKOUT"></a><code>EM_STATUS_AUTHENTICATION_BIOMETRY_LOCKOUT</code></dt>
+<dd>
+
+
+<p>Authentication was not successful, because there were too many failed Touch ID attempts and
+         Touch ID is now locked. Passcode is required to unlock Touch ID, e.g. evaluating
+         LAPolicyDeviceOwnerAuthenticationWithBiometrics will ask for passcode as a prerequisite.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_AUTHENTICATION_CANCELED_BY_APP"></a><code>EM_STATUS_AUTHENTICATION_CANCELED_BY_APP</code></dt>
+<dd>
+
+
+<p>Authentication was canceled by application (e.g. invalidate was called while
+         authentication was in progress).</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_AUTHENTICATION_USER_FALLBACK_IS_NOT_SUPPORTED"></a><code>EM_STATUS_AUTHENTICATION_USER_FALLBACK_IS_NOT_SUPPORTED</code></dt>
+<dd>
+
+
+<p>Authentication user fallback is not supported.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_SYSTEM_FACEID_API_NOT_SUPPORTED"></a><code>EM_STATUS_SYSTEM_FACEID_API_NOT_SUPPORTED</code></dt>
+<dd>
+
+
+<p>System Face ID is not supported</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_BIO_FINGERPRINT_API_NOT_CONFIGURED"></a><code>EM_STATUS_BIO_FINGERPRINT_API_NOT_CONFIGURED</code></dt>
+<dd>
+
+
+<p>Biometric fingerprint is not configured</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_SYSTEM_FACEID_API_NOT_CONFIGURED"></a><code>EM_STATUS_SYSTEM_FACEID_API_NOT_CONFIGURED</code></dt>
+<dd>
+
+
+<p>System Face ID is not configured</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_BIO_FINGERPRINT_SERVICE_NOT_SUPPORTED"></a><code>EM_STATUS_BIO_FINGERPRINT_SERVICE_NOT_SUPPORTED</code></dt>
+<dd>
+
+
+<p>Biometric fingerprint service is not supported</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_SYSTEM_FACEID_SERVICE_NOT_SUPPORTED"></a><code>EM_STATUS_SYSTEM_FACEID_SERVICE_NOT_SUPPORTED</code></dt>
+<dd>
+
+
+<p>System Face ID service is not supported</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_AUTOENROLMENT_GENERIC_FAILED"></a><code>EM_STATUS_AUTOENROLMENT_GENERIC_FAILED</code></dt>
+<dd>
+
+
+<p>Change pin action is forbiden while BioFpMode is active</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_AUTHENTICATION_FACIAL_TIMEOUT"></a><code>EM_STATUS_AUTHENTICATION_FACIAL_TIMEOUT</code></dt>
+<dd>
+
+
+<p>Facial Authentication time out has been reached.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_AUTHENTICATION_FACIAL_CANCELED"></a><code>EM_STATUS_AUTHENTICATION_FACIAL_CANCELED</code></dt>
+<dd>
+
+
+<p>Biometric action has been canceled.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_AUTHENTICATION_FACIAL_BAD_QUALITY"></a><code>EM_STATUS_AUTHENTICATION_FACIAL_BAD_QUALITY</code></dt>
+<dd>
+
+
+<p>The image quality is too bad (too much light, too dark, too blur..) to perform
+the biometric action.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_AUTHENTICATION_FACIAL_USER_EXISTS"></a><code>EM_STATUS_AUTHENTICATION_FACIAL_USER_EXISTS</code></dt>
+<dd>
+
+
+<p>User already enrolled.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_AUTHENTICATION_FACIAL_MATCH_NOT_FOUND"></a><code>EM_STATUS_AUTHENTICATION_FACIAL_MATCH_NOT_FOUND</code></dt>
+<dd>
+
+
+<p>User not recognized as an enrolled user.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_AUTHENTICATION_FACIAL_NOT_SUPPORTED"></a><code>EM_STATUS_AUTHENTICATION_FACIAL_NOT_SUPPORTED</code></dt>
+<dd>
+
+
+<p>Front camera has not been detected on the device.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_AUTHENTICATION_FACIAL_NOT_ACTIVATED"></a><code>EM_STATUS_AUTHENTICATION_FACIAL_NOT_ACTIVATED</code></dt>
+<dd>
+
+
+<p>Operation has not been activated.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_AUTHENTICATION_FACIAL_REQUIRES_LIVENESS_ACTION"></a><code>EM_STATUS_AUTHENTICATION_FACIAL_REQUIRES_LIVENESS_ACTION</code></dt>
+<dd>
+
+
+<p>Liveness is required.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_AUTHENTICATION_FACIAL_USER_NOT_FOUND"></a><code>EM_STATUS_AUTHENTICATION_FACIAL_USER_NOT_FOUND</code></dt>
+<dd>
+
+
+<p>User not recognized as an enrolled user.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_AUTHENTICATION_FACIAL_FACE_NOT_FOUND"></a><code>EM_STATUS_AUTHENTICATION_FACIAL_FACE_NOT_FOUND</code></dt>
+<dd>
+
+
+<p>No Face has been found.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_AUTHENTICATION_FACIAL_LIVENESS_CHECK_FAILED"></a><code>EM_STATUS_AUTHENTICATION_FACIAL_LIVENESS_CHECK_FAILED</code></dt>
+<dd>
+
+
+<p>Face engine failed to detect a live user</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_AUTHENTICATION_FACIAL_NOT_INITIALIZED"></a><code>EM_STATUS_AUTHENTICATION_FACIAL_NOT_INITIALIZED</code></dt>
+<dd>
+
+
+<p>Face engine has not been initialized</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_AUTHENTICATION_FACIAL_INITIALIZATION_ERROR"></a><code>EM_STATUS_AUTHENTICATION_FACIAL_INITIALIZATION_ERROR</code></dt>
+<dd>
+
+
+<p>NResult Initialize error</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_AUTHENTICATION_FACIAL_ALREADY_INITIALIZED"></a><code>EM_STATUS_AUTHENTICATION_FACIAL_ALREADY_INITIALIZED</code></dt>
+<dd>
+
+
+<p>Face engine has been initialized</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_AUTHENTICATION_FACIAL_CAMERA_NOT_FOUND"></a><code>EM_STATUS_AUTHENTICATION_FACIAL_CAMERA_NOT_FOUND</code></dt>
+<dd>
+
+
+<p>Face engine has not found any camera</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_AUTHENTICATION_FACIAL_ALREADY_EXTRACTING"></a><code>EM_STATUS_AUTHENTICATION_FACIAL_ALREADY_EXTRACTING</code></dt>
+<dd>
+
+
+<p>Face engine is extracting.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_AUTHENTICATION_FACIAL_USER_REENROLL_NEEDED"></a><code>EM_STATUS_AUTHENTICATION_FACIAL_USER_REENROLL_NEEDED</code></dt>
+<dd>
+
+
+<p>Face engine requires user to redo enrollment.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_AUTHENTICATION_FACIAL_ERROR"></a><code>EM_STATUS_AUTHENTICATION_FACIAL_ERROR</code></dt>
+<dd>
+
+
+<p>Face engine verification error.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_AUTHENTICATION_FACIAL_REQUIRED_LIVE_ACTION"></a><code>EM_STATUS_AUTHENTICATION_FACIAL_REQUIRED_LIVE_ACTION</code></dt>
+<dd>
+
+
+<p>Face engine required live action.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_AUTHENTICATION_FACIAL_SUCCESS"></a><code>EM_STATUS_AUTHENTICATION_FACIAL_SUCCESS</code></dt>
+<dd>
+
+
+<p>Face engine success.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_AUTHENTICATION_LICENSE_ERROR"></a><code>EM_STATUS_AUTHENTICATION_LICENSE_ERROR</code></dt>
+<dd>
+
+
+<p>Face engine licensing error.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_AUTHENTICATION_FACIAL_NONE"></a><code>EM_STATUS_AUTHENTICATION_FACIAL_NONE</code></dt>
+<dd>
+
+
+<p>Face engine requires user to redo enrollment.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_AUTHENTICATION_FACIAL_GENERIC_API_ERROR"></a><code>EM_STATUS_AUTHENTICATION_FACIAL_GENERIC_API_ERROR</code></dt>
+<dd>
+
+
+<p>NResult generic error code</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_AUTHENTICATION_FACIAL_WRAPPER_INITIALIZATION_ERROR"></a><code>EM_STATUS_AUTHENTICATION_FACIAL_WRAPPER_INITIALIZATION_ERROR</code></dt>
+<dd>
+
+
+<p>NResult NT wrapper api error</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_AUTHENTICATION_CONFIGURE_LICENSE_ERROR"></a><code>EM_STATUS_AUTHENTICATION_CONFIGURE_LICENSE_ERROR</code></dt>
+<dd>
+
+
+<p>EMS License Configuration Error</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_MSP_SUCCESS"></a><code>EM_STATUS_MSP_SUCCESS</code></dt>
+<dd>
+
+
+<p>MSP success</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_MSP_UNKNOWN_DATA_FORMAT"></a><code>EM_STATUS_MSP_UNKNOWN_DATA_FORMAT</code></dt>
+<dd>
+
+
+<p>MSP frame data format is unknown. Bad frame.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_MSP_INVALID_FRAME_SIGNATURE"></a><code>EM_STATUS_MSP_INVALID_FRAME_SIGNATURE</code></dt>
+<dd>
+
+
+<p>MSP frame signature is invalid</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_MSP_DEOBFUSCATION"></a><code>EM_STATUS_MSP_DEOBFUSCATION</code></dt>
+<dd>
+
+
+<p>MSP deobfuscation error</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_MSP_NOT_SUPPORTED_FRAME"></a><code>EM_STATUS_MSP_NOT_SUPPORTED_FRAME</code></dt>
+<dd>
+
+
+<p>MSP frame is not supported by this library</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_MSP_NOT_SUPPORTED_DEVICE"></a><code>EM_STATUS_MSP_NOT_SUPPORTED_DEVICE</code></dt>
+<dd>
+
+
+<p>MSP frame device type is not supported</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_MSP_NOT_SUPPORTED_UPGRADE"></a><code>EM_STATUS_MSP_NOT_SUPPORTED_UPGRADE</code></dt>
+<dd>
+
+
+<p>MSP frame version is not supported. Need to upgrade the library to support higher version</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_MSP_INVALID_PARAMETER"></a><code>EM_STATUS_MSP_INVALID_PARAMETER</code></dt>
+<dd>
+
+
+<p>MSP frame invalid argument is supplied</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_MSP_MEMORY_ALLOCATION"></a><code>EM_STATUS_MSP_MEMORY_ALLOCATION</code></dt>
+<dd>
+
+
+<p>MSP frame memory allocation failed</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_GLOBAL_DB_WRONG_ENCRYPTION"></a><code>EM_STATUS_GLOBAL_DB_WRONG_ENCRYPTION</code></dt>
+<dd>
+
+
+<p>Database no record does not have proper encryption layers for such operation.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_GLOBAL_DB_NO_RECORD_FOUND"></a><code>EM_STATUS_GLOBAL_DB_NO_RECORD_FOUND</code></dt>
+<dd>
+
+
+<p>Database no record found.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_GLOBAL_DB_MUTEX_ERROR"></a><code>EM_STATUS_GLOBAL_DB_MUTEX_ERROR</code></dt>
+<dd>
+
+
+<p>Failed to lock or unlock mutex.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_GLOBAL_DB_READ_ONLY_TRANS"></a><code>EM_STATUS_GLOBAL_DB_READ_ONLY_TRANS</code></dt>
+<dd>
+
+
+<p>Transaction is read only.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_GLOBAL_DB_SQL_ERROR"></a><code>EM_STATUS_GLOBAL_DB_SQL_ERROR</code></dt>
+<dd>
+
+
+<p>Generic SQL error, check log for mor details.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_GLOBAL_DB_CANT_REMOVE_COLUMN"></a><code>EM_STATUS_GLOBAL_DB_CANT_REMOVE_COLUMN</code></dt>
+<dd>
+
+
+<p>Someone tries to remove column during table migration.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_GLOBAL_DB_WRONG_TABLE_VERSION"></a><code>EM_STATUS_GLOBAL_DB_WRONG_TABLE_VERSION</code></dt>
+<dd>
+
+
+<p>Table can&rsquo;t have lower version than existing one.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_GLOBAL_DB_MIGRATION_ERROR"></a><code>EM_STATUS_GLOBAL_DB_MIGRATION_ERROR</code></dt>
+<dd>
+
+
+<p>Something went wrong during migration.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_INCORRECT_JSON_DATA"></a><code>EM_STATUS_INCORRECT_JSON_DATA</code></dt>
+<dd>
+
+
+<p>Unable to parse json data.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_TOKEN_IS_NOT_SUPPORTED"></a><code>EM_STATUS_TOKEN_IS_NOT_SUPPORTED</code></dt>
+<dd>
+
+
+<p>This token is not supported. Please check the server configuration and re-provision.
+The feature is currently not supported by SDK client.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_KEY_NEED_TO_REPROVISION"></a><code>EM_STATUS_KEY_NEED_TO_REPROVISION</code></dt>
+<dd>
+
+
+<p>Token/Key generated by this Registration Code cannot be used
+since the library version is newer.
+End User need to re-enroll and re-provision.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_LIBRARY_NEED_TO_UPGRADE"></a><code>EM_STATUS_LIBRARY_NEED_TO_UPGRADE</code></dt>
+<dd>
+
+
+<p>The library need to be updated.
+Token/Key retrieved from Server is using latest version.
+Please ask End User to upgrade the application.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EM_STATUS_KEY_FORMAT_UNKNOWN"></a><code>EM_STATUS_KEY_FORMAT_UNKNOWN</code></dt>
+<dd>
+
+
+<p>The library and the provisioned key is not compatible.
+This error is unlikely to happen.
+It can only happen if the Server give invalid Token/Key.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">em_status.h</code>.
+	</p>
+	
+</dd>
+                            
+                        </dl>
+                    </div>
+                    
+
+                    
+                    
+                    <div class="method-subsection availability">
+                        <h4 class="method-subtitle parameter-title">Availability</h4>
+                        <p>3.0</p>
+                    </div>
+                    
+
+                    
+
+                    
+                    <div class="method-subsection declared-in-section">
+                        <h4 class="method-subtitle">Declared In</h4>
+                        <p><code class="declared-in-ref">em_status.h</code></p>
+                    </div>
+                    
+                    
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2019 Gemalto. All rights reserved. Updated: 2019-04-11</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

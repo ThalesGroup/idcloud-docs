@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>EMEmvTransactionInfo Protocol Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">EzioMobileSdk </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Gemalto</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/additionalDataFieldTemplate">- additionalDataFieldTemplate</option>
+		
+		<option value="//api/name/countryCode">- countryCode</option>
+		
+		<option value="//api/name/currency">- currency</option>
+		
+		<option value="//api/name/emvRfuDataObjects">- emvRfuDataObjects</option>
+		
+		<option value="//api/name/merchantAccountInfo">- merchantAccountInfo</option>
+		
+		<option value="//api/name/merchantCategoryCode">- merchantCategoryCode</option>
+		
+		<option value="//api/name/merchantCity">- merchantCity</option>
+		
+		<option value="//api/name/merchantInformationLanguageTemplate">- merchantInformationLanguageTemplate</option>
+		
+		<option value="//api/name/merchantName">- merchantName</option>
+		
+		<option value="//api/name/payloadFormatIndicator">- payloadFormatIndicator</option>
+		
+		<option value="//api/name/pointOfInitiationMethod">- pointOfInitiationMethod</option>
+		
+		<option value="//api/name/postalCode">- postalCode</option>
+		
+		<option value="//api/name/tipOrConvenienceIndicator">- tipOrConvenienceIndicator</option>
+		
+		<option value="//api/name/tipOrConvenienceValue">- tipOrConvenienceValue</option>
+		
+		<option value="//api/name/transactionAmount">- transactionAmount</option>
+		
+		<option value="//api/name/unreservedTemplates">- unreservedTemplates</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">EMEmvTransactionInfo Protocol Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Conforms to</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>EMEmvTransactionInfo.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Holds consolidated information about payment transaction.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/payloadFormatIndicator" title="payloadFormatIndicator"></a>
+	<h3 class="method-title"><code><a href="#//api/name/payloadFormatIndicator">&ndash;&nbsp;payloadFormatIndicator</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Defines the version of the QR Code template and hence the conventions on the identifiers, lengths, and values.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (Byte)payloadFormatIndicator</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Returns Payload Format Indicator as byte.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMEmvTransactionInfo.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/pointOfInitiationMethod" title="pointOfInitiationMethod"></a>
+	<h3 class="method-title"><code><a href="#//api/name/pointOfInitiationMethod">&ndash;&nbsp;pointOfInitiationMethod</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Identifies the communication technology (here QR Code) and whether the data is static or dynamic.
+This parameter is optional.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (EMEmvPointOfInitiationMethod)pointOfInitiationMethod</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Point of Initiation Method value as enum {@link EMEmvPointOfInitiationMethod} value. If the data object
+is not presents returns {@link EMEmvPointOfInitiationMethod#EMEmvPointOfInitiationMethodUndefined}.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMEmvTransactionInfo.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/merchantAccountInfo" title="merchantAccountInfo"></a>
+	<h3 class="method-title"><code><a href="#//api/name/merchantAccountInfo">&ndash;&nbsp;merchantAccountInfo</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Provides information about merchant&rsquo;s account. The format and value are specific to a payment system.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSArray&lt;id&lt;EMEmvDataObject&gt; &gt; *)merchantAccountInfo</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Returns list of {@link EMEmvDataObject} defining merchant account information. The list contains either instances
+of {@link EMEmvPrimitive} or {@link EMEmvTemplateWithGui} and {@link EMEmvDataObject#type} method should be used to distinguish them.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMEmvTransactionInfo.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/merchantCategoryCode" title="merchantCategoryCode"></a>
+	<h3 class="method-title"><code><a href="#//api/name/merchantCategoryCode">&ndash;&nbsp;merchantCategoryCode</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Identifies merchant category code as defined by [ISO 18245] and assigned by the Acquirer.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSInteger)merchantCategoryCode</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Returns numeric merchant category code as NSInteger.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMEmvTransactionInfo.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/merchantName" title="merchantName"></a>
+	<h3 class="method-title"><code><a href="#//api/name/merchantName">&ndash;&nbsp;merchantName</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Identifies “doing business as” name for the merchant, recognizable to the consumer. This name may be displayed to the consumer by the
+mobile application when processing the transaction.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)merchantName</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Returns merchant name as string.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMEmvTransactionInfo.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/merchantCity" title="merchantCity"></a>
+	<h3 class="method-title"><code><a href="#//api/name/merchantCity">&ndash;&nbsp;merchantCity</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Identifies city of operations for the merchant. This name may be displayed to the consumer by the mobile application when processing
+the transaction.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)merchantCity</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Returns merchant city as string.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMEmvTransactionInfo.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/countryCode" title="countryCode"></a>
+	<h3 class="method-title"><code><a href="#//api/name/countryCode">&ndash;&nbsp;countryCode</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Indicates the country of the merchant acceptance device. The country may be displayed to the
+consumer by the mobile application when processing the transaction.</p>
+
+<p><p>
+A 2-character alpha value, as defined by [ISO 3166-1 alpha 2] and assigned by the Acquirer.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)countryCode</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Returns country code as string.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMEmvTransactionInfo.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/postalCode" title="postalCode"></a>
+	<h3 class="method-title"><code><a href="#//api/name/postalCode">&ndash;&nbsp;postalCode</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Zip code or Pin code or Postal code of the merchant. If present, this value may be displayed to the consumer by the mobile
+application when processing the transaction.</p>
+
+<p><p>
+This value is optional.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (EMEmvOptional&lt;NSString*&gt; *)postalCode</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Returns postal code as string in {@link EMEmvOptional}.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMEmvTransactionInfo.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/transactionAmount" title="transactionAmount"></a>
+	<h3 class="method-title"><code><a href="#//api/name/transactionAmount">&ndash;&nbsp;transactionAmount</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The transaction amount, if known. For instance, &ldquo;99.34&rdquo;. If present, this value is displayed to the consumer by the mobile
+application when processing the transaction. If this data object is not present, the consumer is prompted to input the transaction
+amount to be paid to the merchant.</p>
+
+<p><p>
+This value is optional.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (EMEmvOptional&lt;NSNumber*&gt; *)transactionAmount</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Returns transaction amount as {@link NSNumber} in {@link EMEmvOptional}.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMEmvTransactionInfo.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/currency" title="currency"></a>
+	<h3 class="method-title"><code><a href="#//api/name/currency">&ndash;&nbsp;currency</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Indicates the currency code of the transaction. This value will be used by the mobile application to display a recognizable
+currency to the consumer whenever an amount is being displayed or whenever the consumer is prompted to enter an amount.</p>
+
+<p><p></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSInteger)currency</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>A 3-digit numeric currency code, as defined by [ISO 4217].</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMEmvTransactionInfo.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/merchantInformationLanguageTemplate" title="merchantInformationLanguageTemplate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/merchantInformationLanguageTemplate">&ndash;&nbsp;merchantInformationLanguageTemplate</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Indicates language Preference and Merchant Name—Alternate Language.
+It may contain the Merchant City—Alternate Language.</p>
+
+<p><p>
+All other IDs within the Merchant Information—Language Template are RFU for EMVCo.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (EMEmvOptional&lt;id&lt;EMEmvMerchantInformationLanguageTemplate&gt; &gt; *)merchantInformationLanguageTemplate</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Returns {@link EMEmvMerchantInformationLanguageTemplate} object in {@link EMEmvOptional}.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMEmvTransactionInfo.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/tipOrConvenienceIndicator" title="tipOrConvenienceIndicator"></a>
+	<h3 class="method-title"><code><a href="#//api/name/tipOrConvenienceIndicator">&ndash;&nbsp;tipOrConvenienceIndicator</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Indicates whether the consumer will be prompted to enter a tip or whether the merchant has determined that a flat, or percentage
+convenience fee is charged.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (EMEmvTipOrConvenienceIndicator)tipOrConvenienceIndicator</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Returns {@link EMEmvTipOrConvenienceIndicator}.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMEmvTransactionInfo.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/tipOrConvenienceValue" title="tipOrConvenienceValue"></a>
+	<h3 class="method-title"><code><a href="#//api/name/tipOrConvenienceValue">&ndash;&nbsp;tipOrConvenienceValue</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Provides value of tip.</p>
+
+<p><p>
+This parameter is optional.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (EMEmvOptional&lt;NSNumber*&gt; *)tipOrConvenienceValue</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Returns Tip or Convenience value as {@link NSNumber}.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMEmvTransactionInfo.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/additionalDataFieldTemplate" title="additionalDataFieldTemplate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/additionalDataFieldTemplate">&ndash;&nbsp;additionalDataFieldTemplate</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Indicates optional parameters as additional data, that could be present in transaction object.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (EMEmvOptional&lt;id&lt;EMEmvAdditionalDataFieldTemplate&gt; &gt; *)additionalDataFieldTemplate</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Returns {@link EMEmvAdditionalDataFieldTemplate} object in {@link EMEmvOptional}.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMEmvTransactionInfo.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/emvRfuDataObjects" title="emvRfuDataObjects"></a>
+	<h3 class="method-title"><code><a href="#//api/name/emvRfuDataObjects">&ndash;&nbsp;emvRfuDataObjects</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Indicates data reserved for future use.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSArray&lt;id&lt;EMEmvDataObject&gt; &gt; *)emvRfuDataObjects</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Returns list of {@link EMEmvPrimitive} data objects reserved for future use of EMV or empty list of none are in the QR code.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMEmvTransactionInfo.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/unreservedTemplates" title="unreservedTemplates"></a>
+	<h3 class="method-title"><code><a href="#//api/name/unreservedTemplates">&ndash;&nbsp;unreservedTemplates</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Provides list of unreserved templates.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSArray&lt;id&lt;EMEmvTemplateWithGui&gt; &gt; *)unreservedTemplates</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Returns list of {@link EMEmvTemplateWithGui} data objects that are unreserved or empty list of none are in the QR code.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMEmvTransactionInfo.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2019 Gemalto. All rights reserved. Updated: 2019-04-11</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

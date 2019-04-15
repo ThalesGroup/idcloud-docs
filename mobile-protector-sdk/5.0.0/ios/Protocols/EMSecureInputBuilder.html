@@ -1,0 +1,1913 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>EMSecureInputBuilder Protocol Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">EzioMobileSdk </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Gemalto</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/buildWithScrambling:doublePin:onFinishBlock:">- buildWithScrambling:doublePin:onFinishBlock:</option>
+		
+		<option value="//api/name/setAutomaticEnabledOk:">- setAutomaticEnabledOk:</option>
+		
+		<option value="//api/name/setAutomaticOk:">- setAutomaticOk:</option>
+		
+		<option value="//api/name/setButtonCharacterColorDisabled:">- setButtonCharacterColorDisabled:</option>
+		
+		<option value="//api/name/setButtonCharacterColorNormal:">- setButtonCharacterColorNormal:</option>
+		
+		<option value="//api/name/setButtonCharacterColorSelected:">- setButtonCharacterColorSelected:</option>
+		
+		<option value="//api/name/setButtonGradientDisabledEnd:">- setButtonGradientDisabledEnd:</option>
+		
+		<option value="//api/name/setButtonGradientDisabledStart:">- setButtonGradientDisabledStart:</option>
+		
+		<option value="//api/name/setButtonGradientNormalEnd:">- setButtonGradientNormalEnd:</option>
+		
+		<option value="//api/name/setButtonGradientNormalStart:">- setButtonGradientNormalStart:</option>
+		
+		<option value="//api/name/setButtonGradientSelectedEnd:">- setButtonGradientSelectedEnd:</option>
+		
+		<option value="//api/name/setButtonGradientSelectedStart:">- setButtonGradientSelectedStart:</option>
+		
+		<option value="//api/name/setButtonSpacing:">- setButtonSpacing:</option>
+		
+		<option value="//api/name/setCharacterArray:">- setCharacterArray:</option>
+		
+		<option value="//api/name/setEncoding:">- setEncoding:</option>
+		
+		<option value="//api/name/setLabelTextColor:">- setLabelTextColor:</option>
+		
+		<option value="//api/name/setMaximumInputLength:">- setMaximumInputLength:</option>
+		
+		<option value="//api/name/setMinimumInputLength:">- setMinimumInputLength:</option>
+		
+		<option value="//api/name/setNumberOfColumns:">- setNumberOfColumns:</option>
+		
+		<option value="//api/name/setNumberOfRows:">- setNumberOfRows:</option>
+		
+		<option value="//api/name/setScreenBackgroundColor:">- setScreenBackgroundColor:</option>
+		
+		<option value="//api/name/setSecondTextLabel:">- setSecondTextLabel:</option>
+		
+		<option value="//api/name/setTextBoxBorderFocussedColor:">- setTextBoxBorderFocussedColor:</option>
+		
+		<option value="//api/name/setTextBoxBorderUnFocussedColor:">- setTextBoxBorderUnFocussedColor:</option>
+		
+		<option value="//api/name/setTextLabel:">- setTextLabel:</option>
+		
+		<option value="//api/name/setVisibleButtonPress:">- setVisibleButtonPress:</option>
+		
+		<option value="//api/name/wipe">- wipe</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">EMSecureInputBuilder Protocol Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Conforms to</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>EMSecureInputBuilder.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>The input builder class that enables to build a secure pinpad and keypad. <p>
+The secure pinpad/keypad does not use any native UIKit keypad but rather draws a custom the UI on the view itself. The use of <code>NSString</code> is limited to minimum to make sure pinpad and keypad has total control of wiping sensitive data after it is used. <p></p><div class="warning"><p><strong>Warning:</strong> DEPRECATED!!!</p></div>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/buildWithScrambling:doublePin:onFinishBlock:" title="buildWithScrambling:doublePin:onFinishBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/buildWithScrambling:doublePin:onFinishBlock:">&ndash;&nbsp;buildWithScrambling:doublePin:onFinishBlock:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates a Secure Pinpad UIViewController. <p></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (UIViewController *)buildWithScrambling:(BOOL)<em>isScrambling</em> doublePin:(BOOL)<em>isDoublePin</em> onFinishBlock:(EMSecurePinpadOnFinish)<em>pinEnteredBlock</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isScrambling</code></th>
+						<td><p>Indicates if the pinpad would have a scrambled key locations. The scrambling is completely random and different for each time the pinpad is shown.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isDoublePin</code></th>
+						<td><p>Indicates if the pinpad would have two text fields to enter the pin. This is useful in case of using the pinpad for a new password and its confirmation. It&rsquo;s important to be aware that the pinpad itself will NOT perform any comparison of the two pins. The application developer can use method <a href="../Protocols/EMSecureContainer.html#//api/name/isEqual:">[EMSecureContainer isEqual:]</a> for an equality confirmation.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>pinEnteredBlock</code></th>
+						<td><p>Callback block upon the OK button hit on the pinpad.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>UIViewController that holds the pinpad. This can be fed into a navigation controller or presented as a modal view controller in the current view.</p>
+			</div>
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>2.5</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> DEPRECATED!!!</p></div><div class="warning"><p><strong>Warning:</strong> This method should be called once all the necessary configurations have been done. Note that the default configuration shall be applied for attributes that have not been set to custom values.</p></div>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Constants/EMSecureInputBuilder.html">EMSecureInputBuilder</a> for the default configurations of the pinpad.</p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMSecureInputBuilder.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setEncoding:" title="setEncoding:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setEncoding:">&ndash;&nbsp;setEncoding:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets the encoding to use when creating the <a href="../Protocols/EMPinAuthInput.html">EMPinAuthInput</a> object from the text-based pin. <p/></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setEncoding:(NSStringEncoding)<em>encoding</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>encoding</code></th>
+						<td><p>The encoding method to use when generating byte array from the character password.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>2.5</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> DEPRECATED!!!</p></div><div class="warning"><p><strong>Warning:</strong> This method is especially dedicated for existing applications that are currently using their own keypad and would like to use EZIO keypad in replacement. For those applications, the <a href="../Protocols/EMPinAuthInput.html">EMPinAuthInput</a> used to be generated from a NSString object given an encoding method. So, the application developers need to make sure to use the same (or compatible) encoding method to allow the generated bytes are correct.</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMSecureInputBuilder.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/wipe" title="wipe"></a>
+	<h3 class="method-title"><code><a href="#//api/name/wipe">&ndash;&nbsp;wipe</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Wipes all the sensitive data of the pinpad builder. The method would also be automatically triggered upon the release of this object on the autorelease pool of the current thread.</p>
+
+<p><p/>
+It&rsquo;s recommended to call this method at the end of the callback block <a href="../Blocks/EMSecurePinpadOnFinish.html"><code>EMSecurePinpadOnFinish</code></a>. See definition of <a href="../Blocks/EMSecurePinpadOnFinish.html"><code>EMSecurePinpadOnFinish</code></a> above. <br>
+<b>Note:</b> Other non-sensitive configuration such as color setting and text-label setting won&rsquo;t be reset in this function.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)wipe</code></div>
+
+		    
+			
+
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>2.5</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> DEPRECATED!!!</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMSecureInputBuilder.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setCharacterArray:" title="setCharacterArray:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setCharacterArray:">&ndash;&nbsp;setCharacterArray:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets the character array, extracted from the passed-by string of characters.
+<b>IMPORTANT</b>: At present, only Alphanumeric characters (0 -> 9, A -> Z and a->z) are supported. Passing in any other characters would cause an NSException.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setCharacterArray:(NSString *)<em>charArr</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>charArr</code></th>
+						<td><p>String of character array to be used to display on the pinpad.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>2.5</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> DEPRECATED!!!</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMSecureInputBuilder.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setNumberOfRows:" title="setNumberOfRows:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setNumberOfRows:">&ndash;&nbsp;setNumberOfRows:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets the preferred number of rows. The on-display number of rows depend on the number of characters in the character array and some other configurations. Refer to Programmer&rsquo;s Guide for the accepted range of values.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setNumberOfRows:(int)<em>numOfRows</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>numOfRows</code></th>
+						<td><p>Preferred number of rows to display.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>2.5</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> DEPRECATED!!!</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMSecureInputBuilder.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setNumberOfColumns:" title="setNumberOfColumns:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setNumberOfColumns:">&ndash;&nbsp;setNumberOfColumns:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets the preferred number of columns. The on-display number of columns depend on the number of characters in the character array and some other configurations. Refer to Programmer&rsquo;s Guide for the accepted range of values.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setNumberOfColumns:(int)<em>numOfCols</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>numOfCols</code></th>
+						<td><p>Preferred number of columns to display.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>2.5</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> DEPRECATED!!!</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMSecureInputBuilder.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setMinimumInputLength:" title="setMinimumInputLength:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setMinimumInputLength:">&ndash;&nbsp;setMinimumInputLength:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Setes the minimum input length. Refer to Programmer&rsquo;s Guide for the accepted range of values.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setMinimumInputLength:(int)<em>minLen</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>minLen</code></th>
+						<td><p>The pinpad would make sure the user has entered at least minLen characters before he/she can hit OK.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>2.5</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> DEPRECATED!!!</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMSecureInputBuilder.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setMaximumInputLength:" title="setMaximumInputLength:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setMaximumInputLength:">&ndash;&nbsp;setMaximumInputLength:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets the maximum input length. Refer to Programmer&rsquo;s Guide for the accepted range of values.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setMaximumInputLength:(int)<em>maxLen</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>maxLen</code></th>
+						<td><p>The pinpad would make sure the user cannot enter more than maxLen number of characters.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>2.5</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> DEPRECATED!!!</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMSecureInputBuilder.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setTextLabel:" title="setTextLabel:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setTextLabel:">&ndash;&nbsp;setTextLabel:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets the pin&rsquo;s text label.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setTextLabel:(NSString *)<em>text</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>text</code></th>
+						<td><p>Text string to be set. There is no specific check on the length of the text, but the text field stretches across the width of the screen.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>2.5</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> DEPRECATED!!!</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMSecureInputBuilder.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setSecondTextLabel:" title="setSecondTextLabel:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setSecondTextLabel:">&ndash;&nbsp;setSecondTextLabel:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets the second pin input&rsquo;s text label.<p>
+This attribute is useful only in double-password mode where there are two input fields to enter the pins.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setSecondTextLabel:(NSString *)<em>text</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>text</code></th>
+						<td><p>Text string to be set. There is no specific check on the length of the text, but the text field stretches across the width of the screen.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>2.5</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> DEPRECATED!!!</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMSecureInputBuilder.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setLabelTextColor:" title="setLabelTextColor:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setLabelTextColor:">&ndash;&nbsp;setLabelTextColor:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets the pin&rsquo;s text label&rsquo;s color. This value is used for both first and second pin input labels.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setLabelTextColor:(UIColor *)<em>color</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>color</code></th>
+						<td><p>Color to set for the pin&rsquo;s text labels.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>2.5</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> DEPRECATED!!!</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMSecureInputBuilder.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setButtonSpacing:" title="setButtonSpacing:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setButtonSpacing:">&ndash;&nbsp;setButtonSpacing:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets the spacing between the keys on the screen. Refer to Programmer&rsquo;s Guide for the accepted range of values.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setButtonSpacing:(int)<em>buttonSpacing</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>buttonSpacing</code></th>
+						<td><p>The distance between the keys in terms of pixels.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>2.5</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> DEPRECATED!!!</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMSecureInputBuilder.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setScreenBackgroundColor:" title="setScreenBackgroundColor:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setScreenBackgroundColor:">&ndash;&nbsp;setScreenBackgroundColor:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets the background color of the pinpad&rsquo;s screen.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setScreenBackgroundColor:(UIColor *)<em>backgroundColor</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>backgroundColor</code></th>
+						<td><p>Color to set for the background.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>2.5</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> DEPRECATED!!!</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMSecureInputBuilder.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setButtonCharacterColorNormal:" title="setButtonCharacterColorNormal:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setButtonCharacterColorNormal:">&ndash;&nbsp;setButtonCharacterColorNormal:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets the key&rsquo;s character color when it&rsquo;s being displayed (normal condition).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setButtonCharacterColorNormal:(UIColor *)<em>color</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>color</code></th>
+						<td><p>Color to set for the key&rsquo;s character in normal condition.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>2.5</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> DEPRECATED!!!</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMSecureInputBuilder.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setButtonCharacterColorSelected:" title="setButtonCharacterColorSelected:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setButtonCharacterColorSelected:">&ndash;&nbsp;setButtonCharacterColorSelected:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets the key&rsquo;s character color when it&rsquo;s tapped (selected condition).<p></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setButtonCharacterColorSelected:(UIColor *)<em>color</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>color</code></th>
+						<td><p>Color to set for the key&rsquo;s character in selected condition.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>2.5</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> DEPRECATED!!!</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMSecureInputBuilder.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setButtonCharacterColorDisabled:" title="setButtonCharacterColorDisabled:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setButtonCharacterColorDisabled:">&ndash;&nbsp;setButtonCharacterColorDisabled:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets the key&rsquo;s character color when it&rsquo;s disabled (disabled condition). This color is typically used for function keys such as Ok or Delete buttons.<p></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setButtonCharacterColorDisabled:(UIColor *)<em>color</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>color</code></th>
+						<td><p>Color to set for the key&rsquo;s character in disabled condition.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>2.5</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> DEPRECATED!!!</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMSecureInputBuilder.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setButtonGradientNormalStart:" title="setButtonGradientNormalStart:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setButtonGradientNormalStart:">&ndash;&nbsp;setButtonGradientNormalStart:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets the key&rsquo;s background gradient starting color when it&rsquo;s being displayed (normal condition).<p></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setButtonGradientNormalStart:(UIColor *)<em>color</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>color</code></th>
+						<td><p>Color to set for the key&rsquo;s background gradient start in normal condition.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>2.5</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> DEPRECATED!!!</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMSecureInputBuilder.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setButtonGradientNormalEnd:" title="setButtonGradientNormalEnd:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setButtonGradientNormalEnd:">&ndash;&nbsp;setButtonGradientNormalEnd:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets the key&rsquo;s background gradient ending color when it&rsquo;s being displayed (normal condition).<p></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setButtonGradientNormalEnd:(UIColor *)<em>color</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>color</code></th>
+						<td><p>Color to set for the key&rsquo;s background gradient end in normal condition.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>2.5</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> DEPRECATED!!!</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMSecureInputBuilder.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setButtonGradientSelectedStart:" title="setButtonGradientSelectedStart:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setButtonGradientSelectedStart:">&ndash;&nbsp;setButtonGradientSelectedStart:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets the key&rsquo;s background gradient starting color when it&rsquo;s tapped (selected condition).<p></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setButtonGradientSelectedStart:(UIColor *)<em>color</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>color</code></th>
+						<td><p>Color to set for the key&rsquo;s background gradient start in selected condition.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>2.5</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> DEPRECATED!!!</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMSecureInputBuilder.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setButtonGradientSelectedEnd:" title="setButtonGradientSelectedEnd:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setButtonGradientSelectedEnd:">&ndash;&nbsp;setButtonGradientSelectedEnd:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets the key&rsquo;s background gradient ending color when it&rsquo;s tapped (selected condition).<p></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setButtonGradientSelectedEnd:(UIColor *)<em>color</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>color</code></th>
+						<td><p>Color to set for the key&rsquo;s background gradient end in selected condition.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>2.5</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> DEPRECATED!!!</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMSecureInputBuilder.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setButtonGradientDisabledStart:" title="setButtonGradientDisabledStart:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setButtonGradientDisabledStart:">&ndash;&nbsp;setButtonGradientDisabledStart:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets the key&rsquo;s background gradient starting color when it&rsquo;s disabled (disabled condition). This color is typically used for function keys such as Ok or Delete buttons.<p></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setButtonGradientDisabledStart:(UIColor *)<em>color</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>color</code></th>
+						<td><p>Color to set for the key&rsquo;s background gradient start in disabled condition.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>2.5</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> DEPRECATED!!!</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMSecureInputBuilder.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setButtonGradientDisabledEnd:" title="setButtonGradientDisabledEnd:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setButtonGradientDisabledEnd:">&ndash;&nbsp;setButtonGradientDisabledEnd:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets the key&rsquo;s background gradient ending color when it&rsquo;s disabled (disabled condition). This color is typically used for function keys such as Ok or Delete buttons.<p></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setButtonGradientDisabledEnd:(UIColor *)<em>color</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>color</code></th>
+						<td><p>Color to set for the key&rsquo;s background gradient end in disabled condition.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>2.5</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> DEPRECATED!!!</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMSecureInputBuilder.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setTextBoxBorderUnFocussedColor:" title="setTextBoxBorderUnFocussedColor:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setTextBoxBorderUnFocussedColor:">&ndash;&nbsp;setTextBoxBorderUnFocussedColor:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets the key&rsquo;s text border color when it&rsquo;s unfocussed (unselected condition).<p></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setTextBoxBorderUnFocussedColor:(UIColor *)<em>color</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>color</code></th>
+						<td><p>Color to set key&rsquo;s text border color when it&rsquo;s unfocussed.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>2.6</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> DEPRECATED!!!</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMSecureInputBuilder.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setTextBoxBorderFocussedColor:" title="setTextBoxBorderFocussedColor:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setTextBoxBorderFocussedColor:">&ndash;&nbsp;setTextBoxBorderFocussedColor:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets the key&rsquo;s text border color when it&rsquo;s focussed (selected condition).<p></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setTextBoxBorderFocussedColor:(UIColor *)<em>color</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>color</code></th>
+						<td><p>Color to set key&rsquo;s text border color when it&rsquo;s focussed.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>2.6</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> DEPRECATED!!!</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMSecureInputBuilder.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setVisibleButtonPress:" title="setVisibleButtonPress:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setVisibleButtonPress:">&ndash;&nbsp;setVisibleButtonPress:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets the if the button would be highlighted upon pressed.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setVisibleButtonPress:(BOOL)<em>isVisible</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isVisible</code></th>
+						<td><p><code>YES</code> to highlight the button upon pressed, <code>NO</code> otherwise.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> DEPRECATED!!!</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMSecureInputBuilder.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setAutomaticEnabledOk:" title="setAutomaticEnabledOk:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setAutomaticEnabledOk:">&ndash;&nbsp;setAutomaticEnabledOk:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Enable this attribute to have the effect that the OK button is only enabled when minimum number of characters have been entered by the user.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setAutomaticEnabledOk:(BOOL)<em>autoEnabled</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>autoEnabled</code></th>
+						<td><p><code>YES</code> to indicate the OK button shall be disabled and enabled automatically by the library according to the number of characters input by user. <code>NO</code> to indicate the OK button shall always be enabled.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>2.5</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> DEPRECATED!!!</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMSecureInputBuilder.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setAutomaticOk:" title="setAutomaticOk:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setAutomaticOk:">&ndash;&nbsp;setAutomaticOk:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Allows to automatically call OK button clicked event.</p>
+
+<p>When set on, the library would trigger the Ok button clicked automatically when the following conditions have been met:
+- The minimum and maximum input length are configured to be the same (see <a href="#//api/name/setMinimumInputLength:">setMinimumInputLength:</a> and <a href="#//api/name/setMaximumInputLength:">setMaximumInputLength:</a>).
+- User has entered up to the maximum number of characters needed.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setAutomaticOk:(BOOL)<em>autoTriggered</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>autoTriggered</code></th>
+						<td><p><code>YES</code> to enable the OK button to be triggered when the conditions are met. <code>NO</code> to disable this behavior.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>2.5</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> DEPRECATED!!!</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMSecureInputBuilder.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2019 Gemalto. All rights reserved. Updated: 2019-04-11</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

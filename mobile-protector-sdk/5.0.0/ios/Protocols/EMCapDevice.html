@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>EMCapDevice Protocol Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">EzioMobileSdk </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Gemalto</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/isMode1AmountRequired">- isMode1AmountRequired</option>
+		
+		<option value="//api/name/isMode1CurrencyRequired">- isMode1CurrencyRequired</option>
+		
+		<option value="//api/name/otpMode1WithAuthInput:challenge:amount:currencyCode:error:">- otpMode1WithAuthInput:challenge:amount:currencyCode:error:</option>
+		
+		<option value="//api/name/otpMode2TdsWithAuthInput:dataToSign:error:">- otpMode2TdsWithAuthInput:dataToSign:error:</option>
+		
+		<option value="//api/name/otpMode2WithAuthInput:error:">- otpMode2WithAuthInput:error:</option>
+		
+		<option value="//api/name/otpMode3WithAuthInput:challenge:error:">- otpMode3WithAuthInput:challenge:error:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">EMCapDevice Protocol Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Conforms to</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>EMCapDevice.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>  A protocol defining a device that generates CAP based OTPs.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/isMode1AmountRequired" title="isMode1AmountRequired"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isMode1AmountRequired">&ndash;&nbsp;isMode1AmountRequired</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>  Checks if amount is required for a mode 1 operation
+  (<a href="#//api/name/otpMode1WithAuthInput:challenge:amount:currencyCode:error:">otpMode1WithAuthInput:challenge:amount:currencyCode:error:</a>)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isMode1AmountRequired</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p><code>YES</code> if amount is required, <code>NO</code> otherwise.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMCapDevice.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isMode1CurrencyRequired" title="isMode1CurrencyRequired"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isMode1CurrencyRequired">&ndash;&nbsp;isMode1CurrencyRequired</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>  Checks if currency is required for a mode 1 operation
+  (<a href="#//api/name/otpMode1WithAuthInput:challenge:amount:currencyCode:error:">otpMode1WithAuthInput:challenge:amount:currencyCode:error:</a>)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isMode1CurrencyRequired</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p><code>YES</code> if currency is required, <code>NO</code> otherwise.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMCapDevice.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/otpMode1WithAuthInput:challenge:amount:currencyCode:error:" title="otpMode1WithAuthInput:challenge:amount:currencyCode:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/otpMode1WithAuthInput:challenge:amount:currencyCode:error:">&ndash;&nbsp;otpMode1WithAuthInput:challenge:amount:currencyCode:error:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates a mode 1 OTP.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;EMSecureString&gt;)otpMode1WithAuthInput:(id&lt;EMAuthInput&gt;)<em>authInput</em> challenge:(id&lt;EMSecureString&gt;)<em>challenge</em> amount:(id&lt;EMSecureString&gt;)<em>amount</em> currencyCode:(NSString *)<em>currencyCode</em> error:(NSError **)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>authInput</code></th>
+						<td><p>The authInput.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>challenge</code></th>
+						<td><p>The merchant challenge: An unpredictable number of up to 8 hexdecimal digits.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>amount</code></th>
+						<td><p>The amount of the transaction. This value should only contain digits and cannot be <code>nil</code>, empty string is a valid input.
+Minimum digit length is 0 and maximum is 12.
+The SDK takes the original value of the amount, there will be no truncate, rounding off or append. This feature should be done by the application.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>currencyCode</code></th>
+						<td><p>The currency as an ISO 4217 currency code, for example &ldquo;USD&rdquo;.
+for United States Dollar. This value cannot be <code>nil</code>, empty string is a valid input.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>If an error occurs, upon return contains an NSError object that describes the problem. If you are not interested in possible errors, you may pass in <code>NULL</code>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The mode 1 OTP.</p>
+			</div>
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>3.2</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The typical use case of this OTP is for purchasing items from a merchant.</p><div class="warning"><p><strong>Warning:</strong> Use this method only after upgrading to multi-authentication mode.</p></div><div class="warning"><p><strong>Warning:</strong> Depending of the <a href="../Protocols/EMAuthInput.html">EMAuthInput</a> type you are using, you may have to use this function asynchronously, please see <a href="../Protocols/EMAuthInput.html">EMAuthInput</a> for more details</p></div>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Protocols/EMToken.html#//api/name/upgradeToMultiAuthMode:error:">[EMToken upgradeToMultiAuthMode:error:]</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMCapDevice.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/otpMode2WithAuthInput:error:" title="otpMode2WithAuthInput:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/otpMode2WithAuthInput:error:">&ndash;&nbsp;otpMode2WithAuthInput:error:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates a mode 2 OTP.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;EMSecureString&gt;)otpMode2WithAuthInput:(id&lt;EMAuthInput&gt;)<em>authInput</em> error:(NSError **)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>authInput</code></th>
+						<td><p>The authInput.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>If an error occurs, upon return contains an NSError object that describes the problem. If you are not interested in possible errors, you may pass in <code>NULL</code>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The mode 2 OTP.</p>
+			</div>
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>3.2</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The typical use case of this mode is for simple authentication.</p><div class="warning"><p><strong>Warning:</strong> Use this method only after upgrading to multi-authentication mode.</p></div><div class="warning"><p><strong>Warning:</strong> Depending of the <a href="../Protocols/EMAuthInput.html">EMAuthInput</a> type you are using, you may have to use this function asynchronously, please see <a href="../Protocols/EMAuthInput.html">EMAuthInput</a> for more details</p></div>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Protocols/EMToken.html#//api/name/upgradeToMultiAuthMode:error:">[EMToken upgradeToMultiAuthMode:error:]</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMCapDevice.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/otpMode2TdsWithAuthInput:dataToSign:error:" title="otpMode2TdsWithAuthInput:dataToSign:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/otpMode2TdsWithAuthInput:dataToSign:error:">&ndash;&nbsp;otpMode2TdsWithAuthInput:dataToSign:error:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates a mode 2 transaction data signature OTP.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;EMSecureString&gt;)otpMode2TdsWithAuthInput:(id&lt;EMAuthInput&gt;)<em>authInput</em> dataToSign:(NSArray *)<em>dataToSign</em> error:(NSError **)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>authInput</code></th>
+						<td><p>The authInput.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>dataToSign</code></th>
+						<td><p>The data to sign (as an array of <a href="../Protocols/EMSecureString.html">EMSecureString</a> instances).
+Data should only contain digits, maximum 10 digit per data and maximum 10
+data fields in the list. Don&rsquo;t pass empty data, at least one non-empty data is required.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>If an error occurs, upon return contains an NSError object that describes the problem. If you are not interested in possible errors, you may pass in <code>NULL</code>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The mode 2 TDS OTP.</p>
+			</div>
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>3.2</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The typical use case of this mode is for signing a set of transaction data.
+One such example is to sign the destination bank account in a transaction.</p><div class="warning"><p><strong>Warning:</strong> Use this method only after upgrading to multi-authentication mode.</p></div><div class="warning"><p><strong>Warning:</strong> Depending of the <a href="../Protocols/EMAuthInput.html">EMAuthInput</a> type you are using, you may have to use this function asynchronously, please see <a href="../Protocols/EMAuthInput.html">EMAuthInput</a> for more details</p></div>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Protocols/EMToken.html#//api/name/upgradeToMultiAuthMode:error:">[EMToken upgradeToMultiAuthMode:error:]</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMCapDevice.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/otpMode3WithAuthInput:challenge:error:" title="otpMode3WithAuthInput:challenge:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/otpMode3WithAuthInput:challenge:error:">&ndash;&nbsp;otpMode3WithAuthInput:challenge:error:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates a Mode3 OTP.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;EMSecureString&gt;)otpMode3WithAuthInput:(id&lt;EMAuthInput&gt;)<em>authInput</em> challenge:(id&lt;EMSecureString&gt;)<em>challenge</em> error:(NSError **)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>authInput</code></th>
+						<td><p>The authInput.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>challenge</code></th>
+						<td><p>The login challenge: An unpredictable number of up to 8 hexdecimal digits.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>If an error occurs, upon return contains an NSError object that describes the problem. If you are not interested in possible errors, you may pass in <code>NULL</code>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The mode 3 OTP.</p>
+			</div>
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>3.2</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The typical use case of this mode is for challenge/response.
+One such example is to log into a bank&rsquo;s website.</p><div class="warning"><p><strong>Warning:</strong> Use this method only after upgrading to multi-authentication mode.</p></div><div class="warning"><p><strong>Warning:</strong> Depending of the <a href="../Protocols/EMAuthInput.html">EMAuthInput</a> type you are using, you may have to use this function asynchronously, please see <a href="../Protocols/EMAuthInput.html">EMAuthInput</a> for more details</p></div>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Protocols/EMToken.html#//api/name/upgradeToMultiAuthMode:error:">[EMToken upgradeToMultiAuthMode:error:]</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMCapDevice.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2019 Gemalto. All rights reserved. Updated: 2019-04-11</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
