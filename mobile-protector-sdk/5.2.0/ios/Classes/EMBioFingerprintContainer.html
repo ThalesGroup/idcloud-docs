@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>EMBioFingerprintContainer Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">EzioMobileSdk </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Gemalto</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/containerWithBioFingerprintAuthService:">+ containerWithBioFingerprintAuthService:</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/authenticateUser:withMessage:error:">- authenticateUser:withMessage:error:</option>
+		
+		<option value="//api/name/authenticateUser:withMessage:fallbackTitle:completionHandler:">- authenticateUser:withMessage:fallbackTitle:completionHandler:</option>
+		
+		<option value="//api/name/authenticateUserV2:withMessage:fallbackTitle:completionHandler:">- authenticateUserV2:withMessage:fallbackTitle:completionHandler:</option>
+		
+		<option value="//api/name/cancelAuthentication">- cancelAuthentication</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">EMBioFingerprintContainer Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>EMBioFingerprintContainer.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>The biometric fingerprint authentication container.</p><div class="warning"><p><strong>Warning:</strong> Do not subclass this interface.</p></div><div class="warning"><p><strong>Warning:</strong> This API is deprecated since 4.6, it is replaced with <a href="../Classes/EMSystemBioFingerprintContainer.html">EMSystemBioFingerprintContainer</a></p></div>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/containerWithBioFingerprintAuthService:" title="containerWithBioFingerprintAuthService:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/containerWithBioFingerprintAuthService:">+&nbsp;containerWithBioFingerprintAuthService:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Designated constructor.
+Returns the EMBioFingerprintContainer object created using the <a href="../Classes/EMBioFingerprintAuthService.html">EMBioFingerprintAuthService</a></p>
+
+<p><p></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (EMBioFingerprintContainer *)containerWithBioFingerprintAuthService:(EMBioFingerprintAuthService *)<em>service</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>service</code></th>
+						<td><p>the instance of <a href="../Classes/EMBioFingerprintAuthService.html">EMBioFingerprintAuthService</a></p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>instance of this class</p>
+			</div>
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>4.0</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMBioFingerprintContainer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/authenticateUser:withMessage:error:" title="authenticateUser:withMessage:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/authenticateUser:withMessage:error:">&ndash;&nbsp;authenticateUser:withMessage:error:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Authenticate user by Touch ID, returns an <a href="../Protocols/EMBioFingerprintAuthInput.html">EMBioFingerprintAuthInput</a> object upon success, that can be used to generate OTPs.</p>
+
+<p><p></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;EMBioFingerprintAuthInput&gt;)authenticateUser:(id&lt;EMAuthenticatable&gt;)<em>authenticatable</em> withMessage:(NSString *)<em>localizedMessage</em> error:(NSError **)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>authenticatable</code></th>
+						<td><p>the target authenticatable item (e.g. CapToken)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>localizedMessage</code></th>
+						<td><p>the message that will be displayed on Touch ID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>If an error occurs, upon return contains an NSError object that describes the problem. If you are not interested in possible errors, you may pass in <code>NULL</code>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>instance of this class</p>
+			</div>
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>4.0</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMBioFingerprintContainer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/authenticateUser:withMessage:fallbackTitle:completionHandler:" title="authenticateUser:withMessage:fallbackTitle:completionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/authenticateUser:withMessage:fallbackTitle:completionHandler:">&ndash;&nbsp;authenticateUser:withMessage:fallbackTitle:completionHandler:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Authenticate user by Touch ID with PIN fallback feature. By using this API, the application could customize the action upon error cases. The completion handler will return an <a href="../Protocols/EMBioFingerprintAuthInput.html">EMBioFingerprintAuthInput</a> object upon success, that can be used to generate OTPs.</p>
+
+<p><p></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)authenticateUser:(id&lt;EMAuthenticatable&gt;)<em>authenticatable</em> withMessage:(NSString *)<em>localizedMessage</em> fallbackTitle:(NSString *)<em>fallbackTitle</em> completionHandler:(void ( ^ ) ( id&lt;EMBioFingerprintAuthInput&gt; bioFpAuthInput , NSError *error ))<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>authenticatable</code></th>
+						<td><p>the target authenticatable item (e.g. CapToken)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>localizedMessage</code></th>
+						<td><p>the message that will be displayed on Touch ID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fallbackTitle</code></th>
+						<td><p>the fallback title. If set to empty string, the button will be hidden.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>completion handler to be called with the result once it&rsquo;s completed. [error code] will contain EM_STATUS_AUTHENTICATION_CANCELED_USER_FALLBACK if user tapped the fallback button.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>4.1</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> PIN fallback feature only works on iOS9.0+. [error code] will contains EM_STATUS_AUTHENTICATION_USER_FALLBACK_IS_NOT_SUPPORTED if the application run it on unsupported OS.</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMBioFingerprintContainer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/authenticateUserV2:withMessage:fallbackTitle:completionHandler:" title="authenticateUserV2:withMessage:fallbackTitle:completionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/authenticateUserV2:withMessage:fallbackTitle:completionHandler:">&ndash;&nbsp;authenticateUserV2:withMessage:fallbackTitle:completionHandler:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Authenticate user by Touch ID with PIN fallback feature. By using this API, the application could customize the action upon error cases. The completion handler will return an <a href="../Protocols/EMBioFingerprintAuthInput.html">EMBioFingerprintAuthInput</a> object and Touch ID evaluatedPolicyDomainState upon success. The <a href="../Protocols/EMBioFingerprintAuthInput.html">EMBioFingerprintAuthInput</a> object can be used to generate OTPs.</p>
+
+<p><p></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)authenticateUserV2:(id&lt;EMAuthenticatable&gt;)<em>authenticatable</em> withMessage:(NSString *)<em>localizedMessage</em> fallbackTitle:(NSString *)<em>fallbackTitle</em> completionHandler:(void ( ^ ) ( id&lt;EMBioFingerprintAuthInput&gt; bioFpAuthInput , NSData *evaluatedPolicyDomainState , NSError *error ))<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>authenticatable</code></th>
+						<td><p>the target authenticatable item (e.g. CapToken)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>localizedMessage</code></th>
+						<td><p>the message that will be displayed on Touch ID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fallbackTitle</code></th>
+						<td><p>the fallback title. If set to empty string, the button will be hidden.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>completion handler to be called with the result once it&rsquo;s completed. Touch ID evaluatedPolicyDomainState data will be returned upon success. [error code] will contain EM_STATUS_AUTHENTICATION_CANCELED_USER_FALLBACK if user tapped the fallback button.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>4.1.1</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> PIN fallback feature only works on iOS9.0+. [error code] will contains EM_STATUS_AUTHENTICATION_USER_FALLBACK_IS_NOT_SUPPORTED if the application run it on unsupported OS.</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMBioFingerprintContainer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cancelAuthentication" title="cancelAuthentication"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cancelAuthentication">&ndash;&nbsp;cancelAuthentication</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Cancel biometric fingerprint authentication prompt.</p>
+
+<p><p></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cancelAuthentication</code></div>
+
+		    
+			
+
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>5.0</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMBioFingerprintContainer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2019 Gemalto. All rights reserved. Updated: 2019-08-15</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
