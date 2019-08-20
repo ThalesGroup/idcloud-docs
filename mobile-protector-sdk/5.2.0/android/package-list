@@ -39,4 +39,3 @@ com.gemalto.idp.mobile.qr.emv.transaction
 com.gemalto.idp.mobile.securestorage
 com.gemalto.idp.mobile.ui
 com.gemalto.idp.mobile.ui.secureinput
-util.securestorage.c
