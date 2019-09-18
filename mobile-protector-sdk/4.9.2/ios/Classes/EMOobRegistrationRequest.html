@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>EMOobRegistrationRequest Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">EzioMobileSdk </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Gemalto</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/notificationProfileItems">notificationProfileItems</option>
+		
+		<option value="//api/name/registrationMethod">registrationMethod</option>
+		
+		<option value="//api/name/registrationParameter">registrationParameter</option>
+		
+		<option value="//api/name/userAliasForClient">userAliasForClient</option>
+		
+		<option value="//api/name/userId">userId</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/initWithUserId:userAliasForClient:registrationMethod:registrationParameter:error:">- initWithUserId:userAliasForClient:registrationMethod:registrationParameter:error:</option>
+		
+		<option value="//api/name/initWithUserId:userAliasForClient:registrationMethod:registrationParameter:notificationProfileItems:error:">- initWithUserId:userAliasForClient:registrationMethod:registrationParameter:notificationProfileItems:error:</option>
+		
+		<option value="//api/name/wipe">- wipe</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">EMOobRegistrationRequest Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>EMOobRegistrationRequest.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>OOB registration request object.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/registrationMethod" title="registrationMethod"></a>
+	<h3 class="method-title"><code><a href="#//api/name/registrationMethod">&nbsp;&nbsp;registrationMethod</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns registration operation.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readonly) EMOobRegistrationMethod registrationMethod</code></div>
+
+		    
+			
+
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>3.0</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMOobRegistrationRequest.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/registrationParameter" title="registrationParameter"></a>
+	<h3 class="method-title"><code><a href="#//api/name/registrationParameter">&nbsp;&nbsp;registrationParameter</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the value of the registration code.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy, readonly) id&lt;EMSecureString&gt; registrationParameter</code></div>
+
+		    
+			
+
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>3.0</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMOobRegistrationRequest.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/userId" title="userId"></a>
+	<h3 class="method-title"><code><a href="#//api/name/userId">&nbsp;&nbsp;userId</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the user ID of the user who registers to the OOBS.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy, readonly) NSString *userId</code></div>
+
+		    
+			
+
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>3.0</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMOobRegistrationRequest.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/userAliasForClient" title="userAliasForClient"></a>
+	<h3 class="method-title"><code><a href="#//api/name/userAliasForClient">&nbsp;&nbsp;userAliasForClient</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the alias of the user who performs the registration.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy, readonly) NSString *userAliasForClient</code></div>
+
+		    
+			
+
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>3.0</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMOobRegistrationRequest.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/notificationProfileItems" title="notificationProfileItems"></a>
+	<h3 class="method-title"><code><a href="#//api/name/notificationProfileItems">&nbsp;&nbsp;notificationProfileItems</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns The list of notification profile.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy, readonly) NSArray *notificationProfileItems</code></div>
+
+		    
+			
+
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>3.0</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMOobRegistrationRequest.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initWithUserId:userAliasForClient:registrationMethod:registrationParameter:error:" title="initWithUserId:userAliasForClient:registrationMethod:registrationParameter:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithUserId:userAliasForClient:registrationMethod:registrationParameter:error:">&ndash;&nbsp;initWithUserId:userAliasForClient:registrationMethod:registrationParameter:error:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Constructs the OOB registration request object: Variant w/o any notification endpoints set.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id)initWithUserId:(NSString *)<em>aUserId</em> userAliasForClient:(NSString *)<em>aUserAliasForClient</em> registrationMethod:(EMOobRegistrationMethod)<em>aRegistrationMethod</em> registrationParameter:(id&lt;EMSecureString&gt;)<em>aRegistrationParameter</em> error:(NSError **)<em>anError</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aUserId</code></th>
+						<td><p>The ID of the user who registers to the OOBS.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aUserAliasForClient</code></th>
+						<td><p>The alias of the user who performs th registration.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aRegistrationMethod</code></th>
+						<td><p>The registration method to be used for the registration to the OOBS.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aRegistrationParameter</code></th>
+						<td><p>The registration parameter. Its meaning depends on the value of the registration method - see previous parameter.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>anError</code></th>
+						<td><p>If an error occurs, upon return contains an NSError object that describes the problem. If you are not interested in possible errors, you may pass in <code>NULL</code>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>3.0</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMOobRegistrationRequest.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initWithUserId:userAliasForClient:registrationMethod:registrationParameter:notificationProfileItems:error:" title="initWithUserId:userAliasForClient:registrationMethod:registrationParameter:notificationProfileItems:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithUserId:userAliasForClient:registrationMethod:registrationParameter:notificationProfileItems:error:">&ndash;&nbsp;initWithUserId:userAliasForClient:registrationMethod:registrationParameter:notificationProfileItems:error:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Constructs the OOB registration request object: Variant with the notification endpoints set.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id)initWithUserId:(NSString *)<em>aUserId</em> userAliasForClient:(NSString *)<em>aUserAliasForClient</em> registrationMethod:(EMOobRegistrationMethod)<em>aRegistrationMethod</em> registrationParameter:(id&lt;EMSecureString&gt;)<em>aRegistrationParameter</em> notificationProfileItems:(NSArray *)<em>aNotificationProfileItems</em> error:(NSError **)<em>anError</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aUserId</code></th>
+						<td><p>The ID of the user who registers to the OOBS.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aUserAliasForClient</code></th>
+						<td><p>The alias of the user who performs th registration.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aRegistrationMethod</code></th>
+						<td><p>The registration method to be used for the registration to the OOBS.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aRegistrationParameter</code></th>
+						<td><p>The registration parameter. Its meaning depends on the value of the registration method - see previous parameter.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aNotificationProfileItems</code></th>
+						<td><p>The notification endpoints to initially add to the currently being registered user.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>anError</code></th>
+						<td><p>If an error occurs, upon return contains an NSError object that describes the problem. If you are not interested in possible errors, you may pass in <code>NULL</code>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>3.0</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMOobRegistrationRequest.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/wipe" title="wipe"></a>
+	<h3 class="method-title"><code><a href="#//api/name/wipe">&ndash;&nbsp;wipe</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Used by the SDK to wipe any sensitive data managed by this object when it is no longer needed.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)wipe</code></div>
+
+		    
+			
+
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>3.0</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMOobRegistrationRequest.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2019 Gemalto. All rights reserved. Updated: 2019-05-03</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

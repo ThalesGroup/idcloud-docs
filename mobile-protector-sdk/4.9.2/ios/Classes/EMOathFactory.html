@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>EMOathFactory Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">EzioMobileSdk </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Gemalto</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/createGemaltoOathDeviceWithToken:error:">- createGemaltoOathDeviceWithToken:error:</option>
+		
+		<option value="//api/name/createSoftDcvOathDeviceWithToken:settings:error:">- createSoftDcvOathDeviceWithToken:settings:error:</option>
+		
+		<option value="//api/name/createSoftGemaltoOathDeviceWithToken:settings:error:">- createSoftGemaltoOathDeviceWithToken:settings:error:</option>
+		
+		<option value="//api/name/createSoftOathDeviceWithToken:settings:error:">- createSoftOathDeviceWithToken:settings:error:</option>
+		
+		<option value="//api/name/defaultSoftDcvOathSettings">- defaultSoftDcvOathSettings</option>
+		
+		<option value="//api/name/defaultSoftGemaltoOathSettings">- defaultSoftGemaltoOathSettings</option>
+		
+		<option value="//api/name/defaultSoftOathSettings">- defaultSoftOathSettings</option>
+		
+		<option value="//api/name/mutableSoftDcvOathSettings">- mutableSoftDcvOathSettings</option>
+		
+		<option value="//api/name/mutableSoftGemaltoOathSettings">- mutableSoftGemaltoOathSettings</option>
+		
+		<option value="//api/name/mutableSoftOathSettings">- mutableSoftOathSettings</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">EMOathFactory Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>EMOathFactory.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>A factory for creating objects that produce or affect OATH (or its relatives) OTPs.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						<a title="Create GemaltoOathDevice" name="task_Create GemaltoOathDevice"></a>
+						<h2 class="task-title">Create GemaltoOathDevice</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/createGemaltoOathDeviceWithToken:error:" title="createGemaltoOathDeviceWithToken:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createGemaltoOathDeviceWithToken:error:">&ndash;&nbsp;createGemaltoOathDeviceWithToken:error:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates a Gemalto OATH device with default settings returned from <a href="#//api/name/defaultSoftGemaltoOathSettings">[EMOathFactory defaultSoftGemaltoOathSettings]</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;EMGemaltoOathDevice&gt;)createGemaltoOathDeviceWithToken:(id&lt;EMOathToken&gt;)<em>token</em> error:(NSError **)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>token</code></th>
+						<td><p>The token.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>If an error occurs, upon return contains an NSError object that describes the problem. If you are not interested in possible errors, you may pass in <code>NULL</code>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>A Gemalto OATH device object.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection arguments-section exceptions">
+				<h4 class="method-subtitle exception-title">Exceptions</h4>
+				<table class="argument-def exception-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>NSInternalInconsistencyException</code></th>
+						<td><p>When the token suppports more than one key (e.g. a token with <code>EMTokenCapabilityDUAL_SEED</code>), and its key has not been selected. See <a href="../Constants/EMTokenCapability.html">EMTokenCapability</a>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMOathFactory.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createSoftGemaltoOathDeviceWithToken:settings:error:" title="createSoftGemaltoOathDeviceWithToken:settings:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createSoftGemaltoOathDeviceWithToken:settings:error:">&ndash;&nbsp;createSoftGemaltoOathDeviceWithToken:settings:error:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates a customized soft Gemalto OATH device.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;EMGemaltoOathDevice&gt;)createSoftGemaltoOathDeviceWithToken:(id&lt;EMSoftOathToken&gt;)<em>token</em> settings:(id&lt;EMSoftGemaltoOathSettings&gt;)<em>settings</em> error:(NSError **)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>token</code></th>
+						<td><p>The token.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>settings</code></th>
+						<td><p>The Gemalto OATH settings.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>If an error occurs, upon return contains an NSError object that describes the problem. If you are not interested in possible errors, you may pass in <code>NULL</code>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>A Gemalto OATH device.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection arguments-section exceptions">
+				<h4 class="method-subtitle exception-title">Exceptions</h4>
+				<table class="argument-def exception-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>NSInternalInconsistencyException</code></th>
+						<td><p>When the token suppports more than one key (e.g. a token with <code>EMTokenCapabilityDUAL_SEED</code>), and its key has not been selected. See <a href="../Constants/EMTokenCapability.html">EMTokenCapability</a>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMOathFactory.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/mutableSoftGemaltoOathSettings" title="mutableSoftGemaltoOathSettings"></a>
+	<h3 class="method-title"><code><a href="#//api/name/mutableSoftGemaltoOathSettings">&ndash;&nbsp;mutableSoftGemaltoOathSettings</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates a mutable Gemalto OATH settings.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;EMMutableSoftGemaltoOathSettings&gt;)mutableSoftGemaltoOathSettings</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>New mutable settings based on the default settings returned from <a href="#//api/name/defaultSoftGemaltoOathSettings">[EMOathFactory defaultSoftGemaltoOathSettings]</a>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMOathFactory.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/defaultSoftGemaltoOathSettings" title="defaultSoftGemaltoOathSettings"></a>
+	<h3 class="method-title"><code><a href="#//api/name/defaultSoftGemaltoOathSettings">&ndash;&nbsp;defaultSoftGemaltoOathSettings</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Gets the default settings for Gemalto OATH devices.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;EMSoftGemaltoOathSettings&gt;)defaultSoftGemaltoOathSettings</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The default settings.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMOathFactory.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Create OathDevice" name="task_Create OathDevice"></a>
+						<h2 class="task-title">Create OathDevice</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/createSoftOathDeviceWithToken:settings:error:" title="createSoftOathDeviceWithToken:settings:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createSoftOathDeviceWithToken:settings:error:">&ndash;&nbsp;createSoftOathDeviceWithToken:settings:error:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates a customized soft OATH device using the specified settings.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;EMOathDevice&gt;)createSoftOathDeviceWithToken:(id&lt;EMSoftOathToken&gt;)<em>token</em> settings:(id&lt;EMSoftOathSettings&gt;)<em>settings</em> error:(NSError **)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>token</code></th>
+						<td><p>The token.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>settings</code></th>
+						<td><p>The OATH settings.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>If an error occurs, upon return contains an NSError object that describes the problem. If you are not interested in possible errors, you may pass in <code>NULL</code>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The OATH device.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection arguments-section exceptions">
+				<h4 class="method-subtitle exception-title">Exceptions</h4>
+				<table class="argument-def exception-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>NSInternalInconsistencyException</code></th>
+						<td><p>When the token suppports more than one key (e.g. a token with <code>EMTokenCapabilityDUAL_SEED</code>), and its key has not been selected. See <a href="../Constants/EMTokenCapability.html">EMTokenCapability</a>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMOathFactory.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/mutableSoftOathSettings" title="mutableSoftOathSettings"></a>
+	<h3 class="method-title"><code><a href="#//api/name/mutableSoftOathSettings">&ndash;&nbsp;mutableSoftOathSettings</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates a mutable OATH settings.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;EMMutableSoftOathSettings&gt;)mutableSoftOathSettings</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>New mutable OATH settings based on the default OATH settings returned from <a href="#//api/name/defaultSoftOathSettings">[EMOathFactory defaultSoftOathSettings]</a>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMOathFactory.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/defaultSoftOathSettings" title="defaultSoftOathSettings"></a>
+	<h3 class="method-title"><code><a href="#//api/name/defaultSoftOathSettings">&ndash;&nbsp;defaultSoftOathSettings</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Gets the default settings for OATH devices.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;EMSoftOathSettings&gt;)defaultSoftOathSettings</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The default settings.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMOathFactory.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Create DcvOathDevice" name="task_Create DcvOathDevice"></a>
+						<h2 class="task-title">Create DcvOathDevice</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/createSoftDcvOathDeviceWithToken:settings:error:" title="createSoftDcvOathDeviceWithToken:settings:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createSoftDcvOathDeviceWithToken:settings:error:">&ndash;&nbsp;createSoftDcvOathDeviceWithToken:settings:error:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates a customized soft DCV OATH device using the specified settings.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;EMDcvOathDevice&gt;)createSoftDcvOathDeviceWithToken:(id&lt;EMSoftOathToken&gt;)<em>token</em> settings:(id&lt;EMSoftDcvOathSettings&gt;)<em>settings</em> error:(NSError **)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>token</code></th>
+						<td><p>The token.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>settings</code></th>
+						<td><p>The DCV OATH settings.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>If an error occurs, upon return contains an NSError object that describes the problem. If you are not interested in possible errors, you may pass in <code>NULL</code>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The DCV OATH device.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection arguments-section exceptions">
+				<h4 class="method-subtitle exception-title">Exceptions</h4>
+				<table class="argument-def exception-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>NSInternalInconsistencyException</code></th>
+						<td><p>When the token suppports more than one key (e.g. a token with <code>EMTokenCapabilityDUAL_SEED</code>), and its key has not been selected. See <a href="../Constants/EMTokenCapability.html">EMTokenCapability</a>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMOathFactory.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/mutableSoftDcvOathSettings" title="mutableSoftDcvOathSettings"></a>
+	<h3 class="method-title"><code><a href="#//api/name/mutableSoftDcvOathSettings">&ndash;&nbsp;mutableSoftDcvOathSettings</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates a mutable DCV OATH settings.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;EMMutableSoftDcvOathSettings&gt;)mutableSoftDcvOathSettings</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>New mutable DCV OATH settings based on the default OATH settings returned from <a href="#//api/name/defaultSoftOathSettings">[EMOathFactory defaultSoftOathSettings]</a>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMOathFactory.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/defaultSoftDcvOathSettings" title="defaultSoftDcvOathSettings"></a>
+	<h3 class="method-title"><code><a href="#//api/name/defaultSoftDcvOathSettings">&ndash;&nbsp;defaultSoftDcvOathSettings</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Gets the default settings for DCV OATH devices.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;EMSoftDcvOathSettings&gt;)defaultSoftDcvOathSettings</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The default settings.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMOathFactory.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2019 Gemalto. All rights reserved. Updated: 2019-05-03</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

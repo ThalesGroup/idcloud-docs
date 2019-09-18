@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>EMOtpTools Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">EzioMobileSdk </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Gemalto</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/UTC">+ UTC</option>
+		
+		<option value="//api/name/formatOtpWithType:otp:">+ formatOtpWithType:otp:</option>
+		
+		<option value="//api/name/padOtpWithZero:minLength:">+ padOtpWithZero:minLength:</option>
+		
+		<option value="//api/name/scrambleOtpWithType:otp:">+ scrambleOtpWithType:otp:</option>
+		
+	</optgroup>
+	
+
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">EMOtpTools Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>EMOtpTools.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>The EMOtpTools class for utility functions like OTP scrambling and formatting functions.
+It was originally called EMToolBox.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/scrambleOtpWithType:otp:" title="scrambleOtpWithType:otp:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/scrambleOtpWithType:otp:">+&nbsp;scrambleOtpWithType:otp:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Computes a scrambled OTP from original OTP.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (id&lt;EMSecureString&gt;)scrambleOtpWithType:(EMScrambleType)<em>type</em> otp:(id&lt;EMSecureString&gt;)<em>otp</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>type</code></th>
+						<td><p>Specifies the type of scrambling function, See <a href="../Constants/EMScrambleType.html">EMScrambleType</a> define list of supported modes.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>otp</code></th>
+						<td><p>Original OTP. Length must greater or equal to 5, lower than 18 and only digits are accepted.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The scrambled OTP.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMOtpTools.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/formatOtpWithType:otp:" title="formatOtpWithType:otp:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/formatOtpWithType:otp:">+&nbsp;formatOtpWithType:otp:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Formats the OTP with according provided mode.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (id&lt;EMSecureString&gt;)formatOtpWithType:(EMFormatType)<em>type</em> otp:(id&lt;EMSecureString&gt;)<em>otp</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>type</code></th>
+						<td><p>Specifies the type of formatting function, See <a href="../Constants/EMFormatType.html">EMFormatType</a> define list of supported modes.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>otp</code></th>
+						<td><p>Original OTP.</p>
+
+<p>if mode is EMFormatTypeCap</p>
+
+<table>
+<thead>
+<tr>
+<th align="right"> Token length </th>
+<th>Formatted Token</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right">   1          </td>
+<td>  X            </td>
+</tr>
+<tr>
+<td align="right">   2          </td>
+<td>  XX           </td>
+</tr>
+<tr>
+<td align="right">   3          </td>
+<td>  XXX          </td>
+</tr>
+<tr>
+<td align="right">   4          </td>
+<td>  XXXX         </td>
+</tr>
+<tr>
+<td align="right">   5          </td>
+<td>  XX XXX       </td>
+</tr>
+<tr>
+<td align="right">   6          </td>
+<td>  XXX XXX      </td>
+</tr>
+<tr>
+<td align="right">   7          </td>
+<td>  XXX XXXX     </td>
+</tr>
+<tr>
+<td align="right">   8          </td>
+<td>  XXXX XXXX    </td>
+</tr>
+<tr>
+<td align="right">   9          </td>
+<td>  XXX XXX XXX  </td>
+</tr>
+<tr>
+<td align="right">  10          </td>
+<td>  XX XXXX XXXX </td>
+</tr>
+<tr>
+<td align="right">  11          </td>
+<td>  XXXXXXXXXXX  </td>
+</tr>
+<tr>
+<td align="right">  12          </td>
+<td>  XXXXXXXXXXXX </td>
+</tr>
+<tr>
+<td align="right"> >12          </td>
+<td>  no change    </td>
+</tr>
+</tbody>
+</table>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The formatted OTP.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMOtpTools.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/UTC" title="UTC"></a>
+	<h3 class="method-title"><code><a href="#//api/name/UTC">+&nbsp;UTC</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Gets the UTC time in milliseconds.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (unsigned long long)UTC</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The UTC time.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMOtpTools.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/padOtpWithZero:minLength:" title="padOtpWithZero:minLength:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/padOtpWithZero:minLength:">+&nbsp;padOtpWithZero:minLength:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>left pad an OTP with Zero if needed.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (id&lt;EMSecureString&gt;)padOtpWithZero:(id&lt;EMSecureString&gt;)<em>otp</em> minLength:(int)<em>minLength</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>otp</code></th>
+						<td><p>OTP to pad.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>minLength</code></th>
+						<td><p>The minimum length of the padded OTP. If minLength is lower than the OTP length, no padding is added and a copy of OTP is returned (so original one can be wiped).</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The OTP value left-padded.</p>
+			</div>
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>2.4</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMOtpTools.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2019 Gemalto. All rights reserved. Updated: 2019-05-03</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
