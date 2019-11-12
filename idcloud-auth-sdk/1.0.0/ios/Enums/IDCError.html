@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>IDCError Enumeration Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Enum/IDCError" class="dashAnchor"></a>
+    <a title="IDCError Enumeration Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">idcloudclient 1.0.0 Docs</a> (100% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">idcloudclient Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        IDCError Enumeration Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/IDCAuthenticator.html">IDCAuthenticator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IDCEnrollRequest.html">IDCEnrollRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)IDCEnrollResponse">IDCEnrollResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IDCEnrollmentCredential.html">IDCEnrollmentCredential</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IDCEnrollmentCredentialsFactory.html">IDCEnrollmentCredentialsFactory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IDCFetchRequest.html">IDCFetchRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)IDCFetchResponse">IDCFetchResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IDCIdCloudClient.html">IDCIdCloudClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IDCScenarioContext.html">IDCScenarioContext</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IDCSecurePinPad.html">IDCSecurePinPad</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IDCTransactionContext.html">IDCTransactionContext</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IDCUiDelegates.html">IDCUiDelegates</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:IDCError.h@IDCErrorDomain">IDCErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:IDCScenarioContext.h@IDCScenarioContextKeyMessage">IDCScenarioContextKeyMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:IDCTransactionContext.h@IDCTransactionContextKeyMessage">IDCTransactionContextKeyMessage</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/IDCAuthenticatorType.html">IDCAuthenticatorType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/IDCError.html">IDCError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/IDCProgress.html">IDCProgress</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/IDCSecurePinPadKey.html">IDCSecurePinPadKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/IDCSecurePinPadUsage.html">IDCSecurePinPadUsage</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/IDCCommonUiDelegate.html">IDCCommonUiDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IDCFaceIdUiDelegate.html">IDCFaceIdUiDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IDCSecurePinPadDelegate.html">IDCSecurePinPadDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IDCSecurePinPadUiDelegate.html">IDCSecurePinPadUiDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IDCTouchIdUiDelegate.html">IDCTouchIdUiDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>IDCError</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">IDCError</span> <span class="p">{}</span></code></pre>
+
+                </div>
+              </div>
+            <p>Represent different errors that might occur in IdCloud client operations.</p>
+
+<p>@since 1.0</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@IDCError@IDCErrorUserCancelled"></a>
+                    <a name="//apple_ref/objc/Case/IDCErrorUserCancelled" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@IDCError@IDCErrorUserCancelled">IDCErrorUserCancelled</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The user cancels the operation.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">IDCErrorUserCancelled</span> <span class="o">=</span> <span class="mh">0x01</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@IDCError@IDCErrorAccessDenied"></a>
+                    <a name="//apple_ref/objc/Case/IDCErrorAccessDenied" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@IDCError@IDCErrorAccessDenied">IDCErrorAccessDenied</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The user failed to authenticate, for example wrong fingerprint, wrong PIN.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">IDCErrorAccessDenied</span> <span class="o">=</span> <span class="mh">0x02</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@IDCError@IDCErrorUserNotResponsive"></a>
+                    <a name="//apple_ref/objc/Case/IDCErrorUserNotResponsive" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@IDCError@IDCErrorUserNotResponsive">IDCErrorUserNotResponsive</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The user took too long to follow an instruction, for example did not accept the transaction within the accepted time.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">IDCErrorUserNotResponsive</span> <span class="o">=</span> <span class="mh">0x03</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@IDCError@IDCErrorUserLockout"></a>
+                    <a name="//apple_ref/objc/Case/IDCErrorUserLockout" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@IDCError@IDCErrorUserLockout">IDCErrorUserLockout</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The operation failed because the user is locked out of the authenticator.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">IDCErrorUserLockout</span> <span class="o">=</span> <span class="mh">0x04</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@IDCError@IDCErrorOperation"></a>
+                    <a name="//apple_ref/objc/Case/IDCErrorOperation" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@IDCError@IDCErrorOperation">IDCErrorOperation</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The operation failed because of unexpected error in the underlying authentication.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">IDCErrorOperation</span> <span class="o">=</span> <span class="mh">0x05</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@IDCError@IDCErrorStorage"></a>
+                    <a name="//apple_ref/objc/Case/IDCErrorStorage" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@IDCError@IDCErrorStorage">IDCErrorStorage</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Failed in storage access.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">IDCErrorStorage</span> <span class="o">=</span> <span class="mh">0x06</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@IDCError@IDCErrorTransport"></a>
+                    <a name="//apple_ref/objc/Case/IDCErrorTransport" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@IDCError@IDCErrorTransport">IDCErrorTransport</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Failed in network access.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">IDCErrorTransport</span> <span class="o">=</span> <span class="mh">0x07</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@IDCError@IDCErrorServerResponse"></a>
+                    <a name="//apple_ref/objc/Case/IDCErrorServerResponse" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@IDCError@IDCErrorServerResponse">IDCErrorServerResponse</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Server response is invalid.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">IDCErrorServerResponse</span> <span class="o">=</span> <span class="mh">0x08</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@IDCError@IDCErrorNoPendingEvents"></a>
+                    <a name="//apple_ref/objc/Case/IDCErrorNoPendingEvents" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@IDCError@IDCErrorNoPendingEvents">IDCErrorNoPendingEvents</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Server response has no pending specified event.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">IDCErrorNoPendingEvents</span> <span class="o">=</span> <span class="mh">0x09</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@IDCError@IDCErrorUserNotEnrolled"></a>
+                    <a name="//apple_ref/objc/Case/IDCErrorUserNotEnrolled" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@IDCError@IDCErrorUserNotEnrolled">IDCErrorUserNotEnrolled</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>User is not enrolled.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">IDCErrorUserNotEnrolled</span> <span class="o">=</span> <span class="mh">0x0A</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@IDCError@IDCErrorEnrollmentCredentialInvalid"></a>
+                    <a name="//apple_ref/objc/Case/IDCErrorEnrollmentCredentialInvalid" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@IDCError@IDCErrorEnrollmentCredentialInvalid">IDCErrorEnrollmentCredentialInvalid</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Enrollment credential is not valid. Please ensure the correct enrollment credential provided.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">IDCErrorEnrollmentCredentialInvalid</span> <span class="o">=</span> <span class="mh">0x0B</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>Thales</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.11.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
