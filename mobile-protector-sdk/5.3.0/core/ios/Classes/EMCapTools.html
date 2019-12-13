@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>EMCapTools Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">Mobile Protector SDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Gemalto</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/prefixSequenceNumberAsHexToOtp:token:">+ prefixSequenceNumberAsHexToOtp:token:</option>
+		
+		<option value="//api/name/prefixSequenceNumberToOtp:token:">+ prefixSequenceNumberToOtp:token:</option>
+		
+		<option value="//api/name/prefixSequenceNumberToOtp:token:tokenVersionLength:">+ prefixSequenceNumberToOtp:token:tokenVersionLength:</option>
+		
+	</optgroup>
+	
+
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">EMCapTools Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>EMCapTools.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>CAP Tools</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/prefixSequenceNumberToOtp:token:tokenVersionLength:" title="prefixSequenceNumberToOtp:token:tokenVersionLength:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/prefixSequenceNumberToOtp:token:tokenVersionLength:">+&nbsp;prefixSequenceNumberToOtp:token:tokenVersionLength:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Prefixes an OTP value with a token sequence number, zero padded to the left.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (id&lt;EMSecureString&gt;)prefixSequenceNumberToOtp:(id&lt;EMSecureString&gt;)<em>otp</em> token:(id&lt;EMToken&gt;)<em>token</em> tokenVersionLength:(int)<em>tokenVersionLength</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>otp</code></th>
+						<td><p>OTP to prefix.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>token</code></th>
+						<td><p>The token which generated the OTP. Only significant digits will be used.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>tokenVersionLength</code></th>
+						<td><p>Number of digits to prefix, if needed the <code>token.tokenSequenceNumber</code> will be zero padded to the left. Maximum length is 3, cannot be 0.</p>
+
+<table>
+<thead>
+<tr>
+<th align="right"> tokenVersionLength </th>
+<th align="right"> Prefix range </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right"> 1                  </td>
+<td align="right"> 1 - 9        </td>
+</tr>
+<tr>
+<td align="right"> 2                  </td>
+<td align="right"> 01 - 99      </td>
+</tr>
+<tr>
+<td align="right"> 3                  </td>
+<td align="right"> 001 - 255    </td>
+</tr>
+</tbody>
+</table>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The OTP value prefixed.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> This method should be used when token has been provisioned with provisioning protocol v1.</p></div><div class="warning"><p><strong>Warning:</strong> The token sequence number is not defined for OATH tokens. All OATH tokens will be assigned to the default value as 0xFF.</p></div>
+			</div>
+			
+
+			
+			<div class="method-subsection arguments-section exceptions">
+				<h4 class="method-subtitle exception-title">Exceptions</h4>
+				<table class="argument-def exception-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>NSInvalidArgumentException</code></th>
+						<td><ul>
+<li>when the tokens sequence number is invalid or the tokenVersionLength is less then the actual length.</li>
+</ul>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMCapTools.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/prefixSequenceNumberToOtp:token:" title="prefixSequenceNumberToOtp:token:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/prefixSequenceNumberToOtp:token:">+&nbsp;prefixSequenceNumberToOtp:token:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Prefixes an OTP value with a token sequence number, zero padded to the left.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (id&lt;EMSecureString&gt;)prefixSequenceNumberToOtp:(id&lt;EMSecureString&gt;)<em>otp</em> token:(id&lt;EMToken&gt;)<em>token</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>otp</code></th>
+						<td><p>OTP to prefix.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>token</code></th>
+						<td><p>The token which generated the OTP. Only significant digits will be used.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The OTP value prefixed.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> This method should be used when token has been provisioned with provisioning protocol v1.</p></div>
+			</div>
+			
+
+			
+			<div class="method-subsection arguments-section exceptions">
+				<h4 class="method-subtitle exception-title">Exceptions</h4>
+				<table class="argument-def exception-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>NSInvalidArgumentException</code></th>
+						<td><ul>
+<li>when token&rsquo;s sequence number is invalid.</li>
+</ul>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMCapTools.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/prefixSequenceNumberAsHexToOtp:token:" title="prefixSequenceNumberAsHexToOtp:token:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/prefixSequenceNumberAsHexToOtp:token:">+&nbsp;prefixSequenceNumberAsHexToOtp:token:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Prefixes an OTP value with a token sequence number as hexadecimal digits.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (id&lt;EMSecureString&gt;)prefixSequenceNumberAsHexToOtp:(id&lt;EMSecureString&gt;)<em>otp</em> token:(id&lt;EMToken&gt;)<em>token</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>otp</code></th>
+						<td><p>OTP to prefix.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>token</code></th>
+						<td><p>The token which generated the OTP. Only significant digits will be used.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The OTP value prefixed.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> This method should be used when token has been provisioned with provisioning protocol v2.</p></div><div class="warning"><p><strong>Warning:</strong> The token sequence number is not defined for OATH tokens. All OATH tokens will be assigned to the default value as 0xFF.</p></div>
+			</div>
+			
+
+			
+			<div class="method-subsection arguments-section exceptions">
+				<h4 class="method-subtitle exception-title">Exceptions</h4>
+				<table class="argument-def exception-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>NSInvalidArgumentException</code></th>
+						<td><ul>
+<li>when token&rsquo;s sequence number is invalid.</li>
+</ul>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMCapTools.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2019 Gemalto. All rights reserved. Updated: 2019-12-11</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>EMTokenJailbreakPolicy Constants Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">Mobile Protector SDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Gemalto</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">EMTokenJailbreakPolicy Constants Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Declared in</th>
+	<td>EMTokenJailbreakPolicy.h</td>
+</tr><tr>
+	<th>Availability</th>
+	<td>4.0</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+
+                    
+                    <h3 class="subsubtitle method-title">EMTokenJailbreakPolicy</h3>
+                    
+					
+					<div class="section section-overview">
+                        <p>The token policy of the Mobile Protector SDK when the physical device is
+detected as being jailbroken.</p>
+					</div>
+					
+					
+                    <div class="section">
+                        <!-- display enum values -->
+                        
+                        <h4 class="method-subtitle">Definition</h4>
+                        <code>typedef NS_ENUM(NSInteger, EMTokenJailbreakPolicy ) {<br>
+                            
+                            &nbsp;&nbsp; <a href="">EMTokenJailbreakPolicyIgnore</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EMTokenJailbreakPolicyFail</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EMTokenJailbreakPolicyRemoveToken</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">EMTokenJailbreakPolicyRemoveAllTokens</a>,<br>
+                            
+                            };</code>
+                    
+                    </div>
+                    
+                    <div class="section section-methods">
+                        <h4 class="method-subtitle">Constants</h4>
+                        <dl class="termdef">
+                            
+                            <dt><a name="" title="EMTokenJailbreakPolicyIgnore"></a><code>EMTokenJailbreakPolicyIgnore</code></dt>
+<dd>
+
+
+<p>No action is taken when calling any token operation related method of Mobile Protector SDK
+even the physical device is jailbroken.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">EMTokenJailbreakPolicy.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EMTokenJailbreakPolicyFail"></a><code>EMTokenJailbreakPolicyFail</code></dt>
+<dd>
+
+
+<p>A EMJailbreakError is returned via the error parameter when calling a method in the Mobile Protector SDK that detects if the physical device is jailbroken.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">EMTokenJailbreakPolicy.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EMTokenJailbreakPolicyRemoveToken"></a><code>EMTokenJailbreakPolicyRemoveToken</code></dt>
+<dd>
+
+
+<p>A EMJailbreakError is returned via the error parameter and the associated token is silently removed when calling a method in the Mobile Protector SDK that detects if the physical device is jailbroken.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">EMTokenJailbreakPolicy.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="EMTokenJailbreakPolicyRemoveAllTokens"></a><code>EMTokenJailbreakPolicyRemoveAllTokens</code></dt>
+<dd>
+
+
+<p>A EMJailbreakErrorDomain is returned via the error paramete and all tokens are silently
+     removed when calling a method in the Mobile Protector SDK that detects if the physical device is jailbroken.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">EMTokenJailbreakPolicy.h</code>.
+	</p>
+	
+</dd>
+                            
+                        </dl>
+                    </div>
+                    
+
+                    
+                    
+                    <div class="method-subsection availability">
+                        <h4 class="method-subtitle parameter-title">Availability</h4>
+                        <p>4.0</p>
+                    </div>
+                    
+
+                    
+
+                    
+                    <div class="method-subsection declared-in-section">
+                        <h4 class="method-subtitle">Declared In</h4>
+                        <p><code class="declared-in-ref">EMTokenJailbreakPolicy.h</code></p>
+                    </div>
+                    
+                    
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2019 Gemalto. All rights reserved. Updated: 2019-12-11</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

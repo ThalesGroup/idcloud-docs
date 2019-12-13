@@ -1,0 +1,1824 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>EMOobMessageManager Protocol Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">Mobile Protector SDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Gemalto</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/acknowledgeWithMessage:completionHandler:">- acknowledgeWithMessage:completionHandler:</option>
+		
+		<option value="//api/name/acknowledgeWithMessage:error:">- acknowledgeWithMessage:error:</option>
+		
+		<option value="//api/name/acknowledgeWithMessage:requestParameter:completionHandler:">- acknowledgeWithMessage:requestParameter:completionHandler:</option>
+		
+		<option value="//api/name/acknowledgeWithMessage:requestParameter:error:">- acknowledgeWithMessage:requestParameter:error:</option>
+		
+		<option value="//api/name/createGenericOutgoingMessageWithContentType:content:">- createGenericOutgoingMessageWithContentType:content:</option>
+		
+		<option value="//api/name/createOobErrorWithErrorCode:errorDescription:errorStackTrace:externalRef:meta:">- createOobErrorWithErrorCode:errorDescription:errorStackTrace:externalRef:meta:</option>
+		
+		<option value="//api/name/createOobErrorWithErrorCode:errorDescription:exception:externalRef:meta:">- createOobErrorWithErrorCode:errorDescription:exception:externalRef:meta:</option>
+		
+		<option value="//api/name/createUserMessageAttachmentWithSubject:contentType:content:meta:">- createUserMessageAttachmentWithSubject:contentType:content:meta:</option>
+		
+		<option value="//api/name/createUserToProviderMessageWithLocale:createTime:subject:from:to:replyTo:threadId:contentType:content:attachments:meta:">- createUserToProviderMessageWithLocale:createTime:subject:from:to:replyTo:threadId:contentType:content:attachments:meta:</option>
+		
+		<option value="//api/name/fetchWithMessageId:completionHandler:">- fetchWithMessageId:completionHandler:</option>
+		
+		<option value="//api/name/fetchWithMessageId:error:">- fetchWithMessageId:error:</option>
+		
+		<option value="//api/name/fetchWithMessageId:requestParameter:completionHandler:">- fetchWithMessageId:requestParameter:completionHandler:</option>
+		
+		<option value="//api/name/fetchWithMessageId:requestParameter:error:">- fetchWithMessageId:requestParameter:error:</option>
+		
+		<option value="//api/name/fetchWithTimeout:completionHandler:">- fetchWithTimeout:completionHandler:</option>
+		
+		<option value="//api/name/fetchWithTimeout:error:">- fetchWithTimeout:error:</option>
+		
+		<option value="//api/name/fetchWithTimeout:requestParameter:completionHandler:">- fetchWithTimeout:requestParameter:completionHandler:</option>
+		
+		<option value="//api/name/fetchWithTimeout:requestParameter:error:">- fetchWithTimeout:requestParameter:error:</option>
+		
+		<option value="//api/name/sendWithMessage:completionHandler:">- sendWithMessage:completionHandler:</option>
+		
+		<option value="//api/name/sendWithMessage:error:">- sendWithMessage:error:</option>
+		
+		<option value="//api/name/sendWithMessage:requestParameter:completionHandler:">- sendWithMessage:requestParameter:completionHandler:</option>
+		
+		<option value="//api/name/sendWithMessage:requestParameter:error:">- sendWithMessage:requestParameter:error:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">EMOobMessageManager Protocol Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Conforms to</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>EMOobMessageManager.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>This manager provides a way to create outgoing messages for the server
+and; fetch messages from or send messages to the server.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						<a title="Create messages" name="task_Create messages"></a>
+						<h2 class="task-title">Create messages</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/createUserToProviderMessageWithLocale:createTime:subject:from:to:replyTo:threadId:contentType:content:attachments:meta:" title="createUserToProviderMessageWithLocale:createTime:subject:from:to:replyTo:threadId:contentType:content:attachments:meta:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createUserToProviderMessageWithLocale:createTime:subject:from:to:replyTo:threadId:contentType:content:attachments:meta:">&ndash;&nbsp;createUserToProviderMessageWithLocale:createTime:subject:from:to:replyTo:threadId:contentType:content:attachments:meta:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates an outgoing user-to-provider message.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;EMOobUserToProviderMessage&gt;)createUserToProviderMessageWithLocale:(NSString *)<em>aLocale</em> createTime:(NSTimeInterval)<em>aCreateTime</em> subject:(id&lt;EMSecureString&gt;)<em>aSubject</em> from:(NSString *)<em>aFrom</em> to:(NSString *)<em>aTo</em> replyTo:(NSString *)<em>aReplyTo</em> threadId:(NSString *)<em>aThreadId</em> contentType:(NSString *)<em>aContentType</em> content:(id&lt;EMSecureByteArray&gt;)<em>aContent</em> attachments:(NSArray *)<em>anAttachments</em> meta:(NSDictionary *)<em>aMeta</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aLocale</code></th>
+						<td><p>Locale to use to handle messages.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aCreateTime</code></th>
+						<td><p>Message creation time. If <code>nil</code> the default system time is used.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aSubject</code></th>
+						<td><p>Message subject.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aFrom</code></th>
+						<td><p>Message originator. Can be <code>nil</code>.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aTo</code></th>
+						<td><p>Message recipient.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aReplyTo</code></th>
+						<td><p>Message recipient to use in case a response is send by the server. Can be <code>nil</code>.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aThreadId</code></th>
+						<td><p>Message thread identifier.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aContentType</code></th>
+						<td><p>Message content-type.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aContent</code></th>
+						<td><p>Message content.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>anAttachments</code></th>
+						<td><p>Array of attachments to the message. Can be <code>nil</code>.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aMeta</code></th>
+						<td><p>Meta data for the message. Can be <code>nil</code>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The user-to-provider message to be sent.</p>
+			</div>
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>3.0</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMOobMessageManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createUserMessageAttachmentWithSubject:contentType:content:meta:" title="createUserMessageAttachmentWithSubject:contentType:content:meta:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createUserMessageAttachmentWithSubject:contentType:content:meta:">&ndash;&nbsp;createUserMessageAttachmentWithSubject:contentType:content:meta:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates a user message attachment.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;EMOobUserMessageAttachment&gt;)createUserMessageAttachmentWithSubject:(id&lt;EMSecureString&gt;)<em>aSubject</em> contentType:(NSString *)<em>aContentType</em> content:(id&lt;EMSecureByteArray&gt;)<em>aContent</em> meta:(NSDictionary *)<em>aMeta</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aSubject</code></th>
+						<td><p>Message subject.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aContentType</code></th>
+						<td><p>Message content-type.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aContent</code></th>
+						<td><p>Message content.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aMeta</code></th>
+						<td><p>Meta data for the message. Can be <code>nil</code>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The user message attachment to be sent.</p>
+			</div>
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>3.0</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMOobMessageManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createGenericOutgoingMessageWithContentType:content:" title="createGenericOutgoingMessageWithContentType:content:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createGenericOutgoingMessageWithContentType:content:">&ndash;&nbsp;createGenericOutgoingMessageWithContentType:content:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates a generic message.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;EMOobGenericOutgoingMessage&gt;)createGenericOutgoingMessageWithContentType:(NSString *)<em>aContentType</em> content:(id&lt;EMSecureByteArray&gt;)<em>aContent</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aContentType</code></th>
+						<td><p>Message content-type.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aContent</code></th>
+						<td><p>Message content.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The generic outgoing message to be sent.</p>
+			</div>
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>3.0</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMOobMessageManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createOobErrorWithErrorCode:errorDescription:errorStackTrace:externalRef:meta:" title="createOobErrorWithErrorCode:errorDescription:errorStackTrace:externalRef:meta:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createOobErrorWithErrorCode:errorDescription:errorStackTrace:externalRef:meta:">&ndash;&nbsp;createOobErrorWithErrorCode:errorDescription:errorStackTrace:externalRef:meta:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates an error message to be sent as a response.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;EMOobErrorMessage&gt;)createOobErrorWithErrorCode:(int)<em>anErrorCode</em> errorDescription:(NSString *)<em>anErrorDescription</em> errorStackTrace:(NSString *)<em>anErrorStackTrace</em> externalRef:(NSString *)<em>anExternalRef</em> meta:(NSDictionary *)<em>aMeta</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>anErrorCode</code></th>
+						<td><p>Error code.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>anErrorDescription</code></th>
+						<td><p>Error description.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>anErrorStackTrace</code></th>
+						<td><p>Error stack trace. Can be <code>nil</code>.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>anExternalRef</code></th>
+						<td><p>Any external reference. Can be <code>nil</code>.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aMeta</code></th>
+						<td><p>Meta data for the message. Can be <code>nil</code>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The error message to be sent.</p>
+			</div>
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>3.0</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMOobMessageManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createOobErrorWithErrorCode:errorDescription:exception:externalRef:meta:" title="createOobErrorWithErrorCode:errorDescription:exception:externalRef:meta:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createOobErrorWithErrorCode:errorDescription:exception:externalRef:meta:">&ndash;&nbsp;createOobErrorWithErrorCode:errorDescription:exception:externalRef:meta:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates an error message to be sent as a response.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;EMOobErrorMessage&gt;)createOobErrorWithErrorCode:(int)<em>anErrorCode</em> errorDescription:(NSString *)<em>anErrorDescription</em> exception:(NSException *)<em>anException</em> externalRef:(NSString *)<em>anExternalRef</em> meta:(NSDictionary *)<em>aMeta</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>anErrorCode</code></th>
+						<td><p>Error code.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>anErrorDescription</code></th>
+						<td><p>Error description.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>anException</code></th>
+						<td><p>NSException object. Can be <code>nil</code>.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>anExternalRef</code></th>
+						<td><p>Any external reference. Can be <code>nil</code>.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aMeta</code></th>
+						<td><p>Meta data for the message. Can be <code>nil</code>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The error message to be sent.</p>
+			</div>
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>3.0</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMOobMessageManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Fetch Messages" name="task_Fetch Messages"></a>
+						<h2 class="task-title">Fetch Messages</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/fetchWithTimeout:error:" title="fetchWithTimeout:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/fetchWithTimeout:error:">&ndash;&nbsp;fetchWithTimeout:error:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Fetches a message from the server.
+This method retrieves the first message from server queue.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;EMOobFetchMessageResponse&gt;)fetchWithTimeout:(NSInteger)<em>aTimeout</em> error:(NSError **)<em>anError</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aTimeout</code></th>
+						<td><p>Maximum time in seconds to wait for an incoming message.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>anError</code></th>
+						<td><p>If an error occurs, upon return contains an NSError object that describes the problem. If you are not interested in possible errors, you may pass in <code>NULL</code>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The incoming message response if any.</p>
+			</div>
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>3.0</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> This method blocks the calling thread potentially for a very long time (like
+tens of seconds or even more, depending on the quality of the mobile network connection).</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMOobMessageManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/fetchWithTimeout:requestParameter:error:" title="fetchWithTimeout:requestParameter:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/fetchWithTimeout:requestParameter:error:">&ndash;&nbsp;fetchWithTimeout:requestParameter:error:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Fetches a message from the server.
+This method retrieves the first message from server queue.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;EMOobFetchMessageResponse&gt;)fetchWithTimeout:(NSInteger)<em>aTimeout</em> requestParameter:(EMOobRequestParameter *)<em>aParam</em> error:(NSError **)<em>anError</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aTimeout</code></th>
+						<td><p>Maximum time in seconds to wait for an incoming message.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aParam</code></th>
+						<td><p>The request parameter object carrying the additional parameters, i.e. custom HTTP headers.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>anError</code></th>
+						<td><p>If an error occurs, upon return contains an NSError object that describes the problem. If you are not interested in possible errors, you may pass in <code>NULL</code>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The incoming message response if any.</p>
+			</div>
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>4.7</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> This method blocks the calling thread potentially for a very long time (like
+tens of seconds or even more, depending on the quality of the mobile network connection).</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMOobMessageManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/fetchWithTimeout:completionHandler:" title="fetchWithTimeout:completionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/fetchWithTimeout:completionHandler:">&ndash;&nbsp;fetchWithTimeout:completionHandler:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Fetches a message from the server.
+This method retrieves the first message from server queue.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)fetchWithTimeout:(int)<em>aTimeout</em> completionHandler:(void ( ^ ) ( id&lt;EMOobFetchMessageResponse&gt; aResponse , NSError *anError ))<em>aCompletionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aTimeout</code></th>
+						<td><p>Maximum time in seconds to wait for an incoming message.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aCompletionHandler</code></th>
+						<td><p>The block to invoke on the main thread upon completion which contains
+the response and error information if any.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>3.0</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> This method is executed asynchronously</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMOobMessageManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/fetchWithTimeout:requestParameter:completionHandler:" title="fetchWithTimeout:requestParameter:completionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/fetchWithTimeout:requestParameter:completionHandler:">&ndash;&nbsp;fetchWithTimeout:requestParameter:completionHandler:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Fetches a message from the server.
+This method retrieves the first message from server queue.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)fetchWithTimeout:(int)<em>aTimeout</em> requestParameter:(EMOobRequestParameter *)<em>aParam</em> completionHandler:(void ( ^ ) ( id&lt;EMOobFetchMessageResponse&gt; aResponse , NSError *anError ))<em>aCompletionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aTimeout</code></th>
+						<td><p>Maximum time in seconds to wait for an incoming message.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aParam</code></th>
+						<td><p>The request parameter object carrying the additional parameters, i.e. custom HTTP headers.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aCompletionHandler</code></th>
+						<td><p>The block to invoke on the main thread upon completion which contains
+the response and error information if any.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>4.7</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> This method is executed asynchronously</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMOobMessageManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/fetchWithMessageId:error:" title="fetchWithMessageId:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/fetchWithMessageId:error:">&ndash;&nbsp;fetchWithMessageId:error:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Fetches a message from the server.
+This method retrieves a message with a specific identifier.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;EMOobFetchMessageResponse&gt;)fetchWithMessageId:(NSString *)<em>aMessageId</em> error:(NSError **)<em>anError</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aMessageId</code></th>
+						<td><p>Identifier of the message to fetch.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>anError</code></th>
+						<td><p>If an error occurs, upon return contains an NSError object that describes the problem. If you are not interested in possible errors, you may pass in <code>NULL</code>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The incoming message response if any.</p>
+			</div>
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>3.0</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> This method blocks the calling thread potentially for a very long time (like
+tens of seconds or even more, depending on the quality of the mobile network connection).</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMOobMessageManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/fetchWithMessageId:requestParameter:error:" title="fetchWithMessageId:requestParameter:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/fetchWithMessageId:requestParameter:error:">&ndash;&nbsp;fetchWithMessageId:requestParameter:error:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Fetches a message from the server.
+This method retrieves a message with a specific identifier.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;EMOobFetchMessageResponse&gt;)fetchWithMessageId:(NSString *)<em>aMessageId</em> requestParameter:(EMOobRequestParameter *)<em>aParam</em> error:(NSError **)<em>anError</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aMessageId</code></th>
+						<td><p>Identifier of the message to fetch.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aParam</code></th>
+						<td><p>The request parameter object carrying the additional parameters, i.e. custom HTTP headers.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>anError</code></th>
+						<td><p>If an error occurs, upon return contains an NSError object that describes the problem. If you are not interested in possible errors, you may pass in <code>NULL</code>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The incoming message response if any.</p>
+			</div>
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>4.7</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> This method blocks the calling thread potentially for a very long time (like
+tens of seconds or even more, depending on the quality of the mobile network connection).</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMOobMessageManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/fetchWithMessageId:completionHandler:" title="fetchWithMessageId:completionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/fetchWithMessageId:completionHandler:">&ndash;&nbsp;fetchWithMessageId:completionHandler:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Fetches a message from the server.
+This method retrieves a message with a specific identifier.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)fetchWithMessageId:(NSString *)<em>aMessageId</em> completionHandler:(void ( ^ ) ( id&lt;EMOobFetchMessageResponse&gt; aResponse , NSError *anError ))<em>aCompletionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aMessageId</code></th>
+						<td><p>Identifier of the message to fetch.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aCompletionHandler</code></th>
+						<td><p>The block to invoke on the main thread upon completion which contains
+the response and error information if any.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>3.0</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> This method is executed asynchronously</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMOobMessageManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/fetchWithMessageId:requestParameter:completionHandler:" title="fetchWithMessageId:requestParameter:completionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/fetchWithMessageId:requestParameter:completionHandler:">&ndash;&nbsp;fetchWithMessageId:requestParameter:completionHandler:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Fetches a message from the server.
+This method retrieves a message with a specific identifier.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)fetchWithMessageId:(NSString *)<em>aMessageId</em> requestParameter:(EMOobRequestParameter *)<em>aParam</em> completionHandler:(void ( ^ ) ( id&lt;EMOobFetchMessageResponse&gt; aResponse , NSError *anError ))<em>aCompletionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aMessageId</code></th>
+						<td><p>Identifier of the message to fetch.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aParam</code></th>
+						<td><p>The request parameter object carrying the additional parameters, i.e. custom HTTP headers.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aCompletionHandler</code></th>
+						<td><p>The block to invoke on the main thread upon completion which contains
+the response and error information if any.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>4.7</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> This method is executed asynchronously</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMOobMessageManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Send Messages" name="task_Send Messages"></a>
+						<h2 class="task-title">Send Messages</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/sendWithMessage:error:" title="sendWithMessage:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sendWithMessage:error:">&ndash;&nbsp;sendWithMessage:error:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sends a message to the server</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;EMOobMessageResponse&gt;)sendWithMessage:(id&lt;EMOobOutgoingMessage&gt;)<em>aMessage</em> error:(NSError **)<em>anError</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aMessage</code></th>
+						<td><p>The object that will be use to post the result to the UI thread.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>anError</code></th>
+						<td><p>If an error occurs, upon return contains an NSError object that describes the problem. If you are not interested in possible errors, you may pass in <code>NULL</code>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Result of the request.</p>
+			</div>
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>3.0</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> This method blocks the calling thread potentially for a very long time (like
+tens of seconds or even more, depending on the quality of the mobile network connection).</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMOobMessageManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sendWithMessage:requestParameter:error:" title="sendWithMessage:requestParameter:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sendWithMessage:requestParameter:error:">&ndash;&nbsp;sendWithMessage:requestParameter:error:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sends a message to the server</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;EMOobMessageResponse&gt;)sendWithMessage:(id&lt;EMOobOutgoingMessage&gt;)<em>aMessage</em> requestParameter:(EMOobRequestParameter *)<em>aParam</em> error:(NSError **)<em>anError</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aMessage</code></th>
+						<td><p>The object that will be use to post the result to the UI thread.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aParam</code></th>
+						<td><p>The request parameter object carrying the additional parameters, i.e. custom HTTP headers.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>anError</code></th>
+						<td><p>If an error occurs, upon return contains an NSError object that describes the problem. If you are not interested in possible errors, you may pass in <code>NULL</code>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Result of the request.</p>
+			</div>
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>4.7</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> This method blocks the calling thread potentially for a very long time (like
+tens of seconds or even more, depending on the quality of the mobile network connection).</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMOobMessageManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sendWithMessage:completionHandler:" title="sendWithMessage:completionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sendWithMessage:completionHandler:">&ndash;&nbsp;sendWithMessage:completionHandler:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sends a message to the server.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)sendWithMessage:(id&lt;EMOobOutgoingMessage&gt;)<em>aMessage</em> completionHandler:(void ( ^ ) ( id&lt;EMOobMessageResponse&gt; aResponse , NSError *anError ))<em>aCompletionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aMessage</code></th>
+						<td><p>The message to send.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aCompletionHandler</code></th>
+						<td><p>The block to invoke on the main thread upon completion which contains
+the response and error information if any.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>3.0</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> This method is executed asynchronously</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMOobMessageManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sendWithMessage:requestParameter:completionHandler:" title="sendWithMessage:requestParameter:completionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sendWithMessage:requestParameter:completionHandler:">&ndash;&nbsp;sendWithMessage:requestParameter:completionHandler:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sends a message to the server.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)sendWithMessage:(id&lt;EMOobOutgoingMessage&gt;)<em>aMessage</em> requestParameter:(EMOobRequestParameter *)<em>aParam</em> completionHandler:(void ( ^ ) ( id&lt;EMOobMessageResponse&gt; aResponse , NSError *anError ))<em>aCompletionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aMessage</code></th>
+						<td><p>The message to send.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aParam</code></th>
+						<td><p>The request parameter object carrying the additional parameters, i.e. custom HTTP headers.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aCompletionHandler</code></th>
+						<td><p>The block to invoke on the main thread upon completion which contains
+the response and error information if any.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>4.7</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> This method is executed asynchronously</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMOobMessageManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Send Acknowledgment" name="task_Send Acknowledgment"></a>
+						<h2 class="task-title">Send Acknowledgment</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/acknowledgeWithMessage:error:" title="acknowledgeWithMessage:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/acknowledgeWithMessage:error:">&ndash;&nbsp;acknowledgeWithMessage:error:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sends a message acknowledgment to the server</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;EMOobResponse&gt;)acknowledgeWithMessage:(id&lt;EMOobIncomingMessage&gt;)<em>aMessage</em> error:(NSError **)<em>anError</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aMessage</code></th>
+						<td><p>The incoming message to acknowledge.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>anError</code></th>
+						<td><p>If an error occurs, upon return contains an NSError object that describes the problem. If you are not interested in possible errors, you may pass in <code>NULL</code>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Result of the request.</p>
+			</div>
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>3.0</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> This method blocks the calling thread potentially for a very long time (like
+tens of seconds or even more, depending on the quality of the mobile network connection).</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMOobMessageManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/acknowledgeWithMessage:requestParameter:error:" title="acknowledgeWithMessage:requestParameter:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/acknowledgeWithMessage:requestParameter:error:">&ndash;&nbsp;acknowledgeWithMessage:requestParameter:error:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sends a message acknowledgment to the server</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;EMOobResponse&gt;)acknowledgeWithMessage:(id&lt;EMOobIncomingMessage&gt;)<em>aMessage</em> requestParameter:(EMOobRequestParameter *)<em>aParam</em> error:(NSError **)<em>anError</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aMessage</code></th>
+						<td><p>The incoming message to acknowledge.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aParam</code></th>
+						<td><p>The request parameter object carrying the additional parameters, i.e. custom HTTP headers.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>anError</code></th>
+						<td><p>If an error occurs, upon return contains an NSError object that describes the problem. If you are not interested in possible errors, you may pass in <code>NULL</code>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Result of the request.</p>
+			</div>
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>4.7</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> This method blocks the calling thread potentially for a very long time (like
+tens of seconds or even more, depending on the quality of the mobile network connection).</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMOobMessageManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/acknowledgeWithMessage:completionHandler:" title="acknowledgeWithMessage:completionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/acknowledgeWithMessage:completionHandler:">&ndash;&nbsp;acknowledgeWithMessage:completionHandler:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sends a message acknowledgment to the server.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)acknowledgeWithMessage:(id&lt;EMOobIncomingMessage&gt;)<em>aMessage</em> completionHandler:(void ( ^ ) ( id&lt;EMOobResponse&gt; aResponse , NSError *anError ))<em>aCompletionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aMessage</code></th>
+						<td><p>The incoming message to acknowledge.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aCompletionHandler</code></th>
+						<td><p>The block to invoke on the main thread upon completion which contains
+the response and error information if any.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>3.0</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> This method is executed asynchronously</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMOobMessageManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/acknowledgeWithMessage:requestParameter:completionHandler:" title="acknowledgeWithMessage:requestParameter:completionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/acknowledgeWithMessage:requestParameter:completionHandler:">&ndash;&nbsp;acknowledgeWithMessage:requestParameter:completionHandler:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sends a message acknowledgment to the server.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)acknowledgeWithMessage:(id&lt;EMOobIncomingMessage&gt;)<em>aMessage</em> requestParameter:(EMOobRequestParameter *)<em>aParam</em> completionHandler:(void ( ^ ) ( id&lt;EMOobResponse&gt; aResponse , NSError *anError ))<em>aCompletionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aMessage</code></th>
+						<td><p>The incoming message to acknowledge.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aParam</code></th>
+						<td><p>The request parameter object carrying the additional parameters, i.e. custom HTTP headers.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aCompletionHandler</code></th>
+						<td><p>The block to invoke on the main thread upon completion which contains
+the response and error information if any.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>4.7</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> This method is executed asynchronously</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMOobMessageManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2019 Gemalto. All rights reserved. Updated: 2019-12-11</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
