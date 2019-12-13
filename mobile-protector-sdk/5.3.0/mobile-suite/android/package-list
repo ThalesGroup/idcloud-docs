@@ -1,0 +1,7 @@
+com.gemalto.idp.mobile.suite
+com.gemalto.idp.mobile.suite.messenger
+com.gemalto.idp.mobile.suite.messenger.callback
+com.gemalto.idp.mobile.suite.messenger.message
+com.gemalto.idp.mobile.suite.protector
+com.gemalto.idp.mobile.suite.protector.cap
+com.gemalto.idp.mobile.suite.protector.oath
