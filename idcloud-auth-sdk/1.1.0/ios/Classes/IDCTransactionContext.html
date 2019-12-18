@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>IDCTransactionContext Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Class/IDCTransactionContext" class="dashAnchor"></a>
+    <a title="IDCTransactionContext Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">idcloudclient 1.1.0 Docs</a> (100% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">idcloudclient Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        IDCTransactionContext Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/IDCAuthenticator.html">IDCAuthenticator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IDCChangePinRequest.html">IDCChangePinRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)IDCChangePinResponse">IDCChangePinResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IDCEnrollRequest.html">IDCEnrollRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)IDCEnrollResponse">IDCEnrollResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IDCEnrollmentCredential.html">IDCEnrollmentCredential</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IDCEnrollmentCredentialsFactory.html">IDCEnrollmentCredentialsFactory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IDCFetchRequest.html">IDCFetchRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)IDCFetchResponse">IDCFetchResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IDCIdCloudClient.html">IDCIdCloudClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IDCScenarioContext.html">IDCScenarioContext</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IDCSecurePinPad.html">IDCSecurePinPad</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IDCTransactionContext.html">IDCTransactionContext</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IDCUiDelegates.html">IDCUiDelegates</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:IDCError.h@IDCErrorDomain">IDCErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:IDCScenarioContext.h@IDCScenarioContextKeyMessage">IDCScenarioContextKeyMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:IDCTransactionContext.h@IDCTransactionContextKeyMessage">IDCTransactionContextKeyMessage</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/IDCAuthenticatorType.html">IDCAuthenticatorType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/IDCError.html">IDCError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/IDCProgress.html">IDCProgress</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/IDCSecurePinPadKey.html">IDCSecurePinPadKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/IDCSecurePinPadUsage.html">IDCSecurePinPadUsage</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/IDCCommonUiDelegate.html">IDCCommonUiDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IDCFaceIdUiDelegate.html">IDCFaceIdUiDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IDCSecurePinPadDelegate.html">IDCSecurePinPadDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IDCSecurePinPadUiDelegate.html">IDCSecurePinPadUiDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IDCTouchIdUiDelegate.html">IDCTouchIdUiDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>IDCTransactionContext</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">IDCTransactionContext</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>An interface that describes the transaction to be signed.</p>
+
+<p>The developer should show the transaction information to the application
+user.</p>
+
+<p>@since 1.0.0</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)IDCTransactionContext(py)content"></a>
+                    <a name="//apple_ref/objc/Property/content" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)IDCTransactionContext(py)content">content</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the dictionary containing transaction details.</p>
+
+<p>@since 1.0.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">atomic</span><span class="p">)</span>
+    <span class="n">NSDictionary</span><span class="o">&lt;</span><span class="n">NSString</span> <span class="o">*</span><span class="p">,</span> <span class="n">NSString</span> <span class="o">*&gt;</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">content</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">content</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">String</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)IDCTransactionContext(py)timeout"></a>
+                    <a name="//apple_ref/objc/Property/timeout" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)IDCTransactionContext(py)timeout">timeout</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the timeout of the transaction in seconds.</p>
+
+<p>After time elapses, if there is no action triggered, operation will fail.</p>
+
+<p>@since 1.0.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">atomic</span><span class="p">)</span> <span class="n">NSTimeInterval</span> <span class="n">timeout</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">timeout</span><span class="p">:</span> <span class="kt">TimeInterval</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>Thales</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.11.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
