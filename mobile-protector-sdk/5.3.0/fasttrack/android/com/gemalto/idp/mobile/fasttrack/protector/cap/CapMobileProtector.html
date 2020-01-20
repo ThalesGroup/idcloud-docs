@@ -158,13 +158,13 @@ extends <a href="../../../../../../../com/gemalto/idp/mobile/fasttrack/protector
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../../com/gemalto/idp/mobile/fasttrack/protector/cap/CapTokenDevice.html" title="interface in com.gemalto.idp.mobile.fasttrack.protector.cap">CapTokenDevice</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/gemalto/idp/mobile/fasttrack/protector/cap/CapMobileProtector.html#getTokenDevice-java.lang.String-byte:A-">getTokenDevice</a></span>(java.lang.String&nbsp;tokenName,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/gemalto/idp/mobile/fasttrack/protector/cap/CapMobileProtector.html#getTokenDevice-java.lang.String-byte:A-">getTokenDevice</a></span>(<a href="https://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;tokenName,
               byte[]&nbsp;customFingerprintData)</code>
 <div class="block">Get <a href="../../../../../../../com/gemalto/idp/mobile/fasttrack/protector/cap/CapTokenDevice.html" title="interface in com.gemalto.idp.mobile.fasttrack.protector.cap"><code>CapTokenDevice</code></a> from the database with given name.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>java.util.Set&lt;java.lang.String&gt;</code></td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/gemalto/idp/mobile/fasttrack/protector/cap/CapMobileProtector.html#getTokenDeviceNames--">getTokenDeviceNames</a></span>()</code>
 <div class="block">Retrieve the Set of names of existing <a href="../../../../../../../com/gemalto/idp/mobile/fasttrack/protector/cap/CapTokenDevice.html" title="interface in com.gemalto.idp.mobile.fasttrack.protector.cap"><code>CapTokenDevice</code></a> from the database.</div>
 </td>
@@ -178,15 +178,15 @@ extends <a href="../../../../../../../com/gemalto/idp/mobile/fasttrack/protector
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/gemalto/idp/mobile/fasttrack/protector/cap/CapMobileProtector.html#persistCapSettings-java.lang.String-com.gemalto.idp.mobile.fasttrack.protector.cap.CapSettings-">persistCapSettings</a></span>(java.lang.String&nbsp;tokenName,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/gemalto/idp/mobile/fasttrack/protector/cap/CapMobileProtector.html#persistCapSettings-java.lang.String-com.gemalto.idp.mobile.fasttrack.protector.cap.CapSettings-">persistCapSettings</a></span>(<a href="https://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;tokenName,
                   <a href="../../../../../../../com/gemalto/idp/mobile/fasttrack/protector/cap/CapSettings.html" title="class in com.gemalto.idp.mobile.fasttrack.protector.cap">CapSettings</a>&nbsp;capSettings)</code>
 <div class="block">Store the previously used <a href="../../../../../../../com/gemalto/idp/mobile/fasttrack/protector/cap/CapSettings.html" title="class in com.gemalto.idp.mobile.fasttrack.protector.cap"><code>CapSettings</code></a> into a storage so it can be use later during otp generation.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/gemalto/idp/mobile/fasttrack/protector/cap/CapMobileProtector.html#provision-java.lang.String-java.lang.String-com.gemalto.idp.mobile.fasttrack.protector.cap.CapSettings-com.gemalto.idp.mobile.fasttrack.protector.cap.CapTokenDeviceCreationCallback-">provision</a></span>(java.lang.String&nbsp;tokenName,
-         java.lang.String&nbsp;registrationCode,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/gemalto/idp/mobile/fasttrack/protector/cap/CapMobileProtector.html#provision-java.lang.String-java.lang.String-com.gemalto.idp.mobile.fasttrack.protector.cap.CapSettings-com.gemalto.idp.mobile.fasttrack.protector.cap.CapTokenDeviceCreationCallback-">provision</a></span>(<a href="https://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;tokenName,
+         <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;registrationCode,
          <a href="../../../../../../../com/gemalto/idp/mobile/fasttrack/protector/cap/CapSettings.html" title="class in com.gemalto.idp.mobile.fasttrack.protector.cap">CapSettings</a>&nbsp;capSettings,
          <a href="../../../../../../../com/gemalto/idp/mobile/fasttrack/protector/cap/CapTokenDeviceCreationCallback.html" title="interface in com.gemalto.idp.mobile.fasttrack.protector.cap">CapTokenDeviceCreationCallback</a>&nbsp;callback)</code>
 <div class="block">Provision <a href="../../../../../../../com/gemalto/idp/mobile/fasttrack/protector/cap/CapTokenDevice.html" title="interface in com.gemalto.idp.mobile.fasttrack.protector.cap"><code>CapTokenDevice</code></a> with the given name, registration code and the <a href="../../../../../../../com/gemalto/idp/mobile/fasttrack/protector/cap/CapSettings.html" title="class in com.gemalto.idp.mobile.fasttrack.protector.cap"><code>CapSettings</code></a>.</div>
@@ -194,13 +194,13 @@ extends <a href="../../../../../../../com/gemalto/idp/mobile/fasttrack/protector
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/gemalto/idp/mobile/fasttrack/protector/cap/CapMobileProtector.html#removeTokenDevice-java.lang.String-">removeTokenDevice</a></span>(java.lang.String&nbsp;tokenName)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/gemalto/idp/mobile/fasttrack/protector/cap/CapMobileProtector.html#removeTokenDevice-java.lang.String-">removeTokenDevice</a></span>(<a href="https://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;tokenName)</code>
 <div class="block">Remove <a href="../../../../../../../com/gemalto/idp/mobile/fasttrack/protector/cap/CapTokenDevice.html" title="interface in com.gemalto.idp.mobile.fasttrack.protector.cap"><code>CapTokenDevice</code></a> from the database with given name.</div>
 </td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../../com/gemalto/idp/mobile/fasttrack/protector/cap/CapMobileProtector.html" title="interface in com.gemalto.idp.mobile.fasttrack.protector.cap">CapMobileProtector</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/gemalto/idp/mobile/fasttrack/protector/cap/CapMobileProtector.html#withCustomHeaders-java.util.Map-">withCustomHeaders</a></span>(java.util.Map&lt;java.lang.String,java.lang.String&gt;&nbsp;headers)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/gemalto/idp/mobile/fasttrack/protector/cap/CapMobileProtector.html#withCustomHeaders-java.util.Map-">withCustomHeaders</a></span>(<a href="https://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;headers)</code>
 <div class="block">Configure the headers that will be sent in the provisioning call.</div>
 </td>
 </tr>
@@ -258,7 +258,7 @@ extends <a href="../../../../../../../com/gemalto/idp/mobile/fasttrack/protector
 <h4>withCustomHeaders</h4>
 <pre>@NonNull
 <a href="../../../../../../../com/gemalto/idp/mobile/fasttrack/protector/cap/CapMobileProtector.html" title="interface in com.gemalto.idp.mobile.fasttrack.protector.cap">CapMobileProtector</a>&nbsp;withCustomHeaders(@NonNull
-                                              java.util.Map&lt;java.lang.String,java.lang.String&gt;&nbsp;headers)</pre>
+                                              <a href="https://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;headers)</pre>
 <div class="block">Configure the headers that will be sent in the provisioning call.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -275,9 +275,9 @@ extends <a href="../../../../../../../com/gemalto/idp/mobile/fasttrack/protector
 <li class="blockList">
 <h4>provision</h4>
 <pre>void&nbsp;provision(@NonNull
-               java.lang.String&nbsp;tokenName,
+               <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;tokenName,
                @NonNull
-               java.lang.String&nbsp;registrationCode,
+               <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;registrationCode,
                @NonNull
                <a href="../../../../../../../com/gemalto/idp/mobile/fasttrack/protector/cap/CapSettings.html" title="class in com.gemalto.idp.mobile.fasttrack.protector.cap">CapSettings</a>&nbsp;capSettings,
                @NonNull
@@ -310,8 +310,8 @@ extends <a href="../../../../../../../com/gemalto/idp/mobile/fasttrack/protector
 <li class="blockList">
 <h4>getTokenDeviceNames</h4>
 <pre>@NonNull
-java.util.Set&lt;java.lang.String&gt;&nbsp;getTokenDeviceNames()
-                                                      throws <a href="../../../../../../../com/gemalto/idp/mobile/fasttrack/FastTrackException.html" title="class in com.gemalto.idp.mobile.fasttrack">FastTrackException</a></pre>
+<a href="https://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;getTokenDeviceNames()
+                                  throws <a href="../../../../../../../com/gemalto/idp/mobile/fasttrack/FastTrackException.html" title="class in com.gemalto.idp.mobile.fasttrack">FastTrackException</a></pre>
 <div class="block">Retrieve the Set of names of existing <a href="../../../../../../../com/gemalto/idp/mobile/fasttrack/protector/cap/CapTokenDevice.html" title="interface in com.gemalto.idp.mobile.fasttrack.protector.cap"><code>CapTokenDevice</code></a> from the database.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -328,7 +328,7 @@ java.util.Set&lt;java.lang.String&gt;&nbsp;getTokenDeviceNames()
 <li class="blockList">
 <h4>removeTokenDevice</h4>
 <pre>boolean&nbsp;removeTokenDevice(@NonNull
-                          java.lang.String&nbsp;tokenName)
+                          <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;tokenName)
                    throws <a href="../../../../../../../com/gemalto/idp/mobile/fasttrack/FastTrackException.html" title="class in com.gemalto.idp.mobile.fasttrack">FastTrackException</a></pre>
 <div class="block">Remove <a href="../../../../../../../com/gemalto/idp/mobile/fasttrack/protector/cap/CapTokenDevice.html" title="interface in com.gemalto.idp.mobile.fasttrack.protector.cap"><code>CapTokenDevice</code></a> from the database with given name.</div>
 <dl>
@@ -347,7 +347,7 @@ java.util.Set&lt;java.lang.String&gt;&nbsp;getTokenDeviceNames()
 <h4>getTokenDevice</h4>
 <pre>@Nullable
 <a href="../../../../../../../com/gemalto/idp/mobile/fasttrack/protector/cap/CapTokenDevice.html" title="interface in com.gemalto.idp.mobile.fasttrack.protector.cap">CapTokenDevice</a>&nbsp;getTokenDevice(@NonNull
-                                        java.lang.String&nbsp;tokenName,
+                                        <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;tokenName,
                                         @Nullable
                                         byte[]&nbsp;customFingerprintData)
                                  throws <a href="../../../../../../../com/gemalto/idp/mobile/fasttrack/FastTrackException.html" title="class in com.gemalto.idp.mobile.fasttrack">FastTrackException</a></pre>
@@ -404,7 +404,7 @@ java.util.Set&lt;java.lang.String&gt;&nbsp;getTokenDeviceNames()
 <li class="blockList">
 <h4>persistCapSettings</h4>
 <pre>boolean&nbsp;persistCapSettings(@NonNull
-                           java.lang.String&nbsp;tokenName,
+                           <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;tokenName,
                            @NonNull
                            <a href="../../../../../../../com/gemalto/idp/mobile/fasttrack/protector/cap/CapSettings.html" title="class in com.gemalto.idp.mobile.fasttrack.protector.cap">CapSettings</a>&nbsp;capSettings)</pre>
 <div class="block">Store the previously used <a href="../../../../../../../com/gemalto/idp/mobile/fasttrack/protector/cap/CapSettings.html" title="class in com.gemalto.idp.mobile.fasttrack.protector.cap"><code>CapSettings</code></a> into a storage so it can be use later during otp generation.
