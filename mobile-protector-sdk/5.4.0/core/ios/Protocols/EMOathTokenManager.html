@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>EMOathTokenManager Protocol Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">Mobile Protector SDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Thales DIS</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/createLowPlatformCouplingToken:provisioningConfiguration:extendedCompletionHandler:">- createLowPlatformCouplingToken:provisioningConfiguration:extendedCompletionHandler:</option>
+		
+		<option value="//api/name/createTokenWithName:provisioningConfiguration:capability:completionHandler:">- createTokenWithName:provisioningConfiguration:capability:completionHandler:</option>
+		
+		<option value="//api/name/createTokenWithName:provisioningConfiguration:completionHandler:">- createTokenWithName:provisioningConfiguration:completionHandler:</option>
+		
+		<option value="//api/name/createTokenWithName:provisioningConfiguration:deviceFingerprintTokenPolicy:capability:completionHandler:">- createTokenWithName:provisioningConfiguration:deviceFingerprintTokenPolicy:capability:completionHandler:</option>
+		
+		<option value="//api/name/createTokenWithName:provisioningConfiguration:deviceFingerprintTokenPolicy:capability:extendedCompletionHandler:">- createTokenWithName:provisioningConfiguration:deviceFingerprintTokenPolicy:capability:extendedCompletionHandler:</option>
+		
+		<option value="//api/name/createTokenWithName:provisioningConfiguration:deviceFingerprintTokenPolicy:completionHandler:">- createTokenWithName:provisioningConfiguration:deviceFingerprintTokenPolicy:completionHandler:</option>
+		
+		<option value="//api/name/createTokenWithName:provisioningConfiguration:deviceFingerprintTokenPolicy:extendedCompletionHandler:">- createTokenWithName:provisioningConfiguration:deviceFingerprintTokenPolicy:extendedCompletionHandler:</option>
+		
+		<option value="//api/name/tokenCapabilitiesWithName:error:">- tokenCapabilitiesWithName:error:</option>
+		
+		<option value="//api/name/tokenWithName:error:">- tokenWithName:error:</option>
+		
+		<option value="//api/name/tokenWithName:fingerprintCustomData:error:">- tokenWithName:fingerprintCustomData:error:</option>
+		
+		<option value="//api/name/tokenWithUti:error:">- tokenWithUti:error:</option>
+		
+		<option value="//api/name/tokenWithUti:fingerprintCustomData:error:">- tokenWithUti:fingerprintCustomData:error:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">EMOathTokenManager Protocol Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Conforms to</th>
+	<td><a href="../Protocols/EMTokenManager.html">EMTokenManager</a><br />NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>EMOathTokenManager.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>OATH Token Manager</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/tokenWithName:error:" title="tokenWithName:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/tokenWithName:error:">&ndash;&nbsp;tokenWithName:error:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns an existing token with the given name.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;EMOathToken&gt;)tokenWithName:(NSString *)<em>name</em> error:(NSError **)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>name</code></th>
+						<td><p>The name of the token.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>If an error occurs, upon return contains an NSError object that describes the problem. If you are not interested in possible errors, you may pass in <code>NULL</code>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The token, <code>nil</code> if not found or if an error occurred.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection arguments-section exceptions">
+				<h4 class="method-subtitle exception-title">Exceptions</h4>
+				<table class="argument-def exception-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>EMActivationException</code></th>
+						<td><p>when the activation code supplied on <a href="../Classes/EMCore.html#//api/name/configureWithActivationCode:configurations:">[EMCore configureWithActivationCode:configurations:]</a> or [EMCore configureWithActivationCode:configurations:useDeviceSourceBinding] does not have the white box cryptography feature turned on.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMOathTokenManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/tokenWithName:fingerprintCustomData:error:" title="tokenWithName:fingerprintCustomData:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/tokenWithName:fingerprintCustomData:error:">&ndash;&nbsp;tokenWithName:fingerprintCustomData:error:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns an existing token with the given name and fingerprint.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;EMOathToken&gt;)tokenWithName:(NSString *)<em>name</em> fingerprintCustomData:(NSData *)<em>fingerprintCustomData</em> error:(NSError **)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>name</code></th>
+						<td><p>The name of the token.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fingerprintCustomData</code></th>
+						<td><p>The fingerprint custom data.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>If an error occurs, upon return contains an NSError object that describes the problem. If you are not interested in possible errors, you may pass in <code>NULL</code>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The token, <code>nil</code> if not found or if an error occurred.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection arguments-section exceptions">
+				<h4 class="method-subtitle exception-title">Exceptions</h4>
+				<table class="argument-def exception-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>EMActivationException</code></th>
+						<td><p>when the activation code supplied on <a href="../Classes/EMCore.html#//api/name/configureWithActivationCode:configurations:">[EMCore configureWithActivationCode:configurations:]</a> or [EMCore configureWithActivationCode:configurations:useDeviceSourceBinding] does not have the white box cryptography feature turned on.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMOathTokenManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/tokenWithUti:error:" title="tokenWithUti:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/tokenWithUti:error:">&ndash;&nbsp;tokenWithUti:error:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns an existing token with the given UTI (user token id).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;EMOathToken&gt;)tokenWithUti:(long)<em>uti</em> error:(NSError **)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>uti</code></th>
+						<td><p>The UTI of the token.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>If an error occurs, upon return contains an NSError object that describes the problem. If you are not interested in possible errors, you may pass in <code>NULL</code>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The token, <code>nil</code> if not found or if an error occurred.</p>
+			</div>
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>4.5</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection arguments-section exceptions">
+				<h4 class="method-subtitle exception-title">Exceptions</h4>
+				<table class="argument-def exception-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>EMActivationException</code></th>
+						<td><p>when the activation code supplied on <a href="../Classes/EMCore.html#//api/name/configureWithActivationCode:configurations:">[EMCore configureWithActivationCode:configurations:]</a> or [EMCore configureWithActivationCode:configurations:useDeviceSourceBinding] does not have the white box cryptography feature turned on.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMOathTokenManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/tokenWithUti:fingerprintCustomData:error:" title="tokenWithUti:fingerprintCustomData:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/tokenWithUti:fingerprintCustomData:error:">&ndash;&nbsp;tokenWithUti:fingerprintCustomData:error:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns an existing token with the given UTI (user token id) and fingerprint.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;EMOathToken&gt;)tokenWithUti:(long)<em>uti</em> fingerprintCustomData:(NSData *)<em>fingerprintCustomData</em> error:(NSError **)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>uti</code></th>
+						<td><p>The UTI of the token.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fingerprintCustomData</code></th>
+						<td><p>The fingerprint custom data.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>If an error occurs, upon return contains an NSError object that describes the problem. If you are not interested in possible errors, you may pass in <code>NULL</code>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The token, <code>nil</code> if not found or if an error occurred.</p>
+			</div>
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>4.5</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection arguments-section exceptions">
+				<h4 class="method-subtitle exception-title">Exceptions</h4>
+				<table class="argument-def exception-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>EMActivationException</code></th>
+						<td><p>when the activation code supplied on <a href="../Classes/EMCore.html#//api/name/configureWithActivationCode:configurations:">[EMCore configureWithActivationCode:configurations:]</a> or [EMCore configureWithActivationCode:configurations:useDeviceSourceBinding] does not have the white box cryptography feature turned on.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMOathTokenManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createTokenWithName:provisioningConfiguration:completionHandler:" title="createTokenWithName:provisioningConfiguration:completionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createTokenWithName:provisioningConfiguration:completionHandler:">&ndash;&nbsp;createTokenWithName:provisioningConfiguration:completionHandler:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Starts the creation of a new token with the specified token name and the provisioning configuration. Before creating the token, integrator has to make sure there is no existing token with the same token name.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)createTokenWithName:(NSString *)<em>name</em> provisioningConfiguration:(EMProvisioningConfiguration *)<em>configuration</em> completionHandler:(void ( ^ ) ( id&lt;EMOathToken&gt; token , NSError *error ))<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>name</code></th>
+						<td><p>The token name.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>configuration</code></th>
+						<td><p>The provisioning configuration.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>mandatory block to be invoked when error occurs or when token creation is completed.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> This API does not support Mobile Provisioning Protocol version 5.</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMOathTokenManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createTokenWithName:provisioningConfiguration:deviceFingerprintTokenPolicy:completionHandler:" title="createTokenWithName:provisioningConfiguration:deviceFingerprintTokenPolicy:completionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createTokenWithName:provisioningConfiguration:deviceFingerprintTokenPolicy:completionHandler:">&ndash;&nbsp;createTokenWithName:provisioningConfiguration:deviceFingerprintTokenPolicy:completionHandler:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Starts the creation of a new token with the specified token name, provisioning configuration, and device fingerprint policy. Before creating the token, integrator has to make sure there is no existing token with the same token name.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)createTokenWithName:(NSString *)<em>name</em> provisioningConfiguration:(EMProvisioningConfiguration *)<em>configuration</em> deviceFingerprintTokenPolicy:(EMDeviceFingerprintTokenPolicy *)<em>deviceFingerprintTokenPolicy</em> completionHandler:(void ( ^ ) ( id&lt;EMOathToken&gt; token , NSError *error ))<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>name</code></th>
+						<td><p>The token name.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>configuration</code></th>
+						<td><p>The provisioning configuration.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>deviceFingerprintTokenPolicy</code></th>
+						<td><p>device fingerprint token policy</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>mandatory block to be invoked when error occurs or when token creation is completed.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> This API does not support Mobile Provisioning Protocol version 5.</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMOathTokenManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createTokenWithName:provisioningConfiguration:deviceFingerprintTokenPolicy:capability:completionHandler:" title="createTokenWithName:provisioningConfiguration:deviceFingerprintTokenPolicy:capability:completionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createTokenWithName:provisioningConfiguration:deviceFingerprintTokenPolicy:capability:completionHandler:">&ndash;&nbsp;createTokenWithName:provisioningConfiguration:deviceFingerprintTokenPolicy:capability:completionHandler:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Starts the creation of a new token with the specified token name, provisioning configuration, device fingerprint policy, and token capability. Before creating the token, integrator has to make sure there is no existing token with the same token name.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)createTokenWithName:(NSString *)<em>name</em> provisioningConfiguration:(EMProvisioningConfiguration *)<em>configuration</em> deviceFingerprintTokenPolicy:(EMDeviceFingerprintTokenPolicy *)<em>deviceFingerprintTokenPolicy</em> capability:(EMTokenCapability)<em>capability</em> completionHandler:(void ( ^ ) ( id&lt;EMOathToken&gt; token , NSError *error ))<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>name</code></th>
+						<td><p>The token name.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>configuration</code></th>
+						<td><p>The provisioning configuration.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>deviceFingerprintTokenPolicy</code></th>
+						<td><p>device fingerprint token policy</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>capability</code></th>
+						<td><p>The token capability (OTP computation, dual seed&hellip;). See <a href="../Constants/EMTokenCapability.html">EMTokenCapability</a>.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>mandatory block to be invoked when error occurs or when token creation is completed.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> This API does not support Mobile Provisioning Protocol version 5.</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMOathTokenManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createTokenWithName:provisioningConfiguration:capability:completionHandler:" title="createTokenWithName:provisioningConfiguration:capability:completionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createTokenWithName:provisioningConfiguration:capability:completionHandler:">&ndash;&nbsp;createTokenWithName:provisioningConfiguration:capability:completionHandler:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Starts the creation of a new token with the specified token name, provisioning configuration and the token capability. Before creating the token, integrator has to make sure there is no existing token with the same token name.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)createTokenWithName:(NSString *)<em>name</em> provisioningConfiguration:(EMProvisioningConfiguration *)<em>configuration</em> capability:(EMTokenCapability)<em>capability</em> completionHandler:(void ( ^ ) ( id&lt;EMOathToken&gt; token , NSError *error ))<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>name</code></th>
+						<td><p>The token name.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>configuration</code></th>
+						<td><p>The provisioning configuration.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>capability</code></th>
+						<td><p>The token capability (OTP computation, dual seed&hellip;). See <a href="../Constants/EMTokenCapability.html">EMTokenCapability</a>.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>mandatory block to be invoked when error occurs or when token creation is completed.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> This API does not support Mobile Provisioning Protocol version 5.</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMOathTokenManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createTokenWithName:provisioningConfiguration:deviceFingerprintTokenPolicy:extendedCompletionHandler:" title="createTokenWithName:provisioningConfiguration:deviceFingerprintTokenPolicy:extendedCompletionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createTokenWithName:provisioningConfiguration:deviceFingerprintTokenPolicy:extendedCompletionHandler:">&ndash;&nbsp;createTokenWithName:provisioningConfiguration:deviceFingerprintTokenPolicy:extendedCompletionHandler:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Starts the creation of a new token with the specified token name, provisioning configuration, and device fingerprint policy. Before creating the token, integrator has to make sure there is no existing token with the same token name. This API support Mobile Provisioning Protocol version 5 which will allows extensions to provide additional information set by the server, if any.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)createTokenWithName:(NSString *)<em>name</em> provisioningConfiguration:(EMProvisioningConfiguration *)<em>configuration</em> deviceFingerprintTokenPolicy:(EMDeviceFingerprintTokenPolicy *)<em>deviceFingerprintTokenPolicy</em> extendedCompletionHandler:(void ( ^ ) ( id&lt;EMOathToken&gt; token , NSDictionary *extensions , NSError *error ))<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>name</code></th>
+						<td><p>The token name.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>configuration</code></th>
+						<td><p>The provisioning configuration.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>deviceFingerprintTokenPolicy</code></th>
+						<td><p>device fingerprint token policy</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>mandatory block to be invoked when error occurs or when token creation is completed. Specific for Mobile Provisioning Protocol version 5, this handler will contains extensions information for any string extension of &ldquo;client.app.*&rdquo;</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>5.0</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection arguments-section exceptions">
+				<h4 class="method-subtitle exception-title">Exceptions</h4>
+				<table class="argument-def exception-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>EMActivationException</code></th>
+						<td><p>when the activation code supplied on <a href="../Classes/EMCore.html#//api/name/configureWithActivationCode:configurations:">[EMCore configureWithActivationCode:configurations:]</a> or [EMCore configureWithActivationCode:configurations:useDeviceSourceBinding] does not have the white box cryptography feature turned on.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMOathTokenManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createTokenWithName:provisioningConfiguration:deviceFingerprintTokenPolicy:capability:extendedCompletionHandler:" title="createTokenWithName:provisioningConfiguration:deviceFingerprintTokenPolicy:capability:extendedCompletionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createTokenWithName:provisioningConfiguration:deviceFingerprintTokenPolicy:capability:extendedCompletionHandler:">&ndash;&nbsp;createTokenWithName:provisioningConfiguration:deviceFingerprintTokenPolicy:capability:extendedCompletionHandler:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Starts the creation of a new token with the specified token name, provisioning configuration, and device fingerprint policy. Before creating the token, integrator has to make sure there is no existing token with the same token name. This API support Mobile Provisioning Protocol version 5 which will allows extensions to provide additional information set by the server, if any.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)createTokenWithName:(NSString *)<em>name</em> provisioningConfiguration:(EMProvisioningConfiguration *)<em>configuration</em> deviceFingerprintTokenPolicy:(EMDeviceFingerprintTokenPolicy *)<em>deviceFingerprintTokenPolicy</em> capability:(EMTokenCapability)<em>capability</em> extendedCompletionHandler:(void ( ^ ) ( id&lt;EMOathToken&gt; token , NSDictionary *extensions , NSError *error ))<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>name</code></th>
+						<td><p>The token name.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>configuration</code></th>
+						<td><p>The provisioning configuration.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>deviceFingerprintTokenPolicy</code></th>
+						<td><p>device fingerprint token policy</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>capability</code></th>
+						<td><p>The token capability (OTP computation, dual seed&hellip;). See <a href="../Constants/EMTokenCapability.html">EMTokenCapability</a>.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>mandatory block to be invoked when error occurs or when token creation is completed. Specific for Mobile Provisioning Protocol version 5, this handler will contains extensions information for any string extension of &ldquo;client.app.*&rdquo;</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>5.0</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection arguments-section exceptions">
+				<h4 class="method-subtitle exception-title">Exceptions</h4>
+				<table class="argument-def exception-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>EMActivationException</code></th>
+						<td><p>when the activation code supplied on <a href="../Classes/EMCore.html#//api/name/configureWithActivationCode:configurations:">[EMCore configureWithActivationCode:configurations:]</a> or [EMCore configureWithActivationCode:configurations:useDeviceSourceBinding] does not have the white box cryptography feature turned on.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMOathTokenManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createLowPlatformCouplingToken:provisioningConfiguration:extendedCompletionHandler:" title="createLowPlatformCouplingToken:provisioningConfiguration:extendedCompletionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createLowPlatformCouplingToken:provisioningConfiguration:extendedCompletionHandler:">&ndash;&nbsp;createLowPlatformCouplingToken:provisioningConfiguration:extendedCompletionHandler:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>To Creates a LowPlatformCoupling Token which is not affected by the changes in DeviceFingerprint.
+<warn>A LowPlatformCoupling Token only permits PIN mode. [token upgradeToMultiAuthMode:input error:error] call is not allowed. <warn/></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)createLowPlatformCouplingToken:(NSString *)<em>name</em> provisioningConfiguration:(EMProvisioningConfiguration *)<em>configuration</em> extendedCompletionHandler:(void ( ^ ) ( id&lt;EMOathToken&gt; token , NSDictionary *extensions , NSError *error ))<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>name</code></th>
+						<td><p>The token name.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>configuration</code></th>
+						<td><p>The provisioning configuration.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>mandatory block to be invoked when error occurs or when token creation is completed. Specific for Mobile Provisioning Protocol version 5, this handler will contains extensions information for any string extension of &ldquo;client.app.*&rdquo;</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>5.2.0</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMOathTokenManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/tokenCapabilitiesWithName:error:" title="tokenCapabilitiesWithName:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/tokenCapabilitiesWithName:error:">&ndash;&nbsp;tokenCapabilitiesWithName:error:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get capabilities of token with given name.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (EMEnumSet *)tokenCapabilitiesWithName:(NSString *)<em>name</em> error:(NSError **)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>name</code></th>
+						<td><p>The name of the token. Returns the capabilities of an existing token.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>If an error occurs, upon return contains an NSError object that describes the problem. If you are not interested in possible errors, you may pass in <code>NULL</code>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The collection of token capabilities. See <a href="../Constants/EMTokenCapability.html">EMTokenCapability</a></p>
+			</div>
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>4.0</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection arguments-section exceptions">
+				<h4 class="method-subtitle exception-title">Exceptions</h4>
+				<table class="argument-def exception-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>EMCredentialDoesNotExistException</code></th>
+						<td><p>When the token does not exist</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>NSInternalInconsistencyException</code></th>
+						<td><p>When an unexpected error occurs
+while reading the token from the DB</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMOathTokenManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2020 Thales DIS. All rights reserved. Updated: 2020-05-19</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

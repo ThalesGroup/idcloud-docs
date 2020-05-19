@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>EMCore Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">Mobile Protector SDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Thales DIS</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/configureWithActivationCode:configurations:">+ configureWithActivationCode:configurations:</option>
+		
+		<option value="//api/name/configureWithActivationCode:configurations:useDeviceSourceBinding:">+ configureWithActivationCode:configurations:useDeviceSourceBinding:</option>
+		
+		<option value="//api/name/configureWithActivationCode:configurations:useDeviceSourceBinding:groupIdentifier:">+ configureWithActivationCode:configurations:useDeviceSourceBinding:groupIdentifier:</option>
+		
+		<option value="//api/name/configureWithConfigurations:">+ configureWithConfigurations:</option>
+		
+		<option value="//api/name/configureWithConfigurations:useDeviceSourceBinding:">+ configureWithConfigurations:useDeviceSourceBinding:</option>
+		
+		<option value="//api/name/configureWithConfigurations:useDeviceSourceBinding:groupIdentifier:">+ configureWithConfigurations:useDeviceSourceBinding:groupIdentifier:</option>
+		
+		<option value="//api/name/isConfigured">+ isConfigured</option>
+		
+		<option value="//api/name/isDeviceSourceBindingEnabled">+ isDeviceSourceBindingEnabled</option>
+		
+		<option value="//api/name/sharedInstance">+ sharedInstance</option>
+		
+		<option value="//api/name/updateConfigurations:">+ updateConfigurations:</option>
+		
+		<option value="//api/name/version">+ version</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/hasPendingMigration">- hasPendingMigration</option>
+		
+		<option value="//api/name/ignoreMigration:">- ignoreMigration:</option>
+		
+		<option value="//api/name/passwordManager">- passwordManager</option>
+		
+		<option value="//api/name/performMigrationWithAlertMessage:completion:">- performMigrationWithAlertMessage:completion:</option>
+		
+		<option value="//api/name/secureContainerFactory">- secureContainerFactory</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">EMCore Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>EMCore.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>EMCore is the entry-point of the SDK Core. EMCore takes the configurations
+needed for different modules and provides shared SDK functionalities.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/sharedInstance" title="sharedInstance"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sharedInstance">+&nbsp;sharedInstance</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Singleton instance of EMCore</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (instancetype)sharedInstance</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The singleton EMCore instance. This method requires Core to be configured before.</p>
+			</div>
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>4.0</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMCore.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/configureWithConfigurations:" title="configureWithConfigurations:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/configureWithConfigurations:">+&nbsp;configureWithConfigurations:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Configures the core with module configurations. It is the entry point of the SDK.
+All other features should not be used without invoking this method.
+Configuration can only be called once.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (instancetype)configureWithConfigurations:(NSSet *)<em>configurations</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>configurations</code></th>
+						<td><p>The set of module configurations.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>4.0</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMCore.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/configureWithConfigurations:useDeviceSourceBinding:" title="configureWithConfigurations:useDeviceSourceBinding:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/configureWithConfigurations:useDeviceSourceBinding:">+&nbsp;configureWithConfigurations:useDeviceSourceBinding:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Configures the core with module configurations. It is the entry point of the SDK.
+All other features should not be used without invoking this method.
+Configuration can only be called once.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (instancetype)configureWithConfigurations:(NSSet *)<em>configurations</em> useDeviceSourceBinding:(BOOL)<em>useDeviceSourceBinding</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>configurations</code></th>
+						<td><p>The set of module configurations.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>useDeviceSourceBinding</code></th>
+						<td><p>device binding to enable or disable DEVICE fingerprint source. Enabling this flag is equivalent to including &lsquo;DEVICE&rsquo; in the Device Fingerprint Source configuration in 2.X.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>4.4</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMCore.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/configureWithConfigurations:useDeviceSourceBinding:groupIdentifier:" title="configureWithConfigurations:useDeviceSourceBinding:groupIdentifier:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/configureWithConfigurations:useDeviceSourceBinding:groupIdentifier:">+&nbsp;configureWithConfigurations:useDeviceSourceBinding:groupIdentifier:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Configures the core with module configurations. It is the entry point of the SDK.
+All other features should not be used without invoking this method.
+Configuration can only be called once.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (instancetype)configureWithConfigurations:(NSSet *)<em>configurations</em> useDeviceSourceBinding:(BOOL)<em>useDeviceSourceBinding</em> groupIdentifier:(NSString *)<em>groupIdentifier</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>configurations</code></th>
+						<td><p>The set of module configurations.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>useDeviceSourceBinding</code></th>
+						<td><p>device binding to enable or disable DEVICE fingerprint source. Enabling this flag is equivalent to including &lsquo;DEVICE&rsquo; in the Device Fingerprint Source configuration in 2.X.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>groupIdentifier</code></th>
+						<td><p>The app group id, to allow group access to the files.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>4.7</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMCore.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/configureWithActivationCode:configurations:" title="configureWithActivationCode:configurations:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/configureWithActivationCode:configurations:">+&nbsp;configureWithActivationCode:configurations:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Configures the core with module configurations. It is the entry point of the SDK.
+All other features should not be used without invoking this method.
+Configuration can only be called once.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (instancetype)configureWithActivationCode:(NSData *)<em>activationCode</em> configurations:(NSSet *)<em>configurations</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>activationCode</code></th>
+						<td><p>The activation code.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>configurations</code></th>
+						<td><p>The set of <a href="../Classes/EMModuleConfiguration.html">EMModuleConfiguration</a> module configurations.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>4.0</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection arguments-section exceptions">
+				<h4 class="method-subtitle exception-title">Exceptions</h4>
+				<table class="argument-def exception-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>NSException</code></th>
+						<td><p>if core is already configured</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMCore.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/configureWithActivationCode:configurations:useDeviceSourceBinding:" title="configureWithActivationCode:configurations:useDeviceSourceBinding:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/configureWithActivationCode:configurations:useDeviceSourceBinding:">+&nbsp;configureWithActivationCode:configurations:useDeviceSourceBinding:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Configures the core with module configurations. It is the entry point of the SDK.
+All other features should not be used without invoking this method.
+Configuration can only be called once.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (instancetype)configureWithActivationCode:(NSData *)<em>activationCode</em> configurations:(NSSet *)<em>configurations</em> useDeviceSourceBinding:(BOOL)<em>useDeviceSourceBinding</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>activationCode</code></th>
+						<td><p>The activation code.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>configurations</code></th>
+						<td><p>The set of <a href="../Classes/EMModuleConfiguration.html">EMModuleConfiguration</a> module configurations.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>useDeviceSourceBinding</code></th>
+						<td><p>device binding to enable or disable DEVICE fingerprint source. Enabling this flag is equivalent to including &lsquo;DEVICE&rsquo; in the Device Fingerprint Source configuration in 2.X.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>4.4</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection arguments-section exceptions">
+				<h4 class="method-subtitle exception-title">Exceptions</h4>
+				<table class="argument-def exception-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>NSException</code></th>
+						<td><p>if core is already configured</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMCore.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/configureWithActivationCode:configurations:useDeviceSourceBinding:groupIdentifier:" title="configureWithActivationCode:configurations:useDeviceSourceBinding:groupIdentifier:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/configureWithActivationCode:configurations:useDeviceSourceBinding:groupIdentifier:">+&nbsp;configureWithActivationCode:configurations:useDeviceSourceBinding:groupIdentifier:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Configures the core with module configurations. It is the entry point of the SDK.
+All other features should not be used without invoking this method.
+Configuration can only be called once.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (instancetype)configureWithActivationCode:(NSData *)<em>activationCode</em> configurations:(NSSet *)<em>configurations</em> useDeviceSourceBinding:(BOOL)<em>useDeviceSourceBinding</em> groupIdentifier:(NSString *)<em>groupIdentifier</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>activationCode</code></th>
+						<td><p>The activation code.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>configurations</code></th>
+						<td><p>The set of <a href="../Classes/EMModuleConfiguration.html">EMModuleConfiguration</a> module configurations.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>useDeviceSourceBinding</code></th>
+						<td><p>device binding to enable or disable DEVICE fingerprint source. Enabling this flag is equivalent to including &lsquo;DEVICE&rsquo; in the Device Fingerprint Source configuration in 2.X.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>groupIdentifier</code></th>
+						<td><p>The app group id, to allow group access to the files.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>4.7</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection arguments-section exceptions">
+				<h4 class="method-subtitle exception-title">Exceptions</h4>
+				<table class="argument-def exception-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>NSException</code></th>
+						<td><p>if core is already configured</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMCore.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isConfigured" title="isConfigured"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isConfigured">+&nbsp;isConfigured</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Tells if the core has been configured or not</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (BOOL)isConfigured</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>YES if configured, NO otherwise.</p>
+			</div>
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>4.0</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMCore.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isDeviceSourceBindingEnabled" title="isDeviceSourceBindingEnabled"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isDeviceSourceBindingEnabled">+&nbsp;isDeviceSourceBindingEnabled</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Tells if device source binding is enabled or not</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (BOOL)isDeviceSourceBindingEnabled</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>YES if enabled, NO otherwise.</p>
+			</div>
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>4.4</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMCore.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/version" title="version"></a>
+	<h3 class="method-title"><code><a href="#//api/name/version">+&nbsp;version</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The version of the core.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSString *)version</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Version of the core.</p>
+			</div>
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>4.0</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMCore.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/passwordManager" title="passwordManager"></a>
+	<h3 class="method-title"><code><a href="#//api/name/passwordManager">&ndash;&nbsp;passwordManager</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get passwordManager <a href="../Protocols/EMPasswordManager.html">EMPasswordManager</a>. which is used to unlock secrets used by different
+modules.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;EMPasswordManager&gt;)passwordManager</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The password manager.</p>
+			</div>
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>4.0</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMCore.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/secureContainerFactory" title="secureContainerFactory"></a>
+	<h3 class="method-title"><code><a href="#//api/name/secureContainerFactory">&ndash;&nbsp;secureContainerFactory</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get factory object for creating SecureContainer objects.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;EMSecureContainerFactory&gt;)secureContainerFactory</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Secure container factory.</p>
+			</div>
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>4.0</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMCore.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updateConfigurations:" title="updateConfigurations:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateConfigurations:">+&nbsp;updateConfigurations:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Update Configuration.
+This will replace existing one (if any) and add new one (if it does not exist previously).
+However, it will not delete existing one if configs parameter does not contains some of existing one</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)updateConfigurations:(NSSet *)<em>configurations</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>configurations</code></th>
+						<td><p>list of configuration parameters. It does not need to contains all existing configurations</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>5.3.0</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMCore.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Migration Methods" name="task_Migration Methods"></a>
+						<h2 class="task-title">Migration Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/hasPendingMigration" title="hasPendingMigration"></a>
+	<h3 class="method-title"><code><a href="#//api/name/hasPendingMigration">&ndash;&nbsp;hasPendingMigration</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Whether the SDK has pending migration
+This is TRUE any of the following conditions are met:
+(1) App Bundle Version Update
+(2) Ezio SDK Upgrade
+(3) Change in Keychain Access Group
+(4) Change in Device Binding Parameter</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)hasPendingMigration</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>YES if there are pending items to migrate, NO otherwise</p>
+			</div>
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>4.7</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMCore.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/performMigrationWithAlertMessage:completion:" title="performMigrationWithAlertMessage:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/performMigrationWithAlertMessage:completion:">&ndash;&nbsp;performMigrationWithAlertMessage:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Performs the migration</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)performMigrationWithAlertMessage:(NSString *)<em>message</em> completion:(void ( ^ ) ( BOOL success , NSError *error ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>message</code></th>
+						<td><p>The prompt message for TouchID/FaceID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>The migration completion handler. Returns the status of migration and error if any.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>4.7</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> Performed asynchronously</p>
+
+<p>Note: During migration, if TouchID/FaceID has been used before, TouchID/FaceID alert is prompted for authentication.
+It is recommended that before calling this API, you have already notified the end user that authentication is
+about to be done to contiue with the migration.</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMCore.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ignoreMigration:" title="ignoreMigration:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ignoreMigration:">&ndash;&nbsp;ignoreMigration:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets whether to ignore the pending migration or not.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)ignoreMigration:(BOOL)<em>ignore</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>ignore</code></th>
+						<td><p>Whether to ignore or not.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>4.7</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> This is called only once. After this, <a href="#//api/name/hasPendingMigration">hasPendingMigration</a> will return to NO.</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMCore.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2020 Thales DIS. All rights reserved. Updated: 2020-05-19</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

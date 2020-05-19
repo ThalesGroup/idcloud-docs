@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>EMOobNotificationManager Protocol Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">Mobile Protector SDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Thales DIS</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/clearNotificationProfiles:">- clearNotificationProfiles:</option>
+		
+		<option value="//api/name/clearNotificationProfilesWithCompletionHandler:">- clearNotificationProfilesWithCompletionHandler:</option>
+		
+		<option value="//api/name/clearNotificationProfilesWithRequestParameter:completionHandler:">- clearNotificationProfilesWithRequestParameter:completionHandler:</option>
+		
+		<option value="//api/name/clearNotificationProfilesWithRequestParameter:error:">- clearNotificationProfilesWithRequestParameter:error:</option>
+		
+		<option value="//api/name/notificationProfiles:">- notificationProfiles:</option>
+		
+		<option value="//api/name/notificationProfilesWithCompletionHandler:">- notificationProfilesWithCompletionHandler:</option>
+		
+		<option value="//api/name/notificationProfilesWithRequestParameter:completionHandler:">- notificationProfilesWithRequestParameter:completionHandler:</option>
+		
+		<option value="//api/name/notificationProfilesWithRequestParameter:error:">- notificationProfilesWithRequestParameter:error:</option>
+		
+		<option value="//api/name/setNotificationProfiles:completionHandler:">- setNotificationProfiles:completionHandler:</option>
+		
+		<option value="//api/name/setNotificationProfiles:error:">- setNotificationProfiles:error:</option>
+		
+		<option value="//api/name/setNotificationProfiles:requestParameter:completionHandler:">- setNotificationProfiles:requestParameter:completionHandler:</option>
+		
+		<option value="//api/name/setNotificationProfiles:requestParameter:error:">- setNotificationProfiles:requestParameter:error:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">EMOobNotificationManager Protocol Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Conforms to</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>EMOobNotificationManager.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>The manager that provides functionality to manage a user notification profile. A notification profile is a list of
+<a href="../Classes/EMOobNotificationProfile.html">EMOobNotificationProfile</a> objects. Each notification profile contains a channel (SMS, Push, email,
+etc.) and an end point attached to that channel (for example an email address for the case of an email channel).</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/notificationProfiles:" title="notificationProfiles:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/notificationProfiles:">&ndash;&nbsp;notificationProfiles:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Retrieves the list of notification profiles from the server.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;EMOobNotificationProfilesResponse&gt;)notificationProfiles:(NSError **)<em>anError</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>anError</code></th>
+						<td><p>If an error occurs, upon return contains an NSError object that describes the problem. If you are not interested in possible errors, you may pass in <code>NULL</code>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The list of notification profiles associated with the current client.</p>
+			</div>
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>3.0</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method is long-running and should not be executed on the UI thread.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMOobNotificationManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/notificationProfilesWithRequestParameter:error:" title="notificationProfilesWithRequestParameter:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/notificationProfilesWithRequestParameter:error:">&ndash;&nbsp;notificationProfilesWithRequestParameter:error:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Retrieves the list of notification profiles from the server.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;EMOobNotificationProfilesResponse&gt;)notificationProfilesWithRequestParameter:(EMOobRequestParameter *)<em>aParam</em> error:(NSError **)<em>anError</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aParam</code></th>
+						<td><p>The request parameter object carrying the additional parameters, i.e. custom HTTP headers.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>anError</code></th>
+						<td><p>If an error occurs, upon return contains an NSError object that describes the problem. If you are not interested in possible errors, you may pass in <code>NULL</code>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The list of notification profiles associated with the current client.</p>
+			</div>
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>4.7</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method is long-running and should not be executed on the UI thread.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMOobNotificationManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setNotificationProfiles:error:" title="setNotificationProfiles:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setNotificationProfiles:error:">&ndash;&nbsp;setNotificationProfiles:error:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets or updates the list of notification profiles of the current client. If
+the list has already been set, it will be replaced by this new list.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;EMOobResponse&gt;)setNotificationProfiles:(NSArray *)<em>aNotificationProfiles</em> error:(NSError **)<em>anError</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aNotificationProfiles</code></th>
+						<td><p>A list of one or more notification profile to set as the new notification profile.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>anError</code></th>
+						<td><p>If an error occurs, upon return contains an NSError object that describes the problem. If you are not interested in possible errors, you may pass in <code>NULL</code>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The result of the request.</p>
+			</div>
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>3.0</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method is long running and should not be executed on the UI thread.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMOobNotificationManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setNotificationProfiles:requestParameter:error:" title="setNotificationProfiles:requestParameter:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setNotificationProfiles:requestParameter:error:">&ndash;&nbsp;setNotificationProfiles:requestParameter:error:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets or updates the list of notification profiles of the current client. If
+the list has already been set, it will be replaced by this new list.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;EMOobResponse&gt;)setNotificationProfiles:(NSArray *)<em>aNotificationProfiles</em> requestParameter:(EMOobRequestParameter *)<em>aParam</em> error:(NSError **)<em>anError</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aNotificationProfiles</code></th>
+						<td><p>A list of one or more notification profile to set as the new notification profile.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aParam</code></th>
+						<td><p>The request parameter object carrying the additional parameters, i.e. custom HTTP headers.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>anError</code></th>
+						<td><p>If an error occurs, upon return contains an NSError object that describes the problem. If you are not interested in possible errors, you may pass in <code>NULL</code>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The result of the request.</p>
+			</div>
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>4.7</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method is long running and should not be executed on the UI thread.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMOobNotificationManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/clearNotificationProfiles:" title="clearNotificationProfiles:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/clearNotificationProfiles:">&ndash;&nbsp;clearNotificationProfiles:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Clears (removes all) the current client notification profiles. This
+will leave the client with no notification profile.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;EMOobResponse&gt;)clearNotificationProfiles:(NSError **)<em>anError</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>anError</code></th>
+						<td><p>If an error occurs, upon return contains an NSError object that describes the problem. If you are not interested in possible errors, you may pass in <code>NULL</code>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The response of the request.</p>
+			</div>
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>3.0</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method is long-running and should not be executed on the UI thread.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMOobNotificationManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/clearNotificationProfilesWithRequestParameter:error:" title="clearNotificationProfilesWithRequestParameter:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/clearNotificationProfilesWithRequestParameter:error:">&ndash;&nbsp;clearNotificationProfilesWithRequestParameter:error:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Clears (removes all) the current client notification profiles. This
+will leave the client with no notification profile.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;EMOobResponse&gt;)clearNotificationProfilesWithRequestParameter:(EMOobRequestParameter *)<em>aParam</em> error:(NSError **)<em>anError</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aParam</code></th>
+						<td><p>The request parameter object carrying the additional parameters, i.e. custom HTTP headers.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>anError</code></th>
+						<td><p>If an error occurs, upon return contains an NSError object that describes the problem. If you are not interested in possible errors, you may pass in <code>NULL</code>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The response of the request.</p>
+			</div>
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>4.7</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method is long-running and should not be executed on the UI thread.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMOobNotificationManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/notificationProfilesWithCompletionHandler:" title="notificationProfilesWithCompletionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/notificationProfilesWithCompletionHandler:">&ndash;&nbsp;notificationProfilesWithCompletionHandler:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Retrieves the list of notification profiles from the server.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)notificationProfilesWithCompletionHandler:(void ( ^ ) ( id&lt;EMOobNotificationProfilesResponse&gt; aResponse , NSError *anError ))<em>aCompletionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aCompletionHandler</code></th>
+						<td><p>The block to invoke on the main thread upon completion which contains
+the response and error information if any.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>3.0</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> This method is executed asynchronously</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMOobNotificationManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/notificationProfilesWithRequestParameter:completionHandler:" title="notificationProfilesWithRequestParameter:completionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/notificationProfilesWithRequestParameter:completionHandler:">&ndash;&nbsp;notificationProfilesWithRequestParameter:completionHandler:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Retrieves the list of notification profiles from the server.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)notificationProfilesWithRequestParameter:(EMOobRequestParameter *)<em>aParam</em> completionHandler:(void ( ^ ) ( id&lt;EMOobNotificationProfilesResponse&gt; aResponse , NSError *anError ))<em>aCompletionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aParam</code></th>
+						<td><p>The request parameter object carrying the additional parameters, i.e. custom HTTP headers.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aCompletionHandler</code></th>
+						<td><p>The block to invoke on the main thread upon completion which contains
+the response and error information if any.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>4.7</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> This method is executed asynchronously</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMOobNotificationManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setNotificationProfiles:completionHandler:" title="setNotificationProfiles:completionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setNotificationProfiles:completionHandler:">&ndash;&nbsp;setNotificationProfiles:completionHandler:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets or updates the list of notification profiles of the current client. If
+the list has already been set, it will be replaced by this new list.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setNotificationProfiles:(NSArray *)<em>aNotificationProfiles</em> completionHandler:(void ( ^ ) ( id&lt;EMOobResponse&gt; aResponse , NSError *anError ))<em>aCompletionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aNotificationProfiles</code></th>
+						<td><p>A list of one ore more notification profiles to set.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aCompletionHandler</code></th>
+						<td><p>The block to invoke on the main thread upon completion which contains
+the response and error information if any.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>3.0</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> This method is executed asynchronously</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMOobNotificationManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setNotificationProfiles:requestParameter:completionHandler:" title="setNotificationProfiles:requestParameter:completionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setNotificationProfiles:requestParameter:completionHandler:">&ndash;&nbsp;setNotificationProfiles:requestParameter:completionHandler:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets or updates the list of notification profiles of the current client. If
+the list has already been set, it will be replaced by this new list.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setNotificationProfiles:(NSArray *)<em>aNotificationProfiles</em> requestParameter:(EMOobRequestParameter *)<em>aParam</em> completionHandler:(void ( ^ ) ( id&lt;EMOobResponse&gt; aResponse , NSError *anError ))<em>aCompletionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aNotificationProfiles</code></th>
+						<td><p>A list of one ore more notification profiles to set.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aParam</code></th>
+						<td><p>The request parameter object carrying the additional parameters, i.e. custom HTTP headers.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aCompletionHandler</code></th>
+						<td><p>The block to invoke on the main thread upon completion which contains
+the response and error information if any.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>4.7</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> This method is executed asynchronously</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMOobNotificationManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/clearNotificationProfilesWithCompletionHandler:" title="clearNotificationProfilesWithCompletionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/clearNotificationProfilesWithCompletionHandler:">&ndash;&nbsp;clearNotificationProfilesWithCompletionHandler:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Clears (removes all) the current client notification profiles. This
+will leave the client with no notification profile.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)clearNotificationProfilesWithCompletionHandler:(void ( ^ ) ( id&lt;EMOobResponse&gt; aResponse , NSError *anError ))<em>aCompletionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aCompletionHandler</code></th>
+						<td><p>The block to invoke on the main thread upon completion which contains
+the response and error information if any.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>3.0</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> This method is executed asynchronously</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMOobNotificationManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/clearNotificationProfilesWithRequestParameter:completionHandler:" title="clearNotificationProfilesWithRequestParameter:completionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/clearNotificationProfilesWithRequestParameter:completionHandler:">&ndash;&nbsp;clearNotificationProfilesWithRequestParameter:completionHandler:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Clears (removes all) the current client notification profiles. This
+will leave the client with no notification profile.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)clearNotificationProfilesWithRequestParameter:(EMOobRequestParameter *)<em>aParam</em> completionHandler:(void ( ^ ) ( id&lt;EMOobResponse&gt; aResponse , NSError *anError ))<em>aCompletionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aParam</code></th>
+						<td><p>The request parameter object carrying the additional parameters, i.e. custom HTTP headers.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aCompletionHandler</code></th>
+						<td><p>The block to invoke on the main thread upon completion which contains
+the response and error information if any.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>4.7</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> This method is executed asynchronously</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMOobNotificationManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2020 Thales DIS. All rights reserved. Updated: 2020-05-19</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

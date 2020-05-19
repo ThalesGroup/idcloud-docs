@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>EMPinAuthService Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">Mobile Protector SDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Thales DIS</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/defaultPinValidationRules">+ defaultPinValidationRules</option>
+		
+		<option value="//api/name/serviceWithModule:">+ serviceWithModule:</option>
+		
+		<option value="//api/name/setPinValidationRules:">+ setPinValidationRules:</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/authMode">- authMode</option>
+		
+		<option value="//api/name/createAuthInputWithData:error:">- createAuthInputWithData:error:</option>
+		
+		<option value="//api/name/createAuthInputWithMutableData:wipeSource:error:">- createAuthInputWithMutableData:wipeSource:error:</option>
+		
+		<option value="//api/name/createAuthInputWithString:encoding:error:">- createAuthInputWithString:encoding:error:</option>
+		
+		<option value="//api/name/createAuthInputWithString:error:">- createAuthInputWithString:error:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">EMPinAuthService Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Conforms to</th>
+	<td><a href="../Protocols/EMAuthService.html">EMAuthService</a></td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>EMPinAuthService.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Provides services for authentication with PIN.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/defaultPinValidationRules" title="defaultPinValidationRules"></a>
+	<h3 class="method-title"><code><a href="#//api/name/defaultPinValidationRules">+&nbsp;defaultPinValidationRules</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Default PinValidationRules for &lsquo;changePinWithAuthInput&rsquo; operation.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSArray *)defaultPinValidationRules</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The default pin validation rule set which contains All of rules as follow:</p>
+
+<ul>
+<li><a href="../Classes/EMPinRuleIdentical.html">EMPinRuleIdentical</a></li>
+<li><a href="../Classes/EMPinRuleLength.html">EMPinRuleLength</a></li>
+<li><a href="../Classes/EMPinRulePalindrome.html">EMPinRulePalindrome</a></li>
+<li><a href="../Classes/EMPinRuleSeries.html">EMPinRuleSeries</a></li>
+<li><a href="../Classes/EMPinRuleUniform.html">EMPinRuleUniform</a></li>
+</ul>
+
+			</div>
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>4.0</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMPinAuthService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/serviceWithModule:" title="serviceWithModule:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/serviceWithModule:">+&nbsp;serviceWithModule:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Designated constructor.
+Returns the EMPinAuthService object created using the <a href="../Classes/EMAuthModule.html">EMAuthModule</a></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (EMPinAuthService *)serviceWithModule:(EMAuthModule *)<em>module</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>module</code></th>
+						<td><p>an instance of <a href="../Classes/EMAuthModule.html">EMAuthModule</a></p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>EMPinAuthService module instance.</p>
+			</div>
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>4.0</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMPinAuthService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createAuthInputWithString:error:" title="createAuthInputWithString:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createAuthInputWithString:error:">&ndash;&nbsp;createAuthInputWithString:error:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates an <a href="../Protocols/EMPinAuthInput.html">EMPinAuthInput</a> from from a string.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;EMPinAuthInput&gt;)createAuthInputWithString:(NSString *)<em>str</em> error:(NSError **)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>str</code></th>
+						<td><p>The string to securely store. The string will be converted to UTF-8 when stored in the <a href="../Protocols/EMPinAuthInput.html">EMPinAuthInput</a> object.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>If an error occurs, upon return contains an NSError object that describes the problem. If you are not interested in possible errors, you may pass in <code>NULL</code>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>An <a href="../Protocols/EMPinAuthInput.html"><code>EMPinAuthInput</code></a> object that securely stores the data.</p>
+			</div>
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>4.0</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMPinAuthService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createAuthInputWithString:encoding:error:" title="createAuthInputWithString:encoding:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createAuthInputWithString:encoding:error:">&ndash;&nbsp;createAuthInputWithString:encoding:error:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates an <a href="../Protocols/EMPinAuthInput.html">EMPinAuthInput</a> from a string using a specific string encoding.</p>
+
+<p><p></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;EMPinAuthInput&gt;)createAuthInputWithString:(NSString *)<em>str</em> encoding:(NSStringEncoding)<em>encoding</em> error:(NSError **)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>str</code></th>
+						<td><p>The string to securely store.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>encoding</code></th>
+						<td><p>The string will be converted to this encoding when stored in the <a href="../Protocols/EMPinAuthInput.html">EMPinAuthInput</a> object.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>If an error occurs, upon return contains an NSError object that describes the problem. If you are not interested in possible errors, you may pass in <code>NULL</code>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>An <a href="../Protocols/EMPinAuthInput.html">EMPinAuthInput</a> object that securely stores the data.</p>
+			</div>
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>4.0</p>
+			</div>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> This method does not guarantee that the given string and
+the given character set are compatible.</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMPinAuthService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createAuthInputWithData:error:" title="createAuthInputWithData:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createAuthInputWithData:error:">&ndash;&nbsp;createAuthInputWithData:error:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates an <a href="../Protocols/EMPinAuthInput.html">EMPinAuthInput</a> from data.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;EMPinAuthInput&gt;)createAuthInputWithData:(NSData *)<em>data</em> error:(NSError **)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>data</code></th>
+						<td><p>The data to securely store.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>If an error occurs, upon return contains an NSError object that describes the problem. If you are not interested in possible errors, you may pass in <code>NULL</code>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>An <a href="../Protocols/EMPinAuthInput.html">EMPinAuthInput</a> object that securely stores the data.</p>
+			</div>
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>4.0</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMPinAuthService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createAuthInputWithMutableData:wipeSource:error:" title="createAuthInputWithMutableData:wipeSource:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createAuthInputWithMutableData:wipeSource:error:">&ndash;&nbsp;createAuthInputWithMutableData:wipeSource:error:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates an <a href="../Protocols/EMPinAuthInput.html">EMPinAuthInput</a> from data.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;EMPinAuthInput&gt;)createAuthInputWithMutableData:(NSMutableData *)<em>data</em> wipeSource:(BOOL)<em>wipeSource</em> error:(NSError **)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>data</code></th>
+						<td><p>The data to securely store.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>wipeSource</code></th>
+						<td><p>If <code>YES</code>, then the <code>data</code> will be erased if the method returns successfully. Otherwise the input will not be modified.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>If an error occurs, upon return contains an NSError object that describes the problem. If you are not interested in possible errors, you may pass in <code>NULL</code>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>An <a href="../Protocols/EMPinAuthInput.html">EMPinAuthInput</a> object that securely stores the data.</p>
+			</div>
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>4.0</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMPinAuthService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/authMode" title="authMode"></a>
+	<h3 class="method-title"><code><a href="#//api/name/authMode">&ndash;&nbsp;authMode</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Gets an <a href="../Protocols/EMPinAuthMode.html">EMPinAuthMode</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;EMPinAuthMode&gt;)authMode</code></div>
+
+		    
+			
+
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>4.0</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMPinAuthService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setPinValidationRules:" title="setPinValidationRules:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setPinValidationRules:">+&nbsp;setPinValidationRules:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set PinRules. This will be applied globally.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)setPinValidationRules:(NSArray *)<em>pinRules</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>pinRules</code></th>
+						<td><p>array of pin rules. See subclasses of <a href="../Protocols/EMPinRule.html">EMPinRule</a>.</p>
+
+<ul>
+<li><a href="../Classes/EMPinRuleIdentical.html">EMPinRuleIdentical</a></li>
+<li><a href="../Classes/EMPinRuleLength.html">EMPinRuleLength</a></li>
+<li><a href="../Classes/EMPinRulePalindrome.html">EMPinRulePalindrome</a></li>
+<li><a href="../Classes/EMPinRuleSeries.html">EMPinRuleSeries</a></li>
+<li><a href="../Classes/EMPinRuleUniform.html">EMPinRuleUniform</a></li>
+</ul>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection availability">
+				<h4 class="method-subtitle parameter-title">Availability</h4>
+				<p>4.0</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMPinAuthService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2020 Thales DIS. All rights reserved. Updated: 2020-05-19</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
