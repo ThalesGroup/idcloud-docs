@@ -1,6 +1,12 @@
 {
   "warnings": [
-
+    {
+      "file": "/Users/admin20/jenkins-L1/workspace/_EzioBase/sdk/dev/idp/dist/ios/fasttrack/Debug_NoCoverage/EzioMobileFastTrack.framework/Versions/5.4.0/Headers/EMFastTrackDeviceFingerprintSource.h",
+      "line": 38,
+      "symbol": "EMFastTrackDeviceFingerprintType.EMFastTrackDeviceFingerprintTypeSoft",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    }
   ],
   "source_directory": "/Users/admin20/jenkins-L1/workspace/_EzioBase/sdk/dev/idp/ios"
 }

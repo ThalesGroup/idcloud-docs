@@ -14,7 +14,7 @@
     <a title="EMFastTrackDeviceFingerprintType Enumeration Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">EzioMobileFastTrack Docs</a> (100% documented)</p>
+        <p><a href="../index.html">EzioMobileFastTrack Docs</a> (99% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -320,7 +320,10 @@
             <p>The defined anti-cloning types.</p>
 
 <ul>
-<li>- Since: 5.3</li>
+<li>- Since: 5.3
+Seals the user&rsquo;s credentials. A factory reset/initialization of the device will make the credentials unusable.<br>Requirements: None
+@warning: If <code>EMFastTrackDeviceFingerprintTypeSoft</code> or <code>EMFastTrackDeviceFingerprintTypeHardwareKey</code> is used, user can not use the restored data after doing a factory reset
+and re-initializing to the same device.</li>
 </ul>
 
           </section>
@@ -340,16 +343,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Seals the user&rsquo;s credentials. A factory reset/initialization of the device will make the credentials unusable.<br>Requirements: None
-@warning: If <code>EMFastTrackDeviceFingerprintTypeSoft</code> or <code><a href="../Enums/EMFastTrackDeviceFingerprintType.html#/c:@E@EMFastTrackDeviceFingerprintType@EMFastTrackDeviceFingerprintTypeHardwareKey">EMFastTrackDeviceFingerprintTypeHardwareKey</a></code> is used, user can not use the restored data after doing a factory reset
-and re-initializing to the same device.</p>
+                        <p>Undocumented</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="n">EMFastTrackDeviceFingerprintTypeSoft</span> <span class="o">=</span> <span class="mi">4</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="n">EMFastTrackDeviceFingerprintTypeSoft</span> <span class="o">=</span> <span class="mh">0x04</span></code></pre>
 
                         </div>
                         <div class="language">
