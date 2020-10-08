@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SecureLogConfig Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Class/SecureLogConfig" class="dashAnchor"></a>
+    <a title="SecureLogConfig Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">IdCloud Mobile SDK 2.0.0</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">IdCloud Mobile SDK Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        SecureLogConfig Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/IDCAddAuthenticatorRequest.html">IDCAddAuthenticatorRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)IDCAddAuthenticatorResponse">IDCAddAuthenticatorResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IDCAuthenticator.html">IDCAuthenticator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IDCAuthenticatorDescriptor.html">IDCAuthenticatorDescriptor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IDCChangePinRequest.html">IDCChangePinRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)IDCChangePinResponse">IDCChangePinResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IDCEnrollRequest.html">IDCEnrollRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)IDCEnrollResponse">IDCEnrollResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IDCEnrollmentCredential.html">IDCEnrollmentCredential</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IDCEnrollmentCredentialsFactory.html">IDCEnrollmentCredentialsFactory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IDCFetchRequest.html">IDCFetchRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)IDCFetchResponse">IDCFetchResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IDCIdCloudClient.html">IDCIdCloudClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IDCRemoveAuthenticatorRequest.html">IDCRemoveAuthenticatorRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)IDCRemoveAuthenticatorResponse">IDCRemoveAuthenticatorResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IDCScenarioContext.html">IDCScenarioContext</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IDCSecurePinPad.html">IDCSecurePinPad</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IDCUiDelegates.html">IDCUiDelegates</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IDCUnenrollRequest.html">IDCUnenrollRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)IDCUnenrollResponse">IDCUnenrollResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SecureLogConfig.html">SecureLogConfig</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SecureLogConfigComponents.html">SecureLogConfigComponents</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:IDCError.h@IDCErrorDomain">IDCErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:IDCScenarioContext.h@IDCScenarioContextKeyBiometryType">IDCScenarioContextKeyBiometryType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:IDCScenarioContext.h@IDCScenarioContextKeyMessage">IDCScenarioContextKeyMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:IDCRasp.h@IDC_RASP_MODE_CRASH">IDC_RASP_MODE_CRASH</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:IDCRasp.h@IDC_RASP_MODE_DISABLE">IDC_RASP_MODE_DISABLE</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:IDCRasp.h@IDC_RASP_TYPE_JAILBREAK">IDC_RASP_TYPE_JAILBREAK</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/IDCAuthenticatorType.html">IDCAuthenticatorType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/IDCError.html">IDCError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/IDCProgress.html">IDCProgress</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/IDCSecurePinPadKey.html">IDCSecurePinPadKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/IDCSecurePinPadUsage.html">IDCSecurePinPadUsage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SecureLogLevel.html">SecureLogLevel</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/IDCBiometricUiDelegate.html">IDCBiometricUiDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IDCCommonUiDelegate.html">IDCCommonUiDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IDCSecurePinPadDelegate.html">IDCSecurePinPadDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IDCSecurePinPadUiDelegate.html">IDCSecurePinPadUiDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SecureLog.html">SecureLog</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/c:@F@IDCRaspConfigure">IDCRaspConfigure</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>SecureLogConfig</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">SecureLogConfig</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>The class to provide initialisation function to initialise SecureLog config, it takes the parameters from SecureLogConfigComponents.
+All of parameters is read-only and can&rsquo;t be changed after the initWithConfigComponentsBuilder function is called</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SecureLogConfig(py)fileID"></a>
+                    <a name="//apple_ref/objc/Property/fileID" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SecureLogConfig(py)fileID">fileID</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get the config file Id.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">fileID</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SecureLogConfig(py)publicKeyModulus"></a>
+                    <a name="//apple_ref/objc/Property/publicKeyModulus" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SecureLogConfig(py)publicKeyModulus">publicKeyModulus</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get the config public key modulus.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSData</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">publicKeyModulus</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SecureLogConfig(py)publicKeyExponent"></a>
+                    <a name="//apple_ref/objc/Property/publicKeyExponent" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SecureLogConfig(py)publicKeyExponent">publicKeyExponent</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get the config public key exponent.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSData</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">publicKeyExponent</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SecureLogConfig(py)directory"></a>
+                    <a name="//apple_ref/objc/Property/directory" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SecureLogConfig(py)directory">directory</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get the config logs directory.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSURL</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">directory</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SecureLogConfig(py)rollingFileMaxCount"></a>
+                    <a name="//apple_ref/objc/Property/rollingFileMaxCount" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SecureLogConfig(py)rollingFileMaxCount">rollingFileMaxCount</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get the config rolling file max count.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSUInteger</span> <span class="n">rollingFileMaxCount</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SecureLogConfig(py)rollingSizeInKB"></a>
+                    <a name="//apple_ref/objc/Property/rollingSizeInKB" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SecureLogConfig(py)rollingSizeInKB">rollingSizeInKB</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get the config rolling size.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSUInteger</span> <span class="n">rollingSizeInKB</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SecureLogConfig(py)logLevel"></a>
+                    <a name="//apple_ref/objc/Property/logLevel" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SecureLogConfig(py)logLevel">logLevel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get the config log level.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Enums/SecureLogLevel.html">SecureLogLevel</a></span> <span class="n">logLevel</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SecureLogConfig(im)init"></a>
+                    <a name="//apple_ref/objc/Method/-init" class="dashAnchor"></a>
+                    <a class="token discouraged" href="#/c:objc(cs)SecureLogConfig(im)init">-init</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="aside aside-unavailable">
+                        <p class="aside-title">Unavailable</p>
+                        
+                      </div>
+                      <div class="abstract">
+                        <p>There is no direct init function available. The init function shall be done via SecureLogConfigComponents and return SecureLogConfig object to use</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="n">init</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SecureLogConfig(im)initWithConfigComponentsBuilder:"></a>
+                    <a name="//apple_ref/objc/Method/-initWithConfigComponentsBuilder:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SecureLogConfig(im)initWithConfigComponentsBuilder:">-initWithConfigComponentsBuilder:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Init secure log config with components builder</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithConfigComponentsBuilder</span><span class="p">:</span>
+    <span class="p">(</span><span class="n">nonnull</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n"><a href="../Classes/SecureLogConfigComponents.html">SecureLogConfigComponents</a></span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">))</span><span class="nv">componentsBuilder</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>componentsBuilder</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>components builder.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Instance of secure log config.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>Copyright © 2020 Thales Group. All rights reserved.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
