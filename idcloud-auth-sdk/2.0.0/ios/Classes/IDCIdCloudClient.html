@@ -251,6 +251,11 @@ initialize the object as URL is a mandatory parameter.</p>
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithUrl</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">url</span><span class="p">;</span></code></pre>
 
                         </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
                       </div>
                       <div>
                         <h4>Parameters</h4>
@@ -312,6 +317,11 @@ path.</p>
                            <span class="nf">completion</span><span class="p">:(</span><span class="n">nonnull</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span>
                                           <span class="n"><a href="../Classes.html#/c:objc(cs)IDCEnrollResponse">IDCEnrollResponse</a></span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">,</span>
                                           <span class="n">NSError</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">))</span><span class="n">completionBlock</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">createEnrollRequest</span><span class="p">(</span><span class="n">with</span> <span class="nv">enrollmentCredential</span><span class="p">:</span> <span class="kt"><a href="../Classes/IDCEnrollmentCredential.html">IDCEnrollmentCredential</a></span><span class="p">,</span> <span class="nv">uiDelegates</span><span class="p">:</span> <span class="kt"><a href="../Classes/IDCUiDelegates.html">IDCUiDelegates</a></span><span class="p">,</span> <span class="n">progress</span> <span class="nv">progressBlock</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Enums/IDCProgress.html">IDCProgress</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">,</span> <span class="n">completion</span> <span class="nv">completionBlock</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Classes.html#/c:objc(cs)IDCEnrollResponse">IDCEnrollResponse</a></span><span class="p">?,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/IDCEnrollRequest.html">IDCEnrollRequest</a></span></code></pre>
 
                         </div>
                       </div>
@@ -425,6 +435,11 @@ It takes the following parameters:</p>
                                           <span class="n">NSError</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">))</span><span class="n">completionBlock</span><span class="p">;</span></code></pre>
 
                         </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">createFetchRequest</span><span class="p">(</span><span class="n">with</span> <span class="nv">uiDelegates</span><span class="p">:</span> <span class="kt"><a href="../Classes/IDCUiDelegates.html">IDCUiDelegates</a></span><span class="p">,</span> <span class="n">progress</span> <span class="nv">progressBlock</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Enums/IDCProgress.html">IDCProgress</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">,</span> <span class="n">completion</span> <span class="nv">completionBlock</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Classes.html#/c:objc(cs)IDCFetchResponse">IDCFetchResponse</a></span><span class="p">?,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/IDCFetchRequest.html">IDCFetchRequest</a></span></code></pre>
+
+                        </div>
                       </div>
                       <div>
                         <h4>Parameters</h4>
@@ -523,6 +538,11 @@ It takes the following parameters:</p>
                                   <span class="p">(</span><span class="n">nonnull</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span>
                                       <span class="n"><a href="../Classes.html#/c:objc(cs)IDCChangePinResponse">IDCChangePinResponse</a></span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">,</span>
                                       <span class="n">NSError</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">))</span><span class="n">completionBlock</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">createChangePinRequest</span><span class="p">(</span><span class="n">with</span> <span class="nv">pinPadUiDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/IDCSecurePinPadUiDelegate.html">IDCSecurePinPadUiDelegate</a></span><span class="p">,</span> <span class="n">progress</span> <span class="nv">progressBlock</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Enums/IDCProgress.html">IDCProgress</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">,</span> <span class="n">completion</span> <span class="nv">completionBlock</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Classes.html#/c:objc(cs)IDCChangePinResponse">IDCChangePinResponse</a></span><span class="p">?,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/IDCChangePinRequest.html">IDCChangePinRequest</a></span></code></pre>
 
                         </div>
                       </div>
@@ -625,6 +645,11 @@ It takes the following parameters:</p>
                                                      <span class="n">completionBlock</span><span class="p">;</span></code></pre>
 
                         </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">createAddAuthenticatorRequest</span><span class="p">(</span><span class="n">with</span> <span class="nv">uiDelegates</span><span class="p">:</span> <span class="kt"><a href="../Classes/IDCUiDelegates.html">IDCUiDelegates</a></span><span class="p">,</span> <span class="n">progress</span> <span class="nv">progressBlock</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Enums/IDCProgress.html">IDCProgress</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">,</span> <span class="n">completion</span> <span class="nv">completionBlock</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Classes.html#/c:objc(cs)IDCAddAuthenticatorResponse">IDCAddAuthenticatorResponse</a></span><span class="p">?,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/IDCAddAuthenticatorRequest.html">IDCAddAuthenticatorRequest</a></span></code></pre>
+
+                        </div>
                       </div>
                       <div>
                         <h4>Parameters</h4>
@@ -722,6 +747,11 @@ It takes the following parameters:</p>
                                           <span class="n">NSError</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">))</span><span class="n">completionBlock</span><span class="p">;</span></code></pre>
 
                         </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">createUnenrollRequest</span><span class="p">(</span><span class="n">progress</span> <span class="nv">progressBlock</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Enums/IDCProgress.html">IDCProgress</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">,</span> <span class="n">completion</span> <span class="nv">completionBlock</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Classes.html#/c:objc(cs)IDCUnenrollResponse">IDCUnenrollResponse</a></span><span class="p">?,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/IDCUnenrollRequest.html">IDCUnenrollRequest</a></span></code></pre>
+
+                        </div>
                       </div>
                       <div>
                         <h4>Parameters</h4>
@@ -799,6 +829,11 @@ It takes the following parameters:</p>
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSArray</span><span class="o">&lt;</span><span class="n"><a href="../Classes/IDCAuthenticator.html">IDCAuthenticator</a></span> <span class="o">*&gt;</span> <span class="o">*</span><span class="p">)</span><span class="n">activatedAuthenticators</span><span class="p">;</span></code></pre>
 
                         </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">activatedAuthenticators</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt"><a href="../Classes/IDCAuthenticator.html">IDCAuthenticator</a></span><span class="p">]</span></code></pre>
+
+                        </div>
                       </div>
                       <div>
                         <h4>Return Value</h4>
@@ -843,6 +878,11 @@ It takes the following parameters:</p>
                                                        <span class="o">*</span><span class="n">_Nullable</span><span class="p">,</span>
                                                    <span class="n">NSError</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">))</span>
                                                    <span class="n">completionBlock</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">createRemoveAuthenticatorRequest</span><span class="p">(</span><span class="n">with</span> <span class="nv">authenticator</span><span class="p">:</span> <span class="kt"><a href="../Classes/IDCAuthenticator.html">IDCAuthenticator</a></span><span class="p">,</span> <span class="n">progress</span> <span class="nv">progressBlock</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Enums/IDCProgress.html">IDCProgress</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">,</span> <span class="n">completion</span> <span class="nv">completionBlock</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Classes.html#/c:objc(cs)IDCRemoveAuthenticatorResponse">IDCRemoveAuthenticatorResponse</a></span><span class="p">?,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/IDCRemoveAuthenticatorRequest.html">IDCRemoveAuthenticatorRequest</a></span></code></pre>
 
                         </div>
                       </div>
@@ -935,6 +975,11 @@ It takes the following parameters:</p>
     <span class="p">(</span><span class="n"><a href="../Classes/SecureLogConfig.html">SecureLogConfig</a></span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">config</span><span class="p">;</span></code></pre>
 
                         </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">configureSecureLog</span><span class="p">(</span><span class="n">_</span> <span class="nv">config</span><span class="p">:</span> <span class="kt"><a href="../Classes/SecureLogConfig.html">SecureLogConfig</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Protocols/SecureLog.html">SecureLog</a></span><span class="p">?</span></code></pre>
+
+                        </div>
                       </div>
                       <div>
                         <h4>Parameters</h4>
@@ -968,7 +1013,7 @@ It takes the following parameters:</p>
         </section>
         <section id="footer">
           <p>Copyright © 2020 Thales Group. All rights reserved.</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.11.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

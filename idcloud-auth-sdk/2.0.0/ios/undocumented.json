@@ -1,47 +1,47 @@
 {
   "warnings": [
     {
-      "file": "/Users/ilhamandrian/Work/IdCloud/ios/lib/idcloudclient/idcloudclient/SecureLogConfig.h",
+      "file": "/Users/idpmobile/jenkins/workspace/workspace/IdCloud_SDK_default@2/ios/lib/idcloudclient/idcloudclient/SecureLogConfig.h",
       "line": 37,
       "symbol": "SecureLogLevel.SecureLogLevelOff",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/ilhamandrian/Work/IdCloud/ios/lib/idcloudclient/idcloudclient/SecureLogConfig.h",
+      "file": "/Users/idpmobile/jenkins/workspace/workspace/IdCloud_SDK_default@2/ios/lib/idcloudclient/idcloudclient/SecureLogConfig.h",
       "line": 38,
       "symbol": "SecureLogLevel.SecureLogLevelFatal",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/ilhamandrian/Work/IdCloud/ios/lib/idcloudclient/idcloudclient/SecureLogConfig.h",
+      "file": "/Users/idpmobile/jenkins/workspace/workspace/IdCloud_SDK_default@2/ios/lib/idcloudclient/idcloudclient/SecureLogConfig.h",
       "line": 39,
       "symbol": "SecureLogLevel.SecureLogLevelError",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/ilhamandrian/Work/IdCloud/ios/lib/idcloudclient/idcloudclient/SecureLogConfig.h",
+      "file": "/Users/idpmobile/jenkins/workspace/workspace/IdCloud_SDK_default@2/ios/lib/idcloudclient/idcloudclient/SecureLogConfig.h",
       "line": 40,
       "symbol": "SecureLogLevel.SecureLogLevelWarn",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/ilhamandrian/Work/IdCloud/ios/lib/idcloudclient/idcloudclient/SecureLogConfig.h",
+      "file": "/Users/idpmobile/jenkins/workspace/workspace/IdCloud_SDK_default@2/ios/lib/idcloudclient/idcloudclient/SecureLogConfig.h",
       "line": 41,
       "symbol": "SecureLogLevel.SecureLogLevelInfo",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/ilhamandrian/Work/IdCloud/ios/lib/idcloudclient/idcloudclient/SecureLogConfig.h",
+      "file": "/Users/idpmobile/jenkins/workspace/workspace/IdCloud_SDK_default@2/ios/lib/idcloudclient/idcloudclient/SecureLogConfig.h",
       "line": 42,
       "symbol": "SecureLogLevel.SecureLogLevelDebug",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     }
   ],
-  "source_directory": "/Users/ilhamandrian/Work/IdCloud/ios/lib/idcloudclient"
+  "source_directory": "/Users/idpmobile/jenkins/workspace/workspace/IdCloud_SDK_default@2/ios/lib/idcloudclient"
 }

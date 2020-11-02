@@ -204,11 +204,10 @@ Set all parameters value to this object and pass to SecureLogConfig initialise f
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Optional parameter
+                        <p>Mandatory parameter
 This file Id is part of the log file name.
-Default value: d5a1
 Maximum length is 10 characters
-Throw NSInvalidArgumentException if the length is more than 10 characters</p>
+Throw NSInvalidArgumentException if the fileID is nil or the length is more than 10 characters</p>
 
                       </div>
                       <div class="declaration">
@@ -216,6 +215,11 @@ Throw NSInvalidArgumentException if the length is more than 10 characters</p>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">fileID</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">fileID</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -247,6 +251,11 @@ Throw NSInvalidArgumentException if publicKeyModulus is nil or the length is mor
                           <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">)</span> <span class="n">NSData</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">publicKeyModulus</span><span class="p">;</span></code></pre>
 
                         </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">publicKeyModulus</span><span class="p">:</span> <span class="kt">Data</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -276,6 +285,11 @@ Throw NSInvalidArgumentException if publicKeyExponent is nil or the length is mo
                           <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">)</span> <span class="n">NSData</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">publicKeyExponent</span><span class="p">;</span></code></pre>
 
                         </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">publicKeyExponent</span><span class="p">:</span> <span class="kt">Data</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -293,9 +307,8 @@ Throw NSInvalidArgumentException if publicKeyExponent is nil or the length is mo
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Optional parameter
+                        <p>Mandatory parameter
 To set a Secure logger rolling file max count
-Default value: 8
 Throw NSInvalidArgumentException if rollingFileMaxCount is equals to 0 or more than 99.</p>
 
                       </div>
@@ -305,6 +318,11 @@ Throw NSInvalidArgumentException if rollingFileMaxCount is equals to 0 or more t
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">assign</span><span class="p">,</span> <span class="n">unsafe_unretained</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">)</span>
     <span class="n">NSUInteger</span> <span class="n">rollingFileMaxCount</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">rollingFileMaxCount</span><span class="p">:</span> <span class="kt">UInt</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -324,9 +342,8 @@ Throw NSInvalidArgumentException if rollingFileMaxCount is equals to 0 or more t
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Optional parameter
+                        <p>Mandatory parameter
 To set a Secure logger rolling size
-Default value: 1024
 Throw NSInvalidArgumentException if rollingSizeInKB = 0</p>
 
                       </div>
@@ -336,6 +353,11 @@ Throw NSInvalidArgumentException if rollingSizeInKB = 0</p>
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">assign</span><span class="p">,</span> <span class="n">unsafe_unretained</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">)</span>
     <span class="n">NSUInteger</span> <span class="n">rollingSizeInKB</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">rollingSizeInKB</span><span class="p">:</span> <span class="kt">UInt</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -355,10 +377,9 @@ Throw NSInvalidArgumentException if rollingSizeInKB = 0</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Optional parameter
+                        <p>Mandatory parameter
 The directory to store the logs
-Default value: Library/Application Support/Thales
-Throw NSInvalidArgumentException if the directory is not existed</p>
+Throw NSInvalidArgumentException if the directory is nil or the directory is not existed</p>
 
                       </div>
                       <div class="declaration">
@@ -366,6 +387,11 @@ Throw NSInvalidArgumentException if the directory is not existed</p>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">)</span> <span class="n">NSURL</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">directory</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">directory</span><span class="p">:</span> <span class="kt">URL</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -385,9 +411,8 @@ Throw NSInvalidArgumentException if the directory is not existed</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Optional parameter
+                        <p>Mandatory parameter
 The level of log which you want the secure log to write to the file
-Default value: SecureLogLevelWarn
 Throw NSInvalidArgumentException if the level is not from SecureLogLevel</p>
 
                       </div>
@@ -397,6 +422,11 @@ Throw NSInvalidArgumentException if the level is not from SecureLogLevel</p>
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">assign</span><span class="p">,</span> <span class="n">unsafe_unretained</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">)</span>
     <span class="n"><a href="../Enums/SecureLogLevel.html">SecureLogLevel</a></span> <span class="n">logLevel</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">logLevel</span><span class="p">:</span> <span class="kt"><a href="../Enums/SecureLogLevel.html">SecureLogLevel</a></span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -409,7 +439,7 @@ Throw NSInvalidArgumentException if the level is not from SecureLogLevel</p>
         </section>
         <section id="footer">
           <p>Copyright © 2020 Thales Group. All rights reserved.</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.11.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>
