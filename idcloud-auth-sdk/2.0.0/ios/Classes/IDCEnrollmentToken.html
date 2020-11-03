@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>IDCEnrollmentCredentialsFactory Class Reference</title>
+    <title>IDCEnrollmentToken Class Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -10,8 +10,8 @@
     
   </head>
   <body>
-    <a name="//apple_ref/objc/Class/IDCEnrollmentCredentialsFactory" class="dashAnchor"></a>
-    <a title="IDCEnrollmentCredentialsFactory Class Reference"></a>
+    <a name="//apple_ref/objc/Class/IDCEnrollmentToken" class="dashAnchor"></a>
+    <a title="IDCEnrollmentToken Class Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html">IdCloud FIDO SDK 2.0.0</a></p>
@@ -21,7 +21,7 @@
       <p id="breadcrumbs">
         <a href="../index.html">IdCloud FIDO SDK Reference</a>
         <img id="carat" src="../img/carat.png" />
-        IDCEnrollmentCredentialsFactory Class Reference
+        IDCEnrollmentToken Class Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -55,10 +55,10 @@
                 <a href="../Classes.html#/c:objc(cs)IDCEnrollResponse">IDCEnrollResponse</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/IDCEnrollmentCredential.html">IDCEnrollmentCredential</a>
+                <a href="../Classes/IDCEnrollmentToken.html">IDCEnrollmentToken</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/IDCEnrollmentCredentialsFactory.html">IDCEnrollmentCredentialsFactory</a>
+                <a href="../Classes/IDCEnrollmentTokenFactory.html">IDCEnrollmentTokenFactory</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/IDCFetchRequest.html">IDCFetchRequest</a>
@@ -177,14 +177,14 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>IDCEnrollmentCredentialsFactory</h1>
+            <h1>IDCEnrollmentToken</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">IDCEnrollmentCredentialsFactory</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">IDCEnrollmentToken</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
 
                 </div>
               </div>
-            <p>A factory that creates <code><a href="../Classes/IDCEnrollmentCredential.html">IDCEnrollmentCredential</a></code> instances.</p>
+            <p>A class that encapsulates the credentials required in an enrollment operation. </p>
 
 <p>@since 1.0.0</p>
 
@@ -195,9 +195,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)IDCEnrollmentCredentialsFactory(cm)createEnrollmentCredentials:"></a>
-                    <a name="//apple_ref/objc/Method/+createEnrollmentCredentials:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)IDCEnrollmentCredentialsFactory(cm)createEnrollmentCredentials:">+createEnrollmentCredentials:</a>
+                    <a name="/c:objc(cs)IDCEnrollmentToken(im)wipe"></a>
+                    <a name="//apple_ref/objc/Method/-wipe" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)IDCEnrollmentToken(im)wipe">-wipe</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -205,46 +205,26 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns credentials required for enrollment operation in 
- <code><a href="../Classes/IDCIdCloudClient.html#/c:objc(cs)IDCIdCloudClient(im)createEnrollRequestWithCredential:uiDelegates:progress:completion:">-[IDCIdCloudClient createEnrollRequestWithCredential:uiDelegates:progress:completion:]</a></code>.</p>
+                        <p>Wipe the internal data.</p>
+
+<p>Developer should call this method at the end of enrollment operation
+to wipe any sensitive data used in the operation.</p>
+
+<p>@since 1.0.0</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/IDCEnrollmentCredential.html">IDCEnrollmentCredential</a></span> <span class="o">*</span><span class="p">)</span><span class="nf">createEnrollmentCredentials</span><span class="p">:</span>
-    <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSData</span> <span class="o">*</span><span class="p">)</span><span class="nv">blob</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">wipe</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">createEnrollmentCredentials</span><span class="p">(</span><span class="n">_</span> <span class="nv">blob</span><span class="p">:</span> <span class="kt">Data</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/IDCEnrollmentCredential.html">IDCEnrollmentCredential</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">wipe</span><span class="p">()</span></code></pre>
 
                         </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>blob</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>enrollment credential.</p>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p><code><a href="../Classes/IDCEnrollmentCredential.html">IDCEnrollmentCredential</a></code> instance.</p>
                       </div>
                     </section>
                   </div>
