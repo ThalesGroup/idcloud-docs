@@ -18,8 +18,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
+var methods = {"i0":17,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6};
+var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -119,26 +119,32 @@ var activeTableTab = "activeTableTab";
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t5" class="tableTab"><span><a href="javascript:show(16);">Default Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>static com.thalesgroup.gemalto.securelog.SecureLog</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/thales/dis/mobile/idcloud/auth/IdCloudClient.html#configureSecureLog-com.thalesgroup.gemalto.securelog.SecureLogConfig-">configureSecureLog</a></span>(com.thalesgroup.gemalto.securelog.SecureLogConfig&nbsp;config)</code>
+<div class="block">Sets the secure logger intended to log necessary retrievable information.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../com/thales/dis/mobile/idcloud/auth/operation/AddAuthenticatorRequest.html" title="interface in com.thales.dis.mobile.idcloud.auth.operation">AddAuthenticatorRequest</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/thales/dis/mobile/idcloud/auth/IdCloudClient.html#createAddAuthenticatorRequest-com.thales.dis.mobile.idcloud.auth.ui.UiCallbacks-com.thales.dis.mobile.idcloud.auth.operation.AddAuthenticatorRequestCallback-">createAddAuthenticatorRequest</a></span>(<a href="../../../../../../com/thales/dis/mobile/idcloud/auth/ui/UiCallbacks.html" title="class in com.thales.dis.mobile.idcloud.auth.ui">UiCallbacks</a>&nbsp;uiCallbacks,
                              <a href="../../../../../../com/thales/dis/mobile/idcloud/auth/operation/AddAuthenticatorRequestCallback.html" title="class in com.thales.dis.mobile.idcloud.auth.operation">AddAuthenticatorRequestCallback</a>&nbsp;requestCallback)</code>
 <div class="block">Creates an add authenticator request.</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../com/thales/dis/mobile/idcloud/auth/operation/ChangePinRequest.html" title="interface in com.thales.dis.mobile.idcloud.auth.operation">ChangePinRequest</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/thales/dis/mobile/idcloud/auth/IdCloudClient.html#createChangePinRequest-com.thales.dis.mobile.idcloud.auth.ui.pin.SecurePinPadUiCallback-com.thales.dis.mobile.idcloud.auth.operation.ChangePinRequestCallback-">createChangePinRequest</a></span>(<a href="../../../../../../com/thales/dis/mobile/idcloud/auth/ui/pin/SecurePinPadUiCallback.html" title="interface in com.thales.dis.mobile.idcloud.auth.ui.pin">SecurePinPadUiCallback</a>&nbsp;uiCallback,
                       <a href="../../../../../../com/thales/dis/mobile/idcloud/auth/operation/ChangePinRequestCallback.html" title="class in com.thales.dis.mobile.idcloud.auth.operation">ChangePinRequestCallback</a>&nbsp;requestCallback)</code>
 <div class="block">Creates a change pin request.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../com/thales/dis/mobile/idcloud/auth/operation/EnrollRequest.html" title="interface in com.thales.dis.mobile.idcloud.auth.operation">EnrollRequest</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/thales/dis/mobile/idcloud/auth/IdCloudClient.html#createEnrollRequest-com.thales.dis.mobile.idcloud.auth.operation.EnrollmentToken-com.thales.dis.mobile.idcloud.auth.ui.UiCallbacks-com.thales.dis.mobile.idcloud.auth.operation.EnrollRequestCallback-">createEnrollRequest</a></span>(<a href="../../../../../../com/thales/dis/mobile/idcloud/auth/operation/EnrollmentToken.html" title="interface in com.thales.dis.mobile.idcloud.auth.operation">EnrollmentToken</a>&nbsp;enrollmentToken,
                    <a href="../../../../../../com/thales/dis/mobile/idcloud/auth/ui/UiCallbacks.html" title="class in com.thales.dis.mobile.idcloud.auth.ui">UiCallbacks</a>&nbsp;uiCallbacks,
@@ -146,27 +152,27 @@ var activeTableTab = "activeTableTab";
 <div class="block">Creates an enrollment request.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../com/thales/dis/mobile/idcloud/auth/operation/FetchRequest.html" title="interface in com.thales.dis.mobile.idcloud.auth.operation">FetchRequest</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/thales/dis/mobile/idcloud/auth/IdCloudClient.html#createFetchRequest-com.thales.dis.mobile.idcloud.auth.ui.UiCallbacks-com.thales.dis.mobile.idcloud.auth.operation.FetchRequestCallback-">createFetchRequest</a></span>(<a href="../../../../../../com/thales/dis/mobile/idcloud/auth/ui/UiCallbacks.html" title="class in com.thales.dis.mobile.idcloud.auth.ui">UiCallbacks</a>&nbsp;uiCallbacks,
                   <a href="../../../../../../com/thales/dis/mobile/idcloud/auth/operation/FetchRequestCallback.html" title="class in com.thales.dis.mobile.idcloud.auth.operation">FetchRequestCallback</a>&nbsp;requestCallback)</code>
 <div class="block">Creates a fetch request.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../com/thales/dis/mobile/idcloud/auth/operation/RemoveAuthenticatorRequest.html" title="interface in com.thales.dis.mobile.idcloud.auth.operation">RemoveAuthenticatorRequest</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/thales/dis/mobile/idcloud/auth/IdCloudClient.html#createRemoveAuthenticatorRequest-com.thales.dis.mobile.idcloud.auth.Authenticator.Type-com.thales.dis.mobile.idcloud.auth.operation.RemoveAuthenticatorRequestCallback-">createRemoveAuthenticatorRequest</a></span>(<a href="../../../../../../com/thales/dis/mobile/idcloud/auth/Authenticator.Type.html" title="enum in com.thales.dis.mobile.idcloud.auth">Authenticator.Type</a>&nbsp;authenticatorType,
                                 <a href="../../../../../../com/thales/dis/mobile/idcloud/auth/operation/RemoveAuthenticatorRequestCallback.html" title="class in com.thales.dis.mobile.idcloud.auth.operation">RemoveAuthenticatorRequestCallback</a>&nbsp;requestCallback)</code>
 <div class="block">Creates a remove authenticator request.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../com/thales/dis/mobile/idcloud/auth/operation/UnenrollRequest.html" title="interface in com.thales.dis.mobile.idcloud.auth.operation">UnenrollRequest</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/thales/dis/mobile/idcloud/auth/IdCloudClient.html#createUnenrollRequest-com.thales.dis.mobile.idcloud.auth.operation.UnenrollRequestCallback-">createUnenrollRequest</a></span>(<a href="../../../../../../com/thales/dis/mobile/idcloud/auth/operation/UnenrollRequestCallback.html" title="class in com.thales.dis.mobile.idcloud.auth.operation">UnenrollRequestCallback</a>&nbsp;requestCallback)</code>
 <div class="block">Creates an unenrollment request.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../../com/thales/dis/mobile/idcloud/auth/Authenticator.html" title="interface in com.thales.dis.mobile.idcloud.auth">Authenticator</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/thales/dis/mobile/idcloud/auth/IdCloudClient.html#getActivatedAuthenticators--">getActivatedAuthenticators</a></span>()</code>
 <div class="block">Fetch the activated authenticators for the enrolled credential</div>
@@ -353,7 +359,7 @@ var activeTableTab = "activeTableTab";
 <a name="createUnenrollRequest-com.thales.dis.mobile.idcloud.auth.operation.UnenrollRequestCallback-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>createUnenrollRequest</h4>
 <pre>@NonNull
@@ -372,6 +378,25 @@ var activeTableTab = "activeTableTab";
     instance.</dd>
 <dt><span class="simpleTagLabel">Since:</span></dt>
 <dd>1.1.0</dd>
+</dl>
+</li>
+</ul>
+<a name="configureSecureLog-com.thalesgroup.gemalto.securelog.SecureLogConfig-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>configureSecureLog</h4>
+<pre>static&nbsp;com.thalesgroup.gemalto.securelog.SecureLog&nbsp;configureSecureLog(@Nullable
+                                                                      com.thalesgroup.gemalto.securelog.SecureLogConfig&nbsp;config)</pre>
+<div class="block">Sets the secure logger intended to log necessary retrievable information.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>config</code> - A configuration object of secure log.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>An instance of `SecureLog` or `null` if config set is nil.</dd>
+<dt><span class="simpleTagLabel">Since:</span></dt>
+<dd>2.0.0</dd>
 </dl>
 </li>
 </ul>
