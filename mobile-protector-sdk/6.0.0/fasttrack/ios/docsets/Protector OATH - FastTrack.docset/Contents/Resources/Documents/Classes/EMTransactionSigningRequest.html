@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>EMTransactionSigningRequest Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script>
+    $(function() {
+        var mylist = $('.task-group').children('ul');
+        var listitems = mylist.children('li').get();
+        listitems.sort(function(a, b) {
+          return $(a).children('div').children('code').children('a')[1].name.localeCompare($(b).children('div').children('code').children('a')[1].name);
+        })
+        $.each(listitems, function(idx, itm) { mylist.append(itm); });
+    });
+    </script>
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Class/EMTransactionSigningRequest" class="dashAnchor"></a>
+    <a title="EMTransactionSigningRequest Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">Protector OATH - FastTrack 6.0.0 Docs</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">Protector OATH - FastTrack Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        EMTransactionSigningRequest Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name" id="nav-group-name-Classes">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/EMCapMobileProtector.html">EMCapMobileProtector</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMFastTrack.html">EMFastTrack</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMFastTrackDeviceFingerprintSource.html">EMFastTrackDeviceFingerprintSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMFastTrackOptionalParameters.html">EMFastTrackOptionalParameters</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMFastTrackTlsConfiguration.html">EMFastTrackTlsConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMFetchMessageResponse.html">EMFetchMessageResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMGenericIncomingMessage.html">EMGenericIncomingMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMGenericOutgoingMessage.html">EMGenericOutgoingMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMIncomingMessage.html">EMIncomingMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMMobileMessageManager.html">EMMobileMessageManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMMobileMessenger.html">EMMobileMessenger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMMobileMessengerOptionalParameters.html">EMMobileMessengerOptionalParameters</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMMobileProtector.html">EMMobileProtector</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMMobileProtectorOptionalParameters.html">EMMobileProtectorOptionalParameters</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMOathMobileProtector.html">EMOathMobileProtector</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMOutgoingMessage.html">EMOutgoingMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMProtectorAuthInput.html">EMProtectorAuthInput</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMProtectorCapSettings.html">EMProtectorCapSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMProtectorCapTokenDevice.html">EMProtectorCapTokenDevice</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMProtectorDcvvSettings.html">EMProtectorDcvvSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMProtectorHotpSettings.html">EMProtectorHotpSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMProtectorOathTokenDevice.html">EMProtectorOathTokenDevice</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMProtectorOcraSettings.html">EMProtectorOcraSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMProtectorTokenDevice.html">EMProtectorTokenDevice</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMProtectorTotpSettings.html">EMProtectorTotpSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMProvisionerOptionalParameters.html">EMProvisionerOptionalParameters</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMRegistrationResponse.html">EMRegistrationResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMSendMessageResponse.html">EMSendMessageResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMTransactionSignatureKey.html">EMTransactionSignatureKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMTransactionSigningRequest.html">EMTransactionSigningRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMTransactionSigningResponse.html">EMTransactionSigningResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMTransactionVerifyRequest.html">EMTransactionVerifyRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMTransactionVerifyResponse.html">EMTransactionVerifyResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SecureLogConfig.html">SecureLogConfig</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SecureLogConfigComponents.html">SecureLogConfigComponents</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name" id="nav-group-name-Constants">
+            <a href="../Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:EMProtectorCapSettings.h@DEFAULT_CAP_CDOL">DEFAULT_CAP_CDOL</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:EMProtectorCapSettings.h@DEFAULT_CAP_CID">DEFAULT_CAP_CID</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:EMProtectorCapSettings.h@DEFAULT_CAP_IAD">DEFAULT_CAP_IAD</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:EMProtectorCapSettings.h@DEFAULT_CAP_IAF">DEFAULT_CAP_IAF</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:EMProtectorCapSettings.h@DEFAULT_CAP_IPB">DEFAULT_CAP_IPB</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:EMProtectorCapSettings.h@DEFAULT_CAP_MAC_PADDING">DEFAULT_CAP_MAC_PADDING</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:EMProtectorDcvvSettings.h@DEFAULT_OATH_DCVV_HASH_ALGORITHM">DEFAULT_OATH_DCVV_HASH_ALGORITHM</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:EMProtectorDcvvSettings.h@DEFAULT_OATH_DCVV_START_TIME">DEFAULT_OATH_DCVV_START_TIME</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:EMProtectorDcvvSettings.h@DEFAULT_OATH_DCVV_TIMESTEP_SIZE">DEFAULT_OATH_DCVV_TIMESTEP_SIZE</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:EMProtectorDcvvSettings.h@DEFAULT_OATH_DCVV_TIMESTEP_TYPE">DEFAULT_OATH_DCVV_TIMESTEP_TYPE</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:EMProtectorDcvvSettings.h@DEFAULT_OATH_DCVV_TRUNCATION">DEFAULT_OATH_DCVV_TRUNCATION</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:EMProtectorHotpSettings.h@DEFAULT_OATH_HOTP_HASH_ALGORITHM">DEFAULT_OATH_HOTP_HASH_ALGORITHM</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:EMProtectorHotpSettings.h@DEFAULT_OATH_HOTP_TRUNCATION">DEFAULT_OATH_HOTP_TRUNCATION</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:EMProtectorOcraSettings.h@DEFAULT_OATH_OCRA_START_TIME">DEFAULT_OATH_OCRA_START_TIME</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:EMProtectorOcraSettings.h@DEFAULT_OATH_OCRA_SUITE">DEFAULT_OATH_OCRA_SUITE</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:EMProtectorTotpSettings.h@DEFAULT_OATH_TOTP_HASH_ALGORITHM">DEFAULT_OATH_TOTP_HASH_ALGORITHM</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:EMProtectorTotpSettings.h@DEFAULT_OATH_TOTP_START_TIME">DEFAULT_OATH_TOTP_START_TIME</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:EMProtectorTotpSettings.h@DEFAULT_OATH_TOTP_TIMESTEP_SIZE">DEFAULT_OATH_TOTP_TIMESTEP_SIZE</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:EMProtectorTotpSettings.h@DEFAULT_OATH_TOTP_TIMESTEP_TYPE">DEFAULT_OATH_TOTP_TIMESTEP_TYPE</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:EMProtectorTotpSettings.h@DEFAULT_OATH_TOTP_TRUNCATION">DEFAULT_OATH_TOTP_TRUNCATION</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMFastTrackErrorDomain">EMFastTrackErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMFastTrackTlsConfigurationDefaultTimeout">EMFastTrackTlsConfigurationDefaultTimeout</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FASTTRACK_ERROR_DOMAIN_BIOMETRIC">FASTTRACK_ERROR_DOMAIN_BIOMETRIC</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FASTTRACK_ERROR_DOMAIN_CHANGE_PIN">FASTTRACK_ERROR_DOMAIN_CHANGE_PIN</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FASTTRACK_ERROR_DOMAIN_MOBILE_MESSENGER">FASTTRACK_ERROR_DOMAIN_MOBILE_MESSENGER</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FASTTRACK_ERROR_DOMAIN_OTP_GENERATION">FASTTRACK_ERROR_DOMAIN_OTP_GENERATION</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FASTTRACK_ERROR_DOMAIN_TOKEN_MANAGEMENT">FASTTRACK_ERROR_DOMAIN_TOKEN_MANAGEMENT</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@MOBILE_MESSENGER_JSON_CONTENT_TYPE_GENERIC">MOBILE_MESSENGER_JSON_CONTENT_TYPE_GENERIC</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@MOBILE_MESSENGER_JSON_CONTENT_TYPE_TRANSACTION_SIGNING_REQUEST">MOBILE_MESSENGER_JSON_CONTENT_TYPE_TRANSACTION_SIGNING_REQUEST</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@MOBILE_MESSENGER_JSON_CONTENT_TYPE_TRANSACTION_SIGNING_RESPONSE">MOBILE_MESSENGER_JSON_CONTENT_TYPE_TRANSACTION_SIGNING_RESPONSE</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@MOBILE_MESSENGER_JSON_CONTENT_TYPE_TRANSACTION_VERIFY_REQUEST">MOBILE_MESSENGER_JSON_CONTENT_TYPE_TRANSACTION_VERIFY_REQUEST</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@MOBILE_MESSENGER_JSON_CONTENT_TYPE_TRANSACTION_VERIFY_RESPONSE">MOBILE_MESSENGER_JSON_CONTENT_TYPE_TRANSACTION_VERIFY_RESPONSE</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:EMProtectorOathSettings.h@MOBILE_PROTECTOR_OATH_DCVV_MAXIMUM_TRUNCATION">MOBILE_PROTECTOR_OATH_DCVV_MAXIMUM_TRUNCATION</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:EMProtectorOathSettings.h@MOBILE_PROTECTOR_OATH_DCVV_MINIMUM_TRUNCATION">MOBILE_PROTECTOR_OATH_DCVV_MINIMUM_TRUNCATION</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:EMProtectorOathSettings.h@MOBILE_PROTECTOR_OATH_MAXIMUM_TRUNCATION">MOBILE_PROTECTOR_OATH_MAXIMUM_TRUNCATION</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:EMProtectorOathSettings.h@MOBILE_PROTECTOR_OATH_MINIMUM_TRUNCATION">MOBILE_PROTECTOR_OATH_MINIMUM_TRUNCATION</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name" id="nav-group-name-Enumerations">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/EMFastTrackDeviceFingerprintType.html">EMFastTrackDeviceFingerprintType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EMFastTrackErrorCode.html">EMFastTrackErrorCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EMFastTrackOathHashAlgorithm.html">EMFastTrackOathHashAlgorithm</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EMFastTrackOathTimestepType.html">EMFastTrackOathTimestepType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EMFastTrackProvisioningProtocol.html">EMFastTrackProvisioningProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EMIncomingMessageType.html">EMIncomingMessageType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EMMobileMessengerJailbreakPolicy.html">EMMobileMessengerJailbreakPolicy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EMMobileProtectorTokenJailbreakPolicy.html">EMMobileProtectorTokenJailbreakPolicy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EMOtpType.html">EMOtpType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EMOutgoingMessageType.html">EMOutgoingMessageType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EMSystemBiometricType.html">EMSystemBiometricType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EMTransactionSigningOtpMode.html">EMTransactionSigningOtpMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EMTransactionSigningResponseValue.html">EMTransactionSigningResponseValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EMTransactionVerifyResponseValue.html">EMTransactionVerifyResponseValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SecureLogLevel.html">SecureLogLevel</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name" id="nav-group-name-Protocols">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/EMMessage.html">EMMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMMessageMeta.html">EMMessageMeta</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMMessengerResponse.html">EMMessengerResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SecureLog.html">SecureLog</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      
+      <script>
+      $(function() {
+          $("#nav-group-name-Constants").remove();
+      
+          // sorting
+          var mylist = $('.nav-group-tasks').each(function () {
+            var tlist = $(this);
+            var listitems = $(this).children('li').get();
+            listitems.sort(function(a, b) {
+              return $(a).children('a')[0].text.localeCompare($(b).children('a')[0].text);
+            })
+            $.each(listitems, function(idx, itm) { tlist.append(itm); });
+          });
+      });
+      </script>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>EMTransactionSigningRequest</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">EMTransactionSigningRequest</span> <span class="p">:</span> <span class="nc"><a href="../Classes/EMIncomingMessage.html">EMIncomingMessage</a></span> <span class="o">&lt;</span><span class="n"><a href="../Protocols/EMMessageMeta.html">EMMessageMeta</a></span><span class="o">&gt;</span></code></pre>
+
+                </div>
+              </div>
+            <p>Interface of a transaction signing request from the OOB server.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    5.3
+
+</div>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EMTransactionSigningRequest(py)locale"></a>
+                    <a name="//apple_ref/objc/Property/locale" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EMTransactionSigningRequest(py)locale">locale</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets the locale the message is designed for.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">locale</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">locale</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The locale.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EMTransactionSigningRequest(py)subject"></a>
+                    <a name="//apple_ref/objc/Property/subject" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EMTransactionSigningRequest(py)subject">subject</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets message subject</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">subject</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">subject</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The subject.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EMTransactionSigningRequest(py)otpMode"></a>
+                    <a name="//apple_ref/objc/Property/otpMode" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EMTransactionSigningRequest(py)otpMode">otpMode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets the OTP type</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Enums/EMTransactionSigningOtpMode.html">EMTransactionSigningOtpMode</a></span> <span class="n">otpMode</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">otpMode</span><span class="p">:</span> <span class="kt"><a href="../Enums/EMTransactionSigningOtpMode.html">EMTransactionSigningOtpMode</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>OTP type of the transaction signing request.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EMTransactionSigningRequest(py)userTokenIdForSigning"></a>
+                    <a name="//apple_ref/objc/Property/userTokenIdForSigning" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EMTransactionSigningRequest(py)userTokenIdForSigning">userTokenIdForSigning</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the User Token Identifier (UTI).</p>
+
+<p>The UTI is an unsigned value ranging from 0x00 to 0xFF (i.e. 0 to 255).
+ It is generated by the provisioning server and is part of the credential
+ pushed during provisioning. It is guaranteed that two tokens for the
+ same end-user (on authentication server) and from the same EPS domain
+ will never have the same UTI. See the Enrollment and Provisioning Server
+ documentation for domains configuration description.</p>
+
+<p>The UTI is defined only if the token has been created with Provisioning
+ Protocol V3 or V5. When the token has been created with Provisioning Protocol
+ V1 or V2 the method returns -1.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSInteger</span> <span class="n">userTokenIdForSigning</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">userTokenIdForSigning</span><span class="p">:</span> <span class="kt">Int</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The user token id, -1 if none.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EMTransactionSigningRequest(py)capChallenge"></a>
+                    <a name="//apple_ref/objc/Property/capChallenge" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EMTransactionSigningRequest(py)capChallenge">capChallenge</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets the CAP OTP challenge
+ The challenge is used for CAP Mode1 and Mode3.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">capChallenge</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">capChallenge</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>challenge of the transaction signing request.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EMTransactionSigningRequest(py)capAmount"></a>
+                    <a name="//apple_ref/objc/Property/capAmount" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EMTransactionSigningRequest(py)capAmount">capAmount</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets the CAP OTP amount
+ The challenge is used for CAP Mode1.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">capAmount</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">capAmount</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>amount of the transaction signing request.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EMTransactionSigningRequest(py)capCurrency"></a>
+                    <a name="//apple_ref/objc/Property/capCurrency" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EMTransactionSigningRequest(py)capCurrency">capCurrency</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets the CAP OTP currency
+ The challenge is used for CAP Mode1.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">capCurrency</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">capCurrency</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>currency of the transaction signing request.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EMTransactionSigningRequest(py)capData"></a>
+                    <a name="//apple_ref/objc/Property/capData" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EMTransactionSigningRequest(py)capData">capData</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets the CAP OTP signing data for CAP Mode2_TDS.
+ Data should only contain digits, maximum 10 digit per data and maximum 10.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="n">NSMutableArray</span> <span class="o">*</span><span class="n">capData</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@NSCopying</span> <span class="k">var</span> <span class="nv">capData</span><span class="p">:</span> <span class="kt">NSMutableArray</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>signing data of the transaction signing request.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EMTransactionSigningRequest(py)ocraServerChallenge"></a>
+                    <a name="//apple_ref/objc/Property/ocraServerChallenge" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EMTransactionSigningRequest(py)ocraServerChallenge">ocraServerChallenge</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets the OCRA OTP server challenge
+ This value is available only if the Otp Mode is OCRA.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="n">NSData</span> <span class="o">*</span><span class="n">ocraServerChallenge</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">ocraServerChallenge</span><span class="p">:</span> <span class="kt">Data</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>OCRA server challenge of the transaction signing request.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EMTransactionSigningRequest(py)ocraClientChallenge"></a>
+                    <a name="//apple_ref/objc/Property/ocraClientChallenge" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EMTransactionSigningRequest(py)ocraClientChallenge">ocraClientChallenge</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets the OCRA OTP client challenge
+ This value is available only if the Otp Mode is OCRA.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">ocraClientChallenge</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">ocraClientChallenge</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>OCRA client challenge of the transaction signing request.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EMTransactionSigningRequest(py)ocraPasswordHash"></a>
+                    <a name="//apple_ref/objc/Property/ocraPasswordHash" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EMTransactionSigningRequest(py)ocraPasswordHash">ocraPasswordHash</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets the OCRA OTP password hash
+ This value is available only if the Otp Mode is OCRA.
+ It depends on the the OCRA suite if password hash is used.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="n">NSData</span> <span class="o">*</span><span class="n">ocraPasswordHash</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">ocraPasswordHash</span><span class="p">:</span> <span class="kt">Data</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>OCRA password hash of the transaction signing request.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EMTransactionSigningRequest(py)ocraSession"></a>
+                    <a name="//apple_ref/objc/Property/ocraSession" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EMTransactionSigningRequest(py)ocraSession">ocraSession</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets the OCRA OTP session data
+ This value is available only if the Otp Mode is OCRA.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">ocraSession</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">ocraSession</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>OCRA session data of the transaction signing request.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EMTransactionSigningRequest(im)createWithResponse:otp:meta:"></a>
+                    <a name="//apple_ref/objc/Method/-createWithResponse:otp:meta:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EMTransactionSigningRequest(im)createWithResponse:otp:meta:">-createWithResponse:<wbr>otp:<wbr>meta:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates an outgoing response for this transaction signing request message.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/EMOutgoingMessage.html">EMOutgoingMessage</a></span> <span class="o">*</span><span class="p">)</span>
+    <span class="nf">createWithResponse</span><span class="p">:(</span><span class="n"><a href="../Enums/EMTransactionSigningResponseValue.html">EMTransactionSigningResponseValue</a></span><span class="p">)</span><span class="nv">aResponse</span>
+                   <span class="nf">otp</span><span class="p">:(</span><span class="n">nullable</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">otp</span>
+                  <span class="nf">meta</span><span class="p">:(</span><span class="n">nullable</span> <span class="n">NSDictionary</span> <span class="o">*</span><span class="p">)</span><span class="nv">aMeta</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">create</span><span class="p">(</span><span class="n">response</span> <span class="nv">aResponse</span><span class="p">:</span> <span class="kt"><a href="../Enums/EMTransactionSigningResponseValue.html">EMTransactionSigningResponseValue</a></span><span class="p">,</span> <span class="nv">otp</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="n">meta</span> <span class="nv">aMeta</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]?)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/EMOutgoingMessage.html">EMOutgoingMessage</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>aResponse</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The response to provide to the transaction. See enum EMTransactionSigningResponseValue.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>otp</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The OTP to send over to OOB server. Can be <code>nil</code>only if user denied the transaction.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>aMeta</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The metadata for the message.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The outgoing message ready to be sent.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>© Thales DIS</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
