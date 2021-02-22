@@ -1,0 +1,159 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/idpmobile/jenkins/workspace/workspace/Fido2_default@2/ios/lib/fido2/fido2/TGFError.h",
+      "line": 17,
+      "symbol": "TGFError",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/jenkins/workspace/workspace/Fido2_default@2/ios/lib/fido2/fido2/TGFError.h",
+      "line": 17,
+      "symbol": "TGFError",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/jenkins/workspace/workspace/Fido2_default@2/ios/lib/fido2/fido2/authenticator/TGFAuthenticator.h",
+      "line": 12,
+      "symbol": "TGFAuthenticator",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/jenkins/workspace/workspace/Fido2_default@2/ios/lib/fido2/fido2/authenticator/TGFAuthenticator.h",
+      "line": 14,
+      "symbol": "TGFAuthenticator.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/jenkins/workspace/workspace/Fido2_default@2/ios/lib/fido2/fido2/authenticator/biometric/TGFBiometricAuthenticatorDelegate.h",
+      "line": 50,
+      "symbol": "TGFBiometricAuthenticatorDelegate.-biometricAuthenticatorDidFinish",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/jenkins/workspace/workspace/Fido2_default@2/ios/lib/fido2/fido2/authenticator/passcode/TGFPasscodeAuthenticatorDelegate.h",
+      "line": 52,
+      "symbol": "TGFPasscodeAuthenticatorDelegate.-passcodeAuthenticatorDidFinish:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/jenkins/workspace/workspace/Fido2_default@2/ios/lib/fido2/fido2/authenticator/passcode/TGFPasscodeAuthenticatorDelegate.h",
+      "line": 63,
+      "symbol": "TGFPasscodeAuthenticatorDelegate.-passcodeAuthenticator:didFailWithError:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/jenkins/workspace/workspace/Fido2_default@2/ios/lib/fido2/fido2/client/TGFAuthenticatorDescriptor.h",
+      "line": 18,
+      "symbol": "TGFAuthenticatorDescriptor.-initWithFriendlyName:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/jenkins/workspace/workspace/Fido2_default@2/ios/lib/fido2/fido2/client/TGFAuthenticatorDescriptor.h",
+      "line": 19,
+      "symbol": "TGFAuthenticatorDescriptor.friendlyName",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/jenkins/workspace/workspace/Fido2_default@2/ios/lib/fido2/fido2/client/TGFFido2AuthenticatorInfo.h",
+      "line": 24,
+      "symbol": "TGFFido2AuthenticatorInfo.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/jenkins/workspace/workspace/Fido2_default@2/ios/lib/fido2/fido2/client/TGFFido2Client.h",
+      "line": 17,
+      "symbol": "TGFFido2Client",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/jenkins/workspace/workspace/Fido2_default@2/ios/lib/fido2/fido2/client/TGFFido2OperationInfo.h",
+      "line": 22,
+      "symbol": "TGFFido2OperationInfo.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/jenkins/workspace/workspace/Fido2_default@2/ios/lib/fido2/fido2/client/TGFFido2Request.h",
+      "line": 19,
+      "symbol": "TGFFido2Request.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/jenkins/workspace/workspace/Fido2_default@2/ios/lib/fido2/fido2/client/TGFFido2Request.h",
+      "line": 21,
+      "symbol": "TGFFido2Request.-operationType",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/jenkins/workspace/workspace/Fido2_default@2/ios/lib/fido2/fido2/client/TGFFido2RequestFactory.h",
+      "line": 14,
+      "symbol": "TGFFido2RequestFactory",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/jenkins/workspace/workspace/Fido2_default@2/ios/lib/fido2/fido2/client/TGFFido2RequestFactory.h",
+      "line": 16,
+      "symbol": "TGFFido2RequestFactory.+requestWithJsonString:error:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/jenkins/workspace/workspace/Fido2_default@2/ios/lib/fido2/fido2/client/TGFFido2RespondArgs.h",
+      "line": 26,
+      "symbol": "TGFFido2RespondArgs.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/jenkins/workspace/workspace/Fido2_default@2/ios/lib/fido2/fido2/client/TGFFido2Task.h",
+      "line": 8,
+      "symbol": "TGFFido2Task",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/jenkins/workspace/workspace/Fido2_default@2/ios/lib/fido2/fido2/client/TGFVerifyMethod.h",
+      "line": 18,
+      "symbol": "TGFVerifyMethod.TGFVerifyMethodNone",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/jenkins/workspace/workspace/Fido2_default@2/ios/lib/fido2/fido2/client/TGFVerifyMethod.h",
+      "line": 21,
+      "symbol": "TGFVerifyMethod.TGFVerifyMethodProprietaryBiometric",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/jenkins/workspace/workspace/Fido2_default@2/ios/lib/fido2/fido2/client/TGFVerifyMethod.h",
+      "line": 24,
+      "symbol": "TGFVerifyMethod.TGFVerifyMethodPasscode",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/jenkins/workspace/workspace/Fido2_default@2/ios/lib/fido2/fido2/rasp/TGFRaspUi.h",
+      "line": 51,
+      "symbol": "TGFRaspUiConfigure",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/idpmobile/jenkins/workspace/workspace/Fido2_default@2/ios/lib/fido2"
+}

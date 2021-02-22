@@ -1,0 +1,4 @@
+com.thalesgroup.gemalto.fido2
+com.thalesgroup.gemalto.fido2.authenticator.biometric
+com.thalesgroup.gemalto.fido2.authenticator.passcode
+com.thalesgroup.gemalto.fido2.client

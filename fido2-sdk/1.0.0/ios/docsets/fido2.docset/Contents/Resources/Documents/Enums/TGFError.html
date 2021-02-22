@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>TGFError Enumeration Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Enum/TGFError" class="dashAnchor"></a>
+    <a title="TGFError Enumeration Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">fido2 1.1.0 Docs</a> (83% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">fido2 Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        TGFError Enumeration Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/TGFAuthenticatorDescriptor.html">TGFAuthenticatorDescriptor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TGFFido2AuthenticatorInfo.html">TGFFido2AuthenticatorInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TGFFido2AuthenticatorRegistrationInfo.html">TGFFido2AuthenticatorRegistrationInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TGFFido2ClientFactory.html">TGFFido2ClientFactory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TGFFido2Config.html">TGFFido2Config</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TGFFido2OperationInfo.html">TGFFido2OperationInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TGFFido2Request.html">TGFFido2Request</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TGFFido2RequestFactory.html">TGFFido2RequestFactory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TGFFido2RespondArgs.html">TGFFido2RespondArgs</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TGFFido2RespondArgsBuilder.html">TGFFido2RespondArgsBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TGFPasscodeAuthenticator.html">TGFPasscodeAuthenticator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TGFPasscodeConfig.html">TGFPasscodeConfig</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:TGFError.h@TGFErrorDomain">TGFErrorDomain</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/TGFError.html">TGFError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TGFFido2OperationType.html">TGFFido2OperationType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TGFKeyboardKey.html">TGFKeyboardKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TGFKeyboardUsage.html">TGFKeyboardUsage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TGFVerifyMethod.html">TGFVerifyMethod</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/TGFAuthenticator.html">TGFAuthenticator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TGFBiometricAuthenticatorDelegate.html">TGFBiometricAuthenticatorDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TGFFido2Client.html">TGFFido2Client</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TGFFido2Response.html">TGFFido2Response</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/c:objc(pl)TGFFido2Task">TGFFido2Task</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TGFFido2UiDelegate.html">TGFFido2UiDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TGFKeyboard.html">TGFKeyboard</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TGFKeyboardDelegate.html">TGFKeyboardDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TGFPasscodeAuthenticatorDelegate.html">TGFPasscodeAuthenticatorDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/c:@F@TGFRaspUiConfigure">TGFRaspUiConfigure</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>TGFError</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight objective_c"><code><span class="n">NS_ERROR_ENUM</span><span class="p">(</span><span class="n"><a href="../Constants.html#/c:TGFError.h@TGFErrorDomain">TGFErrorDomain</a></span><span class="p">,</span> <span class="n">TGFError</span><span class="p">)</span> <span class="p">{</span>
+    
+    <span class="cm">/**Unknown error.*/</span>
+    <span class="n">TGFErrorUnknownError</span> <span class="o">=</span> <span class="mh">0x01</span><span class="p">,</span>
+    
+    <span class="cm">/**Operation aborted*/</span>
+    <span class="n">TGFErrorAborted</span> <span class="o">=</span> <span class="mh">0x02</span><span class="p">,</span>
+    
+    <span class="cm">/**Operation not allowed.*/</span>
+    <span class="n">TGFErrorNotAllowed</span> <span class="o">=</span> <span class="mh">0x03</span><span class="p">,</span>
+    
+    <span class="cm">/**Operation is not supported.*/</span>
+    <span class="n">TGFErrorNotSupported</span> <span class="o">=</span> <span class="mh">0x04</span><span class="p">,</span>
+    
+    <span class="cm">/**Operation data is inadequate or contains error.*/</span>
+    <span class="n">TGFErrorDataError</span> <span class="o">=</span> <span class="mh">0x05</span><span class="p">,</span>
+    
+    <span class="cm">/**Encoding or decoding operation failed.*/</span>
+    <span class="n">TGFErrorEncodingError</span> <span class="o">=</span> <span class="mh">0x06</span><span class="p">,</span>
+    
+    <span class="cm">/**A network error was encountered.*/</span>
+    <span class="n">TGFErrorNetworkError</span> <span class="o">=</span> <span class="mh">0x07</span><span class="p">,</span>
+    
+    <span class="cm">/**The operation is insecure.*/</span>
+    <span class="n">TGFErrorSecurityError</span> <span class="o">=</span> <span class="mh">0x08</span><span class="p">,</span>
+    
+    <span class="cm">/**User is not enrolled.*/</span>
+    <span class="n">TGFErrorUserNotEnrolled</span> <span class="o">=</span> <span class="mh">0x09</span><span class="p">,</span>
+    
+    <span class="cm">/**User is already enrolled.*/</span>
+    <span class="n">TGFErrorUserAlreadyEnrolled</span> <span class="o">=</span> <span class="mh">0x0a</span><span class="p">,</span>
+    
+    <span class="cm">/**User is already enrolled.*/</span>
+    <span class="n">TGFErrorUserLockout</span> <span class="o">=</span> <span class="mh">0x0b</span>
+<span class="p">}</span></code></pre>
+
+                </div>
+              </div>
+            <p>Undocumented</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@TGFError@TGFErrorUnknownError"></a>
+                    <a name="//apple_ref/objc/Case/TGFErrorUnknownError" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@TGFError@TGFErrorUnknownError">TGFErrorUnknownError</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Unknown error.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">TGFErrorUnknownError</span> <span class="o">=</span> <span class="mh">0x01</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@TGFError@TGFErrorAborted"></a>
+                    <a name="//apple_ref/objc/Case/TGFErrorAborted" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@TGFError@TGFErrorAborted">TGFErrorAborted</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Operation aborted</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">TGFErrorAborted</span> <span class="o">=</span> <span class="mh">0x02</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@TGFError@TGFErrorNotAllowed"></a>
+                    <a name="//apple_ref/objc/Case/TGFErrorNotAllowed" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@TGFError@TGFErrorNotAllowed">TGFErrorNotAllowed</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Operation not allowed.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">TGFErrorNotAllowed</span> <span class="o">=</span> <span class="mh">0x03</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@TGFError@TGFErrorNotSupported"></a>
+                    <a name="//apple_ref/objc/Case/TGFErrorNotSupported" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@TGFError@TGFErrorNotSupported">TGFErrorNotSupported</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Operation is not supported.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">TGFErrorNotSupported</span> <span class="o">=</span> <span class="mh">0x04</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@TGFError@TGFErrorDataError"></a>
+                    <a name="//apple_ref/objc/Case/TGFErrorDataError" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@TGFError@TGFErrorDataError">TGFErrorDataError</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Operation data is inadequate or contains error.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">TGFErrorDataError</span> <span class="o">=</span> <span class="mh">0x05</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@TGFError@TGFErrorEncodingError"></a>
+                    <a name="//apple_ref/objc/Case/TGFErrorEncodingError" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@TGFError@TGFErrorEncodingError">TGFErrorEncodingError</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Encoding or decoding operation failed.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">TGFErrorEncodingError</span> <span class="o">=</span> <span class="mh">0x06</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@TGFError@TGFErrorNetworkError"></a>
+                    <a name="//apple_ref/objc/Case/TGFErrorNetworkError" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@TGFError@TGFErrorNetworkError">TGFErrorNetworkError</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A network error was encountered.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">TGFErrorNetworkError</span> <span class="o">=</span> <span class="mh">0x07</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@TGFError@TGFErrorSecurityError"></a>
+                    <a name="//apple_ref/objc/Case/TGFErrorSecurityError" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@TGFError@TGFErrorSecurityError">TGFErrorSecurityError</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The operation is insecure.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">TGFErrorSecurityError</span> <span class="o">=</span> <span class="mh">0x08</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@TGFError@TGFErrorUserNotEnrolled"></a>
+                    <a name="//apple_ref/objc/Case/TGFErrorUserNotEnrolled" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@TGFError@TGFErrorUserNotEnrolled">TGFErrorUserNotEnrolled</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>User is not enrolled.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">TGFErrorUserNotEnrolled</span> <span class="o">=</span> <span class="mh">0x09</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@TGFError@TGFErrorUserAlreadyEnrolled"></a>
+                    <a name="//apple_ref/objc/Case/TGFErrorUserAlreadyEnrolled" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@TGFError@TGFErrorUserAlreadyEnrolled">TGFErrorUserAlreadyEnrolled</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>User is already enrolled.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">TGFErrorUserAlreadyEnrolled</span> <span class="o">=</span> <span class="mh">0x0a</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@TGFError@TGFErrorUserLockout"></a>
+                    <a name="//apple_ref/objc/Case/TGFErrorUserLockout" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@TGFError@TGFErrorUserLockout">TGFErrorUserLockout</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>User is already enrolled.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">TGFErrorUserLockout</span> <span class="o">=</span> <span class="mh">0x0b</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>Thales</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.11.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
