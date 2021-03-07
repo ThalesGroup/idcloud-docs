@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":9,"i7":9};
+var methods = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -159,38 +159,30 @@ extends <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/thalesgroup/gemalto/fido2/client/Fido2Config.html#getAttestationKey--">getAttestationKey</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>static int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/thalesgroup/gemalto/fido2/client/Fido2Config.html#getDurationInSeconds--">getDurationInSeconds</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i2" class="altColor">
-<td class="colFirst"><code>static int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/thalesgroup/gemalto/fido2/client/Fido2Config.html#getMaximumRetryCount--">getMaximumRetryCount</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i3" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/thalesgroup/gemalto/fido2/client/Fido2Config.html#setAttestationKey-java.lang.String-">setAttestationKey</a></span>(<a href="https://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</code>
 <div class="block">Sets the safetynet attestation key</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/thalesgroup/gemalto/fido2/client/Fido2Config.html#setBaseLockoutDuration-int-">setBaseLockoutDuration</a></span>(int&nbsp;durationInSecs)</code>
 <div class="block">Sets the base lockout penalty duration to be incurred upon exceeding the maximum number of possible retries during a user verification process.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/thalesgroup/gemalto/fido2/client/Fido2Config.html#setMaximumRetryCount-int-">setMaximumRetryCount</a></span>(int&nbsp;maxRetryCount)</code>
 <div class="block">Sets the maximum number of possible retries before incurring a lockout penalty during a user verification process.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/thalesgroup/gemalto/fido2/client/Fido2Config.html#setSecureLog-com.thalesgroup.gemalto.securelog.SecureLog-">setSecureLog</a></span>(com.thalesgroup.gemalto.securelog.SecureLog&nbsp;securelog)</code>
 <div class="block">Set the secure logger intended to log necessary retrievable information.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>static com.thalesgroup.gemalto.securelog.SecureLog</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/thalesgroup/gemalto/fido2/client/Fido2Config.html#setUpSecureLog-com.thalesgroup.gemalto.securelog.SecureLogConfig-">setUpSecureLog</a></span>(com.thalesgroup.gemalto.securelog.SecureLogConfig&nbsp;config)</code>
 <div class="block">Setup the secure logger intended to log necessary retrievable information.</div>
@@ -299,24 +291,6 @@ extends <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html
 <li class="blockList">
 <h4>getAttestationKey</h4>
 <pre>public static&nbsp;<a href="https://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getAttestationKey()</pre>
-</li>
-</ul>
-<a name="getMaximumRetryCount--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getMaximumRetryCount</h4>
-<pre>public static&nbsp;int&nbsp;getMaximumRetryCount()</pre>
-</li>
-</ul>
-<a name="getDurationInSeconds--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getDurationInSeconds</h4>
-<pre>public static&nbsp;int&nbsp;getDurationInSeconds()</pre>
 </li>
 </ul>
 <a name="setUpSecureLog-com.thalesgroup.gemalto.securelog.SecureLogConfig-">

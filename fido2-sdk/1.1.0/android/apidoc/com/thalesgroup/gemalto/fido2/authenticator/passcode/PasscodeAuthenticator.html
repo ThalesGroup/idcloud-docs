@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":9,"i4":6};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":9,"i5":6};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -168,19 +168,25 @@ extends <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html
 </td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code>abstract long</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeAuthenticator.html#getLockoutExpiryTimestamp--">getLockoutExpiryTimestamp</a></span>()</code>
+<div class="block">Get the lockout expiry timestamp.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>abstract boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeAuthenticator.html#isEnrolled--">isEnrolled</a></span>()</code>
 <div class="block">Indicates if the Passcode Authenticator is enrolled.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../../../com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeAuthenticator.html" title="class in com.thalesgroup.gemalto.fido2.authenticator.passcode">PasscodeAuthenticator</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeAuthenticator.html#of-androidx.fragment.app.FragmentActivity-com.thalesgroup.gemalto.fido2.authenticator.passcode.PasscodeAuthenticatorCallback-">of</a></span>(androidx.fragment.app.FragmentActivity&nbsp;activity,
   <a href="../../../../../../com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeAuthenticatorCallback.html" title="interface in com.thalesgroup.gemalto.fido2.authenticator.passcode">PasscodeAuthenticatorCallback</a>&nbsp;callback)</code>
 <div class="block">Gets an instance of this class</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>abstract void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeAuthenticator.html#unenroll--">unenroll</a></span>()</code>
 <div class="block">Unenroll the previously enrolled Passcode Authenticator.</div>
@@ -304,7 +310,7 @@ extends <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html
 <a name="changePasscode--">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>changePasscode</h4>
 <pre>public abstract&nbsp;void&nbsp;changePasscode()</pre>
@@ -319,6 +325,22 @@ extends <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html
 <dl>
 <dt><span class="simpleTagLabel">Since:</span></dt>
 <dd>1.0.0</dd>
+</dl>
+</li>
+</ul>
+<a name="getLockoutExpiryTimestamp--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getLockoutExpiryTimestamp</h4>
+<pre>public abstract&nbsp;long&nbsp;getLockoutExpiryTimestamp()</pre>
+<div class="block">Get the lockout expiry timestamp.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>lockout expiry timestamp or 0 if the authenticator is not locked out</dd>
+<dt><span class="simpleTagLabel">Since:</span></dt>
+<dd>1.1.0</dd>
 </dl>
 </li>
 </ul>
