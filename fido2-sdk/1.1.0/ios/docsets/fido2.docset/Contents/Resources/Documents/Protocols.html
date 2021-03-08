@@ -14,7 +14,7 @@
     <a title="Protocols  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">fido2 1.1.0 Docs</a> (83% documented)</p>
+        <p><a href="index.html">fido2 1.1.0 Docs</a> (100% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -161,7 +161,9 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Abstract class to describe the features provided by each of its subclassed authenticators.</p>
+
+<p>@since 1.0.0</p>
 
                         <a href="Protocols/TGFAuthenticator.html" class="slightly-smaller">See more</a>
                       </div>
@@ -169,35 +171,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">TGFAuthenticator</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span>
-
-<span class="o">-</span> <span class="p">(</span><span class="n">instancetype</span><span class="p">)</span><span class="n">init</span> <span class="n">NS_UNAVAILABLE</span><span class="p">;</span>
-
-<span class="cm">/**
- Indicates if a Authenticator is enrolled.
- Use this to determine if the user needs to be enrolled.
- 
- @return YES if enrolled.
- */</span>
-<span class="k">-</span><span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="n">isEnrolled</span><span class="p">;</span>
-
-<span class="cm">/**
- Enroll a Authenticator. Users MUST be enrolled to the specific authenticator
- to perform FIDO2 operations. The enrollment process stores a secure means of identification
- which will be used to verify the user when authentication is required.
- */</span>
-<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">enroll</span><span class="p">;</span>
-
-<span class="cm">/**
- Unenroll a previously enrolled Authenticator.
- User authentication is required prior to a successful unenrollment.
- Upon successful unenrollment, all FIDO2 registrations for the specific authenticator will be invalidated.
- A subsequent enrollment is required to once again perform FIDO2 operations.
- */</span>
-<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">unenroll</span><span class="p">;</span>
-
-
-<span class="k">@end</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">TGFAuthenticator</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -391,7 +365,9 @@ the secure keyboard UI.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>A FIDO2 client that processes FIDO2 requests and generates FIDO2 responses.</p>
+
+<p>@since 1.0.0</p>
 
                         <a href="Protocols/TGFFido2Client.html" class="slightly-smaller">See more</a>
                       </div>
@@ -399,52 +375,7 @@ the secure keyboard UI.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">TGFFido2Client</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span>
-
-<span class="cm">/**
- Responds asynchronously to a FIDO2 request by generating a FIDO2
- response. This operation may run for a long period of time and all UI is
- delegated to the caller.
- 
- @param respondArgs FIDO2 request plus other arguments required to
- fulfill the request.
- @param completionBlock The completion handler to call when the execution is complete.
-    It takes the following parameters:
-    * response - Success when it is not nil.
-    * error - Error details. See `TGFFido2Error` for error types.
- 
-@since 1.0.0
- */</span>
-<span class="o">-</span> <span class="p">(</span><span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="Protocols.html#/c:objc(pl)TGFFido2Task">TGFFido2Task</a></span><span class="o">&gt;</span> <span class="n">_Nullable</span><span class="p">)</span><span class="n">respondWithArgs</span><span class="o">:</span><span class="p">(</span><span class="n"><a href="Classes/TGFFido2RespondArgs.html">TGFFido2RespondArgs</a></span><span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="n">respondArgs</span>
-             <span class="n">completion</span><span class="o">:</span><span class="p">(</span><span class="kt">void</span><span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="Protocols/TGFFido2Response.html">TGFFido2Response</a></span><span class="o">&gt;</span> <span class="n">_Nullable</span> <span class="n">response</span><span class="p">,</span> <span class="n">NSError</span><span class="o">*</span><span class="n">_Nullable</span> <span class="n">error</span><span class="p">))</span><span class="n">completionBlock</span><span class="p">;</span>
-
-<span class="cm">/**
- Retrieve a list of registered FIDO2 Authenticators.
- 
- @return An array of TGFFido2AuthenticatorInfo representing the registered Authenticators
- 
- @since 1.0.0
- */</span>
-<span class="k">-</span> <span class="p">(</span><span class="n">NSArray</span><span class="o">&lt;</span><span class="n"><a href="Classes/TGFFido2AuthenticatorRegistrationInfo.html">TGFFido2AuthenticatorRegistrationInfo</a></span> <span class="o">*&gt;</span> <span class="o">*</span><span class="p">)</span><span class="n">authenticatorRegistrations</span><span class="p">;</span>
-
-
-<span class="cm">/**
-Delete Authenticator registration
-
-@since 1.0.0
-*/</span>
-<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">deleteAuthenticatorRegistration</span><span class="p">:(</span><span class="n"><a href="Classes/TGFFido2AuthenticatorRegistrationInfo.html">TGFFido2AuthenticatorRegistrationInfo</a></span><span class="o">*</span><span class="p">)</span><span class="nv">authenticatorRegistration</span><span class="p">;</span>
-
-<span class="cm">/**
- Delete all authenticator registrations.
-
- @note This method will also delete Passcode Authenticator enrollment.
-
- @since 1.0.0
- */</span>
-<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">deleteAuthenticatorRegistrations</span><span class="p">;</span>
-
-<span class="k">@end</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">TGFFido2Client</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -512,17 +443,16 @@ Delete Authenticator registration
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>A FIDO2 asynchronous task.</p>
+
+<p>@since 1.0.0</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">TGFFido2Task</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span>
-
-
-<span class="k">@end</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">TGFFido2Task</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
 
                         </div>
                         <div class="language">

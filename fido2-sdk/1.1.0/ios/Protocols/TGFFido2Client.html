@@ -14,7 +14,7 @@
     <a title="TGFFido2Client Protocol Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">fido2 1.1.0 Docs</a> (83% documented)</p>
+        <p><a href="../index.html">fido2 1.1.0 Docs</a> (100% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -144,56 +144,13 @@
             <h1>TGFFido2Client</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">TGFFido2Client</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span>
-
-<span class="cm">/**
- Responds asynchronously to a FIDO2 request by generating a FIDO2
- response. This operation may run for a long period of time and all UI is
- delegated to the caller.
- 
- @param respondArgs FIDO2 request plus other arguments required to
- fulfill the request.
- @param completionBlock The completion handler to call when the execution is complete.
-    It takes the following parameters:
-    * response - Success when it is not nil.
-    * error - Error details. See `TGFFido2Error` for error types.
- 
-@since 1.0.0
- */</span>
-<span class="o">-</span> <span class="p">(</span><span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols.html#/c:objc(pl)TGFFido2Task">TGFFido2Task</a></span><span class="o">&gt;</span> <span class="n">_Nullable</span><span class="p">)</span><span class="n">respondWithArgs</span><span class="o">:</span><span class="p">(</span><span class="n"><a href="../Classes/TGFFido2RespondArgs.html">TGFFido2RespondArgs</a></span><span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="n">respondArgs</span>
-             <span class="n">completion</span><span class="o">:</span><span class="p">(</span><span class="kt">void</span><span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/TGFFido2Response.html">TGFFido2Response</a></span><span class="o">&gt;</span> <span class="n">_Nullable</span> <span class="n">response</span><span class="p">,</span> <span class="n">NSError</span><span class="o">*</span><span class="n">_Nullable</span> <span class="n">error</span><span class="p">))</span><span class="n">completionBlock</span><span class="p">;</span>
-
-<span class="cm">/**
- Retrieve a list of registered FIDO2 Authenticators.
- 
- @return An array of TGFFido2AuthenticatorInfo representing the registered Authenticators
- 
- @since 1.0.0
- */</span>
-<span class="k">-</span> <span class="p">(</span><span class="n">NSArray</span><span class="o">&lt;</span><span class="n"><a href="../Classes/TGFFido2AuthenticatorRegistrationInfo.html">TGFFido2AuthenticatorRegistrationInfo</a></span> <span class="o">*&gt;</span> <span class="o">*</span><span class="p">)</span><span class="n">authenticatorRegistrations</span><span class="p">;</span>
-
-
-<span class="cm">/**
-Delete Authenticator registration
-
-@since 1.0.0
-*/</span>
-<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">deleteAuthenticatorRegistration</span><span class="p">:(</span><span class="n"><a href="../Classes/TGFFido2AuthenticatorRegistrationInfo.html">TGFFido2AuthenticatorRegistrationInfo</a></span><span class="o">*</span><span class="p">)</span><span class="nv">authenticatorRegistration</span><span class="p">;</span>
-
-<span class="cm">/**
- Delete all authenticator registrations.
-
- @note This method will also delete Passcode Authenticator enrollment.
-
- @since 1.0.0
- */</span>
-<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">deleteAuthenticatorRegistrations</span><span class="p">;</span>
-
-<span class="k">@end</span></code></pre>
+                  <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">TGFFido2Client</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
 
                 </div>
               </div>
-            <p>Undocumented</p>
+            <p>A FIDO2 client that processes FIDO2 requests and generates FIDO2 responses.</p>
+
+<p>@since 1.0.0</p>
 
           </section>
           <section class="section task-group-section">
@@ -353,9 +310,9 @@ It takes the following parameters:
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(pl)TGFFido2Client(im)deleteAuthenticatorRegistrations"></a>
-                    <a name="//apple_ref/objc/Method/-deleteAuthenticatorRegistrations" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)TGFFido2Client(im)deleteAuthenticatorRegistrations">-deleteAuthenticatorRegistrations</a>
+                    <a name="/c:objc(pl)TGFFido2Client(im)reset"></a>
+                    <a name="//apple_ref/objc/Method/-reset" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)TGFFido2Client(im)reset">-reset</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -377,12 +334,12 @@ It takes the following parameters:
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">deleteAuthenticatorRegistrations</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">reset</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">deleteAuthenticatorRegistrations</span><span class="p">()</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">reset</span><span class="p">()</span></code></pre>
 
                         </div>
                       </div>

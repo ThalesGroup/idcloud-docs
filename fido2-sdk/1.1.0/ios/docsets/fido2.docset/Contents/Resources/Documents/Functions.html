@@ -14,7 +14,7 @@
     <a title="Functions  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">fido2 1.1.0 Docs</a> (83% documented)</p>
+        <p><a href="index.html">fido2 1.1.0 Docs</a> (100% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -161,7 +161,9 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Configures the behaviour of each RASP detection.
+This API supports the configuration of multiple detection types simultaneously.
+Each detection type may only configure its mode ONCE per application runtime.</p>
 
                       </div>
                       <div class="declaration">
@@ -176,6 +178,37 @@
                           <pre class="highlight swift"><code><span class="kd">func</span> <span class="kt">TGFRaspUiConfigure</span><span class="p">(</span><span class="n">_</span> <span class="nv">raspTypes</span><span class="p">:</span> <span class="kt">Int32</span><span class="p">,</span> <span class="n">_</span> <span class="nv">raspMode</span><span class="p">:</span> <span class="kt">Int32</span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>raspTypes</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>RASP types. Possible values: TGF_RASP_TYPE_DEBUGGER, TGF_RASP_TYPE_JAILBREAK, TGF_RASP_TYPE_HOOK. Multiple detection types is supported through OR bitwise operator. e.g. set both TGF_RASP_TYPE_ROOT and TGF_RASP_TYPE_HOOK.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>raspMode</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Detection mode. Possible values: TGF_RASP_MODE_DISABLE, TGF_RASP_MODE_CRASH.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>

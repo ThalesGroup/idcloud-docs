@@ -14,7 +14,7 @@
     <a title="TGFAuthenticator Protocol Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">fido2 1.1.0 Docs</a> (83% documented)</p>
+        <p><a href="../index.html">fido2 1.1.0 Docs</a> (100% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -144,39 +144,13 @@
             <h1>TGFAuthenticator</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">TGFAuthenticator</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span>
-
-<span class="o">-</span> <span class="p">(</span><span class="n">instancetype</span><span class="p">)</span><span class="n">init</span> <span class="n">NS_UNAVAILABLE</span><span class="p">;</span>
-
-<span class="cm">/**
- Indicates if a Authenticator is enrolled.
- Use this to determine if the user needs to be enrolled.
- 
- @return YES if enrolled.
- */</span>
-<span class="k">-</span><span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="n">isEnrolled</span><span class="p">;</span>
-
-<span class="cm">/**
- Enroll a Authenticator. Users MUST be enrolled to the specific authenticator
- to perform FIDO2 operations. The enrollment process stores a secure means of identification
- which will be used to verify the user when authentication is required.
- */</span>
-<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">enroll</span><span class="p">;</span>
-
-<span class="cm">/**
- Unenroll a previously enrolled Authenticator.
- User authentication is required prior to a successful unenrollment.
- Upon successful unenrollment, all FIDO2 registrations for the specific authenticator will be invalidated.
- A subsequent enrollment is required to once again perform FIDO2 operations.
- */</span>
-<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">unenroll</span><span class="p">;</span>
-
-
-<span class="k">@end</span></code></pre>
+                  <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">TGFAuthenticator</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
 
                 </div>
               </div>
-            <p>Undocumented</p>
+            <p>Abstract class to describe the features provided by each of its subclassed authenticators.</p>
+
+<p>@since 1.0.0</p>
 
           </section>
           <section class="section task-group-section">
@@ -185,40 +159,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(pl)TGFAuthenticator(im)init"></a>
-                    <a name="//apple_ref/objc/Method/-init" class="dashAnchor"></a>
-                    <a class="token discouraged" href="#/c:objc(pl)TGFAuthenticator(im)init">-init</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="aside aside-unavailable">
-                        <p class="aside-title">Unavailable</p>
-                        
-                      </div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">instancetype</span><span class="p">)</span><span class="n">init</span> <span class="n">NS_UNAVAILABLE</span><span class="p">;</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:objc(pl)TGFAuthenticator(im)isEnrolled"></a>
-                    <a name="//apple_ref/objc/Method/-isEnrolled" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)TGFAuthenticator(im)isEnrolled">-isEnrolled</a>
+                    <a name="/c:objc(pl)TGFAuthenticator(im)isPasscodeCreated"></a>
+                    <a name="//apple_ref/objc/Method/-isPasscodeCreated" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)TGFAuthenticator(im)isPasscodeCreated">-isPasscodeCreated</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -226,7 +169,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Indicates if a Authenticator is enrolled.
+                        <p>Indicates if a Authenticator is created.
 Use this to determine if the user needs to be enrolled.</p>
 
                       </div>
@@ -234,18 +177,18 @@ Use this to determine if the user needs to be enrolled.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="n">isEnrolled</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="n">isPasscodeCreated</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">isEnrolled</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">isPasscodeCreated</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
 
                         </div>
                       </div>
                       <div>
                         <h4>Return Value</h4>
-                        <p>YES if enrolled.</p>
+                        <p>YES if created.</p>
                       </div>
                     </section>
                   </div>
@@ -253,9 +196,9 @@ Use this to determine if the user needs to be enrolled.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(pl)TGFAuthenticator(im)enroll"></a>
-                    <a name="//apple_ref/objc/Method/-enroll" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)TGFAuthenticator(im)enroll">-enroll</a>
+                    <a name="/c:objc(pl)TGFAuthenticator(im)createPasscode"></a>
+                    <a name="//apple_ref/objc/Method/-createPasscode" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)TGFAuthenticator(im)createPasscode">-createPasscode</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -263,7 +206,7 @@ Use this to determine if the user needs to be enrolled.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Enroll a Authenticator. Users MUST be enrolled to the specific authenticator
+                        <p>Create a Authenticator. Users MUST be enrolled to the specific authenticator
 to perform FIDO2 operations. The enrollment process stores a secure means of identification
 which will be used to verify the user when authentication is required.</p>
 
@@ -272,12 +215,12 @@ which will be used to verify the user when authentication is required.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">enroll</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">createPasscode</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">enroll</span><span class="p">()</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">createPasscode</span><span class="p">()</span></code></pre>
 
                         </div>
                       </div>
@@ -287,9 +230,9 @@ which will be used to verify the user when authentication is required.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(pl)TGFAuthenticator(im)unenroll"></a>
-                    <a name="//apple_ref/objc/Method/-unenroll" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)TGFAuthenticator(im)unenroll">-unenroll</a>
+                    <a name="/c:objc(pl)TGFAuthenticator(im)deletePasscode"></a>
+                    <a name="//apple_ref/objc/Method/-deletePasscode" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)TGFAuthenticator(im)deletePasscode">-deletePasscode</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -307,12 +250,12 @@ A subsequent enrollment is required to once again perform FIDO2 operations.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">unenroll</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">deletePasscode</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">unenroll</span><span class="p">()</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">deletePasscode</span><span class="p">()</span></code></pre>
 
                         </div>
                       </div>
