@@ -65,7 +65,13 @@
             <h1>D1Task</h1>
               <div class="declaration">
                 <div class="language">
+                  <p class="aside-title">Objective-C</p>
                   <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">D1Task</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                </div>
+                <div class="language">
+                  <p class="aside-title">Swift</p>
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">D1Task</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
 
                 </div>
               </div>
@@ -75,8 +81,7 @@
     <p>It is recommended to initialize <code>D1Task</code> as soon as the application is 
 launched or the earliest possible time.</p>
 
-</div>
-<div class="aside aside-note">
+</div><div class="aside aside-note">
     <p class="aside-title">Note</p>
     <p>Risk API contains session ID internally. The session ID is used by backend
 to identify the user&rsquo;s activity. The lifecycle of session ID is linked with <code>D1Task</code> 
@@ -152,7 +157,7 @@ lifecycle, i.e. one <code>D1Task</code> instance use same session ID for all the
                       </div>
                       <div>
                         <h4>Return Value</h4>
-                        <p>Dictionary with SDK name as key and SDK version as value, e.g. {<q>NuDetect</q>: <q>2.1.0</q>}</p>
+                        <p>Dictionary with SDK name as key and SDK version as value, e.g. {&ldquo;NuDetect&rdquo;: &ldquo;2.1.0&rdquo;}</p>
                       </div>
                     </section>
                   </div>
@@ -162,7 +167,7 @@ lifecycle, i.e. one <code>D1Task</code> instance use same session ID for all the
                     <code>
                     <a name="/c:objc(cs)D1Task(im)startAnalyzeWithParams:completion:"></a>
                     <a name="//apple_ref/objc/Method/-startAnalyzeWithParams:completion:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)D1Task(im)startAnalyzeWithParams:completion:">-startAnalyzeWithParams:completion:</a>
+                    <a class="token" href="#/c:objc(cs)D1Task(im)startAnalyzeWithParams:completion:">-startAnalyzeWithParams:<wbr>completion:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -181,8 +186,7 @@ e.g. <a href="https://developer.apple.com/documentation/uikit/uiviewcontroller/1
     <p>Other Risk API <code><a href="../Classes/D1Task.html#/c:objc(cs)D1Task(im)pauseAnalyze">-[D1Task pauseAnalyze]</a></code>, <code><a href="../Classes/D1Task.html#/c:objc(cs)D1Task(im)stopAnalyzeWithCompletion:">-[D1Task stopAnalyzeWithCompletion:]</a></code>
 should only be called after <code>completionBlock</code> succeeds.</p>
 
-</div>
-<div class="aside aside-note">
+</div><div class="aside aside-note">
     <p class="aside-title">Note</p>
     <p>Possible error: <code><a href="../Enums/D1ErrorCode.html#/c:@E@D1ErrorCode@D1ErrorRisk">D1ErrorCode.D1ErrorRisk</a></code>, caused by no internet connection, incorrect
 risk credentials.</p>
@@ -229,8 +233,8 @@ risk credentials.</p>
                               </td>
                               <td>
                                 <div>
-                                  <p>block to be called when it finishes. When it succeeds,
-it returns nil error. Otherwise, it returns error details.</p>
+                                  <p>block to be called when it finishes. It returns on the
+main thread. When it succeeds, it returns nil error. Otherwise, it returns error details.</p>
                                 </div>
                               </td>
                             </tr>
@@ -282,7 +286,7 @@ e.g. <a href="https://developer.apple.com/documentation/uikit/uiviewcontroller/1
                     <code>
                     <a name="/c:objc(cs)D1Task(im)stopAnalyzeWithCompletion:"></a>
                     <a name="//apple_ref/objc/Method/-stopAnalyzeWithCompletion:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)D1Task(im)stopAnalyzeWithCompletion:">-stopAnalyzeWithCompletion:</a>
+                    <a class="token" href="#/c:objc(cs)D1Task(im)stopAnalyzeWithCompletion:">-stopAnalyzeWithCompletion:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -299,8 +303,7 @@ should be called to get the risk payload.</p>
     <p>Integrator should send the risk payload to their backend, to be used
 in risk assessment call to D1 backend.</p>
 
-</div>
-<div class="aside aside-note">
+</div><div class="aside aside-note">
     <p class="aside-title">Note</p>
     <p>Possible error: <code><a href="../Enums/D1ErrorCode.html#/c:@E@D1ErrorCode@D1ErrorRisk">D1ErrorCode.D1ErrorRisk</a></code>, caused by incorrect
 risk credentials.</p>
@@ -335,8 +338,8 @@ risk credentials.</p>
                               </td>
                               <td>
                                 <div>
-                                  <p>block to be called when it finishes. When it succeeds,
-it return risk payload. Otherwise, it returns error details.
+                                  <p>block to be called when it finishes. It returns on the
+main thread. When it succeeds, it return risk payload. Otherwise, it returns error details.
 This <code>completionBlock</code> returns risk payload in 
 <a href="https://developer.apple.com/documentation/foundation/nsmutabledata?language=objc">NSMutableData</a>.
 The data is already in JSON format. Integrator can use JSON conversion method
@@ -357,7 +360,7 @@ to convert to <a href="https://developer.apple.com/documentation/foundation/nsdi
         </section>
         <section id="footer">
           <p>Copyright © 2021 Thales Group. All rights reserved.</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.11.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>
