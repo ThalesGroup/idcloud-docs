@@ -1,0 +1,495 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1CardAsset.h",
+      "line": 14,
+      "symbol": "D1CardAsset",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1CardAsset.h",
+      "line": 16,
+      "symbol": "D1CardAsset.mimeType",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1CardAsset.h",
+      "line": 17,
+      "symbol": "D1CardAsset.encodedData",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1CardAsset.h",
+      "line": 18,
+      "symbol": "D1CardAsset.width",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1CardAsset.h",
+      "line": 19,
+      "symbol": "D1CardAsset.height",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1CardAsset.h",
+      "line": 20,
+      "symbol": "D1CardAsset.assetContentType",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1CardAsset.h",
+      "line": 22,
+      "symbol": "D1CardAsset.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1CardAsset.h",
+      "line": 24,
+      "symbol": "D1CardAsset.-initWithAssetContentType:mimeType:encodedData:width:height:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1CardEnums.h",
+      "line": 11,
+      "symbol": "D1CardAssetContentType",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1CardEnums.h",
+      "line": 11,
+      "symbol": "D1CardAssetContentType",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1CardEnums.h",
+      "line": 12,
+      "symbol": "D1CardAssetContentType.D1CardAssetContentTypeIcon",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1CardEnums.h",
+      "line": 13,
+      "symbol": "D1CardAssetContentType.D1CardAssetContentTypeBackground",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1CardEnums.h",
+      "line": 16,
+      "symbol": "D1CardFormFactor",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1CardEnums.h",
+      "line": 16,
+      "symbol": "D1CardFormFactor",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1CardEnums.h",
+      "line": 18,
+      "symbol": "D1CardFormFactor.D1CardFormFactorVirtual",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1CardEnums.h",
+      "line": 19,
+      "symbol": "D1CardFormFactor.D1CardFormFactorPhysical",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1CardEnums.h",
+      "line": 22,
+      "symbol": "D1CardScheme",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1CardEnums.h",
+      "line": 22,
+      "symbol": "D1CardScheme",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1CardEnums.h",
+      "line": 24,
+      "symbol": "D1CardScheme.D1CardSchemeVisa",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1CardEnums.h",
+      "line": 25,
+      "symbol": "D1CardScheme.D1CardSchemeMasterCard",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1CardEnums.h",
+      "line": 28,
+      "symbol": "D1CardState",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1CardEnums.h",
+      "line": 28,
+      "symbol": "D1CardState",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1CardEnums.h",
+      "line": 30,
+      "symbol": "D1CardState.D1CardStateActive",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1CardEnums.h",
+      "line": 31,
+      "symbol": "D1CardState.D1CardStateInactive",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1CardEnums.h",
+      "line": 32,
+      "symbol": "D1CardState.D1CardStateExpired",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1CardEnums.h",
+      "line": 33,
+      "symbol": "D1CardState.D1CardStateDeleted",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1CardEnums.h",
+      "line": 36,
+      "symbol": "D1CardMimeType",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1CardEnums.h",
+      "line": 36,
+      "symbol": "D1CardMimeType",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1CardEnums.h",
+      "line": 38,
+      "symbol": "D1CardMimeType.D1CardMimeTypePDF",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1CardEnums.h",
+      "line": 39,
+      "symbol": "D1CardMimeType.D1CardMimeTypePNG",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1CardEnums.h",
+      "line": 40,
+      "symbol": "D1CardMimeType.D1CardMimeTypeSVG",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1CardEnums.h",
+      "line": 43,
+      "symbol": "D1CardAction",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1CardEnums.h",
+      "line": 43,
+      "symbol": "D1CardAction",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1CardEnums.h",
+      "line": 45,
+      "symbol": "D1CardAction.D1CardActionActivate",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1CardEnums.h",
+      "line": 46,
+      "symbol": "D1CardAction.D1CardActionSuspend",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1CardEnums.h",
+      "line": 47,
+      "symbol": "D1CardAction.D1CardActionDelete",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1CardEnums.h",
+      "line": 50,
+      "symbol": "D1DigitalCardState",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1CardEnums.h",
+      "line": 50,
+      "symbol": "D1DigitalCardState",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1CardEnums.h",
+      "line": 52,
+      "symbol": "D1DigitalCardState.D1DigitalCardStateActive",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1CardEnums.h",
+      "line": 53,
+      "symbol": "D1DigitalCardState.D1DigitalCardStateNotDigitized",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1CardMetadata.h",
+      "line": 14,
+      "symbol": "D1CardMetadata",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1CardMetadata.h",
+      "line": 16,
+      "symbol": "D1CardMetadata.cardLast4",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1CardMetadata.h",
+      "line": 17,
+      "symbol": "D1CardMetadata.cardExpiry",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1CardMetadata.h",
+      "line": 18,
+      "symbol": "D1CardMetadata.cardFormFactor",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1CardMetadata.h",
+      "line": 19,
+      "symbol": "D1CardMetadata.cardScheme",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1CardMetadata.h",
+      "line": 20,
+      "symbol": "D1CardMetadata.cardState",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1CardMetadata.h",
+      "line": 21,
+      "symbol": "D1CardMetadata.cardAssetArray",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1CardMetadata.h",
+      "line": 23,
+      "symbol": "D1CardMetadata.-initWithScheme:formFactor:last4:expiry:state:cardAsset:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1ConsumerInfo.h",
+      "line": 11,
+      "symbol": "D1ConsumerInfo",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1ConsumerInfo.h",
+      "line": 41,
+      "symbol": "D1ConsumerInfo.-initWithConsumerID:accountID:cardIds:firstName:lastName:balance:currency:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1DigitalCard.h",
+      "line": 11,
+      "symbol": "D1DigitalCard",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1DigitalCard.h",
+      "line": 13,
+      "symbol": "D1DigitalCard.digitalCardID",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1DigitalCard.h",
+      "line": 14,
+      "symbol": "D1DigitalCard.state",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1DigitalCard.h",
+      "line": 15,
+      "symbol": "D1DigitalCard.suffix",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1DigitalCard.h",
+      "line": 16,
+      "symbol": "D1DigitalCard.expiryDate",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1DigitalCard.h",
+      "line": 17,
+      "symbol": "D1DigitalCard.deviceName",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1DigitalCard.h",
+      "line": 18,
+      "symbol": "D1DigitalCard.deviceType",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1DigitalCard.h",
+      "line": 19,
+      "symbol": "D1DigitalCard.firstName",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1DigitalCard.h",
+      "line": 20,
+      "symbol": "D1DigitalCard.isCurrentDevice",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1DigitalCard.h",
+      "line": 21,
+      "symbol": "D1DigitalCard.requestorID",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1DigitalCard.h",
+      "line": 22,
+      "symbol": "D1DigitalCard.requestorName",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1DigitalCard.h",
+      "line": 23,
+      "symbol": "D1DigitalCard.requestorLogo",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1Task.h",
+      "line": 32,
+      "symbol": "D1TaskComponents.mA2URL",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1Task.h",
+      "line": 34,
+      "symbol": "D1TaskComponents.mD1ServiceURL",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1Task.h",
+      "line": 36,
+      "symbol": "D1TaskComponents.mD1BankURL",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1Task.h",
+      "line": 38,
+      "symbol": "D1TaskComponents.mD1DigitalCardURL",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1Task.h",
+      "line": 40,
+      "symbol": "D1TaskComponents.mIssuerID",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1Task.h",
+      "line": 42,
+      "symbol": "D1TaskComponents.mD1CoreRsaExponent",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1Task.h",
+      "line": 44,
+      "symbol": "D1TaskComponents.mD1CoreRsaModulus",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1VirtualCard.h",
+      "line": 35,
+      "symbol": "D1VirtualCard.-initWithPan:expiryDate:cvv:cardHolderName:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1"
+}
