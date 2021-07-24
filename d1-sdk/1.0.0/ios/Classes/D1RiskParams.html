@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>D1VirtualCard Class Reference</title>
+    <title>D1RiskParams Class Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -13,8 +13,8 @@
     <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
-    <a name="//apple_ref/objc/Class/D1VirtualCard" class="dashAnchor"></a>
-    <a title="D1VirtualCard Class Reference"></a>
+    <a name="//apple_ref/objc/Class/D1RiskParams" class="dashAnchor"></a>
+    <a title="D1RiskParams Class Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html">D1 1.0.0 Docs</a></p>
@@ -29,7 +29,7 @@
       <p id="breadcrumbs">
         <a href="../index.html">D1 Reference</a>
         <img id="carat" src="../img/carat.png" />
-        D1VirtualCard Class Reference
+        D1RiskParams Class Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -114,23 +114,24 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>D1VirtualCard</h1>
+            <h1>D1RiskParams</h1>
               <div class="declaration">
                 <div class="language">
                   <p class="aside-title">Objective-C</p>
-                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">D1VirtualCard</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">D1RiskParams</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
 
                 </div>
                 <div class="language">
                   <p class="aside-title">Swift</p>
-                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">D1VirtualCard</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">D1RiskParams</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
 
                 </div>
               </div>
-            <p>The Virtual Card  Object
-For security reason, VirtualCard use NSMutableData as variables type which can be wiped (refer to wipe function).
-Please use following example to covert the variable from NSMutableData to NSString if need:
-NSString *panString = [[NSString alloc] initWithData:pan encoding:NSUTF8StringEncoding];</p>
+            <p>An object that encapsulates all parameters required for risk assessment.</p>
+
+<p><b>Category - Risk API</b></p>
+
+<p>@since 1.0.0</p>
 
           </section>
           <section class="section task-group-section">
@@ -139,29 +140,29 @@ NSString *panString = [[NSString alloc] initWithData:pan encoding:NSUTF8StringEn
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)D1VirtualCard(py)pan"></a>
-                    <a name="//apple_ref/objc/Property/pan" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)D1VirtualCard(py)pan">pan</a>
+                    <a name="/c:objc(cs)D1RiskParams(im)init"></a>
+                    <a name="//apple_ref/objc/Method/-init" class="dashAnchor"></a>
+                    <a class="token discouraged" href="#/c:objc(cs)D1RiskParams(im)init">-init</a>
                     </code>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
                     <section class="section">
                       <div class="pointer"></div>
+                      <div class="aside aside-unavailable">
+                        <p class="aside-title">Unavailable</p>
+                        
+                      </div>
                       <div class="abstract">
-                        <p>The full pan number of Virtual card</p>
+                        <p>Default constructor is unavailable. Please use 
+<code><a href="../Classes/D1RiskParams.html#/c:objc(cs)D1RiskParams(im)initWithView:placementName:placementPage:">-[D1RiskParams initWithView:placementName:placementPage:]</a></code> to initialize <code>D1RiskParams</code>.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">)</span> <span class="n">NSData</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">pan</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">pan</span><span class="p">:</span> <span class="kt">Data</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="n">init</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
@@ -171,9 +172,9 @@ NSString *panString = [[NSString alloc] initWithData:pan encoding:NSUTF8StringEn
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)D1VirtualCard(py)expiryDate"></a>
-                    <a name="//apple_ref/objc/Property/expiryDate" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)D1VirtualCard(py)expiryDate">expiryDate</a>
+                    <a name="/c:objc(cs)D1RiskParams(im)initWithView:placementName:placementPage:"></a>
+                    <a name="//apple_ref/objc/Method/-initWithView:placementName:placementPage:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)D1RiskParams(im)initWithView:placementName:placementPage:">-initWithView:<wbr>placementName:<wbr>placementPage:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -181,19 +182,113 @@ NSString *panString = [[NSString alloc] initWithData:pan encoding:NSUTF8StringEn
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The expiry date of Virtual card</p>
+                        <p>Constructs a <code>D1RiskParams</code> object from the required inputs.</p>
+<div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    <p>If provided value of the argument is not supported by backend, 
+backend might return error during risk assessment call.</p>
+
+</div>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">)</span> <span class="n">NSData</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">expiryDate</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithView</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">UIView</span> <span class="o">*</span><span class="p">)</span><span class="nv">view</span>
+                       <span class="nf">placementName</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">placementName</span>
+                       <span class="nf">placementPage</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">placementPage</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">expiryDate</span><span class="p">:</span> <span class="kt">Data</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">view</span><span class="p">:</span> <span class="kt">UIView</span><span class="p">,</span> <span class="nv">placementName</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">placementPage</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>view</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The current view getting the events. On most cases, this is 
+<a href="https://developer.apple.com/documentation/uikit/uiviewcontroller?language=objc">ViewController</a>
+&lsquo;s <a href="https://developer.apple.com/documentation/uikit/uiviewcontroller/1621460-view?language=objc">view</a>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>placementName</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The placement name to identify the flow associated with the current page.
+Supported values (so far) are:</p>
+
+<ul>
+<li>&ldquo;CreateAccountMobile&rdquo;, for user registration page</li>
+<li>&ldquo;LoginMobile&rdquo;, for login page</li>
+<li>&ldquo;TransferFundsMobile&rdquo;, for transfer funds page</li>
+</ul>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>placementPage</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The page number within the current flow.
+For single page flow, the value should be 1.
+For flow that spans multiple page, the value is the page number (1,2,3,&hellip;).</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)D1RiskParams(py)view"></a>
+                    <a name="//apple_ref/objc/Property/view" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)D1RiskParams(py)view">view</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The current view getting the events.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">)</span> <span class="n">UIView</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">view</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">view</span><span class="p">:</span> <span class="kt">UIView</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -203,9 +298,9 @@ NSString *panString = [[NSString alloc] initWithData:pan encoding:NSUTF8StringEn
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)D1VirtualCard(py)cvv"></a>
-                    <a name="//apple_ref/objc/Property/cvv" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)D1VirtualCard(py)cvv">cvv</a>
+                    <a name="/c:objc(cs)D1RiskParams(py)placementName"></a>
+                    <a name="//apple_ref/objc/Property/placementName" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)D1RiskParams(py)placementName">placementName</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -213,19 +308,19 @@ NSString *panString = [[NSString alloc] initWithData:pan encoding:NSUTF8StringEn
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The cvv number of Virtual card</p>
+                        <p>The placement name.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">)</span> <span class="n">NSData</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">cvv</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">placementName</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">cvv</span><span class="p">:</span> <span class="kt">Data</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">placementName</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -235,9 +330,9 @@ NSString *panString = [[NSString alloc] initWithData:pan encoding:NSUTF8StringEn
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)D1VirtualCard(py)cardHolderName"></a>
-                    <a name="//apple_ref/objc/Property/cardHolderName" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)D1VirtualCard(py)cardHolderName">cardHolderName</a>
+                    <a name="/c:objc(cs)D1RiskParams(py)placementPage"></a>
+                    <a name="//apple_ref/objc/Property/placementPage" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)D1RiskParams(py)placementPage">placementPage</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -245,86 +340,19 @@ NSString *panString = [[NSString alloc] initWithData:pan encoding:NSUTF8StringEn
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The card holder name of Virtual card</p>
+                        <p>The placement page number.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">)</span> <span class="n">NSData</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">cardHolderName</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">)</span> <span class="n">NSInteger</span> <span class="n">placementPage</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">cardHolderName</span><span class="p">:</span> <span class="kt">Data</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:objc(cs)D1VirtualCard(im)initWithPan:expiryDate:cvv:cardHolderName:"></a>
-                    <a name="//apple_ref/objc/Method/-initWithPan:expiryDate:cvv:cardHolderName:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)D1VirtualCard(im)initWithPan:expiryDate:cvv:cardHolderName:">-initWithPan:<wbr>expiryDate:<wbr>cvv:<wbr>cardHolderName:<wbr></a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithPan</span><span class="p">:(</span><span class="n">NSData</span><span class="o">*</span><span class="p">)</span><span class="nv">panData</span>
-                <span class="nf">expiryDate</span><span class="p">:(</span><span class="n">NSData</span><span class="o">*</span><span class="p">)</span><span class="nv">expiryDateData</span>
-                       <span class="nf">cvv</span><span class="p">:(</span><span class="n">NSData</span><span class="o">*</span><span class="p">)</span><span class="nv">cvvData</span>
-            <span class="nf">cardHolderName</span><span class="p">:(</span><span class="n">NSData</span><span class="o">*</span><span class="p">)</span><span class="nv">cardHolderNameData</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="n"><a href="../Classes/D1VirtualCard.html#/c:objc(cs)D1VirtualCard(py)pan">pan</a></span> <span class="nv">panData</span><span class="p">:</span> <span class="kt">Data</span><span class="p">,</span> <span class="n"><a href="../Classes/D1VirtualCard.html#/c:objc(cs)D1VirtualCard(py)expiryDate">expiryDate</a></span> <span class="nv">expiryDateData</span><span class="p">:</span> <span class="kt">Data</span><span class="p">,</span> <span class="n"><a href="../Classes/D1VirtualCard.html#/c:objc(cs)D1VirtualCard(py)cvv">cvv</a></span> <span class="nv">cvvData</span><span class="p">:</span> <span class="kt">Data</span><span class="p">,</span> <span class="n"><a href="../Classes/D1VirtualCard.html#/c:objc(cs)D1VirtualCard(py)cardHolderName">cardHolderName</a></span> <span class="nv">cardHolderNameData</span><span class="p">:</span> <span class="kt">Data</span><span class="p">)</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:objc(cs)D1VirtualCard(im)wipe"></a>
-                    <a name="//apple_ref/objc/Method/-wipe" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)D1VirtualCard(im)wipe">-wipe</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Wipe all the data in Virtual card object.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">wipe</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">wipe</span><span class="p">()</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">placementPage</span><span class="p">:</span> <span class="kt">Int</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>

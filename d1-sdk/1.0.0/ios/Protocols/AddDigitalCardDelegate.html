@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>D1CardState Enumeration Reference</title>
+    <title>AddDigitalCardDelegate Protocol Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -13,8 +13,8 @@
     <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
-    <a name="//apple_ref/objc/Enum/D1CardState" class="dashAnchor"></a>
-    <a title="D1CardState Enumeration Reference"></a>
+    <a name="//apple_ref/objc/Protocol/AddDigitalCardDelegate" class="dashAnchor"></a>
+    <a title="AddDigitalCardDelegate Protocol Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html">D1 1.0.0 Docs</a></p>
@@ -29,7 +29,7 @@
       <p id="breadcrumbs">
         <a href="../index.html">D1 Reference</a>
         <img id="carat" src="../img/carat.png" />
-        D1CardState Enumeration Reference
+        AddDigitalCardDelegate Protocol Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -114,17 +114,20 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>D1CardState</h1>
+            <h1>AddDigitalCardDelegate</h1>
               <div class="declaration">
                 <div class="language">
-                  
-                  <pre class="highlight objective_c"><code><span class="n">NS_ENUM</span><span class="p">(</span><span class="n">NSInteger</span><span class="p">,</span> <span class="n">D1CardState</span><span class="p">)</span>
-<span class="p">{</span>
-    <span class="n">D1CardStateActive</span><span class="p">,</span>
-    <span class="n">D1CardStateInactive</span><span class="p">,</span>
-    <span class="n">D1CardStateExpired</span><span class="p">,</span>
-    <span class="n">D1CardStateDeleted</span>
-<span class="p">}</span></code></pre>
+                  <p class="aside-title">Objective-C</p>
+                  <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">AddDigitalCardDelegate</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span>
+
+<span class="o">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">provisionCompletion</span><span class="o">:</span><span class="p">(</span><span class="n">NSError</span> <span class="o">*</span> <span class="n">_Nullable</span><span class="p">)</span><span class="n">error</span><span class="p">;</span>
+
+<span class="k">@end</span></code></pre>
+
+                </div>
+                <div class="language">
+                  <p class="aside-title">Swift</p>
+                  <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">AddDigitalCardDelegate</span> <span class="p">:</span> <span class="kt">NSObjectProtocol</span></code></pre>
 
                 </div>
               </div>
@@ -137,9 +140,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@E@D1CardState@D1CardStateActive"></a>
-                    <a name="//apple_ref/objc/Case/D1CardStateActive" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@E@D1CardState@D1CardStateActive">D1CardStateActive</a>
+                    <a name="/c:objc(pl)AddDigitalCardDelegate(im)provisionCompletion:"></a>
+                    <a name="//apple_ref/objc/Method/-provisionCompletion:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)AddDigitalCardDelegate(im)provisionCompletion:">-provisionCompletion:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -154,88 +157,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="n">D1CardStateActive</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">provisionCompletion</span><span class="p">:(</span><span class="n">NSError</span> <span class="o">*</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">error</span><span class="p">;</span></code></pre>
 
                         </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@E@D1CardState@D1CardStateInactive"></a>
-                    <a name="//apple_ref/objc/Case/D1CardStateInactive" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@E@D1CardState@D1CardStateInactive">D1CardStateInactive</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
                         <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="n">D1CardStateInactive</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@E@D1CardState@D1CardStateExpired"></a>
-                    <a name="//apple_ref/objc/Case/D1CardStateExpired" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@E@D1CardState@D1CardStateExpired">D1CardStateExpired</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="n">D1CardStateExpired</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@E@D1CardState@D1CardStateDeleted"></a>
-                    <a name="//apple_ref/objc/Case/D1CardStateDeleted" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@E@D1CardState@D1CardStateDeleted">D1CardStateDeleted</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="n">D1CardStateDeleted</span></code></pre>
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">provisionCompletion</span><span class="p">(</span><span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">?)</span></code></pre>
 
                         </div>
                       </div>

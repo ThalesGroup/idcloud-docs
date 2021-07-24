@@ -51,6 +51,9 @@
                 <a href="../Classes/D1DigitalCard.html">D1DigitalCard</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Classes/D1RiskParams.html">D1RiskParams</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Classes/D1Task.html">D1Task</a>
               </li>
               <li class="nav-group-task">
@@ -98,6 +101,14 @@
               </li>
             </ul>
           </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/AddDigitalCardDelegate.html">AddDigitalCardDelegate</a>
+              </li>
+            </ul>
+          </li>
         </ul>
       </nav>
       <article class="main-content">
@@ -109,16 +120,45 @@
                   <p class="aside-title">Objective-C</p>
                   <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">D1DigitalCard</span> <span class="p">:</span> <span class="nc">NSObject</span>
 
+<span class="cm">/**
+ * The unique digital card id
+ */</span>
 <span class="k">@property</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">digitalCardID</span><span class="p">;</span>
+<span class="cm">/**
+ * The current digital card state
+ */</span>
 <span class="k">@property</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">state</span><span class="p">;</span>
+<span class="cm">/**
+ * Last 4 digits of the PAN
+ */</span>
 <span class="k">@property</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">suffix</span><span class="p">;</span>
+<span class="cm">/**
+ * The expiry date for the digital card
+ */</span>
 <span class="k">@property</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">expiryDate</span><span class="p">;</span>
+<span class="cm">/**
+ * The device name
+ */</span>
 <span class="k">@property</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">deviceName</span><span class="p">;</span>
+<span class="cm">/**
+ * The device type
+ */</span>
 <span class="k">@property</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">deviceType</span><span class="p">;</span>
-<span class="k">@property</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">firstName</span><span class="p">;</span>
+<span class="cm">/**
+ * If it is the current device
+ */</span>
 <span class="k">@property</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">isCurrentDevice</span><span class="p">;</span>
+<span class="cm">/**
+ * The digital card requestor identifier
+ */</span>
 <span class="k">@property</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">requestorID</span><span class="p">;</span>
+<span class="cm">/**
+ * The digital card requestor name
+ */</span>
 <span class="k">@property</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">requestorName</span><span class="p">;</span>
+<span class="cm">/**
+ * The digital card requestor logo
+ */</span>
 <span class="k">@property</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">requestorLogo</span><span class="p">;</span>
 
 <span class="k">@end</span></code></pre>
@@ -149,14 +189,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>The unique digital card id</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">digitalCardID</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">digitalCardID</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -181,14 +221,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>The current digital card state</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">state</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">state</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -213,14 +253,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Last 4 digits of the PAN</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">suffix</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">suffix</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -245,14 +285,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>The expiry date for the digital card</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">expiryDate</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">expiryDate</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -277,14 +317,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>The device name</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">deviceName</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">deviceName</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -309,51 +349,19 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>The device type</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">deviceType</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">deviceType</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">deviceType</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:objc(cs)D1DigitalCard(py)firstName"></a>
-                    <a name="//apple_ref/objc/Property/firstName" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)D1DigitalCard(py)firstName">firstName</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">firstName</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">firstName</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -373,14 +381,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>If it is the current device</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">isCurrentDevice</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">isCurrentDevice</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -405,14 +413,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>The digital card requestor identifier</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">requestorID</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">requestorID</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -437,14 +445,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>The digital card requestor name</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">requestorName</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">requestorName</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -469,14 +477,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>The digital card requestor logo</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">requestorLogo</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">requestorLogo</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
