@@ -325,34 +325,27 @@
     {
       "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1Task.h",
       "line": 36,
-      "symbol": "D1TaskComponents.mD1BankURL",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1Task.h",
-      "line": 38,
       "symbol": "D1TaskComponents.mD1DigitalCardURL",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
       "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1Task.h",
-      "line": 40,
+      "line": 38,
       "symbol": "D1TaskComponents.mIssuerID",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
       "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1Task.h",
-      "line": 42,
+      "line": 40,
       "symbol": "D1TaskComponents.mD1ServiceRsaExponent",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
       "file": "/Users/hoang/Documents/idcloudx/dev/ios/lib/D1/D1/D1Task.h",
-      "line": 44,
+      "line": 42,
       "symbol": "D1TaskComponents.mD1ServiceRsaModulus",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"

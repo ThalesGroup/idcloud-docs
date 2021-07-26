@@ -435,7 +435,7 @@ lifecycle, i.e. one <code>D1Task</code> instance use same session ID for all the
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">cardMetadata</span><span class="p">(</span><span class="n">withCardId</span> <span class="nv">cardID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Classes/D1CardMetadata.html">D1CardMetadata</a></span><span class="p">?,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">cardMetadata</span><span class="p">(</span><span class="n">_</span> <span class="nv">cardID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Classes/D1CardMetadata.html">D1CardMetadata</a></span><span class="p">?,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -651,13 +651,13 @@ lifecycle, i.e. one <code>D1Task</code> instance use same session ID for all the
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">digitalCardStateFromCardID</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">cardID</span>
                         <span class="nf">completion</span><span class="p">:</span>
-                            <span class="p">(</span><span class="n">nonnull</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n"><a href="../Enums/D1CardState.html">D1CardState</a></span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">,</span>
+                            <span class="p">(</span><span class="n">nonnull</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n"><a href="../Enums/D1DigitalCardState.html">D1DigitalCardState</a></span><span class="p">,</span>
                                               <span class="n">NSError</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">))</span><span class="n">completion</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">cardState</span><span class="p">(</span><span class="n">_</span> <span class="nv">cardID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">UnsafeMutablePointer</span><span class="o">&lt;</span><span class="kt"><a href="../Enums/D1CardState.html">D1CardState</a></span><span class="o">&gt;</span><span class="p">?,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">digitalCardState</span><span class="p">(</span><span class="n">_</span> <span class="nv">cardID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Enums/D1DigitalCardState.html">D1DigitalCardState</a></span><span class="p">,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -698,9 +698,9 @@ lifecycle, i.e. one <code>D1Task</code> instance use same session ID for all the
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)D1Task(im)addDigitalCardWithCardID:completion:"></a>
-                    <a name="//apple_ref/objc/Method/-addDigitalCardWithCardID:completion:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)D1Task(im)addDigitalCardWithCardID:completion:">-addDigitalCardWithCardID:<wbr>completion:<wbr></a>
+                    <a name="/c:objc(cs)D1Task(im)addDigitalCardFromController:cardID:provisionDelegate:"></a>
+                    <a name="//apple_ref/objc/Method/-addDigitalCardFromController:cardID:provisionDelegate:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)D1Task(im)addDigitalCardFromController:cardID:provisionDelegate:">-addDigitalCardFromController:<wbr>cardID:<wbr>provisionDelegate:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -715,14 +715,15 @@ lifecycle, i.e. one <code>D1Task</code> instance use same session ID for all the
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">addDigitalCardWithCardID</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">cardID</span>
-                      <span class="nf">completion</span><span class="p">:</span>
-                          <span class="p">(</span><span class="n">nonnull</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n">NSError</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">))</span><span class="nv">completion</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">addDigitalCardFromController</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">UIViewController</span> <span class="o">*</span><span class="p">)</span><span class="nv">viewController</span>
+                              <span class="nf">cardID</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">cardID</span>
+                   <span class="nf">provisionDelegate</span><span class="p">:</span>
+                       <span class="p">(</span><span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/AddDigitalCardDelegate.html">AddDigitalCardDelegate</a></span><span class="o">&gt;</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">delegate</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">addDigitalCard</span><span class="p">(</span><span class="n">_</span> <span class="nv">cardID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">addDigitalCard</span><span class="p">(</span><span class="n">_</span> <span class="nv">viewController</span><span class="p">:</span> <span class="kt">UIViewController</span><span class="p">,</span> <span class="nv">cardID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">provisionDelegate</span> <span class="nv">delegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/AddDigitalCardDelegate.html">AddDigitalCardDelegate</a></span><span class="p">?)</span></code></pre>
 
                         </div>
                       </div>
@@ -763,9 +764,9 @@ lifecycle, i.e. one <code>D1Task</code> instance use same session ID for all the
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)D1Task(im)digitalCardListFromController:cardID:provisionDelegate:"></a>
-                    <a name="//apple_ref/objc/Method/-digitalCardListFromController:cardID:provisionDelegate:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)D1Task(im)digitalCardListFromController:cardID:provisionDelegate:">-digitalCardListFromController:<wbr>cardID:<wbr>provisionDelegate:<wbr></a>
+                    <a name="/c:objc(cs)D1Task(im)digitalCardListFromCardID:completion:"></a>
+                    <a name="//apple_ref/objc/Method/-digitalCardListFromCardID:completion:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)D1Task(im)digitalCardListFromCardID:completion:">-digitalCardListFromCardID:<wbr>completion:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -780,15 +781,15 @@ lifecycle, i.e. one <code>D1Task</code> instance use same session ID for all the
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">digitalCardListFromController</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">UIViewController</span> <span class="o">*</span><span class="p">)</span><span class="nv">viewController</span>
-                               <span class="nf">cardID</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">cardID</span>
-                    <span class="nf">provisionDelegate</span><span class="p">:</span>
-                        <span class="p">(</span><span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/AddDigitalCardDelegate.html">AddDigitalCardDelegate</a></span><span class="o">&gt;</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">delegate</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">digitalCardListFromCardID</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">cardID</span>
+                       <span class="nf">completion</span><span class="p">:(</span><span class="n">nonnull</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span>
+                                      <span class="n">NSArray</span><span class="o">&lt;</span><span class="n"><a href="../Classes/D1DigitalCard.html">D1DigitalCard</a></span> <span class="o">*&gt;</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">,</span>
+                                      <span class="n">NSError</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">))</span><span class="n">completion</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">digitalCardList</span><span class="p">(</span><span class="n">_</span> <span class="nv">viewController</span><span class="p">:</span> <span class="kt">UIViewController</span><span class="p">,</span> <span class="nv">cardID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">provisionDelegate</span> <span class="nv">delegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/AddDigitalCardDelegate.html">AddDigitalCardDelegate</a></span><span class="p">?)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">digitalCardList</span><span class="p">(</span><span class="n">_</span> <span class="nv">cardID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">([</span><span class="kt"><a href="../Classes/D1DigitalCard.html">D1DigitalCard</a></span><span class="p">]?,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -811,7 +812,7 @@ lifecycle, i.e. one <code>D1Task</code> instance use same session ID for all the
                             <tr>
                               <td>
                                 <code>
-                                <em>delegate</em>
+                                <em>completion</em>
                                 </code>
                               </td>
                               <td>
