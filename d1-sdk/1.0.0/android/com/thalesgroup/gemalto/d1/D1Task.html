@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":9,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":9,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -139,7 +139,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <tr class="rowColor">
 <td class="colFirst"><code>static interface&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/thalesgroup/gemalto/d1/D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="../../../../com/thalesgroup/gemalto/d1/D1Task.Callback.html" title="type parameter in D1Task.Callback">T</a>&gt;</span></code>
-<div class="block">Generic callback to return result of an asynchronous call</div>
+<div class="block">Generic callback to return result of an asynchronous call.</div>
 </td>
 </tr>
 </table>
@@ -226,31 +226,20 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/thalesgroup/gemalto/d1/D1Task.html#handleCardResult-int-int-android.content.Intent-">handleCardResult</a></span>(int&nbsp;requestCode,
+                int&nbsp;resultCode,
+                <a href="https://developer.android.com/reference/android/content/Intent.html?is-external=true" title="class or interface in android.content">Intent</a>&nbsp;data)</code>
+<div class="block">Handle data that Wallet returned for card operation.</div>
+</td>
+</tr>
+<tr id="i10" class="altColor">
+<td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/thalesgroup/gemalto/d1/D1Task.html#login-byte:A-com.thalesgroup.gemalto.d1.D1Task.Callback-">login</a></span>(byte[]&nbsp;issuerToken,
      <a href="../../../../com/thalesgroup/gemalto/d1/D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;&nbsp;callback)</code>
 <div class="block">Login to the D1 services using a provided token.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/thalesgroup/gemalto/d1/D1Task.html#pauseAnalyze--">pauseAnalyze</a></span>()</code>
-<div class="block">Pause the monitoring.</div>
-</td>
-</tr>
 <tr id="i11" class="rowColor">
-<td class="colFirst"><code>&lt;T extends <a href="https://developer.android.com/reference/android/content/ComponentCallbacks.html?is-external=true" title="class or interface in android.content">ComponentCallbacks</a>&gt;<br>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/thalesgroup/gemalto/d1/D1Task.html#startAnalyze-com.thalesgroup.gemalto.d1.risk.RiskParams-com.thalesgroup.gemalto.d1.D1Task.Callback-">startAnalyze</a></span>(<a href="../../../../com/thalesgroup/gemalto/d1/risk/RiskParams.html" title="class in com.thalesgroup.gemalto.d1.risk">RiskParams</a>&lt;T&gt;&nbsp;params,
-            <a href="../../../../com/thalesgroup/gemalto/d1/D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;&nbsp;callback)</code>
-<div class="block">Start monitoring of events for the current page.</div>
-</td>
-</tr>
-<tr id="i12" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/thalesgroup/gemalto/d1/D1Task.html#stopAnalyze-com.thalesgroup.gemalto.d1.D1Task.Callback-">stopAnalyze</a></span>(<a href="../../../../com/thalesgroup/gemalto/d1/D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;byte[]&gt;&nbsp;callback)</code>
-<div class="block">Stop monitoring the events for the current page.</div>
-</td>
-</tr>
-<tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/thalesgroup/gemalto/d1/D1Task.html#updateCard-java.lang.String-com.thalesgroup.gemalto.d1.core.CardAction-java.lang.String-com.thalesgroup.gemalto.d1.D1Task.Callback-">updateCard</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;cardId,
           <a href="../../../../com/thalesgroup/gemalto/d1/core/CardAction.html" title="enum in com.thalesgroup.gemalto.d1.core">CardAction</a>&nbsp;cardAction,
@@ -259,7 +248,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Update card status which can be used to perform one of the following actions for a given cardId like 1.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/thalesgroup/gemalto/d1/D1Task.html#updateDigitalCard-java.lang.String-java.lang.String-com.thalesgroup.gemalto.d1.core.CardAction-com.thalesgroup.gemalto.d1.D1Task.Callback-">updateDigitalCard</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;digitalCardId,
                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;digitalCardRequestorId,
@@ -450,87 +439,6 @@ public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/
 </dl>
 </li>
 </ul>
-<a name="startAnalyze-com.thalesgroup.gemalto.d1.risk.RiskParams-com.thalesgroup.gemalto.d1.D1Task.Callback-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>startAnalyze</h4>
-<pre>public&nbsp;&lt;T extends <a href="https://developer.android.com/reference/android/content/ComponentCallbacks.html?is-external=true" title="class or interface in android.content">ComponentCallbacks</a>&gt;&nbsp;void&nbsp;startAnalyze(<a href="https://developer.android.com/reference/kotlin/androidx/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation">@NonNull</a>
-                                                        <a href="../../../../com/thalesgroup/gemalto/d1/risk/RiskParams.html" title="class in com.thalesgroup.gemalto.d1.risk">RiskParams</a>&lt;T&gt;&nbsp;params,
-                                                        <a href="https://developer.android.com/reference/kotlin/androidx/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation">@NonNull</a>
-                                                        <a href="../../../../com/thalesgroup/gemalto/d1/D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;&nbsp;callback)</pre>
-<div class="block">Start monitoring of events for the current page.
- This method should be called at the start of the page or when the app resumes to foreground, e.g. in <a href="https://developer.android.com/reference/android/app/Activity.html?is-external=true#onResume--" title="class or interface in android.app"><code>Activity.onResume()</code></a>
- <p><b>NOTE:</b><br/>
- <ul>
-     <li>Other risk APIs, such as <a href="../../../../com/thalesgroup/gemalto/d1/D1Task.html#pauseAnalyze--"><code>pauseAnalyze()</code></a>, <a href="../../../../com/thalesgroup/gemalto/d1/D1Task.html#stopAnalyze-com.thalesgroup.gemalto.d1.D1Task.Callback-"><code>stopAnalyze(Callback)</code></a> should only be called after the <code>callback</code> succeeds.</li>
-     <li>The callback result is running on the main thread.</li>
- </ul>
-
- <p><b>NOTE:</b><br/>
- Possible error:<br/>
- <ul>
-     <li><a href="../../../../com/thalesgroup/gemalto/d1/D1Exception.ErrorCode.html#ERROR_RISK"><code>D1Exception.ErrorCode.ERROR_RISK</code></a>: caused by no internet connection, incorrect risk credentials.</li>
- </ul>
-
- <p><b>Category - Risk API</b></div>
-<dl>
-<dt><span class="paramLabel">Type Parameters:</span></dt>
-<dd><code>T</code> - The object type to do the analyze.</dd>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>params</code> - The risk parameters for analyzing.</dd>
-<dd><code>callback</code> - The start result callback.</dd>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - Exception when the param type is not in the supported list.</dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../com/thalesgroup/gemalto/d1/risk/RiskParams.html" title="class in com.thalesgroup.gemalto.d1.risk"><code>RiskParams</code></a></dd>
-</dl>
-</li>
-</ul>
-<a name="pauseAnalyze--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>pauseAnalyze</h4>
-<pre>public&nbsp;void&nbsp;pauseAnalyze()</pre>
-<div class="block">Pause the monitoring.
- This method should be called when the page navigates to the next page (during a multi-page scenario) or when the app goes into background, e.g. in <a href="https://developer.android.com/reference/android/app/Activity.html?is-external=true#onPause--" title="class or interface in android.app"><code>Activity.onPause()</code></a>
-
- <p><b>Category - Risk API</b></div>
-</li>
-</ul>
-<a name="stopAnalyze-com.thalesgroup.gemalto.d1.D1Task.Callback-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>stopAnalyze</h4>
-<pre>public&nbsp;void&nbsp;stopAnalyze(<a href="https://developer.android.com/reference/kotlin/androidx/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation">@NonNull</a>
-                        <a href="../../../../com/thalesgroup/gemalto/d1/D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;byte[]&gt;&nbsp;callback)</pre>
-<div class="block">Stop monitoring the events for the current page.
- This method should be called to get the risk payload.
- Once having the payload, integrator should send it to their backend, to be used in risk assessment call to D1 backend.
-
- <p><b>NOTE:</b><br/>
- The callback result is running on the main thread.
-
- <p><b>NOTE:</b><br/>
- Possible error:<br/>
- <ul>
-     <li><a href="../../../../com/thalesgroup/gemalto/d1/D1Exception.ErrorCode.html#ERROR_RISK"><code>D1Exception.ErrorCode.ERROR_RISK</code></a>: caused by incorrect risk credentials.</li>
- </ul>
-
- <p><b>Category - Risk API</b></div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>callback</code> - Callback to retrieve the risk payload or error.
-                 If success, the returned payload <code>byte[]</code> is already in JSON format.
-                 Integrator can convert it to a <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><code>String</code></a> as <code>new String(payload, java.nio.charset.StandardCharsets.UTF_8)}</code></dd>
-</dl>
-</li>
-</ul>
 <a name="getDigitalCardStatus-java.lang.String-com.thalesgroup.gemalto.d1.D1Task.Callback-">
 <!--   -->
 </a>
@@ -588,7 +496,7 @@ public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/
 <a name="updateDigitalCard-java.lang.String-java.lang.String-com.thalesgroup.gemalto.d1.core.CardAction-com.thalesgroup.gemalto.d1.D1Task.Callback-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>updateDigitalCard</h4>
 <pre>public&nbsp;void&nbsp;updateDigitalCard(<a href="https://developer.android.com/reference/kotlin/androidx/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation">@NonNull</a>
@@ -606,6 +514,25 @@ public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/
 <dd><code>digitalCardRequestorId</code> - digital card requestor id received from the bank</dd>
 <dd><code>cardAction</code> - card action to be performed: active, suspend or delete</dd>
 <dd><code>callback</code> - callback for the result</dd>
+</dl>
+</li>
+</ul>
+<a name="handleCardResult-int-int-android.content.Intent-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>handleCardResult</h4>
+<pre>public&nbsp;void&nbsp;handleCardResult(int&nbsp;requestCode,
+                             int&nbsp;resultCode,
+                             <a href="https://developer.android.com/reference/kotlin/androidx/androidx/annotation/Nullable.html?is-external=true" title="class or interface in androidx.annotation">@Nullable</a>
+                             <a href="https://developer.android.com/reference/android/content/Intent.html?is-external=true" title="class or interface in android.content">Intent</a>&nbsp;data)</pre>
+<div class="block">Handle data that Wallet returned for card operation.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>requestCode</code> - requestCode available for card operation result</dd>
+<dd><code>resultCode</code> - resultCode available for card operation result</dd>
+<dd><code>data</code> - data available for card operation result</dd>
 </dl>
 </li>
 </ul>
