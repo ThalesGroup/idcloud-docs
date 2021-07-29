@@ -111,7 +111,7 @@ var activeTableTab = "activeTableTab";
 extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
 <div class="block">Main class for D1 use cases.
 
- It is recommended to initialize <a href="../../../../com/thalesgroup/gemalto/d1/D1Task.html" title="class in com.thalesgroup.gemalto.d1"><code>D1Task</code></a> as soon as the application is launched or the earliest possible time.</div>
+ It is recommended to initialize <a href="../../../../com/thalesgroup/gemalto/d1/D1Task.html" title="class in com.thalesgroup.gemalto.d1"><code>D1Task</code></a> as soon as the application is launched or at the earliest possible time.</div>
 <dl>
 <dt><span class="simpleTagLabel">Since:</span></dt>
 <dd>1.0.0</dd>
@@ -221,7 +221,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/thalesgroup/gemalto/d1/D1Task.html#handleCardResult-int-int-android.content.Intent-">handleCardResult</a></span>(int&nbsp;requestCode,
                 int&nbsp;resultCode,
                 <a href="https://developer.android.com/reference/android/content/Intent.html?is-external=true" title="class or interface in android.content">Intent</a>&nbsp;data)</code>
-<div class="block">Handle data that Wallet returned for card operation.</div>
+<div class="block">Handle data that Wallet has returned for card operation.</div>
 </td>
 </tr>
 <tr id="i9" class="rowColor">
@@ -289,7 +289,7 @@ public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/
 <div class="block">Returns SDK version(s) in the D1 SDK.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>Dictionary with SDK name as key and SDK version as value, e.g. {"NuDetect": "2.0.0"}</dd>
+<dd>Dictionary with SDK name as key and SDK version as value, e.g. {"NuDetect": "2.0.0"}.</dd>
 </dl>
 </li>
 </ul>
@@ -305,7 +305,7 @@ public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/
                       <a href="../../../../com/thalesgroup/gemalto/d1/ConfigParams.html" title="class in com.thalesgroup.gemalto.d1">ConfigParams</a>...&nbsp;configParams)</pre>
 <div class="block">D1 Task configurations. It is the entry point for SDK initialization.
 
- App can only initialize certain feature only to reduce wait time.
+ App can only initialize certain feature only to reduce waiting time.
  It is not mandatory to initialize all features in a single call.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -533,7 +533,7 @@ public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/
                              int&nbsp;resultCode,
                              <a href="https://developer.android.com/reference/kotlin/androidx/androidx/annotation/Nullable.html?is-external=true" title="class or interface in androidx.annotation">@Nullable</a>
                              <a href="https://developer.android.com/reference/android/content/Intent.html?is-external=true" title="class or interface in android.content">Intent</a>&nbsp;data)</pre>
-<div class="block">Handle data that Wallet returned for card operation.</div>
+<div class="block">Handle data that Wallet has returned for card operation.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>requestCode</code> - requestCode available for card operation result</dd>
