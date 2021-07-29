@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>D1ErrorCode Enumeration Reference</title>
+    <title>D1CardAssetContent Class Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -13,8 +13,8 @@
     <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
-    <a name="//apple_ref/objc/Enum/D1ErrorCode" class="dashAnchor"></a>
-    <a title="D1ErrorCode Enumeration Reference"></a>
+    <a name="//apple_ref/objc/Class/D1CardAssetContent" class="dashAnchor"></a>
+    <a title="D1CardAssetContent Class Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html">D1 1.0.0 Docs</a></p>
@@ -29,7 +29,7 @@
       <p id="breadcrumbs">
         <a href="../index.html">D1 Reference</a>
         <img id="carat" src="../img/carat.png" />
-        D1ErrorCode Enumeration Reference
+        D1CardAssetContent Class Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -106,24 +106,20 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>D1ErrorCode</h1>
+            <h1>D1CardAssetContent</h1>
               <div class="declaration">
                 <div class="language">
-                  
-                  <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">D1ErrorCode</span> <span class="p">{}</span></code></pre>
+                  <p class="aside-title">Objective-C</p>
+                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">D1CardAssetContent</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                </div>
+                <div class="language">
+                  <p class="aside-title">Swift</p>
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">D1CardAssetContent</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
 
                 </div>
               </div>
-            <p>D1 error codes.</p>
-<div class="aside aside-note">
-    <p class="aside-title">Note</p>
-    each NSError returned by D1 SDK contains one of these error codes.
-<a href="https://developer.apple.com/documentation/foundation/nserror/1414418-localizeddescription?language=objc">localizedDescription</a>
-contains underlying error and current error description.
-<a href="https://developer.apple.com/documentation/foundation/nserror/1407500-localizedrecoverysuggestion?language=objc">localizedRecoverySuggestion</a>
-contains recovery suggestion for the error.
-
-</div>
+            <p>The D1CardAssetContent containing content of asset</p>
 
 <p>@since 1.0.0</p>
 
@@ -134,9 +130,9 @@ contains recovery suggestion for the error.
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@E@D1ErrorCode@D1ErrorCancelled"></a>
-                    <a name="//apple_ref/objc/Case/D1ErrorCancelled" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@E@D1ErrorCode@D1ErrorCancelled">D1ErrorCancelled</a>
+                    <a name="/c:objc(cs)D1CardAssetContent(py)mimeType"></a>
+                    <a name="//apple_ref/objc/Property/mimeType" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)D1CardAssetContent(py)mimeType">mimeType</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -144,14 +140,19 @@ contains recovery suggestion for the error.
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The operation has been cancelled.</p>
+                        <p>the mime type of this resource, whether it is PNG, SVG, or PDF.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="n">D1ErrorCancelled</span> <span class="o">=</span> <span class="mi">10001</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Enums/D1CardMimeType.html">D1CardMimeType</a></span> <span class="n">mimeType</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">mimeType</span><span class="p">:</span> <span class="kt">Int32</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -161,9 +162,9 @@ contains recovery suggestion for the error.
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@E@D1ErrorCode@D1ErrorPermissionDenied"></a>
-                    <a name="//apple_ref/objc/Case/D1ErrorPermissionDenied" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@E@D1ErrorCode@D1ErrorPermissionDenied">D1ErrorPermissionDenied</a>
+                    <a name="/c:objc(cs)D1CardAssetContent(py)encodedData"></a>
+                    <a name="//apple_ref/objc/Property/encodedData" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)D1CardAssetContent(py)encodedData">encodedData</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -171,19 +172,19 @@ contains recovery suggestion for the error.
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Application permission required for use case has been denied.</p>
-<div class="aside aside-note">
-    <p class="aside-title">Note</p>
-    Enable the permission and retry the operation.
-
-</div>
+                        <p>resource bytes encoded in base64 format</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="n">D1ErrorPermissionDenied</span> <span class="o">=</span> <span class="mi">10002</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">encodedData</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">encodedData</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -193,9 +194,9 @@ contains recovery suggestion for the error.
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@E@D1ErrorCode@D1ErrorTimedOut"></a>
-                    <a name="//apple_ref/objc/Case/D1ErrorTimedOut" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@E@D1ErrorCode@D1ErrorTimedOut">D1ErrorTimedOut</a>
+                    <a name="/c:objc(cs)D1CardAssetContent(py)width"></a>
+                    <a name="//apple_ref/objc/Property/width" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)D1CardAssetContent(py)width">width</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -203,19 +204,20 @@ contains recovery suggestion for the error.
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>User takes too much time in the operation. It has timed out.</p>
-<div class="aside aside-note">
-    <p class="aside-title">Note</p>
-    Retry the operation again.
-
-</div>
+                        <p>height of the resource (if any).
+Required for PNG images</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="n">D1ErrorTimedOut</span> <span class="o">=</span> <span class="mi">10003</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">)</span> <span class="n">NSInteger</span> <span class="n">width</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">width</span><span class="p">:</span> <span class="kt">Int</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -225,9 +227,9 @@ contains recovery suggestion for the error.
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@E@D1ErrorCode@D1ErrorSSLCertificate"></a>
-                    <a name="//apple_ref/objc/Case/D1ErrorSSLCertificate" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@E@D1ErrorCode@D1ErrorSSLCertificate">D1ErrorSSLCertificate</a>
+                    <a name="/c:objc(cs)D1CardAssetContent(py)height"></a>
+                    <a name="//apple_ref/objc/Property/height" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)D1CardAssetContent(py)height">height</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -235,21 +237,20 @@ contains recovery suggestion for the error.
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Error encountered because connection requires SSL certificate for pinning.</p>
-<div class="aside aside-note">
-    <p class="aside-title">Note</p>
-    Include SSL certificate to continue or if you 
-are in development, you can use Debug mode as it does not require 
-certificate pinning.
-
-</div>
+                        <p>width of the resource (if any).
+Required for PNG images</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="n">D1ErrorSSLCertificate</span> <span class="o">=</span> <span class="mi">10004</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">)</span> <span class="n">NSInteger</span> <span class="n">height</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">height</span><span class="p">:</span> <span class="kt">Int</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -259,9 +260,9 @@ certificate pinning.
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@E@D1ErrorCode@D1ErrorNotLoggedIn"></a>
-                    <a name="//apple_ref/objc/Case/D1ErrorNotLoggedIn" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@E@D1ErrorCode@D1ErrorNotLoggedIn">D1ErrorNotLoggedIn</a>
+                    <a name="/c:objc(cs)D1CardAssetContent(im)initWithAssetContentWithMimeType:encodedData:width:height:"></a>
+                    <a name="//apple_ref/objc/Method/-initWithAssetContentWithMimeType:encodedData:width:height:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)D1CardAssetContent(im)initWithAssetContentWithMimeType:encodedData:width:height:">-initWithAssetContentWithMimeType:<wbr>encodedData:<wbr>width:<wbr>height:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -269,123 +270,23 @@ certificate pinning.
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The user is not logged in. </p>
-<div class="aside aside-note">
-    <p class="aside-title">Note</p>
-    Login before performing subsequent requests.
-
-</div>
+                        <p>Internal Usage only</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="n">D1ErrorNotLoggedIn</span> <span class="o">=</span> <span class="mi">10005</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithAssetContentWithMimeType</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">mimeType</span>
+                                             <span class="nf">encodedData</span><span class="p">:</span>
+                                                 <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">encodedData</span>
+                                                   <span class="nf">width</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">width</span>
+                                                  <span class="nf">height</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">height</span><span class="p">;</span></code></pre>
 
                         </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@E@D1ErrorCode@D1ErrorNotAuthorized"></a>
-                    <a name="//apple_ref/objc/Case/D1ErrorNotAuthorized" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@E@D1ErrorCode@D1ErrorNotAuthorized">D1ErrorNotAuthorized</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>The user is not authorized to perform this operation.</p>
-<div class="aside aside-note">
-    <p class="aside-title">Note</p>
-    Retry the operation again.
-
-</div>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
                         <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="n">D1ErrorNotAuthorized</span> <span class="o">=</span> <span class="mi">10006</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@E@D1ErrorCode@D1ErrorCore"></a>
-                    <a name="//apple_ref/objc/Case/D1ErrorCore" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@E@D1ErrorCode@D1ErrorCore">D1ErrorCore</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Error encountered whilst executing core operations.</p>
-<div class="aside aside-note">
-    <p class="aside-title">Note</p>
-    Integrator should check the underlying errors for more details. 
-Ensure that the device has internet connection.
-
-</div>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="n">D1ErrorCore</span> <span class="o">=</span> <span class="mi">20001</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@E@D1ErrorCode@D1ErrorRisk"></a>
-                    <a name="//apple_ref/objc/Case/D1ErrorRisk" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@E@D1ErrorCode@D1ErrorRisk">D1ErrorRisk</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Risk assessment failed.</p>
-
-<p><b>Category - Risk API</b></p>
-<div class="aside aside-note">
-    <p class="aside-title">Note</p>
-    <p>Integrator should check the underlying errors for more details. 
-Ensure risk credentials are correct and the device has internet connection.</p>
-
-</div><div class="aside aside-see">
-    <p class="aside-title">See</p>
-    <p><code>D1TaskComponents.riskURLString</code>, <code>D1TaskComponents.riskClientID</code></p>
-
-</div>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="n">D1ErrorRisk</span> <span class="o">=</span> <span class="mi">30001</span></code></pre>
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="n">assetContentWithMimeType</span> <span class="nv">mimeType</span><span class="p">:</span> <span class="kt">Any</span><span class="o">!</span><span class="p">,</span> <span class="nv">encodedData</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">width</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">height</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>

@@ -42,16 +42,19 @@
                 <a href="../Classes/D1CardAsset.html">D1CardAsset</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Classes/D1CardAssetContent.html">D1CardAssetContent</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Classes/D1CardMetadata.html">D1CardMetadata</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/D1ConfigParams.html">D1ConfigParams</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/D1ConsumerInfo.html">D1ConsumerInfo</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/D1DigitalCard.html">D1DigitalCard</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Classes/D1RiskParams.html">D1RiskParams</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/D1Task.html">D1Task</a>
@@ -94,18 +97,7 @@
                 <a href="../Enums/D1CardState.html">D1CardState</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Enums/D1DigitalCardState.html">D1DigitalCardState</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Enums/D1ErrorCode.html">D1ErrorCode</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-group-name">
-            <a href="../Protocols.html">Protocols</a>
-            <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a href="../Protocols/AddDigitalCardDelegate.html">AddDigitalCardDelegate</a>
               </li>
             </ul>
           </li>
@@ -118,17 +110,13 @@
               <div class="declaration">
                 <div class="language">
                   
-                  <pre class="highlight objective_c"><code><span class="n">NS_ENUM</span><span class="p">(</span><span class="n">NSInteger</span><span class="p">,</span> <span class="n">D1CardState</span><span class="p">)</span>
-<span class="p">{</span>
-    <span class="n">D1CardStateActive</span><span class="p">,</span>
-    <span class="n">D1CardStateInactive</span><span class="p">,</span>
-    <span class="n">D1CardStateExpired</span><span class="p">,</span>
-    <span class="n">D1CardStateDeleted</span>
-<span class="p">}</span></code></pre>
+                  <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">D1CardState</span> <span class="p">{}</span></code></pre>
 
                 </div>
               </div>
-            <p>Undocumented</p>
+            <p>Card State</p>
+
+<p>@since 1.0.0</p>
 
           </section>
           <section class="section task-group-section">
@@ -147,7 +135,8 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Virtual Card is on Active state.
+It can be used for operations</p>
 
                       </div>
                       <div class="declaration">
@@ -174,7 +163,8 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Virtual Card is on Inactive state.
+It cannot be used for operations</p>
 
                       </div>
                       <div class="declaration">
@@ -201,7 +191,8 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Virtual Card is expired.
+It needs renewal</p>
 
                       </div>
                       <div class="declaration">
@@ -228,7 +219,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Virtual Card is deleted and cannot be used further.</p>
 
                       </div>
                       <div class="declaration">

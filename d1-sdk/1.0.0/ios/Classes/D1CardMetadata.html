@@ -42,16 +42,19 @@
                 <a href="../Classes/D1CardAsset.html">D1CardAsset</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Classes/D1CardAssetContent.html">D1CardAssetContent</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Classes/D1CardMetadata.html">D1CardMetadata</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/D1ConfigParams.html">D1ConfigParams</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/D1ConsumerInfo.html">D1ConsumerInfo</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/D1DigitalCard.html">D1DigitalCard</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Classes/D1RiskParams.html">D1RiskParams</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/D1Task.html">D1Task</a>
@@ -94,18 +97,7 @@
                 <a href="../Enums/D1CardState.html">D1CardState</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Enums/D1DigitalCardState.html">D1DigitalCardState</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Enums/D1ErrorCode.html">D1ErrorCode</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-group-name">
-            <a href="../Protocols.html">Protocols</a>
-            <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a href="../Protocols/AddDigitalCardDelegate.html">AddDigitalCardDelegate</a>
               </li>
             </ul>
           </li>
@@ -118,43 +110,7 @@
               <div class="declaration">
                 <div class="language">
                   <p class="aside-title">Objective-C</p>
-                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">D1CardMetadata</span> <span class="p">:</span> <span class="nc">NSObject</span>
-
-<span class="cm">/**
- * Last 4 digits of the PAN
- */</span>
-<span class="k">@property</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">cardLast4</span><span class="p">;</span>
-<span class="cm">/**
- * Expiry date of the card in MMYY format
- */</span>
-<span class="k">@property</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">cardExpiry</span><span class="p">;</span>
-<span class="cm">/**
- * Form factor of current card
- */</span>
-<span class="k">@property</span> <span class="n"><a href="../Enums/D1CardFormFactor.html">D1CardFormFactor</a></span> <span class="n">cardFormFactor</span><span class="p">;</span>
-<span class="cm">/**
- * The card scheme
- */</span>
-<span class="k">@property</span> <span class="n"><a href="../Enums/D1CardScheme.html">D1CardScheme</a></span> <span class="n">cardScheme</span><span class="p">;</span>
-<span class="cm">/**
- * The state of the card
- */</span>
-<span class="k">@property</span> <span class="n"><a href="../Enums/D1CardState.html">D1CardState</a></span> <span class="n">cardState</span><span class="p">;</span>
-<span class="cm">/**
- * Card Asset containing resources, for example image.
- * For PNG, the list may contains several resolutions of the same asset.
- */</span>
-<span class="k">@property</span> <span class="n">NSArray</span><span class="o">&lt;</span><span class="n"><a href="../Classes/D1CardAsset.html">D1CardAsset</a></span> <span class="o">*&gt;</span> <span class="o">*</span><span class="n">cardAssetArray</span><span class="p">;</span>
-
-<span class="k">-</span> <span class="p">(</span><span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithScheme</span><span class="p">:(</span><span class="n"><a href="../Enums/D1CardScheme.html">D1CardScheme</a></span><span class="p">)</span><span class="nv">scheme</span>
-                    <span class="nf">formFactor</span><span class="p">:(</span><span class="n"><a href="../Enums/D1CardFormFactor.html">D1CardFormFactor</a></span><span class="p">)</span><span class="nv">form</span>
-                         <span class="nf">last4</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span><span class="p">)</span><span class="nv">last4</span>
-                        <span class="nf">expiry</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span><span class="p">)</span><span class="nv">expiry</span>
-                         <span class="nf">state</span><span class="p">:(</span><span class="n"><a href="../Enums/D1CardState.html">D1CardState</a></span><span class="p">)</span><span class="nv">state</span>
-                     <span class="nf">cardAsset</span><span class="p">:(</span><span class="n">NSArray</span><span class="o">&lt;</span><span class="n"><a href="../Classes/D1CardAsset.html">D1CardAsset</a></span><span class="o">*&gt;*</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">cardAssetArray</span><span class="p">;</span>
-
-
-<span class="k">@end</span></code></pre>
+                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">D1CardMetadata</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
 
                 </div>
                 <div class="language">
@@ -163,7 +119,10 @@
 
                 </div>
               </div>
-            <p>Undocumented</p>
+            <p>The card Metadata information containing basic information of  the Card.
+It is used to display last 4 PAN digit and Card Art.</p>
+
+<p>@since 1.0.0</p>
 
           </section>
           <section class="section task-group-section">
@@ -182,19 +141,19 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Last 4 digits of the PAN</p>
+                        <p>Last 4 digits of the card</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">cardLast4</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">cardLast4</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">cardLast4</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">cardLast4</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -221,12 +180,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">cardExpiry</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">cardExpiry</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">cardExpiry</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">cardExpiry</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -246,19 +205,19 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Form factor of current card</p>
+                        <p>Form factor of the card</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="n"><a href="../Enums/D1CardFormFactor.html">D1CardFormFactor</a></span> <span class="n">cardFormFactor</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Enums/D1CardFormFactor.html">D1CardFormFactor</a></span> <span class="n">cardFormFactor</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">cardFormFactor</span><span class="p">:</span> <span class="kt"><a href="../Enums/D1CardFormFactor.html">D1CardFormFactor</a></span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">cardFormFactor</span><span class="p">:</span> <span class="kt"><a href="../Enums/D1CardFormFactor.html">D1CardFormFactor</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -278,19 +237,19 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The card scheme</p>
+                        <p>Scheme of the card</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="n"><a href="../Enums/D1CardScheme.html">D1CardScheme</a></span> <span class="n">cardScheme</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Enums/D1CardScheme.html">D1CardScheme</a></span> <span class="n">cardScheme</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">cardScheme</span><span class="p">:</span> <span class="kt"><a href="../Enums/D1CardScheme.html">D1CardScheme</a></span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">cardScheme</span><span class="p">:</span> <span class="kt"><a href="../Enums/D1CardScheme.html">D1CardScheme</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -310,19 +269,19 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The state of the card</p>
+                        <p>State of the card</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="n"><a href="../Enums/D1CardState.html">D1CardState</a></span> <span class="n">cardState</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Enums/D1CardState.html">D1CardState</a></span> <span class="n">cardState</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">cardState</span><span class="p">:</span> <span class="kt"><a href="../Enums/D1CardState.html">D1CardState</a></span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">cardState</span><span class="p">:</span> <span class="kt"><a href="../Enums/D1CardState.html">D1CardState</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -342,20 +301,20 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Card Asset containing resources, for example image.
-For PNG, the list may contains several resolutions of the same asset.</p>
+                        <p>Card asset containing resources, for example image.
+For PNG, the list may contain several resolutions of the same asset.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="n">NSArray</span><span class="o">&lt;</span><span class="n"><a href="../Classes/D1CardAsset.html">D1CardAsset</a></span> <span class="o">*&gt;</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">cardAssetArray</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">)</span> <span class="n">NSArray</span><span class="o">&lt;</span><span class="n"><a href="../Classes/D1CardAsset.html">D1CardAsset</a></span> <span class="o">*&gt;</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">cardAssetArray</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">cardAssetArray</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/D1CardAsset.html">D1CardAsset</a></span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">cardAssetArray</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/D1CardAsset.html">D1CardAsset</a></span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -375,19 +334,20 @@ For PNG, the list may contains several resolutions of the same asset.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Internal usage for conversion from/to D1Core SDK</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithScheme</span><span class="p">:(</span><span class="n"><a href="../Enums/D1CardScheme.html">D1CardScheme</a></span><span class="p">)</span><span class="nv">scheme</span>
-                    <span class="nf">formFactor</span><span class="p">:(</span><span class="n"><a href="../Enums/D1CardFormFactor.html">D1CardFormFactor</a></span><span class="p">)</span><span class="nv">form</span>
-                         <span class="nf">last4</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span><span class="p">)</span><span class="nv">last4</span>
-                        <span class="nf">expiry</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span><span class="p">)</span><span class="nv">expiry</span>
-                         <span class="nf">state</span><span class="p">:(</span><span class="n"><a href="../Enums/D1CardState.html">D1CardState</a></span><span class="p">)</span><span class="nv">state</span>
-                     <span class="nf">cardAsset</span><span class="p">:(</span><span class="n">NSArray</span><span class="o">&lt;</span><span class="n"><a href="../Classes/D1CardAsset.html">D1CardAsset</a></span><span class="o">*&gt;*</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">cardAssetArray</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithScheme</span><span class="p">:(</span><span class="n"><a href="../Enums/D1CardScheme.html">D1CardScheme</a></span><span class="p">)</span><span class="nv">scheme</span>
+                            <span class="nf">formFactor</span><span class="p">:(</span><span class="n"><a href="../Enums/D1CardFormFactor.html">D1CardFormFactor</a></span><span class="p">)</span><span class="nv">form</span>
+                                 <span class="nf">last4</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">last4</span>
+                                <span class="nf">expiry</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">expiry</span>
+                                 <span class="nf">state</span><span class="p">:(</span><span class="n"><a href="../Enums/D1CardState.html">D1CardState</a></span><span class="p">)</span><span class="nv">state</span>
+                             <span class="nf">cardAsset</span><span class="p">:(</span><span class="n">NSArray</span><span class="o">&lt;</span><span class="n"><a href="../Classes/D1CardAsset.html">D1CardAsset</a></span> <span class="o">*&gt;</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span>
+                                           <span class="n"><a href="../Classes/D1CardMetadata.html#/c:objc(cs)D1CardMetadata(py)cardAssetArray">cardAssetArray</a></span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">

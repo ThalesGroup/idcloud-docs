@@ -42,16 +42,19 @@
                 <a href="../Classes/D1CardAsset.html">D1CardAsset</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Classes/D1CardAssetContent.html">D1CardAssetContent</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Classes/D1CardMetadata.html">D1CardMetadata</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/D1ConfigParams.html">D1ConfigParams</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/D1ConsumerInfo.html">D1ConsumerInfo</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/D1DigitalCard.html">D1DigitalCard</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Classes/D1RiskParams.html">D1RiskParams</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/D1Task.html">D1Task</a>
@@ -94,18 +97,7 @@
                 <a href="../Enums/D1CardState.html">D1CardState</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Enums/D1DigitalCardState.html">D1DigitalCardState</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Enums/D1ErrorCode.html">D1ErrorCode</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-group-name">
-            <a href="../Protocols.html">Protocols</a>
-            <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a href="../Protocols/AddDigitalCardDelegate.html">AddDigitalCardDelegate</a>
               </li>
             </ul>
           </li>
@@ -138,9 +130,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)D1TaskComponents(py)mA2URL"></a>
-                    <a name="//apple_ref/objc/Property/mA2URL" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)D1TaskComponents(py)mA2URL">mA2URL</a>
+                    <a name="/c:objc(cs)D1TaskComponents(py)a2URLString"></a>
+                    <a name="//apple_ref/objc/Property/a2URLString" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)D1TaskComponents(py)a2URLString">a2URLString</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -148,21 +140,39 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
-
+                        
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="n">NSString</span><span class="o">*</span> <span class="n">mA2URL</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">a2URLString</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">mA2URL</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">a2URLString</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>a2URLString</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>server URL String for Authentication and Authorization</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -170,9 +180,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)D1TaskComponents(py)mD1ServiceURL"></a>
-                    <a name="//apple_ref/objc/Property/mD1ServiceURL" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)D1TaskComponents(py)mD1ServiceURL">mD1ServiceURL</a>
+                    <a name="/c:objc(cs)D1TaskComponents(py)d1ServiceURLString"></a>
+                    <a name="//apple_ref/objc/Property/d1ServiceURLString" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)D1TaskComponents(py)d1ServiceURLString">d1ServiceURLString</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -180,21 +190,39 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
-
+                        
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="n">NSString</span><span class="o">*</span> <span class="n">mD1ServiceURL</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">d1ServiceURLString</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">mD1ServiceURL</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">d1ServiceURLString</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>d1ServiceURLString</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>server URL String for Card services</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -202,9 +230,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)D1TaskComponents(py)mD1DigitalCardURL"></a>
-                    <a name="//apple_ref/objc/Property/mD1DigitalCardURL" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)D1TaskComponents(py)mD1DigitalCardURL">mD1DigitalCardURL</a>
+                    <a name="/c:objc(cs)D1TaskComponents(py)issuerID"></a>
+                    <a name="//apple_ref/objc/Property/issuerID" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)D1TaskComponents(py)issuerID">issuerID</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -212,21 +240,39 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
-
+                        
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="n">NSString</span><span class="o">*</span> <span class="n">mD1DigitalCardURL</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">issuerID</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">mD1DigitalCardURL</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">issuerID</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>issuerID</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Issuer Identifier provided by Onboarding Team</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -234,9 +280,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)D1TaskComponents(py)mIssuerID"></a>
-                    <a name="//apple_ref/objc/Property/mIssuerID" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)D1TaskComponents(py)mIssuerID">mIssuerID</a>
+                    <a name="/c:objc(cs)D1TaskComponents(py)d1ServiceRSAExponent"></a>
+                    <a name="//apple_ref/objc/Property/d1ServiceRSAExponent" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)D1TaskComponents(py)d1ServiceRSAExponent">d1ServiceRSAExponent</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -244,21 +290,40 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>It is used to secure communication between Server and Client</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="n">NSString</span><span class="o">*</span> <span class="n">mIssuerID</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="n">NSData</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">d1ServiceRSAExponent</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">mIssuerID</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">d1ServiceRSAExponent</span><span class="p">:</span> <span class="kt">Data</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>d1ServiceRSAExponent</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>RSA Exponent value.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -266,9 +331,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)D1TaskComponents(py)mD1ServiceRsaExponent"></a>
-                    <a name="//apple_ref/objc/Property/mD1ServiceRsaExponent" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)D1TaskComponents(py)mD1ServiceRsaExponent">mD1ServiceRsaExponent</a>
+                    <a name="/c:objc(cs)D1TaskComponents(py)d1ServiceRSAModulus"></a>
+                    <a name="//apple_ref/objc/Property/d1ServiceRSAModulus" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)D1TaskComponents(py)d1ServiceRSAModulus">d1ServiceRSAModulus</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -276,21 +341,40 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>It is used to secure communication between Server and Client</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="n">NSData</span> <span class="o">*</span><span class="n">mD1ServiceRsaExponent</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="n">NSData</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">d1ServiceRSAModulus</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">mD1ServiceRsaExponent</span><span class="p">:</span> <span class="kt">Data</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">d1ServiceRSAModulus</span><span class="p">:</span> <span class="kt">Data</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>d1ServiceRSAModulus</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>RSA Modulus value.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -298,9 +382,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)D1TaskComponents(py)mD1ServiceRsaModulus"></a>
-                    <a name="//apple_ref/objc/Property/mD1ServiceRsaModulus" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)D1TaskComponents(py)mD1ServiceRsaModulus">mD1ServiceRsaModulus</a>
+                    <a name="/c:objc(cs)D1TaskComponents(py)d1DigitalCardURLString"></a>
+                    <a name="//apple_ref/objc/Property/d1DigitalCardURLString" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)D1TaskComponents(py)d1DigitalCardURLString">d1DigitalCardURLString</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -308,21 +392,39 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
-
+                        
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="n">NSData</span> <span class="o">*</span><span class="n">mD1ServiceRsaModulus</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">d1DigitalCardURLString</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">mD1ServiceRsaModulus</span><span class="p">:</span> <span class="kt">Data</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">d1DigitalCardURLString</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>d1DigitalCardURLString</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>server URL String for Digital Card management.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -340,9 +442,8 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>A <code><a href="../Classes/D1Task.html">D1Task</a></code> created from the components.</p>
-
-<p>@since 1.0.0</p>
+                        <p>A <code><a href="../Classes/D1Task.html">D1Task</a></code> derived from the configuration. This method should only be called
+after all the configurations are set.</p>
 
                       </div>
                       <div class="declaration">
@@ -357,6 +458,10 @@
                           <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">task</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/D1Task.html">D1Task</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code><a href="../Classes/D1Task.html">D1Task</a></code> instance.</p>
                       </div>
                     </section>
                   </div>
