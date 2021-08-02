@@ -51,7 +51,7 @@
                 <a href="../Classes/D1ConfigParams.html">D1ConfigParams</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/D1ConsumerInfo.html">D1ConsumerInfo</a>
+                <a href="../Classes/D1ConsumerDetails.html">D1ConsumerDetails</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/D1DigitalCard.html">D1DigitalCard</a>
@@ -441,9 +441,9 @@ It is not mandatory to initialize all features in a single call.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)D1Task(im)consumerInfoWithCompletion:"></a>
-                    <a name="//apple_ref/objc/Method/-consumerInfoWithCompletion:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)D1Task(im)consumerInfoWithCompletion:">-consumerInfoWithCompletion:<wbr></a>
+                    <a name="/c:objc(cs)D1Task(im)consumerDetailsWithCompletion:"></a>
+                    <a name="//apple_ref/objc/Method/-consumerDetailsWithCompletion:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)D1Task(im)consumerDetailsWithCompletion:">-consumerDetailsWithCompletion:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -459,13 +459,14 @@ This is the entry point for Card Operation as it will provide <i>cardID</i> for 
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">consumerInfoWithCompletion</span><span class="p">:</span>
-    <span class="p">(</span><span class="n">nonnull</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n"><a href="../Classes/D1ConsumerInfo.html">D1ConsumerInfo</a></span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">,</span> <span class="n">NSError</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">))</span><span class="nv">completion</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">consumerDetailsWithCompletion</span><span class="p">:</span>
+    <span class="p">(</span><span class="n">nonnull</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n"><a href="../Classes/D1ConsumerDetails.html">D1ConsumerDetails</a></span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">,</span>
+                      <span class="n">NSError</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">))</span><span class="n">completion</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">consumerInfo</span><span class="p">(</span><span class="n">_</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Classes/D1ConsumerInfo.html">D1ConsumerInfo</a></span><span class="p">?,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">consumerDetails</span><span class="p">(</span><span class="n">_</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Classes/D1ConsumerDetails.html">D1ConsumerDetails</a></span><span class="p">?,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -535,7 +536,7 @@ Use this API to retrieve last 4 PAN digit value &amp; Card Art.</p>
                               </td>
                               <td>
                                 <div>
-                                  <p>card identifier from <code><a href="../Classes/D1Task.html#/c:objc(cs)D1Task(im)consumerInfoWithCompletion:">-[D1Task consumerInfoWithCompletion:]</a></code> API</p>
+                                  <p>card identifier from <code><a href="../Classes/D1Task.html#/c:objc(cs)D1Task(im)consumerDetailsWithCompletion:">-[D1Task consumerDetailsWithCompletion:]</a></code> API</p>
                                 </div>
                               </td>
                             </tr>
@@ -602,7 +603,7 @@ The values can be used for online transaction.</p>
                               </td>
                               <td>
                                 <div>
-                                  <p>card identifier from <code><a href="../Classes/D1Task.html#/c:objc(cs)D1Task(im)consumerInfoWithCompletion:">-[D1Task consumerInfoWithCompletion:]</a></code> API</p>
+                                  <p>card identifier from <code><a href="../Classes/D1Task.html#/c:objc(cs)D1Task(im)consumerDetailsWithCompletion:">-[D1Task consumerDetailsWithCompletion:]</a></code> API</p>
                                 </div>
                               </td>
                             </tr>
@@ -676,7 +677,7 @@ The following <code><a href="../Enums/D1CardAction.html">D1CardAction</a></code>
                               </td>
                               <td>
                                 <div>
-                                  <p>card identifier from <code><a href="../Classes/D1Task.html#/c:objc(cs)D1Task(im)consumerInfoWithCompletion:">-[D1Task consumerInfoWithCompletion:]</a></code> API</p>
+                                  <p>card identifier from <code><a href="../Classes/D1Task.html#/c:objc(cs)D1Task(im)consumerDetailsWithCompletion:">-[D1Task consumerDetailsWithCompletion:]</a></code> API</p>
                                 </div>
                               </td>
                             </tr>
@@ -765,7 +766,7 @@ Use this API to determine if we need to show &lsquo;add card&rsquo; button on th
                               </td>
                               <td>
                                 <div>
-                                  <p>card identifier from <code><a href="../Classes/D1Task.html#/c:objc(cs)D1Task(im)consumerInfoWithCompletion:">-[D1Task consumerInfoWithCompletion:]</a></code> API</p>
+                                  <p>card identifier from <code><a href="../Classes/D1Task.html#/c:objc(cs)D1Task(im)consumerDetailsWithCompletion:">-[D1Task consumerDetailsWithCompletion:]</a></code> API</p>
                                 </div>
                               </td>
                             </tr>
@@ -832,7 +833,7 @@ Use this API to determine if we need to show &lsquo;add card&rsquo; button on th
                               </td>
                               <td>
                                 <div>
-                                  <p>card identifier from <code><a href="../Classes/D1Task.html#/c:objc(cs)D1Task(im)consumerInfoWithCompletion:">-[D1Task consumerInfoWithCompletion:]</a></code> API</p>
+                                  <p>card identifier from <code><a href="../Classes/D1Task.html#/c:objc(cs)D1Task(im)consumerDetailsWithCompletion:">-[D1Task consumerDetailsWithCompletion:]</a></code> API</p>
                                 </div>
                               </td>
                             </tr>
@@ -898,7 +899,7 @@ Use this API to determine if we need to show &lsquo;add card&rsquo; button on th
                               </td>
                               <td>
                                 <div>
-                                  <p>card identifier from <code><a href="../Classes/D1Task.html#/c:objc(cs)D1Task(im)consumerInfoWithCompletion:">-[D1Task consumerInfoWithCompletion:]</a></code> API</p>
+                                  <p>card identifier from <code><a href="../Classes/D1Task.html#/c:objc(cs)D1Task(im)consumerDetailsWithCompletion:">-[D1Task consumerDetailsWithCompletion:]</a></code> API</p>
                                 </div>
                               </td>
                             </tr>
@@ -972,7 +973,7 @@ The following <code><a href="../Enums/D1CardAction.html">D1CardAction</a></code>
                               </td>
                               <td>
                                 <div>
-                                  <p>Digital Card id received from <code><a href="../Classes/D1Task.html#/c:objc(cs)D1Task(im)consumerInfoWithCompletion:">-[D1Task consumerInfoWithCompletion:]</a></code> API</p>
+                                  <p>Digital Card id received from <code><a href="../Classes/D1Task.html#/c:objc(cs)D1Task(im)consumerDetailsWithCompletion:">-[D1Task consumerDetailsWithCompletion:]</a></code> API</p>
                                 </div>
                               </td>
                             </tr>
