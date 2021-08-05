@@ -482,7 +482,7 @@ This is the entry point for Card Operation as it will provide <i>cardID</i> for 
                               </td>
                               <td>
                                 <div>
-                                  <p>The callback invoked when the operation is completed. When it succeeds, it returns consumerInfo. Otherwise, it returns error details.</p>
+                                  <p>The callback invoked when the operation is completed. When it succeeds, it returns consumerDetails. Otherwise, it returns error details.</p>
                                 </div>
                               </td>
                             </tr>
@@ -924,9 +924,9 @@ Use this API to determine if we need to show &lsquo;add card&rsquo; button on th
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)D1Task(im)updateDigitalCardForDigitalCardID:requestorID:action:completion:"></a>
-                    <a name="//apple_ref/objc/Method/-updateDigitalCardForDigitalCardID:requestorID:action:completion:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)D1Task(im)updateDigitalCardForDigitalCardID:requestorID:action:completion:">-updateDigitalCardForDigitalCardID:<wbr>requestorID:<wbr>action:<wbr>completion:<wbr></a>
+                    <a name="/c:objc(cs)D1Task(im)updateDigitalCardForCardID:requestorID:action:completion:"></a>
+                    <a name="//apple_ref/objc/Method/-updateDigitalCardForCardID:requestorID:action:completion:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)D1Task(im)updateDigitalCardForCardID:requestorID:action:completion:">-updateDigitalCardForCardID:<wbr>requestorID:<wbr>action:<wbr>completion:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -948,16 +948,16 @@ The following <code><a href="../Enums/D1CardAction.html">D1CardAction</a></code>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">updateDigitalCardForDigitalCardID</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">digitalCardID</span>
-                              <span class="nf">requestorID</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">requestorID</span>
-                                   <span class="nf">action</span><span class="p">:(</span><span class="n"><a href="../Enums/D1CardAction.html">D1CardAction</a></span><span class="p">)</span><span class="nv">action</span>
-                               <span class="nf">completion</span><span class="p">:(</span><span class="n">nonnull</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n">NSError</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">))</span>
-                                              <span class="n">completion</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">updateDigitalCardForCardID</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">cardID</span>
+                       <span class="nf">requestorID</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">requestorID</span>
+                            <span class="nf">action</span><span class="p">:(</span><span class="n"><a href="../Enums/D1CardAction.html">D1CardAction</a></span><span class="p">)</span><span class="nv">action</span>
+                        <span class="nf">completion</span><span class="p">:</span>
+                            <span class="p">(</span><span class="n">nonnull</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n">NSError</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">))</span><span class="nv">completion</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">updateDigitalCard</span><span class="p">(</span><span class="n">_</span> <span class="nv">digitalCardID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">requestorID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">action</span><span class="p">:</span> <span class="kt"><a href="../Enums/D1CardAction.html">D1CardAction</a></span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">updateDigitalCard</span><span class="p">(</span><span class="n">_</span> <span class="nv">cardID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">requestorID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">action</span><span class="p">:</span> <span class="kt"><a href="../Enums/D1CardAction.html">D1CardAction</a></span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -968,12 +968,12 @@ The following <code><a href="../Enums/D1CardAction.html">D1CardAction</a></code>
                             <tr>
                               <td>
                                 <code>
-                                <em>digitalCardID</em>
+                                <em>cardID</em>
                                 </code>
                               </td>
                               <td>
                                 <div>
-                                  <p>Digital Card id received from <code><a href="../Classes/D1Task.html#/c:objc(cs)D1Task(im)consumerDetailsWithCompletion:">-[D1Task consumerDetailsWithCompletion:]</a></code> API</p>
+                                  <p>Digital Card id received from <code><a href="../Classes/D1Task.html#/c:objc(cs)D1Task(im)digitalCardListFromCardID:completion:">-[D1Task digitalCardListFromCardID:completion:]</a></code> API</p>
                                 </div>
                               </td>
                             </tr>

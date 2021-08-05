@@ -260,9 +260,9 @@ Required for PNG images</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)D1CardAssetContent(im)initWithAssetContentWithMimeType:encodedData:width:height:"></a>
-                    <a name="//apple_ref/objc/Method/-initWithAssetContentWithMimeType:encodedData:width:height:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)D1CardAssetContent(im)initWithAssetContentWithMimeType:encodedData:width:height:">-initWithAssetContentWithMimeType:<wbr>encodedData:<wbr>width:<wbr>height:<wbr></a>
+                    <a name="/c:objc(cs)D1CardAssetContent(im)initWithMimeType:encodedData:width:height:"></a>
+                    <a name="//apple_ref/objc/Method/-initWithMimeType:encodedData:width:height:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)D1CardAssetContent(im)initWithMimeType:encodedData:width:height:">-initWithMimeType:<wbr>encodedData:<wbr>width:<wbr>height:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -277,16 +277,15 @@ Required for PNG images</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span>
-    <span class="nf">initWithAssetContentWithMimeType</span><span class="p">:(</span><span class="n"><a href="../Enums/D1CardMimeType.html">D1CardMimeType</a></span><span class="p">)</span><span class="nv">mimeType</span>
-                         <span class="nf">encodedData</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">encodedData</span>
-                               <span class="nf">width</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">width</span>
-                              <span class="nf">height</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">height</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithMimeType</span><span class="p">:(</span><span class="n"><a href="../Enums/D1CardMimeType.html">D1CardMimeType</a></span><span class="p">)</span><span class="nv">mimeType</span>
+                             <span class="nf">encodedData</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">encodedData</span>
+                                   <span class="nf">width</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">width</span>
+                                  <span class="nf">height</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">height</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="n">assetContentWith</span> <span class="nv">mimeType</span><span class="p">:</span> <span class="kt"><a href="../Enums/D1CardMimeType.html">D1CardMimeType</a></span><span class="p">,</span> <span class="nv">encodedData</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">width</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">height</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">mimeType</span><span class="p">:</span> <span class="kt"><a href="../Enums/D1CardMimeType.html">D1CardMimeType</a></span><span class="p">,</span> <span class="nv">encodedData</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">width</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">height</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
