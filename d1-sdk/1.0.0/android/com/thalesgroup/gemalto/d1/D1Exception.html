@@ -125,7 +125,7 @@ var activeTableTab = "activeTableTab";
 extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></pre>
 <div class="block">The D1 exception.
 
- When error occurs and support is required, it is recommended to include the <a href="../../../../com/thalesgroup/gemalto/d1/D1Exception.html#getErrorCode--"><code>getErrorCode()</code></a> as well as the stack trace of error in the report.</div>
+ When an error occurs and support is required, it is recommended to include the <a href="../../../../com/thalesgroup/gemalto/d1/D1Exception.html#getErrorCode--"><code>getErrorCode()</code></a> as well as the stack trace of error in the report.</div>
 <dl>
 <dt><span class="simpleTagLabel">Since:</span></dt>
 <dd>1.0.0</dd>
@@ -185,7 +185,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Exception.h
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../com/thalesgroup/gemalto/d1/D1Exception.html#D1Exception-com.thalesgroup.gemalto.d1.D1Exception.ErrorCode-java.lang.Throwable-int-">D1Exception</a></span>(<a href="../../../../com/thalesgroup/gemalto/d1/D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a>&nbsp;errorCode,
            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&nbsp;cause,
            int&nbsp;causeErrorCode)</code>
-<div class="block">Construct a D1Exception with error code, cause and the cause's code.</div>
+<div class="block">Construct a D1Exception with error code, cause and the cause's error code.</div>
 </td>
 </tr>
 </table>
@@ -282,7 +282,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Exception.h
                    <a href="https://developer.android.com/reference/kotlin/androidx/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation">@NonNull</a>
                    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&nbsp;cause,
                    int&nbsp;causeErrorCode)</pre>
-<div class="block">Construct a D1Exception with error code, cause and the cause's code.</div>
+<div class="block">Construct a D1Exception with error code, cause and the cause's error code.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>errorCode</code> - The D1 error code.</dd>

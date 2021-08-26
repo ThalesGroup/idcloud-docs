@@ -42,16 +42,19 @@
                 <a href="Classes/D1CardAsset.html">D1CardAsset</a>
               </li>
               <li class="nav-group-task">
+                <a href="Classes/D1CardAssetContent.html">D1CardAssetContent</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Classes/D1CardMetadata.html">D1CardMetadata</a>
               </li>
               <li class="nav-group-task">
-                <a href="Classes/D1ConsumerInfo.html">D1ConsumerInfo</a>
+                <a href="Classes/D1ConfigParams.html">D1ConfigParams</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/D1ConsumerDetails.html">D1ConsumerDetails</a>
               </li>
               <li class="nav-group-task">
                 <a href="Classes/D1DigitalCard.html">D1DigitalCard</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/D1RiskParams.html">D1RiskParams</a>
               </li>
               <li class="nav-group-task">
                 <a href="Classes/D1Task.html">D1Task</a>
@@ -94,18 +97,7 @@
                 <a href="Enums/D1CardState.html">D1CardState</a>
               </li>
               <li class="nav-group-task">
-                <a href="Enums/D1DigitalCardState.html">D1DigitalCardState</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="Enums/D1ErrorCode.html">D1ErrorCode</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-group-name">
-            <a href="Protocols.html">Protocols</a>
-            <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a href="Protocols/AddDigitalCardDelegate.html">AddDigitalCardDelegate</a>
               </li>
             </ul>
           </li>
@@ -134,7 +126,9 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>The Card Asset containing resources, for example image used to display Card Art</p>
+
+<p>@since 1.0.0</p>
 
                         <a href="Classes/D1CardAsset.html" class="slightly-smaller">See more</a>
                       </div>
@@ -142,37 +136,47 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">D1CardAsset</span> <span class="p">:</span> <span class="nc">NSObject</span>
-
-<span class="k">@property</span> <span class="n"><a href="Enums/D1CardMimeType.html">D1CardMimeType</a></span> <span class="n">mimeType</span><span class="p">;</span>
-<span class="k">@property</span> <span class="n"><a href="Enums/D1CardAssetContentType.html">D1CardAssetContentType</a></span> <span class="n">assetContentType</span><span class="p">;</span>
-<span class="cm">/**
- * Resource bytes encoded in base64 format
- */</span>
-<span class="k">@property</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">encodedData</span><span class="p">;</span>
-<span class="cm">/**
- * Width of the resource (if any). Required for PNG images
- */</span>
-<span class="k">@property</span> <span class="n">NSInteger</span> <span class="n">width</span><span class="p">;</span>
-<span class="cm">/**
-  * Height of the resource (if any). Required for PNG images
-  */</span>
-<span class="k">@property</span> <span class="n">NSInteger</span> <span class="n">height</span><span class="p">;</span>
-
-<span class="k">-</span> <span class="p">(</span><span class="n">instancetype</span><span class="p">)</span><span class="n">init</span> <span class="n">NS_UNAVAILABLE</span><span class="p">;</span>
-
-<span class="k">-</span> <span class="p">(</span><span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithAssetContentType</span><span class="p">:(</span><span class="n"><a href="Enums/D1CardAssetContentType.html">D1CardAssetContentType</a></span><span class="p">)</span><span class="nv">contentType</span>
-                                <span class="nf">mimeType</span><span class="p">:(</span><span class="n"><a href="Enums/D1CardMimeType.html">D1CardMimeType</a></span><span class="p">)</span><span class="nv">mimeType</span>
-                             <span class="nf">encodedData</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span><span class="p">)</span><span class="nv">encodedData</span>
-                                   <span class="nf">width</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">width</span>
-                                  <span class="nf">height</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">height</span><span class="p">;</span>
-
-<span class="k">@end</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">D1CardAsset</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">D1CardAsset</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)D1CardAssetContent"></a>
+                    <a name="//apple_ref/objc/Class/D1CardAssetContent" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)D1CardAssetContent">D1CardAssetContent</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The D1CardAssetContent containing content of asset</p>
+
+<p>@since 1.0.0</p>
+
+                        <a href="Classes/D1CardAssetContent.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">D1CardAssetContent</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">D1CardAssetContent</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
 
                         </div>
                       </div>
@@ -192,7 +196,10 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>The card Metadata information containing basic information of  the Card.
+It is used to display last 4 PAN digit and Card Art.</p>
+
+<p>@since 1.0.0</p>
 
                         <a href="Classes/D1CardMetadata.html" class="slightly-smaller">See more</a>
                       </div>
@@ -200,43 +207,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">D1CardMetadata</span> <span class="p">:</span> <span class="nc">NSObject</span>
-
-<span class="cm">/**
- * Last 4 digits of the PAN
- */</span>
-<span class="k">@property</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">cardLast4</span><span class="p">;</span>
-<span class="cm">/**
- * Expiry date of the card in MMYY format
- */</span>
-<span class="k">@property</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">cardExpiry</span><span class="p">;</span>
-<span class="cm">/**
- * Form factor of current card
- */</span>
-<span class="k">@property</span> <span class="n"><a href="Enums/D1CardFormFactor.html">D1CardFormFactor</a></span> <span class="n">cardFormFactor</span><span class="p">;</span>
-<span class="cm">/**
- * The card scheme
- */</span>
-<span class="k">@property</span> <span class="n"><a href="Enums/D1CardScheme.html">D1CardScheme</a></span> <span class="n">cardScheme</span><span class="p">;</span>
-<span class="cm">/**
- * The state of the card
- */</span>
-<span class="k">@property</span> <span class="n"><a href="Enums/D1CardState.html">D1CardState</a></span> <span class="n">cardState</span><span class="p">;</span>
-<span class="cm">/**
- * Card Asset containing resources, for example image.
- * For PNG, the list may contains several resolutions of the same asset.
- */</span>
-<span class="k">@property</span> <span class="n">NSArray</span><span class="o">&lt;</span><span class="n"><a href="Classes/D1CardAsset.html">D1CardAsset</a></span> <span class="o">*&gt;</span> <span class="o">*</span><span class="n">cardAssetArray</span><span class="p">;</span>
-
-<span class="k">-</span> <span class="p">(</span><span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithScheme</span><span class="p">:(</span><span class="n"><a href="Enums/D1CardScheme.html">D1CardScheme</a></span><span class="p">)</span><span class="nv">scheme</span>
-                    <span class="nf">formFactor</span><span class="p">:(</span><span class="n"><a href="Enums/D1CardFormFactor.html">D1CardFormFactor</a></span><span class="p">)</span><span class="nv">form</span>
-                         <span class="nf">last4</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span><span class="p">)</span><span class="nv">last4</span>
-                        <span class="nf">expiry</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span><span class="p">)</span><span class="nv">expiry</span>
-                         <span class="nf">state</span><span class="p">:(</span><span class="n"><a href="Enums/D1CardState.html">D1CardState</a></span><span class="p">)</span><span class="nv">state</span>
-                     <span class="nf">cardAsset</span><span class="p">:(</span><span class="n">NSArray</span><span class="o">&lt;</span><span class="n"><a href="Classes/D1CardAsset.html">D1CardAsset</a></span><span class="o">*&gt;*</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">cardAssetArray</span><span class="p">;</span>
-
-
-<span class="k">@end</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">D1CardMetadata</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -251,9 +222,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)D1ConsumerInfo"></a>
-                    <a name="//apple_ref/objc/Class/D1ConsumerInfo" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)D1ConsumerInfo">D1ConsumerInfo</a>
+                    <a name="/c:objc(cs)D1ConfigParams"></a>
+                    <a name="//apple_ref/objc/Class/D1ConfigParams" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)D1ConfigParams">D1ConfigParams</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -261,33 +232,57 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>The configuration parameters for D1 SDK initialization.</p>
 
-                        <a href="Classes/D1ConsumerInfo.html" class="slightly-smaller">See more</a>
+<p>@since 1.0.0</p>
+
+                        <a href="Classes/D1ConfigParams.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">D1ConsumerInfo</span> <span class="p">:</span> <span class="nc">NSObject</span>
-<span class="cm">/**
- * Account identifier of Consumer Info
- */</span>
-<span class="k">@property</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">accountID</span><span class="p">;</span>
-<span class="cm">/**
- * Card identifiers of Consumer Info
- */</span>
-<span class="k">@property</span> <span class="n">NSArray</span><span class="o">&lt;</span><span class="n">NSString</span><span class="o">*&gt;</span> <span class="o">*</span><span class="n">cardIDs</span><span class="p">;</span>
-
-
-<span class="k">-</span> <span class="p">(</span><span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithAccountID</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span><span class="p">)</span><span class="nv">accountID</span>
-                          <span class="nf">cardIds</span><span class="p">:(</span><span class="n">NSArray</span><span class="o">&lt;</span><span class="n">NSString</span><span class="o">*&gt;*</span><span class="p">)</span><span class="nv">cardIDs</span><span class="p">;</span>
-<span class="k">@end</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">D1ConfigParams</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">D1ConsumerInfo</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">D1ConfigParams</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)D1ConsumerDetails"></a>
+                    <a name="//apple_ref/objc/Class/D1ConsumerDetails" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)D1ConsumerDetails">D1ConsumerDetails</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The card information of consumer containing account id and list of card ids.</p>
+
+<p>@since 1.0.0</p>
+
+                        <a href="Classes/D1ConsumerDetails.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">D1ConsumerDetails</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">D1ConsumerDetails</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
 
                         </div>
                       </div>
@@ -307,7 +302,9 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>The Digital Card full information.</p>
+
+<p>@since 1.0.0</p>
 
                         <a href="Classes/D1DigitalCard.html" class="slightly-smaller">See more</a>
                       </div>
@@ -315,92 +312,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">D1DigitalCard</span> <span class="p">:</span> <span class="nc">NSObject</span>
-
-<span class="cm">/**
- * The unique digital card id
- */</span>
-<span class="k">@property</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">digitalCardID</span><span class="p">;</span>
-<span class="cm">/**
- * The current digital card state
- */</span>
-<span class="k">@property</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">state</span><span class="p">;</span>
-<span class="cm">/**
- * Last 4 digits of the PAN
- */</span>
-<span class="k">@property</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">suffix</span><span class="p">;</span>
-<span class="cm">/**
- * The expiry date for the digital card
- */</span>
-<span class="k">@property</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">expiryDate</span><span class="p">;</span>
-<span class="cm">/**
- * The device name
- */</span>
-<span class="k">@property</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">deviceName</span><span class="p">;</span>
-<span class="cm">/**
- * The device type
- */</span>
-<span class="k">@property</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">deviceType</span><span class="p">;</span>
-<span class="cm">/**
- * If it is the current device
- */</span>
-<span class="k">@property</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">isCurrentDevice</span><span class="p">;</span>
-<span class="cm">/**
- * The digital card requestor identifier
- */</span>
-<span class="k">@property</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">requestorID</span><span class="p">;</span>
-<span class="cm">/**
- * The digital card requestor name
- */</span>
-<span class="k">@property</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">requestorName</span><span class="p">;</span>
-<span class="cm">/**
- * The digital card requestor logo
- */</span>
-<span class="k">@property</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">requestorLogo</span><span class="p">;</span>
-
-<span class="k">@end</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">D1DigitalCard</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">D1DigitalCard</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:objc(cs)D1RiskParams"></a>
-                    <a name="//apple_ref/objc/Class/D1RiskParams" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)D1RiskParams">D1RiskParams</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>An object that encapsulates all parameters required for risk assessment.</p>
-
-<p><b>Category - Risk API</b></p>
-
-<p>@since 1.0.0</p>
-
-                        <a href="Classes/D1RiskParams.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">D1RiskParams</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">D1RiskParams</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
 
                         </div>
                       </div>
@@ -458,14 +375,8 @@
                         <p>Main class for D1 SDK use cases.</p>
 <div class="aside aside-note">
     <p class="aside-title">Note</p>
-    <p>It is recommended to initialize <code>D1Task</code> as soon as the application is 
-launched or the earliest possible time.</p>
-
-</div><div class="aside aside-note">
-    <p class="aside-title">Note</p>
-    <p>Risk API contains session ID internally. The session ID is used by backend
-to identify the user&rsquo;s activity. The lifecycle of session ID is linked with <code>D1Task</code> 
-lifecycle, i.e. one <code>D1Task</code> instance use same session ID for all the use cases.</p>
+    It is recommended to initialize <code>D1Task</code> as soon as the application is 
+launched or the earliest possible time.
 
 </div>
 
@@ -504,8 +415,15 @@ lifecycle, i.e. one <code>D1Task</code> instance use same session ID for all the
                       <div class="abstract">
                         <p>The Virtual Card  Object
 For security reason, VirtualCard use NSMutableData as variables type which can be wiped (refer to wipe function).
-Please use following example to covert the variable from NSMutableData to NSString if need:
-NSString *panString = [[NSString alloc] initWithData:pan encoding:NSUTF8StringEncoding];</p>
+Please use following example to covert the variable from NSMutableData to NSString if need:</p>
+<h4 id='objective-c' class='heading'>Objective C</h4>
+<pre class="highlight objective_c"><code><span class="n">NSString</span> <span class="o">*</span><span class="n">panString</span> <span class="o">=</span> <span class="p">[[</span><span class="n">NSString</span> <span class="nf">alloc</span><span class="p">]</span> <span class="nf">initWithData</span><span class="p">:</span><span class="n">pan</span> <span class="nf">encoding</span><span class="p">:</span><span class="n">NSUTF8StringEncoding</span><span class="p">];</span>
+</code></pre>
+<h4 id='swift' class='heading'>Swift</h4>
+<pre class="highlight objective_c"><code><span class="n">let</span> <span class="n">panString</span> <span class="o">=</span> <span class="n">String</span><span class="p">.</span><span class="n">init</span><span class="p">(</span><span class="n">data</span><span class="o">:</span> <span class="n">pan</span><span class="p">,</span> <span class="n">encoding</span><span class="o">:</span> <span class="p">.</span><span class="n">utf8</span><span class="p">)</span>
+</code></pre>
+
+<p>@since 1.0.0</p>
 
                         <a href="Classes/D1VirtualCard.html" class="slightly-smaller">See more</a>
                       </div>
