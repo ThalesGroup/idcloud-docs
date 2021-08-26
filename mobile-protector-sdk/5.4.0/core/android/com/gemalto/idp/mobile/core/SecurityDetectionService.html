@@ -281,8 +281,7 @@ extends java.lang.Object</pre>
 <div class="block">Set HookingDetectionListener to receive callbacks when protected methods in SDK are detected
  as hooked. If the listener is not set, SDK will not protect any methods.
 
- <note>It is required to call this before IdpCore.configure(...) since detection is included
- during the core configuration call.</note>
+ <note>It is required to call this before IdpCore.configure(...).</note>
  <warn>By using this option, it potentially opens one attack point, this class must be properly obfuscated.</warn></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -325,8 +324,7 @@ extends java.lang.Object</pre>
 <div class="block">Set debugger detection to prevent any debugger attach to the application process.
  This function will be ignore if the application is deployed on debug mode.
 
- <note>It is required to call this before IdpCore.configure(...) since detection is included
- during the core configuration call.</note>
+ <note>It is required to call this before IdpCore.configure(...).</note>
  <note>This option applies only for native debugger detection. Java debugger detection is always set ON in the release binary.</note>
  <note>This API only configures native debugger detection, no impact on Java debugger detection</note>
  <warn>By using this option, it potentially opens one attack point, this class must be properly obfuscated.</warn></div>
@@ -347,7 +345,6 @@ extends java.lang.Object</pre>
 <h4>getPotentialOverlayAttackAppInfo</h4>
 <pre>public static&nbsp;java.util.Set&lt;java.lang.String&gt;&nbsp;getPotentialOverlayAttackAppInfo()</pre>
 <div class="block">Detects if there are apps installed(non-system app) which will potentially do overlay attack, and return the app info.
- Applications which have "Enabled Accessibility Service" and "Draw over the apps" permission are treated as potentially do overlay attack app.
 
  <note>
  The complete list of application package names are returned each time the function is invoked. Integrators can maintain a whitelist of applications
