@@ -1,0 +1,145 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/hoang/Documents/repo/eziosdk/dev/idp/dist/ios/default/internal/Release/EzioMobile.framework/Versions/6.0.0/Headers/EMCCasError.h",
+      "line": 29,
+      "symbol": "EMCCasErrorDomain",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/repo/eziosdk/dev/idp/dist/ios/default/internal/Release/EzioMobile.framework/Versions/6.0.0/Headers/EMCasClient.h",
+      "line": 38,
+      "symbol": "EMCasClient.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/repo/eziosdk/dev/idp/dist/ios/default/internal/Release/EzioMobile.framework/Versions/6.0.0/Headers/EMEmvDataObject.h",
+      "line": 33,
+      "symbol": "EMEmvDataObjectType",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/repo/eziosdk/dev/idp/dist/ios/default/internal/Release/EzioMobile.framework/Versions/6.0.0/Headers/EMEmvTransactionInfo.h",
+      "line": 38,
+      "symbol": "EMEmvTipOrConvenienceIndicator",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/repo/eziosdk/dev/idp/dist/ios/default/internal/Release/EzioMobile.framework/Versions/6.0.0/Headers/EMEmvTransactionInfo.h",
+      "line": 64,
+      "symbol": "EMEmvPointOfInitiationMethod",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/repo/eziosdk/dev/idp/dist/ios/default/internal/Release/EzioMobile.framework/Versions/6.0.0/Headers/EMSecurityDetectionService.h",
+      "line": 33,
+      "symbol": "EMHookingDetectionPolicy",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/repo/eziosdk/dev/idp/dist/ios/default/internal/Release/EzioMobile.framework/Versions/6.0.0/Headers/EMTokenCapability.h",
+      "line": 37,
+      "symbol": "EMTokenCapability",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/repo/eziosdk/dev/idp/dist/ios/default/internal/Release/EzioMobile.framework/Versions/6.0.0/Headers/SecureLogConfig.h",
+      "line": 37,
+      "symbol": "SecureLogLevel.SecureLogLevelOff",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/repo/eziosdk/dev/idp/dist/ios/default/internal/Release/EzioMobile.framework/Versions/6.0.0/Headers/SecureLogConfig.h",
+      "line": 38,
+      "symbol": "SecureLogLevel.SecureLogLevelFatal",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/repo/eziosdk/dev/idp/dist/ios/default/internal/Release/EzioMobile.framework/Versions/6.0.0/Headers/SecureLogConfig.h",
+      "line": 39,
+      "symbol": "SecureLogLevel.SecureLogLevelError",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/repo/eziosdk/dev/idp/dist/ios/default/internal/Release/EzioMobile.framework/Versions/6.0.0/Headers/SecureLogConfig.h",
+      "line": 40,
+      "symbol": "SecureLogLevel.SecureLogLevelWarn",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/repo/eziosdk/dev/idp/dist/ios/default/internal/Release/EzioMobile.framework/Versions/6.0.0/Headers/SecureLogConfig.h",
+      "line": 41,
+      "symbol": "SecureLogLevel.SecureLogLevelInfo",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/repo/eziosdk/dev/idp/dist/ios/default/internal/Release/EzioMobile.framework/Versions/6.0.0/Headers/SecureLogConfig.h",
+      "line": 42,
+      "symbol": "SecureLogLevel.SecureLogLevelDebug",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/repo/eziosdk/dev/idp/dist/ios/default/internal/Release/EzioMobile.framework/Versions/6.0.0/Headers/em_auth_pin_enums.h",
+      "line": 33,
+      "symbol": "EMPinType",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/repo/eziosdk/dev/idp/dist/ios/default/internal/Release/EzioMobile.framework/Versions/6.0.0/Headers/em_auth_pin_enums.h",
+      "line": 59,
+      "symbol": "EMPinComplexity",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/repo/eziosdk/dev/idp/dist/ios/default/internal/Release/EzioMobile.framework/Versions/6.0.0/Headers/em_auth_pin_enums.h",
+      "line": 96,
+      "symbol": "EMPinPolicyType",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/repo/eziosdk/dev/idp/dist/ios/default/internal/Release/EzioMobile.framework/Versions/6.0.0/Headers/em_otp_enums.h",
+      "line": 35,
+      "symbol": "EMTokenPolicyType",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/repo/eziosdk/dev/idp/dist/ios/default/internal/Release/EzioMobile.framework/Versions/6.0.0/Headers/em_otp_enums.h",
+      "line": 52,
+      "symbol": "EMKekPrfAlgorithm",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/repo/eziosdk/dev/idp/dist/ios/default/internal/Release/EzioMobile.framework/Versions/6.0.0/Headers/em_otp_enums.h",
+      "line": 74,
+      "symbol": "EMTokenUsage",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/hoang/Documents/repo/eziosdk/dev/idp/dist/ios/default/internal/Release/EzioMobile.framework/Versions/6.0.0/Headers/em_status.h",
+      "line": 39,
+      "symbol": "EMStatus",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/hoang/Documents/repo/eziosdk/dev/idp/ios"
+}
