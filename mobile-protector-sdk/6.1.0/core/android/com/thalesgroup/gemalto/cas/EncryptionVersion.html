@@ -118,7 +118,7 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public enum <span class="typeNameLabel">EncryptionVersion</span>
 extends <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Enum.html?is-external=true" title="class or interface in java.lang">Enum</a>&lt;<a href="../../../../com/thalesgroup/gemalto/cas/EncryptionVersion.html" title="enum in com.thalesgroup.gemalto.cas">EncryptionVersion</a>&gt;</pre>
-<div class="block">CAS Server encryption version</div>
+<div class="block">The encryption version used by CAS Server.</div>
 <dl>
 <dt><span class="simpleTagLabel">Since:</span></dt>
 <dd>6.1.0</dd>
@@ -224,7 +224,7 @@ the order they are declared.</div>
 <li class="blockList">
 <h4>VERSION_2</h4>
 <pre>public static final&nbsp;<a href="../../../../com/thalesgroup/gemalto/cas/EncryptionVersion.html" title="enum in com.thalesgroup.gemalto.cas">EncryptionVersion</a> VERSION_2</pre>
-<div class="block">Encryption version 2.</div>
+<div class="block">Encryption version 2. This version uses more secure OAEP padding, the authentication requests to server must be Encryption version 2 (although Encryption Version 1 is still supported for legacy reasons).</div>
 </li>
 </ul>
 </li>

@@ -123,7 +123,7 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public class <span class="typeNameLabel">CasException</span>
 extends <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></pre>
-<div class="block">Exception that will be thrown when there is a failure during CAS E2EE operation.</div>
+<div class="block">The exception that will be thrown when a failure occurs during the CAS E2EE operation.</div>
 <dl>
 <dt><span class="simpleTagLabel">Since:</span></dt>
 <dd>6.1.0</dd>
@@ -151,7 +151,7 @@ extends <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Exception.h
 <tr class="altColor">
 <td class="colFirst"><code>static class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/thalesgroup/gemalto/cas/CasException.ErrorCode.html" title="enum in com.thalesgroup.gemalto.cas">CasException.ErrorCode</a></span></code>
-<div class="block">Cas specific error codes</div>
+<div class="block">CAS-specific error codes.</div>
 </td>
 </tr>
 </table>
@@ -170,13 +170,13 @@ extends <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Exception.h
 </tr>
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../com/thalesgroup/gemalto/cas/CasException.html#CasException-com.thalesgroup.gemalto.cas.CasException.ErrorCode-">CasException</a></span>(<a href="../../../../com/thalesgroup/gemalto/cas/CasException.ErrorCode.html" title="enum in com.thalesgroup.gemalto.cas">CasException.ErrorCode</a>&nbsp;error)</code>
-<div class="block">Construct the CasExcpetion with Error Code</div>
+<div class="block">Constructs CasException with ErrorCode.</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../com/thalesgroup/gemalto/cas/CasException.html#CasException-com.thalesgroup.gemalto.cas.CasException.ErrorCode-java.lang.Throwable-">CasException</a></span>(<a href="../../../../com/thalesgroup/gemalto/cas/CasException.ErrorCode.html" title="enum in com.thalesgroup.gemalto.cas">CasException.ErrorCode</a>&nbsp;error,
             <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&nbsp;cause)</code>
-<div class="block">Construct the CasExcpetion with Error Code and Throwable</div>
+<div class="block">Constructs CasException with ErrorCode and Throwable object.</div>
 </td>
 </tr>
 </table>
@@ -197,13 +197,13 @@ extends <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Exception.h
 <tr id="i0" class="altColor">
 <td class="colFirst"><code><a href="../../../../com/thalesgroup/gemalto/cas/CasException.ErrorCode.html" title="enum in com.thalesgroup.gemalto.cas">CasException.ErrorCode</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/thalesgroup/gemalto/cas/CasException.html#getError--">getError</a></span>()</code>
-<div class="block">Returns the error why the operation failed.</div>
+<div class="block">Returns the ErrorCode of the failed operation.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/thalesgroup/gemalto/cas/CasException.html#getMessage--">getMessage</a></span>()</code>
-<div class="block">Returns detail message for the error.</div>
+<div class="block">Returns the details of the error.</div>
 </td>
 </tr>
 </table>
@@ -242,10 +242,10 @@ extends <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Exception.h
 <li class="blockList">
 <h4>CasException</h4>
 <pre>public&nbsp;CasException(<a href="../../../../com/thalesgroup/gemalto/cas/CasException.ErrorCode.html" title="enum in com.thalesgroup.gemalto.cas">CasException.ErrorCode</a>&nbsp;error)</pre>
-<div class="block">Construct the CasExcpetion with Error Code</div>
+<div class="block">Constructs CasException with ErrorCode.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>error</code> - Error code</dd>
+<dd><code>error</code> - The error code</dd>
 </dl>
 </li>
 </ul>
@@ -257,10 +257,10 @@ extends <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Exception.h
 <h4>CasException</h4>
 <pre>public&nbsp;CasException(<a href="../../../../com/thalesgroup/gemalto/cas/CasException.ErrorCode.html" title="enum in com.thalesgroup.gemalto.cas">CasException.ErrorCode</a>&nbsp;error,
                     <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&nbsp;cause)</pre>
-<div class="block">Construct the CasExcpetion with Error Code and Throwable</div>
+<div class="block">Constructs CasException with ErrorCode and Throwable object.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>error</code> - Error code</dd>
+<dd><code>error</code> - The error code</dd>
 <dd><code>cause</code> - Throwable object</dd>
 </dl>
 </li>
@@ -281,7 +281,7 @@ extends <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Exception.h
 <h4>getMessage</h4>
 <pre>@NonNull
 public&nbsp;<a href="https://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getMessage()</pre>
-<div class="block">Returns detail message for the error.</div>
+<div class="block">Returns the details of the error.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Throwable.html?is-external=true#getMessage--" title="class or interface in java.lang">getMessage</a></code>&nbsp;in class&nbsp;<code><a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a></code></dd>
@@ -297,7 +297,7 @@ public&nbsp;<a href="https://docs.oracle.com/javase/7/docs/api/java/lang/String.
 <li class="blockList">
 <h4>getError</h4>
 <pre>public&nbsp;<a href="../../../../com/thalesgroup/gemalto/cas/CasException.ErrorCode.html" title="enum in com.thalesgroup.gemalto.cas">CasException.ErrorCode</a>&nbsp;getError()</pre>
-<div class="block">Returns the error why the operation failed.</div>
+<div class="block">Returns the ErrorCode of the failed operation.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd><a href="../../../../com/thalesgroup/gemalto/cas/CasException.ErrorCode.html" title="enum in com.thalesgroup.gemalto.cas"><code>CasException.ErrorCode</code></a>.</dd>

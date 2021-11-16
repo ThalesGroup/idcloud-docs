@@ -109,7 +109,7 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public class <span class="typeNameLabel">CasClient</span>
 extends <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
-<div class="block">A class that constructs the CasClient to communicate with the CAS Server. The class helps to implement E2EE password encryption, supports creating encrypted payload for users when performs operations such as setting or changing the user password or authenticating with the user password.</div>
+<div class="block">A class that constructs CasClient to communicate with CAS Server. This class helps to implement the E2EE password encryption, supports the creation of encrypted payload for the users when they perform operations such as setting or changing the user password, or authenticating with the user password.</div>
 <dl>
 <dt><span class="simpleTagLabel">Since:</span></dt>
 <dd>6.1.0</dd>
@@ -162,10 +162,11 @@ extends <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/thalesgroup/gemalto/cas/CasClient.html#changeUserPassword-java.lang.String-byte:A-byte:A-byte:A-">changeUserPassword</a></span>(<a href="https://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;userName,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/thalesgroup/gemalto/cas/CasClient.html#changeUserPassword-java.lang.String-byte:A-byte:A-byte:A-byte:A-">changeUserPassword</a></span>(<a href="https://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;userName,
                   byte[]&nbsp;oldPassword,
                   byte[]&nbsp;newPassword,
-                  byte[]&nbsp;salt)</code>
+                  byte[]&nbsp;oldPasswordSalt,
+                  byte[]&nbsp;newPasswordSalt)</code>
 <div class="block">Generates the encrypted data to change the user's password.</div>
 </td>
 </tr>
@@ -210,8 +211,8 @@ extends <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html
 <div class="block">Initialize an instance of the CasClient.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>encryptionVersion</code> - The CAS encryption version to use according to the CAS specifications.</dd>
-<dd><code>publicKey</code> - The RSA public key provided by the CAS Server to be used for encryption.
+<dd><code>encryptionVersion</code> - The CAS encryption version that is based on the CAS specifications.</dd>
+<dd><code>publicKey</code> - The RSA public key to be used for encryption. This key is provided by the CAS Server.
 
  Note: Multiple instances can be constructed.</dd>
 </dl>
@@ -236,16 +237,16 @@ extends <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html
                               byte[]&nbsp;salt)
                        throws <a href="../../../../com/thalesgroup/gemalto/cas/CasException.html" title="class in com.thalesgroup.gemalto.cas">CasException</a></pre>
 <div class="block">Generates the encrypted data to set the user's password. The password provided will be hashed and then encrypted with the RSA public key.
- Prerequisites on CAS server: The user's status must be active and must not have a password already set. The user must be linked to a token that is in the active state.</div>
+ Prerequisites on CAS server: The user's status must be active and the user must not have an existing password set. The user must be linked to a token that is in the active state.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>userName</code> - user ID</dd>
-<dd><code>password</code> - The password to set as a UTF-8 bytes data representation.</dd>
-<dd><code>salt</code> - A salt to use as a UTF-8 bytes data representation.</dd>
+<dd><code>userName</code> - User ID.</dd>
+<dd><code>password</code> - The password to be set in UTF-8 bytes format.</dd>
+<dd><code>salt</code> - A salt value that is encoded in  UTF-8 format.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>encryptedPassword</dd>
+<dd>The encrypted password.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="../../../../com/thalesgroup/gemalto/cas/CasException.html" title="class in com.thalesgroup.gemalto.cas">CasException</a></code> - An error of type CasException</dd>
+<dd><code><a href="../../../../com/thalesgroup/gemalto/cas/CasException.html" title="class in com.thalesgroup.gemalto.cas">CasException</a></code> - An error of type CasException.</dd>
 </dl>
 </li>
 </ul>
@@ -260,20 +261,20 @@ extends <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html
                            byte[]&nbsp;salt)
                     throws <a href="../../../../com/thalesgroup/gemalto/cas/CasException.html" title="class in com.thalesgroup.gemalto.cas">CasException</a></pre>
 <div class="block">Generates the encrypted data to authenticate the current user. The password provided will be hashed and then encrypted with the RSA public key.
- Prerequisites on CAS server: The user's status must be active and the user must already have a password set.</div>
+ Prerequisites on CAS server: The user's status must be active and the user has already set a password.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>userName</code> - userId</dd>
-<dd><code>password</code> - The password to set as a UTF-8 bytes data representation.</dd>
-<dd><code>salt</code> - A salt to use as a UTF-8 bytes data representation.</dd>
+<dd><code>userName</code> - User ID.</dd>
+<dd><code>password</code> - The user's password that is encoded in UTF-8 format.</dd>
+<dd><code>salt</code> - A salt value that is encoded in  UTF-8 format.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>encryptedPassword</dd>
+<dd>The encrypted password.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="../../../../com/thalesgroup/gemalto/cas/CasException.html" title="class in com.thalesgroup.gemalto.cas">CasException</a></code> - An error of type CasException</dd>
+<dd><code><a href="../../../../com/thalesgroup/gemalto/cas/CasException.html" title="class in com.thalesgroup.gemalto.cas">CasException</a></code> - An error of type CasException.</dd>
 </dl>
 </li>
 </ul>
-<a name="changeUserPassword-java.lang.String-byte:A-byte:A-byte:A-">
+<a name="changeUserPassword-java.lang.String-byte:A-byte:A-byte:A-byte:A-">
 <!--   -->
 </a>
 <ul class="blockListLast">
@@ -282,20 +283,22 @@ extends <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html
 <pre>public&nbsp;<a href="https://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;changeUserPassword(<a href="https://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;userName,
                                  byte[]&nbsp;oldPassword,
                                  byte[]&nbsp;newPassword,
-                                 byte[]&nbsp;salt)
+                                 byte[]&nbsp;oldPasswordSalt,
+                                 byte[]&nbsp;newPasswordSalt)
                           throws <a href="../../../../com/thalesgroup/gemalto/cas/CasException.html" title="class in com.thalesgroup.gemalto.cas">CasException</a></pre>
 <div class="block">Generates the encrypted data to change the user's password. The password provided will be hashed and then encrypted with the RSA public key.
- Prerequisites on CAS server: The user's status must be active and the user must already have a password set.*</div>
+ Prerequisites on CAS server: The user's status must be active and the user has already set a password.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>userName</code> - userId</dd>
-<dd><code>oldPassword</code> - The user's existing password as a UTF-8 bytes data representation.</dd>
-<dd><code>newPassword</code> - The password to set as a UTF-8 bytes data representation.</dd>
-<dd><code>salt</code> - A salt to use as a UTF-8 bytes data representation.</dd>
+<dd><code>userName</code> - User ID.</dd>
+<dd><code>oldPassword</code> - The user's existing password that is encoded in UTF-8 format.</dd>
+<dd><code>newPassword</code> - The new password that is encoded in UTF-8 format.</dd>
+<dd><code>oldPasswordSalt</code> - The existing salt value that is encoded in  UTF-8 format.</dd>
+<dd><code>newPasswordSalt</code> - The new salt value that is encoded in  UTF-8 format.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>encryptedPassword</dd>
+<dd>The encrypted password.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="../../../../com/thalesgroup/gemalto/cas/CasException.html" title="class in com.thalesgroup.gemalto.cas">CasException</a></code> - An error of type CasException</dd>
+<dd><code><a href="../../../../com/thalesgroup/gemalto/cas/CasException.html" title="class in com.thalesgroup.gemalto.cas">CasException</a></code> - An error of type CasException.</dd>
 </dl>
 </li>
 </ul>
