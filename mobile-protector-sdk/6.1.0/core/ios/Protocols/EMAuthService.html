@@ -24,7 +24,7 @@
     <a title="EMAuthService Protocol Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">Protector OATH 6.0.0 Docs</a></p>
+        <p><a href="../index.html">Protector OATH 6.1.0 Docs</a></p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -1447,11 +1447,6 @@
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="nf">isSupported</span><span class="p">:(</span><span class="n">NSError</span> <span class="o">**</span><span class="p">)</span><span class="nv">error</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">isSupported</span><span class="p">()</span> <span class="k">throws</span></code></pre>
-
-                        </div>
                       </div>
                       <div>
                         <h4>Parameters</h4>
@@ -1521,11 +1516,6 @@
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="nf">isConfigured</span><span class="p">:(</span><span class="n">NSError</span> <span class="o">**</span><span class="p">)</span><span class="nv">error</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">isConfigured</span><span class="p">()</span> <span class="k">throws</span></code></pre>
-
-                        </div>
                       </div>
                       <div>
                         <h4>Parameters</h4>
@@ -1545,6 +1535,110 @@
                             </tr>
                           </tbody>
                         </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>&lsquo;YES&rsquo; if the platform is correctly configured to support the authentication mode; &lsquo;NO&rsquo; otherwise.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)EMAuthService(im)isSupported"></a>
+                    <a name="//apple_ref/objc/Method/-isSupported" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)EMAuthService(im)isSupported">-isSupported</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Indicates if the authentication mode is supported by the hardware.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>Use this API instead of isSupported:  if you are using Swift in your code</p>
+
+</div><div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    <p>6.1.0</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="n">isSupported</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">isSupported</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>&lsquo;YES&rsquo; if authentication is supported, &lsquo;NO&rsquo; otherwise.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)EMAuthService(im)isConfigured"></a>
+                    <a name="//apple_ref/objc/Method/-isConfigured" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)EMAuthService(im)isConfigured">-isConfigured</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Indicates if the authentication mode is configured and ready for use.  For example, a user may need to configure the OS to use a particular feature, such as TouchID, Face ID, before this authentication mode can be used.</p>
+
+<p>TouchID authentication mode is configured only if the following conditions met:</p>
+
+<ol>
+<li>At least one touch ID user is registered into the system</li>
+<li>Touch ID service is available. If the touch ID is temporarily locked out because there were too many failed Touch ID attempts, the function will return false and an error.</li>
+</ol>
+
+<p>Face ID authentication mode is configured only if the following conditions met:</p>
+
+<ol>
+<li>Face ID authentication service is initialized, and</li>
+<li>One user is enrolled.</li>
+</ol>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>Use this API  instead of isConfigured: if you are using Swift in your code</p>
+
+</div><div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    <p>6.1.0</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="n">isConfigured</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">isConfigured</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
                       </div>
                       <div>
                         <h4>Return Value</h4>

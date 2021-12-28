@@ -24,7 +24,7 @@
     <a title="EMCasClient Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">Protector OATH 6.0.0 Docs</a></p>
+        <p><a href="../index.html">Protector OATH 6.1.0 Docs</a></p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -1367,8 +1367,8 @@
 
                 </div>
               </div>
-            <p>A class that constructs the EMCasClient to communicate with the CAS Server.
-The class helps to implement E2EE password encryption, supports creating encrypted payload for users when performs operations such as setting or changing the user password or authenticating with the user password.</p>
+            <p>A class that constructs CasClient to communicate with CAS Server.
+This class helps to implement the E2EE password encryption, supports the creation of encrypted payload for the users when they perform operations such as setting or changing the user password, or authenticating with the user password.</p>
 <div class="aside aside-since">
     <p class="aside-title">Since</p>
     6.1.0
@@ -1423,12 +1423,8 @@ The class helps to implement E2EE password encryption, supports creating encrypt
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Initialize an instance of the EMCasClient.</p>
-<div class="aside aside-note">
-    <p class="aside-title">Note</p>
-    Multiple instances can be constructed.
-
-</div><div class="aside aside-since">
+                        <p>Initialize an instance of the CasClient.</p>
+<div class="aside aside-since">
     <p class="aside-title">Since</p>
     6.1.0
 
@@ -1462,7 +1458,7 @@ The class helps to implement E2EE password encryption, supports creating encrypt
                               </td>
                               <td>
                                 <div>
-                                  <p>The CAS encryption version to use according to the CAS specifications.</p>
+                                  <p>The CAS encryption version that is based on the CAS specifications.</p>
                                 </div>
                               </td>
                             </tr>
@@ -1474,7 +1470,8 @@ The class helps to implement E2EE password encryption, supports creating encrypt
                               </td>
                               <td>
                                 <div>
-                                  <p>The RSA public key provided by the CAS Server to be used for encryption.</p>
+                                  <p>The RSA public key to be used for encryption. This key is provided by the CAS Server.
+@Note: Multiple instances can be constructed.</p>
                                 </div>
                               </td>
                             </tr>
@@ -1497,8 +1494,8 @@ The class helps to implement E2EE password encryption, supports creating encrypt
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Generates the encrypted data to set the user&rsquo;s password..
-Prerequisites: The user’s status must be active and must not have a password already set. The user must be linked to a token that is in the active state.</p>
+                        <p>Generates the encrypted data to set the user&rsquo;s password. The password provided will be hashed and then encrypted with the RSA public key.
+Prerequisites on CAS server: The user&rsquo;s status must be active and the user must not have an existing password set. The user must be linked to a token that is in the active state.</p>
 <div class="aside aside-since">
     <p class="aside-title">Since</p>
     6.1.0
@@ -1546,7 +1543,7 @@ Prerequisites: The user’s status must be active and must not have a password a
                               </td>
                               <td>
                                 <div>
-                                  <p>The password to set as a UTF-8 bytes data representation.</p>
+                                  <p>The password to be set that is encoded in UTF-8 format.</p>
                                 </div>
                               </td>
                             </tr>
@@ -1558,7 +1555,7 @@ Prerequisites: The user’s status must be active and must not have a password a
                               </td>
                               <td>
                                 <div>
-                                  <p>A salt to use as a UTF-8 bytes data representation.</p>
+                                  <p>A salt value that is encoded in UTF-8 format.</p>
                                 </div>
                               </td>
                             </tr>
@@ -1593,8 +1590,8 @@ Prerequisites: The user’s status must be active and must not have a password a
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Generates the encrypted data to authenticate the current user.
-Prerequisites: The user’s status must be active the user must already have a password set.</p>
+                        <p>Generates the encrypted data to authenticate the current user. The password provided will be hashed and then encrypted with the RSA public key.
+Prerequisites on CAS server: The user’s status must be active and the user must already have a password set.</p>
 <div class="aside aside-since">
     <p class="aside-title">Since</p>
     6.1.0
@@ -1642,7 +1639,7 @@ Prerequisites: The user’s status must be active the user must already have a p
                               </td>
                               <td>
                                 <div>
-                                  <p>The user&rsquo;s password as a UTF-8 bytes data representation.</p>
+                                  <p>The user&rsquo;s password that is encoded in UTF-8 format.</p>
                                 </div>
                               </td>
                             </tr>
@@ -1654,7 +1651,7 @@ Prerequisites: The user’s status must be active the user must already have a p
                               </td>
                               <td>
                                 <div>
-                                  <p>A salt to use as a UTF-8 bytes data representation.</p>
+                                  <p>A salt value that is encoded in UTF-8 format.</p>
                                 </div>
                               </td>
                             </tr>
@@ -1679,9 +1676,9 @@ Prerequisites: The user’s status must be active the user must already have a p
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)EMCasClient(im)changePassword:password:password:salt:error:"></a>
-                    <a name="//apple_ref/objc/Method/-changePassword:password:password:salt:error:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)EMCasClient(im)changePassword:password:password:salt:error:">-changePassword:<wbr>password:<wbr>password:<wbr>salt:<wbr>error:<wbr></a>
+                    <a name="/c:objc(cs)EMCasClient(im)changePassword:password:password:oldPasswordSalt:newPasswordSalt:error:"></a>
+                    <a name="//apple_ref/objc/Method/-changePassword:password:password:oldPasswordSalt:newPasswordSalt:error:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EMCasClient(im)changePassword:password:password:oldPasswordSalt:newPasswordSalt:error:">-changePassword:<wbr>password:<wbr>password:<wbr>oldPasswordSalt:<wbr>newPasswordSalt:<wbr>error:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1689,9 +1686,13 @@ Prerequisites: The user’s status must be active the user must already have a p
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Generates the encrypted data to change the user&rsquo;s password.
-Prerequisites: The user’s status must be active the user must already have a password set.</p>
-<div class="aside aside-since">
+                        <p>Generates the encrypted data to change the user&rsquo;s password. The password provided will be hashed and then encrypted with the RSA public key.
+Prerequisites on CAS server: The user’s status must be active and the user must already have a password set.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    The salt for old password and new password can be the same.
+
+</div><div class="aside aside-since">
     <p class="aside-title">Since</p>
     6.1.0
 
@@ -1705,13 +1706,14 @@ Prerequisites: The user’s status must be active the user must already have a p
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nf">changePassword</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">userId</span>
                              <span class="nf">password</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSData</span> <span class="o">*</span><span class="p">)</span><span class="nv">oldPassword</span>
                              <span class="nf">password</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSData</span> <span class="o">*</span><span class="p">)</span><span class="nv">newPassword</span>
-                                 <span class="nf">salt</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSData</span> <span class="o">*</span><span class="p">)</span><span class="nv">salt</span>
+                      <span class="nf">oldPasswordSalt</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSData</span> <span class="o">*</span><span class="p">)</span><span class="nv">oldPasswordSalt</span>
+                      <span class="nf">newPasswordSalt</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSData</span> <span class="o">*</span><span class="p">)</span><span class="nv">newPasswordSalt</span>
                                 <span class="nf">error</span><span class="p">:(</span><span class="n">NSError</span> <span class="o">*</span><span class="n">_Nullable</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">error</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">changePassword</span><span class="p">(</span><span class="n">_</span> <span class="nv">userId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">password</span> <span class="nv">oldPassword</span><span class="p">:</span> <span class="kt">Data</span><span class="p">,</span> <span class="n">password</span> <span class="nv">newPassword</span><span class="p">:</span> <span class="kt">Data</span><span class="p">,</span> <span class="nv">salt</span><span class="p">:</span> <span class="kt">Data</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">changePassword</span><span class="p">(</span><span class="n">_</span> <span class="nv">userId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">password</span> <span class="nv">oldPassword</span><span class="p">:</span> <span class="kt">Data</span><span class="p">,</span> <span class="n">password</span> <span class="nv">newPassword</span><span class="p">:</span> <span class="kt">Data</span><span class="p">,</span> <span class="nv">oldPasswordSalt</span><span class="p">:</span> <span class="kt">Data</span><span class="p">,</span> <span class="nv">newPasswordSalt</span><span class="p">:</span> <span class="kt">Data</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
 
                         </div>
                       </div>
@@ -1739,7 +1741,7 @@ Prerequisites: The user’s status must be active the user must already have a p
                               </td>
                               <td>
                                 <div>
-                                  <p>The user&rsquo;s existing password as a UTF-8 bytes data representation.</p>
+                                  <p>The user&rsquo;s existing password that is encoded in UTF-8 format.</p>
                                 </div>
                               </td>
                             </tr>
@@ -1751,19 +1753,31 @@ Prerequisites: The user’s status must be active the user must already have a p
                               </td>
                               <td>
                                 <div>
-                                  <p>The password to set as a UTF-8 bytes data representation.</p>
+                                  <p>The new password that is encoded in UTF-8 format.</p>
                                 </div>
                               </td>
                             </tr>
                             <tr>
                               <td>
                                 <code>
-                                <em>salt</em>
+                                <em>oldPasswordSalt</em>
                                 </code>
                               </td>
                               <td>
                                 <div>
-                                  <p>A salt to use as a UTF-8 bytes data representation.</p>
+                                  <p>A salt value that is encoded in UTF-8 format.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>newPasswordSalt</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A salt value that is encoded in UTF-8 format.</p>
                                 </div>
                               </td>
                             </tr>
