@@ -14,13 +14,13 @@
     <a title="SecureLogConfigComponents Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">IdCloud FIDO SDK</a></p>
+        <p><a href="../index.html"></a></p>
       </div>
     </header>
     <div class="content-wrapper">
       <p id="breadcrumbs">
         <a href="../index.html">idcloudclient Reference</a>
-        <img id="carat" src="../img/carat.png" />
+        <img id="carat" src="../img/carat.png" alt=""/>
         SecureLogConfigComponents Class Reference
       </p>
     </div>
@@ -68,6 +68,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/IDCIdCloudClient.html">IDCIdCloudClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IDCPinConfig.html">IDCPinConfig</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/IDCProcessNotificationRequest.html">IDCProcessNotificationRequest</a>
@@ -146,6 +149,9 @@
                 <a href="../Enums/IDCError.html">IDCError</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Enums/IDCPinRule.html">IDCPinRule</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Enums/IDCProgress.html">IDCProgress</a>
               </li>
               <li class="nav-group-task">
@@ -195,7 +201,13 @@
             <h1>SecureLogConfigComponents</h1>
               <div class="declaration">
                 <div class="language">
+                  <p class="aside-title">Objective-C</p>
                   <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">SecureLogConfigComponents</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                </div>
+                <div class="language">
+                  <p class="aside-title">Swift</p>
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">SecureLogConfigComponents</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
 
                 </div>
               </div>
@@ -230,7 +242,7 @@ Throw NSInvalidArgumentException if the length is more than 10 characters</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">fileID</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">fileID</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -264,7 +276,7 @@ Throw NSInvalidArgumentException if publicKeyModulus is nil or the length is mor
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">)</span> <span class="n">NSData</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">publicKeyModulus</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">)</span> <span class="n">NSData</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">publicKeyModulus</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -298,7 +310,7 @@ Throw NSInvalidArgumentException if publicKeyExponent is nil or the length is mo
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">)</span> <span class="n">NSData</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">publicKeyExponent</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">)</span> <span class="n">NSData</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">publicKeyExponent</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -333,8 +345,7 @@ Throw NSInvalidArgumentException if rollingFileMaxCount is equals to 0 or more t
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">assign</span><span class="p">,</span> <span class="n">unsafe_unretained</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">)</span>
-    <span class="n">NSUInteger</span> <span class="n">rollingFileMaxCount</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSUInteger</span> <span class="n">rollingFileMaxCount</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -369,8 +380,7 @@ Throw NSInvalidArgumentException if rollingSizeInKB = 0</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">assign</span><span class="p">,</span> <span class="n">unsafe_unretained</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">)</span>
-    <span class="n">NSUInteger</span> <span class="n">rollingSizeInKB</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSUInteger</span> <span class="n">rollingSizeInKB</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -405,7 +415,7 @@ Throw NSInvalidArgumentException if the directory is not existed</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">)</span> <span class="n">NSURL</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">directory</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">)</span> <span class="n">NSURL</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">directory</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -440,8 +450,7 @@ Throw NSInvalidArgumentException if the level is not from SecureLogLevel</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">assign</span><span class="p">,</span> <span class="n">unsafe_unretained</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">)</span>
-    <span class="n"><a href="../Enums/SecureLogLevel.html">SecureLogLevel</a></span> <span class="n">logLevel</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Enums/SecureLogLevel.html">SecureLogLevel</a></span> <span class="n">logLevel</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -459,10 +468,9 @@ Throw NSInvalidArgumentException if the level is not from SecureLogLevel</p>
         </section>
         <section id="footer">
           <p>Copyright © 2022 Thales Group. All rights reserved.</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.11.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>
     </div>
   </body>
-</div>
 </html>

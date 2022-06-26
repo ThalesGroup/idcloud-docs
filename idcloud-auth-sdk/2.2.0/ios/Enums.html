@@ -14,13 +14,13 @@
     <a title="Enumerations  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">IdCloud FIDO SDK</a></p>
+        <p><a href="index.html"></a></p>
       </div>
     </header>
     <div class="content-wrapper">
       <p id="breadcrumbs">
         <a href="index.html">idcloudclient Reference</a>
-        <img id="carat" src="img/carat.png" />
+        <img id="carat" src="img/carat.png" alt=""/>
         Enumerations  Reference
       </p>
     </div>
@@ -68,6 +68,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="Classes/IDCIdCloudClient.html">IDCIdCloudClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/IDCPinConfig.html">IDCPinConfig</a>
               </li>
               <li class="nav-group-task">
                 <a href="Classes/IDCProcessNotificationRequest.html">IDCProcessNotificationRequest</a>
@@ -146,6 +149,9 @@
                 <a href="Enums/IDCError.html">IDCError</a>
               </li>
               <li class="nav-group-task">
+                <a href="Enums/IDCPinRule.html">IDCPinRule</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Enums/IDCProgress.html">IDCProgress</a>
               </li>
               <li class="nav-group-task">
@@ -222,17 +228,13 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">IDCAuthenticatorType</span> <span class="p">{}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">IDCAuthenticatorType</span> <span class="o">:</span> <span class="kt">short</span> <span class="p">{}</span></code></pre>
 
                         </div>
                       </div>
                     </section>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul>
                 <li class="item">
                   <div>
                     <code>
@@ -256,17 +258,48 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">IDCError</span> <span class="p">{}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">IDCError</span> <span class="o">:</span> <span class="n">NSInteger</span> <span class="p">{}</span></code></pre>
 
                         </div>
                       </div>
                     </section>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@IDCPinRule"></a>
+                    <a name="//apple_ref/objc/Enum/IDCPinRule" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@IDCPinRule">IDCPinRule</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Supported PIN rule options.</p>
+
+<p>@since 2.2.0</p>
+
+                        <a href="Enums/IDCPinRule.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">IDCPinRule</span> <span class="o">:</span> <span class="n">NSInteger</span> <span class="p">{}</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">IDCPinRule</span> <span class="p">:</span> <span class="kt">OptionSet</span><span class="p">,</span> <span class="kd">@unchecked</span> <span class="kt">Sendable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
                 <li class="item">
                   <div>
                     <code>
@@ -290,17 +323,13 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">IDCProgress</span> <span class="p">{}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">IDCProgress</span> <span class="o">:</span> <span class="kt">short</span> <span class="p">{}</span></code></pre>
 
                         </div>
                       </div>
                     </section>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul>
                 <li class="item">
                   <div>
                     <code>
@@ -322,22 +351,18 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">SecureLogLevel</span> <span class="p">{}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">SecureLogLevel</span> <span class="o">:</span> <span class="n">NSInteger</span> <span class="p">{}</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">SecureLogLevel</span> <span class="p">:</span> <span class="kt">Int</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">SecureLogLevel</span> <span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="kd">@unchecked</span> <span class="kt">Sendable</span></code></pre>
 
                         </div>
                       </div>
                     </section>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul>
                 <li class="item">
                   <div>
                     <code>
@@ -361,17 +386,13 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">IDCSecurePinPadKey</span> <span class="p">{}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">IDCSecurePinPadKey</span> <span class="o">:</span> <span class="kt">short</span> <span class="p">{}</span></code></pre>
 
                         </div>
                       </div>
                     </section>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul>
                 <li class="item">
                   <div>
                     <code>
@@ -395,7 +416,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">IDCSecurePinPadUsage</span> <span class="p">{}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">IDCSecurePinPadUsage</span> <span class="o">:</span> <span class="kt">short</span> <span class="p">{}</span></code></pre>
 
                         </div>
                       </div>
@@ -408,10 +429,9 @@
         </section>
         <section id="footer">
           <p>Copyright © 2022 Thales Group. All rights reserved.</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.11.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>
     </div>
   </body>
-</div>
 </html>
