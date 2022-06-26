@@ -1,0 +1,1290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>IDCIdCloudClient Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Class/IDCIdCloudClient" class="dashAnchor"></a>
+    <a title="IDCIdCloudClient Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">IdCloud FIDO SDK</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">idcloudclient Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        IDCIdCloudClient Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/IDCAddAuthenticatorRequest.html">IDCAddAuthenticatorRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)IDCAddAuthenticatorResponse">IDCAddAuthenticatorResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IDCAuthenticator.html">IDCAuthenticator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IDCAuthenticatorDescriptor.html">IDCAuthenticatorDescriptor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IDCChangePinRequest.html">IDCChangePinRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)IDCChangePinResponse">IDCChangePinResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IDCEnrollRequest.html">IDCEnrollRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)IDCEnrollResponse">IDCEnrollResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IDCEnrollmentToken.html">IDCEnrollmentToken</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IDCEnrollmentTokenFactory.html">IDCEnrollmentTokenFactory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IDCFetchRequest.html">IDCFetchRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)IDCFetchResponse">IDCFetchResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IDCIdCloudClient.html">IDCIdCloudClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IDCProcessNotificationRequest.html">IDCProcessNotificationRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)IDCProcessNotificationResponse">IDCProcessNotificationResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IDCRefreshPushTokenRequest.html">IDCRefreshPushTokenRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)IDCRefreshPushTokenResponse">IDCRefreshPushTokenResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IDCRemoveAuthenticatorRequest.html">IDCRemoveAuthenticatorRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)IDCRemoveAuthenticatorResponse">IDCRemoveAuthenticatorResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IDCScenarioContext.html">IDCScenarioContext</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IDCSecurePinPad.html">IDCSecurePinPad</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IDCTransactionContext.html">IDCTransactionContext</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IDCUiDelegates.html">IDCUiDelegates</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IDCUnenrollRequest.html">IDCUnenrollRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)IDCUnenrollResponse">IDCUnenrollResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SecureLogConfig.html">SecureLogConfig</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SecureLogConfigComponents.html">SecureLogConfigComponents</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:IDCError.h@IDCErrorDomain">IDCErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:IDCScenarioContext.h@IDCScenarioContextKeyBiometryType">IDCScenarioContextKeyBiometryType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:IDCScenarioContext.h@IDCScenarioContextKeyMessage">IDCScenarioContextKeyMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:IDCRasp.h@IDC_RASP_MODE_CRASH">IDC_RASP_MODE_CRASH</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:IDCRasp.h@IDC_RASP_MODE_DISABLE">IDC_RASP_MODE_DISABLE</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:IDCRasp.h@IDC_RASP_TYPE_JAILBREAK">IDC_RASP_TYPE_JAILBREAK</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/IDCAuthenticatorType.html">IDCAuthenticatorType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/IDCError.html">IDCError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/IDCProgress.html">IDCProgress</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/IDCSecurePinPadKey.html">IDCSecurePinPadKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/IDCSecurePinPadUsage.html">IDCSecurePinPadUsage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SecureLogLevel.html">SecureLogLevel</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/IDCBiometricUiDelegate.html">IDCBiometricUiDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IDCCommonUiDelegate.html">IDCCommonUiDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IDCSecurePinPadDelegate.html">IDCSecurePinPadDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IDCSecurePinPadUiDelegate.html">IDCSecurePinPadUiDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SecureLog.html">SecureLog</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/c:@F@IDCRaspConfigure">IDCRaspConfigure</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>IDCIdCloudClient</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">IDCIdCloudClient</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>A class that creates the request for all of IdCloud client operations.</p>
+
+<p>@since 1.0.0</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)IDCIdCloudClient(cm)sdkVersion"></a>
+                    <a name="//apple_ref/objc/Method/+sdkVersion" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)IDCIdCloudClient(cm)sdkVersion">+sdkVersion</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the IdCloud FIDO SDK Version</p>
+
+<p>@since 2.1.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">sdkVersion</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">sdkVersion</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)IDCIdCloudClient(im)init"></a>
+                    <a name="//apple_ref/objc/Method/-init" class="dashAnchor"></a>
+                    <a class="token discouraged" href="#/c:objc(cs)IDCIdCloudClient(im)init">-init</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="aside aside-unavailable">
+                        <p class="aside-title">Unavailable</p>
+                        
+                      </div>
+                      <div class="abstract">
+                        <p>Unavailable. Developer should use <code><a href="../Classes/IDCIdCloudClient.html#/c:objc(cs)IDCIdCloudClient(im)initWithUrl:">-[IDCIdCloudClient initWithUrl:]</a></code> to
+initialize the object as URL is a mandatory parameter.</p>
+
+<p>@since 1.0.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="n">init</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)IDCIdCloudClient(im)initWithUrl:"></a>
+                    <a name="//apple_ref/objc/Method/-initWithUrl:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)IDCIdCloudClient(im)initWithUrl:">-initWithUrl:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns an IdCloud client object initialized with IdCloud server URL.</p>
+
+<p>@since 1.0.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithUrl</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">url</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>url</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>IdCloud server URL. The URL should contain scheme(https://), domain and
+path.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An <code>IDCIdCloudClient</code> object initialized with <code>url</code> as IdCloud server URL.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)IDCIdCloudClient(im)createEnrollRequestWithToken:uiDelegates:progress:completion:"></a>
+                    <a name="//apple_ref/objc/Method/-createEnrollRequestWithToken:uiDelegates:progress:completion:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)IDCIdCloudClient(im)createEnrollRequestWithToken:uiDelegates:progress:completion:">-createEnrollRequestWithToken:uiDelegates:progress:completion:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates an enrollment request. </p>
+
+<p>The request&rsquo;s execution is triggered separately through <code><a href="../Classes/IDCEnrollRequest.html#/c:objc(cs)IDCEnrollRequest(im)execute">-[IDCEnrollRequest execute]</a></code>.</p>
+
+<p>@since 1.0.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/IDCEnrollRequest.html">IDCEnrollRequest</a></span> <span class="o">*</span><span class="p">)</span>
+    <span class="nf">createEnrollRequestWithToken</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/IDCEnrollmentToken.html">IDCEnrollmentToken</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">enrollmentToken</span>
+                     <span class="nf">uiDelegates</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/IDCUiDelegates.html">IDCUiDelegates</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">uiDelegates</span>
+                        <span class="nf">progress</span><span class="p">:(</span><span class="n">nonnull</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n"><a href="../Enums/IDCProgress.html">IDCProgress</a></span><span class="p">))</span><span class="nv">progressBlock</span>
+                      <span class="nf">completion</span><span class="p">:</span>
+                          <span class="p">(</span><span class="n">nonnull</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n"><a href="../Classes.html#/c:objc(cs)IDCEnrollResponse">IDCEnrollResponse</a></span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">,</span>
+                                            <span class="n">NSError</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">))</span><span class="n">completionBlock</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">createEnrollRequest</span><span class="p">(</span><span class="n">with</span> <span class="nv">enrollmentToken</span><span class="p">:</span> <span class="kt"><a href="../Classes/IDCEnrollmentToken.html">IDCEnrollmentToken</a></span><span class="p">,</span> <span class="nv">uiDelegates</span><span class="p">:</span> <span class="kt"><a href="../Classes/IDCUiDelegates.html">IDCUiDelegates</a></span><span class="p">,</span> <span class="n">progress</span> <span class="nv">progressBlock</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Enums/IDCProgress.html">IDCProgress</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">,</span> <span class="n">completion</span> <span class="nv">completionBlock</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Classes.html#/c:objc(cs)IDCEnrollResponse">IDCEnrollResponse</a></span><span class="p">?,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/IDCEnrollRequest.html">IDCEnrollRequest</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>enrollmentToken</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>contains token to initiate enrollment with 
+the IdCloud server.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>uiDelegates</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>group of ui delegates allowing developers to show the UI 
+during PIN or biometric authentication. </p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>progressBlock</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The handler to report progress. This handler is
+executed on the main thread.
+It takes the following parameter:</p>
+
+<ul>
+<li>progress - The current progress. See <code><a href="../Enums/IDCProgress.html">IDCProgress</a></code> for progress types.</li>
+</ul>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completionBlock</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The completion handler to call when the execution is complete. 
+This handler is executed on the main thread.
+It takes the following parameters:</p>
+
+<ul>
+<li>response - Success when it is not nil.</li>
+<li>error - Error details. See <code><a href="../Enums/IDCError.html">IDCError</a></code> for error types.</li>
+</ul>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An <code><a href="../Classes/IDCEnrollRequest.html">IDCEnrollRequest</a></code> instance.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)IDCIdCloudClient(im)createFetchRequestWithUiDelegates:progress:completion:"></a>
+                    <a name="//apple_ref/objc/Method/-createFetchRequestWithUiDelegates:progress:completion:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)IDCIdCloudClient(im)createFetchRequestWithUiDelegates:progress:completion:">-createFetchRequestWithUiDelegates:progress:completion:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a fetch request.</p>
+
+<p>The request&rsquo;s execution is triggered separately through <code><a href="../Classes/IDCFetchRequest.html#/c:objc(cs)IDCFetchRequest(im)execute">-[IDCFetchRequest execute]</a></code>.</p>
+
+<p>@since 1.0.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/IDCFetchRequest.html">IDCFetchRequest</a></span> <span class="o">*</span><span class="p">)</span>
+    <span class="nf">createFetchRequestWithUiDelegates</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/IDCUiDelegates.html">IDCUiDelegates</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">uiDelegates</span>
+                             <span class="nf">progress</span><span class="p">:</span>
+                                 <span class="p">(</span><span class="n">nonnull</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n"><a href="../Enums/IDCProgress.html">IDCProgress</a></span><span class="p">))</span><span class="nv">progressBlock</span>
+                           <span class="nf">completion</span><span class="p">:(</span><span class="n">nonnull</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span>
+                                          <span class="n"><a href="../Classes.html#/c:objc(cs)IDCFetchResponse">IDCFetchResponse</a></span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">,</span>
+                                          <span class="n">NSError</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">))</span><span class="n">completionBlock</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">createFetchRequest</span><span class="p">(</span><span class="n">with</span> <span class="nv">uiDelegates</span><span class="p">:</span> <span class="kt"><a href="../Classes/IDCUiDelegates.html">IDCUiDelegates</a></span><span class="p">,</span> <span class="n">progress</span> <span class="nv">progressBlock</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Enums/IDCProgress.html">IDCProgress</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">,</span> <span class="n">completion</span> <span class="nv">completionBlock</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Classes.html#/c:objc(cs)IDCFetchResponse">IDCFetchResponse</a></span><span class="p">?,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/IDCFetchRequest.html">IDCFetchRequest</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>uiDelegates</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>group of ui delegates allowing developers to show the UI during PIN or 
+biometric authentication. </p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>progressBlock</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The handler to report progress. This handler is
+executed on the main thread.
+It takes the following parameter:</p>
+
+<ul>
+<li>progress - The current progress. See <code><a href="../Enums/IDCProgress.html">IDCProgress</a></code> for progress types.</li>
+</ul>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completionBlock</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The completion handler to call when the execution is complete. 
+This handler is executed on the main thread.
+It takes the following parameters:</p>
+
+<ul>
+<li>response - Success when it is not nil.</li>
+<li>error - Error details. See <code><a href="../Enums/IDCError.html">IDCError</a></code> for error types.</li>
+</ul>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An <code><a href="../Classes/IDCFetchRequest.html">IDCFetchRequest</a></code> instance.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)IDCIdCloudClient(im)createChangePinRequestWithUiDelegate:progress:completion:"></a>
+                    <a name="//apple_ref/objc/Method/-createChangePinRequestWithUiDelegate:progress:completion:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)IDCIdCloudClient(im)createChangePinRequestWithUiDelegate:progress:completion:">-createChangePinRequestWithUiDelegate:progress:completion:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a change PIN request.</p>
+
+<p>The request&rsquo;s execution is triggered separately through <code><a href="../Classes/IDCChangePinRequest.html#/c:objc(cs)IDCChangePinRequest(im)execute">-[IDCChangePinRequest execute]</a></code>.</p>
+
+<p>@since 1.1.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/IDCChangePinRequest.html">IDCChangePinRequest</a></span> <span class="o">*</span><span class="p">)</span>
+    <span class="nf">createChangePinRequestWithUiDelegate</span><span class="p">:</span>
+        <span class="p">(</span><span class="n">nonnull</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/IDCSecurePinPadUiDelegate.html">IDCSecurePinPadUiDelegate</a></span><span class="o">&gt;</span><span class="p">)</span><span class="nv">pinPadUiDelegate</span>
+                                <span class="nf">progress</span><span class="p">:</span>
+                                    <span class="p">(</span><span class="n">nonnull</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n"><a href="../Enums/IDCProgress.html">IDCProgress</a></span><span class="p">))</span><span class="nv">progressBlock</span>
+                              <span class="nf">completion</span><span class="p">:</span>
+                                  <span class="p">(</span><span class="n">nonnull</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span>
+                                      <span class="n"><a href="../Classes.html#/c:objc(cs)IDCChangePinResponse">IDCChangePinResponse</a></span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">,</span>
+                                      <span class="n">NSError</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">))</span><span class="n">completionBlock</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">createChangePinRequest</span><span class="p">(</span><span class="n">with</span> <span class="nv">pinPadUiDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/IDCSecurePinPadUiDelegate.html">IDCSecurePinPadUiDelegate</a></span><span class="p">,</span> <span class="n">progress</span> <span class="nv">progressBlock</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Enums/IDCProgress.html">IDCProgress</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">,</span> <span class="n">completion</span> <span class="nv">completionBlock</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Classes.html#/c:objc(cs)IDCChangePinResponse">IDCChangePinResponse</a></span><span class="p">?,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/IDCChangePinRequest.html">IDCChangePinRequest</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>pinPadUiDelegate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>a UI delegate to handle the display of the secure PIN pad during the change PIN use-case.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>progressBlock</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The handler to report progress. This handler is
+executed on the main thread.
+It takes the following parameter:</p>
+
+<ul>
+<li>progress - The current progress. See <code><a href="../Enums/IDCProgress.html">IDCProgress</a></code> for progress types.</li>
+</ul>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completionBlock</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The completion handler to call when the execution is complete.
+This handler is executed on the main thread.
+It takes the following parameters:</p>
+
+<ul>
+<li>response - Success when it is not nil.</li>
+<li>error - Error details. See <code><a href="../Enums/IDCError.html">IDCError</a></code> for error types.</li>
+</ul>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An <code><a href="../Classes/IDCChangePinRequest.html">IDCChangePinRequest</a></code> instance.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)IDCIdCloudClient(im)createAddAuthenticatorRequestWithUiDelegates:progress:completion:"></a>
+                    <a name="//apple_ref/objc/Method/-createAddAuthenticatorRequestWithUiDelegates:progress:completion:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)IDCIdCloudClient(im)createAddAuthenticatorRequestWithUiDelegates:progress:completion:">-createAddAuthenticatorRequestWithUiDelegates:progress:completion:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates an add authenticator request.</p>
+
+<p>The request&rsquo;s execution is triggered separately through <code><a href="../Classes/IDCAddAuthenticatorRequest.html#/c:objc(cs)IDCAddAuthenticatorRequest(im)execute">-[IDCAddAuthenticatorRequest execute]</a></code>.</p>
+
+<p>@since 1.1.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/IDCAddAuthenticatorRequest.html">IDCAddAuthenticatorRequest</a></span> <span class="o">*</span><span class="p">)</span>
+    <span class="nf">createAddAuthenticatorRequestWithUiDelegates</span><span class="p">:</span>
+        <span class="p">(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/IDCUiDelegates.html">IDCUiDelegates</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">uiDelegates</span>
+                                        <span class="nf">progress</span><span class="p">:(</span><span class="n">nonnull</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n"><a href="../Enums/IDCProgress.html">IDCProgress</a></span><span class="p">))</span>
+                                                     <span class="n">progressBlock</span>
+                                      <span class="n">completion</span><span class="o">:</span><span class="p">(</span><span class="n">nonnull</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span>
+                                                     <span class="n"><a href="../Classes.html#/c:objc(cs)IDCAddAuthenticatorResponse">IDCAddAuthenticatorResponse</a></span>
+                                                         <span class="o">*</span><span class="n">_Nullable</span><span class="p">,</span>
+                                                     <span class="n">NSError</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">))</span>
+                                                     <span class="n">completionBlock</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">createAddAuthenticatorRequest</span><span class="p">(</span><span class="n">with</span> <span class="nv">uiDelegates</span><span class="p">:</span> <span class="kt"><a href="../Classes/IDCUiDelegates.html">IDCUiDelegates</a></span><span class="p">,</span> <span class="n">progress</span> <span class="nv">progressBlock</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Enums/IDCProgress.html">IDCProgress</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">,</span> <span class="n">completion</span> <span class="nv">completionBlock</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Classes.html#/c:objc(cs)IDCAddAuthenticatorResponse">IDCAddAuthenticatorResponse</a></span><span class="p">?,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/IDCAddAuthenticatorRequest.html">IDCAddAuthenticatorRequest</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>uiDelegates</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>group of ui delegates allowing developers to show the UI during PIN or
+biometric authentication.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>progressBlock</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The handler to report progress. This handler is
+executed on the main thread.
+It takes the following parameter:</p>
+
+<ul>
+<li>progress - The current progress. See <code><a href="../Enums/IDCProgress.html">IDCProgress</a></code> for progress types.</li>
+</ul>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completionBlock</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The completion handler to call when the execution is complete.
+This handler is executed on the main thread.
+It takes the following parameters:</p>
+
+<ul>
+<li>response - Success when it is not nil.</li>
+<li>error - Error details. See <code><a href="../Enums/IDCError.html">IDCError</a></code> for error types.</li>
+</ul>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An <code><a href="../Classes/IDCAddAuthenticatorRequest.html">IDCAddAuthenticatorRequest</a></code> instance.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)IDCIdCloudClient(im)createUnenrollRequestWithProgress:completion:"></a>
+                    <a name="//apple_ref/objc/Method/-createUnenrollRequestWithProgress:completion:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)IDCIdCloudClient(im)createUnenrollRequestWithProgress:completion:">-createUnenrollRequestWithProgress:completion:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates an unenroll request.</p>
+
+<p>The request&rsquo;s execution is triggered separately through <code><a href="../Classes/IDCUnenrollRequest.html#/c:objc(cs)IDCUnenrollRequest(im)execute">-[IDCUnenrollRequest execute]</a></code>.</p>
+
+<p>@since 1.1.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/IDCUnenrollRequest.html">IDCUnenrollRequest</a></span> <span class="o">*</span><span class="p">)</span>
+    <span class="nf">createUnenrollRequestWithProgress</span><span class="p">:</span>
+        <span class="p">(</span><span class="n">nonnull</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n"><a href="../Enums/IDCProgress.html">IDCProgress</a></span><span class="p">))</span><span class="nv">progressBlock</span>
+                           <span class="nf">completion</span><span class="p">:(</span><span class="n">nonnull</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span>
+                                          <span class="n"><a href="../Classes.html#/c:objc(cs)IDCUnenrollResponse">IDCUnenrollResponse</a></span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">,</span>
+                                          <span class="n">NSError</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">))</span><span class="n">completionBlock</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">createUnenrollRequest</span><span class="p">(</span><span class="n">progress</span> <span class="nv">progressBlock</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Enums/IDCProgress.html">IDCProgress</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">,</span> <span class="n">completion</span> <span class="nv">completionBlock</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Classes.html#/c:objc(cs)IDCUnenrollResponse">IDCUnenrollResponse</a></span><span class="p">?,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/IDCUnenrollRequest.html">IDCUnenrollRequest</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>progressBlock</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The handler to report progress. This handler is
+executed on the main thread.
+It takes the following parameter:</p>
+
+<ul>
+<li>progress - The current progress. See <code><a href="../Enums/IDCProgress.html">IDCProgress</a></code> for progress types.</li>
+</ul>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completionBlock</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The completion handler to call when the execution is complete.
+This handler is executed on the main thread.
+It takes the following parameters:</p>
+
+<ul>
+<li>response - Success when it is not nil.</li>
+<li>error - Error details. See <code><a href="../Enums/IDCError.html">IDCError</a></code> for error types.</li>
+</ul>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An <code><a href="../Classes/IDCUnenrollRequest.html">IDCUnenrollRequest</a></code> instance.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)IDCIdCloudClient(im)activatedAuthenticators"></a>
+                    <a name="//apple_ref/objc/Method/-activatedAuthenticators" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)IDCIdCloudClient(im)activatedAuthenticators">-activatedAuthenticators</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Fetches the list of activated authenticators for the enrolled credential</p>
+
+<p>@since 2.0.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSArray</span><span class="o">&lt;</span><span class="n"><a href="../Classes/IDCAuthenticator.html">IDCAuthenticator</a></span> <span class="o">*&gt;</span> <span class="o">*</span><span class="p">)</span><span class="n">activatedAuthenticators</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">activatedAuthenticators</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt"><a href="../Classes/IDCAuthenticator.html">IDCAuthenticator</a></span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An array of <code><a href="../Classes/IDCAuthenticator.html">IDCAuthenticator</a></code> representing the various activated authenticators.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)IDCIdCloudClient(im)createRemoveAuthenticatorRequestWithAuthenticator:progress:completion:"></a>
+                    <a name="//apple_ref/objc/Method/-createRemoveAuthenticatorRequestWithAuthenticator:progress:completion:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)IDCIdCloudClient(im)createRemoveAuthenticatorRequestWithAuthenticator:progress:completion:">-createRemoveAuthenticatorRequestWithAuthenticator:progress:completion:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a remove authenticator request.</p>
+
+<p>The request&rsquo;s execution is triggered separately through <code><a href="../Classes/IDCRemoveAuthenticatorRequest.html#/c:objc(cs)IDCRemoveAuthenticatorRequest(im)execute">-[IDCRemoveAuthenticatorRequest execute]</a></code>.</p>
+
+<p>@since 2.0.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/IDCRemoveAuthenticatorRequest.html">IDCRemoveAuthenticatorRequest</a></span> <span class="o">*</span><span class="p">)</span>
+    <span class="nf">createRemoveAuthenticatorRequestWithAuthenticator</span><span class="p">:</span>
+        <span class="p">(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/IDCAuthenticator.html">IDCAuthenticator</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">authenticator</span>
+                                             <span class="nf">progress</span><span class="p">:</span>
+                                                 <span class="p">(</span><span class="n">nonnull</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n"><a href="../Enums/IDCProgress.html">IDCProgress</a></span><span class="p">))</span>
+                                                     <span class="n">progressBlock</span>
+                                           <span class="n">completion</span><span class="o">:</span>
+                                               <span class="p">(</span><span class="n">nonnull</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span>
+                                                   <span class="n"><a href="../Classes.html#/c:objc(cs)IDCRemoveAuthenticatorResponse">IDCRemoveAuthenticatorResponse</a></span>
+                                                       <span class="o">*</span><span class="n">_Nullable</span><span class="p">,</span>
+                                                   <span class="n">NSError</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">))</span>
+                                                   <span class="n">completionBlock</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">createRemoveAuthenticatorRequest</span><span class="p">(</span><span class="n">with</span> <span class="nv">authenticator</span><span class="p">:</span> <span class="kt"><a href="../Classes/IDCAuthenticator.html">IDCAuthenticator</a></span><span class="p">,</span> <span class="n">progress</span> <span class="nv">progressBlock</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Enums/IDCProgress.html">IDCProgress</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">,</span> <span class="n">completion</span> <span class="nv">completionBlock</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Classes.html#/c:objc(cs)IDCRemoveAuthenticatorResponse">IDCRemoveAuthenticatorResponse</a></span><span class="p">?,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/IDCRemoveAuthenticatorRequest.html">IDCRemoveAuthenticatorRequest</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>authenticator</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The previously retrieved activated authenticator to be removed.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>progressBlock</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The handler to report progress. This handler is
+executed on the main thread.
+It takes the following parameter:</p>
+
+<ul>
+<li>progress - The current progress. See <code><a href="../Enums/IDCProgress.html">IDCProgress</a></code> for progress types.</li>
+</ul>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completionBlock</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The completion handler to call when the execution is complete.
+This handler is executed on the main thread.
+It takes the following parameters:</p>
+
+<ul>
+<li>response - Success when it is not nil.</li>
+<li>error - Error details. See <code><a href="../Enums/IDCError.html">IDCError</a></code> for error types.</li>
+</ul>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An <code><a href="../Classes/IDCRemoveAuthenticatorRequest.html">IDCRemoveAuthenticatorRequest</a></code> instance.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)IDCIdCloudClient(cm)configureSecureLog:"></a>
+                    <a name="//apple_ref/objc/Method/+configureSecureLog:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)IDCIdCloudClient(cm)configureSecureLog:">+configureSecureLog:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets the secure logger intended to log necessary retrievable information.</p>
+
+<p>@since 2.0.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/SecureLog.html">SecureLog</a></span><span class="o">&gt;</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nf">configureSecureLog</span><span class="p">:</span>
+    <span class="p">(</span><span class="n"><a href="../Classes/SecureLogConfig.html">SecureLogConfig</a></span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">config</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>config</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A configuration object of secure log.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An instance of <code><a href="../Protocols/SecureLog.html">SecureLog</a></code> or <code>nil</code> if config set is nil.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)IDCIdCloudClient(im)createProcessNotificationRequestWithNotification:uiDelegates:progress:completion:"></a>
+                    <a name="//apple_ref/objc/Method/-createProcessNotificationRequestWithNotification:uiDelegates:progress:completion:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)IDCIdCloudClient(im)createProcessNotificationRequestWithNotification:uiDelegates:progress:completion:">-createProcessNotificationRequestWithNotification:uiDelegates:progress:completion:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a Process Notification request.</p>
+
+<p>The request&rsquo;s execution is triggered separately through <code><a href="../Classes/IDCProcessNotificationRequest.html#/c:objc(cs)IDCProcessNotificationRequest(im)execute">-[IDCProcessNotificationRequest execute]</a></code>.</p>
+
+<p>@since 2.1.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/IDCProcessNotificationRequest.html">IDCProcessNotificationRequest</a></span> <span class="o">*</span><span class="p">)</span>
+    <span class="nf">createProcessNotificationRequestWithNotification</span><span class="p">:</span>
+        <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSDictionary</span> <span class="o">*</span><span class="p">)</span><span class="nv">notification</span>
+                                         <span class="nf">uiDelegates</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/IDCUiDelegates.html">IDCUiDelegates</a></span> <span class="o">*</span><span class="p">)</span>
+                                                         <span class="n">uiDelegates</span>
+                                            <span class="n">progress</span><span class="o">:</span>
+                                                <span class="p">(</span><span class="n">nonnull</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n"><a href="../Enums/IDCProgress.html">IDCProgress</a></span><span class="p">))</span>
+                                                    <span class="n">progressBlock</span>
+                                          <span class="n">completion</span><span class="o">:</span>
+                                              <span class="p">(</span><span class="n">nonnull</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span>
+                                                  <span class="n"><a href="../Classes.html#/c:objc(cs)IDCProcessNotificationResponse">IDCProcessNotificationResponse</a></span>
+                                                      <span class="o">*</span><span class="n">_Nullable</span><span class="p">,</span>
+                                                  <span class="n">NSError</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">))</span>
+                                                  <span class="n">completionBlock</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">createProcessNotificationRequest</span><span class="p">(</span><span class="n">withNotification</span> <span class="nv">notification</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">],</span> <span class="nv">uiDelegates</span><span class="p">:</span> <span class="kt"><a href="../Classes/IDCUiDelegates.html">IDCUiDelegates</a></span><span class="p">,</span> <span class="n">progress</span> <span class="nv">progressBlock</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Enums/IDCProgress.html">IDCProgress</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">,</span> <span class="n">completion</span> <span class="nv">completionBlock</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Classes.html#/c:objc(cs)IDCProcessNotificationResponse">IDCProcessNotificationResponse</a></span><span class="p">?,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/IDCProcessNotificationRequest.html">IDCProcessNotificationRequest</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>notification</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>contains the push notification json dictionary from the IdCloud server.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>uiDelegates</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>group of ui delegates allowing developers to show the UI
+during PIN or biometric authentication.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>progressBlock</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The handler to report progress. This handler is
+executed on the main thread.
+It takes the following parameter:</p>
+
+<ul>
+<li>progress - The current progress. See <code><a href="../Enums/IDCProgress.html">IDCProgress</a></code> for progress types.</li>
+</ul>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completionBlock</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The completion handler to call when the execution is complete.
+This handler is executed on the main thread.
+It takes the following parameters:</p>
+
+<ul>
+<li>response - Success when it is not nil.</li>
+<li>error - Error details. See <code><a href="../Enums/IDCError.html">IDCError</a></code> for error types.</li>
+</ul>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An <code><a href="../Classes/IDCProcessNotificationRequest.html">IDCProcessNotificationRequest</a></code> instance.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)IDCIdCloudClient(im)createRefreshPushTokenRequestWithDeviceToken:progress:completion:"></a>
+                    <a name="//apple_ref/objc/Method/-createRefreshPushTokenRequestWithDeviceToken:progress:completion:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)IDCIdCloudClient(im)createRefreshPushTokenRequestWithDeviceToken:progress:completion:">-createRefreshPushTokenRequestWithDeviceToken:progress:completion:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a Refresh push device token request.</p>
+
+<p>The request&rsquo;s execution is triggered separately through <code><a href="../Classes/IDCRefreshPushTokenRequest.html#/c:objc(cs)IDCRefreshPushTokenRequest(im)execute">-[IDCRefreshPushTokenRequest execute]</a></code>.</p>
+
+<p>@since 2.1.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/IDCRefreshPushTokenRequest.html">IDCRefreshPushTokenRequest</a></span> <span class="o">*</span><span class="p">)</span>
+    <span class="nf">createRefreshPushTokenRequestWithDeviceToken</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">deviceToken</span>
+                                        <span class="nf">progress</span><span class="p">:(</span><span class="n">nonnull</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n"><a href="../Enums/IDCProgress.html">IDCProgress</a></span><span class="p">))</span>
+                                                     <span class="n">progressBlock</span>
+                                      <span class="n">completion</span><span class="o">:</span><span class="p">(</span><span class="n">nonnull</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span>
+                                                     <span class="n"><a href="../Classes.html#/c:objc(cs)IDCRefreshPushTokenResponse">IDCRefreshPushTokenResponse</a></span>
+                                                         <span class="o">*</span><span class="n">_Nullable</span><span class="p">,</span>
+                                                     <span class="n">NSError</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">))</span>
+                                                     <span class="n">completionBlock</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">createRefreshPushTokenRequest</span><span class="p">(</span><span class="n">withDeviceToken</span> <span class="nv">deviceToken</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">progress</span> <span class="nv">progressBlock</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Enums/IDCProgress.html">IDCProgress</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">,</span> <span class="n">completion</span> <span class="nv">completionBlock</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Classes.html#/c:objc(cs)IDCRefreshPushTokenResponse">IDCRefreshPushTokenResponse</a></span><span class="p">?,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/IDCRefreshPushTokenRequest.html">IDCRefreshPushTokenRequest</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>deviceToken</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The device token string</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>progressBlock</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The handler to report progress. This handler is
+executed on the main thread.
+It takes the following parameter:</p>
+
+<ul>
+<li>progress - The current progress. See <code><a href="../Enums/IDCProgress.html">IDCProgress</a></code> for progress types.</li>
+</ul>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completionBlock</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The completion handler to call when the execution is complete.
+This handler is executed on the main thread.
+It takes the following parameters:</p>
+
+<ul>
+<li>response - Success when it is not nil.</li>
+<li>error - Error details. See <code><a href="../Enums/IDCError.html">IDCError</a></code> for error types.</li>
+</ul>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An <code><a href="../Classes/IDCRefreshPushTokenRequest.html">IDCRefreshPushTokenRequest</a></code> instance.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>Copyright © 2022 Thales Group. All rights reserved.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.11.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
