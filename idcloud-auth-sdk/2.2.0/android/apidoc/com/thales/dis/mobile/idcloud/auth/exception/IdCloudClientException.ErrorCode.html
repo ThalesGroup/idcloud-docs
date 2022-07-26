@@ -200,48 +200,66 @@ extends <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Enum.html?i
 </td>
 </tr>
 <tr class="rowColor">
+<th class="colFirst" scope="row"><code><span class="memberNameLink"><a href="#PIN_RULE_PALINDROME">PIN_RULE_PALINDROME</a></span></code></th>
+<td class="colLast">
+<div class="block">The PIN is a palindrome.</div>
+</td>
+</tr>
+<tr class="altColor">
+<th class="colFirst" scope="row"><code><span class="memberNameLink"><a href="#PIN_RULE_SERIES">PIN_RULE_SERIES</a></span></code></th>
+<td class="colLast">
+<div class="block">The PIN is a series.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><code><span class="memberNameLink"><a href="#PIN_RULE_UNIFORM">PIN_RULE_UNIFORM</a></span></code></th>
+<td class="colLast">
+<div class="block">The PIN is uniform.</div>
+</td>
+</tr>
+<tr class="altColor">
 <th class="colFirst" scope="row"><code><span class="memberNameLink"><a href="#REMOVAL_NOT_ALLOWED">REMOVAL_NOT_ALLOWED</a></span></code></th>
 <td class="colLast">
 <div class="block">Authenticator cannot be removed as there are no other authenticators enrolled.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><code><span class="memberNameLink"><a href="#SERVER_RESPONSE">SERVER_RESPONSE</a></span></code></th>
 <td class="colLast">
 <div class="block">Server response is invalid.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><code><span class="memberNameLink"><a href="#STORAGE">STORAGE</a></span></code></th>
 <td class="colLast">
 <div class="block">Failed in storage access.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><code><span class="memberNameLink"><a href="#TRANSPORT">TRANSPORT</a></span></code></th>
 <td class="colLast">
 <div class="block">Failed in network access.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><code><span class="memberNameLink"><a href="#USER_CANCELLED">USER_CANCELLED</a></span></code></th>
 <td class="colLast">
 <div class="block">The user cancelled the operation.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><code><span class="memberNameLink"><a href="#USER_LOCKOUT">USER_LOCKOUT</a></span></code></th>
 <td class="colLast">
 <div class="block">The operation failed because the user is locked out of the authenticator.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><code><span class="memberNameLink"><a href="#USER_NOT_ENROLLED">USER_NOT_ENROLLED</a></span></code></th>
 <td class="colLast">
 <div class="block">User is not enrolled.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><code><span class="memberNameLink"><a href="#USER_NOT_RESPONSIVE">USER_NOT_RESPONSIVE</a></span></code></th>
 <td class="colLast">
 <div class="block">The user took too long to follow an instruction, for example did not accept the transaction within the accepted time.</div>
@@ -441,11 +459,53 @@ the order they are declared.</div>
 <a id="REMOVAL_NOT_ALLOWED">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>REMOVAL_NOT_ALLOWED</h4>
 <pre>public static final&nbsp;<a href="IdCloudClientException.ErrorCode.html" title="enum in com.thales.dis.mobile.idcloud.auth.exception">IdCloudClientException.ErrorCode</a> REMOVAL_NOT_ALLOWED</pre>
 <div class="block">Authenticator cannot be removed as there are no other authenticators enrolled.</div>
+</li>
+</ul>
+<a id="PIN_RULE_PALINDROME">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>PIN_RULE_PALINDROME</h4>
+<pre>public static final&nbsp;<a href="IdCloudClientException.ErrorCode.html" title="enum in com.thales.dis.mobile.idcloud.auth.exception">IdCloudClientException.ErrorCode</a> PIN_RULE_PALINDROME</pre>
+<div class="block">The PIN is a palindrome.</div>
+<dl>
+<dt><span class="simpleTagLabel">Since:</span></dt>
+<dd>2.2.0</dd>
+</dl>
+</li>
+</ul>
+<a id="PIN_RULE_SERIES">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>PIN_RULE_SERIES</h4>
+<pre>public static final&nbsp;<a href="IdCloudClientException.ErrorCode.html" title="enum in com.thales.dis.mobile.idcloud.auth.exception">IdCloudClientException.ErrorCode</a> PIN_RULE_SERIES</pre>
+<div class="block">The PIN is a series.</div>
+<dl>
+<dt><span class="simpleTagLabel">Since:</span></dt>
+<dd>2.2.0</dd>
+</dl>
+</li>
+</ul>
+<a id="PIN_RULE_UNIFORM">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>PIN_RULE_UNIFORM</h4>
+<pre>public static final&nbsp;<a href="IdCloudClientException.ErrorCode.html" title="enum in com.thales.dis.mobile.idcloud.auth.exception">IdCloudClientException.ErrorCode</a> PIN_RULE_UNIFORM</pre>
+<div class="block">The PIN is uniform.</div>
+<dl>
+<dt><span class="simpleTagLabel">Since:</span></dt>
+<dd>2.2.0</dd>
+</dl>
 </li>
 </ul>
 </li>

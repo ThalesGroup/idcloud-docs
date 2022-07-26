@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":6};
+var data = {"i0":6,"i1":6,"i2":6,"i3":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -161,12 +161,19 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onPinRuleFailed(com.thales.dis.mobile.idcloud.auth.exception.IdCloudClientException)">onPinRuleFailed</a></span>&#8203;(<a href="../../exception/IdCloudClientException.html" title="class in com.thales.dis.mobile.idcloud.auth.exception">IdCloudClientException</a>&nbsp;exception)</code></th>
+<td class="colLast">
+<div class="block">Called during enrollment or change PIN.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onUsageChanged(com.thales.dis.mobile.idcloud.auth.ui.pin.SecurePinPadUsage)">onUsageChanged</a></span>&#8203;(<a href="SecurePinPadUsage.html" title="enum in com.thales.dis.mobile.idcloud.auth.ui.pin">SecurePinPadUsage</a>&nbsp;usage)</code></th>
 <td class="colLast">
 <div class="block">Called when usage for secure PIN pad changed.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onVerifyFailed(int)">onVerifyFailed</a></span>&#8203;(int&nbsp;retryCountRemaining)</code></th>
 <td class="colLast">
@@ -249,7 +256,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <a id="onVerifyFailed(int)">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>onVerifyFailed</h4>
 <pre class="methodSignature">void&nbsp;onVerifyFailed&#8203;(int&nbsp;retryCountRemaining)</pre>
@@ -261,7 +268,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
  <a href="../../exception/IdCloudClientException.ErrorCode.html#USER_LOCKOUT"><code>IdCloudClientException.ErrorCode.USER_LOCKOUT</code></a> 
  is thrown. 
  <br><br>
- Retry count will reset upon successful PIN authentication.</div>
+ Retry count will reset upon successful PIN authentication.
+ <p>
+ The entered PIN will be cleared on a failed authentication.
+ <p></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>retryCountRemaining</code> - Retry count remaining. On first authentication failed, the value 
@@ -270,6 +280,24 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
    will trigger, the value of this property will be 1.</dd>
 <dt><span class="simpleTagLabel">Since:</span></dt>
 <dd>1.0.0</dd>
+</dl>
+</li>
+</ul>
+<a id="onPinRuleFailed(com.thales.dis.mobile.idcloud.auth.exception.IdCloudClientException)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>onPinRuleFailed</h4>
+<pre class="methodSignature">void&nbsp;onPinRuleFailed&#8203;(<a href="../../exception/IdCloudClientException.html" title="class in com.thales.dis.mobile.idcloud.auth.exception">IdCloudClientException</a>&nbsp;exception)</pre>
+<div class="block">Called during enrollment or change PIN.
+ <br><br>
+ This callback is invoked when the inputted PIN code violates the required PIN rules.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>exception</code> - An error representing the respective PIN rule violation.</dd>
+<dt><span class="simpleTagLabel">Since:</span></dt>
+<dd>2.2.0</dd>
 </dl>
 </li>
 </ul>
