@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>IDCCommonUiDelegate Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Protocol/IDCCommonUiDelegate" class="dashAnchor"></a>
+    <a title="IDCCommonUiDelegate Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">IdCloud FIDO SDK</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">IdCloudClient Reference</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        IDCCommonUiDelegate Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/IDCAddAuthenticatorRequest.html">IDCAddAuthenticatorRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)IDCAddAuthenticatorResponse">IDCAddAuthenticatorResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IDCAuthenticator.html">IDCAuthenticator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IDCAuthenticatorDescriptor.html">IDCAuthenticatorDescriptor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IDCChangePinRequest.html">IDCChangePinRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)IDCChangePinResponse">IDCChangePinResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IDCEnrollRequest.html">IDCEnrollRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)IDCEnrollResponse">IDCEnrollResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IDCEnrollmentToken.html">IDCEnrollmentToken</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IDCEnrollmentTokenFactory.html">IDCEnrollmentTokenFactory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IDCFetchRequest.html">IDCFetchRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)IDCFetchResponse">IDCFetchResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IDCIdCloudClient.html">IDCIdCloudClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IDCPinConfig.html">IDCPinConfig</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IDCProcessNotificationRequest.html">IDCProcessNotificationRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)IDCProcessNotificationResponse">IDCProcessNotificationResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IDCRefreshPushTokenRequest.html">IDCRefreshPushTokenRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)IDCRefreshPushTokenResponse">IDCRefreshPushTokenResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IDCRemoveAuthenticatorRequest.html">IDCRemoveAuthenticatorRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)IDCRemoveAuthenticatorResponse">IDCRemoveAuthenticatorResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IDCScenarioContext.html">IDCScenarioContext</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IDCSecurePinPad.html">IDCSecurePinPad</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IDCTransactionContext.html">IDCTransactionContext</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IDCUiDelegates.html">IDCUiDelegates</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IDCUnenrollRequest.html">IDCUnenrollRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)IDCUnenrollResponse">IDCUnenrollResponse</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:IDCError.h@IDCErrorDomain">IDCErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:IDCScenarioContext.h@IDCScenarioContextKeyBiometryType">IDCScenarioContextKeyBiometryType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:IDCScenarioContext.h@IDCScenarioContextKeyMessage">IDCScenarioContextKeyMessage</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/IDCAuthenticatorType.html">IDCAuthenticatorType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/IDCError.html">IDCError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/IDCPinRule.html">IDCPinRule</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/IDCProgress.html">IDCProgress</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/IDCSecurePinPadKey.html">IDCSecurePinPadKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/IDCSecurePinPadUsage.html">IDCSecurePinPadUsage</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/IDCBiometricUiDelegate.html">IDCBiometricUiDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IDCCommonUiDelegate.html">IDCCommonUiDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IDCSecurePinPadDelegate.html">IDCSecurePinPadDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IDCSecurePinPadUiDelegate.html">IDCSecurePinPadUiDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>IDCCommonUiDelegate</h1>
+              <div class="declaration">
+                <div class="language">
+                  <p class="aside-title">Objective-C</p>
+                  <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">IDCCommonUiDelegate</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+
+                </div>
+                <div class="language">
+                  <p class="aside-title">Swift</p>
+                  <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">IDCCommonUiDelegate</span></code></pre>
+
+                </div>
+              </div>
+            <p>UI Delegate that contains methods for managing authenticator selection and 
+optional authenticator additional description.</p>
+
+<p>@since 1.0.0</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)IDCCommonUiDelegate(im)idCloudClient:authenticators:userChoiceHandler:cancelHandler:"></a>
+                    <a name="//apple_ref/objc/Method/-idCloudClient:authenticators:userChoiceHandler:cancelHandler:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)IDCCommonUiDelegate(im)idCloudClient:authenticators:userChoiceHandler:cancelHandler:">-idCloudClient:<wbr>authenticators:<wbr>userChoiceHandler:<wbr>cancelHandler:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called during authenticator selection. </p>
+
+<p>The developer should show <code>authenticators</code> to the user and let user choose 
+which to use.</p>
+
+<p>This method will not be called if one of following condition is fulfilled:</p>
+
+<ul>
+<li>There is only one authenticator option in the request.</li>
+<li><p>There are two authenticators option; but system biometric is not enrolled.
+In this case, PIN authenticator will be selected.</p></li>
+</ul>
+
+<p>@since 1.0.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">idCloudClient</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/IDCIdCloudClient.html">IDCIdCloudClient</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">idCloudClient</span>
+       <span class="nf">authenticators</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSArray</span><span class="o">&lt;</span><span class="n"><a href="../Classes/IDCAuthenticator.html">IDCAuthenticator</a></span> <span class="o">*&gt;</span> <span class="o">*</span><span class="p">)</span><span class="nv">authenticators</span>
+    <span class="nf">userChoiceHandler</span><span class="p">:</span>
+        <span class="p">(</span><span class="n">nonnull</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n"><a href="../Classes/IDCAuthenticator.html">IDCAuthenticator</a></span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">))</span><span class="nv">userChoiceHandler</span>
+        <span class="nf">cancelHandler</span><span class="p">:(</span><span class="n">nonnull</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="kt">void</span><span class="p">))</span><span class="nv">cancelHandler</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">idCloudClient</span><span class="p">(</span><span class="n">_</span> <span class="nv">idCloudClient</span><span class="p">:</span> <span class="kt"><a href="../Classes/IDCIdCloudClient.html">IDCIdCloudClient</a></span><span class="o">!</span><span class="p">,</span> <span class="nv">authenticators</span><span class="p">:</span> <span class="kt">Any</span><span class="o">!</span><span class="p">,</span> <span class="nv">userChoiceHandler</span><span class="p">:</span> <span class="p">((</span><span class="kt"><a href="../Classes/IDCAuthenticator.html">IDCAuthenticator</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span><span class="o">!</span><span class="p">,</span> <span class="nv">cancelHandler</span><span class="p">:</span> <span class="p">(()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>idCloudClient</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The IdCloud client informing the delegate about the 
+impending selection.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>authenticators</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The list of authenticators to be selected.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>userChoiceHandler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The handler to select the authenticator.
+It takes the following parameters:</p>
+
+<ul>
+<li>authenticator - Authenticator selected from the list.</li>
+</ul>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cancelHandler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The handler to cancel the operation.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)IDCCommonUiDelegate(im)idCloudClient:authenticatorDescription:authenticatorDescriptionHandler:cancelHandler:"></a>
+                    <a name="//apple_ref/objc/Method/-idCloudClient:authenticatorDescription:authenticatorDescriptionHandler:cancelHandler:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)IDCCommonUiDelegate(im)idCloudClient:authenticatorDescription:authenticatorDescriptionHandler:cancelHandler:">-idCloudClient:<wbr>authenticatorDescription:<wbr>authenticatorDescriptionHandler:<wbr>cancelHandler:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called during enrollment.</p>
+
+<p>The developer could potentially provide a UI to the user to allow the user
+ to set additional information regarding a newly enrolled authenticator.</p>
+
+<ul>
+<li><p>authenticatorDescriptor - An object containing custom information on the authenticator.</p></li>
+</ul>
+
+<p>@since 2.0.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">idCloudClient</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/IDCIdCloudClient.html">IDCIdCloudClient</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">idCloudClient</span>
+           <span class="nf">authenticatorDescription</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/IDCAuthenticator.html">IDCAuthenticator</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">authenticator</span>
+    <span class="nf">authenticatorDescriptionHandler</span><span class="p">:</span>
+        <span class="p">(</span><span class="n">nonnull</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n"><a href="../Classes/IDCAuthenticatorDescriptor.html">IDCAuthenticatorDescriptor</a></span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">))</span>
+            <span class="n">authenticatorDescriptionHandler</span>
+                      <span class="n">cancelHandler</span><span class="o">:</span><span class="p">(</span><span class="n">nonnull</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="kt">void</span><span class="p">))</span><span class="n">cancelHandler</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">idCloudClient</span><span class="p">(</span><span class="n">_</span> <span class="nv">idCloudClient</span><span class="p">:</span> <span class="kt"><a href="../Classes/IDCIdCloudClient.html">IDCIdCloudClient</a></span><span class="o">!</span><span class="p">,</span> <span class="n">authenticatorDescription</span> <span class="nv">authenticator</span><span class="p">:</span> <span class="kt"><a href="../Classes/IDCAuthenticator.html">IDCAuthenticator</a></span><span class="o">!</span><span class="p">,</span> <span class="nv">authenticatorDescriptionHandler</span><span class="p">:</span> <span class="p">((</span><span class="kt"><a href="../Classes/IDCAuthenticatorDescriptor.html">IDCAuthenticatorDescriptor</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span><span class="o">!</span><span class="p">,</span> <span class="nv">cancelHandler</span><span class="p">:</span> <span class="p">(()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>idCloudClient</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The IdCloud client informing the delegate about the authenticator description.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>authenticator</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The authenticator in question.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>authenticatorDescriptionHandler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The handler to respond to the request.
+It takes the following parameters:</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cancelHandler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The handler to cancel the operation.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)IDCCommonUiDelegate(im)idCloudClient:transactionConfirmation:proceedHandler:cancelHandler:"></a>
+                    <a name="//apple_ref/objc/Method/-idCloudClient:transactionConfirmation:proceedHandler:cancelHandler:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)IDCCommonUiDelegate(im)idCloudClient:transactionConfirmation:proceedHandler:cancelHandler:">-idCloudClient:<wbr>transactionConfirmation:<wbr>proceedHandler:<wbr>cancelHandler:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when user confirmation is required prior to proceeding with the Transaction Signing use-case.</p>
+
+<p>@since 2.1.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">idCloudClient</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/IDCIdCloudClient.html">IDCIdCloudClient</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">idCloudClient</span>
+    <span class="nf">transactionConfirmation</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/IDCTransactionContext.html">IDCTransactionContext</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">transactionContext</span>
+             <span class="nf">proceedHandler</span><span class="p">:(</span><span class="n">nonnull</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="kt">void</span><span class="p">))</span><span class="nv">proceedHandler</span>
+              <span class="nf">cancelHandler</span><span class="p">:(</span><span class="n">nonnull</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="kt">void</span><span class="p">))</span><span class="nv">cancelHandler</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">idCloudClient</span><span class="p">(</span><span class="n">_</span> <span class="nv">idCloudClient</span><span class="p">:</span> <span class="kt"><a href="../Classes/IDCIdCloudClient.html">IDCIdCloudClient</a></span><span class="o">!</span><span class="p">,</span> <span class="n">transactionConfirmation</span> <span class="nv">transactionContext</span><span class="p">:</span> <span class="kt"><a href="../Classes/IDCTransactionContext.html">IDCTransactionContext</a></span><span class="o">!</span><span class="p">,</span> <span class="nv">proceedHandler</span><span class="p">:</span> <span class="p">(()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span><span class="o">!</span><span class="p">,</span> <span class="nv">cancelHandler</span><span class="p">:</span> <span class="p">(()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>idCloudClient</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The IdCloud client informing the delegate about the authenticator description.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>transactionContext</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An object representing the transaction details.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>proceedHandler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>closure to be called to inform SDK to proceed with the use-case.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cancelHandler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>closure to be called to cancel the operation.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>Copyright © 2022 Thales Group. All rights reserved.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>

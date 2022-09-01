@@ -1,0 +1,66 @@
+\hypertarget{protocol_secure_log-p}{}\doxysection{$<$Secure\+Log$>$ Protocol Reference}
+\label{protocol_secure_log-p}\index{$<$SecureLog$>$@{$<$SecureLog$>$}}
+
+
+{\ttfamily \#import $<$Secure\+Log.\+h$>$}
+
+Inheritance diagram for $<$Secure\+Log$>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{protocol_secure_log-p}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) -\/ \mbox{\hyperlink{protocol_secure_log-p_a7538dbc9709490f4d73167c7b04316b4}{N\+S\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+LE}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_secure_log-p_a822e2c0202c3b25c980eaa5452265c4b}{set\+Level\+:}}
+\item 
+(N\+S\+Array$<$ N\+S\+U\+RL $\ast$ $>$ $\ast$) -\/ \mbox{\hyperlink{protocol_secure_log-p_adefabcc587eb8de912c7a6c2fb622a37}{files}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_secure_log-p_a89a6949b8b0aeeed75241a1de4598494}{delete\+Files}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The protocol contains all functions to the app integrators to interact with Secure Log 
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{protocol_secure_log-p_a89a6949b8b0aeeed75241a1de4598494}\label{protocol_secure_log-p_a89a6949b8b0aeeed75241a1de4598494}} 
+\index{$<$SecureLog$>$@{$<$SecureLog$>$}!deleteFiles@{deleteFiles}}
+\index{deleteFiles@{deleteFiles}!$<$SecureLog$>$@{$<$SecureLog$>$}}
+\doxysubsubsection{\texorpdfstring{deleteFiles}{deleteFiles}}
+{\footnotesize\ttfamily -\/ (void) delete\+Files \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Delete all logs that logged by secure log. \mbox{\Hypertarget{protocol_secure_log-p_adefabcc587eb8de912c7a6c2fb622a37}\label{protocol_secure_log-p_adefabcc587eb8de912c7a6c2fb622a37}} 
+\index{$<$SecureLog$>$@{$<$SecureLog$>$}!files@{files}}
+\index{files@{files}!$<$SecureLog$>$@{$<$SecureLog$>$}}
+\doxysubsubsection{\texorpdfstring{files}{files}}
+{\footnotesize\ttfamily -\/ (N\+S\+Array$<$N\+S\+U\+RL $\ast$$>$ $\ast$) files \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Return array of log files that logged by secure log. \begin{DoxyReturn}{Returns}
+array of log files. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{protocol_secure_log-p_a7538dbc9709490f4d73167c7b04316b4}\label{protocol_secure_log-p_a7538dbc9709490f4d73167c7b04316b4}} 
+\index{$<$SecureLog$>$@{$<$SecureLog$>$}!NS\_UNAVAILABLE@{NS\_UNAVAILABLE}}
+\index{NS\_UNAVAILABLE@{NS\_UNAVAILABLE}!$<$SecureLog$>$@{$<$SecureLog$>$}}
+\doxysubsubsection{\texorpdfstring{NS\_UNAVAILABLE}{NS\_UNAVAILABLE}}
+{\footnotesize\ttfamily -\/ (instancetype) N\+S\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+LE \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+There is no direct init function available. Cast the Secure\+Log\+Impl object to this protocol and call below function to interact with Secure Log \mbox{\Hypertarget{protocol_secure_log-p_a822e2c0202c3b25c980eaa5452265c4b}\label{protocol_secure_log-p_a822e2c0202c3b25c980eaa5452265c4b}} 
+\index{$<$SecureLog$>$@{$<$SecureLog$>$}!setLevel:@{setLevel:}}
+\index{setLevel:@{setLevel:}!$<$SecureLog$>$@{$<$SecureLog$>$}}
+\doxysubsubsection{\texorpdfstring{setLevel:}{setLevel:}}
+{\footnotesize\ttfamily -\/ (void) set\+Level\+: \begin{DoxyParamCaption}\item[{(Secure\+Log\+Level)}]{log\+Level }\end{DoxyParamCaption}}
+
+Set the secure log level to write in log file. 
+\begin{DoxyParams}{Parameters}
+{\em log\+Level} & log level. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+build/dist/\+Secure\+Log\+A\+P\+I/\+Release/\+Secure\+Log\+A\+P\+I.\+framework/\+Versions/\+A/\+Headers/Secure\+Log.\+h\end{DoxyCompactItemize}

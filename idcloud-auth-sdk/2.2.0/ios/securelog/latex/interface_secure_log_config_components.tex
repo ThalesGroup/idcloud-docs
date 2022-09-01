@@ -1,0 +1,82 @@
+\hypertarget{interface_secure_log_config_components}{}\doxysection{Secure\+Log\+Config\+Components Class Reference}
+\label{interface_secure_log_config_components}\index{SecureLogConfigComponents@{SecureLogConfigComponents}}
+
+
+{\ttfamily \#import $<$Secure\+Log\+Config.\+h$>$}
+
+Inheritance diagram for Secure\+Log\+Config\+Components\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_secure_log_config_components}
+\end{center}
+\end{figure}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+N\+S\+String $\ast$ \mbox{\hyperlink{interface_secure_log_config_components_aa57225555a747f896e1058c0b2048e64}{file\+ID}}
+\item 
+N\+S\+Data $\ast$ \mbox{\hyperlink{interface_secure_log_config_components_aee555567c23bb8edd8863ba4ab001d47}{public\+Key\+Modulus}}
+\item 
+N\+S\+Data $\ast$ \mbox{\hyperlink{interface_secure_log_config_components_a87a6594f62459060fe10aaf271fa9aa8}{public\+Key\+Exponent}}
+\item 
+N\+S\+U\+Integer \mbox{\hyperlink{interface_secure_log_config_components_a04821a2052e1dae9f0d92536de0902f6}{rolling\+File\+Max\+Count}}
+\item 
+N\+S\+U\+Integer \mbox{\hyperlink{interface_secure_log_config_components_aa381f1c492de7da17294b9212ab5c848}{rolling\+Size\+In\+KB}}
+\item 
+N\+S\+U\+RL $\ast$ \mbox{\hyperlink{interface_secure_log_config_components_aa758d51134ca2039f9b8b60a2685c9fa}{directory}}
+\item 
+Secure\+Log\+Level \mbox{\hyperlink{interface_secure_log_config_components_a966d16ac1a975043ab31268d7749fced}{log\+Level}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The class contains all parameters which is required to initialise \mbox{\hyperlink{protocol_secure_log-p}{Secure\+Log}}. Set all parameters value to this object and pass to \mbox{\hyperlink{interface_secure_log_config}{Secure\+Log\+Config}} initialise function 
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{interface_secure_log_config_components_aa758d51134ca2039f9b8b60a2685c9fa}\label{interface_secure_log_config_components_aa758d51134ca2039f9b8b60a2685c9fa}} 
+\index{SecureLogConfigComponents@{SecureLogConfigComponents}!directory@{directory}}
+\index{directory@{directory}!SecureLogConfigComponents@{SecureLogConfigComponents}}
+\doxysubsubsection{\texorpdfstring{directory}{directory}}
+{\footnotesize\ttfamily -\/ (N\+S\+U\+RL$\ast$) directory\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+Optional parameter The directory to store the logs Default value\+: Library/\+Application Support/\+Thales Throw N\+S\+Invalid\+Argument\+Exception if the directory is not existed \mbox{\Hypertarget{interface_secure_log_config_components_aa57225555a747f896e1058c0b2048e64}\label{interface_secure_log_config_components_aa57225555a747f896e1058c0b2048e64}} 
+\index{SecureLogConfigComponents@{SecureLogConfigComponents}!fileID@{fileID}}
+\index{fileID@{fileID}!SecureLogConfigComponents@{SecureLogConfigComponents}}
+\doxysubsubsection{\texorpdfstring{fileID}{fileID}}
+{\footnotesize\ttfamily -\/ (N\+S\+String$\ast$) file\+ID\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+Optional parameter This file Id is part of the log file name. Default value\+: d5a1 Maximum length is 10 characters Throw N\+S\+Invalid\+Argument\+Exception if the length is more than 10 characters \mbox{\Hypertarget{interface_secure_log_config_components_a966d16ac1a975043ab31268d7749fced}\label{interface_secure_log_config_components_a966d16ac1a975043ab31268d7749fced}} 
+\index{SecureLogConfigComponents@{SecureLogConfigComponents}!logLevel@{logLevel}}
+\index{logLevel@{logLevel}!SecureLogConfigComponents@{SecureLogConfigComponents}}
+\doxysubsubsection{\texorpdfstring{logLevel}{logLevel}}
+{\footnotesize\ttfamily -\/ (Secure\+Log\+Level) log\+Level\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+Optional parameter The level of log which you want the secure log to write to the file Default value\+: Secure\+Log\+Level\+Warn Throw N\+S\+Invalid\+Argument\+Exception if the level is not from Secure\+Log\+Level \mbox{\Hypertarget{interface_secure_log_config_components_a87a6594f62459060fe10aaf271fa9aa8}\label{interface_secure_log_config_components_a87a6594f62459060fe10aaf271fa9aa8}} 
+\index{SecureLogConfigComponents@{SecureLogConfigComponents}!publicKeyExponent@{publicKeyExponent}}
+\index{publicKeyExponent@{publicKeyExponent}!SecureLogConfigComponents@{SecureLogConfigComponents}}
+\doxysubsubsection{\texorpdfstring{publicKeyExponent}{publicKeyExponent}}
+{\footnotesize\ttfamily -\/ (N\+S\+Data$\ast$) public\+Key\+Exponent\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+Mandatory parameter Is required to retrieve public key and encrypt the log message (Max Length is 8 characters) Throw N\+S\+Invalid\+Argument\+Exception if public\+Key\+Exponent is nil or the length is more than 8 characters \mbox{\Hypertarget{interface_secure_log_config_components_aee555567c23bb8edd8863ba4ab001d47}\label{interface_secure_log_config_components_aee555567c23bb8edd8863ba4ab001d47}} 
+\index{SecureLogConfigComponents@{SecureLogConfigComponents}!publicKeyModulus@{publicKeyModulus}}
+\index{publicKeyModulus@{publicKeyModulus}!SecureLogConfigComponents@{SecureLogConfigComponents}}
+\doxysubsubsection{\texorpdfstring{publicKeyModulus}{publicKeyModulus}}
+{\footnotesize\ttfamily -\/ (N\+S\+Data$\ast$) public\+Key\+Modulus\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+Mandatory parameter Is required to retrieve public key and encrypt the log message (Max Length is 1024 characters) Throw N\+S\+Invalid\+Argument\+Exception if public\+Key\+Modulus is nil or the length is more than 1024 characters \mbox{\Hypertarget{interface_secure_log_config_components_a04821a2052e1dae9f0d92536de0902f6}\label{interface_secure_log_config_components_a04821a2052e1dae9f0d92536de0902f6}} 
+\index{SecureLogConfigComponents@{SecureLogConfigComponents}!rollingFileMaxCount@{rollingFileMaxCount}}
+\index{rollingFileMaxCount@{rollingFileMaxCount}!SecureLogConfigComponents@{SecureLogConfigComponents}}
+\doxysubsubsection{\texorpdfstring{rollingFileMaxCount}{rollingFileMaxCount}}
+{\footnotesize\ttfamily -\/ (N\+S\+U\+Integer) rolling\+File\+Max\+Count\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+Optional parameter To set a Secure logger rolling file max count Default value\+: 8 Throw N\+S\+Invalid\+Argument\+Exception if rolling\+File\+Max\+Count is equals to 0 or more than 99. \mbox{\Hypertarget{interface_secure_log_config_components_aa381f1c492de7da17294b9212ab5c848}\label{interface_secure_log_config_components_aa381f1c492de7da17294b9212ab5c848}} 
+\index{SecureLogConfigComponents@{SecureLogConfigComponents}!rollingSizeInKB@{rollingSizeInKB}}
+\index{rollingSizeInKB@{rollingSizeInKB}!SecureLogConfigComponents@{SecureLogConfigComponents}}
+\doxysubsubsection{\texorpdfstring{rollingSizeInKB}{rollingSizeInKB}}
+{\footnotesize\ttfamily -\/ (N\+S\+U\+Integer) rolling\+Size\+In\+KB\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+Optional parameter To set a Secure logger rolling size Default value\+: 1024 Throw N\+S\+Invalid\+Argument\+Exception if rolling\+Size\+In\+KB = 0 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+build/dist/\+Secure\+Log\+A\+P\+I/\+Release/\+Secure\+Log\+A\+P\+I.\+framework/\+Versions/\+A/\+Headers/Secure\+Log\+Config.\+h\end{DoxyCompactItemize}
