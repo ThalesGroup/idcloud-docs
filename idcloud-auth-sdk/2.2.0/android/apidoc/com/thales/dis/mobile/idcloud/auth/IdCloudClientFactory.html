@@ -180,8 +180,9 @@ extends <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>static <a href="IdCloudClient.html" title="interface in com.thales.dis.mobile.idcloud.auth">IdCloudClient</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createIdCloudClient(androidx.fragment.app.FragmentActivity,java.lang.String)">createIdCloudClient</a></span>&#8203;(androidx.fragment.app.FragmentActivity&nbsp;context,
-                   <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;url)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createIdCloudClient(androidx.fragment.app.FragmentActivity,java.lang.String,java.lang.String)">createIdCloudClient</a></span>&#8203;(androidx.fragment.app.FragmentActivity&nbsp;context,
+                   <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;url,
+                   <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;tenantId)</code></th>
 <td class="colLast">
 <div class="block">Creates <a href="IdCloudClient.html" title="interface in com.thales.dis.mobile.idcloud.auth"><code>IdCloudClient</code></a> instance.</div>
 </td>
@@ -229,7 +230,7 @@ extends <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="createIdCloudClient(androidx.fragment.app.FragmentActivity,java.lang.String)">
+<a id="createIdCloudClient(androidx.fragment.app.FragmentActivity,java.lang.String,java.lang.String)">
 <!--   -->
 </a>
 <ul class="blockListLast">
@@ -239,19 +240,24 @@ extends <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html
 public static&nbsp;<a href="IdCloudClient.html" title="interface in com.thales.dis.mobile.idcloud.auth">IdCloudClient</a>&nbsp;createIdCloudClient&#8203;(@NonNull
                                                 androidx.fragment.app.FragmentActivity&nbsp;context,
                                                 @NonNull
-                                                <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;url)</pre>
+                                                <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;url,
+                                                @NonNull
+                                                <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;tenantId)
+                                         throws <a href="exception/IdCloudClientException.html" title="class in com.thales.dis.mobile.idcloud.auth.exception">IdCloudClientException</a></pre>
 <div class="block">Creates <a href="IdCloudClient.html" title="interface in com.thales.dis.mobile.idcloud.auth"><code>IdCloudClient</code></a> instance.
-
+ <p>
  It is recommended to be called from background thread.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>context</code> - <a href="https://developer.android.com/reference/android/content/Context">Android context</a> object.</dd>
 <dd><code>url</code> - IdCloud server URL. The URL should contain scheme(https://), domain and
-    path.</dd>
+                path.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>An <a href="IdCloudClient.html" title="interface in com.thales.dis.mobile.idcloud.auth"><code>IdCloudClient</code></a> instance.</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="exception/IdCloudClientException.html" title="class in com.thales.dis.mobile.idcloud.auth.exception">IdCloudClientException</a></code> - exception thrown when error occurs.</dd>
 <dt><span class="simpleTagLabel">Since:</span></dt>
-<dd>1.0.0</dd>
+<dd>2.2.0</dd>
 </dl>
 </li>
 </ul>

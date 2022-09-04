@@ -4,3 +4,4 @@ com.thales.dis.mobile.idcloud.auth.operation
 com.thales.dis.mobile.idcloud.auth.ui
 com.thales.dis.mobile.idcloud.auth.ui.biometric
 com.thales.dis.mobile.idcloud.auth.ui.pin
+com.thalesgroup.secutils.certpinner

@@ -267,7 +267,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <h4>getActivatedAuthenticators</h4>
 <pre class="methodSignature">@NonNull
-<a href="https://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="Authenticator.html" title="interface in com.thales.dis.mobile.idcloud.auth">Authenticator</a>&gt;&nbsp;getActivatedAuthenticators()</pre>
+<a href="https://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="Authenticator.html" title="interface in com.thales.dis.mobile.idcloud.auth">Authenticator</a>&gt;&nbsp;getActivatedAuthenticators()
+                                        throws <a href="exception/IdCloudClientException.html" title="class in com.thales.dis.mobile.idcloud.auth.exception">IdCloudClientException</a></pre>
 <div class="block">Fetch the activated authenticators for the enrolled credential
 
  It should be called from background thread.</div>
@@ -275,8 +276,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A List of <a href="Authenticator.html" title="interface in com.thales.dis.mobile.idcloud.auth"><code>Authenticator</code></a>
     instance.</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="exception/IdCloudClientException.html" title="class in com.thales.dis.mobile.idcloud.auth.exception">IdCloudClientException</a></code> - exception thrown when error occurs.</dd>
 <dt><span class="simpleTagLabel">Since:</span></dt>
-<dd>2.0.0</dd>
+<dd>2.2.0</dd>
 </dl>
 </li>
 </ul>

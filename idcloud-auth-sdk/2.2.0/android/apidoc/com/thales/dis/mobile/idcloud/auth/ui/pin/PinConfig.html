@@ -348,12 +348,15 @@ extends <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html
 <h4>setPinRules</h4>
 <pre class="methodSignature">public static&nbsp;void&nbsp;setPinRules&#8203;(@NonNull
                                android.content.Context&nbsp;context,
-                               int&nbsp;rules)</pre>
+                               int&nbsp;rules)
+                        throws <a href="../../exception/IdCloudClientException.html" title="class in com.thales.dis.mobile.idcloud.auth.exception">IdCloudClientException</a></pre>
 <div class="block">Set the rules for acceptable PINs.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>context</code> - A context object</dd>
 <dd><code>rules</code> - PIN rules. e.g. <a href="PinConfig.PinRule.html#LENGTH"><code>PinConfig.PinRule.LENGTH</code></a>|<a href="PinConfig.PinRule.html#PALINDROME"><code>PinConfig.PinRule.PALINDROME</code></a>|<a href="PinConfig.PinRule.html#SERIES"><code>PinConfig.PinRule.SERIES</code></a></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="../../exception/IdCloudClientException.html" title="class in com.thales.dis.mobile.idcloud.auth.exception">IdCloudClientException</a></code> - exception thrown when error occurs.</dd>
 <dt><span class="simpleTagLabel">Since:</span></dt>
 <dd>2.2.0</dd>
 </dl>
