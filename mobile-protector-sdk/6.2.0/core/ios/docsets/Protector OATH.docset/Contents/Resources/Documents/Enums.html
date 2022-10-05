@@ -1,0 +1,3622 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Enumerations  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jazzy.js" defer></script>
+    
+    <script>
+    $(function() {
+        var mylist = $('.task-group').children('ul');
+        var listitems = mylist.children('li').get();
+        listitems.sort(function(a, b) {
+          return $(a).children('div').children('code').children('a')[1].name.localeCompare($(b).children('div').children('code').children('a')[1].name);
+        })
+        $.each(listitems, function(idx, itm) { mylist.append(itm); });
+    });
+    </script>
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Section/Enumerations" class="dashAnchor"></a>
+    <a title="Enumerations  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">Protector OATH 6.2.0 Docs</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">Protector OATH Reference</a>
+        <img id="carat" src="img/carat.png" />
+        Enumerations  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name" id="nav-group-name-Classes">
+            <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/EMAuthModule.html">EMAuthModule</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMBioFingerprintAuthService.html">EMBioFingerprintAuthService</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMBioFingerprintContainer.html">EMBioFingerprintContainer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMCapFactory.html">EMCapFactory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMCapService.html">EMCapService</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMCapTools.html">EMCapTools</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMCasClient.html">EMCasClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMClearTextSecretTokenConfigurationBuilder.html">EMClearTextSecretTokenConfigurationBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMCore.html">EMCore</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMDeviceFingerprintSource.html">EMDeviceFingerprintSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMDeviceFingerprintTokenPolicy.html">EMDeviceFingerprintTokenPolicy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMDsCapParameters.html">EMDsCapParameters</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMDsFormattingFactory.html">EMDsFormattingFactory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMDsFormattingService.html">EMDsFormattingService</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMDsFormattingTools.html">EMDsFormattingTools</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMDskppConfigurationBuilder.html">EMDskppConfigurationBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMDskppKeyInformation.html">EMDskppKeyInformation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMDskppPinPolicy.html">EMDskppPinPolicy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes.html#/c:objc(cs)EMDskppPolicy">EMDskppPolicy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMDskppPolicyParser.html">EMDskppPolicyParser</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMDskppProvisioningCallback.html">EMDskppProvisioningCallback</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMDskppTlsConfiguration.html">EMDskppTlsConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMEmvError.html">EMEmvError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMEmvMap.html">EMEmvMap</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMEmvModule.html">EMEmvModule</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMEmvOptional.html">EMEmvOptional</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMEmvService.html">EMEmvService</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMEnumSet.html">EMEnumSet</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMEpsConfigurationBuilder.html">EMEpsConfigurationBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes.html#/c:objc(cs)EMException">EMException</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMGpfDsFactory.html">EMGpfDsFactory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMGpfDsService.html">EMGpfDsService</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes.html#/c:objc(cs)EMModuleConfiguration">EMModuleConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMMspConfiguration.html">EMMspConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMMspFactory.html">EMMspFactory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMMspField.html">EMMspField</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMMspModule.html">EMMspModule</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMMspService.html">EMMspService</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMOathFactory.html">EMOathFactory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMOathService.html">EMOathService</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMOobConfiguration.html">EMOobConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMOobConfigurationBuilder.html">EMOobConfigurationBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMOobIncomingMessageBase.html">EMOobIncomingMessageBase</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMOobMessageBase.html">EMOobMessageBase</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMOobMessageHandlerRegistry.html">EMOobMessageHandlerRegistry</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMOobModule.html">EMOobModule</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMOobNotificationProfile.html">EMOobNotificationProfile</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes.html#/c:objc(cs)EMOobOutgoingMessageBase">EMOobOutgoingMessageBase</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMOobRegistrationRequest.html">EMOobRegistrationRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMOobRequestParameter.html">EMOobRequestParameter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMOobRequestParameterBuilder.html">EMOobRequestParameterBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMOtpConfiguration.html">EMOtpConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMOtpModule.html">EMOtpModule</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMOtpTools.html">EMOtpTools</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMPinAuthService.html">EMPinAuthService</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes.html#/c:objc(cs)EMPinRuleIdentical">EMPinRuleIdentical</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMPinRuleLength.html">EMPinRuleLength</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes.html#/c:objc(cs)EMPinRulePalindrome">EMPinRulePalindrome</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes.html#/c:objc(cs)EMPinRuleSeries">EMPinRuleSeries</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes.html#/c:objc(cs)EMPinRuleUniform">EMPinRuleUniform</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMPrimitiveValue.html">EMPrimitiveValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMProvisioningConfiguration.html">EMProvisioningConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMSecureInputEncryptionConfig.html">EMSecureInputEncryptionConfig</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMSecureInputService.html">EMSecureInputService</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMSecureStorageModule.html">EMSecureStorageModule</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMSignatureKey.html">EMSignatureKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMSystemBioFingerprintAuthService.html">EMSystemBioFingerprintAuthService</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMSystemBioFingerprintContainer.html">EMSystemBioFingerprintContainer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMSystemFaceAuthContainer.html">EMSystemFaceAuthContainer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMSystemFaceAuthService.html">EMSystemFaceAuthService</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMTagValue.html">EMTagValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMTlsConfiguration.html">EMTlsConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMUIModule.html">EMUIModule</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMVicFactory.html">EMVicFactory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMVicService.html">EMVicService</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/SecureLogConfig.html">SecureLogConfig</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/SecureLogConfigComponents.html">SecureLogConfigComponents</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name" id="nav-group-name-Constants">
+            <a href="Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMActivationException">EMActivationException</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMCCasErrorDomain">EMCCasErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMCheckDigitException">EMCheckDigitException</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMConfigFileException">EMConfigFileException</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMCryptoException">EMCryptoException</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMDeviceFingerprintException">EMDeviceFingerprintException</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMDsDataFormatErrorCodeGeneral">EMDsDataFormatErrorCodeGeneral</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMDsDataFormatErrorDomain">EMDsDataFormatErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMDsDataFormatException">EMDsDataFormatException</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMDskppOtpComplexityBase32">EMDskppOtpComplexityBase32</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMDskppOtpComplexityBase64">EMDskppOtpComplexityBase64</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMDskppOtpComplexityDecimal">EMDskppOtpComplexityDecimal</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMDskppOtpComplexityHexadecimal">EMDskppOtpComplexityHexadecimal</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMDskppPolicyStatusOff">EMDskppPolicyStatusOff</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMDskppPolicyStatusOn">EMDskppPolicyStatusOn</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMDskppTlsConfigurationDefaultTimeout">EMDskppTlsConfigurationDefaultTimeout</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMDskppTokenModeEventSync">EMDskppTokenModeEventSync</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMDskppTokenModeOcraChallengeResponse">EMDskppTokenModeOcraChallengeResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMDskppTokenModeTimeSync">EMDskppTokenModeTimeSync</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMInitException">EMInitException</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMInvalidArgumentException">EMInvalidArgumentException</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMMobileProvisioningProtocolException">EMMobileProvisioningProtocolException</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMOobClientException">EMOobClientException</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMOobIncomingMessageTypeGeneric">EMOobIncomingMessageTypeGeneric</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMOobIncomingMessageTypeTransactionSigning">EMOobIncomingMessageTypeTransactionSigning</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMOobIncomingMessageTypeTransactionVerify">EMOobIncomingMessageTypeTransactionVerify</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMOobIncomingMessageTypeUserMessage">EMOobIncomingMessageTypeUserMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMOobMessageException">EMOobMessageException</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMOobNotificationException">EMOobNotificationException</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMOobOutgoingMessageTypeError">EMOobOutgoingMessageTypeError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMOobOutgoingMessageTypeGeneric">EMOobOutgoingMessageTypeGeneric</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMOobOutgoingMessageTypeTransactionSigning">EMOobOutgoingMessageTypeTransactionSigning</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMOobOutgoingMessageTypeTransactionVerify">EMOobOutgoingMessageTypeTransactionVerify</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMOobOutgoingMessageTypeUserMessage">EMOobOutgoingMessageTypeUserMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMOobParseException">EMOobParseException</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMOobRegistrationException">EMOobRegistrationException</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMOobUnregistrationException">EMOobUnregistrationException</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMPasswordManagerException">EMPasswordManagerException</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMPinErrorDomain">EMPinErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMPinRuleErrorDomain">EMPinRuleErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMPrimitiveTag_Input_Account_Number">EMPrimitiveTag_Input_Account_Number</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMPrimitiveTag_Input_Amount">EMPrimitiveTag_Input_Amount</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMPrimitiveTag_Input_Amount_With_Currency">EMPrimitiveTag_Input_Amount_With_Currency</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMPrimitiveTag_Input_Buy_Sell">EMPrimitiveTag_Input_Buy_Sell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMPrimitiveTag_Input_Challenge">EMPrimitiveTag_Input_Challenge</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMPrimitiveTag_Input_Checksum">EMPrimitiveTag_Input_Checksum</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMPrimitiveTag_Input_Currency">EMPrimitiveTag_Input_Currency</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMPrimitiveTag_Input_Data">EMPrimitiveTag_Input_Data</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMPrimitiveTag_Input_Data_10">EMPrimitiveTag_Input_Data_10</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMPrimitiveTag_Input_Data_2">EMPrimitiveTag_Input_Data_2</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMPrimitiveTag_Input_Data_3">EMPrimitiveTag_Input_Data_3</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMPrimitiveTag_Input_Data_4">EMPrimitiveTag_Input_Data_4</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMPrimitiveTag_Input_Data_5">EMPrimitiveTag_Input_Data_5</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMPrimitiveTag_Input_Data_6">EMPrimitiveTag_Input_Data_6</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMPrimitiveTag_Input_Data_7">EMPrimitiveTag_Input_Data_7</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMPrimitiveTag_Input_Data_8">EMPrimitiveTag_Input_Data_8</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMPrimitiveTag_Input_Data_9">EMPrimitiveTag_Input_Data_9</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMPrimitiveTag_Input_Date">EMPrimitiveTag_Input_Date</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMPrimitiveTag_Input_Due_Date">EMPrimitiveTag_Input_Due_Date</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMPrimitiveTag_Input_Extra_Code">EMPrimitiveTag_Input_Extra_Code</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMPrimitiveTag_Input_From_Account">EMPrimitiveTag_Input_From_Account</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMPrimitiveTag_Input_From_Date">EMPrimitiveTag_Input_From_Date</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMPrimitiveTag_Input_Further_Inputs">EMPrimitiveTag_Input_Further_Inputs</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMPrimitiveTag_Input_Iban">EMPrimitiveTag_Input_Iban</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMPrimitiveTag_Input_Identity_Number">EMPrimitiveTag_Input_Identity_Number</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMPrimitiveTag_Input_Limit">EMPrimitiveTag_Input_Limit</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMPrimitiveTag_Input_Login_Code">EMPrimitiveTag_Input_Login_Code</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMPrimitiveTag_Input_Not_Before">EMPrimitiveTag_Input_Not_Before</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMPrimitiveTag_Input_Number_Of_Payments">EMPrimitiveTag_Input_Number_Of_Payments</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMPrimitiveTag_Input_Passcode">EMPrimitiveTag_Input_Passcode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMPrimitiveTag_Input_Pg_Bg">EMPrimitiveTag_Input_Pg_Bg</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMPrimitiveTag_Input_Phone_Number">EMPrimitiveTag_Input_Phone_Number</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMPrimitiveTag_Input_Quantity">EMPrimitiveTag_Input_Quantity</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMPrimitiveTag_Input_Ref_Order_Number">EMPrimitiveTag_Input_Ref_Order_Number</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMPrimitiveTag_Input_Reference_Number">EMPrimitiveTag_Input_Reference_Number</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMPrimitiveTag_Input_Time">EMPrimitiveTag_Input_Time</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMPrimitiveTag_Input_To_Account">EMPrimitiveTag_Input_To_Account</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMPrimitiveTag_Input_To_Date">EMPrimitiveTag_Input_To_Date</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMPrimitiveTag_Input_Total_Amount">EMPrimitiveTag_Input_Total_Amount</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMPrimitiveTag_Input_Units">EMPrimitiveTag_Input_Units</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMPrimitiveTag_Input_User_Id">EMPrimitiveTag_Input_User_Id</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMPrimitiveTag_Input_Valid_Until">EMPrimitiveTag_Input_Valid_Until</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMPrimitiveTag_Message_Authenticate">EMPrimitiveTag_Message_Authenticate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMPrimitiveTag_Message_Buy_Sell_Shares">EMPrimitiveTag_Message_Buy_Sell_Shares</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMPrimitiveTag_Message_Confirm_Address_Change">EMPrimitiveTag_Message_Confirm_Address_Change</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMPrimitiveTag_Message_Confirm_Agreement">EMPrimitiveTag_Message_Confirm_Agreement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMPrimitiveTag_Message_Confirm_Assignment">EMPrimitiveTag_Message_Confirm_Assignment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMPrimitiveTag_Message_Confirm_Protect_File">EMPrimitiveTag_Message_Confirm_Protect_File</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMPrimitiveTag_Message_International_Payment">EMPrimitiveTag_Message_International_Payment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMPrimitiveTag_Message_Login">EMPrimitiveTag_Message_Login</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMPrimitiveTag_Message_New_Beneficiary">EMPrimitiveTag_Message_New_Beneficiary</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMPrimitiveTag_Message_New_Pg_Bg">EMPrimitiveTag_Message_New_Pg_Bg</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMPrimitiveTag_Message_New_Phone_Number">EMPrimitiveTag_Message_New_Phone_Number</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMPrimitiveTag_Message_Payment">EMPrimitiveTag_Message_Payment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMPrimitiveTag_Message_Pg_Bg_Payment">EMPrimitiveTag_Message_Pg_Bg_Payment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMPrimitiveTag_Message_Signing">EMPrimitiveTag_Message_Signing</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMPrimitiveTag_Message_Transfer">EMPrimitiveTag_Message_Transfer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMPrimitiveTag_Text_Free_Text">EMPrimitiveTag_Text_Free_Text</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMPrimitiveTag_Text_Hidden_Text">EMPrimitiveTag_Text_Hidden_Text</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMSecureInputBuilder_DEFAULT_BACK_BUTTON_NAME">EMSecureInputBuilder_DEFAULT_BACK_BUTTON_NAME</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMSecureInputBuilder_DEFAULT_BUTTON_FONT_NAME">EMSecureInputBuilder_DEFAULT_BUTTON_FONT_NAME</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMSecureInputBuilder_DEFAULT_DELETE_BUTTON_NAME">EMSecureInputBuilder_DEFAULT_DELETE_BUTTON_NAME</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMSecureInputBuilder_DEFAULT_FIRST_LABEL">EMSecureInputBuilder_DEFAULT_FIRST_LABEL</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMSecureInputBuilder_DEFAULT_KEYS">EMSecureInputBuilder_DEFAULT_KEYS</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMSecureInputBuilder_DEFAULT_OK_BUTTON_NAME">EMSecureInputBuilder_DEFAULT_OK_BUTTON_NAME</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMSecureInputBuilder_DEFAULT_SECOND_LABEL">EMSecureInputBuilder_DEFAULT_SECOND_LABEL</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMSecureInputBuilder_DEFAULT_SHIFT_BUTTON_NAME">EMSecureInputBuilder_DEFAULT_SHIFT_BUTTON_NAME</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMStaticColorHandler">EMStaticColorHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMTlsConfigurationDefaultTimeout">EMTlsConfigurationDefaultTimeout</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMTokenManagerErrorDomain">EMTokenManagerErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMVicException">EMVicException</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EM_C_ERR_CODE_DATA_OBJECT_DUPLICATE">EM_C_ERR_CODE_DATA_OBJECT_DUPLICATE</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EM_C_ERR_CODE_DATA_OBJECT_INCOMPLETE">EM_C_ERR_CODE_DATA_OBJECT_INCOMPLETE</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EM_C_ERR_CODE_DATA_OBJECT_MISSING">EM_C_ERR_CODE_DATA_OBJECT_MISSING</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EM_C_ERR_CODE_DATA_OBJECT_NOT_FOUND">EM_C_ERR_CODE_DATA_OBJECT_NOT_FOUND</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EM_C_ERR_CODE_DATA_OBJECT_REDUNDANT">EM_C_ERR_CODE_DATA_OBJECT_REDUNDANT</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EM_C_ERR_CODE_DATA_OBJECT_UNEXPECTED">EM_C_ERR_CODE_DATA_OBJECT_UNEXPECTED</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EM_C_ERR_CODE_INCORRECT_CRC">EM_C_ERR_CODE_INCORRECT_CRC</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EM_C_ERR_CODE_INVALID_DATA_OBJECT_FORMAT">EM_C_ERR_CODE_INVALID_DATA_OBJECT_FORMAT</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EM_C_ERR_CODE_INVALID_END_OF_QR_CODE">EM_C_ERR_CODE_INVALID_END_OF_QR_CODE</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EM_C_ERR_CODE_INVALID_START_OF_QR_CODE">EM_C_ERR_CODE_INVALID_START_OF_QR_CODE</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EM_C_ERR_CODE_MISSING_MAPPER">EM_C_ERR_CODE_MISSING_MAPPER</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EM_C_ERR_DOMAIN_MAPPER">EM_C_ERR_DOMAIN_MAPPER</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EM_C_ERR_DOMAIN_VALIDATION">EM_C_ERR_DOMAIN_VALIDATION</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:EMMspCapData.h@EM_MSP_CAP_MODE1">EM_MSP_CAP_MODE1</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:EMMspCapData.h@EM_MSP_CAP_MODE2">EM_MSP_CAP_MODE2</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:EMMspCapData.h@EM_MSP_CAP_MODE2_TDS">EM_MSP_CAP_MODE2_TDS</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:EMMspCapData.h@EM_MSP_CAP_MODE3">EM_MSP_CAP_MODE3</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:EMMspOathData.h@EM_MSP_OATH_HOTP">EM_MSP_OATH_HOTP</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:EMMspOathData.h@EM_MSP_OATH_OCRA">EM_MSP_OATH_OCRA</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:EMMspOathData.h@EM_MSP_OATH_TOTP">EM_MSP_OATH_TOTP</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EZIO_MOBILE_ERROR_DOMAIN_AUTH_MODE_BIOFP">EZIO_MOBILE_ERROR_DOMAIN_AUTH_MODE_BIOFP</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EZIO_MOBILE_ERROR_DOMAIN_AUTH_MODE_FACE">EZIO_MOBILE_ERROR_DOMAIN_AUTH_MODE_FACE</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EZIO_MOBILE_ERROR_DOMAIN_AUTH_MODE_SYSTEM_FACEID">EZIO_MOBILE_ERROR_DOMAIN_AUTH_MODE_SYSTEM_FACEID</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EZIO_MOBILE_ERROR_DOMAIN_EMS_LICENSE">EZIO_MOBILE_ERROR_DOMAIN_EMS_LICENSE</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EZIO_MOBILE_ERROR_DOMAIN_FINGERPRINT">EZIO_MOBILE_ERROR_DOMAIN_FINGERPRINT</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EZIO_MOBILE_ERROR_DOMAIN_GLOBALDB">EZIO_MOBILE_ERROR_DOMAIN_GLOBALDB</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EZIO_MOBILE_ERROR_DOMAIN_JAILBREAK_DETECTION">EZIO_MOBILE_ERROR_DOMAIN_JAILBREAK_DETECTION</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EZIO_MOBILE_ERROR_DOMAIN_MSP">EZIO_MOBILE_ERROR_DOMAIN_MSP</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EZIO_MOBILE_ERROR_DOMAIN_MULTI_AUTH_MODE">EZIO_MOBILE_ERROR_DOMAIN_MULTI_AUTH_MODE</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EZIO_MOBILE_ERROR_DOMAIN_OOB">EZIO_MOBILE_ERROR_DOMAIN_OOB</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EZIO_MOBILE_ERROR_DOMAIN_PASSWORD">EZIO_MOBILE_ERROR_DOMAIN_PASSWORD</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EZIO_MOBILE_ERROR_DOMAIN_SECURE_KEYPAD">EZIO_MOBILE_ERROR_DOMAIN_SECURE_KEYPAD</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EZIO_MOBILE_ERROR_DOMAIN_SECURE_STORAGE">EZIO_MOBILE_ERROR_DOMAIN_SECURE_STORAGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EZIO_MOBILE_ERROR_DOMAIN_SPRNG">EZIO_MOBILE_ERROR_DOMAIN_SPRNG</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EZIO_MOBILE_ERROR_DOMAIN_TOKEN">EZIO_MOBILE_ERROR_DOMAIN_TOKEN</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EZIO_MOBILE_ERROR_DOMAIN_UNSPECIFIED">EZIO_MOBILE_ERROR_DOMAIN_UNSPECIFIED</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@MSP_CONFIGURATION_NOT_SET">MSP_CONFIGURATION_NOT_SET</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@MSP_CONFIGURATION_SET">MSP_CONFIGURATION_SET</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name" id="nav-group-name-Enumerations">
+            <a href="Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Enums/EMButtonTouchVisualEffect.html">EMButtonTouchVisualEffect</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EMCCasError.html">EMCCasError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EMCEncryptionVersion.html">EMCEncryptionVersion</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EMDeviceFingerprintType.html">EMDeviceFingerprintType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EMDomainType.html">EMDomainType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EMDsCapMode.html">EMDsCapMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EMDskppPinComplexity.html">EMDskppPinComplexity</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EMDskppPinType.html">EMDskppPinType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EMDskppPolicyParamType.html">EMDskppPolicyParamType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EMDskppProvisioningProtocol.html">EMDskppProvisioningProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EMEmvDataObjectType.html">EMEmvDataObjectType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EMEmvPointOfInitiationMethod.html">EMEmvPointOfInitiationMethod</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EMEmvTipOrConvenienceIndicator.html">EMEmvTipOrConvenienceIndicator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EMFormatType.html">EMFormatType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EMHookingDetectionPolicy.html">EMHookingDetectionPolicy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EMJailbreakErrorCode.html">EMJailbreakErrorCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EMJailbreakStatus.html">EMJailbreakStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EMKekPrfAlgorithm.html">EMKekPrfAlgorithm</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EMMobileProvisioningProtocol.html">EMMobileProvisioningProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EMMspBaseAlgorithm.html">EMMspBaseAlgorithm</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EMMspFrameType.html">EMMspFrameType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EMOathHashAlgorithm.html">EMOathHashAlgorithm</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EMOathTimestepType.html">EMOathTimestepType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EMOcraChallengeQuestionFormat.html">EMOcraChallengeQuestionFormat</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EMOcraPasswordHashAlgorithm.html">EMOcraPasswordHashAlgorithm</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EMOobErrorMessageCode.html">EMOobErrorMessageCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EMOobJailbreakPolicy.html">EMOobJailbreakPolicy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EMOobRegistrationMethod.html">EMOobRegistrationMethod</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EMOobResultCode.html">EMOobResultCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EMOobTransactionSigningResponseValue.html">EMOobTransactionSigningResponseValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EMOobTransactionVerifyResponseValue.html">EMOobTransactionVerifyResponseValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EMPinComplexity.html">EMPinComplexity</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EMPinErrorCode.html">EMPinErrorCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EMPinPolicyType.html">EMPinPolicyType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EMPinRuleErrorCode.html">EMPinRuleErrorCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EMPinType.html">EMPinType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EMPrimitiveInputFormat.html">EMPrimitiveInputFormat</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EMPrimitiveTextFormat.html">EMPrimitiveTextFormat</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EMPrimitiveType.html">EMPrimitiveType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EMScrambleType.html">EMScrambleType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EMSecureInputBuilderDefaultConfigurations.html">EMSecureInputBuilderDefaultConfigurations</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EMSecureInputEncryptionMode.html">EMSecureInputEncryptionMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EMSecureInputUiBackgroundImageContentMode.html">EMSecureInputUiBackgroundImageContentMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EMSecureInputUiControlFocusState.html">EMSecureInputUiControlFocusState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EMSecureInputUiControlState.html">EMSecureInputUiControlState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EMSecureInputUiDisplayMode.html">EMSecureInputUiDisplayMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EMSecureInputUiLabelAlignment.html">EMSecureInputUiLabelAlignment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EMSecureInputUiLogoPosition.html">EMSecureInputUiLogoPosition</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EMSecureInputUiOkButtonBehavior.html">EMSecureInputUiOkButtonBehavior</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EMStatus.html">EMStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EMTokenCapability.html">EMTokenCapability</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EMTokenJailbreakPolicy.html">EMTokenJailbreakPolicy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EMTokenManagerErrorCode.html">EMTokenManagerErrorCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EMTokenPolicyType.html">EMTokenPolicyType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EMTokenUsage.html">EMTokenUsage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EMVerifyType.html">EMVerifyType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/FieldCompleteness.html">FieldCompleteness</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/SecureLogLevel.html">SecureLogLevel</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name" id="nav-group-name-Protocols">
+            <a href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols.html#/c:objc(pl)EMAuthInput">EMAuthInput</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols.html#/c:objc(pl)EMAuthMode">EMAuthMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMAuthService.html">EMAuthService</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMAuthenticatable.html">EMAuthenticatable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols.html#/c:objc(pl)EMBioFingerprintAuthInput">EMBioFingerprintAuthInput</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols.html#/c:objc(pl)EMBioFingerprintAuthMode">EMBioFingerprintAuthMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMCapDevice.html">EMCapDevice</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols.html#/c:objc(pl)EMCapSettings">EMCapSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols.html#/c:objc(pl)EMCapToken">EMCapToken</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMCapTokenManager.html">EMCapTokenManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMDcvOathDevice.html">EMDcvOathDevice</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols.html#/c:objc(pl)EMDecimalInputDialogPrimitive">EMDecimalInputDialogPrimitive</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMDsFormattingDevice.html">EMDsFormattingDevice</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMDsTransactionData.html">EMDsTransactionData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMDskppLocalPinCallback.html">EMDskppLocalPinCallback</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMDskppPolicyProtocol.html">EMDskppPolicyProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMDskppServerPinCallback.html">EMDskppServerPinCallback</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols.html#/c:objc(pl)EMDualSeedOathToken">EMDualSeedOathToken</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols.html#/c:objc(pl)EMDualSeedSoftOathToken">EMDualSeedSoftOathToken</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMEmvAdditionalDataFieldTemplate.html">EMEmvAdditionalDataFieldTemplate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMEmvBool.html">EMEmvBool</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMEmvByte.html">EMEmvByte</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMEmvDataObject.html">EMEmvDataObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMEmvFactory.html">EMEmvFactory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMEmvMerchantInformationLanguageTemplate.html">EMEmvMerchantInformationLanguageTemplate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMEmvMpmDecoder.html">EMEmvMpmDecoder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols.html#/c:objc(pl)EMEmvPrimitive">EMEmvPrimitive</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMEmvTemplate.html">EMEmvTemplate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMEmvTemplateWithGui.html">EMEmvTemplateWithGui</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMEmvTransactionInfo.html">EMEmvTransactionInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols.html#/c:objc(pl)EMFreeTextPrimitive">EMFreeTextPrimitive</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMGemaltoOathDevice.html">EMGemaltoOathDevice</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMGpfDsDevice.html">EMGpfDsDevice</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols.html#/c:objc(pl)EMGroupedInputDialogPrimitive">EMGroupedInputDialogPrimitive</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols.html#/c:objc(pl)EMHiddenTextPrimitive">EMHiddenTextPrimitive</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols.html#/c:objc(pl)EMInformationPrimitive">EMInformationPrimitive</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols.html#/c:objc(pl)EMInputDialogPrimitive">EMInputDialogPrimitive</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMInputPrimitive.html">EMInputPrimitive</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols.html#/c:objc(pl)EMMessageDialogPrimitive">EMMessageDialogPrimitive</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMModule.html">EMModule</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMMspCapData.html">EMMspCapData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMMspData.html">EMMspData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMMspFrame.html">EMMspFrame</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMMspGpfdsData.html">EMMspGpfdsData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMMspOathData.html">EMMspOathData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMMspParser.html">EMMspParser</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMMspRegistration.html">EMMspRegistration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMMutableSoftCapSettings.html">EMMutableSoftCapSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMMutableSoftDcvOathSettings.html">EMMutableSoftDcvOathSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMMutableSoftGemaltoOathSettings.html">EMMutableSoftGemaltoOathSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMMutableSoftGpfDsSettings.html">EMMutableSoftGpfDsSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMMutableSoftOathSettings.html">EMMutableSoftOathSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols.html#/c:objc(pl)EMNumericInputDialogPrimitive">EMNumericInputDialogPrimitive</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMOathDevice.html">EMOathDevice</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols.html#/c:objc(pl)EMOathToken">EMOathToken</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMOathTokenManager.html">EMOathTokenManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMOobErrorMessage.html">EMOobErrorMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMOobFetchMessageResponse.html">EMOobFetchMessageResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMOobGenericIncomingMessage.html">EMOobGenericIncomingMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMOobGenericOutgoingMessage.html">EMOobGenericOutgoingMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMOobIncomingMessage.html">EMOobIncomingMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMOobIncomingMessageHandler.html">EMOobIncomingMessageHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMOobManager.html">EMOobManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMOobMessage.html">EMOobMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols.html#/c:objc(pl)EMOobMessageHandler">EMOobMessageHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMOobMessageManager.html">EMOobMessageManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMOobMessageMeta.html">EMOobMessageMeta</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMOobMessageResponse.html">EMOobMessageResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMOobNotificationManager.html">EMOobNotificationManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMOobNotificationProfilesResponse.html">EMOobNotificationProfilesResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMOobOutgoingMessage.html">EMOobOutgoingMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMOobOutgoingMessageHandler.html">EMOobOutgoingMessageHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMOobProviderToUserMessage.html">EMOobProviderToUserMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMOobRegistrationManager.html">EMOobRegistrationManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMOobRegistrationResponse.html">EMOobRegistrationResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMOobResponse.html">EMOobResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMOobTransactionSigningRequest.html">EMOobTransactionSigningRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMOobTransactionSigningResponse.html">EMOobTransactionSigningResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMOobTransactionVerifyRequest.html">EMOobTransactionVerifyRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMOobTransactionVerifyResponse.html">EMOobTransactionVerifyResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMOobUnregistrationManager.html">EMOobUnregistrationManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMOobUserMessageAttachment.html">EMOobUserMessageAttachment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMOobUserToProviderMessage.html">EMOobUserToProviderMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMPasswordManager.html">EMPasswordManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols.html#/c:objc(pl)EMPinAuthInput">EMPinAuthInput</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols.html#/c:objc(pl)EMPinAuthMode">EMPinAuthMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols.html#/c:objc(pl)EMPinPolicy">EMPinPolicy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols.html#/c:objc(pl)EMPinRule">EMPinRule</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMPrimitive.html">EMPrimitive</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMPropertyStorage.html">EMPropertyStorage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMSecureByteArray.html">EMSecureByteArray</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMSecureContainer.html">EMSecureContainer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMSecureContainerFactory.html">EMSecureContainerFactory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMSecureInputBuilder.html">EMSecureInputBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMSecureInputCustomUiDelegate.html">EMSecureInputCustomUiDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMSecureInputUi.html">EMSecureInputUi</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMSecureStorageManager.html">EMSecureStorageManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMSecureString.html">EMSecureString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMSelectableKey.html">EMSelectableKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMSelectionInputDialogPrimitive.html">EMSelectionInputDialogPrimitive</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMSoftCapSettings.html">EMSoftCapSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols.html#/c:objc(pl)EMSoftCapToken">EMSoftCapToken</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMSoftDcvOathSettings.html">EMSoftDcvOathSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMSoftGemaltoOathSettings.html">EMSoftGemaltoOathSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMSoftGpfDsSettings.html">EMSoftGpfDsSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMSoftOathSettings.html">EMSoftOathSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols.html#/c:objc(pl)EMSoftOathToken">EMSoftOathToken</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols.html#/c:objc(pl)EMSoftVicToken">EMSoftVicToken</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols.html#/c:objc(pl)EMSystemBioFingerprintAuthInput">EMSystemBioFingerprintAuthInput</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols.html#/c:objc(pl)EMSystemBioFingerprintAuthMode">EMSystemBioFingerprintAuthMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols.html#/c:objc(pl)EMSystemFaceAuthInput">EMSystemFaceAuthInput</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols.html#/c:objc(pl)EMSystemFaceAuthMode">EMSystemFaceAuthMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMTemplate.html">EMTemplate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMTextPrimitive.html">EMTextPrimitive</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMToken.html">EMToken</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMTokenManager.html">EMTokenManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMTokenPolicy.html">EMTokenPolicy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMVicDevice.html">EMVicDevice</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols.html#/c:objc(pl)EMVicToken">EMVicToken</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMVicTokenManager.html">EMVicTokenManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMWipeable.html">EMWipeable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/SecureLog.html">SecureLog</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name" id="nav-group-name-Type Definitions">
+            <a href="Type%20Definitions.html">Type Definitions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Type%20Definitions.html#/c:EMSecurityDetectionService.h@T@EMHookingDetectionListener">EMHookingDetectionListener</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Type%20Definitions.html#/c:EMSecureInputBuilder.h@T@EMSecureInputUiOnFinish">EMSecureInputUiOnFinish</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Type%20Definitions.html#/c:EMSecureInputBuilder.h@T@EMSecureInputUiOnFinishClearText">EMSecureInputUiOnFinishClearText</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Type%20Definitions.html#/c:EMSecureInputBuilder.h@T@EMSecureInputUiOnFinishEncryptedData">EMSecureInputUiOnFinishEncryptedData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Type%20Definitions.html#/c:EMSystemFaceAuthService.h@T@IsSupportedFallback">IsSupportedFallback</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Type%20Definitions.html#/c:EMDskppProvisioningCallback.h@T@OnKeyProvisionedBlock">OnKeyProvisionedBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Type%20Definitions.html#/c:EMDskppProvisioningCallback.h@T@OnLocalPinRequestBlock">OnLocalPinRequestBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Type%20Definitions.html#/c:EMDskppProvisioningCallback.h@T@OnPolicyExtensionProvidedBlock">OnPolicyExtensionProvidedBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Type%20Definitions.html#/c:EMDskppProvisioningCallback.h@T@OnPolicyStringProvidedBlock">OnPolicyStringProvidedBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Type%20Definitions.html#/c:EMDskppProvisioningCallback.h@T@OnServerPinRequestBlock">OnServerPinRequestBlock</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name" id="nav-group-name-Functions">
+            <a href="Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Functions.html#/c:@F@EMDynamicColorUpdate">EMDynamicColorUpdate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions.html#/c:@F@EMDynamicDeleteKey">EMDynamicDeleteKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions.html#/c:@F@EMDynamicHandler">EMDynamicHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions.html#/c:@F@EMDynamicRotateKey">EMDynamicRotateKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions.html#/c:@F@EMDynamicSwapKey">EMDynamicSwapKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions.html#/c:@F@EMDynamicUpdateKey">EMDynamicUpdateKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions.html#/c:@F@EMHookingDetectionClearListener">EMHookingDetectionClearListener</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions.html#/c:@F@EMHookingDetectionSetListener">EMHookingDetectionSetListener</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions.html#/c:@F@EMOobJailbreakPolicyGetPolicy">EMOobJailbreakPolicyGetPolicy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions.html#/c:@F@EMOobJailbreakPolicySetPolicy">EMOobJailbreakPolicySetPolicy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions.html#/c:@F@EMTokenJailbreakPolicyGetPolicy">EMTokenJailbreakPolicyGetPolicy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions.html#/c:@F@EMTokenJailbreakPolicySetPolicy">EMTokenJailbreakPolicySetPolicy</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      
+      <script>
+      $(function() {
+          $("#nav-group-name-Constants").remove();
+      
+          // sorting
+          var mylist = $('.nav-group-tasks').each(function () {
+            var tlist = $(this);
+            var listitems = $(this).children('li').get();
+            listitems.sort(function(a, b) {
+              return $(a).children('a')[0].text.localeCompare($(b).children('a')[0].text);
+            })
+            $.each(listitems, function(idx, itm) { tlist.append(itm); });
+          });
+      });
+      </script>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Enumerations</h1>
+            <p>The following enumerations are available globally.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@EMCCasError"></a>
+                    <a name="//apple_ref/objc/Enum/EMCCasError" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@EMCCasError">EMCCasError</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The error that will be returned when a failure occurs during the CAS E2EE operation..</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    6.1.0
+
+</div>
+
+                        <a href="Enums/EMCCasError.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">EMCCasError</span> <span class="o">:</span> <span class="n">NSInteger</span> <span class="p">{}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@EMCEncryptionVersion"></a>
+                    <a name="//apple_ref/objc/Enum/EMCEncryptionVersion" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@EMCEncryptionVersion">EMCEncryptionVersion</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The encryption version of the CAS Server</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    6.1.0
+
+</div>
+
+                        <a href="Enums/EMCEncryptionVersion.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">EMCEncryptionVersion</span> <span class="o">:</span> <span class="n">NSUInteger</span> <span class="p">{}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@EMDeviceFingerprintType"></a>
+                    <a name="//apple_ref/objc/Enum/EMDeviceFingerprintType" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@EMDeviceFingerprintType">EMDeviceFingerprintType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The defined anti-cloning types.</p>
+
+<p>Seals the user&rsquo;s credentials. A factory reset/initialization of the device will make the credentials unusable.<br>Requirements: None</p>
+
+<p>@warning: If <code>EMDeviceFingerprintTypeSoft \ EMDeviceFingerprintTypeHardwareKey</code> is used, user cannot restore the previous data after either a factory reset, or re-initializing of the same device</p>
+
+                        <a href="Enums/EMDeviceFingerprintType.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">EMDeviceFingerprintType</span> <span class="o">:</span> <span class="n">NSUInteger</span> <span class="p">{}</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">EMDeviceFingerprintType</span> <span class="p">:</span> <span class="kt">UInt</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@EMDsCapMode"></a>
+                    <a name="//apple_ref/objc/Enum/EMDsCapMode" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@EMDsCapMode">EMDsCapMode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The supported modes for DS CAP.</p>
+
+                        <a href="Enums/EMDsCapMode.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">EMDsCapMode</span> <span class="o">:</span> <span class="n">NSInteger</span> <span class="p">{}</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">EMDsCapMode</span> <span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@EMDomainType"></a>
+                    <a name="//apple_ref/objc/Enum/EMDomainType" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@EMDomainType">EMDomainType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The supported domains for Dynamic Signature using GPF.</p>
+
+                        <a href="Enums/EMDomainType.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">EMDomainType</span> <span class="o">:</span> <span class="n">NSInteger</span> <span class="p">{}</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">EMDomainType</span> <span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@EMVerifyType"></a>
+                    <a name="//apple_ref/objc/Enum/EMVerifyType" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@EMVerifyType">EMVerifyType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The supported check digit algorithms for challenge.</p>
+
+                        <a href="Enums/EMVerifyType.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">EMVerifyType</span> <span class="o">:</span> <span class="n">NSInteger</span> <span class="p">{}</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">EMVerifyType</span> <span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@EMDskppPinType"></a>
+                    <a name="//apple_ref/objc/Enum/EMDskppPinType" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@EMDskppPinType">EMDskppPinType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Pubic Pin Type enum.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    4.1
+
+</div>
+
+                        <a href="Enums/EMDskppPinType.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">EMDskppPinType</span> <span class="o">:</span> <span class="n">NSUInteger</span> <span class="p">{}</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">EMDskppPinType</span> <span class="p">:</span> <span class="kt">UInt</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@EMDskppPinComplexity"></a>
+                    <a name="//apple_ref/objc/Enum/EMDskppPinComplexity" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@EMDskppPinComplexity">EMDskppPinComplexity</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Public Pin complexity enum.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    4.1
+
+</div>
+
+                        <a href="Enums/EMDskppPinComplexity.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">EMDskppPinComplexity</span> <span class="o">:</span> <span class="n">NSUInteger</span> <span class="p">{}</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">EMDskppPinComplexity</span> <span class="p">:</span> <span class="kt">UInt</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@EMDskppPolicyParamType"></a>
+                    <a name="//apple_ref/objc/Enum/EMDskppPolicyParamType" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@EMDskppPolicyParamType">EMDskppPolicyParamType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Policy traits</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    4.1
+
+</div>
+
+                        <a href="Enums/EMDskppPolicyParamType.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">EMDskppPolicyParamType</span> <span class="o">:</span> <span class="n">NSInteger</span> <span class="p">{}</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">EMDskppPolicyParamType</span> <span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@EMEmvDataObjectType"></a>
+                    <a name="//apple_ref/objc/Enum/EMEmvDataObjectType" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@EMEmvDataObjectType">EMEmvDataObjectType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Defines the concrete type of data object instance.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    5.0
+
+</div>
+
+                        <a href="Enums/EMEmvDataObjectType.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">EMEmvDataObjectType</span> <span class="p">{}</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">EMEmvDataObjectType</span> <span class="p">:</span> <span class="kt">Equatable</span><span class="p">,</span> <span class="kt">RawRepresentable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@EMEmvTipOrConvenienceIndicator"></a>
+                    <a name="//apple_ref/objc/Enum/EMEmvTipOrConvenienceIndicator" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@EMEmvTipOrConvenienceIndicator">EMEmvTipOrConvenienceIndicator</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Represents a value of &lsquo;Tip or Convenience Indicator&rsquo; data object if present in the QR code.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    5.0
+
+</div>
+
+                        <a href="Enums/EMEmvTipOrConvenienceIndicator.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">EMEmvTipOrConvenienceIndicator</span> <span class="p">{}</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">EMEmvTipOrConvenienceIndicator</span> <span class="p">:</span> <span class="kt">Equatable</span><span class="p">,</span> <span class="kt">RawRepresentable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@EMEmvPointOfInitiationMethod"></a>
+                    <a name="//apple_ref/objc/Enum/EMEmvPointOfInitiationMethod" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@EMEmvPointOfInitiationMethod">EMEmvPointOfInitiationMethod</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Represents a value of &lsquo;Point of Initiation Method&rsquo; data object if present in the QR code.</p>
+
+                        <a href="Enums/EMEmvPointOfInitiationMethod.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">EMEmvPointOfInitiationMethod</span> <span class="p">{}</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">EMEmvPointOfInitiationMethod</span> <span class="p">:</span> <span class="kt">Equatable</span><span class="p">,</span> <span class="kt">RawRepresentable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@EMPrimitiveInputFormat"></a>
+                    <a name="//apple_ref/objc/Enum/EMPrimitiveInputFormat" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@EMPrimitiveInputFormat">EMPrimitiveInputFormat</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Represents the allowed input format of the data.</p>
+
+                        <a href="Enums/EMPrimitiveInputFormat.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">EMPrimitiveInputFormat</span> <span class="o">:</span> <span class="kt">int</span> <span class="p">{}</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">EMPrimitiveInputFormat</span> <span class="p">:</span> <span class="kt">Int32</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@EMJailbreakErrorCode"></a>
+                    <a name="//apple_ref/objc/Enum/EMJailbreakErrorCode" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@EMJailbreakErrorCode">EMJailbreakErrorCode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Error codes in EMJailbreakErrorDomain</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    2.3
+
+</div>
+
+                        <a href="Enums/EMJailbreakErrorCode.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">EMJailbreakErrorCode</span> <span class="o">:</span> <span class="n">NSInteger</span> <span class="p">{}</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">EMJailbreakErrorCode</span> <span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@EMJailbreakStatus"></a>
+                    <a name="//apple_ref/objc/Enum/EMJailbreakStatus" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@EMJailbreakStatus">EMJailbreakStatus</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Representation of the physical device&rsquo;s jailbreak status.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    2.3
+
+</div>
+
+                        <a href="Enums/EMJailbreakStatus.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">EMJailbreakStatus</span> <span class="o">:</span> <span class="n">NSInteger</span> <span class="p">{}</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">EMJailbreakStatus</span> <span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@EMMspBaseAlgorithm"></a>
+                    <a name="//apple_ref/objc/Enum/EMMspBaseAlgorithm" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@EMMspBaseAlgorithm">EMMspBaseAlgorithm</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Msp Base algorithm Constants</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    4.5
+
+</div>
+
+                        <a href="Enums/EMMspBaseAlgorithm.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">EMMspBaseAlgorithm</span> <span class="o">:</span> <span class="n">NSInteger</span> <span class="p">{}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@FieldCompleteness"></a>
+                    <a name="//apple_ref/objc/Enum/FieldCompleteness" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@FieldCompleteness">FieldCompleteness</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The enum class to describe the completeness of a MSP field.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    4.5
+
+</div>
+
+                        <a href="Enums/FieldCompleteness.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">FieldCompleteness</span> <span class="o">:</span> <span class="n">NSInteger</span> <span class="p">{}</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">FieldCompleteness</span> <span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@EMMspFrameType"></a>
+                    <a name="//apple_ref/objc/Enum/EMMspFrameType" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@EMMspFrameType">EMMspFrameType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Msp Frame Type Constants</p>
+
+                        <a href="Enums/EMMspFrameType.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">EMMspFrameType</span> <span class="o">:</span> <span class="n">NSInteger</span> <span class="p">{}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@EMOobErrorMessageCode"></a>
+                    <a name="//apple_ref/objc/Enum/EMOobErrorMessageCode" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@EMOobErrorMessageCode">EMOobErrorMessageCode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Current supported error message codes.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    3.0
+
+</div>
+
+                        <a href="Enums/EMOobErrorMessageCode.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">EMOobErrorMessageCode</span> <span class="o">:</span> <span class="n">NSUInteger</span> <span class="p">{}</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">EMOobErrorMessageCode</span> <span class="p">:</span> <span class="kt">UInt</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@EMOobJailbreakPolicy"></a>
+                    <a name="//apple_ref/objc/Enum/EMOobJailbreakPolicy" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@EMOobJailbreakPolicy">EMOobJailbreakPolicy</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The OOB behavior policy of the Mobile Protector SDK when the physical device is
+detected as being rooted.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    4.0
+
+</div>
+
+                        <a href="Enums/EMOobJailbreakPolicy.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">EMOobJailbreakPolicy</span> <span class="o">:</span> <span class="n">NSInteger</span> <span class="p">{}</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">EMOobJailbreakPolicy</span> <span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@EMOobRegistrationMethod"></a>
+                    <a name="//apple_ref/objc/Enum/EMOobRegistrationMethod" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@EMOobRegistrationMethod">EMOobRegistrationMethod</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Registration methods.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    3.0
+
+</div>
+
+                        <a href="Enums/EMOobRegistrationMethod.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">EMOobRegistrationMethod</span> <span class="o">:</span> <span class="n">NSUInteger</span> <span class="p">{}</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">EMOobRegistrationMethod</span> <span class="p">:</span> <span class="kt">UInt</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@EMOobResultCode"></a>
+                    <a name="//apple_ref/objc/Enum/EMOobResultCode" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@EMOobResultCode">EMOobResultCode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>OOB result codes.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    3.0
+
+</div>
+
+                        <a href="Enums/EMOobResultCode.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">EMOobResultCode</span> <span class="o">:</span> <span class="n">NSUInteger</span> <span class="p">{}</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">EMOobResultCode</span> <span class="p">:</span> <span class="kt">UInt</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@EMOobTransactionSigningResponseValue"></a>
+                    <a name="//apple_ref/objc/Enum/EMOobTransactionSigningResponseValue" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@EMOobTransactionSigningResponseValue">EMOobTransactionSigningResponseValue</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Supported transaction signing responses values</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    4.4
+
+</div>
+
+                        <a href="Enums/EMOobTransactionSigningResponseValue.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">EMOobTransactionSigningResponseValue</span> <span class="o">:</span> <span class="n">NSUInteger</span> <span class="p">{}</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">EMOobTransactionSigningResponseValue</span> <span class="p">:</span> <span class="kt">UInt</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@EMOobTransactionVerifyResponseValue"></a>
+                    <a name="//apple_ref/objc/Enum/EMOobTransactionVerifyResponseValue" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@EMOobTransactionVerifyResponseValue">EMOobTransactionVerifyResponseValue</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Interface of a transaction verify response for the OOB server.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    3.0
+
+</div>
+
+                        <a href="Enums/EMOobTransactionVerifyResponseValue.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">EMOobTransactionVerifyResponseValue</span> <span class="o">:</span> <span class="n">NSUInteger</span> <span class="p">{}</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">EMOobTransactionVerifyResponseValue</span> <span class="p">:</span> <span class="kt">UInt</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@EMScrambleType"></a>
+                    <a name="//apple_ref/objc/Enum/EMScrambleType" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@EMScrambleType">EMScrambleType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The supported scramble modes for OTPs.</p>
+
+                        <a href="Enums/EMScrambleType.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">EMScrambleType</span> <span class="o">:</span> <span class="n">NSInteger</span> <span class="p">{}</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">EMScrambleType</span> <span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@EMFormatType"></a>
+                    <a name="//apple_ref/objc/Enum/EMFormatType" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@EMFormatType">EMFormatType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The supported formatting modes for Otps.</p>
+
+                        <a href="Enums/EMFormatType.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">EMFormatType</span> <span class="o">:</span> <span class="n">NSInteger</span> <span class="p">{}</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">EMFormatType</span> <span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@EMPinRuleErrorCode"></a>
+                    <a name="//apple_ref/objc/Enum/EMPinRuleErrorCode" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@EMPinRuleErrorCode">EMPinRuleErrorCode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>NSError codes for EMPinRuleErrorDomain</p>
+
+                        <a href="Enums/EMPinRuleErrorCode.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">EMPinRuleErrorCode</span> <span class="o">:</span> <span class="n">NSInteger</span> <span class="p">{}</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">EMPinRuleErrorCode</span> <span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@EMPrimitiveType"></a>
+                    <a name="//apple_ref/objc/Enum/EMPrimitiveType" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@EMPrimitiveType">EMPrimitiveType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The defined types of primitives</p>
+
+                        <a href="Enums/EMPrimitiveType.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">EMPrimitiveType</span> <span class="o">:</span> <span class="kt">int</span> <span class="p">{}</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">EMPrimitiveType</span> <span class="p">:</span> <span class="kt">Int32</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@EMMobileProvisioningProtocol"></a>
+                    <a name="//apple_ref/objc/Enum/EMMobileProvisioningProtocol" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@EMMobileProvisioningProtocol">EMMobileProvisioningProtocol</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The supported Provisioning protocols</p>
+
+                        <a href="Enums/EMMobileProvisioningProtocol.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">EMMobileProvisioningProtocol</span> <span class="o">:</span> <span class="kt">int</span> <span class="p">{}</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">EMMobileProvisioningProtocol</span> <span class="p">:</span> <span class="kt">Int32</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@EMDskppProvisioningProtocol"></a>
+                    <a name="//apple_ref/objc/Enum/EMDskppProvisioningProtocol" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@EMDskppProvisioningProtocol">EMDskppProvisioningProtocol</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The supported Dskpp Provisioning protocols </p>
+
+<ul>
+<li>- Since: 4.1</li>
+</ul>
+
+                        <a href="Enums/EMDskppProvisioningProtocol.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">EMDskppProvisioningProtocol</span> <span class="o">:</span> <span class="kt">int</span> <span class="p">{}</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">EMDskppProvisioningProtocol</span> <span class="p">:</span> <span class="kt">Int32</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@EMSecureInputBuilderDefaultConfigurations"></a>
+                    <a name="//apple_ref/objc/Enum/EMSecureInputBuilderDefaultConfigurations" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@EMSecureInputBuilderDefaultConfigurations">EMSecureInputBuilderDefaultConfigurations</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Secure Input Builder v2 constants</p>
+
+<p>Callback blocks that need to be passed along as EMPinAuthInput objects when creating a new secure input UI to receive events (Please take note that the clear text of passwords are not able to be extracted from EMPinAuthInput objects):</p>
+<pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="n">EMSecureInputUiOnFinish</span><span class="p">)(</span><span class="n">id</span><span class="o">&lt;</span><span class="n">EMPinAuthInput</span><span class="o">&gt;</span> <span class="n">firstPin</span><span class="p">,</span> <span class="n">id</span><span class="o">&lt;</span><span class="n">EMPinAuthInput</span><span class="o">&gt;</span> <span class="n">secondPin</span><span class="p">);</span>
+</code></pre>
+
+<p>Callback blocks that need to be passed along as NSData objects when creating a new secure input UI to receive events (Please take note that the data encoding is NSUTF16StringEncoding):</p>
+<pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="n">EMSecureInputUiOnFinishClearText</span><span class="p">)(</span><span class="n">NSData</span> <span class="o">*</span><span class="n">firstPin</span><span class="p">,</span> <span class="n">NSData</span> <span class="o">*</span><span class="n">secondPin</span><span class="p">);</span>
+</code></pre>
+
+<p>Default show navigation bar:</p>
+<pre class="highlight objective_c"><code><span class="cp">#define EMSecureInputBuilder_DEFAULT_SHOW_NAVIGATION_BAR               NO
+</span></code></pre>
+
+<p>Default keys:</p>
+<pre class="highlight objective_c"><code><span class="cp">#define EMSecureInputBuilder_DEFAULT_KEYS                              @"1234567890"
+</span></code></pre>
+
+<p>Default button border width:</p>
+<pre class="highlight objective_c"><code><span class="cp">#define EMSecureInputBuilder_DEFAULT_BUTTON_BORDER_WIDTH               1
+</span></code></pre>
+
+<p>Default button border color:</p>
+<pre class="highlight objective_c"><code><span class="cp">#define EMSecureInputBuilder_DEFAULT_BUTTON_BORDER_COLOR               EMUIColorFromRGBA(0xFFFFFFFF)
+</span></code></pre>
+
+<p>Default keypad frame color and default keypad gradient start and end colors:</p>
+<pre class="highlight objective_c"><code><span class="cp">#define EMSecureInputBuilder_DEFAULT_KEYPAD_FRAME_COLOR                EMUIColorFromRGBA(0x000000FF)
+</span></code></pre>
+
+<p>Default number of columns:</p>
+<pre class="highlight objective_c"><code><span class="cp">#define EMSecureInputBuilder_DEFAULT_NO_OF_COLUMNS                     3
+</span></code></pre>
+
+<p>Default number of rows:</p>
+<pre class="highlight objective_c"><code><span class="cp">#define EMSecureInputBuilder_DEFAULT_NO_OF_ROWS                        4
+</span></code></pre>
+
+<p>Default screen background color:</p>
+<pre class="highlight objective_c"><code><span class="cp">#define EMSecureInputBuilder_DEFAULT_SCREEN_BACKGROUND_COLOR           EMUIColorFromRGBA(0xFFFFFFFF)
+</span></code></pre>
+
+<p>Default logo bar background color:</p>
+<pre class="highlight objective_c"><code><span class="cp">#define EMSecureInputBuilder_DEFAULT_LOGO_BAR_BACKGROUND_COLOR         EMUIColorFromRGBA(0xFFFFFFFF)
+</span></code></pre>
+
+<p>Default logo position:</p>
+<pre class="highlight objective_c"><code><span class="cp">#define EMSecureInputBuilder_DEFAULT_LOGO_POSITION                     EMSecureInputUiLogoPositionCenter
+</span></code></pre>
+
+<p>Default color:</p>
+<pre class="highlight objective_c"><code><span class="cp">#define EMSecureInputBuilder_DEFAULT_KEY_COLOR                         EMUIColorFromRGBA(0x1b346cFF)
+#define EMSecureInputBuilder_DEFAULT_KEY_SELECTED_COLOR                EMUIColorFromRGBA(0x1b346cFF)
+#define EMSecureInputBuilder_DEFAULT_KEY_DISABLED_COLOR                EMUIColorFromRGBA(0x1b346cFF)
+#define EMSecureInputBuilder_DEFAULT_BUTTON_BACKGROUND_COLOR           EMUIColorFromRGBA(0xFFFFFFFF)
+#define EMSecureInputBuilder_DEFAULT_BUTTON_BACKGROUND_SELECTED_COLOR  EMUIColorFromRGBA(0x1b346c3F)
+#define EMSecureInputBuilder_DEFAULT_BUTTON_BACKGROUND_DISABLED_COLOR  EMUIColorFromRGBA(0xFFFFFFFF)
+#define EMSecureInputBuilder_DEFAULT_OK_BUTTON_TEXT_COLOR              EMUIColorFromRGBA(0x48a948ff)
+#define EMSecureInputBuilder_DEFAULT_OK_BUTTON_SELECTED_TEXT_COLOR     EMUIColorFromRGBA(0x48a948ff)
+#define EMSecureInputBuilder_DEFAULT_OK_BUTTON_DISABLED_TEXT_COLOR     EMUIColorFromRGBA(0xcccccc3f)
+#define EMSecureInputBuilder_DEFAULT_DELETE_BUTTON_TEXT_COLOR          EMUIColorFromRGBA(0xdf0832ff)
+#define EMSecureInputBuilder_DEFAULT_DELETE_BUTTON_SELECTED_TEXT_COLOR EMUIColorFromRGBA(0xdf0832ff)
+#define EMSecureInputBuilder_DEFAULT_DELETE_BUTTON_DISABLED_TEXT_COLOR EMUIColorFromRGBA(0xcccccc3f)
+#define EMSecureInputBuilder_DEFAULT_SHIFT_BUTTON_TEXT_COLOR            EMUIColorFromRGBA(0x48a948ff)
+#define EMSecureInputBuilder_DEFAULT_SHIFT_BUTTON_SELECTED_TEXT_COLOR   EMUIColorFromRGBA(0x48a948ff)
+</span></code></pre>
+
+<p>Default visible button press:</p>
+<pre class="highlight objective_c"><code><span class="c1">// Note: For security reason, it's disabled by default. User won't be able to see
+// the selected state when the button is pressed.
+</span><span class="cp">#define EMSecureInputBuilder_DEFAULT_VISIBLE_BUTTON_PRESS              NO
+</span></code></pre>
+
+<p>Default display text:</p>
+<pre class="highlight objective_c"><code><span class="cp">#define EMSecureInputBuilder_DEFAULT_FIRST_LABEL                       @"Enter PIN"
+#define EMSecureInputBuilder_DEFAULT_SECOND_LABEL                      @"Confirm PIN"
+</span></code></pre>
+
+<p>Default display color:</p>
+<pre class="highlight objective_c"><code><span class="cp">#define EMSecureInputBuilder_DEFAULT_LABEL_COLOR                       EMUIColorFromRGBA(0x1b346cFF)
+</span></code></pre>
+
+<p>Default label font size:</p>
+<pre class="highlight objective_c"><code><span class="cp">#define EMSecureInputBuilder_DEFAULT_LABEL_FONT_SIZE                   20
+</span></code></pre>
+
+<p>Default label alignment:</p>
+<pre class="highlight objective_c"><code><span class="cp">#define EMSecureInputBuilder_DEFAULT_LABEL_ALIGNMENT                   EMSecureInputUiLabelAlignmentCenter
+</span></code></pre>
+
+<p>Default input field font size:
+    #define EMSecureInputBuilder_DEFAULT_INPUT_FIELD_FONT_SIZE             20</p>
+
+<p>Default input length:</p>
+<pre class="highlight objective_c"><code><span class="cp">#define EMSecureInputBuilder_DEFAULT_MINIMUM_INPUT_LENGTH              4
+#define EMSecureInputBuilder_DEFAULT_MAXIMUM_INPUT_LENGTH              8
+</span></code></pre>
+
+<p>Default keypad height ratio:</p>
+<pre class="highlight objective_c"><code><span class="cp">#define EMSecureInputBuilder_DEFAULT_KEYPAD_HEIGHT_RATIO               0.5
+</span></code></pre>
+
+<p>Default OK button behavior:</p>
+<pre class="highlight objective_c"><code><span class="cp">#define EMSecureInputBuilder_DEFAULT_OK_BUTTON_BEHAVIOR                EMSecureInputUiOkButtonAutomaticallyEnabled
+</span></code></pre>
+
+<p>Default button image opacity:</p>
+<pre class="highlight objective_c"><code><span class="cp">#define EMSecureInputBuilder_DEFAULT_BUTTON_IMAGE_OPACITY              1.0
+</span></code></pre>
+
+<p>Default input field background and border color (focus and unfocus):</p>
+<pre class="highlight objective_c"><code><span class="cp">#define EMSecureInputBuilder_DEFAULT_INPUT_FIELD_BACKGROUND_FOCUS_COLOR EMUIColorFromRGBA(0x1b346c7f)
+#define EMSecureInputBuilder_DEFAULT_INPUT_FIELD_BACKGROUND_UNFOCUS_COLOR EMUIColorFromRGBA(0x1b346c3F)
+</span>
+<span class="cp">#define EMSecureInputBuilder_DEFAULT_INPUT_FIELD_FOCUS_COLOR           EMUIColorFromRGBA(0x1b346c8F)
+#define EMSecureInputBuilder_DEFAULT_INPUT_FIELD_UNFOCUS_COLOR         EMUIColorFromRGBA(0x1b346c3F)
+</span></code></pre>
+
+<p>Default font for key button, OK button and Delete button:</p>
+<pre class="highlight objective_c"><code><span class="cp">#define EMSecureInputBuilder_DEFAULT_BUTTON_FONT_NAME                  @"ArialMT"
+#define EMSecureInputBuilder_DEFAULT_BUTTON_FONT_SIZE                  24
+</span></code></pre>
+
+<p>Default OK button name:</p>
+<pre class="highlight objective_c"><code><span class="cp">#define EMSecureInputBuilder_DEFAULT_OK_BUTTON_NAME                    @"OK"
+</span></code></pre>
+
+<p>Default Delete button name:</p>
+<pre class="highlight objective_c"><code><span class="cp">#define EMSecureInputBuilder_DEFAULT_DELETE_BUTTON_NAME                @" ⌫ "
+</span></code></pre>
+
+<p>Default Shift button name:</p>
+<pre class="highlight objective_c"><code><span class="cp">#define EMSecureInputBuilder_DEFAULT_SHIFT_BUTTON_NAME                @" ⇧ "
+</span></code></pre>
+
+<p>Default Back button name:</p>
+<pre class="highlight objective_c"><code><span class="cp">#define EMSecureInputBuilder_DEFAULT_BACK_BUTTON_NAME                  @"Back"
+</span></code></pre>
+
+<p>Default Delete button enable:</p>
+<pre class="highlight objective_c"><code><span class="cp">#define EMSecureInputBuilder_DEFAULT_DELETE_BUTTON_ALWAYS_ENABLE       NO
+</span></code></pre>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    4.4
+
+</div>
+
+                        <a href="Enums/EMSecureInputBuilderDefaultConfigurations.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">EMSecureInputBuilderDefaultConfigurations</span> <span class="o">:</span> <span class="n">NSInteger</span> <span class="p">{}</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">EMSecureInputBuilderDefaultConfigurations</span> <span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@EMSecureInputUiLogoPosition"></a>
+                    <a name="//apple_ref/objc/Enum/EMSecureInputUiLogoPosition" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@EMSecureInputUiLogoPosition">EMSecureInputUiLogoPosition</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Secure input UI logo position.
+It determines the drawing position of the logo image.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    4.4
+
+</div>
+
+                        <a href="Enums/EMSecureInputUiLogoPosition.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">EMSecureInputUiLogoPosition</span> <span class="o">:</span> <span class="n">NSInteger</span> <span class="p">{}</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">EMSecureInputUiLogoPosition</span> <span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@EMSecureInputUiBackgroundImageContentMode"></a>
+                    <a name="//apple_ref/objc/Enum/EMSecureInputUiBackgroundImageContentMode" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@EMSecureInputUiBackgroundImageContentMode">EMSecureInputUiBackgroundImageContentMode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Secure input background image content mode</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    6.0
+
+</div>
+
+                        <a href="Enums/EMSecureInputUiBackgroundImageContentMode.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">EMSecureInputUiBackgroundImageContentMode</span> <span class="o">:</span> <span class="n">NSInteger</span> <span class="p">{}</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">EMSecureInputUiBackgroundImageContentMode</span> <span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@EMSecureInputUiLabelAlignment"></a>
+                    <a name="//apple_ref/objc/Enum/EMSecureInputUiLabelAlignment" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@EMSecureInputUiLabelAlignment">EMSecureInputUiLabelAlignment</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Secure input UI label alignment.
+It determines the alignment of both first and second label.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    4.4
+
+</div>
+
+                        <a href="Enums/EMSecureInputUiLabelAlignment.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">EMSecureInputUiLabelAlignment</span> <span class="o">:</span> <span class="n">NSInteger</span> <span class="p">{}</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">EMSecureInputUiLabelAlignment</span> <span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@EMSecureInputUiControlFocusState"></a>
+                    <a name="//apple_ref/objc/Enum/EMSecureInputUiControlFocusState" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@EMSecureInputUiControlFocusState">EMSecureInputUiControlFocusState</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Secure input UI control focus state.
+It determines the focus state of both first and second input field.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    4.4
+
+</div>
+
+                        <a href="Enums/EMSecureInputUiControlFocusState.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">EMSecureInputUiControlFocusState</span> <span class="o">:</span> <span class="n">NSInteger</span> <span class="p">{}</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">EMSecureInputUiControlFocusState</span> <span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@EMSecureInputUiControlState"></a>
+                    <a name="//apple_ref/objc/Enum/EMSecureInputUiControlState" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@EMSecureInputUiControlState">EMSecureInputUiControlState</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Secure input UI control state.
+It determines the state of all the buttons on the keypad.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    4.4
+
+</div>
+
+                        <a href="Enums/EMSecureInputUiControlState.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">EMSecureInputUiControlState</span> <span class="o">:</span> <span class="n">NSInteger</span> <span class="p">{}</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">EMSecureInputUiControlState</span> <span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@EMSecureInputUiOkButtonBehavior"></a>
+                    <a name="//apple_ref/objc/Enum/EMSecureInputUiOkButtonBehavior" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@EMSecureInputUiOkButtonBehavior">EMSecureInputUiOkButtonBehavior</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Secure Input UI OK button behavior.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    4.4
+
+</div>
+
+                        <a href="Enums/EMSecureInputUiOkButtonBehavior.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">EMSecureInputUiOkButtonBehavior</span> <span class="o">:</span> <span class="n">NSInteger</span> <span class="p">{}</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">EMSecureInputUiOkButtonBehavior</span> <span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@EMButtonTouchVisualEffect"></a>
+                    <a name="//apple_ref/objc/Enum/EMButtonTouchVisualEffect" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@EMButtonTouchVisualEffect">EMButtonTouchVisualEffect</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The visual effect to button touches.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    5.0
+
+</div>
+
+                        <a href="Enums/EMButtonTouchVisualEffect.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">EMButtonTouchVisualEffect</span> <span class="o">:</span> <span class="n">NSInteger</span> <span class="p">{}</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">EMButtonTouchVisualEffect</span> <span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@EMSecureInputUiDisplayMode"></a>
+                    <a name="//apple_ref/objc/Enum/EMSecureInputUiDisplayMode" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@EMSecureInputUiDisplayMode">EMSecureInputUiDisplayMode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Secure input UI display mode.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    6.0
+
+</div>
+
+                        <a href="Enums/EMSecureInputUiDisplayMode.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">EMSecureInputUiDisplayMode</span> <span class="o">:</span> <span class="n">NSInteger</span> <span class="p">{}</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">EMSecureInputUiDisplayMode</span> <span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@EMSecureInputEncryptionMode"></a>
+                    <a name="//apple_ref/objc/Enum/EMSecureInputEncryptionMode" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@EMSecureInputEncryptionMode">EMSecureInputEncryptionMode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Enum values for the encryption mode</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    6.2
+
+</div>
+
+                        <a href="Enums/EMSecureInputEncryptionMode.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">EMSecureInputEncryptionMode</span> <span class="o">:</span> <span class="n">NSInteger</span> <span class="p">{}</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">EMSecureInputEncryptionMode</span> <span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@EMHookingDetectionPolicy"></a>
+                    <a name="//apple_ref/objc/Enum/EMHookingDetectionPolicy" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@EMHookingDetectionPolicy">EMHookingDetectionPolicy</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Enum type containing the possible handling when detecting hooking.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    4.7
+
+</div>
+
+                        <a href="Enums/EMHookingDetectionPolicy.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">EMHookingDetectionPolicy</span> <span class="p">{}</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">EMHookingDetectionPolicy</span> <span class="p">:</span> <span class="kt">Equatable</span><span class="p">,</span> <span class="kt">RawRepresentable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@EMPinErrorCode"></a>
+                    <a name="//apple_ref/objc/Enum/EMPinErrorCode" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@EMPinErrorCode">EMPinErrorCode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>NSError codes for EMPinErrorDomain</p>
+
+                        <a href="Enums/EMPinErrorCode.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">EMPinErrorCode</span> <span class="o">:</span> <span class="n">NSInteger</span> <span class="p">{}</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">EMPinErrorCode</span> <span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@EMOathHashAlgorithm"></a>
+                    <a name="//apple_ref/objc/Enum/EMOathHashAlgorithm" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@EMOathHashAlgorithm">EMOathHashAlgorithm</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Supported hash algorithms for HMAC computation</p>
+
+                        <a href="Enums/EMOathHashAlgorithm.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">EMOathHashAlgorithm</span> <span class="o">:</span> <span class="n">NSInteger</span> <span class="p">{}</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">EMOathHashAlgorithm</span> <span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@EMOcraPasswordHashAlgorithm"></a>
+                    <a name="//apple_ref/objc/Enum/EMOcraPasswordHashAlgorithm" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@EMOcraPasswordHashAlgorithm">EMOcraPasswordHashAlgorithm</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Supported Hash algorithm for Ocra password field. choose EMOcraPasswordNone if not used</p>
+
+                        <a href="Enums/EMOcraPasswordHashAlgorithm.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">EMOcraPasswordHashAlgorithm</span> <span class="o">:</span> <span class="n">NSInteger</span> <span class="p">{}</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">EMOcraPasswordHashAlgorithm</span> <span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@EMOathTimestepType"></a>
+                    <a name="//apple_ref/objc/Enum/EMOathTimestepType" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@EMOathTimestepType">EMOathTimestepType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Supported types of Time step. Choose EMTotpTimestepTypeNone if not used.</p>
+
+                        <a href="Enums/EMOathTimestepType.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">EMOathTimestepType</span> <span class="o">:</span> <span class="n">NSInteger</span> <span class="p">{}</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">EMOathTimestepType</span> <span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@EMOcraChallengeQuestionFormat"></a>
+                    <a name="//apple_ref/objc/Enum/EMOcraChallengeQuestionFormat" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@EMOcraChallengeQuestionFormat">EMOcraChallengeQuestionFormat</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Supported challenge question formats for Ocra</p>
+
+                        <a href="Enums/EMOcraChallengeQuestionFormat.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">EMOcraChallengeQuestionFormat</span> <span class="o">:</span> <span class="n">NSInteger</span> <span class="p">{}</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">EMOcraChallengeQuestionFormat</span> <span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@EMPrimitiveTextFormat"></a>
+                    <a name="//apple_ref/objc/Enum/EMPrimitiveTextFormat" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@EMPrimitiveTextFormat">EMPrimitiveTextFormat</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Represents the allowed input format of the data.</p>
+
+                        <a href="Enums/EMPrimitiveTextFormat.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">EMPrimitiveTextFormat</span> <span class="o">:</span> <span class="kt">int</span> <span class="p">{}</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">EMPrimitiveTextFormat</span> <span class="p">:</span> <span class="kt">Int32</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@EMTokenCapability"></a>
+                    <a name="//apple_ref/objc/Enum/EMTokenCapability" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@EMTokenCapability">EMTokenCapability</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The token capability attribute dictates how the token can be used within
+the Mobile Protector SDK, potentially limiting or expanding its use.</p>
+
+                        <a href="Enums/EMTokenCapability.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">EMTokenCapability</span> <span class="p">{}</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">EMTokenCapability</span> <span class="p">:</span> <span class="kt">Equatable</span><span class="p">,</span> <span class="kt">RawRepresentable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@EMTokenJailbreakPolicy"></a>
+                    <a name="//apple_ref/objc/Enum/EMTokenJailbreakPolicy" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@EMTokenJailbreakPolicy">EMTokenJailbreakPolicy</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The token policy of the Mobile Protector SDK when the physical device is
+detected as being jailbroken.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    4.0
+
+</div>
+
+                        <a href="Enums/EMTokenJailbreakPolicy.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">EMTokenJailbreakPolicy</span> <span class="o">:</span> <span class="n">NSInteger</span> <span class="p">{}</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">EMTokenJailbreakPolicy</span> <span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@EMTokenManagerErrorCode"></a>
+                    <a name="//apple_ref/objc/Enum/EMTokenManagerErrorCode" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@EMTokenManagerErrorCode">EMTokenManagerErrorCode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>NSError codes for EMTokenManagerErrorCode</p>
+
+                        <a href="Enums/EMTokenManagerErrorCode.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">EMTokenManagerErrorCode</span> <span class="o">:</span> <span class="n">NSInteger</span> <span class="p">{}</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">EMTokenManagerErrorCode</span> <span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@SecureLogLevel"></a>
+                    <a name="//apple_ref/objc/Enum/SecureLogLevel" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@SecureLogLevel">SecureLogLevel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The secure log log level.</p>
+
+                        <a href="Enums/SecureLogLevel.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">SecureLogLevel</span> <span class="o">:</span> <span class="n">NSInteger</span> <span class="p">{}</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">SecureLogLevel</span> <span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@EMPinType"></a>
+                    <a name="//apple_ref/objc/Enum/EMPinType" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@EMPinType">EMPinType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Integer parameter definition, defines pin type</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    4.1
+
+</div>
+
+                        <a href="Enums/EMPinType.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">EMPinType</span> <span class="p">{}</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">EMPinType</span> <span class="p">:</span> <span class="kt">Equatable</span><span class="p">,</span> <span class="kt">RawRepresentable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@EMPinComplexity"></a>
+                    <a name="//apple_ref/objc/Enum/EMPinComplexity" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@EMPinComplexity">EMPinComplexity</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Defines the complexity of the PIN/passcode</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    4.1
+
+</div>
+
+                        <a href="Enums/EMPinComplexity.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">EMPinComplexity</span> <span class="p">{}</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">EMPinComplexity</span> <span class="p">:</span> <span class="kt">Equatable</span><span class="p">,</span> <span class="kt">RawRepresentable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@EMPinPolicyType"></a>
+                    <a name="//apple_ref/objc/Enum/EMPinPolicyType" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@EMPinPolicyType">EMPinPolicyType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Type of PIN policy.</p>
+
+<ul>
+<li>PinPolicyTypeDskppV1ServerPin: DSKPP V1 server PIN policy.</li>
+<li>PinPolicyTypeDskppV1LocalPin: DSKPP V1 local (user, no-pin) PIN policy.</li>
+</ul>
+
+                        <a href="Enums/EMPinPolicyType.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">EMPinPolicyType</span> <span class="p">{}</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">EMPinPolicyType</span> <span class="p">:</span> <span class="kt">Equatable</span><span class="p">,</span> <span class="kt">RawRepresentable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@EMTokenPolicyType"></a>
+                    <a name="//apple_ref/objc/Enum/EMTokenPolicyType" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@EMTokenPolicyType">EMTokenPolicyType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Type of token policy.</p>
+
+<ul>
+<li>TokenPolicyTypeDskppV1: DSKPP V1 token policy.</li>
+</ul>
+
+                        <a href="Enums/EMTokenPolicyType.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">EMTokenPolicyType</span> <span class="p">{}</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">EMTokenPolicyType</span> <span class="p">:</span> <span class="kt">Equatable</span><span class="p">,</span> <span class="kt">RawRepresentable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@EMKekPrfAlgorithm"></a>
+                    <a name="//apple_ref/objc/Enum/EMKekPrfAlgorithm" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@EMKekPrfAlgorithm">EMKekPrfAlgorithm</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The kek pseudo random function</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    5.0
+
+</div>
+
+                        <a href="Enums/EMKekPrfAlgorithm.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">EMKekPrfAlgorithm</span> <span class="p">{}</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">EMKekPrfAlgorithm</span> <span class="p">:</span> <span class="kt">Equatable</span><span class="p">,</span> <span class="kt">RawRepresentable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@EMTokenUsage"></a>
+                    <a name="//apple_ref/objc/Enum/EMTokenUsage" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@EMTokenUsage">EMTokenUsage</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Token Usage</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    5.0
+
+</div>
+
+                        <a href="Enums/EMTokenUsage.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">EMTokenUsage</span> <span class="p">{}</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">EMTokenUsage</span> <span class="p">:</span> <span class="kt">Equatable</span><span class="p">,</span> <span class="kt">RawRepresentable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@EMStatus"></a>
+                    <a name="//apple_ref/objc/Enum/EMStatus" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@EMStatus">EMStatus</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>General status sodes for EzioMobileSDK operations.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    3.0
+
+</div>
+
+                        <a href="Enums/EMStatus.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">EMStatus</span> <span class="p">{}</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">EMStatus</span> <span class="p">:</span> <span class="kt">Equatable</span><span class="p">,</span> <span class="kt">RawRepresentable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>© Thales DIS</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
