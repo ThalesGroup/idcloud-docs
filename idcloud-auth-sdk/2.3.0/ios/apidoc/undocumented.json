@@ -1,0 +1,26 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/idpmobile/jenkins/workspace/workspace/IdCloud_SDK_develop/ios/lib/IdCloudClient/IdCloudClient/ui/platform/IDCPlatformController.h",
+      "line": 20,
+      "symbol": "IDCPlatformController.-initWithAuthorizationController:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/jenkins/workspace/workspace/IdCloud_SDK_develop/ios/lib/IdCloudClient/IdCloudClient/ui/platform/IDCPlatformController.h",
+      "line": 22,
+      "symbol": "IDCPlatformController.authorizationController",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/jenkins/workspace/workspace/IdCloud_SDK_develop/ios/lib/IdCloudClient/IdCloudClient/ui/platform/IDCPlatformUiDelegate.h",
+      "line": 23,
+      "symbol": "IDCPlatformUiDelegate.-idCloudClient:presentationForPlatformController:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/idpmobile/jenkins/workspace/workspace/IdCloud_SDK_develop/ios/lib/IdCloudClient"
+}
