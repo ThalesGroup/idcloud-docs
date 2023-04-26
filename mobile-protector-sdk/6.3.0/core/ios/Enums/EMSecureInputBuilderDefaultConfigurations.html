@@ -24,7 +24,7 @@
     <a title="EMSecureInputBuilderDefaultConfigurations Enumeration Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">Protector OATH 6.2.0 Docs</a></p>
+        <p><a href="../index.html">Protector OATH 6.3.0 Docs</a></p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -738,6 +738,9 @@
                 <a href="../Enums/EMCEncryptionVersion.html">EMCEncryptionVersion</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Enums/EMCPasswordEncoding.html">EMCPasswordEncoding</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Enums/EMDeviceFingerprintType.html">EMDeviceFingerprintType</a>
               </li>
               <li class="nav-group-task">
@@ -1382,11 +1385,11 @@
             <p>Secure Input Builder v2 constants</p>
 
 <p>Callback blocks that need to be passed along as EMPinAuthInput objects when creating a new secure input UI to receive events (Please take note that the clear text of passwords are not able to be extracted from EMPinAuthInput objects):</p>
-<pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="n">EMSecureInputUiOnFinish</span><span class="p">)(</span><span class="n">id</span><span class="o">&lt;</span><span class="n">EMPinAuthInput</span><span class="o">&gt;</span> <span class="n">firstPin</span><span class="p">,</span> <span class="n">id</span><span class="o">&lt;</span><span class="n">EMPinAuthInput</span><span class="o">&gt;</span> <span class="n">secondPin</span><span class="p">);</span>
+<pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="nf">void</span> <span class="p">(</span><span class="o">^</span><span class="n">EMSecureInputUiOnFinish</span><span class="p">)(</span><span class="n">id</span><span class="o">&lt;</span><span class="n">EMPinAuthInput</span><span class="o">&gt;</span> <span class="n">firstPin</span><span class="p">,</span> <span class="n">id</span><span class="o">&lt;</span><span class="n">EMPinAuthInput</span><span class="o">&gt;</span> <span class="n">secondPin</span><span class="p">);</span>
 </code></pre>
 
 <p>Callback blocks that need to be passed along as NSData objects when creating a new secure input UI to receive events (Please take note that the data encoding is NSUTF16StringEncoding):</p>
-<pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="n">EMSecureInputUiOnFinishClearText</span><span class="p">)(</span><span class="n">NSData</span> <span class="o">*</span><span class="n">firstPin</span><span class="p">,</span> <span class="n">NSData</span> <span class="o">*</span><span class="n">secondPin</span><span class="p">);</span>
+<pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="nf">void</span> <span class="p">(</span><span class="o">^</span><span class="n">EMSecureInputUiOnFinishClearText</span><span class="p">)(</span><span class="n">NSData</span> <span class="o">*</span><span class="n">firstPin</span><span class="p">,</span> <span class="n">NSData</span> <span class="o">*</span><span class="n">secondPin</span><span class="p">);</span>
 </code></pre>
 
 <p>Default show navigation bar:</p>
@@ -1447,9 +1450,9 @@
 </span></code></pre>
 
 <p>Default visible button press:</p>
-<pre class="highlight objective_c"><code><span class="c1">// Note: For security reason, it's disabled by default. User won't be able to see
-// the selected state when the button is pressed.
-</span><span class="cp">#define EMSecureInputBuilder_DEFAULT_VISIBLE_BUTTON_PRESS              NO
+<pre class="highlight objective_c"><code><span class="c1">// Note: For security reason, it's disabled by default. User won't be able to see</span>
+<span class="c1">// the selected state when the button is pressed.</span>
+<span class="cp">#define EMSecureInputBuilder_DEFAULT_VISIBLE_BUTTON_PRESS              NO
 </span></code></pre>
 
 <p>Default display text:</p>

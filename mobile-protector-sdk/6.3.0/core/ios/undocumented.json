@@ -1,0 +1,152 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/idpmobile/jenkins-ios/workspace/_EzioBase/sdk/dev/idp/dist/ios/default/external/Release/EzioMobile.xcframework/ios-arm64/EzioMobile.framework/Headers/EMCCasError.h",
+      "line": 29,
+      "symbol": "EMCCasErrorDomain",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/jenkins-ios/workspace/_EzioBase/sdk/dev/idp/dist/ios/default/external/Release/EzioMobile.xcframework/ios-arm64/EzioMobile.framework/Headers/EMCasClient.h",
+      "line": 40,
+      "symbol": "EMCasClient.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/jenkins-ios/workspace/_EzioBase/sdk/dev/idp/dist/ios/default/external/Release/EzioMobile.xcframework/ios-arm64/EzioMobile.framework/Headers/EMJailbreakDetector.h",
+      "line": 34,
+      "symbol": "EMStaticColorHandler",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/jenkins-ios/workspace/_EzioBase/sdk/dev/idp/dist/ios/default/external/Release/EzioMobile.xcframework/ios-arm64/EzioMobile.framework/Headers/EMJailbreakDetector.h",
+      "line": 72,
+      "symbol": "EMDynamicColorUpdate",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/jenkins-ios/workspace/_EzioBase/sdk/dev/idp/dist/ios/default/external/Release/EzioMobile.xcframework/ios-arm64/EzioMobile.framework/Headers/EMPinRule.h",
+      "line": 35,
+      "symbol": "EMPinRuleErrorDomain",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/jenkins-ios/workspace/_EzioBase/sdk/dev/idp/dist/ios/default/external/Release/EzioMobile.xcframework/ios-arm64/EzioMobile.framework/Headers/EMSecureInputEncryptionConfig.h",
+      "line": 51,
+      "symbol": "EMSecureInputEncryptionConfig",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/jenkins-ios/workspace/_EzioBase/sdk/dev/idp/dist/ios/default/external/Release/EzioMobile.xcframework/ios-arm64/EzioMobile.framework/Headers/EMSecureInputEncryptionConfig.h",
+      "line": 53,
+      "symbol": "EMSecureInputEncryptionConfig.encryptionMode",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/jenkins-ios/workspace/_EzioBase/sdk/dev/idp/dist/ios/default/external/Release/EzioMobile.xcframework/ios-arm64/EzioMobile.framework/Headers/EMSecureInputEncryptionConfig.h",
+      "line": 54,
+      "symbol": "EMSecureInputEncryptionConfig.publicKey",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/jenkins-ios/workspace/_EzioBase/sdk/dev/idp/dist/ios/default/external/Release/EzioMobile.xcframework/ios-arm64/EzioMobile.framework/Headers/EMSecureInputEncryptionConfig.h",
+      "line": 55,
+      "symbol": "EMSecureInputEncryptionConfig.userData",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/jenkins-ios/workspace/_EzioBase/sdk/dev/idp/dist/ios/default/external/Release/EzioMobile.xcframework/ios-arm64/EzioMobile.framework/Headers/EMSecureInputEncryptionConfig.h",
+      "line": 59,
+      "symbol": "EMSecureInputEncryptionConfig.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/jenkins-ios/workspace/_EzioBase/sdk/dev/idp/dist/ios/default/external/Release/EzioMobile.xcframework/ios-arm64/EzioMobile.framework/Headers/SecureLogConfig.h",
+      "line": 37,
+      "symbol": "SecureLogLevel.SecureLogLevelOff",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/jenkins-ios/workspace/_EzioBase/sdk/dev/idp/dist/ios/default/external/Release/EzioMobile.xcframework/ios-arm64/EzioMobile.framework/Headers/SecureLogConfig.h",
+      "line": 38,
+      "symbol": "SecureLogLevel.SecureLogLevelFatal",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/jenkins-ios/workspace/_EzioBase/sdk/dev/idp/dist/ios/default/external/Release/EzioMobile.xcframework/ios-arm64/EzioMobile.framework/Headers/SecureLogConfig.h",
+      "line": 39,
+      "symbol": "SecureLogLevel.SecureLogLevelError",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/jenkins-ios/workspace/_EzioBase/sdk/dev/idp/dist/ios/default/external/Release/EzioMobile.xcframework/ios-arm64/EzioMobile.framework/Headers/SecureLogConfig.h",
+      "line": 40,
+      "symbol": "SecureLogLevel.SecureLogLevelWarn",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/jenkins-ios/workspace/_EzioBase/sdk/dev/idp/dist/ios/default/external/Release/EzioMobile.xcframework/ios-arm64/EzioMobile.framework/Headers/SecureLogConfig.h",
+      "line": 41,
+      "symbol": "SecureLogLevel.SecureLogLevelInfo",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/jenkins-ios/workspace/_EzioBase/sdk/dev/idp/dist/ios/default/external/Release/EzioMobile.xcframework/ios-arm64/EzioMobile.framework/Headers/SecureLogConfig.h",
+      "line": 42,
+      "symbol": "SecureLogLevel.SecureLogLevelDebug",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/jenkins-ios/workspace/_EzioBase/sdk/dev/idp/dist/ios/default/external/Release/EzioMobile.xcframework/ios-arm64/EzioMobile.framework/Headers/em_detector.h",
+      "line": 76,
+      "symbol": "EMDynamicHandler",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/jenkins-ios/workspace/_EzioBase/sdk/dev/idp/dist/ios/default/external/Release/EzioMobile.xcframework/ios-arm64/EzioMobile.framework/Headers/em_detector.h",
+      "line": 96,
+      "symbol": "EMDynamicRotateKey",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/jenkins-ios/workspace/_EzioBase/sdk/dev/idp/dist/ios/default/external/Release/EzioMobile.xcframework/ios-arm64/EzioMobile.framework/Headers/em_detector.h",
+      "line": 117,
+      "symbol": "EMDynamicSwapKey",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/jenkins-ios/workspace/_EzioBase/sdk/dev/idp/dist/ios/default/external/Release/EzioMobile.xcframework/ios-arm64/EzioMobile.framework/Headers/em_detector.h",
+      "line": 130,
+      "symbol": "EMDynamicDeleteKey",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/jenkins-ios/workspace/_EzioBase/sdk/dev/idp/dist/ios/default/external/Release/EzioMobile.xcframework/ios-arm64/EzioMobile.framework/Headers/em_detector.h",
+      "line": 140,
+      "symbol": "EMDynamicUpdateKey",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/idpmobile/jenkins-ios/workspace/_EzioBase/sdk/dev/idp/ios"
+}

@@ -24,7 +24,7 @@
     <a title="EMGemaltoOathDevice Protocol Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">Protector OATH 6.2.0 Docs</a></p>
+        <p><a href="../index.html">Protector OATH 6.3.0 Docs</a></p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -736,6 +736,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/EMCEncryptionVersion.html">EMCEncryptionVersion</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EMCPasswordEncoding.html">EMCPasswordEncoding</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/EMDeviceFingerprintType.html">EMDeviceFingerprintType</a>
@@ -1945,20 +1948,20 @@
 </div>
 
 <p>The following example illustrates the usage.</p>
-<pre class="highlight objective_c"><code>  <span class="c1">// Create OATH settings (see EMOathFactory)
-</span> <span class="n">id</span><span class="o">&lt;</span><span class="n">EMMutableSoftGemaltoOathSettings</span><span class="o">&gt;</span> <span class="n">oathSettings</span> <span class="o">=</span> <span class="p">...</span>
+<pre class="highlight objective_c"><code>  <span class="c1">// Create OATH settings (see EMOathFactory)</span>
+ <span class="n">id</span><span class="o">&lt;</span><span class="n">EMMutableSoftGemaltoOathSettings</span><span class="o">&gt;</span> <span class="n">oathSettings</span> <span class="o">=</span> <span class="p">...</span>
 
- <span class="c1">// Create a OATH device (see EMOathFactory)
-</span> <span class="n">id</span><span class="o">&lt;</span><span class="n">EMGemaltoOathDevice</span><span class="o">&gt;</span> <span class="n">device</span> <span class="o">=</span> <span class="p">...</span>
+ <span class="c1">// Create a OATH device (see EMOathFactory)</span>
+ <span class="n">id</span><span class="o">&lt;</span><span class="n">EMGemaltoOathDevice</span><span class="o">&gt;</span> <span class="n">device</span> <span class="o">=</span> <span class="p">...</span>
 
- <span class="c1">// Compute a time-based OTP with device (with pin and challengeQuestion EMSecureString)
-</span> <span class="p">[</span><span class="n">device</span> <span class="nf">ocraTimeChallengeResponseWithPin</span><span class="p">:</span><span class="n">pin</span> <span class="nf">challengeQuestion</span><span class="p">:</span><span class="n">challengeQuestion</span><span class="p">];</span>
+ <span class="c1">// Compute a time-based OTP with device (with pin and challengeQuestion EMSecureString)</span>
+ <span class="p">[</span><span class="n">device</span> <span class="nf">ocraTimeChallengeResponseWithPin</span><span class="p">:</span><span class="n">pin</span> <span class="nf">challengeQuestion</span><span class="p">:</span><span class="n">challengeQuestion</span><span class="p">];</span>
 
- <span class="c1">// Each time selector [... lastOtpLifespan] is called, it returns the
-</span> <span class="c1">// remaining lifespan in seconds of the last time-based OTP. Lifespan is
-</span> <span class="c1">// computed with respect of device's settings (in this example it returns
-</span> <span class="c1">// the lifespan according to Gemalto device fixed settings, i.e. 30-seconds timestep).
-</span> <span class="n">NSInteger</span> <span class="n">lifespan</span> <span class="o">=</span> <span class="p">[</span><span class="n">device</span> <span class="nf">lastOtpLifespan</span><span class="p">];</span>
+ <span class="c1">// Each time selector [... lastOtpLifespan] is called, it returns the</span>
+ <span class="c1">// remaining lifespan in seconds of the last time-based OTP. Lifespan is</span>
+ <span class="c1">// computed with respect of device's settings (in this example it returns</span>
+ <span class="c1">// the lifespan according to Gemalto device fixed settings, i.e. 30-seconds timestep).</span>
+ <span class="n">NSInteger</span> <span class="n">lifespan</span> <span class="o">=</span> <span class="p">[</span><span class="n">device</span> <span class="nf">lastOtpLifespan</span><span class="p">];</span>
 </code></pre>
 
                       </div>

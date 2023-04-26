@@ -24,7 +24,7 @@
     <a title="EMDcvOathDevice Protocol Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">Protector OATH 6.2.0 Docs</a></p>
+        <p><a href="../index.html">Protector OATH 6.3.0 Docs</a></p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -736,6 +736,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/EMCEncryptionVersion.html">EMCEncryptionVersion</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EMCPasswordEncoding.html">EMCPasswordEncoding</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/EMDeviceFingerprintType.html">EMDeviceFingerprintType</a>
@@ -1495,23 +1498,23 @@
  </ul></p>
 
 <p>The following example illustrates the usage</p>
-<pre class="highlight objective_c"><code> <span class="c1">// Create OATH DCV settings (see EMOathFactory)
-</span><span class="n">id</span><span class="o">&lt;</span><span class="n">EMMutableSoftOathDcvSettings</span><span class="o">&gt;</span> <span class="n">oathDcvSettings</span> <span class="o">=</span> <span class="p">...</span>
+<pre class="highlight objective_c"><code> <span class="c1">// Create OATH DCV settings (see EMOathFactory)</span>
+<span class="n">id</span><span class="o">&lt;</span><span class="n">EMMutableSoftOathDcvSettings</span><span class="o">&gt;</span> <span class="n">oathDcvSettings</span> <span class="o">=</span> <span class="p">...</span>
 
-<span class="c1">// Set up OATH DCV settings (for example a 20 minutes timestep)
-</span><span class="p">[</span><span class="n">oathDcvSettings</span> <span class="nf">setDcvTimeSettingsWithTimeStep</span><span class="p">:</span><span class="n">EMOathTimestepTypeMinutes</span> <span class="nf">timestepSize</span><span class="p">:</span><span class="mi">20</span> <span class="n">starTime</span><span class="o">:</span><span class="mi">0</span><span class="p">];</span>
+<span class="c1">// Set up OATH DCV settings (for example a 20 minutes timestep)</span>
+<span class="p">[</span><span class="n">oathDcvSettings</span> <span class="nf">setDcvTimeSettingsWithTimeStep</span><span class="p">:</span><span class="n">EMOathTimestepTypeMinutes</span> <span class="nf">timestepSize</span><span class="p">:</span><span class="mi">20</span> <span class="n">starTime</span><span class="o">:</span><span class="mi">0</span><span class="p">];</span>
 
-<span class="c1">// Create a OATH DCV device (see EMOathFactory)
-</span><span class="n">id</span><span class="o">&lt;</span><span class="n">EMOathDcvDevice</span><span class="o">&gt;</span> <span class="n">device</span> <span class="o">=</span> <span class="p">...</span>
+<span class="c1">// Create a OATH DCV device (see EMOathFactory)</span>
+<span class="n">id</span><span class="o">&lt;</span><span class="n">EMOathDcvDevice</span><span class="o">&gt;</span> <span class="n">device</span> <span class="o">=</span> <span class="p">...</span>
 
-<span class="c1">// Compute DCV with device (with pin EMSecureString)
-</span><span class="p">[</span><span class="n">device</span> <span class="nf">getDcv</span><span class="p">:</span><span class="n">pin</span><span class="p">];</span>
+<span class="c1">// Compute DCV with device (with pin EMSecureString)</span>
+<span class="p">[</span><span class="n">device</span> <span class="nf">getDcv</span><span class="p">:</span><span class="n">pin</span><span class="p">];</span>
 
-<span class="c1">// Each time selector [... lastDcvLifespan] is called, it returns the
-// remaining lifespan in seconds of the last time-based DCV. Lifespan is
-// computed with respect of device's settings (in this example it returns
-// the lifespan according the 20-minutes timestep)
-</span></code></pre>
+<span class="c1">// Each time selector [... lastDcvLifespan] is called, it returns the</span>
+<span class="c1">// remaining lifespan in seconds of the last time-based DCV. Lifespan is</span>
+<span class="c1">// computed with respect of device's settings (in this example it returns</span>
+<span class="c1">// the lifespan according the 20-minutes timestep)</span>
+</code></pre>
 <div class="aside aside-since">
     <p class="aside-title">Since</p>
     4.1

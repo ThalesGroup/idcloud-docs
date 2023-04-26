@@ -24,7 +24,7 @@
     <a title="EMCasClient Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">Protector OATH 6.2.0 Docs</a></p>
+        <p><a href="../index.html">Protector OATH 6.3.0 Docs</a></p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -738,6 +738,9 @@
                 <a href="../Enums/EMCEncryptionVersion.html">EMCEncryptionVersion</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Enums/EMCPasswordEncoding.html">EMCPasswordEncoding</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Enums/EMDeviceFingerprintType.html">EMDeviceFingerprintType</a>
               </li>
               <li class="nav-group-task">
@@ -1436,7 +1439,7 @@ This class helps to implement the E2EE password encryption, supports the creatio
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Initialize an instance of the CasClient.</p>
+                        <p>Initialize an instance of the CasClient. By default, this instance uses the <code>EMCPasswordEncodingHashed</code> encoding type.</p>
 <div class="aside aside-since">
     <p class="aside-title">Since</p>
     6.1.0
@@ -1455,7 +1458,7 @@ This class helps to implement the E2EE password encryption, supports the creatio
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">encryptionVersion</span><span class="p">:</span> <span class="kt"><a href="../Enums/EMCEncryptionVersion.html">EMCEncryptionVersion</a></span><span class="p">,</span> <span class="nv">publicKey</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="nv">encryptionVersion</span><span class="p">:</span> <span class="kt"><a href="../Enums/EMCEncryptionVersion.html">EMCEncryptionVersion</a></span><span class="p">,</span> <span class="nv">publicKey</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -1463,6 +1466,90 @@ This class helps to implement the E2EE password encryption, supports the creatio
                         <h4>Parameters</h4>
                         <table class="graybox">
                           <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>encryptionVersion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The CAS encryption version that is based on the CAS specifications.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>publicKey</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The RSA public key to be used for encryption. This key is provided by the CAS Server.
+@Note: Multiple instances can be constructed.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EMCasClient(im)initWithPasswordEncoding:encryptionVersion:publicKey:"></a>
+                    <a name="//apple_ref/objc/Method/-initWithPasswordEncoding:encryptionVersion:publicKey:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EMCasClient(im)initWithPasswordEncoding:encryptionVersion:publicKey:">-initWithPasswordEncoding:<wbr>encryptionVersion:<wbr>publicKey:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initialize an instance of the CasClient.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    6.3.0
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span>
+    <span class="nf">initWithPasswordEncoding</span><span class="p">:(</span><span class="n"><a href="../Enums/EMCPasswordEncoding.html">EMCPasswordEncoding</a></span><span class="p">)</span><span class="nv">passwordEncoding</span>
+           <span class="nf">encryptionVersion</span><span class="p">:(</span><span class="n"><a href="../Enums/EMCEncryptionVersion.html">EMCEncryptionVersion</a></span><span class="p">)</span><span class="nv">encryptionVersion</span>
+                   <span class="nf">publicKey</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">publicKey</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">passwordEncoding</span><span class="p">:</span> <span class="kt"><a href="../Enums/EMCPasswordEncoding.html">EMCPasswordEncoding</a></span><span class="p">,</span> <span class="nv">encryptionVersion</span><span class="p">:</span> <span class="kt"><a href="../Enums/EMCEncryptionVersion.html">EMCEncryptionVersion</a></span><span class="p">,</span> <span class="nv">publicKey</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>passwordEncoding</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The password encoding used by the CAS Server.</p>
+                                </div>
+                              </td>
+                            </tr>
                             <tr>
                               <td>
                                 <code>
@@ -1568,7 +1655,7 @@ Prerequisites on CAS server: The user&rsquo;s status must be active and the user
                               </td>
                               <td>
                                 <div>
-                                  <p>A salt value that is encoded in UTF-8 format.</p>
+                                  <p>A salt value that is encoded in UTF-8 format. The salt should be a valid Hex string of even-length.</p>
                                 </div>
                               </td>
                             </tr>
@@ -1664,7 +1751,7 @@ Prerequisites on CAS server: The user’s status must be active and the user mus
                               </td>
                               <td>
                                 <div>
-                                  <p>A salt value that is encoded in UTF-8 format.</p>
+                                  <p>A salt value that is encoded in UTF-8 format. The salt should be a valid Hex string of even-length.</p>
                                 </div>
                               </td>
                             </tr>
@@ -1689,9 +1776,9 @@ Prerequisites on CAS server: The user’s status must be active and the user mus
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)EMCasClient(im)changePassword:password:password:oldPasswordSalt:newPasswordSalt:error:"></a>
-                    <a name="//apple_ref/objc/Method/-changePassword:password:password:oldPasswordSalt:newPasswordSalt:error:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)EMCasClient(im)changePassword:password:password:oldPasswordSalt:newPasswordSalt:error:">-changePassword:<wbr>password:<wbr>password:<wbr>oldPasswordSalt:<wbr>newPasswordSalt:<wbr>error:<wbr></a>
+                    <a name="/c:objc(cs)EMCasClient(im)changeUserPassword:oldPassword:newPassword:oldPasswordSalt:newPasswordSalt:error:"></a>
+                    <a name="//apple_ref/objc/Method/-changeUserPassword:oldPassword:newPassword:oldPasswordSalt:newPasswordSalt:error:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EMCasClient(im)changeUserPassword:oldPassword:newPassword:oldPasswordSalt:newPasswordSalt:error:">-changeUserPassword:<wbr>oldPassword:<wbr>newPassword:<wbr>oldPasswordSalt:<wbr>newPasswordSalt:<wbr>error:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1707,7 +1794,7 @@ Prerequisites on CAS server: The user’s status must be active and the user mus
 
 </div><div class="aside aside-since">
     <p class="aside-title">Since</p>
-    6.1.0
+    6.3.0
 
 </div>
 
@@ -1716,17 +1803,17 @@ Prerequisites on CAS server: The user’s status must be active and the user mus
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nf">changePassword</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">userId</span>
-                             <span class="nf">password</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSData</span> <span class="o">*</span><span class="p">)</span><span class="nv">oldPassword</span>
-                             <span class="nf">password</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSData</span> <span class="o">*</span><span class="p">)</span><span class="nv">newPassword</span>
-                      <span class="nf">oldPasswordSalt</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSData</span> <span class="o">*</span><span class="p">)</span><span class="nv">oldPasswordSalt</span>
-                      <span class="nf">newPasswordSalt</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSData</span> <span class="o">*</span><span class="p">)</span><span class="nv">newPasswordSalt</span>
-                                <span class="nf">error</span><span class="p">:(</span><span class="n">NSError</span> <span class="o">*</span><span class="n">_Nullable</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">error</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nf">changeUserPassword</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">userId</span>
+                              <span class="nf">oldPassword</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSData</span> <span class="o">*</span><span class="p">)</span><span class="nv">oldPassword</span>
+                              <span class="nf">newPassword</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSData</span> <span class="o">*</span><span class="p">)</span><span class="nv">newPassword</span>
+                          <span class="nf">oldPasswordSalt</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSData</span> <span class="o">*</span><span class="p">)</span><span class="nv">oldPasswordSalt</span>
+                          <span class="nf">newPasswordSalt</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSData</span> <span class="o">*</span><span class="p">)</span><span class="nv">newPasswordSalt</span>
+                                    <span class="nf">error</span><span class="p">:(</span><span class="n">NSError</span> <span class="o">*</span><span class="n">_Nullable</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">error</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">changePassword</span><span class="p">(</span><span class="n">_</span> <span class="nv">userId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">password</span> <span class="nv">oldPassword</span><span class="p">:</span> <span class="kt">Data</span><span class="p">,</span> <span class="n">password</span> <span class="nv">newPassword</span><span class="p">:</span> <span class="kt">Data</span><span class="p">,</span> <span class="nv">oldPasswordSalt</span><span class="p">:</span> <span class="kt">Data</span><span class="p">,</span> <span class="nv">newPasswordSalt</span><span class="p">:</span> <span class="kt">Data</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">changeUserPassword</span><span class="p">(</span><span class="n">_</span> <span class="nv">userId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">oldPassword</span><span class="p">:</span> <span class="kt">Data</span><span class="p">,</span> <span class="nv">newPassword</span><span class="p">:</span> <span class="kt">Data</span><span class="p">,</span> <span class="nv">oldPasswordSalt</span><span class="p">:</span> <span class="kt">Data</span><span class="p">,</span> <span class="nv">newPasswordSalt</span><span class="p">:</span> <span class="kt">Data</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
 
                         </div>
                       </div>
@@ -1778,7 +1865,7 @@ Prerequisites on CAS server: The user’s status must be active and the user mus
                               </td>
                               <td>
                                 <div>
-                                  <p>A salt value that is encoded in UTF-8 format.</p>
+                                  <p>A salt value that is encoded in UTF-8 format. The salt should be a valid Hex string of even-length.</p>
                                 </div>
                               </td>
                             </tr>
@@ -1790,7 +1877,149 @@ Prerequisites on CAS server: The user’s status must be active and the user mus
                               </td>
                               <td>
                                 <div>
-                                  <p>A salt value that is encoded in UTF-8 format.</p>
+                                  <p>A salt value that is encoded in UTF-8 format. The salt should be a valid Hex string of even-length.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>error</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An error of type EMCCasError.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EMCasClient(im)migrateUserPassword:oldPassword:oldPasswordEncoding:newPassword:oldPasswordSalt:newPasswordSalt:error:"></a>
+                    <a name="//apple_ref/objc/Method/-migrateUserPassword:oldPassword:oldPasswordEncoding:newPassword:oldPasswordSalt:newPasswordSalt:error:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EMCasClient(im)migrateUserPassword:oldPassword:oldPasswordEncoding:newPassword:oldPasswordSalt:newPasswordSalt:error:">-migrateUserPassword:<wbr>oldPassword:<wbr>oldPasswordEncoding:<wbr>newPassword:<wbr>oldPasswordSalt:<wbr>newPasswordSalt:<wbr>error:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Migrates the existing password using the <code>EMCPasswordEncodingLegacy</code> to a new password using the encoding format specified in the <code>EMCCasClient</code> instance.
+The password provided will be hashed and then encrypted with the RSA public key.
+Prerequisites on CAS server: The user’s status must be active and the user must already have a password set.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    The salt for old password and new password can be the same. If the old password is already of the <code>EMCPasswordEncodingHashed</code> format,
+this API would simply change the password to the intended type.
+
+</div><div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    6.3.0
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nf">migrateUserPassword</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">userId</span>
+                               <span class="nf">oldPassword</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSData</span> <span class="o">*</span><span class="p">)</span><span class="nv">oldPassword</span>
+                       <span class="nf">oldPasswordEncoding</span><span class="p">:</span>
+                           <span class="p">(</span><span class="n"><a href="../Enums/EMCPasswordEncoding.html">EMCPasswordEncoding</a></span><span class="p">)</span><span class="nv">oldPasswordEncoding</span>
+                               <span class="nf">newPassword</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSData</span> <span class="o">*</span><span class="p">)</span><span class="nv">newPassword</span>
+                           <span class="nf">oldPasswordSalt</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSData</span> <span class="o">*</span><span class="p">)</span><span class="nv">oldPasswordSalt</span>
+                           <span class="nf">newPasswordSalt</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSData</span> <span class="o">*</span><span class="p">)</span><span class="nv">newPasswordSalt</span>
+                                     <span class="nf">error</span><span class="p">:(</span><span class="n">NSError</span> <span class="o">*</span><span class="n">_Nullable</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">error</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">migrateUserPassword</span><span class="p">(</span><span class="n">_</span> <span class="nv">userId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">oldPassword</span><span class="p">:</span> <span class="kt">Data</span><span class="p">,</span> <span class="nv">oldPasswordEncoding</span><span class="p">:</span> <span class="kt"><a href="../Enums/EMCPasswordEncoding.html">EMCPasswordEncoding</a></span><span class="p">,</span> <span class="nv">newPassword</span><span class="p">:</span> <span class="kt">Data</span><span class="p">,</span> <span class="nv">oldPasswordSalt</span><span class="p">:</span> <span class="kt">Data</span><span class="p">,</span> <span class="nv">newPasswordSalt</span><span class="p">:</span> <span class="kt">Data</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>userId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>User ID.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>oldPassword</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The user&rsquo;s existing password that is encoded in UTF-8 format.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>oldPasswordEncoding</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The encoding format of the user&rsquo;s existing password.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>newPassword</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The new password that is encoded in UTF-8 format.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>oldPasswordSalt</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A salt value that is encoded in UTF-8 format. The salt should be a valid Hex string of even-length.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>newPasswordSalt</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A salt value that is encoded in UTF-8 format. The salt should be a valid Hex string of even-length.</p>
                                 </div>
                               </td>
                             </tr>
