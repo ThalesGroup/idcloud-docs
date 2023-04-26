@@ -1,0 +1,4 @@
+To install the EzioMobileSdk documentation into Xcode, perform the following steps:
+1. Close Xcode.
+2. Copy com.gemalto.eziomobilesdk.docset to ~/Library/Developer/Shared/Documentation/DocSets
+3. Start Xcode. Done!

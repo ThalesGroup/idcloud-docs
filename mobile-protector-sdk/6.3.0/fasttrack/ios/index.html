@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Protector OATH - FastTrack  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jazzy.js" defer></script>
+    
+    <script>
+    $(function() {
+        var mylist = $('.task-group').children('ul');
+        var listitems = mylist.children('li').get();
+        listitems.sort(function(a, b) {
+          return $(a).children('div').children('code').children('a')[1].name.localeCompare($(b).children('div').children('code').children('a')[1].name);
+        })
+        $.each(listitems, function(idx, itm) { mylist.append(itm); });
+    });
+    </script>
+  </head>
+  <body>
+    <a title="Protector OATH - FastTrack  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">Protector OATH - FastTrack 6.2.0 Docs</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">Protector OATH - FastTrack Reference</a>
+        <img id="carat" src="img/carat.png" />
+        Protector OATH - FastTrack  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name" id="nav-group-name-Classes">
+            <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/EMCapMobileProtector.html">EMCapMobileProtector</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMFastTrack.html">EMFastTrack</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMFastTrackDeviceFingerprintSource.html">EMFastTrackDeviceFingerprintSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMFastTrackOptionalParameters.html">EMFastTrackOptionalParameters</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMFastTrackTlsConfiguration.html">EMFastTrackTlsConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMFetchMessageResponse.html">EMFetchMessageResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMGenericIncomingMessage.html">EMGenericIncomingMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMGenericOutgoingMessage.html">EMGenericOutgoingMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMIncomingMessage.html">EMIncomingMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMMobileMessageManager.html">EMMobileMessageManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMMobileMessenger.html">EMMobileMessenger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMMobileMessengerOptionalParameters.html">EMMobileMessengerOptionalParameters</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMMobileProtector.html">EMMobileProtector</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMMobileProtectorOptionalParameters.html">EMMobileProtectorOptionalParameters</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMOathMobileProtector.html">EMOathMobileProtector</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMOutgoingMessage.html">EMOutgoingMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMProtectorAuthInput.html">EMProtectorAuthInput</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMProtectorCapSettings.html">EMProtectorCapSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMProtectorCapTokenDevice.html">EMProtectorCapTokenDevice</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMProtectorDcvvSettings.html">EMProtectorDcvvSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMProtectorHotpSettings.html">EMProtectorHotpSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMProtectorOathTokenDevice.html">EMProtectorOathTokenDevice</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMProtectorOcraSettings.html">EMProtectorOcraSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMProtectorTokenDevice.html">EMProtectorTokenDevice</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMProtectorTotpSettings.html">EMProtectorTotpSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMProvisionerOptionalParameters.html">EMProvisionerOptionalParameters</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMRegistrationResponse.html">EMRegistrationResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMSendMessageResponse.html">EMSendMessageResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMTransactionSignatureKey.html">EMTransactionSignatureKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMTransactionSigningRequest.html">EMTransactionSigningRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMTransactionSigningResponse.html">EMTransactionSigningResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMTransactionVerifyRequest.html">EMTransactionVerifyRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EMTransactionVerifyResponse.html">EMTransactionVerifyResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/SecureLogConfig.html">SecureLogConfig</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/SecureLogConfigComponents.html">SecureLogConfigComponents</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name" id="nav-group-name-Constants">
+            <a href="Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:EMProtectorCapSettings.h@DEFAULT_CAP_CDOL">DEFAULT_CAP_CDOL</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:EMProtectorCapSettings.h@DEFAULT_CAP_CID">DEFAULT_CAP_CID</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:EMProtectorCapSettings.h@DEFAULT_CAP_IAD">DEFAULT_CAP_IAD</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:EMProtectorCapSettings.h@DEFAULT_CAP_IAF">DEFAULT_CAP_IAF</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:EMProtectorCapSettings.h@DEFAULT_CAP_IPB">DEFAULT_CAP_IPB</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:EMProtectorCapSettings.h@DEFAULT_CAP_MAC_PADDING">DEFAULT_CAP_MAC_PADDING</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:EMProtectorDcvvSettings.h@DEFAULT_OATH_DCVV_HASH_ALGORITHM">DEFAULT_OATH_DCVV_HASH_ALGORITHM</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:EMProtectorDcvvSettings.h@DEFAULT_OATH_DCVV_START_TIME">DEFAULT_OATH_DCVV_START_TIME</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:EMProtectorDcvvSettings.h@DEFAULT_OATH_DCVV_TIMESTEP_SIZE">DEFAULT_OATH_DCVV_TIMESTEP_SIZE</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:EMProtectorDcvvSettings.h@DEFAULT_OATH_DCVV_TIMESTEP_TYPE">DEFAULT_OATH_DCVV_TIMESTEP_TYPE</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:EMProtectorDcvvSettings.h@DEFAULT_OATH_DCVV_TRUNCATION">DEFAULT_OATH_DCVV_TRUNCATION</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:EMProtectorHotpSettings.h@DEFAULT_OATH_HOTP_HASH_ALGORITHM">DEFAULT_OATH_HOTP_HASH_ALGORITHM</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:EMProtectorHotpSettings.h@DEFAULT_OATH_HOTP_TRUNCATION">DEFAULT_OATH_HOTP_TRUNCATION</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:EMProtectorOcraSettings.h@DEFAULT_OATH_OCRA_START_TIME">DEFAULT_OATH_OCRA_START_TIME</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:EMProtectorOcraSettings.h@DEFAULT_OATH_OCRA_SUITE">DEFAULT_OATH_OCRA_SUITE</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:EMProtectorTotpSettings.h@DEFAULT_OATH_TOTP_HASH_ALGORITHM">DEFAULT_OATH_TOTP_HASH_ALGORITHM</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:EMProtectorTotpSettings.h@DEFAULT_OATH_TOTP_START_TIME">DEFAULT_OATH_TOTP_START_TIME</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:EMProtectorTotpSettings.h@DEFAULT_OATH_TOTP_TIMESTEP_SIZE">DEFAULT_OATH_TOTP_TIMESTEP_SIZE</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:EMProtectorTotpSettings.h@DEFAULT_OATH_TOTP_TIMESTEP_TYPE">DEFAULT_OATH_TOTP_TIMESTEP_TYPE</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:EMProtectorTotpSettings.h@DEFAULT_OATH_TOTP_TRUNCATION">DEFAULT_OATH_TOTP_TRUNCATION</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMFastTrackErrorDomain">EMFastTrackErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EMFastTrackTlsConfigurationDefaultTimeout">EMFastTrackTlsConfigurationDefaultTimeout</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FASTTRACK_ERROR_DOMAIN_BIOMETRIC">FASTTRACK_ERROR_DOMAIN_BIOMETRIC</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FASTTRACK_ERROR_DOMAIN_CHANGE_PIN">FASTTRACK_ERROR_DOMAIN_CHANGE_PIN</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FASTTRACK_ERROR_DOMAIN_MOBILE_MESSENGER">FASTTRACK_ERROR_DOMAIN_MOBILE_MESSENGER</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FASTTRACK_ERROR_DOMAIN_OTP_GENERATION">FASTTRACK_ERROR_DOMAIN_OTP_GENERATION</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FASTTRACK_ERROR_DOMAIN_TOKEN_MANAGEMENT">FASTTRACK_ERROR_DOMAIN_TOKEN_MANAGEMENT</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@MOBILE_MESSENGER_JSON_CONTENT_TYPE_GENERIC">MOBILE_MESSENGER_JSON_CONTENT_TYPE_GENERIC</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@MOBILE_MESSENGER_JSON_CONTENT_TYPE_TRANSACTION_SIGNING_REQUEST">MOBILE_MESSENGER_JSON_CONTENT_TYPE_TRANSACTION_SIGNING_REQUEST</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@MOBILE_MESSENGER_JSON_CONTENT_TYPE_TRANSACTION_SIGNING_RESPONSE">MOBILE_MESSENGER_JSON_CONTENT_TYPE_TRANSACTION_SIGNING_RESPONSE</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@MOBILE_MESSENGER_JSON_CONTENT_TYPE_TRANSACTION_VERIFY_REQUEST">MOBILE_MESSENGER_JSON_CONTENT_TYPE_TRANSACTION_VERIFY_REQUEST</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@MOBILE_MESSENGER_JSON_CONTENT_TYPE_TRANSACTION_VERIFY_RESPONSE">MOBILE_MESSENGER_JSON_CONTENT_TYPE_TRANSACTION_VERIFY_RESPONSE</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:EMProtectorOathSettings.h@MOBILE_PROTECTOR_OATH_DCVV_MAXIMUM_TRUNCATION">MOBILE_PROTECTOR_OATH_DCVV_MAXIMUM_TRUNCATION</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:EMProtectorOathSettings.h@MOBILE_PROTECTOR_OATH_DCVV_MINIMUM_TRUNCATION">MOBILE_PROTECTOR_OATH_DCVV_MINIMUM_TRUNCATION</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:EMProtectorOathSettings.h@MOBILE_PROTECTOR_OATH_MAXIMUM_TRUNCATION">MOBILE_PROTECTOR_OATH_MAXIMUM_TRUNCATION</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:EMProtectorOathSettings.h@MOBILE_PROTECTOR_OATH_MINIMUM_TRUNCATION">MOBILE_PROTECTOR_OATH_MINIMUM_TRUNCATION</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name" id="nav-group-name-Enumerations">
+            <a href="Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Enums/EMFastTrackDeviceFingerprintType.html">EMFastTrackDeviceFingerprintType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EMFastTrackErrorCode.html">EMFastTrackErrorCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EMFastTrackOathHashAlgorithm.html">EMFastTrackOathHashAlgorithm</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EMFastTrackOathTimestepType.html">EMFastTrackOathTimestepType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EMFastTrackProvisioningProtocol.html">EMFastTrackProvisioningProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EMIncomingMessageType.html">EMIncomingMessageType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EMMobileMessengerJailbreakPolicy.html">EMMobileMessengerJailbreakPolicy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EMMobileProtectorTokenJailbreakPolicy.html">EMMobileProtectorTokenJailbreakPolicy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EMOtpType.html">EMOtpType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EMOutgoingMessageType.html">EMOutgoingMessageType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EMSystemBiometricType.html">EMSystemBiometricType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EMTransactionSigningOtpMode.html">EMTransactionSigningOtpMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EMTransactionSigningResponseValue.html">EMTransactionSigningResponseValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EMTransactionVerifyResponseValue.html">EMTransactionVerifyResponseValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/SecureLogLevel.html">SecureLogLevel</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name" id="nav-group-name-Protocols">
+            <a href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/EMMessage.html">EMMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMMessageMeta.html">EMMessageMeta</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EMMessengerResponse.html">EMMessengerResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/SecureLog.html">SecureLog</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      
+      <script>
+      $(function() {
+          $("#nav-group-name-Constants").remove();
+      
+          // sorting
+          var mylist = $('.nav-group-tasks').each(function () {
+            var tlist = $(this);
+            var listitems = $(this).children('li').get();
+            listitems.sort(function(a, b) {
+              return $(a).children('a')[0].text.localeCompare($(b).children('a')[0].text);
+            })
+            $.each(listitems, function(idx, itm) { tlist.append(itm); });
+          });
+      });
+      </script>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            
+            <h1 id='protector-oath-sdk' class='heading'>Protector OATH SDK</h1>
+
+<p>Thales Protector OATH SDK delivers strong multi-factor authentication – including biometrics – with best-in-class security, while fulfilling banking requirements. It ensures appropriate security features, while also allowing banks to comply with regulations and to offer simple, innovative experiences that increase the digital touchpoints in online channels. Protector OATH SDK is developed and maintained by Thales with banking-grade security vetted by internal and external audits.</p>
+
+<p>Protector OATH SDK is easy to integrate into mobile applications, providing ready-to-use secure multi-factor biometrics authentication and transaction signature. It should be used with Thales Mobile Authentication Suite backend solutions, and relies on recognized industry standards. It lets users chose their preferred authentication methods, among PIN code or mobile device biometrics, ensuring maximum convenience. It implements state-of-the-art mobile security protections to protect against a number of threats, such as malware attacks, application cloning, after-theft attacks, reverse engineering, and brute force attacks.</p>
+<h1 id='documentation' class='heading'>Documentation</h1>
+
+<p>Release notes and programmers guide are accessible on Thales developer portal:</p>
+
+<ul>
+<li>Id Cloud customers should go to the “IdCloud authentication” section on <a href="https://idcloud.docs.stoplight.io">https://idcloud.docs.stoplight.io</a></li>
+<li>Other customers can go to <a href="https://thales-protector-oath-sdk.docs.stoplight.io/">https://thales-protector-oath-sdk.docs.stoplight.io/</a></li>
+</ul>
+
+          </section>
+        </section>
+        <section id="footer">
+          <p>© Thales DIS</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
