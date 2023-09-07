@@ -1,0 +1,1565 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>EMOobNotificationProfile Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script>
+    $(function() {
+        var mylist = $('.task-group').children('ul');
+        var listitems = mylist.children('li').get();
+        listitems.sort(function(a, b) {
+          return $(a).children('div').children('code').children('a')[1].name.localeCompare($(b).children('div').children('code').children('a')[1].name);
+        })
+        $.each(listitems, function(idx, itm) { mylist.append(itm); });
+    });
+    </script>
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Class/EMOobNotificationProfile" class="dashAnchor"></a>
+    <a title="EMOobNotificationProfile Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">Protector OATH 6.4.0 Docs</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">Protector OATH Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        EMOobNotificationProfile Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name" id="nav-group-name-Classes">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/EMAuthModule.html">EMAuthModule</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMBioFingerprintAuthService.html">EMBioFingerprintAuthService</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMBioFingerprintContainer.html">EMBioFingerprintContainer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMCapFactory.html">EMCapFactory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMCapService.html">EMCapService</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMCapTools.html">EMCapTools</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMCasClient.html">EMCasClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMClearTextSecretTokenConfigurationBuilder.html">EMClearTextSecretTokenConfigurationBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMCore.html">EMCore</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMDeviceFingerprintSource.html">EMDeviceFingerprintSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMDeviceFingerprintTokenPolicy.html">EMDeviceFingerprintTokenPolicy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMDsCapParameters.html">EMDsCapParameters</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMDsFormattingFactory.html">EMDsFormattingFactory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMDsFormattingService.html">EMDsFormattingService</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMDsFormattingTools.html">EMDsFormattingTools</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMDskppConfigurationBuilder.html">EMDskppConfigurationBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMDskppKeyInformation.html">EMDskppKeyInformation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMDskppPinPolicy.html">EMDskppPinPolicy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)EMDskppPolicy">EMDskppPolicy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMDskppPolicyParser.html">EMDskppPolicyParser</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMDskppProvisioningCallback.html">EMDskppProvisioningCallback</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMDskppTlsConfiguration.html">EMDskppTlsConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMEmvError.html">EMEmvError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMEmvMap.html">EMEmvMap</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMEmvModule.html">EMEmvModule</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMEmvOptional.html">EMEmvOptional</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMEmvService.html">EMEmvService</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMEnumSet.html">EMEnumSet</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMEpsConfigurationBuilder.html">EMEpsConfigurationBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)EMException">EMException</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMGpfDsFactory.html">EMGpfDsFactory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMGpfDsService.html">EMGpfDsService</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)EMModuleConfiguration">EMModuleConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMMspConfiguration.html">EMMspConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMMspFactory.html">EMMspFactory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMMspField.html">EMMspField</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMMspModule.html">EMMspModule</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMMspService.html">EMMspService</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMOathFactory.html">EMOathFactory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMOathService.html">EMOathService</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMOobConfiguration.html">EMOobConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMOobConfigurationBuilder.html">EMOobConfigurationBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMOobIncomingMessageBase.html">EMOobIncomingMessageBase</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMOobMessageBase.html">EMOobMessageBase</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMOobMessageHandlerRegistry.html">EMOobMessageHandlerRegistry</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMOobModule.html">EMOobModule</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMOobNotificationProfile.html">EMOobNotificationProfile</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)EMOobOutgoingMessageBase">EMOobOutgoingMessageBase</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMOobRegistrationRequest.html">EMOobRegistrationRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMOobRequestParameter.html">EMOobRequestParameter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMOobRequestParameterBuilder.html">EMOobRequestParameterBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMOtpConfiguration.html">EMOtpConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMOtpModule.html">EMOtpModule</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMOtpTools.html">EMOtpTools</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMPinAuthService.html">EMPinAuthService</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)EMPinRuleIdentical">EMPinRuleIdentical</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMPinRuleLength.html">EMPinRuleLength</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)EMPinRulePalindrome">EMPinRulePalindrome</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)EMPinRuleSeries">EMPinRuleSeries</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)EMPinRuleUniform">EMPinRuleUniform</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMPrimitiveValue.html">EMPrimitiveValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMProvisioningConfiguration.html">EMProvisioningConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMSecureInputEncryptionConfig.html">EMSecureInputEncryptionConfig</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMSecureInputService.html">EMSecureInputService</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMSecureStorageModule.html">EMSecureStorageModule</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMSignatureKey.html">EMSignatureKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMSystemBioFingerprintAuthService.html">EMSystemBioFingerprintAuthService</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMSystemBioFingerprintContainer.html">EMSystemBioFingerprintContainer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMSystemFaceAuthContainer.html">EMSystemFaceAuthContainer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMSystemFaceAuthService.html">EMSystemFaceAuthService</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMTagValue.html">EMTagValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMTlsConfiguration.html">EMTlsConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMUIModule.html">EMUIModule</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMVicFactory.html">EMVicFactory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EMVicService.html">EMVicService</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SecureLogConfig.html">SecureLogConfig</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SecureLogConfigComponents.html">SecureLogConfigComponents</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name" id="nav-group-name-Constants">
+            <a href="../Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMActivationException">EMActivationException</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMCCasErrorDomain">EMCCasErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMCheckDigitException">EMCheckDigitException</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMConfigFileException">EMConfigFileException</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMCryptoException">EMCryptoException</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMDeviceFingerprintException">EMDeviceFingerprintException</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMDsDataFormatErrorCodeGeneral">EMDsDataFormatErrorCodeGeneral</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMDsDataFormatErrorDomain">EMDsDataFormatErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMDsDataFormatException">EMDsDataFormatException</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMDskppOtpComplexityBase32">EMDskppOtpComplexityBase32</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMDskppOtpComplexityBase64">EMDskppOtpComplexityBase64</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMDskppOtpComplexityDecimal">EMDskppOtpComplexityDecimal</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMDskppOtpComplexityHexadecimal">EMDskppOtpComplexityHexadecimal</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMDskppPolicyStatusOff">EMDskppPolicyStatusOff</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMDskppPolicyStatusOn">EMDskppPolicyStatusOn</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMDskppTlsConfigurationDefaultTimeout">EMDskppTlsConfigurationDefaultTimeout</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMDskppTokenModeEventSync">EMDskppTokenModeEventSync</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMDskppTokenModeOcraChallengeResponse">EMDskppTokenModeOcraChallengeResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMDskppTokenModeTimeSync">EMDskppTokenModeTimeSync</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMInitException">EMInitException</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMInvalidArgumentException">EMInvalidArgumentException</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMMobileProvisioningProtocolException">EMMobileProvisioningProtocolException</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMOobClientException">EMOobClientException</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMOobIncomingMessageTypeGeneric">EMOobIncomingMessageTypeGeneric</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMOobIncomingMessageTypeTransactionSigning">EMOobIncomingMessageTypeTransactionSigning</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMOobIncomingMessageTypeTransactionVerify">EMOobIncomingMessageTypeTransactionVerify</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMOobIncomingMessageTypeUserMessage">EMOobIncomingMessageTypeUserMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMOobMessageException">EMOobMessageException</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMOobNotificationException">EMOobNotificationException</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMOobOutgoingMessageTypeError">EMOobOutgoingMessageTypeError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMOobOutgoingMessageTypeGeneric">EMOobOutgoingMessageTypeGeneric</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMOobOutgoingMessageTypeTransactionSigning">EMOobOutgoingMessageTypeTransactionSigning</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMOobOutgoingMessageTypeTransactionVerify">EMOobOutgoingMessageTypeTransactionVerify</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMOobOutgoingMessageTypeUserMessage">EMOobOutgoingMessageTypeUserMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMOobParseException">EMOobParseException</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMOobRegistrationException">EMOobRegistrationException</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMOobUnregistrationException">EMOobUnregistrationException</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMPasswordManagerException">EMPasswordManagerException</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMPinErrorDomain">EMPinErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMPinRuleErrorDomain">EMPinRuleErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMPrimitiveTag_Input_Account_Number">EMPrimitiveTag_Input_Account_Number</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMPrimitiveTag_Input_Amount">EMPrimitiveTag_Input_Amount</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMPrimitiveTag_Input_Amount_With_Currency">EMPrimitiveTag_Input_Amount_With_Currency</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMPrimitiveTag_Input_Buy_Sell">EMPrimitiveTag_Input_Buy_Sell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMPrimitiveTag_Input_Challenge">EMPrimitiveTag_Input_Challenge</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMPrimitiveTag_Input_Checksum">EMPrimitiveTag_Input_Checksum</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMPrimitiveTag_Input_Currency">EMPrimitiveTag_Input_Currency</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMPrimitiveTag_Input_Data">EMPrimitiveTag_Input_Data</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMPrimitiveTag_Input_Data_10">EMPrimitiveTag_Input_Data_10</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMPrimitiveTag_Input_Data_2">EMPrimitiveTag_Input_Data_2</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMPrimitiveTag_Input_Data_3">EMPrimitiveTag_Input_Data_3</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMPrimitiveTag_Input_Data_4">EMPrimitiveTag_Input_Data_4</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMPrimitiveTag_Input_Data_5">EMPrimitiveTag_Input_Data_5</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMPrimitiveTag_Input_Data_6">EMPrimitiveTag_Input_Data_6</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMPrimitiveTag_Input_Data_7">EMPrimitiveTag_Input_Data_7</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMPrimitiveTag_Input_Data_8">EMPrimitiveTag_Input_Data_8</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMPrimitiveTag_Input_Data_9">EMPrimitiveTag_Input_Data_9</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMPrimitiveTag_Input_Date">EMPrimitiveTag_Input_Date</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMPrimitiveTag_Input_Due_Date">EMPrimitiveTag_Input_Due_Date</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMPrimitiveTag_Input_Extra_Code">EMPrimitiveTag_Input_Extra_Code</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMPrimitiveTag_Input_From_Account">EMPrimitiveTag_Input_From_Account</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMPrimitiveTag_Input_From_Date">EMPrimitiveTag_Input_From_Date</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMPrimitiveTag_Input_Further_Inputs">EMPrimitiveTag_Input_Further_Inputs</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMPrimitiveTag_Input_Iban">EMPrimitiveTag_Input_Iban</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMPrimitiveTag_Input_Identity_Number">EMPrimitiveTag_Input_Identity_Number</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMPrimitiveTag_Input_Limit">EMPrimitiveTag_Input_Limit</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMPrimitiveTag_Input_Login_Code">EMPrimitiveTag_Input_Login_Code</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMPrimitiveTag_Input_Not_Before">EMPrimitiveTag_Input_Not_Before</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMPrimitiveTag_Input_Number_Of_Payments">EMPrimitiveTag_Input_Number_Of_Payments</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMPrimitiveTag_Input_Passcode">EMPrimitiveTag_Input_Passcode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMPrimitiveTag_Input_Pg_Bg">EMPrimitiveTag_Input_Pg_Bg</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMPrimitiveTag_Input_Phone_Number">EMPrimitiveTag_Input_Phone_Number</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMPrimitiveTag_Input_Quantity">EMPrimitiveTag_Input_Quantity</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMPrimitiveTag_Input_Ref_Order_Number">EMPrimitiveTag_Input_Ref_Order_Number</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMPrimitiveTag_Input_Reference_Number">EMPrimitiveTag_Input_Reference_Number</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMPrimitiveTag_Input_Time">EMPrimitiveTag_Input_Time</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMPrimitiveTag_Input_To_Account">EMPrimitiveTag_Input_To_Account</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMPrimitiveTag_Input_To_Date">EMPrimitiveTag_Input_To_Date</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMPrimitiveTag_Input_Total_Amount">EMPrimitiveTag_Input_Total_Amount</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMPrimitiveTag_Input_Units">EMPrimitiveTag_Input_Units</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMPrimitiveTag_Input_User_Id">EMPrimitiveTag_Input_User_Id</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMPrimitiveTag_Input_Valid_Until">EMPrimitiveTag_Input_Valid_Until</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMPrimitiveTag_Message_Authenticate">EMPrimitiveTag_Message_Authenticate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMPrimitiveTag_Message_Buy_Sell_Shares">EMPrimitiveTag_Message_Buy_Sell_Shares</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMPrimitiveTag_Message_Confirm_Address_Change">EMPrimitiveTag_Message_Confirm_Address_Change</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMPrimitiveTag_Message_Confirm_Agreement">EMPrimitiveTag_Message_Confirm_Agreement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMPrimitiveTag_Message_Confirm_Assignment">EMPrimitiveTag_Message_Confirm_Assignment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMPrimitiveTag_Message_Confirm_Protect_File">EMPrimitiveTag_Message_Confirm_Protect_File</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMPrimitiveTag_Message_International_Payment">EMPrimitiveTag_Message_International_Payment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMPrimitiveTag_Message_Login">EMPrimitiveTag_Message_Login</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMPrimitiveTag_Message_New_Beneficiary">EMPrimitiveTag_Message_New_Beneficiary</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMPrimitiveTag_Message_New_Pg_Bg">EMPrimitiveTag_Message_New_Pg_Bg</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMPrimitiveTag_Message_New_Phone_Number">EMPrimitiveTag_Message_New_Phone_Number</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMPrimitiveTag_Message_Payment">EMPrimitiveTag_Message_Payment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMPrimitiveTag_Message_Pg_Bg_Payment">EMPrimitiveTag_Message_Pg_Bg_Payment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMPrimitiveTag_Message_Signing">EMPrimitiveTag_Message_Signing</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMPrimitiveTag_Message_Transfer">EMPrimitiveTag_Message_Transfer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMPrimitiveTag_Text_Free_Text">EMPrimitiveTag_Text_Free_Text</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMPrimitiveTag_Text_Hidden_Text">EMPrimitiveTag_Text_Hidden_Text</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMSecureInputBuilder_DEFAULT_BACK_BUTTON_NAME">EMSecureInputBuilder_DEFAULT_BACK_BUTTON_NAME</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMSecureInputBuilder_DEFAULT_BUTTON_FONT_NAME">EMSecureInputBuilder_DEFAULT_BUTTON_FONT_NAME</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMSecureInputBuilder_DEFAULT_DELETE_BUTTON_NAME">EMSecureInputBuilder_DEFAULT_DELETE_BUTTON_NAME</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMSecureInputBuilder_DEFAULT_FIRST_LABEL">EMSecureInputBuilder_DEFAULT_FIRST_LABEL</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMSecureInputBuilder_DEFAULT_KEYS">EMSecureInputBuilder_DEFAULT_KEYS</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMSecureInputBuilder_DEFAULT_OK_BUTTON_NAME">EMSecureInputBuilder_DEFAULT_OK_BUTTON_NAME</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMSecureInputBuilder_DEFAULT_SECOND_LABEL">EMSecureInputBuilder_DEFAULT_SECOND_LABEL</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMSecureInputBuilder_DEFAULT_SHIFT_BUTTON_NAME">EMSecureInputBuilder_DEFAULT_SHIFT_BUTTON_NAME</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMStaticColorHandler">EMStaticColorHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMTlsConfigurationDefaultTimeout">EMTlsConfigurationDefaultTimeout</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMTokenManagerErrorDomain">EMTokenManagerErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EMVicException">EMVicException</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EM_C_ERR_CODE_DATA_OBJECT_DUPLICATE">EM_C_ERR_CODE_DATA_OBJECT_DUPLICATE</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EM_C_ERR_CODE_DATA_OBJECT_INCOMPLETE">EM_C_ERR_CODE_DATA_OBJECT_INCOMPLETE</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EM_C_ERR_CODE_DATA_OBJECT_MISSING">EM_C_ERR_CODE_DATA_OBJECT_MISSING</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EM_C_ERR_CODE_DATA_OBJECT_NOT_FOUND">EM_C_ERR_CODE_DATA_OBJECT_NOT_FOUND</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EM_C_ERR_CODE_DATA_OBJECT_REDUNDANT">EM_C_ERR_CODE_DATA_OBJECT_REDUNDANT</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EM_C_ERR_CODE_DATA_OBJECT_UNEXPECTED">EM_C_ERR_CODE_DATA_OBJECT_UNEXPECTED</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EM_C_ERR_CODE_INCORRECT_CRC">EM_C_ERR_CODE_INCORRECT_CRC</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EM_C_ERR_CODE_INVALID_DATA_OBJECT_FORMAT">EM_C_ERR_CODE_INVALID_DATA_OBJECT_FORMAT</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EM_C_ERR_CODE_INVALID_END_OF_QR_CODE">EM_C_ERR_CODE_INVALID_END_OF_QR_CODE</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EM_C_ERR_CODE_INVALID_START_OF_QR_CODE">EM_C_ERR_CODE_INVALID_START_OF_QR_CODE</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EM_C_ERR_CODE_MISSING_MAPPER">EM_C_ERR_CODE_MISSING_MAPPER</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EM_C_ERR_DOMAIN_MAPPER">EM_C_ERR_DOMAIN_MAPPER</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EM_C_ERR_DOMAIN_VALIDATION">EM_C_ERR_DOMAIN_VALIDATION</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:EMMspCapData.h@EM_MSP_CAP_MODE1">EM_MSP_CAP_MODE1</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:EMMspCapData.h@EM_MSP_CAP_MODE2">EM_MSP_CAP_MODE2</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:EMMspCapData.h@EM_MSP_CAP_MODE2_TDS">EM_MSP_CAP_MODE2_TDS</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:EMMspCapData.h@EM_MSP_CAP_MODE3">EM_MSP_CAP_MODE3</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:EMMspOathData.h@EM_MSP_OATH_HOTP">EM_MSP_OATH_HOTP</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:EMMspOathData.h@EM_MSP_OATH_OCRA">EM_MSP_OATH_OCRA</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:EMMspOathData.h@EM_MSP_OATH_TOTP">EM_MSP_OATH_TOTP</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EZIO_MOBILE_ERROR_DOMAIN_AUTH_MODE_BIOFP">EZIO_MOBILE_ERROR_DOMAIN_AUTH_MODE_BIOFP</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EZIO_MOBILE_ERROR_DOMAIN_AUTH_MODE_FACE">EZIO_MOBILE_ERROR_DOMAIN_AUTH_MODE_FACE</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EZIO_MOBILE_ERROR_DOMAIN_AUTH_MODE_SYSTEM_FACEID">EZIO_MOBILE_ERROR_DOMAIN_AUTH_MODE_SYSTEM_FACEID</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EZIO_MOBILE_ERROR_DOMAIN_EMS_LICENSE">EZIO_MOBILE_ERROR_DOMAIN_EMS_LICENSE</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EZIO_MOBILE_ERROR_DOMAIN_FINGERPRINT">EZIO_MOBILE_ERROR_DOMAIN_FINGERPRINT</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EZIO_MOBILE_ERROR_DOMAIN_GLOBALDB">EZIO_MOBILE_ERROR_DOMAIN_GLOBALDB</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EZIO_MOBILE_ERROR_DOMAIN_JAILBREAK_DETECTION">EZIO_MOBILE_ERROR_DOMAIN_JAILBREAK_DETECTION</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EZIO_MOBILE_ERROR_DOMAIN_MSP">EZIO_MOBILE_ERROR_DOMAIN_MSP</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EZIO_MOBILE_ERROR_DOMAIN_MULTI_AUTH_MODE">EZIO_MOBILE_ERROR_DOMAIN_MULTI_AUTH_MODE</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EZIO_MOBILE_ERROR_DOMAIN_OOB">EZIO_MOBILE_ERROR_DOMAIN_OOB</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EZIO_MOBILE_ERROR_DOMAIN_PASSWORD">EZIO_MOBILE_ERROR_DOMAIN_PASSWORD</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EZIO_MOBILE_ERROR_DOMAIN_SECURE_KEYPAD">EZIO_MOBILE_ERROR_DOMAIN_SECURE_KEYPAD</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EZIO_MOBILE_ERROR_DOMAIN_SECURE_STORAGE">EZIO_MOBILE_ERROR_DOMAIN_SECURE_STORAGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EZIO_MOBILE_ERROR_DOMAIN_SPRNG">EZIO_MOBILE_ERROR_DOMAIN_SPRNG</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EZIO_MOBILE_ERROR_DOMAIN_TOKEN">EZIO_MOBILE_ERROR_DOMAIN_TOKEN</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EZIO_MOBILE_ERROR_DOMAIN_UNSPECIFIED">EZIO_MOBILE_ERROR_DOMAIN_UNSPECIFIED</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@MSP_CONFIGURATION_NOT_SET">MSP_CONFIGURATION_NOT_SET</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@MSP_CONFIGURATION_SET">MSP_CONFIGURATION_SET</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name" id="nav-group-name-Enumerations">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/EMButtonTouchVisualEffect.html">EMButtonTouchVisualEffect</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EMCCasError.html">EMCCasError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EMCEncryptionVersion.html">EMCEncryptionVersion</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EMCPasswordEncoding.html">EMCPasswordEncoding</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EMDeviceFingerprintType.html">EMDeviceFingerprintType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EMDomainType.html">EMDomainType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EMDsCapMode.html">EMDsCapMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EMDskppPinComplexity.html">EMDskppPinComplexity</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EMDskppPinType.html">EMDskppPinType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EMDskppPolicyParamType.html">EMDskppPolicyParamType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EMDskppProvisioningProtocol.html">EMDskppProvisioningProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EMEmvDataObjectType.html">EMEmvDataObjectType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EMEmvPointOfInitiationMethod.html">EMEmvPointOfInitiationMethod</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EMEmvTipOrConvenienceIndicator.html">EMEmvTipOrConvenienceIndicator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EMFormatType.html">EMFormatType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EMHookingDetectionPolicy.html">EMHookingDetectionPolicy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EMJailbreakErrorCode.html">EMJailbreakErrorCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EMJailbreakStatus.html">EMJailbreakStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EMKekPrfAlgorithm.html">EMKekPrfAlgorithm</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EMMobileProvisioningProtocol.html">EMMobileProvisioningProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EMMspBaseAlgorithm.html">EMMspBaseAlgorithm</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EMMspFrameType.html">EMMspFrameType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EMOathHashAlgorithm.html">EMOathHashAlgorithm</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EMOathTimestepType.html">EMOathTimestepType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EMOcraChallengeQuestionFormat.html">EMOcraChallengeQuestionFormat</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EMOcraPasswordHashAlgorithm.html">EMOcraPasswordHashAlgorithm</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EMOobErrorMessageCode.html">EMOobErrorMessageCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EMOobJailbreakPolicy.html">EMOobJailbreakPolicy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EMOobRegistrationMethod.html">EMOobRegistrationMethod</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EMOobResultCode.html">EMOobResultCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EMOobTransactionSigningResponseValue.html">EMOobTransactionSigningResponseValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EMOobTransactionVerifyResponseValue.html">EMOobTransactionVerifyResponseValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EMPinComplexity.html">EMPinComplexity</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EMPinErrorCode.html">EMPinErrorCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EMPinPolicyType.html">EMPinPolicyType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EMPinRuleErrorCode.html">EMPinRuleErrorCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EMPinType.html">EMPinType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EMPrimitiveInputFormat.html">EMPrimitiveInputFormat</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EMPrimitiveTextFormat.html">EMPrimitiveTextFormat</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EMPrimitiveType.html">EMPrimitiveType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EMScrambleType.html">EMScrambleType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EMSecureInputBuilderDefaultConfigurations.html">EMSecureInputBuilderDefaultConfigurations</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EMSecureInputEncryptionMode.html">EMSecureInputEncryptionMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EMSecureInputUiBackgroundImageContentMode.html">EMSecureInputUiBackgroundImageContentMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EMSecureInputUiControlFocusState.html">EMSecureInputUiControlFocusState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EMSecureInputUiControlState.html">EMSecureInputUiControlState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EMSecureInputUiDisplayMode.html">EMSecureInputUiDisplayMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EMSecureInputUiLabelAlignment.html">EMSecureInputUiLabelAlignment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EMSecureInputUiLogoPosition.html">EMSecureInputUiLogoPosition</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EMSecureInputUiOkButtonBehavior.html">EMSecureInputUiOkButtonBehavior</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EMStatus.html">EMStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EMTokenCapability.html">EMTokenCapability</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EMTokenJailbreakPolicy.html">EMTokenJailbreakPolicy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EMTokenManagerErrorCode.html">EMTokenManagerErrorCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EMTokenPolicyType.html">EMTokenPolicyType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EMTokenUsage.html">EMTokenUsage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EMVerifyType.html">EMVerifyType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/FieldCompleteness.html">FieldCompleteness</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SecureLogLevel.html">SecureLogLevel</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name" id="nav-group-name-Protocols">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/c:objc(pl)EMAuthInput">EMAuthInput</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/c:objc(pl)EMAuthMode">EMAuthMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMAuthService.html">EMAuthService</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMAuthenticatable.html">EMAuthenticatable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/c:objc(pl)EMBioFingerprintAuthInput">EMBioFingerprintAuthInput</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/c:objc(pl)EMBioFingerprintAuthMode">EMBioFingerprintAuthMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMCapDevice.html">EMCapDevice</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/c:objc(pl)EMCapSettings">EMCapSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/c:objc(pl)EMCapToken">EMCapToken</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMCapTokenManager.html">EMCapTokenManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMDcvOathDevice.html">EMDcvOathDevice</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/c:objc(pl)EMDecimalInputDialogPrimitive">EMDecimalInputDialogPrimitive</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMDsFormattingDevice.html">EMDsFormattingDevice</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMDsTransactionData.html">EMDsTransactionData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMDskppLocalPinCallback.html">EMDskppLocalPinCallback</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMDskppPolicyProtocol.html">EMDskppPolicyProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMDskppServerPinCallback.html">EMDskppServerPinCallback</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/c:objc(pl)EMDualSeedOathToken">EMDualSeedOathToken</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/c:objc(pl)EMDualSeedSoftOathToken">EMDualSeedSoftOathToken</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMEmvAdditionalDataFieldTemplate.html">EMEmvAdditionalDataFieldTemplate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMEmvBool.html">EMEmvBool</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMEmvByte.html">EMEmvByte</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMEmvDataObject.html">EMEmvDataObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMEmvFactory.html">EMEmvFactory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMEmvMerchantInformationLanguageTemplate.html">EMEmvMerchantInformationLanguageTemplate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMEmvMpmDecoder.html">EMEmvMpmDecoder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/c:objc(pl)EMEmvPrimitive">EMEmvPrimitive</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMEmvTemplate.html">EMEmvTemplate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMEmvTemplateWithGui.html">EMEmvTemplateWithGui</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMEmvTransactionInfo.html">EMEmvTransactionInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/c:objc(pl)EMFreeTextPrimitive">EMFreeTextPrimitive</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMGemaltoOathDevice.html">EMGemaltoOathDevice</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMGpfDsDevice.html">EMGpfDsDevice</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/c:objc(pl)EMGroupedInputDialogPrimitive">EMGroupedInputDialogPrimitive</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/c:objc(pl)EMHiddenTextPrimitive">EMHiddenTextPrimitive</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/c:objc(pl)EMInformationPrimitive">EMInformationPrimitive</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/c:objc(pl)EMInputDialogPrimitive">EMInputDialogPrimitive</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMInputPrimitive.html">EMInputPrimitive</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/c:objc(pl)EMMessageDialogPrimitive">EMMessageDialogPrimitive</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMModule.html">EMModule</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMMspCapData.html">EMMspCapData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMMspData.html">EMMspData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMMspFrame.html">EMMspFrame</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMMspGpfdsData.html">EMMspGpfdsData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMMspOathData.html">EMMspOathData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMMspParser.html">EMMspParser</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMMspRegistration.html">EMMspRegistration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMMutableSoftCapSettings.html">EMMutableSoftCapSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMMutableSoftDcvOathSettings.html">EMMutableSoftDcvOathSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMMutableSoftGemaltoOathSettings.html">EMMutableSoftGemaltoOathSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMMutableSoftGpfDsSettings.html">EMMutableSoftGpfDsSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMMutableSoftOathSettings.html">EMMutableSoftOathSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/c:objc(pl)EMNumericInputDialogPrimitive">EMNumericInputDialogPrimitive</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMOathDevice.html">EMOathDevice</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/c:objc(pl)EMOathToken">EMOathToken</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMOathTokenManager.html">EMOathTokenManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMOobErrorMessage.html">EMOobErrorMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMOobFetchMessageResponse.html">EMOobFetchMessageResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMOobGenericIncomingMessage.html">EMOobGenericIncomingMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMOobGenericOutgoingMessage.html">EMOobGenericOutgoingMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMOobIncomingMessage.html">EMOobIncomingMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMOobIncomingMessageHandler.html">EMOobIncomingMessageHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMOobManager.html">EMOobManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMOobMessage.html">EMOobMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/c:objc(pl)EMOobMessageHandler">EMOobMessageHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMOobMessageManager.html">EMOobMessageManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMOobMessageMeta.html">EMOobMessageMeta</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMOobMessageResponse.html">EMOobMessageResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMOobNotificationManager.html">EMOobNotificationManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMOobNotificationProfilesResponse.html">EMOobNotificationProfilesResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMOobOutgoingMessage.html">EMOobOutgoingMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMOobOutgoingMessageHandler.html">EMOobOutgoingMessageHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMOobProviderToUserMessage.html">EMOobProviderToUserMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMOobRegistrationManager.html">EMOobRegistrationManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMOobRegistrationResponse.html">EMOobRegistrationResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMOobResponse.html">EMOobResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMOobTransactionSigningRequest.html">EMOobTransactionSigningRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMOobTransactionSigningResponse.html">EMOobTransactionSigningResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMOobTransactionVerifyRequest.html">EMOobTransactionVerifyRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMOobTransactionVerifyResponse.html">EMOobTransactionVerifyResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMOobUnregistrationManager.html">EMOobUnregistrationManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMOobUserMessageAttachment.html">EMOobUserMessageAttachment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMOobUserToProviderMessage.html">EMOobUserToProviderMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMPasswordManager.html">EMPasswordManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/c:objc(pl)EMPinAuthInput">EMPinAuthInput</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/c:objc(pl)EMPinAuthMode">EMPinAuthMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/c:objc(pl)EMPinPolicy">EMPinPolicy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/c:objc(pl)EMPinRule">EMPinRule</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMPrimitive.html">EMPrimitive</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMPropertyStorage.html">EMPropertyStorage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMSecureByteArray.html">EMSecureByteArray</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMSecureContainer.html">EMSecureContainer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMSecureContainerFactory.html">EMSecureContainerFactory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMSecureInputBuilder.html">EMSecureInputBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMSecureInputCustomUiDelegate.html">EMSecureInputCustomUiDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMSecureInputUi.html">EMSecureInputUi</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMSecureStorageManager.html">EMSecureStorageManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMSecureString.html">EMSecureString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMSelectableKey.html">EMSelectableKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMSelectionInputDialogPrimitive.html">EMSelectionInputDialogPrimitive</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMSoftCapSettings.html">EMSoftCapSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/c:objc(pl)EMSoftCapToken">EMSoftCapToken</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMSoftDcvOathSettings.html">EMSoftDcvOathSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMSoftGemaltoOathSettings.html">EMSoftGemaltoOathSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMSoftGpfDsSettings.html">EMSoftGpfDsSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMSoftOathSettings.html">EMSoftOathSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/c:objc(pl)EMSoftOathToken">EMSoftOathToken</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/c:objc(pl)EMSoftVicToken">EMSoftVicToken</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/c:objc(pl)EMSystemBioFingerprintAuthInput">EMSystemBioFingerprintAuthInput</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/c:objc(pl)EMSystemBioFingerprintAuthMode">EMSystemBioFingerprintAuthMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/c:objc(pl)EMSystemFaceAuthInput">EMSystemFaceAuthInput</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/c:objc(pl)EMSystemFaceAuthMode">EMSystemFaceAuthMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMTemplate.html">EMTemplate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMTextPrimitive.html">EMTextPrimitive</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMToken.html">EMToken</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMTokenManager.html">EMTokenManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMTokenPolicy.html">EMTokenPolicy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMVicDevice.html">EMVicDevice</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/c:objc(pl)EMVicToken">EMVicToken</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMVicTokenManager.html">EMVicTokenManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EMWipeable.html">EMWipeable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SecureLog.html">SecureLog</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name" id="nav-group-name-Type Definitions">
+            <a href="../Type%20Definitions.html">Type Definitions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:EMSecurityDetectionService.h@T@EMHookingDetectionListener">EMHookingDetectionListener</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:EMSecureInputBuilder.h@T@EMSecureInputUiOnFinish">EMSecureInputUiOnFinish</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:EMSecureInputBuilder.h@T@EMSecureInputUiOnFinishClearText">EMSecureInputUiOnFinishClearText</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:EMSecureInputBuilder.h@T@EMSecureInputUiOnFinishEncryptedData">EMSecureInputUiOnFinishEncryptedData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:EMSystemFaceAuthService.h@T@IsSupportedFallback">IsSupportedFallback</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:EMDskppProvisioningCallback.h@T@OnKeyProvisionedBlock">OnKeyProvisionedBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:EMDskppProvisioningCallback.h@T@OnLocalPinRequestBlock">OnLocalPinRequestBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:EMDskppProvisioningCallback.h@T@OnPolicyExtensionProvidedBlock">OnPolicyExtensionProvidedBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:EMDskppProvisioningCallback.h@T@OnPolicyStringProvidedBlock">OnPolicyStringProvidedBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:EMDskppProvisioningCallback.h@T@OnServerPinRequestBlock">OnServerPinRequestBlock</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name" id="nav-group-name-Functions">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/c:@F@EMDynamicColorUpdate">EMDynamicColorUpdate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/c:@F@EMDynamicDeleteKey">EMDynamicDeleteKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/c:@F@EMDynamicHandler">EMDynamicHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/c:@F@EMDynamicRotateKey">EMDynamicRotateKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/c:@F@EMDynamicSwapKey">EMDynamicSwapKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/c:@F@EMDynamicUpdateKey">EMDynamicUpdateKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/c:@F@EMHookingDetectionClearListener">EMHookingDetectionClearListener</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/c:@F@EMHookingDetectionSetListener">EMHookingDetectionSetListener</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/c:@F@EMOobJailbreakPolicyGetPolicy">EMOobJailbreakPolicyGetPolicy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/c:@F@EMOobJailbreakPolicySetPolicy">EMOobJailbreakPolicySetPolicy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/c:@F@EMTokenJailbreakPolicyGetPolicy">EMTokenJailbreakPolicyGetPolicy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/c:@F@EMTokenJailbreakPolicySetPolicy">EMTokenJailbreakPolicySetPolicy</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      
+      <script>
+      $(function() {
+          $("#nav-group-name-Constants").remove();
+      
+          // sorting
+          var mylist = $('.nav-group-tasks').each(function () {
+            var tlist = $(this);
+            var listitems = $(this).children('li').get();
+            listitems.sort(function(a, b) {
+              return $(a).children('a')[0].text.localeCompare($(b).children('a')[0].text);
+            })
+            $.each(listitems, function(idx, itm) { tlist.append(itm); });
+          });
+      });
+      </script>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>EMOobNotificationProfile</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight objective_c"><code>
+<span class="k">@interface</span> <span class="nc">EMOobNotificationProfile</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>This object represent one notification end point. A notification end point
+ is a mean by which a user can be notify by the Out of Band Server.</p>
+
+<p>Each notification profile contains a channel (SMS, Push, email, etc.) and an end point
+ attached to that channel (for example an email address for the case of an email channel).</p>
+
+<p>Each channel are dependent on the deployment environment and are completely
+ customizable by the application. Thus, no processing will be done on the channel
+ and value strings; they will be used &ldquo;as-is&rdquo;.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    3.0
+
+</div>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EMOobNotificationProfile(py)channel"></a>
+                    <a name="//apple_ref/objc/Property/channel" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EMOobNotificationProfile(py)channel">channel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the channel associated with this notification profile.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    <p>3.0</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">channel</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">channel</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The channel associated with this notification profile.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EMOobNotificationProfile(py)endPoint"></a>
+                    <a name="//apple_ref/objc/Property/endPoint" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EMOobNotificationProfile(py)endPoint">endPoint</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the value of the end point associated with this channel.</p>
+
+<p>since 3.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">endPoint</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">endPoint</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The value of the end point associated with this channel.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EMOobNotificationProfile(im)initWithChannel:endPoint:"></a>
+                    <a name="//apple_ref/objc/Method/-initWithChannel:endPoint:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EMOobNotificationProfile(im)initWithChannel:endPoint:">-initWithChannel:<wbr>endPoint:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The constructor. Once build the object is immutable.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    <p>3.0</p>
+
+</div>
+
+<p>@exception NSInvalidArgumentException If aChannel or anEndPoints is <code>nil</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">id</span><span class="p">)</span><span class="nf">initWithChannel</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">aChannel</span> <span class="nf">endPoint</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">anEndPoint</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="o">!</span><span class="p">(</span><span class="n"><a href="../Classes/EMOobNotificationProfile.html#/c:objc(cs)EMOobNotificationProfile(py)channel">channel</a></span> <span class="nv">aChannel</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">,</span> <span class="n"><a href="../Classes/EMOobNotificationProfile.html#/c:objc(cs)EMOobNotificationProfile(py)endPoint">endPoint</a></span> <span class="nv">anEndPoint</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>aChannel</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The channel to use for the notification (SMS, push, email, etc.).This value must not be <code>nil</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>anEndPoint</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An endPoint string.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>© Thales DIS</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
