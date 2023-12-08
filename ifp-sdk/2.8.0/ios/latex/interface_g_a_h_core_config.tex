@@ -1,0 +1,229 @@
+\doxysection{GAHCore\+Config Class Reference}
+\hypertarget{interface_g_a_h_core_config}{}\label{interface_g_a_h_core_config}\index{GAHCoreConfig@{GAHCoreConfig}}
+
+
+{\ttfamily \#include $<$GAHCore\+Config.\+h$>$}
+
+Inheritance diagram for GAHCore\+Config\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_g_a_h_core_config}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_g_a_h_core_config_ac6066521c1acb3c3f0c7bb4ea37cba62}{set\+HTTPConnection\+Timeout\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_g_a_h_core_config_af462eea28090e8b378b8e70cede4dfdd}{set\+SDKError\+Listener\+:}}
+\item 
+(\mbox{\hyperlink{interface_g_a_h_error_listener}{GAHError\+Listener}} \texorpdfstring{$\ast$}{*}) -\/ \mbox{\hyperlink{interface_g_a_h_core_config_a5d37a693fbe75da824e0b2eefee38892}{get\+SDKError\+Listener}}
+\item 
+(NSUInteger) -\/ \mbox{\hyperlink{interface_g_a_h_core_config_ab1cc5c442081f81818a6335fafcac953}{get\+HTTPConnection\+Timeout}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_g_a_h_core_config_ad437326b54d80aa0a81fef4c91268548}{set\+Signal\+Collection\+Global\+Timeout\+:}}
+\item 
+(NSUInteger) -\/ \mbox{\hyperlink{interface_g_a_h_core_config_a62d42e8fef227852f4f34d802bbc9289}{get\+Signal\+Collection\+Global\+Timeout}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_g_a_h_core_config_a79f5b1a82196492a71aa2d1fbfe3befa}{GRESTLSConfiguration\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_g_a_h_core_config_a7805247a7139457a0b1d27404d30a265}{GRESTLSConfiguration\+:with\+RESDKTLSConfiguration\+:}}
+\item 
+(\mbox{\hyperlink{interface_g_a_h_t_l_s_configuration}{GAHTLSConfiguration}} \texorpdfstring{$\ast$}{*}) -\/ \mbox{\hyperlink{interface_g_a_h_core_config_a055d2475fadd3580378831c01fa1f10f}{current\+GRESTLSConfiguration}}
+\item 
+(NSString \texorpdfstring{$\ast$}{*}) -\/ \mbox{\hyperlink{interface_g_a_h_core_config_a7adee87aaa2cb73ce3aca92d0ccf2e6a}{get\+GAHUrl}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) + \mbox{\hyperlink{interface_g_a_h_core_config_a6cf8b4a0adee9ac685c569aefad9a7e6}{shared\+Configuration\+With\+Url\+:}}
+\item 
+(instancetype) + \mbox{\hyperlink{interface_g_a_h_core_config_a320bd6d03d21fdcc47cb2636abc8e7d4}{getshared\+Config\+Manager\+Object}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class will provide mechanism to set configurable setting in Risk\+Engine core module. This config object has to be passed as first param to initialization() For each configurable setting there should default value, which need to consider if value is not set from App. \begin{DoxySince}{Since}
+2.\+0.\+0 
+\end{DoxySince}
+
+
+\doxysubsection{Method Documentation}
+\Hypertarget{interface_g_a_h_core_config_a055d2475fadd3580378831c01fa1f10f}\label{interface_g_a_h_core_config_a055d2475fadd3580378831c01fa1f10f} 
+\index{GAHCoreConfig@{GAHCoreConfig}!currentGRESTLSConfiguration@{currentGRESTLSConfiguration}}
+\index{currentGRESTLSConfiguration@{currentGRESTLSConfiguration}!GAHCoreConfig@{GAHCoreConfig}}
+\doxysubsubsection{\texorpdfstring{currentGRESTLSConfiguration}{currentGRESTLSConfiguration}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_g_a_h_t_l_s_configuration}{GAHTLSConfiguration}} \texorpdfstring{$\ast$}{*}) current\+GRESTLSConfiguration \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Method to get current TLS Configuration \begin{DoxyReturn}{Returns}
+configuration -- TLS configuration instance 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+2.\+0.\+0 
+\end{DoxySince}
+\Hypertarget{interface_g_a_h_core_config_a7adee87aaa2cb73ce3aca92d0ccf2e6a}\label{interface_g_a_h_core_config_a7adee87aaa2cb73ce3aca92d0ccf2e6a} 
+\index{GAHCoreConfig@{GAHCoreConfig}!getGAHUrl@{getGAHUrl}}
+\index{getGAHUrl@{getGAHUrl}!GAHCoreConfig@{GAHCoreConfig}}
+\doxysubsubsection{\texorpdfstring{getGAHUrl}{getGAHUrl}}
+{\footnotesize\ttfamily -\/ (NSString \texorpdfstring{$\ast$}{*}) get\+GAHUrl \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+@discussion Method to get Gemalto Risk Engine backend URL. \begin{DoxyReturn}{Returns}
+return Id\+Cloud Fraud Prevention SDK backend url. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+2.\+0.\+0 
+\end{DoxySince}
+\Hypertarget{interface_g_a_h_core_config_ab1cc5c442081f81818a6335fafcac953}\label{interface_g_a_h_core_config_ab1cc5c442081f81818a6335fafcac953} 
+\index{GAHCoreConfig@{GAHCoreConfig}!getHTTPConnectionTimeout@{getHTTPConnectionTimeout}}
+\index{getHTTPConnectionTimeout@{getHTTPConnectionTimeout}!GAHCoreConfig@{GAHCoreConfig}}
+\doxysubsubsection{\texorpdfstring{getHTTPConnectionTimeout}{getHTTPConnectionTimeout}}
+{\footnotesize\ttfamily -\/ (NSUInteger) get\+HTTPConnection\+Timeout \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+@discussion Method to get HTTP connection timeout value. \begin{DoxyReturn}{Returns}
+http connection timeout. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+2.\+0.\+0 
+\end{DoxySince}
+\Hypertarget{interface_g_a_h_core_config_a5d37a693fbe75da824e0b2eefee38892}\label{interface_g_a_h_core_config_a5d37a693fbe75da824e0b2eefee38892} 
+\index{GAHCoreConfig@{GAHCoreConfig}!getSDKErrorListener@{getSDKErrorListener}}
+\index{getSDKErrorListener@{getSDKErrorListener}!GAHCoreConfig@{GAHCoreConfig}}
+\doxysubsubsection{\texorpdfstring{getSDKErrorListener}{getSDKErrorListener}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_g_a_h_error_listener}{GAHError\+Listener}} \texorpdfstring{$\ast$}{*}) get\+SDKError\+Listener \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+@discussion Method to get Error Listener from SDK
+
+\begin{DoxyReturn}{Returns}
+The error listener Object in SDK. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+used for internal purpose 
+\end{DoxyNote}
+\begin{DoxySince}{Since}
+2.\+0.\+0 
+\end{DoxySince}
+\Hypertarget{interface_g_a_h_core_config_a320bd6d03d21fdcc47cb2636abc8e7d4}\label{interface_g_a_h_core_config_a320bd6d03d21fdcc47cb2636abc8e7d4} 
+\index{GAHCoreConfig@{GAHCoreConfig}!getsharedConfigManagerObject@{getsharedConfigManagerObject}}
+\index{getsharedConfigManagerObject@{getsharedConfigManagerObject}!GAHCoreConfig@{GAHCoreConfig}}
+\doxysubsubsection{\texorpdfstring{getsharedConfigManagerObject}{getsharedConfigManagerObject}}
+{\footnotesize\ttfamily + (instancetype) getshared\+Config\+Manager\+Object \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+@discussion Method to get configured core object after setting the values. \begin{DoxyReturn}{Returns}
+Shared Configuration 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Used internally. Do not set unless specified by Id\+Cloud Fraud Prevention SDK. 
+\end{DoxyNote}
+\begin{DoxySince}{Since}
+2.\+0.\+0 
+\end{DoxySince}
+\Hypertarget{interface_g_a_h_core_config_a62d42e8fef227852f4f34d802bbc9289}\label{interface_g_a_h_core_config_a62d42e8fef227852f4f34d802bbc9289} 
+\index{GAHCoreConfig@{GAHCoreConfig}!getSignalCollectionGlobalTimeout@{getSignalCollectionGlobalTimeout}}
+\index{getSignalCollectionGlobalTimeout@{getSignalCollectionGlobalTimeout}!GAHCoreConfig@{GAHCoreConfig}}
+\doxysubsubsection{\texorpdfstring{getSignalCollectionGlobalTimeout}{getSignalCollectionGlobalTimeout}}
+{\footnotesize\ttfamily -\/ (NSUInteger) get\+Signal\+Collection\+Global\+Timeout \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+@dsicussion Method to get global configuration timeout value. \begin{DoxyReturn}{Returns}
+Signal\+Collection\+Global\+Timeout. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+2.\+0.\+0 
+\end{DoxySince}
+\Hypertarget{interface_g_a_h_core_config_a79f5b1a82196492a71aa2d1fbfe3befa}\label{interface_g_a_h_core_config_a79f5b1a82196492a71aa2d1fbfe3befa} 
+\index{GAHCoreConfig@{GAHCoreConfig}!GRESTLSConfiguration:@{GRESTLSConfiguration:}}
+\index{GRESTLSConfiguration:@{GRESTLSConfiguration:}!GAHCoreConfig@{GAHCoreConfig}}
+\doxysubsubsection{\texorpdfstring{GRESTLSConfiguration:}{GRESTLSConfiguration:}}
+{\footnotesize\ttfamily -\/ (void) GRESTLSConfiguration\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_g_a_h_t_l_s_configuration}{GAHTLSConfiguration}} \texorpdfstring{$\ast$}{*})}]{configuration }\end{DoxyParamCaption}}
+
+@discusion Method to set TLS Configuration 
+\begin{DoxyParams}{Parameters}
+{\em configuration} & -- TLS configuration instance \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+2.\+0.\+0 
+\end{DoxySince}
+\Hypertarget{interface_g_a_h_core_config_a7805247a7139457a0b1d27404d30a265}\label{interface_g_a_h_core_config_a7805247a7139457a0b1d27404d30a265} 
+\index{GAHCoreConfig@{GAHCoreConfig}!GRESTLSConfiguration:withRESDKTLSConfiguration:@{GRESTLSConfiguration:withRESDKTLSConfiguration:}}
+\index{GRESTLSConfiguration:withRESDKTLSConfiguration:@{GRESTLSConfiguration:withRESDKTLSConfiguration:}!GAHCoreConfig@{GAHCoreConfig}}
+\doxysubsubsection{\texorpdfstring{GRESTLSConfiguration:withRESDKTLSConfiguration:}{GRESTLSConfiguration:withRESDKTLSConfiguration:}}
+{\footnotesize\ttfamily -\/ (void) \mbox{\hyperlink{interface_g_a_h_core_config_a79f5b1a82196492a71aa2d1fbfe3befa}{GRESTLSConfiguration\+:}} \begin{DoxyParamCaption}\item[{(NSArray \texorpdfstring{$\ast$}{*})}]{certificates }\item[{with\+RESDKTLSConfiguration\+:(\mbox{\hyperlink{interface_g_a_h_t_l_s_configuration}{GAHTLSConfiguration}} \texorpdfstring{$\ast$}{*})}]{configuration }\end{DoxyParamCaption}}
+
+Method to set TLS Configuration 
+\begin{DoxyParams}{Parameters}
+{\em certificates} & -- certificates to be validated for pinning \\
+\hline
+{\em configuration} & -- TLS configuration instance \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+2.\+0.\+0 
+\end{DoxySince}
+\Hypertarget{interface_g_a_h_core_config_ac6066521c1acb3c3f0c7bb4ea37cba62}\label{interface_g_a_h_core_config_ac6066521c1acb3c3f0c7bb4ea37cba62} 
+\index{GAHCoreConfig@{GAHCoreConfig}!setHTTPConnectionTimeout:@{setHTTPConnectionTimeout:}}
+\index{setHTTPConnectionTimeout:@{setHTTPConnectionTimeout:}!GAHCoreConfig@{GAHCoreConfig}}
+\doxysubsubsection{\texorpdfstring{setHTTPConnectionTimeout:}{setHTTPConnectionTimeout:}}
+{\footnotesize\ttfamily -\/ (void) set\+HTTPConnection\+Timeout\+: \begin{DoxyParamCaption}\item[{(NSUInteger)}]{timeout }\end{DoxyParamCaption}}
+
+@discussion Set HTTP connection timeout(seconds)for backend communication Def value is 10sec
+
+
+\begin{DoxyParams}{Parameters}
+{\em timeout} & HTTP connection timeout in seconds. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+2.\+0.\+0 
+\end{DoxySince}
+\Hypertarget{interface_g_a_h_core_config_af462eea28090e8b378b8e70cede4dfdd}\label{interface_g_a_h_core_config_af462eea28090e8b378b8e70cede4dfdd} 
+\index{GAHCoreConfig@{GAHCoreConfig}!setSDKErrorListener:@{setSDKErrorListener:}}
+\index{setSDKErrorListener:@{setSDKErrorListener:}!GAHCoreConfig@{GAHCoreConfig}}
+\doxysubsubsection{\texorpdfstring{setSDKErrorListener:}{setSDKErrorListener:}}
+{\footnotesize\ttfamily -\/ (void) set\+SDKError\+Listener\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_g_a_h_error_listener}{GAHError\+Listener}} \texorpdfstring{$\ast$}{*})}]{error\+Listener }\end{DoxyParamCaption}}
+
+@discussion Set a listener to decide the action when hooking is detected. By default application will terminate in Release mode when the hooking is detected upon the invoked API of the SDK, no hook detection takes place in Debug mode. 
+\begin{DoxyParams}{Parameters}
+{\em error\+Listener} & Hook detection listener. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+2.\+0.\+0 
+\end{DoxySince}
+\Hypertarget{interface_g_a_h_core_config_ad437326b54d80aa0a81fef4c91268548}\label{interface_g_a_h_core_config_ad437326b54d80aa0a81fef4c91268548} 
+\index{GAHCoreConfig@{GAHCoreConfig}!setSignalCollectionGlobalTimeout:@{setSignalCollectionGlobalTimeout:}}
+\index{setSignalCollectionGlobalTimeout:@{setSignalCollectionGlobalTimeout:}!GAHCoreConfig@{GAHCoreConfig}}
+\doxysubsubsection{\texorpdfstring{setSignalCollectionGlobalTimeout:}{setSignalCollectionGlobalTimeout:}}
+{\footnotesize\ttfamily -\/ (void) set\+Signal\+Collection\+Global\+Timeout\+: \begin{DoxyParamCaption}\item[{(NSUInteger)}]{timeout }\end{DoxyParamCaption}}
+
+@dsicussion This method is to set global configuration timeout in milli-\/seconds. RE SDK should be configured with the maximum global timeout for collecting all signals listed in the policy so that total signal collection will not take more time than this maximum global configuration timeout. Signals that are not collected within global time will be sent to RE backend as "{}status timeout"{} (524 timeout error code). Default value is 1 sec. No threshold on the minimum value, but too low value could lead to no collection of signals/collection of very few signals. Default value is 1000ms.
+
+
+\begin{DoxyParams}{Parameters}
+{\em timeout} & to set Global signal collection timeout in ms. Default timeout value is 2.\+0 seconds \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+2.\+0.\+0 
+\end{DoxySince}
+\Hypertarget{interface_g_a_h_core_config_a6cf8b4a0adee9ac685c569aefad9a7e6}\label{interface_g_a_h_core_config_a6cf8b4a0adee9ac685c569aefad9a7e6} 
+\index{GAHCoreConfig@{GAHCoreConfig}!sharedConfigurationWithUrl:@{sharedConfigurationWithUrl:}}
+\index{sharedConfigurationWithUrl:@{sharedConfigurationWithUrl:}!GAHCoreConfig@{GAHCoreConfig}}
+\doxysubsubsection{\texorpdfstring{sharedConfigurationWithUrl:}{sharedConfigurationWithUrl:}}
+{\footnotesize\ttfamily + (instancetype) shared\+Configuration\+With\+Url\+: \begin{DoxyParamCaption}\item[{(NSString \texorpdfstring{$\ast$}{*})}]{url }\end{DoxyParamCaption}}
+
+Method to get configured core object after setting the values. 
+\begin{DoxyParams}{Parameters}
+{\em url} & Risk\+Engine backend URL \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+shared \doxylink{interface_g_a_h_core_config}{GAHCore\+Config} object. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+2.\+0.\+0 
+\end{DoxySince}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+build/external/\+Release/\+GAHRisk\+Engine.\+xcframework/ios-\/arm64/\+GAHRisk\+Engine.\+framework/\+Versions/\+A/\+Headers/GAHCore\+Config.\+h\end{DoxyCompactItemize}

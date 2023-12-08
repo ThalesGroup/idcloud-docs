@@ -1,0 +1,85 @@
+\doxysection{GAHCore\+Config.\+h}
+\hypertarget{_g_a_h_core_config_8h_source}{}\label{_g_a_h_core_config_8h_source}\index{build/external/Release/GAHRiskEngine.xcframework/ios-\/arm64/GAHRiskEngine.framework/Versions/A/Headers/GAHCoreConfig.h@{build/external/Release/GAHRiskEngine.xcframework/ios-\/arm64/GAHRiskEngine.framework/Versions/A/Headers/GAHCoreConfig.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *\ \ \ \ \ Copyright\ (c)\ 2018\ \ -\/\ \ GEMALTO\ DEVELOPEMENT\ -\/\ R\&D}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ *\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ *\ GEMALTO\ MAKES\ NO\ REPRESENTATIONS\ OR\ WARRANTIES\ ABOUT\ THE\ SUITABILITY\ OF}}
+\DoxyCodeLine{00007\ \textcolor{comment}{\ *\ THE\ SOFTWARE,\ EITHER\ EXPRESS\ OR\ IMPLIED,\ INCLUDING\ BUT\ NOT\ LIMITED}}
+\DoxyCodeLine{00008\ \textcolor{comment}{\ *\ TO\ THE\ IMPLIED\ WARRANTIES\ OF\ MERCHANTABILITY,\ FITNESS\ FOR\ A}}
+\DoxyCodeLine{00009\ \textcolor{comment}{\ *\ PARTICULAR\ PURPOSE,\ OR\ NON-\/INFRINGEMENT.\ GEMALTO\ SHALL\ NOT\ BE}}
+\DoxyCodeLine{00010\ \textcolor{comment}{\ *\ LIABLE\ FOR\ ANY\ DAMAGES\ SUFFERED\ BY\ LICENSEE\ AS\ A\ RESULT\ OF\ USING,}}
+\DoxyCodeLine{00011\ \textcolor{comment}{\ *\ MODIFYING\ OR\ DISTRIBUTING\ THIS\ SOFTWARE\ OR\ ITS\ DERIVATIVES.}}
+\DoxyCodeLine{00012\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00013\ \textcolor{comment}{\ *\ THIS\ SOFTWARE\ IS\ NOT\ DESIGNED\ OR\ INTENDED\ FOR\ USE\ OR\ RESALE\ AS\ ON-\/LINE}}
+\DoxyCodeLine{00014\ \textcolor{comment}{\ *\ CONTROL\ EQUIPMENT\ IN\ HAZARDOUS\ ENVIRONMENTS\ REQUIRING\ FAIL-\/SAFE}}
+\DoxyCodeLine{00015\ \textcolor{comment}{\ *\ PERFORMANCE,\ SUCH\ AS\ IN\ THE\ OPERATION\ OF\ NUCLEAR\ FACILITIES,\ AIRCRAFT}}
+\DoxyCodeLine{00016\ \textcolor{comment}{\ *\ NAVIGATION\ OR\ COMMUNICATION\ SYSTEMS,\ AIR\ TRAFFIC\ CONTROL,\ DIRECT\ LIFE}}
+\DoxyCodeLine{00017\ \textcolor{comment}{\ *\ SUPPORT\ MACHINES,\ OR\ WEAPONS\ SYSTEMS,\ IN\ WHICH\ THE\ FAILURE\ OF\ THE}}
+\DoxyCodeLine{00018\ \textcolor{comment}{\ *\ SOFTWARE\ COULD\ LEAD\ DIRECTLY\ TO\ DEATH,\ PERSONAL\ INJURY,\ OR\ SEVERE}}
+\DoxyCodeLine{00019\ \textcolor{comment}{\ *\ PHYSICAL\ OR\ ENVIRONMENTAL\ DAMAGE\ ("{}HIGH\ RISK\ ACTIVITIES"{}).\ GEMALTO}}
+\DoxyCodeLine{00020\ \textcolor{comment}{\ *\ SPECIFICALLY\ DISCLAIMS\ ANY\ EXPRESS\ OR\ IMPLIED\ WARRANTY\ OF\ FITNESS\ FOR}}
+\DoxyCodeLine{00021\ \textcolor{comment}{\ *\ HIGH\ RISK\ ACTIVITIES.}}
+\DoxyCodeLine{00022\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00023\ \textcolor{comment}{\ *\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00024\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#import\ "{}GAHConfig.h"{}}}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#import\ "{}GAHErrorListener.h"{}}}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00033\ \textcolor{keyword}{@interface\ }\mbox{\hyperlink{interface_g_a_h_t_l_s_configuration}{GAHTLSConfiguration}}\ :\ NSObject}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00040\ \textcolor{keyword}{@property}\ BOOL\ \mbox{\hyperlink{interface_g_a_h_t_l_s_configuration_ac73eb98f2f9bffe8deeefb671f9259bf}{insecureConnectionAllowed}};}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00046\ \textcolor{keyword}{@property}\ BOOL\ \mbox{\hyperlink{interface_g_a_h_t_l_s_configuration_a047b6b13eb326c4ddc7257138bdf95da}{selfSignedCertAllowed}};}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00052\ \textcolor{keyword}{@property}\ BOOL\ \mbox{\hyperlink{interface_g_a_h_t_l_s_configuration_afbc1505db97da8addf0db9129f16d3f0}{hostnameMismatchAllowed}};}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00058\ \textcolor{keyword}{@property}\ (strong,\ nonatomic)\ NSArray\ *\ \mbox{\hyperlink{interface_g_a_h_t_l_s_configuration_a4108a8bece367c0deb88e02bcd8f4a90}{certificates}};}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \textcolor{keyword}{@end}}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00067\ \textcolor{keyword}{@interface\ }\mbox{\hyperlink{interface_g_a_h_core_config}{GAHCoreConfig}}\ :\ \mbox{\hyperlink{interface_g_a_h_config}{GAHConfig}}}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00076\ +\ (instancetype)sharedConfigurationWithUrl:(NSString*)url;}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00085\ +\ (instancetype)getsharedConfigManagerObject;}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00093\ -\/(void)setHTTPConnectionTimeout:(NSUInteger)timeout;}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00101\ -\/\ (void)setSDKErrorListener:(\mbox{\hyperlink{interface_g_a_h_error_listener}{GAHErrorListener}}*)errorListener;}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00111\ -\/\ (\mbox{\hyperlink{interface_g_a_h_error_listener}{GAHErrorListener}}*)getSDKErrorListener;}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00113\ }
+\DoxyCodeLine{00119\ -\/(NSUInteger)getHTTPConnectionTimeout;}
+\DoxyCodeLine{00120\ }
+\DoxyCodeLine{00121\ }
+\DoxyCodeLine{00128\ -\/(void)setSignalCollectionGlobalTimeout:(NSUInteger)timeout;}
+\DoxyCodeLine{00129\ }
+\DoxyCodeLine{00130\ }
+\DoxyCodeLine{00136\ -\/(NSUInteger)getSignalCollectionGlobalTimeout;}
+\DoxyCodeLine{00137\ }
+\DoxyCodeLine{00143\ -\/\ (void)GRESTLSConfiguration:(\mbox{\hyperlink{interface_g_a_h_t_l_s_configuration}{GAHTLSConfiguration}}*)configuration;}
+\DoxyCodeLine{00144\ }
+\DoxyCodeLine{00151\ -\/\ (void)GRESTLSConfiguration:(NSArray*)certificates\ withRESDKTLSConfiguration:(\mbox{\hyperlink{interface_g_a_h_t_l_s_configuration}{GAHTLSConfiguration}}*)configuration;}
+\DoxyCodeLine{00152\ }
+\DoxyCodeLine{00153\ }
+\DoxyCodeLine{00159\ -\/\ (\mbox{\hyperlink{interface_g_a_h_t_l_s_configuration}{GAHTLSConfiguration}}*)currentGRESTLSConfiguration;}
+\DoxyCodeLine{00160\ }
+\DoxyCodeLine{00161\ }
+\DoxyCodeLine{00167\ -\/(NSString\ *)getGAHUrl;}
+\DoxyCodeLine{00168\ }
+\DoxyCodeLine{00169\ }
+\DoxyCodeLine{00170\ }
+\DoxyCodeLine{00171\ \textcolor{keyword}{@end}}
+
+\end{DoxyCode}

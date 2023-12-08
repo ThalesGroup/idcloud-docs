@@ -1,0 +1,128 @@
+\doxysection{Behavio\+Sec\+IOSSDK.\+h}
+\hypertarget{_behavio_sec_i_o_s_s_d_k_8h_source}{}\label{_behavio_sec_i_o_s_s_d_k_8h_source}\index{build/external/Release/GAHRiskEngine.xcframework/ios-\/arm64/GAHRiskEngine.framework/Versions/A/Headers/BehavioSecIOSSDK.h@{build/external/Release/GAHRiskEngine.xcframework/ios-\/arm64/GAHRiskEngine.framework/Versions/A/Headers/BehavioSecIOSSDK.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{comment}{//\ BehavioSec\ IOS\ SDK}}
+\DoxyCodeLine{00005\ \textcolor{comment}{//\ Version:\ 3.1.1}}
+\DoxyCodeLine{00006\ \textcolor{comment}{//\ Copyright\ (c)\ 2021\ BehavioSec.\ All\ rights\ reserved.}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{comment}{//}}
+\DoxyCodeLine{00011\ \textcolor{comment}{//\ \ BehavioSecIOSSDK.h}}
+\DoxyCodeLine{00012\ \textcolor{comment}{//}}
+\DoxyCodeLine{00013\ \textcolor{comment}{//\ \ Copyright\ ©\ 2021\ BehavioSec.\ All\ rights\ reserved.}}
+\DoxyCodeLine{00014\ \textcolor{comment}{//}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#import\ <Foundation/Foundation.h>}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#import\ <UIKit/UIKit.h>}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#import\ "{}names.h"{}}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#define\ BehavioSecIOSSDK\ COMPAT\_CLASS\_NAME(BehavioSecIOSSDK)}}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ INPUT\_BUTTON\ =\ 1;}
+\DoxyCodeLine{00023\ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ DELETE\_BUTTON\ =\ 2;}
+\DoxyCodeLine{00024\ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ CLEAR\_BUTTON\ =\ 3;}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ NORMAL\_TARGET\ =\ 1;}
+\DoxyCodeLine{00027\ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ ANONYMOUS\_TARGET\ =\ 2;}
+\DoxyCodeLine{00028\ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ MASKED\_TARGET\ =\ 3;}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \textcolor{keyword}{@interface\ }\mbox{\hyperlink{interface_behavio_sec_i_o_s_s_d_k}{BehavioSecIOSSDK}}\ :\ NSObject}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00037\ \textcolor{keyword}{@property}(atomic)\ \textcolor{keywordtype}{void}\ (\string^\ \mbox{\hyperlink{interface_behavio_sec_i_o_s_s_d_k_a0625e94a93c683fb4325c1a713a9439f}{\_Nonnull}}\ onLastDown)(NSTimeInterval);\ \textcolor{comment}{//\ come\ back\ here,\ webview\ is\ not\ allowed}}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ +(nonnull\ instancetype)sharedIOSSDK;}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00044\ -\/(void)\ setBitmask:(uint64\_t)\ mask;}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00049\ -\/(void)\ setUIRemoteKeyboardWindow:(UIWindow*\ \_Nullable)window;}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00054\ -\/(void)\ addPageNavData:(nonnull\ NSString*)inEvent\ andTargetID:(nonnull\ id)inTargetID;}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00059\ -\/(BOOL)\mbox{\hyperlink{interface_behavio_sec_i_o_s_s_d_k_a141fd730bfaa86183ae193d4a5f1ddc7}{isBtnSdkOrKbdSDKActive}};}
+\DoxyCodeLine{00063\ -\/(void)\mbox{\hyperlink{interface_behavio_sec_i_o_s_s_d_k_aa53ec8d0b9eb0cd2d116626f1554bc12}{clearBtnSdkAndKbdSDKActive}};}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00068\ -\/(void)\ \mbox{\hyperlink{interface_behavio_sec_i_o_s_s_d_k_a82253997e400522eaf51ef6ee7ef3d3d}{turnOffTextFieldFilling}};}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00073\ -\/(void)\ registerButton:(nonnull\ UIButton*)inUIButton\ withButtonType:(int)\ inType\ andKey:(int)inKey;}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00080\ -\/(void)\ registerBtnTargetWithID:(nonnull\ NSObject*)inID\ andName:(nonnull\ NSString*)inName\ isAnonymous:(BOOL)inAnonymous;}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00087\ -\/(void)\ registerBtnTargetWithID:(nonnull\ NSObject*)inID\ andName:(nonnull\ NSString*)inName\ andTargetType:(int)inTargetType;}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00094\ -\/(void)registerBtnTargetWithID:(nonnull\ NSObject*)inID\ andName:(nonnull\ NSString*)inName\ andTargetType:(int)inTargetType\ hideNativeKbd:(bool)inHideKbd;}
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00101\ -\/(void)\ registerKbdTargetWithID:(nonnull\ UIView*)inID\ andName:(nonnull\ NSString*)inName\ isAnonymous:(BOOL)inAnonymous;}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00108\ -\/(void)\ registerKbdTargetWithID:(nonnull\ UIView*)inID\ andName:(nonnull\ NSString*)inName\ andTargetType:(int)inTargetType;}
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00115\ -\/(void)\ registerKbdTargetWithIDFromSwizzledSDK:(nonnull\ UIView*)inID\ isTemp:(BOOL)isTemp\ andName:(nonnull\ NSString*)inName\ andTargetType:(int)inTargetType;}
+\DoxyCodeLine{00116\ }
+\DoxyCodeLine{00121\ -\/(void)\ renameKbdTargetWithIDFromSwizzledSDK:(nonnull\ UIView*)inID\ andName:(nonnull\ NSString*)inName;}
+\DoxyCodeLine{00122\ }
+\DoxyCodeLine{00129\ -\/(void)\ registerKbdTargetWithID:(nonnull\ UIView*)inID\ andName:(nonnull\ NSString*)inName\ isAnonymous:(BOOL)inAnonymous\ andClearWholeTarget:(BOOL)inClearWholeTarget;}
+\DoxyCodeLine{00130\ }
+\DoxyCodeLine{00137\ -\/(void)\ registerKbdTargetWithID:(nonnull\ UIView*)inID\ andName:(nonnull\ NSString*)inName\ andTargetType:(int)inTargetType\ andClearWholeTarget:(BOOL)inClearWholeTarget;}
+\DoxyCodeLine{00138\ }
+\DoxyCodeLine{00142\ -\/(void)\ setCurrentTargetID:(nullable\ UIView*)\ inTargetID;}
+\DoxyCodeLine{00143\ }
+\DoxyCodeLine{00148\ -\/(nonnull\ NSString*)\ \mbox{\hyperlink{interface_behavio_sec_i_o_s_s_d_k_a3f23032964581fff41cb2bc058ea910f}{getVersion}};}
+\DoxyCodeLine{00149\ }
+\DoxyCodeLine{00153\ -\/(void)\ \mbox{\hyperlink{interface_behavio_sec_i_o_s_s_d_k_a5b37ed83112f8740cddd6ad8d1ed8ff4}{clearTimingData}};}
+\DoxyCodeLine{00154\ }
+\DoxyCodeLine{00158\ -\/(void)\ \mbox{\hyperlink{interface_behavio_sec_i_o_s_s_d_k_af2d489e93124fef31d4a69fdbd7ba85f}{clearRegistrations}};}
+\DoxyCodeLine{00159\ }
+\DoxyCodeLine{00163\ -\/(void)\ \mbox{\hyperlink{interface_behavio_sec_i_o_s_s_d_k_ac419295fa803ab5b6dad884f00b26e11}{startMotionDetect}};}
+\DoxyCodeLine{00164\ }
+\DoxyCodeLine{00168\ -\/(void)\ \mbox{\hyperlink{interface_behavio_sec_i_o_s_s_d_k_a9176093dae600ec4491c4690624a7636}{stopMotionDetect}};}
+\DoxyCodeLine{00169\ }
+\DoxyCodeLine{00170\ -\/(void)\ addInformation:(nonnull\ NSString*)inInfoString\ withName:(nonnull\ NSString*)inInfoName;}
+\DoxyCodeLine{00171\ }
+\DoxyCodeLine{00176\ -\/(BOOL)\ \mbox{\hyperlink{interface_behavio_sec_i_o_s_s_d_k_a739772b9972a1626416355cba67e3fa7}{summaryContainsInterestingData}};}
+\DoxyCodeLine{00177\ }
+\DoxyCodeLine{00182\ -\/(nonnull\ NSString*)\ \mbox{\hyperlink{interface_behavio_sec_i_o_s_s_d_k_a9268f09e2445b152ca43dffa3590ca09}{getSummary}};}
+\DoxyCodeLine{00183\ }
+\DoxyCodeLine{00188\ -\/(nonnull\ NSString*)\ \mbox{\hyperlink{interface_behavio_sec_i_o_s_s_d_k_a9268f09e2445b152ca43dffa3590ca09}{getSummary}}:(BOOL)inCompressed;}
+\DoxyCodeLine{00189\ }
+\DoxyCodeLine{00194\ -\/(NSDictionary*\ \_Nullable)\ getChunk:(BOOL)started\ isFirst:(BOOL)isFirst\ isLast:(BOOL)isLast\ withId:(long)viewId\ andCounter:(\textcolor{keywordtype}{unsigned}\ long)counter\ andBhsCounter:(NSMutableDictionary\ *\ \mbox{\hyperlink{interface_behavio_sec_i_o_s_s_d_k_a0625e94a93c683fb4325c1a713a9439f}{\_Nonnull}})bhsCounter\ andMod:(\textcolor{keywordtype}{unsigned}\ long)mod;}
+\DoxyCodeLine{00195\ }
+\DoxyCodeLine{00199\ -\/(void)\ setShouldSendRawData:(BOOL)\ inShouldSendRawData;}
+\DoxyCodeLine{00200\ }
+\DoxyCodeLine{00201\ -\/(void)\ setShouldCollectLegacyData:(BOOL)\ inShouldCollectLegacyData;}
+\DoxyCodeLine{00202\ }
+\DoxyCodeLine{00203\ \textcolor{comment}{//TouchSDK}}
+\DoxyCodeLine{00204\ -\/(void)enableTouchSDKWithViewController:(nonnull\ UIViewController*)inViewController;}
+\DoxyCodeLine{00205\ -\/(void)clearTouchSDKRef:(nonnull\ UIViewController*)vc;}
+\DoxyCodeLine{00206\ }
+\DoxyCodeLine{00207\ \textcolor{preprocessor}{\#ifndef\ BUILD\_AS\_MODULE}}
+\DoxyCodeLine{00208\ \textcolor{comment}{//Device\ data\ (enabled\ by\ default)}}
+\DoxyCodeLine{00209\ -\/(void)\ collectDeviceData:(BOOL)enable;}
+\DoxyCodeLine{00210\ }
+\DoxyCodeLine{00211\ \textcolor{comment}{//Location\ data\ (disabled\ by\ default)}}
+\DoxyCodeLine{00212\ -\/(void)\ collectLocationData:(BOOL)enable;}
+\DoxyCodeLine{00213\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00214\ }
+\DoxyCodeLine{00215\ \textcolor{comment}{//Context\ data\ (enabled\ by\ default)}}
+\DoxyCodeLine{00216\ -\/(void)\ collectContextData:(BOOL)enable;}
+\DoxyCodeLine{00217\ }
+\DoxyCodeLine{00218\ \textcolor{comment}{//\ experimental!\ methods\ to\ handle\ input\ from\ non\ UITextfields\ (NTF)}}
+\DoxyCodeLine{00219\ \textcolor{comment}{//\ added\ 19.03.2016\ by\ JB}}
+\DoxyCodeLine{00220\ -\/(void)registerKeybdTargetNTF:(nonnull\ NSObject*)target\ withName:(nonnull\ NSString*)name\ isAnonymous:(BOOL)anonymous;}
+\DoxyCodeLine{00221\ -\/(void)registerKeybdTargetNTF:(nonnull\ NSObject*)target\ withName:(nonnull\ NSString*)name\ andTargetType:(int)inTargetType;}
+\DoxyCodeLine{00222\ -\/(void)keybdTargetTextChangedNTF:(nonnull\ NSObject*)target\ to:(nonnull\ NSString*)newText;}
+\DoxyCodeLine{00223\ -\/(void)setCurrentKeybdTargetNTF:(nonnull\ NSObject*)target\ with:(nonnull\ NSString*)text;}
+\DoxyCodeLine{00224\ -\/(void)setCurrentKeybdTargetNTF:(nonnull\ NSObject*)target\ with:(nonnull\ NSString*)text\ inputAccessoryView:(nullable\ UIView*)inputAccessoryView;}
+\DoxyCodeLine{00225\ }
+\DoxyCodeLine{00226\ \textcolor{comment}{//depreciated\ methods\ in\ 1.5}}
+\DoxyCodeLine{00228\ -\/(void)\ clear\ \mbox{\hyperlink{interface_behavio_sec_i_o_s_s_d_k_a0a28998da7108c3df823f95701cf817c}{\_\_attribute\_\_}}((deprecated(\textcolor{stringliteral}{"{}this\ method\ is\ deprecated\ in\ BehavioSecIOSSDK\ version\ 1.5.,\ use\ clearTimings\ and\ clearRegistrations\ instead"{}})));}
+\DoxyCodeLine{00230\ -\/(void)\ clearAlsoTargets\ \mbox{\hyperlink{interface_behavio_sec_i_o_s_s_d_k_a0a28998da7108c3df823f95701cf817c}{\_\_attribute\_\_}}((deprecated(\textcolor{stringliteral}{"{}this\ method\ is\ deprecated\ in\ BehavioSecIOSSDK\ version\ 1.5.,\ clearing\ the\ taregts\ should\ be\ handled\ in\ your\ app"{}})));}
+\DoxyCodeLine{00231\ }
+\DoxyCodeLine{00232\ \textcolor{keyword}{@end}}
+
+\end{DoxyCode}

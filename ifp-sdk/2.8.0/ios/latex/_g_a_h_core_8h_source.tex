@@ -1,0 +1,104 @@
+\doxysection{GAHCore.\+h}
+\hypertarget{_g_a_h_core_8h_source}{}\label{_g_a_h_core_8h_source}\index{build/external/Release/GAHRiskEngine.xcframework/ios-\/arm64/GAHRiskEngine.framework/Versions/A/Headers/GAHCore.h@{build/external/Release/GAHRiskEngine.xcframework/ios-\/arm64/GAHRiskEngine.framework/Versions/A/Headers/GAHCore.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *\ \ \ \ \ Copyright\ (c)\ 2018\ \ -\/\ \ GEMALTO\ DEVELOPEMENT\ -\/\ R\&D}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ *\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ *\ GEMALTO\ MAKES\ NO\ REPRESENTATIONS\ OR\ WARRANTIES\ ABOUT\ THE\ SUITABILITY\ OF}}
+\DoxyCodeLine{00007\ \textcolor{comment}{\ *\ THE\ SOFTWARE,\ EITHER\ EXPRESS\ OR\ IMPLIED,\ INCLUDING\ BUT\ NOT\ LIMITED}}
+\DoxyCodeLine{00008\ \textcolor{comment}{\ *\ TO\ THE\ IMPLIED\ WARRANTIES\ OF\ MERCHANTABILITY,\ FITNESS\ FOR\ A}}
+\DoxyCodeLine{00009\ \textcolor{comment}{\ *\ PARTICULAR\ PURPOSE,\ OR\ NON-\/INFRINGEMENT.\ GEMALTO\ SHALL\ NOT\ BE}}
+\DoxyCodeLine{00010\ \textcolor{comment}{\ *\ LIABLE\ FOR\ ANY\ DAMAGES\ SUFFERED\ BY\ LICENSEE\ AS\ A\ RESULT\ OF\ USING,}}
+\DoxyCodeLine{00011\ \textcolor{comment}{\ *\ MODIFYING\ OR\ DISTRIBUTING\ THIS\ SOFTWARE\ OR\ ITS\ DERIVATIVES.}}
+\DoxyCodeLine{00012\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00013\ \textcolor{comment}{\ *\ THIS\ SOFTWARE\ IS\ NOT\ DESIGNED\ OR\ INTENDED\ FOR\ USE\ OR\ RESALE\ AS\ ON-\/LINE}}
+\DoxyCodeLine{00014\ \textcolor{comment}{\ *\ CONTROL\ EQUIPMENT\ IN\ HAZARDOUS\ ENVIRONMENTS\ REQUIRING\ FAIL-\/SAFE}}
+\DoxyCodeLine{00015\ \textcolor{comment}{\ *\ PERFORMANCE,\ SUCH\ AS\ IN\ THE\ OPERATION\ OF\ NUCLEAR\ FACILITIES,\ AIRCRAFT}}
+\DoxyCodeLine{00016\ \textcolor{comment}{\ *\ NAVIGATION\ OR\ COMMUNICATION\ SYSTEMS,\ AIR\ TRAFFIC\ CONTROL,\ DIRECT\ LIFE}}
+\DoxyCodeLine{00017\ \textcolor{comment}{\ *\ SUPPORT\ MACHINES,\ OR\ WEAPONS\ SYSTEMS,\ IN\ WHICH\ THE\ FAILURE\ OF\ THE}}
+\DoxyCodeLine{00018\ \textcolor{comment}{\ *\ SOFTWARE\ COULD\ LEAD\ DIRECTLY\ TO\ DEATH,\ PERSONAL\ INJURY,\ OR\ SEVERE}}
+\DoxyCodeLine{00019\ \textcolor{comment}{\ *\ PHYSICAL\ OR\ ENVIRONMENTAL\ DAMAGE\ ("{}HIGH\ RISK\ ACTIVITIES"{}).\ GEMALTO}}
+\DoxyCodeLine{00020\ \textcolor{comment}{\ *\ SPECIFICALLY\ DISCLAIMS\ ANY\ EXPRESS\ OR\ IMPLIED\ WARRANTY\ OF\ FITNESS\ FOR}}
+\DoxyCodeLine{00021\ \textcolor{comment}{\ *\ HIGH\ RISK\ ACTIVITIES.}}
+\DoxyCodeLine{00022\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00023\ \textcolor{comment}{\ *\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00024\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#import\ <Foundation/Foundation.h>}}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#import\ "{}GAHConfig.h"{}}}
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#import\ "{}GAHProfilingOptions.h"{}}}
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#import\ "{}GAHSignalGroupConstants.h"{}}}
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#import\ "{}GAHMetaInformation.h"{}}}
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#import\ "{}BehavioSecIOSSDK.h"{}}}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00038\ \textcolor{keyword}{typedef}\ void\ (\string^GAHSuccessHandler)(NSString\ *visitID);}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00047\ \textcolor{keyword}{typedef}\ void\ (\string^GAHFailureHandler)(NSInteger\ errorCode,\ NSString\ *errorMessage);}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00053\ \textcolor{keyword}{typedef}\ void\ (\string^GRESignalCollectionCallback)(NSString\ *request);}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00062\ \textcolor{keyword}{typedef}\ void\ (\string^GAHPrefetechStatus)(NSInteger\ statusCode,\ NSString\ *statusMessage);}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00068\ \textcolor{keyword}{@interface\ }\mbox{\hyperlink{interface_g_a_h_core}{GAHCore}}\ :\ NSObject}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00077\ +\ (void)initialize:(NSSet<\mbox{\hyperlink{interface_g_a_h_config}{GAHConfig}}*>*)\ configs;}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00084\ +\ (void)\mbox{\hyperlink{interface_g_a_h_core_ad0aabafb3c5b6ce0c5cc121150e8a126}{startPrefetchSignals}};}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00093\ +(void)setActiveSignals:(NSDictionary\ *)activeSignals;}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00101\ +(void)setActiveSignalsGroup:(NSArray\ *)activeGroupSignalsArray;}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00110\ +\ (void)\mbox{\hyperlink{interface_g_a_h_core_aa391dbf5ca396001ba5c254486dfdba7}{setTransactionAsCritical}};}
+\DoxyCodeLine{00111\ }
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00118\ +(void)setBehavioSecObject:(\mbox{\hyperlink{interface_behavio_sec_i_o_s_s_d_k}{BehavioSecIOSSDK}}\ *)bSDK;}
+\DoxyCodeLine{00119\ }
+\DoxyCodeLine{00120\ }
+\DoxyCodeLine{00126\ +\ (void)setCustomSignalOptionsTMX:(\mbox{\hyperlink{interface_g_a_h_profiling_options}{GAHProfilingOptions}}\ *)options;}
+\DoxyCodeLine{00127\ }
+\DoxyCodeLine{00128\ }
+\DoxyCodeLine{00135\ +(SignalCollectionStatus)isSignalCollectionCompleted\ \mbox{\hyperlink{interface_g_a_h_core_a7c151ca6b130d30ad413583ea8ce55fb}{NS\_DEPRECATED\_IOS}}(2.0.0,\ 2.1.0,"{}use\ requestPrefetchStatus\ API\ instead"{});}
+\DoxyCodeLine{00136\ }
+\DoxyCodeLine{00137\ }
+\DoxyCodeLine{00144\ +(void)requestVisitID:(GAHSuccessHandler)successHandler}
+\DoxyCodeLine{00145\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ failure:(GAHFailureHandler)failHandler;}
+\DoxyCodeLine{00146\ }
+\DoxyCodeLine{00147\ }
+\DoxyCodeLine{00153\ +(void)\mbox{\hyperlink{interface_g_a_h_core_a4e28aaf8a92e694ea372d62e08a41583}{clearTransactionResources}};}
+\DoxyCodeLine{00154\ }
+\DoxyCodeLine{00159\ +\ (void)\mbox{\hyperlink{interface_g_a_h_core_a8caebfb5a694069d0f208f1592734a32}{stopPrefetchSignals}};}
+\DoxyCodeLine{00160\ }
+\DoxyCodeLine{00161\ }
+\DoxyCodeLine{00167\ +(NSString\ *)\mbox{\hyperlink{interface_g_a_h_core_af71bc60508e983cb95f09950508d9f58}{getSignalValuesJson}};}
+\DoxyCodeLine{00168\ }
+\DoxyCodeLine{00169\ }
+\DoxyCodeLine{00175\ +(\mbox{\hyperlink{interface_g_a_h_meta_information}{GAHMetaInformation}}*)\mbox{\hyperlink{interface_g_a_h_core_a20c301c51cee6c3110bc384dcb9facb8}{getSDKVersionInfo}};}
+\DoxyCodeLine{00176\ }
+\DoxyCodeLine{00177\ }
+\DoxyCodeLine{00184\ +(void)requestSignalCollectionTiming:(NSString*)config\ :(GRESignalCollectionCallback)callbackHandler;}
+\DoxyCodeLine{00185\ }
+\DoxyCodeLine{00186\ }
+\DoxyCodeLine{00195\ +(void)requestPrefetchStatus:(GAHPrefetechStatus)prefetchStatus;}
+\DoxyCodeLine{00196\ }
+\DoxyCodeLine{00202\ +(void)startProfileTransaction:(GAHSuccessHandler)succesHandler}
+\DoxyCodeLine{00203\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ failure:(GAHFailureHandler)failHandler;}
+\DoxyCodeLine{00204\ }
+\DoxyCodeLine{00205\ }
+\DoxyCodeLine{00214\ +(void)profileTransaction:(\textcolor{keywordtype}{void}(\string^)(NSInteger\ statusCode,\ NSString*\ statusMessage))completionHandler;}
+\DoxyCodeLine{00215\ }
+\DoxyCodeLine{00216\ }
+\DoxyCodeLine{00221\ +(void)\mbox{\hyperlink{interface_g_a_h_core_a73b6c8df96b340e34ae11807214aacbd}{finishProfileTransaction}};}
+\DoxyCodeLine{00222\ }
+\DoxyCodeLine{00223\ \textcolor{keyword}{@end}}
+
+\end{DoxyCode}

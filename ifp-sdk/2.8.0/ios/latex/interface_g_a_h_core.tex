@@ -1,0 +1,300 @@
+\doxysection{GAHCore Class Reference}
+\hypertarget{interface_g_a_h_core}{}\label{interface_g_a_h_core}\index{GAHCore@{GAHCore}}
+
+
+{\ttfamily \#include $<$GAHCore.\+h$>$}
+
+Inheritance diagram for GAHCore\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_g_a_h_core}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) + \mbox{\hyperlink{interface_g_a_h_core_a092f64ebeb88573023f2e249bd7f9c11}{initialize\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_g_a_h_core_ad0aabafb3c5b6ce0c5cc121150e8a126}{start\+Prefetch\+Signals}}
+\item 
+(void) + \mbox{\hyperlink{interface_g_a_h_core_a206f7029a8120e0ad19c372e6d817531}{set\+Active\+Signals\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_g_a_h_core_a7f0724dba5eecd264ca8640cd0feacbd}{set\+Active\+Signals\+Group\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_g_a_h_core_aa391dbf5ca396001ba5c254486dfdba7}{set\+Transaction\+As\+Critical}}
+\item 
+(void) + \mbox{\hyperlink{interface_g_a_h_core_ac5dc31e3bfa2c9d601bb8b17be850a50}{set\+Behavio\+Sec\+Object\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_g_a_h_core_afda47d8d483ebc6e5de248da98a442c0}{set\+Custom\+Signal\+Options\+TMX\+:}}
+\item 
+(2.\+0.\+0, 2.\+1.\+0,"{}use request\+Prefetch\+Status API instead"{}) + \mbox{\hyperlink{interface_g_a_h_core_a7c151ca6b130d30ad413583ea8ce55fb}{NS\+\_\+\+DEPRECATED\+\_\+\+IOS}}
+\item 
+(void) + \mbox{\hyperlink{interface_g_a_h_core_a387ce69b5a0caa5a9eaaf2e22602b4db}{request\+Visit\+ID\+:failure\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_g_a_h_core_a4e28aaf8a92e694ea372d62e08a41583}{clear\+Transaction\+Resources}}
+\item 
+(void) + \mbox{\hyperlink{interface_g_a_h_core_a8caebfb5a694069d0f208f1592734a32}{stop\+Prefetch\+Signals}}
+\item 
+(NSString \texorpdfstring{$\ast$}{*}) + \mbox{\hyperlink{interface_g_a_h_core_af71bc60508e983cb95f09950508d9f58}{get\+Signal\+Values\+Json}}
+\item 
+(\mbox{\hyperlink{interface_g_a_h_meta_information}{GAHMeta\+Information}} \texorpdfstring{$\ast$}{*}) + \mbox{\hyperlink{interface_g_a_h_core_a20c301c51cee6c3110bc384dcb9facb8}{get\+SDKVersion\+Info}}
+\item 
+(void) + \mbox{\hyperlink{interface_g_a_h_core_acb46635a84c943d6e1cb9d98bee1774c}{request\+Signal\+Collection\+Timing\+:config\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_g_a_h_core_ab8f556d2aae38a0def4ebce60336b2fa}{request\+Prefetch\+Status\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_g_a_h_core_a8a9c53b4e1a6abd84bf666ad993106ca}{start\+Profile\+Transaction\+:failure\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_g_a_h_core_ababe2a410122e40f36c1b954765d1683}{profile\+Transaction\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_g_a_h_core_a73b6c8df96b340e34ae11807214aacbd}{finish\+Profile\+Transaction}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class is the entry point to Id\+Cloud Fraud Prevention SDK library and holds all APIs for configuration and functionality. \begin{DoxySince}{Since}
+2.\+0.\+0 
+\end{DoxySince}
+
+
+\doxysubsection{Method Documentation}
+\Hypertarget{interface_g_a_h_core_a4e28aaf8a92e694ea372d62e08a41583}\label{interface_g_a_h_core_a4e28aaf8a92e694ea372d62e08a41583} 
+\index{GAHCore@{GAHCore}!clearTransactionResources@{clearTransactionResources}}
+\index{clearTransactionResources@{clearTransactionResources}!GAHCore@{GAHCore}}
+\doxysubsubsection{\texorpdfstring{clearTransactionResources}{clearTransactionResources}}
+{\footnotesize\ttfamily + (void) clear\+Transaction\+Resources \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+@discussion Call this API after each transaction in order to clear Behavio\+Sec transaction data. Include\+: stop\+Motion\+Detects, clear timing data and clear Registrations. \begin{DoxySince}{Since}
+2.\+0.\+0 
+\end{DoxySince}
+\Hypertarget{interface_g_a_h_core_a73b6c8df96b340e34ae11807214aacbd}\label{interface_g_a_h_core_a73b6c8df96b340e34ae11807214aacbd} 
+\index{GAHCore@{GAHCore}!finishProfileTransaction@{finishProfileTransaction}}
+\index{finishProfileTransaction@{finishProfileTransaction}!GAHCore@{GAHCore}}
+\doxysubsubsection{\texorpdfstring{finishProfileTransaction}{finishProfileTransaction}}
+{\footnotesize\ttfamily + (void) finish\+Profile\+Transaction \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Clean up for New Account Origination (Population Profiling) feature in multiple page scenario. \begin{DoxySince}{Since}
+2.\+6.\+0 
+\end{DoxySince}
+\Hypertarget{interface_g_a_h_core_a20c301c51cee6c3110bc384dcb9facb8}\label{interface_g_a_h_core_a20c301c51cee6c3110bc384dcb9facb8} 
+\index{GAHCore@{GAHCore}!getSDKVersionInfo@{getSDKVersionInfo}}
+\index{getSDKVersionInfo@{getSDKVersionInfo}!GAHCore@{GAHCore}}
+\doxysubsubsection{\texorpdfstring{getSDKVersionInfo}{getSDKVersionInfo}}
+{\footnotesize\ttfamily + (\mbox{\hyperlink{interface_g_a_h_meta_information}{GAHMeta\+Information}} \texorpdfstring{$\ast$}{*}) get\+SDKVersion\+Info \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+@discussion API to get SDK related meta info. \begin{DoxyReturn}{Returns}
+Meta information like version number, build number, build type etc. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+2.\+0.\+0 
+\end{DoxySince}
+\Hypertarget{interface_g_a_h_core_af71bc60508e983cb95f09950508d9f58}\label{interface_g_a_h_core_af71bc60508e983cb95f09950508d9f58} 
+\index{GAHCore@{GAHCore}!getSignalValuesJson@{getSignalValuesJson}}
+\index{getSignalValuesJson@{getSignalValuesJson}!GAHCore@{GAHCore}}
+\doxysubsubsection{\texorpdfstring{getSignalValuesJson}{getSignalValuesJson}}
+{\footnotesize\ttfamily + (NSString \texorpdfstring{$\ast$}{*}) get\+Signal\+Values\+Json \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+@discussion This API is for debugging purpose, this provides list of all signals collected for getting Visit ID. This API will provide the signal list only in Debug type of build. \begin{DoxyReturn}{Returns}
+List of signals collected by the SDK. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+2.\+0.\+0 
+\end{DoxySince}
+\Hypertarget{interface_g_a_h_core_a092f64ebeb88573023f2e249bd7f9c11}\label{interface_g_a_h_core_a092f64ebeb88573023f2e249bd7f9c11} 
+\index{GAHCore@{GAHCore}!initialize:@{initialize:}}
+\index{initialize:@{initialize:}!GAHCore@{GAHCore}}
+\doxysubsubsection{\texorpdfstring{initialize:}{initialize:}}
+{\footnotesize\ttfamily + (void) initialize\+: \begin{DoxyParamCaption}\item[{(NSSet$<$ \mbox{\hyperlink{interface_g_a_h_config}{GAHConfig}} \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*})}]{configs }\end{DoxyParamCaption}}
+
+@discussion Initialize the SDK by passing mandatory configurations \doxylink{interface_g_a_h_core_config}{GAHCore\+Config}, \doxylink{interface_g_a_h_gemalto_signal_config}{GAHGemalto\+Signal\+Config} and optional configurations \doxylink{interface_g_a_h_b_sec_config}{GAHBSec\+Config}, \doxylink{interface_g_a_h_t_m_x_config}{GAHTMXConfig} . If \doxylink{interface_g_a_h_b_sec_config}{GAHBSec\+Config}, and \doxylink{interface_g_a_h_t_m_x_config}{GAHTMXConfig} are not set, these signal groups will not be initiated, hence no signal collection under these will be made. 
+\begin{DoxyParams}{Parameters}
+{\em configs} & Configuration params \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+initialization is one time process for an app cycle, and cannot be overridden once done. 
+\end{DoxyNote}
+\begin{DoxySince}{Since}
+2.\+0.\+0 
+\end{DoxySince}
+\Hypertarget{interface_g_a_h_core_a7c151ca6b130d30ad413583ea8ce55fb}\label{interface_g_a_h_core_a7c151ca6b130d30ad413583ea8ce55fb} 
+\index{GAHCore@{GAHCore}!NS\_DEPRECATED\_IOS@{NS\_DEPRECATED\_IOS}}
+\index{NS\_DEPRECATED\_IOS@{NS\_DEPRECATED\_IOS}!GAHCore@{GAHCore}}
+\doxysubsubsection{\texorpdfstring{NS\_DEPRECATED\_IOS}{NS\_DEPRECATED\_IOS}}
+{\footnotesize\ttfamily + (2.\+0.\+0, 2.\+1.\+0,"{}use request\+Prefetch\+Status API instead"{}) NS\+\_\+\+DEPRECATED\+\_\+\+IOS \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+@discussion Check if all signal collection is completed before requesting for Visit ID. Poll this API before calling request\+Visit\+ID(), until status is COMPLETED. \begin{DoxyReturn}{Returns}
+Status if the signal collection is completed. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+2.\+0.\+0 
+\end{DoxySince}
+\Hypertarget{interface_g_a_h_core_ababe2a410122e40f36c1b954765d1683}\label{interface_g_a_h_core_ababe2a410122e40f36c1b954765d1683} 
+\index{GAHCore@{GAHCore}!profileTransaction:@{profileTransaction:}}
+\index{profileTransaction:@{profileTransaction:}!GAHCore@{GAHCore}}
+\doxysubsubsection{\texorpdfstring{profileTransaction:}{profileTransaction:}}
+{\footnotesize\ttfamily + (void) profile\+Transaction\+: \begin{DoxyParamCaption}\item[{(void(\texorpdfstring{$^\wedge$}{\string^})(NSInteger status\+Code, NSString \texorpdfstring{$\ast$}{*}status\+Message))}]{completion\+Handler }\end{DoxyParamCaption}}
+
+Support New Account Origination (Population Profiling) feature in multiple page scenario. Call this API after each page finish the input process, before navigating to the next page and before clearing Behavio\+Sec timing data (clear\+All). This API should also be called only after visit\+ID is obtained through request\+Visit\+ID. 
+\begin{DoxyParams}{Parameters}
+{\em completion\+Handler} & callback to be called when the operation finished. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+2.\+6.\+0 
+\end{DoxySince}
+\Hypertarget{interface_g_a_h_core_ab8f556d2aae38a0def4ebce60336b2fa}\label{interface_g_a_h_core_ab8f556d2aae38a0def4ebce60336b2fa} 
+\index{GAHCore@{GAHCore}!requestPrefetchStatus:@{requestPrefetchStatus:}}
+\index{requestPrefetchStatus:@{requestPrefetchStatus:}!GAHCore@{GAHCore}}
+\doxysubsubsection{\texorpdfstring{requestPrefetchStatus:}{requestPrefetchStatus:}}
+{\footnotesize\ttfamily + (void) request\+Prefetch\+Status\+: \begin{DoxyParamCaption}\item[{(GAHPrefetech\+Status)}]{prefetch\+Status }\end{DoxyParamCaption}}
+
+@discussion This API is to request for the prefetch status callback. Prefetch internally collects and cache some of the signals in GAH SDK in order to reduce the time during actual transactions. Recommended to proceed with the transaction only after the callback is received at the application. Max time for getting the callback in case of error is configurable through Gemalto\+Signal\+Config class 
+\begin{DoxyParams}{Parameters}
+{\em prefetch\+Status} & returns prefetch status with status code and status message \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+2.\+1.\+0 
+\end{DoxySince}
+\Hypertarget{interface_g_a_h_core_acb46635a84c943d6e1cb9d98bee1774c}\label{interface_g_a_h_core_acb46635a84c943d6e1cb9d98bee1774c} 
+\index{GAHCore@{GAHCore}!requestSignalCollectionTiming:config:@{requestSignalCollectionTiming:config:}}
+\index{requestSignalCollectionTiming:config:@{requestSignalCollectionTiming:config:}!GAHCore@{GAHCore}}
+\doxysubsubsection{\texorpdfstring{requestSignalCollectionTiming:config:}{requestSignalCollectionTiming:config:}}
+{\footnotesize\ttfamily + (void) request\+Signal\+Collection\+Timing\+: \begin{DoxyParamCaption}\item[{(NSString \texorpdfstring{$\ast$}{*})}]{ }\item[{config\+:(GRESignal\+Collection\+Callback)}]{callback\+Handler }\end{DoxyParamCaption}}
+
+@discussion Method to request Id\+Cloud Fraud Prevention SDK to collect all signals and notify through callback when completed. 
+\begin{DoxyParams}{Parameters}
+{\em callback\+Handler} & signal collection completion callback object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This API will be used for validation purpose only and not for Development 
+\end{DoxyNote}
+\begin{DoxySince}{Since}
+2.\+0.\+0 
+\end{DoxySince}
+\Hypertarget{interface_g_a_h_core_a387ce69b5a0caa5a9eaaf2e22602b4db}\label{interface_g_a_h_core_a387ce69b5a0caa5a9eaaf2e22602b4db} 
+\index{GAHCore@{GAHCore}!requestVisitID:failure:@{requestVisitID:failure:}}
+\index{requestVisitID:failure:@{requestVisitID:failure:}!GAHCore@{GAHCore}}
+\doxysubsubsection{\texorpdfstring{requestVisitID:failure:}{requestVisitID:failure:}}
+{\footnotesize\ttfamily + (void) request\+Visit\+ID\+: \begin{DoxyParamCaption}\item[{(GAHSuccess\+Handler)}]{success\+Handler }\item[{failure\+:(GAHFailure\+Handler)}]{fail\+Handler }\end{DoxyParamCaption}}
+
+@discussion API to request Visit ID from Id\+Cloud Fraud Prevention SDK 
+\begin{DoxyParams}{Parameters}
+{\em success\+Handler} & Callback instance to get Visit ID \\
+\hline
+{\em fail\+Handler} & Indicates failure instance \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+2.\+0.\+0 
+\end{DoxySince}
+\Hypertarget{interface_g_a_h_core_a206f7029a8120e0ad19c372e6d817531}\label{interface_g_a_h_core_a206f7029a8120e0ad19c372e6d817531} 
+\index{GAHCore@{GAHCore}!setActiveSignals:@{setActiveSignals:}}
+\index{setActiveSignals:@{setActiveSignals:}!GAHCore@{GAHCore}}
+\doxysubsubsection{\texorpdfstring{setActiveSignals:}{setActiveSignals:}}
+{\footnotesize\ttfamily + (void) set\+Active\+Signals\+: \begin{DoxyParamCaption}\item[{(NSDictionary \texorpdfstring{$\ast$}{*})}]{active\+Signals }\end{DoxyParamCaption}}
+
+@discussion Optional API. Call this API to filter the signals to be collected under a Signal group. This API may be called at every transaction screen to collect different set of signals for different transactions. Once set, signal group and corresponding signal list will be saved and the same will be used until changed. By default all the signals under the group will be collected as per the configuration set during initialization(). \begin{DoxyNote}{Note}
+DEVICE\+\_\+\+ID signal under DEVICE Signal group is mandatory to get Visit ID from RE backend. Signal groups passed to set\+Active\+Signal\+Groups() will override the Signal groups set by this API. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em active\+Signals} & Signal groups and corresponding signals list. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+2.\+0.\+0 
+\end{DoxySince}
+\Hypertarget{interface_g_a_h_core_a7f0724dba5eecd264ca8640cd0feacbd}\label{interface_g_a_h_core_a7f0724dba5eecd264ca8640cd0feacbd} 
+\index{GAHCore@{GAHCore}!setActiveSignalsGroup:@{setActiveSignalsGroup:}}
+\index{setActiveSignalsGroup:@{setActiveSignalsGroup:}!GAHCore@{GAHCore}}
+\doxysubsubsection{\texorpdfstring{setActiveSignalsGroup:}{setActiveSignalsGroup:}}
+{\footnotesize\ttfamily + (void) set\+Active\+Signals\+Group\+: \begin{DoxyParamCaption}\item[{(NSArray \texorpdfstring{$\ast$}{*})}]{active\+Group\+Signals\+Array }\end{DoxyParamCaption}}
+
+@discussion Optional API. Call this API to filter the signal groups to be collected. This API may be called at every transaction screen to collect different set of signal groups for different transactions. Not passing a signal group will result in not collecting any signals under that group. Once set, signal group and corresponding signal list will be saved and the same will be used until changed. By default all the signal groups under the group will be collected as per the configuration set during initialization(). \begin{DoxyNote}{Note}
+DEVICE Signal group is mandatory to get Visit ID from RE backend.\+Signal groups passed to set\+Active\+Signals() will override the Signal groups set by this API. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em active\+Group\+Signals\+Array} & List of Signal groups to be considered for signal collection \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+2.\+0.\+0 
+\end{DoxySince}
+\Hypertarget{interface_g_a_h_core_ac5dc31e3bfa2c9d601bb8b17be850a50}\label{interface_g_a_h_core_ac5dc31e3bfa2c9d601bb8b17be850a50} 
+\index{GAHCore@{GAHCore}!setBehavioSecObject:@{setBehavioSecObject:}}
+\index{setBehavioSecObject:@{setBehavioSecObject:}!GAHCore@{GAHCore}}
+\doxysubsubsection{\texorpdfstring{setBehavioSecObject:}{setBehavioSecObject:}}
+{\footnotesize\ttfamily + (void) set\+Behavio\+Sec\+Object\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_behavio_sec_i_o_s_s_d_k}{Behavio\+Sec\+IOSSDK}} \texorpdfstring{$\ast$}{*})}]{b\+SDK }\end{DoxyParamCaption}}
+
+@discussion Call this API to set object after integrating Behavio\+Sec SDK at application in the screen where Behavio\+Sec is being used. Call this API before request\+Visit\+ID(), so that Behavio\+Sec signals are considered for next risk assessment. 
+\begin{DoxyParams}{Parameters}
+{\em b\+SDK} & Initialized Behavio\+Sec object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+2.\+0.\+0 
+\end{DoxySince}
+\Hypertarget{interface_g_a_h_core_afda47d8d483ebc6e5de248da98a442c0}\label{interface_g_a_h_core_afda47d8d483ebc6e5de248da98a442c0} 
+\index{GAHCore@{GAHCore}!setCustomSignalOptionsTMX:@{setCustomSignalOptionsTMX:}}
+\index{setCustomSignalOptionsTMX:@{setCustomSignalOptionsTMX:}!GAHCore@{GAHCore}}
+\doxysubsubsection{\texorpdfstring{setCustomSignalOptionsTMX:}{setCustomSignalOptionsTMX:}}
+{\footnotesize\ttfamily + (void) set\+Custom\+Signal\+Options\+TMX\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_g_a_h_profiling_options}{GAHProfiling\+Options}} \texorpdfstring{$\ast$}{*})}]{options }\end{DoxyParamCaption}}
+
+@discussion Optional API. Call this API to induce custom signals into Threat\+Metrix signal group.\+If called, call before request\+Visit\+ID(),so that custom signals are considered for next risk assessment. 
+\begin{DoxyParams}{Parameters}
+{\em options} & object with custom signals. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+2.\+0.\+0 
+\end{DoxySince}
+\Hypertarget{interface_g_a_h_core_aa391dbf5ca396001ba5c254486dfdba7}\label{interface_g_a_h_core_aa391dbf5ca396001ba5c254486dfdba7} 
+\index{GAHCore@{GAHCore}!setTransactionAsCritical@{setTransactionAsCritical}}
+\index{setTransactionAsCritical@{setTransactionAsCritical}!GAHCore@{GAHCore}}
+\doxysubsubsection{\texorpdfstring{setTransactionAsCritical}{setTransactionAsCritical}}
+{\footnotesize\ttfamily + (void) set\+Transaction\+As\+Critical \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+@discussion Optional API. Set a transaction as critical, so that all cached signals are updated with new values. This API can be called while performing a critical transaction, i.\+e when a screen with critical transaction is launched so that all old signal values in the cache are force refreshed. Currently caching of Signal values are supported for Threat\+Metrix signal groups alone and hence call this API if Threat\+Metrix is initialized. \begin{DoxySince}{Since}
+2.\+0.\+0 
+\end{DoxySince}
+\Hypertarget{interface_g_a_h_core_ad0aabafb3c5b6ce0c5cc121150e8a126}\label{interface_g_a_h_core_ad0aabafb3c5b6ce0c5cc121150e8a126} 
+\index{GAHCore@{GAHCore}!startPrefetchSignals@{startPrefetchSignals}}
+\index{startPrefetchSignals@{startPrefetchSignals}!GAHCore@{GAHCore}}
+\doxysubsubsection{\texorpdfstring{startPrefetchSignals}{startPrefetchSignals}}
+{\footnotesize\ttfamily + (void) start\+Prefetch\+Signals \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+@discussion Start prefetch signals. This call will collect signals and store in cache so that collection time is reduced during the actual transaction actions. This API can be called during app launch. \begin{DoxySince}{Since}
+2.\+0.\+0 
+\end{DoxySince}
+\Hypertarget{interface_g_a_h_core_a8a9c53b4e1a6abd84bf666ad993106ca}\label{interface_g_a_h_core_a8a9c53b4e1a6abd84bf666ad993106ca} 
+\index{GAHCore@{GAHCore}!startProfileTransaction:failure:@{startProfileTransaction:failure:}}
+\index{startProfileTransaction:failure:@{startProfileTransaction:failure:}!GAHCore@{GAHCore}}
+\doxysubsubsection{\texorpdfstring{startProfileTransaction:failure:}{startProfileTransaction:failure:}}
+{\footnotesize\ttfamily + (void) start\+Profile\+Transaction\+: \begin{DoxyParamCaption}\item[{(GAHSuccess\+Handler)}]{succes\+Handler }\item[{failure\+:(GAHFailure\+Handler)}]{fail\+Handler }\end{DoxyParamCaption}}
+
+Setup for New Account Origination (Population Profiling) feature in multiple page scenario. 
+\begin{DoxyParams}{Parameters}
+{\em callback} & Callback instance to get Visit ID \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+2.\+6.\+0 
+\end{DoxySince}
+\Hypertarget{interface_g_a_h_core_a8caebfb5a694069d0f208f1592734a32}\label{interface_g_a_h_core_a8caebfb5a694069d0f208f1592734a32} 
+\index{GAHCore@{GAHCore}!stopPrefetchSignals@{stopPrefetchSignals}}
+\index{stopPrefetchSignals@{stopPrefetchSignals}!GAHCore@{GAHCore}}
+\doxysubsubsection{\texorpdfstring{stopPrefetchSignals}{stopPrefetchSignals}}
+{\footnotesize\ttfamily + (void) stop\+Prefetch\+Signals \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+@discussion Call this API to stop caching of signals. This API can be called during app exit. \begin{DoxySince}{Since}
+2.\+0.\+0 
+\end{DoxySince}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+build/external/\+Release/\+GAHRisk\+Engine.\+xcframework/ios-\/arm64/\+GAHRisk\+Engine.\+framework/\+Versions/\+A/\+Headers/GAHCore.\+h\end{DoxyCompactItemize}
