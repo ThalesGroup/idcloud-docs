@@ -1,0 +1,61 @@
+\doxysection{names.\+h}
+\hypertarget{names_8h_source}{}\label{names_8h_source}\index{build/external/Release/GAHRiskEngine.xcframework/ios-\/arm64/GAHRiskEngine.framework/Versions/A/Headers/names.h@{build/external/Release/GAHRiskEngine.xcframework/ios-\/arm64/GAHRiskEngine.framework/Versions/A/Headers/names.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{comment}{//\ BehavioSec\ IOS\ SDK}}
+\DoxyCodeLine{00005\ \textcolor{comment}{//\ Version:\ 3.1.1}}
+\DoxyCodeLine{00006\ \textcolor{comment}{//\ Copyright\ (c)\ 2021\ BehavioSec.\ All\ rights\ reserved.}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{comment}{//}}
+\DoxyCodeLine{00011\ \textcolor{comment}{//\ \ names.h}}
+\DoxyCodeLine{00012\ \textcolor{comment}{//\ \ TrustDefender}}
+\DoxyCodeLine{00013\ \textcolor{comment}{//}}
+\DoxyCodeLine{00014\ \textcolor{comment}{//\ \ Created\ by\ Nick\ Blievers\ on\ 2/12/2015.}}
+\DoxyCodeLine{00015\ \textcolor{comment}{//\ \ Copyright\ ©\ 2015\ ThreatMetrix.\ All\ rights\ reserved.}}
+\DoxyCodeLine{00016\ \textcolor{comment}{//}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#ifndef\ names\_h}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#define\ names\_h}}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#define\ STRING(value)\ \#value}}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#define\ STRING\_VALUE(value)\ STRING(value)}}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#define\ TMX\_NAME\_PASTE2(\ a,\ b)\ a\#\#b}}
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#define\ TMX\_NAME\_PASTE(\ a,\ b)\ TMX\_NAME\_PASTE2(\ a,\ b)}}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\#ifdef\ BUILD\_AS\_MODULE}}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \textcolor{preprocessor}{\#if\ (defined(TMX\_PREFIX\_NAME)\ \&\&\ defined(NO\_COMPAT\_CLASS\_NAME))\ ||\ !defined(TMX\_PREFIX\_NAME)}}
+\DoxyCodeLine{00035\ \textcolor{preprocessor}{\#define\ TMX\_CLASS\_PREFIX\_NAME\ ComThreatMetrix}}
+\DoxyCodeLine{00036\ \textcolor{preprocessor}{\#define\ MODULE\_INIT\_METHOD\_NAME\ initm}}
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00038\ \textcolor{preprocessor}{\#define\ TMX\_CLASS\_PREFIX\_NAME\ TMX\_PREFIX\_NAME}}
+\DoxyCodeLine{00039\ \textcolor{preprocessor}{\#define\ MODULE\_INIT\_METHOD\_NAME\ TMX\_NAME\_PASTE(TMX\_PREFIX\_NAME,\ initm)}}
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ (defined(TMX\_PREFIX\_NAME)\ \&\&\ defined(NO\_COMPAT\_CLASS\_NAME))\ ||\ !defined(TMX\_PREFIX\_NAME)\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \textcolor{preprocessor}{\#define\ COMPAT\_CLASS\_NAME(x)\ TMX\_NAME\_PASTE(TMX\_CLASS\_PREFIX\_NAME,\ x)}}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \textcolor{preprocessor}{\#else\ }\textcolor{comment}{/*\ BUILD\_AS\_MODULE\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \textcolor{preprocessor}{\#define\ COMPAT\_CLASS\_NAME(x)\ x}}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ BUILD\_AS\_MODULE\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \textcolor{preprocessor}{\#ifndef\ HIDDEN\_EXTERN}}
+\DoxyCodeLine{00051\ \textcolor{preprocessor}{\#ifdef\ \_\_cplusplus}}
+\DoxyCodeLine{00052\ \textcolor{preprocessor}{\#define\ HIDDEN\_EXTERN\ extern\ "{}C"{}\ \_\_attribute\_\_((visibility\ ("{}hidden"{})))}}
+\DoxyCodeLine{00053\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00054\ \textcolor{preprocessor}{\#define\ HIDDEN\_EXTERN\ extern\ \_\_attribute\_\_((visibility\ ("{}hidden"{})))}}
+\DoxyCodeLine{00055\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00056\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ HIDDEN\_EXTERN\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ names\_h\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

@@ -1,0 +1,296 @@
+\doxysection{GAHTMXConfig Class Reference}
+\hypertarget{interface_g_a_h_t_m_x_config}{}\label{interface_g_a_h_t_m_x_config}\index{GAHTMXConfig@{GAHTMXConfig}}
+
+
+{\ttfamily \#include $<$GAHTMXConfig.\+h$>$}
+
+Inheritance diagram for GAHTMXConfig\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_g_a_h_t_m_x_config}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(double session\+Time\+Out) -\/ \mbox{\hyperlink{interface_g_a_h_t_m_x_config_ab2ffd51bbf9b66de87ae7fa3b041ac3c}{NS\+\_\+\+DEPRECATED\+\_\+\+IOS}}
+\item 
+(double Profile\+Request\+Timeout) -\/ \mbox{\hyperlink{interface_g_a_h_t_m_x_config_a57ca140b424528b41c3e5c85fbd98e6c}{NS\+\_\+\+DEPRECATED\+\_\+\+IOS}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) + \mbox{\hyperlink{interface_g_a_h_t_m_x_config_a6b36ce07a0770a5c23c579a8f50838b0}{shared\+Configuration\+With\+Org\+ID\+:and\+Fingerprint\+Server\+:}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+NSString \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{interface_g_a_h_t_m_x_config_aadddc906ee8dbfbe3a0ae7d9ce78a8f1}{org\+ID}}
+\item 
+NSString \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{interface_g_a_h_t_m_x_config_a86a29ed01bba872e217825fbdbbb2679}{api\+Key}}
+\item 
+NSString \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{interface_g_a_h_t_m_x_config_a4ae20d3fcd5e6f4496d4ef4b5901a796}{finger\+Print\+Server}}
+\item 
+NSNumber \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{interface_g_a_h_t_m_x_config_a040789f2d14353f56abfecc2001b7cbf}{time\+Out}}
+\item 
+NSNumber \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{interface_g_a_h_t_m_x_config_a999b4a7a897b0ae93d7368952c5ddc0a}{location\+Service}}
+\item 
+NSNumber \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{interface_g_a_h_t_m_x_config_a2190891f5c9879c5db00b9565ccc1752}{location\+Service\+Withpromt}}
+\item 
+NSString \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{interface_g_a_h_t_m_x_config_ad565b58a7d3de40fe58d7e01c6de1c01}{desired\+Location\+Accuracy}}
+\item 
+NSString \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{interface_g_a_h_t_m_x_config_a51a9943038c5b2890a270780715ea7d6}{key\+Chain\+Access\+Group}}
+\item 
+NSString \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{interface_g_a_h_t_m_x_config_afadb5ec893f5c73aa8fbf0a51b230b9c}{options}}
+\item 
+NSString \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{interface_g_a_h_t_m_x_config_aeb9bf31f916e8ceead9e0b80d5ed0bdf}{enable\+Options}}
+\item 
+NSString \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{interface_g_a_h_t_m_x_config_a2d758e38dec3f3ceca6c8f222c0c6b45}{disable\+Options}}
+\item 
+NSString \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{interface_g_a_h_t_m_x_config_aa3fe52ad553ae8506760af1438cfc3b5}{profile\+Source\+Url}}
+\item 
+NSString \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{interface_g_a_h_t_m_x_config_aa0e61b63b9b0d19fe04121e99dc3f636}{register\+For\+Push}}
+\item 
+NSArray \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{interface_g_a_h_t_m_x_config_a923611ec6f2ccb5568d3f660d1e6ee10}{certificates\+Array}}
+\item 
+NSString \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{interface_g_a_h_t_m_x_config_a30e1135836a1fd91a531b1a820db312a}{use\+NSURLSession}}
+\item 
+NSString \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{interface_g_a_h_t_m_x_config_a69a27ca3209df65c6d7c0dac3a5fe774}{use\+UIWeb\+View}}
+\item 
+NSString \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{interface_g_a_h_t_m_x_config_a128e505429f0c2b92021458a85d7e7a3}{use\+Alternate\+ID}}
+\item 
+NSString \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{interface_g_a_h_t_m_x_config_aaca469c375e31cd336e9e53678d823a1}{disable\+Non\+Fatal\+Log}}
+\item 
+NSString \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{interface_g_a_h_t_m_x_config_a3853d787a66a104b1426335c714a0862}{method\+Swizzling}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class to set different configuration parameters for initialization of Threat\+Metrix Signal group Pass this object to initialize() for enabling signal collection under Threat\+Metrix signal group. This class contains wrapper method for all config APIs of Threat\+Metrix SDK. Internally all methods make a call to corresponding config methods in Threat\+Metrix SDK. \begin{DoxySince}{Since}
+2.\+0.\+0 
+\end{DoxySince}
+
+
+\doxysubsection{Method Documentation}
+\Hypertarget{interface_g_a_h_t_m_x_config_ab2ffd51bbf9b66de87ae7fa3b041ac3c}\label{interface_g_a_h_t_m_x_config_ab2ffd51bbf9b66de87ae7fa3b041ac3c} 
+\index{GAHTMXConfig@{GAHTMXConfig}!NS\_DEPRECATED\_IOS@{NS\_DEPRECATED\_IOS}}
+\index{NS\_DEPRECATED\_IOS@{NS\_DEPRECATED\_IOS}!GAHTMXConfig@{GAHTMXConfig}}
+\doxysubsubsection{\texorpdfstring{NS\_DEPRECATED\_IOS}{NS\_DEPRECATED\_IOS}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (double session\+Time\+Out) NS\+\_\+\+DEPRECATED\+\_\+\+IOS \begin{DoxyParamCaption}\item[{(1.\+2.)}]{0 }\item[{(2.\+1.)}]{0 }\item[{("{}use signal\+Cache\+Timeout from \mbox{\hyperlink{interface_g_a_h_gemalto_signal_config}{GAHGemalto\+Signal\+Config}} instead"{})}]{ }\end{DoxyParamCaption}}
+
+@string session\+Time\+Out @abstract key for Setting the session\+Time\+Out @discussion Valid at profile\+Time time for Setting session\+Time\+Out \begin{DoxySince}{Since}
+2.\+0.\+0 
+\end{DoxySince}
+\Hypertarget{interface_g_a_h_t_m_x_config_a57ca140b424528b41c3e5c85fbd98e6c}\label{interface_g_a_h_t_m_x_config_a57ca140b424528b41c3e5c85fbd98e6c} 
+\index{GAHTMXConfig@{GAHTMXConfig}!NS\_DEPRECATED\_IOS@{NS\_DEPRECATED\_IOS}}
+\index{NS\_DEPRECATED\_IOS@{NS\_DEPRECATED\_IOS}!GAHTMXConfig@{GAHTMXConfig}}
+\doxysubsubsection{\texorpdfstring{NS\_DEPRECATED\_IOS}{NS\_DEPRECATED\_IOS}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (double Profile\+Request\+Timeout) NS\+\_\+\+DEPRECATED\+\_\+\+IOS \begin{DoxyParamCaption}\item[{(1.\+2.)}]{0 }\item[{(2.\+1.)}]{0 }\item[{("{}use signal\+Prefetch\+Timeout from \mbox{\hyperlink{interface_g_a_h_gemalto_signal_config}{GAHGemalto\+Signal\+Config}} instead"{})}]{ }\end{DoxyParamCaption}}
+
+@string Profile\+Request\+Timeout @abstract key for Setting the Profile\+Request\+Timeout @discussion Valid at profile\+Time time for Setting Profile\+Request\+Timeout \begin{DoxySince}{Since}
+2.\+0.\+0 
+\end{DoxySince}
+\Hypertarget{interface_g_a_h_t_m_x_config_a6b36ce07a0770a5c23c579a8f50838b0}\label{interface_g_a_h_t_m_x_config_a6b36ce07a0770a5c23c579a8f50838b0} 
+\index{GAHTMXConfig@{GAHTMXConfig}!sharedConfigurationWithOrgID:andFingerprintServer:@{sharedConfigurationWithOrgID:andFingerprintServer:}}
+\index{sharedConfigurationWithOrgID:andFingerprintServer:@{sharedConfigurationWithOrgID:andFingerprintServer:}!GAHTMXConfig@{GAHTMXConfig}}
+\doxysubsubsection{\texorpdfstring{sharedConfigurationWithOrgID:andFingerprintServer:}{sharedConfigurationWithOrgID:andFingerprintServer:}}
+{\footnotesize\ttfamily + (instancetype) shared\+Configuration\+With\+Org\+ID\+: \begin{DoxyParamCaption}\item[{(NSString \texorpdfstring{$\ast$}{*})}]{org\+ID }\item[{and\+Fingerprint\+Server\+:(NSString \texorpdfstring{$\ast$}{*})}]{finger\+Print\+Server }\end{DoxyParamCaption}}
+
+@discussion Method to pass mandatory parameters for TMXConfiguration. 
+\begin{DoxyParams}{Parameters}
+{\em org\+ID} & Unique org\+Id assigned to each organisation by Threat\+Metrix \\
+\hline
+{\em finger\+Print\+Server} & Fingerprint server to use. Note this is a domain and not a URL. Pass value as h-\/sdk.\+online-\/metrix.\+net for this version. This value may be changed in future. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return shared\+Configuration with default values. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+2.\+0.\+0. 
+\end{DoxySince}
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{interface_g_a_h_t_m_x_config_a86a29ed01bba872e217825fbdbbb2679}\label{interface_g_a_h_t_m_x_config_a86a29ed01bba872e217825fbdbbb2679} 
+\index{GAHTMXConfig@{GAHTMXConfig}!apiKey@{apiKey}}
+\index{apiKey@{apiKey}!GAHTMXConfig@{GAHTMXConfig}}
+\doxysubsubsection{\texorpdfstring{apiKey}{apiKey}}
+{\footnotesize\ttfamily -\/ (NSString\texorpdfstring{$\ast$}{*}) api\+Key\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+@string api\+Key @abstract NSDictionary key for specifying the API key, if one is required. @discussion Valid at init time to set the API key. Do not set unless instructed by Gemalto. \begin{DoxySince}{Since}
+2.\+0.\+0 
+\end{DoxySince}
+\Hypertarget{interface_g_a_h_t_m_x_config_a923611ec6f2ccb5568d3f660d1e6ee10}\label{interface_g_a_h_t_m_x_config_a923611ec6f2ccb5568d3f660d1e6ee10} 
+\index{GAHTMXConfig@{GAHTMXConfig}!certificatesArray@{certificatesArray}}
+\index{certificatesArray@{certificatesArray}!GAHTMXConfig@{GAHTMXConfig}}
+\doxysubsubsection{\texorpdfstring{certificatesArray}{certificatesArray}}
+{\footnotesize\ttfamily -\/ (NSArray\texorpdfstring{$\ast$}{*}) certificates\+Array\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+@string certificates\+Array @abstract NSDictionary key for setting a SHA1/\+SHA256 of certificate of fingerprint server. @discussion Valid at init time for setting a SHA1 of certificate of fingerprint server \begin{DoxySince}{Since}
+2.\+0.\+0 
+\end{DoxySince}
+\Hypertarget{interface_g_a_h_t_m_x_config_ad565b58a7d3de40fe58d7e01c6de1c01}\label{interface_g_a_h_t_m_x_config_ad565b58a7d3de40fe58d7e01c6de1c01} 
+\index{GAHTMXConfig@{GAHTMXConfig}!desiredLocationAccuracy@{desiredLocationAccuracy}}
+\index{desiredLocationAccuracy@{desiredLocationAccuracy}!GAHTMXConfig@{GAHTMXConfig}}
+\doxysubsubsection{\texorpdfstring{desiredLocationAccuracy}{desiredLocationAccuracy}}
+{\footnotesize\ttfamily -\/ (NSString\texorpdfstring{$\ast$}{*}) desired\+Location\+Accuracy\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+@string desired\+Location\+Accuracy @abstract NSDictionary key for enabling the location services. @discussion Valid at init time and configures the desired location accuracy. Default value is @1000.\+0 (note use of NSNumber to store float) which is equivalent to k\+CLLocation\+Accuracy\+Kilometer \begin{DoxySince}{Since}
+2.\+0.\+0 
+\end{DoxySince}
+\Hypertarget{interface_g_a_h_t_m_x_config_aaca469c375e31cd336e9e53678d823a1}\label{interface_g_a_h_t_m_x_config_aaca469c375e31cd336e9e53678d823a1} 
+\index{GAHTMXConfig@{GAHTMXConfig}!disableNonFatalLog@{disableNonFatalLog}}
+\index{disableNonFatalLog@{disableNonFatalLog}!GAHTMXConfig@{GAHTMXConfig}}
+\doxysubsubsection{\texorpdfstring{disableNonFatalLog}{disableNonFatalLog}}
+{\footnotesize\ttfamily -\/ (NSString\texorpdfstring{$\ast$}{*}) disable\+Non\+Fatal\+Log\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+@abstract NSDictionary key for disabling non-\/fatal SDK logs. @discussion Valid at init time for fine grained control over printing non-\/fatal logs. \begin{DoxySince}{Since}
+2.\+1.\+0 
+\end{DoxySince}
+\Hypertarget{interface_g_a_h_t_m_x_config_a2d758e38dec3f3ceca6c8f222c0c6b45}\label{interface_g_a_h_t_m_x_config_a2d758e38dec3f3ceca6c8f222c0c6b45} 
+\index{GAHTMXConfig@{GAHTMXConfig}!disableOptions@{disableOptions}}
+\index{disableOptions@{disableOptions}!GAHTMXConfig@{GAHTMXConfig}}
+\doxysubsubsection{\texorpdfstring{disableOptions}{disableOptions}}
+{\footnotesize\ttfamily -\/ (NSString\texorpdfstring{$\ast$}{*}) disable\+Options\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+@string disable\+Options @abstract NSDictionary key for setting specific options @discussion Valid at init time for fine grained control over profiling.
+
+Used internally. Do not set unless specified by Gemalto. \begin{DoxySince}{Since}
+2.\+0.\+0 
+\end{DoxySince}
+\Hypertarget{interface_g_a_h_t_m_x_config_aeb9bf31f916e8ceead9e0b80d5ed0bdf}\label{interface_g_a_h_t_m_x_config_aeb9bf31f916e8ceead9e0b80d5ed0bdf} 
+\index{GAHTMXConfig@{GAHTMXConfig}!enableOptions@{enableOptions}}
+\index{enableOptions@{enableOptions}!GAHTMXConfig@{GAHTMXConfig}}
+\doxysubsubsection{\texorpdfstring{enableOptions}{enableOptions}}
+{\footnotesize\ttfamily -\/ (NSString\texorpdfstring{$\ast$}{*}) enable\+Options\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+@string enable\+Options @abstract NSDictionary key for setting specific options @discussion Valid at init time for fine grained control over profiling.
+
+Used internally. Do not set unless specified by Gemalto. \begin{DoxySince}{Since}
+2.\+0.\+0 
+\end{DoxySince}
+\Hypertarget{interface_g_a_h_t_m_x_config_a4ae20d3fcd5e6f4496d4ef4b5901a796}\label{interface_g_a_h_t_m_x_config_a4ae20d3fcd5e6f4496d4ef4b5901a796} 
+\index{GAHTMXConfig@{GAHTMXConfig}!fingerPrintServer@{fingerPrintServer}}
+\index{fingerPrintServer@{fingerPrintServer}!GAHTMXConfig@{GAHTMXConfig}}
+\doxysubsubsection{\texorpdfstring{fingerPrintServer}{fingerPrintServer}}
+{\footnotesize\ttfamily -\/ (NSString\texorpdfstring{$\ast$}{*}) finger\+Print\+Server\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+@const THMFingerprint\+Server @abstract NSDictionary key for setting a fingerprint server @discussion Valid at init time setting an alternative fingerprint server Defaults to @"{}h-\/sdk.\+online-\/metrix.\+net"{} \begin{DoxySince}{Since}
+2.\+0.\+0 
+\end{DoxySince}
+\Hypertarget{interface_g_a_h_t_m_x_config_a51a9943038c5b2890a270780715ea7d6}\label{interface_g_a_h_t_m_x_config_a51a9943038c5b2890a270780715ea7d6} 
+\index{GAHTMXConfig@{GAHTMXConfig}!keyChainAccessGroup@{keyChainAccessGroup}}
+\index{keyChainAccessGroup@{keyChainAccessGroup}!GAHTMXConfig@{GAHTMXConfig}}
+\doxysubsubsection{\texorpdfstring{keyChainAccessGroup}{keyChainAccessGroup}}
+{\footnotesize\ttfamily -\/ (NSString\texorpdfstring{$\ast$}{*}) key\+Chain\+Access\+Group\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+@string key\+Chain\+Access\+Group @abstract NSDictionary key for making use of the keychain access group. @discussion Valid at init time to enable the sharing of data across applications with the same keychain access group. This allows matching device ID across applications from the same vendor. \begin{DoxySince}{Since}
+2.\+0.\+0 
+\end{DoxySince}
+\Hypertarget{interface_g_a_h_t_m_x_config_a999b4a7a897b0ae93d7368952c5ddc0a}\label{interface_g_a_h_t_m_x_config_a999b4a7a897b0ae93d7368952c5ddc0a} 
+\index{GAHTMXConfig@{GAHTMXConfig}!locationService@{locationService}}
+\index{locationService@{locationService}!GAHTMXConfig@{GAHTMXConfig}}
+\doxysubsubsection{\texorpdfstring{locationService}{locationService}}
+{\footnotesize\ttfamily -\/ (NSNumber\texorpdfstring{$\ast$}{*}) location\+Service\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+@string location\+Service @abstract NSDictionary key for enabling the location services. @discussion Valid at init time to enable location services. Note that this will never cause UI interaction -- if the application does not have permissions, no prompt will be made, and no location will be acquired.
+
+Default value is @NO (note use of NSNumber to store BOOL) \begin{DoxySince}{Since}
+2.\+0.\+0 
+\end{DoxySince}
+\Hypertarget{interface_g_a_h_t_m_x_config_a2190891f5c9879c5db00b9565ccc1752}\label{interface_g_a_h_t_m_x_config_a2190891f5c9879c5db00b9565ccc1752} 
+\index{GAHTMXConfig@{GAHTMXConfig}!locationServiceWithpromt@{locationServiceWithpromt}}
+\index{locationServiceWithpromt@{locationServiceWithpromt}!GAHTMXConfig@{GAHTMXConfig}}
+\doxysubsubsection{\texorpdfstring{locationServiceWithpromt}{locationServiceWithpromt}}
+{\footnotesize\ttfamily -\/ (NSNumber\texorpdfstring{$\ast$}{*}) location\+Service\+Withpromt\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+@string location\+Service\+With\+Promt @abstract NSDictionary key for enabling the location services. @discussion Valid at init time to enable location services. Note that this can cause user interaction -- if the application does not have permissions, they will be prompted.
+
+Only one of THMLocation\+Services or THMLocation\+Services\+With\+Prompt should be set.
+
+Default value is @NO (note use of NSNumber to store BOOL) \begin{DoxySince}{Since}
+2.\+0.\+0 
+\end{DoxySince}
+\Hypertarget{interface_g_a_h_t_m_x_config_a3853d787a66a104b1426335c714a0862}\label{interface_g_a_h_t_m_x_config_a3853d787a66a104b1426335c714a0862} 
+\index{GAHTMXConfig@{GAHTMXConfig}!methodSwizzling@{methodSwizzling}}
+\index{methodSwizzling@{methodSwizzling}!GAHTMXConfig@{GAHTMXConfig}}
+\doxysubsubsection{\texorpdfstring{methodSwizzling}{methodSwizzling}}
+{\footnotesize\ttfamily -\/ (NSString\texorpdfstring{$\ast$}{*}) method\+Swizzling\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+@abstract NSDictionary key to allow method swizzling in Strong Authentication. @discussion Valid at init time for allowing method swizzling to get push token automatically. Should be @\+NO in case integrity protecion tools are used in the final application. Note that by disabling method swizzling the application is reponsible for passing the push token to SDK. \Hypertarget{interface_g_a_h_t_m_x_config_afadb5ec893f5c73aa8fbf0a51b230b9c}\label{interface_g_a_h_t_m_x_config_afadb5ec893f5c73aa8fbf0a51b230b9c} 
+\index{GAHTMXConfig@{GAHTMXConfig}!options@{options}}
+\index{options@{options}!GAHTMXConfig@{GAHTMXConfig}}
+\doxysubsubsection{\texorpdfstring{options}{options}}
+{\footnotesize\ttfamily -\/ (NSString\texorpdfstring{$\ast$}{*}) options\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+@string options @abstract NSDictionary key for setting specific options @discussion Valid at init time for fine grained control over profiling.
+
+Used internally. Do not set unless specified by Gemalto. \begin{DoxySince}{Since}
+2.\+0.\+0 
+\end{DoxySince}
+\Hypertarget{interface_g_a_h_t_m_x_config_aadddc906ee8dbfbe3a0ae7d9ce78a8f1}\label{interface_g_a_h_t_m_x_config_aadddc906ee8dbfbe3a0ae7d9ce78a8f1} 
+\index{GAHTMXConfig@{GAHTMXConfig}!orgID@{orgID}}
+\index{orgID@{orgID}!GAHTMXConfig@{GAHTMXConfig}}
+\doxysubsubsection{\texorpdfstring{orgID}{orgID}}
+{\footnotesize\ttfamily -\/ (NSString\texorpdfstring{$\ast$}{*}) org\+ID\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+@string org\+ID @abstract NSDictionary key for specifying the org id. @discussion Valid at init time to set the org id. \begin{DoxySince}{Since}
+2.\+0.\+0 
+\end{DoxySince}
+\Hypertarget{interface_g_a_h_t_m_x_config_aa3fe52ad553ae8506760af1438cfc3b5}\label{interface_g_a_h_t_m_x_config_aa3fe52ad553ae8506760af1438cfc3b5} 
+\index{GAHTMXConfig@{GAHTMXConfig}!profileSourceUrl@{profileSourceUrl}}
+\index{profileSourceUrl@{profileSourceUrl}!GAHTMXConfig@{GAHTMXConfig}}
+\doxysubsubsection{\texorpdfstring{profileSourceUrl}{profileSourceUrl}}
+{\footnotesize\ttfamily -\/ (NSString\texorpdfstring{$\ast$}{*}) profile\+Source\+Url\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+@string profile\+Source\+Url @abstract NSDictionary key for setting a custom url. @discussion Valid at init time for setting a custom referrer url \begin{DoxySince}{Since}
+2.\+0.\+0 
+\end{DoxySince}
+\Hypertarget{interface_g_a_h_t_m_x_config_aa0e61b63b9b0d19fe04121e99dc3f636}\label{interface_g_a_h_t_m_x_config_aa0e61b63b9b0d19fe04121e99dc3f636} 
+\index{GAHTMXConfig@{GAHTMXConfig}!registerForPush@{registerForPush}}
+\index{registerForPush@{registerForPush}!GAHTMXConfig@{GAHTMXConfig}}
+\doxysubsubsection{\texorpdfstring{registerForPush}{registerForPush}}
+{\footnotesize\ttfamily -\/ (NSString\texorpdfstring{$\ast$}{*}) register\+For\+Push\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+@string register\+For\+Push @abstract NSDictionary key to allow SDK to grab an Apple Push Notification token @discussion Valid at init time to allow SDK to grab an Apple Push Notification token \Hypertarget{interface_g_a_h_t_m_x_config_a040789f2d14353f56abfecc2001b7cbf}\label{interface_g_a_h_t_m_x_config_a040789f2d14353f56abfecc2001b7cbf} 
+\index{GAHTMXConfig@{GAHTMXConfig}!timeOut@{timeOut}}
+\index{timeOut@{timeOut}!GAHTMXConfig@{GAHTMXConfig}}
+\doxysubsubsection{\texorpdfstring{timeOut}{timeOut}}
+{\footnotesize\ttfamily -\/ (NSNumber\texorpdfstring{$\ast$}{*}) time\+Out\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+@string time\+Out @abstract NSDictionary key for specifying the network timeout. @discussion Valid at init time to set the network timeout, default 10s. Default is @10 (note use of NSNumber to store int) \begin{DoxySince}{Since}
+2.\+0.\+0 
+\end{DoxySince}
+\Hypertarget{interface_g_a_h_t_m_x_config_a128e505429f0c2b92021458a85d7e7a3}\label{interface_g_a_h_t_m_x_config_a128e505429f0c2b92021458a85d7e7a3} 
+\index{GAHTMXConfig@{GAHTMXConfig}!useAlternateID@{useAlternateID}}
+\index{useAlternateID@{useAlternateID}!GAHTMXConfig@{GAHTMXConfig}}
+\doxysubsubsection{\texorpdfstring{useAlternateID}{useAlternateID}}
+{\footnotesize\ttfamily -\/ (NSString\texorpdfstring{$\ast$}{*}) use\+Alternate\+ID\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+@string use\+Alternate\+ID @using threat\+Metrix ID instead of Open\+UDID, threat\+Metrix ID is MD5 of Open\+UDID generated ID \begin{DoxySince}{Since}
+2.\+0.\+0 
+\end{DoxySince}
+\Hypertarget{interface_g_a_h_t_m_x_config_a30e1135836a1fd91a531b1a820db312a}\label{interface_g_a_h_t_m_x_config_a30e1135836a1fd91a531b1a820db312a} 
+\index{GAHTMXConfig@{GAHTMXConfig}!useNSURLSession@{useNSURLSession}}
+\index{useNSURLSession@{useNSURLSession}!GAHTMXConfig@{GAHTMXConfig}}
+\doxysubsubsection{\texorpdfstring{useNSURLSession}{useNSURLSession}}
+{\footnotesize\ttfamily -\/ (NSString\texorpdfstring{$\ast$}{*}) use\+NSURLSession\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+@string use\+NSURLSession @abstract NSDictionary key for using NSURLSession when available. NSURLSession is recommended by Apple and is available in i\+OS 7+. By default Trust\+Defender SDK is using NSURLConnection for backward compatibility, using this option Trust\+Defender SDK will use NSURLSession in i\+OS 7+. @discussion Valid at init time for using NSURLSession API when available. Default value is @NO (note use of NSNumber to store BOOL) \begin{DoxySince}{Since}
+2.\+0.\+0 
+\end{DoxySince}
+\Hypertarget{interface_g_a_h_t_m_x_config_a69a27ca3209df65c6d7c0dac3a5fe774}\label{interface_g_a_h_t_m_x_config_a69a27ca3209df65c6d7c0dac3a5fe774} 
+\index{GAHTMXConfig@{GAHTMXConfig}!useUIWebView@{useUIWebView}}
+\index{useUIWebView@{useUIWebView}!GAHTMXConfig@{GAHTMXConfig}}
+\doxysubsubsection{\texorpdfstring{useUIWebView}{useUIWebView}}
+{\footnotesize\ttfamily -\/ (NSString\texorpdfstring{$\ast$}{*}) use\+UIWeb\+View\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+@string use\+UIWeb\+View @abstract NSDictionary key for using UIWeb\+Kit. UIWeb\+Kit is deprecated in i\+OS 8+ and Apple recommended WKWeb\+Kit. Trust\+Defender SDK uses WKWeb\+Kit in i\+OS 9+ (there are some minor issues in i\+OS 8 using WKWeb\+Kit). @discussion Valid at init time for using UIWeb\+Kit instead of WKWeb\+Kit. Default value is @NO (note use of NSNumber to store BOOL) \begin{DoxySince}{Since}
+2.\+0.\+0 
+\end{DoxySince}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+build/external/\+Release/\+GAHRisk\+Engine.\+xcframework/ios-\/arm64/\+GAHRisk\+Engine.\+framework/\+Versions/\+A/\+Headers/GAHTMXConfig.\+h\end{DoxyCompactItemize}

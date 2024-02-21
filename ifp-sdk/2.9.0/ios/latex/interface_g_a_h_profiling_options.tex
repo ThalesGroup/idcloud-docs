@@ -1,0 +1,73 @@
+\doxysection{GAHProfiling\+Options Class Reference}
+\hypertarget{interface_g_a_h_profiling_options}{}\label{interface_g_a_h_profiling_options}\index{GAHProfilingOptions@{GAHProfilingOptions}}
+
+
+{\ttfamily \#include $<$GAHProfiling\+Options.\+h$>$}
+
+Inheritance diagram for GAHProfiling\+Options\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_g_a_h_profiling_options}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+NSString \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{interface_g_a_h_profiling_options_a750778358f96332359f4de5f0f6d36fa}{session\+ID}}
+\item 
+NSArray \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{interface_g_a_h_profiling_options_ad7e9f8b1637237077633f8f82fba4f79}{custom\+Attributes}}
+\item 
+NSString \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{interface_g_a_h_profiling_options_a60f6feca924cce6257ab769d387212ea}{location}}
+\item 
+NSString \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{interface_g_a_h_profiling_options_a5e91c034ceefb82d0eb867490cf5c536}{profile\+Status}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class to set different configuration parameters for profiling/signal collection of Threat\+Metrix Signal group. This class contains wrapper method for Profiling option APIs of Threat\+Metrix SDK. Internally all methods make a call to corresponding methods in Threat\+Metrix SDK. \begin{DoxySince}{Since}
+2.\+0.\+0 
+\end{DoxySince}
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{interface_g_a_h_profiling_options_ad7e9f8b1637237077633f8f82fba4f79}\label{interface_g_a_h_profiling_options_ad7e9f8b1637237077633f8f82fba4f79} 
+\index{GAHProfilingOptions@{GAHProfilingOptions}!customAttributes@{customAttributes}}
+\index{customAttributes@{customAttributes}!GAHProfilingOptions@{GAHProfilingOptions}}
+\doxysubsubsection{\texorpdfstring{customAttributes}{customAttributes}}
+{\footnotesize\ttfamily -\/ (NSArray\texorpdfstring{$\ast$}{*}) custom\+Attributes\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+@\+NSarray custom\+Attributes @abstract NSDictionary key for Custom Attributes. @discussion Valid at profile time for setting the any custom attributes to be included in the profiling data. \begin{DoxySince}{Since}
+2.\+0.\+0 
+\end{DoxySince}
+\Hypertarget{interface_g_a_h_profiling_options_a60f6feca924cce6257ab769d387212ea}\label{interface_g_a_h_profiling_options_a60f6feca924cce6257ab769d387212ea} 
+\index{GAHProfilingOptions@{GAHProfilingOptions}!location@{location}}
+\index{location@{location}!GAHProfilingOptions@{GAHProfilingOptions}}
+\doxysubsubsection{\texorpdfstring{location}{location}}
+{\footnotesize\ttfamily -\/ (NSString\texorpdfstring{$\ast$}{*}) location\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+@string location @abstract NSDictionary key for setting location. @discussion Valid at profile time for setting the location to be included in the profiling data. This should only be used if location services are not enabled. \begin{DoxySince}{Since}
+2.\+0.\+0 
+\end{DoxySince}
+\Hypertarget{interface_g_a_h_profiling_options_a5e91c034ceefb82d0eb867490cf5c536}\label{interface_g_a_h_profiling_options_a5e91c034ceefb82d0eb867490cf5c536} 
+\index{GAHProfilingOptions@{GAHProfilingOptions}!profileStatus@{profileStatus}}
+\index{profileStatus@{profileStatus}!GAHProfilingOptions@{GAHProfilingOptions}}
+\doxysubsubsection{\texorpdfstring{profileStatus}{profileStatus}}
+{\footnotesize\ttfamily -\/ (NSString\texorpdfstring{$\ast$}{*}) profile\+Status\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+@string profile\+Status @abstract NSDictionary key for retrieving the profiling status @discussion Valid at results time for getting the status of the current profiling request. \begin{DoxySince}{Since}
+2.\+0.\+0 
+\end{DoxySince}
+\Hypertarget{interface_g_a_h_profiling_options_a750778358f96332359f4de5f0f6d36fa}\label{interface_g_a_h_profiling_options_a750778358f96332359f4de5f0f6d36fa} 
+\index{GAHProfilingOptions@{GAHProfilingOptions}!sessionID@{sessionID}}
+\index{sessionID@{sessionID}!GAHProfilingOptions@{GAHProfilingOptions}}
+\doxysubsubsection{\texorpdfstring{sessionID}{sessionID}}
+{\footnotesize\ttfamily -\/ (NSString\texorpdfstring{$\ast$}{*}) session\+ID\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+@string session\+ID @abstract NSDictionary key for Session ID. @discussion Valid at profile time, and result time for setting/retrieving the session ID. \begin{DoxySince}{Since}
+2.\+0.\+0 
+\end{DoxySince}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+build/external/\+Release/\+GAHRisk\+Engine.\+xcframework/ios-\/arm64/\+GAHRisk\+Engine.\+framework/\+Versions/\+A/\+Headers/GAHProfiling\+Options.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,84 @@
+\doxysection{GAHTMXConfig.\+h}
+\hypertarget{_g_a_h_t_m_x_config_8h_source}{}\label{_g_a_h_t_m_x_config_8h_source}\index{build/external/Release/GAHRiskEngine.xcframework/ios-\/arm64/GAHRiskEngine.framework/Versions/A/Headers/GAHTMXConfig.h@{build/external/Release/GAHRiskEngine.xcframework/ios-\/arm64/GAHRiskEngine.framework/Versions/A/Headers/GAHTMXConfig.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *\ \ \ \ \ Copyright\ (c)\ 2018\ \ -\/\ \ GEMALTO\ DEVELOPEMENT\ -\/\ R\&D}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ *\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ *\ GEMALTO\ MAKES\ NO\ REPRESENTATIONS\ OR\ WARRANTIES\ ABOUT\ THE\ SUITABILITY\ OF}}
+\DoxyCodeLine{00007\ \textcolor{comment}{\ *\ THE\ SOFTWARE,\ EITHER\ EXPRESS\ OR\ IMPLIED,\ INCLUDING\ BUT\ NOT\ LIMITED}}
+\DoxyCodeLine{00008\ \textcolor{comment}{\ *\ TO\ THE\ IMPLIED\ WARRANTIES\ OF\ MERCHANTABILITY,\ FITNESS\ FOR\ A}}
+\DoxyCodeLine{00009\ \textcolor{comment}{\ *\ PARTICULAR\ PURPOSE,\ OR\ NON-\/INFRINGEMENT.\ GEMALTO\ SHALL\ NOT\ BE}}
+\DoxyCodeLine{00010\ \textcolor{comment}{\ *\ LIABLE\ FOR\ ANY\ DAMAGES\ SUFFERED\ BY\ LICENSEE\ AS\ A\ RESULT\ OF\ USING,}}
+\DoxyCodeLine{00011\ \textcolor{comment}{\ *\ MODIFYING\ OR\ DISTRIBUTING\ THIS\ SOFTWARE\ OR\ ITS\ DERIVATIVES.}}
+\DoxyCodeLine{00012\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00013\ \textcolor{comment}{\ *\ THIS\ SOFTWARE\ IS\ NOT\ DESIGNED\ OR\ INTENDED\ FOR\ USE\ OR\ RESALE\ AS\ ON-\/LINE}}
+\DoxyCodeLine{00014\ \textcolor{comment}{\ *\ CONTROL\ EQUIPMENT\ IN\ HAZARDOUS\ ENVIRONMENTS\ REQUIRING\ FAIL-\/SAFE}}
+\DoxyCodeLine{00015\ \textcolor{comment}{\ *\ PERFORMANCE,\ SUCH\ AS\ IN\ THE\ OPERATION\ OF\ NUCLEAR\ FACILITIES,\ AIRCRAFT}}
+\DoxyCodeLine{00016\ \textcolor{comment}{\ *\ NAVIGATION\ OR\ COMMUNICATION\ SYSTEMS,\ AIR\ TRAFFIC\ CONTROL,\ DIRECT\ LIFE}}
+\DoxyCodeLine{00017\ \textcolor{comment}{\ *\ SUPPORT\ MACHINES,\ OR\ WEAPONS\ SYSTEMS,\ IN\ WHICH\ THE\ FAILURE\ OF\ THE}}
+\DoxyCodeLine{00018\ \textcolor{comment}{\ *\ SOFTWARE\ COULD\ LEAD\ DIRECTLY\ TO\ DEATH,\ PERSONAL\ INJURY,\ OR\ SEVERE}}
+\DoxyCodeLine{00019\ \textcolor{comment}{\ *\ PHYSICAL\ OR\ ENVIRONMENTAL\ DAMAGE\ ("{}HIGH\ RISK\ ACTIVITIES"{}).\ GEMALTO}}
+\DoxyCodeLine{00020\ \textcolor{comment}{\ *\ SPECIFICALLY\ DISCLAIMS\ ANY\ EXPRESS\ OR\ IMPLIED\ WARRANTY\ OF\ FITNESS\ FOR}}
+\DoxyCodeLine{00021\ \textcolor{comment}{\ *\ HIGH\ RISK\ ACTIVITIES.}}
+\DoxyCodeLine{00022\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00023\ \textcolor{comment}{\ *\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00024\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#import\ "{}GAHConfig.h"{}}}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00032\ \textcolor{keyword}{@interface\ }\mbox{\hyperlink{interface_g_a_h_t_m_x_config}{GAHTMXConfig}}\ :\ \mbox{\hyperlink{interface_g_a_h_config}{GAHConfig}}}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00040\ \textcolor{keyword}{@property}(nonatomic,readonly,strong)NSString\ *\mbox{\hyperlink{interface_g_a_h_t_m_x_config_aadddc906ee8dbfbe3a0ae7d9ce78a8f1}{orgID}};}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00049\ \textcolor{keyword}{@property}(nonatomic,readonly,strong)NSString\ *\mbox{\hyperlink{interface_g_a_h_t_m_x_config_a86a29ed01bba872e217825fbdbbb2679}{apiKey}};}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00058\ \textcolor{keyword}{@property}(nonatomic,strong)NSString\ *\mbox{\hyperlink{interface_g_a_h_t_m_x_config_a4ae20d3fcd5e6f4496d4ef4b5901a796}{fingerPrintServer}};}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00067\ \textcolor{keyword}{@property}(nonatomic,assign)NSNumber*\ \mbox{\hyperlink{interface_g_a_h_t_m_x_config_a040789f2d14353f56abfecc2001b7cbf}{timeOut}};}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00079\ \textcolor{keyword}{@property}(nonatomic,assign)NSNumber\ *\mbox{\hyperlink{interface_g_a_h_t_m_x_config_a999b4a7a897b0ae93d7368952c5ddc0a}{locationService}};}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00093\ \textcolor{keyword}{@property}(nonatomic,assign)NSNumber\ *\mbox{\hyperlink{interface_g_a_h_t_m_x_config_a2190891f5c9879c5db00b9565ccc1752}{locationServiceWithpromt}};}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00103\ \textcolor{keyword}{@property}(nonatomic,strong)NSString\ *\mbox{\hyperlink{interface_g_a_h_t_m_x_config_ad565b58a7d3de40fe58d7e01c6de1c01}{desiredLocationAccuracy}};}
+\DoxyCodeLine{00104\ }
+\DoxyCodeLine{00113\ \textcolor{keyword}{@property}(nonatomic,strong)NSString\ *\mbox{\hyperlink{interface_g_a_h_t_m_x_config_a51a9943038c5b2890a270780715ea7d6}{keyChainAccessGroup}};}
+\DoxyCodeLine{00114\ }
+\DoxyCodeLine{00123\ \textcolor{keyword}{@property}(nonatomic,strong)NSString\ *\mbox{\hyperlink{interface_g_a_h_t_m_x_config_afadb5ec893f5c73aa8fbf0a51b230b9c}{options}};}
+\DoxyCodeLine{00124\ }
+\DoxyCodeLine{00133\ \textcolor{keyword}{@property}(nonatomic,strong)NSString\ *\mbox{\hyperlink{interface_g_a_h_t_m_x_config_aeb9bf31f916e8ceead9e0b80d5ed0bdf}{enableOptions}};}
+\DoxyCodeLine{00134\ }
+\DoxyCodeLine{00143\ \textcolor{keyword}{@property}(nonatomic,strong)NSString\ *\mbox{\hyperlink{interface_g_a_h_t_m_x_config_a2d758e38dec3f3ceca6c8f222c0c6b45}{disableOptions}};}
+\DoxyCodeLine{00144\ }
+\DoxyCodeLine{00145\ }
+\DoxyCodeLine{00152\ \textcolor{keyword}{@property}(nonatomic,strong)NSString\ *\mbox{\hyperlink{interface_g_a_h_t_m_x_config_aa3fe52ad553ae8506760af1438cfc3b5}{profileSourceUrl}};}
+\DoxyCodeLine{00153\ }
+\DoxyCodeLine{00159\ \textcolor{keyword}{@property}(nonatomic,strong)NSString\ *\mbox{\hyperlink{interface_g_a_h_t_m_x_config_aa0e61b63b9b0d19fe04121e99dc3f636}{registerForPush}};}
+\DoxyCodeLine{00160\ }
+\DoxyCodeLine{00167\ \textcolor{keyword}{@property}(nonatomic,strong)NSArray\ *\mbox{\hyperlink{interface_g_a_h_t_m_x_config_a923611ec6f2ccb5568d3f660d1e6ee10}{certificatesArray}};}
+\DoxyCodeLine{00168\ }
+\DoxyCodeLine{00178\ \textcolor{keyword}{@property}(nonatomic,strong)NSString\ *\mbox{\hyperlink{interface_g_a_h_t_m_x_config_a30e1135836a1fd91a531b1a820db312a}{useNSURLSession}};}
+\DoxyCodeLine{00179\ }
+\DoxyCodeLine{00188\ \textcolor{keyword}{@property}(nonatomic,strong)NSString\ *\mbox{\hyperlink{interface_g_a_h_t_m_x_config_a69a27ca3209df65c6d7c0dac3a5fe774}{useUIWebView}};}
+\DoxyCodeLine{00189\ }
+\DoxyCodeLine{00195\ \textcolor{keyword}{@property}(nonatomic,strong)NSString\ *\mbox{\hyperlink{interface_g_a_h_t_m_x_config_a128e505429f0c2b92021458a85d7e7a3}{useAlternateID}};}
+\DoxyCodeLine{00196\ }
+\DoxyCodeLine{00197\ }
+\DoxyCodeLine{00198\ }
+\DoxyCodeLine{00204\ \textcolor{keyword}{@property}(nonatomic,strong)NSString\ *\mbox{\hyperlink{interface_g_a_h_t_m_x_config_aaca469c375e31cd336e9e53678d823a1}{disableNonFatalLog}};}
+\DoxyCodeLine{00205\ }
+\DoxyCodeLine{00213\ \textcolor{keyword}{@property}(nonatomic,strong)NSString\ *\mbox{\hyperlink{interface_g_a_h_t_m_x_config_a3853d787a66a104b1426335c714a0862}{methodSwizzling}};}
+\DoxyCodeLine{00214\ }
+\DoxyCodeLine{00221\ \textcolor{keyword}{@property}(nonatomic,readwrite)\textcolor{keywordtype}{double}\ sessionTimeOut\ \mbox{\hyperlink{interface_g_a_h_t_m_x_config_ab2ffd51bbf9b66de87ae7fa3b041ac3c}{NS\_DEPRECATED\_IOS}}(1.2.0,\ 2.1.0,\textcolor{stringliteral}{"{}use\ signalCacheTimeout\ from\ GAHGemaltoSignalConfig\ instead"{}});}
+\DoxyCodeLine{00222\ }
+\DoxyCodeLine{00230\ \textcolor{keyword}{@property}(nonatomic,readwrite)\textcolor{keywordtype}{double}\ ProfileRequestTimeout\ \mbox{\hyperlink{interface_g_a_h_t_m_x_config_a57ca140b424528b41c3e5c85fbd98e6c}{NS\_DEPRECATED\_IOS}}(1.2.0,\ 2.1.0,\textcolor{stringliteral}{"{}use\ signalPrefetchTimeout\ from\ GAHGemaltoSignalConfig\ instead"{}});}
+\DoxyCodeLine{00231\ }
+\DoxyCodeLine{00232\ }
+\DoxyCodeLine{00240\ +\ (instancetype)sharedConfigurationWithOrgID:(NSString*)orgID\ andFingerprintServer:(NSString\ *)fingerPrintServer;}
+\DoxyCodeLine{00241\ }
+\DoxyCodeLine{00242\ \textcolor{keyword}{@end}}
+
+\end{DoxyCode}
