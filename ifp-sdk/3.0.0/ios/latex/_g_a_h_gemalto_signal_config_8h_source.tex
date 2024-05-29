@@ -1,0 +1,81 @@
+\doxysection{GAHGemalto\+Signal\+Config.\+h}
+\hypertarget{_g_a_h_gemalto_signal_config_8h_source}{}\label{_g_a_h_gemalto_signal_config_8h_source}\index{build/external/Release/GAHRiskEngine.xcframework/ios-\/arm64/GAHRiskEngine.framework/Versions/A/Headers/GAHGemaltoSignalConfig.h@{build/external/Release/GAHRiskEngine.xcframework/ios-\/arm64/GAHRiskEngine.framework/Versions/A/Headers/GAHGemaltoSignalConfig.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *\ \ \ \ \ Copyright\ (c)\ 2018\ \ -\/\ \ GEMALTO\ DEVELOPEMENT\ -\/\ R\&D}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ *\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ *\ GEMALTO\ MAKES\ NO\ REPRESENTATIONS\ OR\ WARRANTIES\ ABOUT\ THE\ SUITABILITY\ OF}}
+\DoxyCodeLine{00007\ \textcolor{comment}{\ *\ THE\ SOFTWARE,\ EITHER\ EXPRESS\ OR\ IMPLIED,\ INCLUDING\ BUT\ NOT\ LIMITED}}
+\DoxyCodeLine{00008\ \textcolor{comment}{\ *\ TO\ THE\ IMPLIED\ WARRANTIES\ OF\ MERCHANTABILITY,\ FITNESS\ FOR\ A}}
+\DoxyCodeLine{00009\ \textcolor{comment}{\ *\ PARTICULAR\ PURPOSE,\ OR\ NON-\/INFRINGEMENT.\ GEMALTO\ SHALL\ NOT\ BE}}
+\DoxyCodeLine{00010\ \textcolor{comment}{\ *\ LIABLE\ FOR\ ANY\ DAMAGES\ SUFFERED\ BY\ LICENSEE\ AS\ A\ RESULT\ OF\ USING,}}
+\DoxyCodeLine{00011\ \textcolor{comment}{\ *\ MODIFYING\ OR\ DISTRIBUTING\ THIS\ SOFTWARE\ OR\ ITS\ DERIVATIVES.}}
+\DoxyCodeLine{00012\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00013\ \textcolor{comment}{\ *\ THIS\ SOFTWARE\ IS\ NOT\ DESIGNED\ OR\ INTENDED\ FOR\ USE\ OR\ RESALE\ AS\ ON-\/LINE}}
+\DoxyCodeLine{00014\ \textcolor{comment}{\ *\ CONTROL\ EQUIPMENT\ IN\ HAZARDOUS\ ENVIRONMENTS\ REQUIRING\ FAIL-\/SAFE}}
+\DoxyCodeLine{00015\ \textcolor{comment}{\ *\ PERFORMANCE,\ SUCH\ AS\ IN\ THE\ OPERATION\ OF\ NUCLEAR\ FACILITIES,\ AIRCRAFT}}
+\DoxyCodeLine{00016\ \textcolor{comment}{\ *\ NAVIGATION\ OR\ COMMUNICATION\ SYSTEMS,\ AIR\ TRAFFIC\ CONTROL,\ DIRECT\ LIFE}}
+\DoxyCodeLine{00017\ \textcolor{comment}{\ *\ SUPPORT\ MACHINES,\ OR\ WEAPONS\ SYSTEMS,\ IN\ WHICH\ THE\ FAILURE\ OF\ THE}}
+\DoxyCodeLine{00018\ \textcolor{comment}{\ *\ SOFTWARE\ COULD\ LEAD\ DIRECTLY\ TO\ DEATH,\ PERSONAL\ INJURY,\ OR\ SEVERE}}
+\DoxyCodeLine{00019\ \textcolor{comment}{\ *\ PHYSICAL\ OR\ ENVIRONMENTAL\ DAMAGE\ ("{}HIGH\ RISK\ ACTIVITIES"{}).\ GEMALTO}}
+\DoxyCodeLine{00020\ \textcolor{comment}{\ *\ SPECIFICALLY\ DISCLAIMS\ ANY\ EXPRESS\ OR\ IMPLIED\ WARRANTY\ OF\ FITNESS\ FOR}}
+\DoxyCodeLine{00021\ \textcolor{comment}{\ *\ HIGH\ RISK\ ACTIVITIES.}}
+\DoxyCodeLine{00022\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00023\ \textcolor{comment}{\ *\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00024\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{comment}{//\#import\ <GAHRiskEngine/GAHRiskEngine.h>}}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#import\ "{}GAHConfig.h"{}}}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ @\textcolor{keyword}{import}\ Foundation;}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00036\ \textcolor{keyword}{@interface\ }\mbox{\hyperlink{interface_g_a_h_gemalto_signal_config}{GAHGemaltoSignalConfig}}\ :\ \mbox{\hyperlink{interface_g_a_h_config}{GAHConfig}}}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00045\ +(instancetype)\mbox{\hyperlink{interface_g_a_h_gemalto_signal_config_a68d20d2f84c501208dc4c72ad6c3275a}{sharedConfiguration}};}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00053\ -\/\ (void)SetCustomData:(NSData\ *)byteArray;}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00063\ -\/\ (void)setLocFetchTime:(NSInteger)locationFetchTimeOut;}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00072\ -\/\ (void)setLocAllowedFreshTime:(NSInteger)locationAllowedFetchTimeOut;}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00079\ -\/\ (void)setLocBackgrounCollectionTime:(NSInteger)locationBackgroundTimeOut;}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00088\ -\/\ (NSData\ *)\mbox{\hyperlink{interface_g_a_h_gemalto_signal_config_abc45e2e979af9a7de3c00af6bf05980c}{getPropertyByteArray}};}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00095\ -\/\ (NSInteger)\mbox{\hyperlink{interface_g_a_h_gemalto_signal_config_a28da9618f8b61ec527a9941687bf0839}{getLocFetchTime}};}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00102\ -\/\ (NSInteger)\mbox{\hyperlink{interface_g_a_h_gemalto_signal_config_a1aac7534228708b2763bc1f0c884c01e}{getLocAllowedFreshTime}};}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00109\ -\/\ (NSInteger)\mbox{\hyperlink{interface_g_a_h_gemalto_signal_config_a55f29c7d79d36437622a6391abebe738}{getLocBackgrounCollectionTime}};}
+\DoxyCodeLine{00110\ }
+\DoxyCodeLine{00111\ \textcolor{preprocessor}{\#pragma\ internal\ methods\ to\ IdCloud\ Fraud\ Prevention\ SDK}}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00119\ -\/\ (void)setUserAgent:(NSString\ *)userAgent;}
+\DoxyCodeLine{00120\ }
+\DoxyCodeLine{00121\ }
+\DoxyCodeLine{00128\ -\/\ (NSString\ *)\mbox{\hyperlink{interface_g_a_h_gemalto_signal_config_a56170ae0d6ce2de54e8fbf7212fc8670}{getUserAgent}};}
+\DoxyCodeLine{00129\ }
+\DoxyCodeLine{00138\ \textcolor{keyword}{@property}(nonatomic,readwrite)\textcolor{keywordtype}{double}\ \mbox{\hyperlink{interface_g_a_h_gemalto_signal_config_ae3bc877eee0f2a93b067050d9698c3c9}{signalPrefetchTimeout}};}
+\DoxyCodeLine{00139\ }
+\DoxyCodeLine{00151\ \textcolor{keyword}{@property}(nonatomic,readwrite)\textcolor{keywordtype}{double}\ \mbox{\hyperlink{interface_g_a_h_gemalto_signal_config_a4e6d353c8d7e2e86d666634e41185062}{signalCacheTimeout}};}
+\DoxyCodeLine{00152\ }
+\DoxyCodeLine{00158\ -\/\ (void)setFetchTimeOut:(NSInteger)timeOut;}
+\DoxyCodeLine{00159\ }
+\DoxyCodeLine{00160\ }
+\DoxyCodeLine{00166\ -\/\ (NSInteger)\mbox{\hyperlink{interface_g_a_h_gemalto_signal_config_a99715a6f8526ee7077dac0a0537af631}{getFetchTimeOut}};}
+\DoxyCodeLine{00167\ }
+\DoxyCodeLine{00168\ }
+\DoxyCodeLine{00169\ \textcolor{keyword}{@end}}
+
+\end{DoxyCode}

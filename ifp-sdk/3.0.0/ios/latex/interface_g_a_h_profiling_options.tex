@@ -1,0 +1,126 @@
+\doxysection{GAHProfiling\+Options Class Reference}
+\hypertarget{interface_g_a_h_profiling_options}{}\label{interface_g_a_h_profiling_options}\index{GAHProfilingOptions@{GAHProfilingOptions}}
+
+
+{\ttfamily \#include $<$GAHProfiling\+Options.\+h$>$}
+
+Inheritance diagram for GAHProfiling\+Options\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_g_a_h_profiling_options}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_g_a_h_profiling_options_ae3e3bb366d40a10f01011fff0bb5acce}{disable\+Behavio\+Sec}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+NSString \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{interface_g_a_h_profiling_options_a750778358f96332359f4de5f0f6d36fa}{session\+ID}}
+\item 
+NSArray \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{interface_g_a_h_profiling_options_ad7e9f8b1637237077633f8f82fba4f79}{custom\+Attributes}}
+\item 
+NSString \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{interface_g_a_h_profiling_options_a60f6feca924cce6257ab769d387212ea}{location}}
+\item 
+NSString \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{interface_g_a_h_profiling_options_a5e91c034ceefb82d0eb867490cf5c536}{profile\+Status}}
+\item 
+NSNumber \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{interface_g_a_h_profiling_options_a05b11df4dadc8c857f33b7972575b786}{behavio\+Sec\+Duration}}
+\item 
+NSSet \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{interface_g_a_h_profiling_options_aa15d5ae1095a283398203811dce34491}{behavio\+Sec\+Included\+Views}}
+\item 
+NSSet \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{interface_g_a_h_profiling_options_afc2a432ac7379f8aa68c6bf1e0891e0f}{behavio\+Sec\+Masked\+Fields}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class to set different configuration parameters for profiling/signal collection of Threat\+Metrix Signal group. This class contains wrapper method for Profiling option APIs of Threat\+Metrix SDK. Internally all methods make a call to corresponding methods in Threat\+Metrix SDK. \begin{DoxySince}{Since}
+2.\+0.\+0 
+\end{DoxySince}
+
+
+\doxysubsection{Method Documentation}
+\Hypertarget{interface_g_a_h_profiling_options_ae3e3bb366d40a10f01011fff0bb5acce}\label{interface_g_a_h_profiling_options_ae3e3bb366d40a10f01011fff0bb5acce} 
+\index{GAHProfilingOptions@{GAHProfilingOptions}!disableBehavioSec@{disableBehavioSec}}
+\index{disableBehavioSec@{disableBehavioSec}!GAHProfilingOptions@{GAHProfilingOptions}}
+\doxysubsubsection{\texorpdfstring{disableBehavioSec}{disableBehavioSec}}
+{\footnotesize\ttfamily -\/ (void) disable\+Behavio\+Sec \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Method to disable TMXBehavio\+Sec . If not set, TMXBehavio\+Sec will automatically run during profiling. If set, the TMXBehavio\+Sec module is disabled. \begin{DoxySince}{Since}
+3.\+0.\+0 
+\end{DoxySince}
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{interface_g_a_h_profiling_options_a05b11df4dadc8c857f33b7972575b786}\label{interface_g_a_h_profiling_options_a05b11df4dadc8c857f33b7972575b786} 
+\index{GAHProfilingOptions@{GAHProfilingOptions}!behavioSecDuration@{behavioSecDuration}}
+\index{behavioSecDuration@{behavioSecDuration}!GAHProfilingOptions@{GAHProfilingOptions}}
+\doxysubsubsection{\texorpdfstring{behavioSecDuration}{behavioSecDuration}}
+{\footnotesize\ttfamily -\/ (NSNumber\texorpdfstring{$\ast$}{*}) behavio\+Sec\+Duration\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+@\+NSNumber behavio\+Sec\+Duration @abstract NSDictionary key for setting behavioural biometrics duration in seconds. @discussion Valid at profile time for setting behavioural biometrics duration. \begin{DoxyRemark}{Remarks}
+Behavioural biometrics is a premium feature. Default value is 300 seconds (5 minutes). 
+\end{DoxyRemark}
+\begin{DoxySince}{Since}
+3.\+0.\+0 
+\end{DoxySince}
+\Hypertarget{interface_g_a_h_profiling_options_aa15d5ae1095a283398203811dce34491}\label{interface_g_a_h_profiling_options_aa15d5ae1095a283398203811dce34491} 
+\index{GAHProfilingOptions@{GAHProfilingOptions}!behavioSecIncludedViews@{behavioSecIncludedViews}}
+\index{behavioSecIncludedViews@{behavioSecIncludedViews}!GAHProfilingOptions@{GAHProfilingOptions}}
+\doxysubsubsection{\texorpdfstring{behavioSecIncludedViews}{behavioSecIncludedViews}}
+{\footnotesize\ttfamily -\/ (NSSet\texorpdfstring{$\ast$}{*}) behavio\+Sec\+Included\+Views\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+@\+NSSet behavio\+Sec\+Included\+Views @abstract NSDictionary key for passing a set of View\+Controller names to TMXBehavio\+Sec module. @discussion Valid at \mbox{[}profile\+:\mbox{]} time for passing a set (NSSet) of View Controller names to be monitored by TMXBehavio\+Sec. By default all View\+Controllers are monitored. \begin{DoxySince}{Since}
+3.\+0.\+0 
+\end{DoxySince}
+\Hypertarget{interface_g_a_h_profiling_options_afc2a432ac7379f8aa68c6bf1e0891e0f}\label{interface_g_a_h_profiling_options_afc2a432ac7379f8aa68c6bf1e0891e0f} 
+\index{GAHProfilingOptions@{GAHProfilingOptions}!behavioSecMaskedFields@{behavioSecMaskedFields}}
+\index{behavioSecMaskedFields@{behavioSecMaskedFields}!GAHProfilingOptions@{GAHProfilingOptions}}
+\doxysubsubsection{\texorpdfstring{behavioSecMaskedFields}{behavioSecMaskedFields}}
+{\footnotesize\ttfamily -\/ (NSSet\texorpdfstring{$\ast$}{*}) behavio\+Sec\+Masked\+Fields\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+@\+NSSet behavio\+Sec\+Masked\+Fields @abstract NSDictionary key for setting a set of the UIText\+Field tracking ids from which TMXBehavio\+Sec should collect data in masked mode. By default all information typed in non-\/secure fields in are processed as normal. If you want to collect this data in Masked (anonymous) mode, add its identifier using this method. @discussion Valid at \mbox{[}profile\+:\mbox{]} time for passing a set (NSSet) of tracking ids to be treated as masked. \begin{DoxySince}{Since}
+3.\+0.\+0 
+\end{DoxySince}
+\Hypertarget{interface_g_a_h_profiling_options_ad7e9f8b1637237077633f8f82fba4f79}\label{interface_g_a_h_profiling_options_ad7e9f8b1637237077633f8f82fba4f79} 
+\index{GAHProfilingOptions@{GAHProfilingOptions}!customAttributes@{customAttributes}}
+\index{customAttributes@{customAttributes}!GAHProfilingOptions@{GAHProfilingOptions}}
+\doxysubsubsection{\texorpdfstring{customAttributes}{customAttributes}}
+{\footnotesize\ttfamily -\/ (NSArray\texorpdfstring{$\ast$}{*}) custom\+Attributes\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+@\+NSarray custom\+Attributes @abstract NSDictionary key for Custom Attributes. @discussion Valid at profile time for setting the any custom attributes to be included in the profiling data. \begin{DoxySince}{Since}
+2.\+0.\+0 
+\end{DoxySince}
+\Hypertarget{interface_g_a_h_profiling_options_a60f6feca924cce6257ab769d387212ea}\label{interface_g_a_h_profiling_options_a60f6feca924cce6257ab769d387212ea} 
+\index{GAHProfilingOptions@{GAHProfilingOptions}!location@{location}}
+\index{location@{location}!GAHProfilingOptions@{GAHProfilingOptions}}
+\doxysubsubsection{\texorpdfstring{location}{location}}
+{\footnotesize\ttfamily -\/ (NSString\texorpdfstring{$\ast$}{*}) location\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+@string location @abstract NSDictionary key for setting location. @discussion Valid at profile time for setting the location to be included in the profiling data. This should only be used if location services are not enabled. \begin{DoxySince}{Since}
+2.\+0.\+0 
+\end{DoxySince}
+\Hypertarget{interface_g_a_h_profiling_options_a5e91c034ceefb82d0eb867490cf5c536}\label{interface_g_a_h_profiling_options_a5e91c034ceefb82d0eb867490cf5c536} 
+\index{GAHProfilingOptions@{GAHProfilingOptions}!profileStatus@{profileStatus}}
+\index{profileStatus@{profileStatus}!GAHProfilingOptions@{GAHProfilingOptions}}
+\doxysubsubsection{\texorpdfstring{profileStatus}{profileStatus}}
+{\footnotesize\ttfamily -\/ (NSString\texorpdfstring{$\ast$}{*}) profile\+Status\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+@string profile\+Status @abstract NSDictionary key for retrieving the profiling status @discussion Valid at results time for getting the status of the current profiling request. \begin{DoxySince}{Since}
+2.\+0.\+0 
+\end{DoxySince}
+\Hypertarget{interface_g_a_h_profiling_options_a750778358f96332359f4de5f0f6d36fa}\label{interface_g_a_h_profiling_options_a750778358f96332359f4de5f0f6d36fa} 
+\index{GAHProfilingOptions@{GAHProfilingOptions}!sessionID@{sessionID}}
+\index{sessionID@{sessionID}!GAHProfilingOptions@{GAHProfilingOptions}}
+\doxysubsubsection{\texorpdfstring{sessionID}{sessionID}}
+{\footnotesize\ttfamily -\/ (NSString\texorpdfstring{$\ast$}{*}) session\+ID\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+@string session\+ID @abstract NSDictionary key for Session ID. @discussion Valid at profile time, and result time for setting/retrieving the session ID. \begin{DoxySince}{Since}
+2.\+0.\+0 
+\end{DoxySince}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+build/external/\+Release/\+GAHRisk\+Engine.\+xcframework/ios-\/arm64/\+GAHRisk\+Engine.\+framework/\+Versions/\+A/\+Headers/GAHProfiling\+Options.\+h\end{DoxyCompactItemize}

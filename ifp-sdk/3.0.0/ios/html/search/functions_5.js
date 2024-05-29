@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['setactivesignals_3a_0',['setActiveSignals:',['../interface_g_a_h_core.html#a206f7029a8120e0ad19c372e6d817531',1,'GAHCore']]],
+  ['setactivesignalsgroup_3a_1',['setActiveSignalsGroup:',['../interface_g_a_h_core.html#a7f0724dba5eecd264ca8640cd0feacbd',1,'GAHCore']]],
+  ['setcustomdata_3a_2',['SetCustomData:',['../interface_g_a_h_gemalto_signal_config.html#a20abb5b60753db60cfb8169bfb6ae5c8',1,'GAHGemaltoSignalConfig']]],
+  ['setcustomsignaloptionstmx_3a_3',['setCustomSignalOptionsTMX:',['../interface_g_a_h_core.html#afda47d8d483ebc6e5de248da98a442c0',1,'GAHCore']]],
+  ['setfetchtimeout_3a_4',['setFetchTimeOut:',['../interface_g_a_h_gemalto_signal_config.html#aed5ada73cd0dcdb0437770f2a9d9182c',1,'GAHGemaltoSignalConfig']]],
+  ['sethttpconnectiontimeout_3a_5',['setHTTPConnectionTimeout:',['../interface_g_a_h_core_config.html#ac6066521c1acb3c3f0c7bb4ea37cba62',1,'GAHCoreConfig']]],
+  ['setlocallowedfreshtime_3a_6',['setLocAllowedFreshTime:',['../interface_g_a_h_gemalto_signal_config.html#aee52b407d2b150cc31db5df5ef4c33ae',1,'GAHGemaltoSignalConfig']]],
+  ['setlocbackgrouncollectiontime_3a_7',['setLocBackgrounCollectionTime:',['../interface_g_a_h_gemalto_signal_config.html#afad9fd3e5ac9d3c5b7adeefc0548047f',1,'GAHGemaltoSignalConfig']]],
+  ['setlocfetchtime_3a_8',['setLocFetchTime:',['../interface_g_a_h_gemalto_signal_config.html#a13b2789c319d03c6abba1a4d15c00d75',1,'GAHGemaltoSignalConfig']]],
+  ['setsdkerrorlistener_3a_9',['setSDKErrorListener:',['../interface_g_a_h_core_config.html#af462eea28090e8b378b8e70cede4dfdd',1,'GAHCoreConfig']]],
+  ['setsignalcollectionglobaltimeout_3a_10',['setSignalCollectionGlobalTimeout:',['../interface_g_a_h_core_config.html#ad437326b54d80aa0a81fef4c91268548',1,'GAHCoreConfig']]],
+  ['settransactionascritical_11',['setTransactionAsCritical',['../interface_g_a_h_core.html#aa391dbf5ca396001ba5c254486dfdba7',1,'GAHCore']]],
+  ['setuseragent_3a_12',['setUserAgent:',['../interface_g_a_h_gemalto_signal_config.html#a9360cccb8871e756cb0ce5fbd919424c',1,'GAHGemaltoSignalConfig']]],
+  ['sharedconfiguration_13',['sharedConfiguration',['../interface_g_a_h_gemalto_signal_config.html#a68d20d2f84c501208dc4c72ad6c3275a',1,'GAHGemaltoSignalConfig']]],
+  ['sharedconfigurationwithorgid_3aandfingerprintserver_3a_14',['sharedConfigurationWithOrgID:andFingerprintServer:',['../interface_g_a_h_t_m_x_config.html#a6b36ce07a0770a5c23c579a8f50838b0',1,'GAHTMXConfig']]],
+  ['sharedconfigurationwithurl_3a_15',['sharedConfigurationWithUrl:',['../interface_g_a_h_core_config.html#a6cf8b4a0adee9ac685c569aefad9a7e6',1,'GAHCoreConfig']]],
+  ['startprefetchsignals_16',['startPrefetchSignals',['../interface_g_a_h_core.html#ad0aabafb3c5b6ce0c5cc121150e8a126',1,'GAHCore']]],
+  ['stopprefetchsignals_17',['stopPrefetchSignals',['../interface_g_a_h_core.html#a8caebfb5a694069d0f208f1592734a32',1,'GAHCore']]]
+];
