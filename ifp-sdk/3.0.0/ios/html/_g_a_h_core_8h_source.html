@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>IdCloud Fraud Prevention: build/external/Release/GAHRiskEngine.xcframework/ios-arm64/GAHRiskEngine.framework/Versions/A/Headers/GAHCore.h Source File</title>
+<title>IdCloud Fraud Prevention: build/external/Release/GAHRiskEngine.xcframework/ios-arm64/GAHRiskEngine.framework/Headers/GAHCore.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -74,7 +74,7 @@ $(document).ready(function() { init_codefold(0); });
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_4fef79e7177ba769987a8da36c892c5f.html">build</a></li><li class="navelem"><a class="el" href="dir_16dac43800044cf0b6db9998de6d92a6.html">external</a></li><li class="navelem"><a class="el" href="dir_aeb3f01a0732a860590b98188f579ab1.html">Release</a></li><li class="navelem"><a class="el" href="dir_49dcd24289994deb1d1f8ebaf080f884.html">GAHRiskEngine.xcframework</a></li><li class="navelem"><a class="el" href="dir_a92ba4d1d7af1179400e51a68bfcc69b.html">ios-arm64</a></li><li class="navelem"><a class="el" href="dir_d99210a4e0f2bb6f39ab40462e3cd55f.html">GAHRiskEngine.framework</a></li><li class="navelem"><a class="el" href="dir_840ba14b744ee5712499dc5b473a625e.html">Versions</a></li><li class="navelem"><a class="el" href="dir_b4a7088cdf4fd3455f8e5881a2e84809.html">A</a></li><li class="navelem"><a class="el" href="dir_4d9f753def70793c3b763d3486b0cc96.html">Headers</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_4fef79e7177ba769987a8da36c892c5f.html">build</a></li><li class="navelem"><a class="el" href="dir_16dac43800044cf0b6db9998de6d92a6.html">external</a></li><li class="navelem"><a class="el" href="dir_aeb3f01a0732a860590b98188f579ab1.html">Release</a></li><li class="navelem"><a class="el" href="dir_49dcd24289994deb1d1f8ebaf080f884.html">GAHRiskEngine.xcframework</a></li><li class="navelem"><a class="el" href="dir_a92ba4d1d7af1179400e51a68bfcc69b.html">ios-arm64</a></li><li class="navelem"><a class="el" href="dir_d99210a4e0f2bb6f39ab40462e3cd55f.html">GAHRiskEngine.framework</a></li><li class="navelem"><a class="el" href="dir_89ccb9f9e26b6e6719ff90ea488b4b88.html">Headers</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -107,10 +107,10 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#import &lt;Foundation/Foundation.h&gt;</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#import &quot;GAHConfig.h&quot;</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#import &quot;GAHProfilingOptions.h&quot;</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#import &quot;GAHSignalGroupConstants.h&quot;</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#import &quot;GAHMetaInformation.h&quot;</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#import &lt;GAHRiskEngine/GAHConfig.h&gt;</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#import &lt;GAHRiskEngine/GAHProfilingOptions.h&gt;</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#import &lt;GAHRiskEngine/GAHSignalGroupConstants.h&gt;</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#import &lt;GAHRiskEngine/GAHMetaInformation.h&gt;</span></div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="keyword">typedef</span> void (^GAHSuccessHandler)(NSString *visitID);</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
@@ -120,53 +120,45 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="keyword">typedef</span> void (^GRESignalCollectionCallback)(NSString *request);</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="interface_g_a_h_core.html#a20c301c51cee6c3110bc384dcb9facb8">   61</a></span><span class="keyword">typedef</span> void (^GAHPrefetechStatus)(NSInteger statusCode, NSString *statusMessage);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="keyword">typedef</span> void (^GAHPrefetechStatus)(NSInteger statusCode, NSString *statusMessage);</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="interface_g_a_h_core.html">   67</a></span><span class="keyword">@interface </span><a class="code hl_interface" href="interface_g_a_h_core.html">GAHCore</a> : NSObject</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>__attribute__((visibility(<span class="stringliteral">&quot;default&quot;</span>)))</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="keyword">@interface </span>GAHCore : NSObject</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>+ (void)initialize:(NSSet&lt;<a class="code hl_interface" href="interface_g_a_h_config.html">GAHConfig</a>*&gt;*) configs;</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>+ (void)initialize:(NSSet&lt;GAHConfig*&gt;*) configs;</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>+ (void)<a class="code hl_function" href="interface_g_a_h_core.html#ad0aabafb3c5b6ce0c5cc121150e8a126">startPrefetchSignals</a>;</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>+ (void)startPrefetchSignals;</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>+(void)setActiveSignals:(NSDictionary *)activeSignals;</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>+(void)setActiveSignalsGroup:(NSArray *)activeGroupSignalsArray;</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>+(void)setActiveSignals:(NSDictionary *)activeSignals;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>+(void)setActiveSignalsGroup:(NSArray *)activeGroupSignalsArray;</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>+ (void)<a class="code hl_function" href="interface_g_a_h_core.html#aa391dbf5ca396001ba5c254486dfdba7">setTransactionAsCritical</a>;</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>+ (void)setCustomSignalOptionsTMX:(<a class="code hl_interface" href="interface_g_a_h_profiling_options.html">GAHProfilingOptions</a> *)options;</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>+(void)requestVisitID:(GAHSuccessHandler)successHandler</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>              failure:(GAHFailureHandler)failHandler;</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>+ (void)<a class="code hl_function" href="interface_g_a_h_core.html#a8caebfb5a694069d0f208f1592734a32">stopPrefetchSignals</a>;</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>+ (void)setTransactionAsCritical;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>+ (void)setCustomSignalOptionsTMX:(GAHProfilingOptions *)options;</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>+(void)requestVisitID:(GAHSuccessHandler)successHandler</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>              failure:(GAHFailureHandler)failHandler;</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>+ (void)stopPrefetchSignals;</div>
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>+(NSString *)<a class="code hl_function" href="interface_g_a_h_core.html#af71bc60508e983cb95f09950508d9f58">getSignalValuesJson</a>;</div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span> </div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>+(NSString *)getSignalValuesJson;</div>
 <div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span> </div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>+(<a class="code hl_interface" href="interface_g_a_h_meta_information.html">GAHMetaInformation</a>*)<a class="code hl_function" href="interface_g_a_h_core.html#a20c301c51cee6c3110bc384dcb9facb8">getSDKVersionInfo</a>;</div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>+(GAHMetaInformation*)getSDKVersionInfo;</div>
 <div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>+(void)requestSignalCollectionTiming:(NSString*)config :(GRESignalCollectionCallback)callbackHandler;</div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> </div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span> </div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>+(void)requestSignalCollectionTiming:(NSString*)config :(GRESignalCollectionCallback)callbackHandler;</div>
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span> </div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>+(void)requestPrefetchStatus:(GAHPrefetechStatus)prefetchStatus;</div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span><span class="keyword">@end</span></div>
-<div class="ttc" id="ainterface_g_a_h_config_html"><div class="ttname"><a href="interface_g_a_h_config.html">GAHConfig</a></div><div class="ttdef"><b>Definition</b> GAHConfig.h:33</div></div>
-<div class="ttc" id="ainterface_g_a_h_core_html"><div class="ttname"><a href="interface_g_a_h_core.html">GAHCore</a></div><div class="ttdef"><b>Definition</b> GAHCore.h:68</div></div>
-<div class="ttc" id="ainterface_g_a_h_core_html_a20c301c51cee6c3110bc384dcb9facb8"><div class="ttname"><a href="interface_g_a_h_core.html#a20c301c51cee6c3110bc384dcb9facb8">+[GAHCore getSDKVersionInfo]</a></div><div class="ttdeci">GAHMetaInformation * getSDKVersionInfo()</div></div>
-<div class="ttc" id="ainterface_g_a_h_core_html_a8caebfb5a694069d0f208f1592734a32"><div class="ttname"><a href="interface_g_a_h_core.html#a8caebfb5a694069d0f208f1592734a32">+[GAHCore stopPrefetchSignals]</a></div><div class="ttdeci">void stopPrefetchSignals()</div></div>
-<div class="ttc" id="ainterface_g_a_h_core_html_aa391dbf5ca396001ba5c254486dfdba7"><div class="ttname"><a href="interface_g_a_h_core.html#aa391dbf5ca396001ba5c254486dfdba7">+[GAHCore setTransactionAsCritical]</a></div><div class="ttdeci">void setTransactionAsCritical()</div></div>
-<div class="ttc" id="ainterface_g_a_h_core_html_ad0aabafb3c5b6ce0c5cc121150e8a126"><div class="ttname"><a href="interface_g_a_h_core.html#ad0aabafb3c5b6ce0c5cc121150e8a126">+[GAHCore startPrefetchSignals]</a></div><div class="ttdeci">void startPrefetchSignals()</div></div>
-<div class="ttc" id="ainterface_g_a_h_core_html_af71bc60508e983cb95f09950508d9f58"><div class="ttname"><a href="interface_g_a_h_core.html#af71bc60508e983cb95f09950508d9f58">+[GAHCore getSignalValuesJson]</a></div><div class="ttdeci">NSString * getSignalValuesJson()</div></div>
-<div class="ttc" id="ainterface_g_a_h_meta_information_html"><div class="ttname"><a href="interface_g_a_h_meta_information.html">GAHMetaInformation</a></div><div class="ttdef"><b>Definition</b> GAHMetaInformation.h:35</div></div>
-<div class="ttc" id="ainterface_g_a_h_profiling_options_html"><div class="ttname"><a href="interface_g_a_h_profiling_options.html">GAHProfilingOptions</a></div><div class="ttdef"><b>Definition</b> GAHProfilingOptions.h:33</div></div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span> </div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>+(void)requestPrefetchStatus:(GAHPrefetechStatus)prefetchStatus;</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span> </div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><span class="keyword">@end</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

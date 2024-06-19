@@ -1,5 +1,5 @@
 \doxysection{GAHProfiling\+Options.\+h}
-\hypertarget{_g_a_h_profiling_options_8h_source}{}\label{_g_a_h_profiling_options_8h_source}\index{build/external/Release/GAHRiskEngine.xcframework/ios-\/arm64/GAHRiskEngine.framework/Versions/A/Headers/GAHProfilingOptions.h@{build/external/Release/GAHRiskEngine.xcframework/ios-\/arm64/GAHRiskEngine.framework/Versions/A/Headers/GAHProfilingOptions.h}}
+\hypertarget{_g_a_h_profiling_options_8h_source}{}\label{_g_a_h_profiling_options_8h_source}\index{build/external/Release/GAHRiskEngine.xcframework/ios-\/arm64/GAHRiskEngine.framework/Headers/GAHProfilingOptions.h@{build/external/Release/GAHRiskEngine.xcframework/ios-\/arm64/GAHRiskEngine.framework/Headers/GAHProfilingOptions.h}}
 
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00001\ \textcolor{comment}{/*\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
@@ -29,24 +29,25 @@
 \DoxyCodeLine{00025\ }
 \DoxyCodeLine{00026\ \textcolor{preprocessor}{\#import\ <Foundation/Foundation.h>}}
 \DoxyCodeLine{00027\ }
-\DoxyCodeLine{00032\ \textcolor{keyword}{@interface\ }\mbox{\hyperlink{interface_g_a_h_profiling_options}{GAHProfilingOptions}}\ :\ NSObject}
-\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00032\ \_\_attribute\_\_((visibility(\textcolor{stringliteral}{"{}default"{}})))}
+\DoxyCodeLine{00033\ \textcolor{keyword}{@interface\ }GAHProfilingOptions\ :\ NSObject}
 \DoxyCodeLine{00034\ }
-\DoxyCodeLine{00041\ \textcolor{keyword}{@property}(nonatomic,strong)NSString\ *\mbox{\hyperlink{interface_g_a_h_profiling_options_a750778358f96332359f4de5f0f6d36fa}{sessionID}};}
-\DoxyCodeLine{00042\ }
-\DoxyCodeLine{00050\ \textcolor{keyword}{@property}(nonatomic,strong)NSArray\ *\mbox{\hyperlink{interface_g_a_h_profiling_options_ad7e9f8b1637237077633f8f82fba4f79}{customAttributes}};}
-\DoxyCodeLine{00051\ }
-\DoxyCodeLine{00060\ \textcolor{keyword}{@property}(nonatomic,strong)NSString\ *\mbox{\hyperlink{interface_g_a_h_profiling_options_a60f6feca924cce6257ab769d387212ea}{location}};}
-\DoxyCodeLine{00061\ }
-\DoxyCodeLine{00069\ \textcolor{keyword}{@property}(nonatomic,strong)NSString\ *\mbox{\hyperlink{interface_g_a_h_profiling_options_a5e91c034ceefb82d0eb867490cf5c536}{profileStatus}};}
-\DoxyCodeLine{00070\ }
-\DoxyCodeLine{00079\ \textcolor{keyword}{@property}(nonatomic)\ NSNumber*\ \mbox{\hyperlink{interface_g_a_h_profiling_options_a05b11df4dadc8c857f33b7972575b786}{behavioSecDuration}};}
-\DoxyCodeLine{00080\ }
-\DoxyCodeLine{00088\ \textcolor{keyword}{@property}(nonatomic)\ NSSet*\ \mbox{\hyperlink{interface_g_a_h_profiling_options_aa15d5ae1095a283398203811dce34491}{behavioSecIncludedViews}};}
-\DoxyCodeLine{00089\ }
-\DoxyCodeLine{00098\ \textcolor{keyword}{@property}(nonatomic)\ NSSet*\ \mbox{\hyperlink{interface_g_a_h_profiling_options_afc2a432ac7379f8aa68c6bf1e0891e0f}{behavioSecMaskedFields}};}
-\DoxyCodeLine{00099\ }
-\DoxyCodeLine{00104\ -\/\ (void)\mbox{\hyperlink{interface_g_a_h_profiling_options_ae3e3bb366d40a10f01011fff0bb5acce}{disableBehavioSec}};}
-\DoxyCodeLine{00105\ \textcolor{keyword}{@end}}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00042\ \textcolor{keyword}{@property}(nonatomic,strong)NSString\ *sessionID;}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00051\ \textcolor{keyword}{@property}(nonatomic,strong)NSArray\ *customAttributes;}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00061\ \textcolor{keyword}{@property}(nonatomic,strong)NSString\ *location;}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00070\ \textcolor{keyword}{@property}(nonatomic,strong)NSString\ *profileStatus;}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00080\ \textcolor{keyword}{@property}(nonatomic)\ NSNumber*\ behavioSecDuration;}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00089\ \textcolor{keyword}{@property}(nonatomic)\ NSSet*\ behavioSecIncludedViews;}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00099\ \textcolor{keyword}{@property}(nonatomic)\ NSSet*\ behavioSecMaskedFields;}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00105\ -\/\ (void)disableBehavioSec;}
+\DoxyCodeLine{00106\ \textcolor{keyword}{@end}}
 
 \end{DoxyCode}

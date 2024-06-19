@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>IdCloud Fraud Prevention: build/external/Release/GAHRiskEngine.xcframework/ios-arm64/GAHRiskEngine.framework/Versions/A/Headers/GAHCoreConfig.h Source File</title>
+<title>IdCloud Fraud Prevention: build/external/Release/GAHRiskEngine.xcframework/ios-arm64/GAHRiskEngine.framework/Headers/GAHCoreConfig.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -74,7 +74,7 @@ $(document).ready(function() { init_codefold(0); });
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_4fef79e7177ba769987a8da36c892c5f.html">build</a></li><li class="navelem"><a class="el" href="dir_16dac43800044cf0b6db9998de6d92a6.html">external</a></li><li class="navelem"><a class="el" href="dir_aeb3f01a0732a860590b98188f579ab1.html">Release</a></li><li class="navelem"><a class="el" href="dir_49dcd24289994deb1d1f8ebaf080f884.html">GAHRiskEngine.xcframework</a></li><li class="navelem"><a class="el" href="dir_a92ba4d1d7af1179400e51a68bfcc69b.html">ios-arm64</a></li><li class="navelem"><a class="el" href="dir_d99210a4e0f2bb6f39ab40462e3cd55f.html">GAHRiskEngine.framework</a></li><li class="navelem"><a class="el" href="dir_840ba14b744ee5712499dc5b473a625e.html">Versions</a></li><li class="navelem"><a class="el" href="dir_b4a7088cdf4fd3455f8e5881a2e84809.html">A</a></li><li class="navelem"><a class="el" href="dir_4d9f753def70793c3b763d3486b0cc96.html">Headers</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_4fef79e7177ba769987a8da36c892c5f.html">build</a></li><li class="navelem"><a class="el" href="dir_16dac43800044cf0b6db9998de6d92a6.html">external</a></li><li class="navelem"><a class="el" href="dir_aeb3f01a0732a860590b98188f579ab1.html">Release</a></li><li class="navelem"><a class="el" href="dir_49dcd24289994deb1d1f8ebaf080f884.html">GAHRiskEngine.xcframework</a></li><li class="navelem"><a class="el" href="dir_a92ba4d1d7af1179400e51a68bfcc69b.html">ios-arm64</a></li><li class="navelem"><a class="el" href="dir_d99210a4e0f2bb6f39ab40462e3cd55f.html">GAHRiskEngine.framework</a></li><li class="navelem"><a class="el" href="dir_89ccb9f9e26b6e6719ff90ea488b4b88.html">Headers</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -106,68 +106,62 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment"> * -----------------------------------------------------------------------------</span></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#import &quot;GAHConfig.h&quot;</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#import &quot;GAHErrorListener.h&quot;</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#import &lt;GAHRiskEngine/GAHConfig.h&gt;</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#import &lt;GAHRiskEngine/GAHErrorListener.h&gt;</span></div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="interface_g_a_h_t_l_s_configuration.html">   33</a></span><span class="keyword">@interface </span><a class="code hl_interface" href="interface_g_a_h_t_l_s_configuration.html">GAHTLSConfiguration</a> : NSObject</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="interface_g_a_h_t_l_s_configuration.html#ac73eb98f2f9bffe8deeefb671f9259bf">   40</a></span><span class="keyword">@property</span> BOOL <a class="code hl_property" href="interface_g_a_h_t_l_s_configuration.html#ac73eb98f2f9bffe8deeefb671f9259bf">insecureConnectionAllowed</a>;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="interface_g_a_h_t_l_s_configuration.html#a047b6b13eb326c4ddc7257138bdf95da">   46</a></span><span class="keyword">@property</span> BOOL <a class="code hl_property" href="interface_g_a_h_t_l_s_configuration.html#a047b6b13eb326c4ddc7257138bdf95da">selfSignedCertAllowed</a>;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="interface_g_a_h_t_l_s_configuration.html#afbc1505db97da8addf0db9129f16d3f0">   52</a></span><span class="keyword">@property</span> BOOL <a class="code hl_property" href="interface_g_a_h_t_l_s_configuration.html#afbc1505db97da8addf0db9129f16d3f0">hostnameMismatchAllowed</a>;</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="interface_g_a_h_t_l_s_configuration.html#a4108a8bece367c0deb88e02bcd8f4a90">   58</a></span><span class="keyword">@property</span> (strong, nonatomic) NSArray * <a class="code hl_property" href="interface_g_a_h_t_l_s_configuration.html#a4108a8bece367c0deb88e02bcd8f4a90">certificates</a>;</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="keyword">@end</span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>__attribute__((visibility(<span class="stringliteral">&quot;default&quot;</span>)))</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keyword">@interface </span>GAHTLSConfiguration : NSObject</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keyword">@property</span> BOOL insecureConnectionAllowed;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="keyword">@property</span> BOOL selfSignedCertAllowed;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="keyword">@property</span> BOOL hostnameMismatchAllowed;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="keyword">@property</span> (strong, nonatomic) NSArray * certificates;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="keyword">@end</span></div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="interface_g_a_h_core_config.html">   67</a></span><span class="keyword">@interface </span><a class="code hl_interface" href="interface_g_a_h_core_config.html">GAHCoreConfig</a> : <a class="code hl_interface" href="interface_g_a_h_config.html">GAHConfig</a></div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>+ (instancetype)sharedConfigurationWithUrl:(NSString*)url;</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>+ (instancetype)getsharedConfigManagerObject;</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>-(void)setHTTPConnectionTimeout:(NSUInteger)timeout;</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>- (void)setSDKErrorListener:(<a class="code hl_interface" href="interface_g_a_h_error_listener.html">GAHErrorListener</a>*)errorListener;</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>- (<a class="code hl_interface" href="interface_g_a_h_error_listener.html">GAHErrorListener</a>*)getSDKErrorListener;</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>-(NSUInteger)getHTTPConnectionTimeout;</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>-(void)setSignalCollectionGlobalTimeout:(NSUInteger)timeout;</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>-(NSUInteger)getSignalCollectionGlobalTimeout;</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>- (void)GRESTLSConfiguration:(<a class="code hl_interface" href="interface_g_a_h_t_l_s_configuration.html">GAHTLSConfiguration</a>*)configuration;</div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> </div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>- (void)GRESTLSConfiguration:(NSArray*)certificates withRESDKTLSConfiguration:(<a class="code hl_interface" href="interface_g_a_h_t_l_s_configuration.html">GAHTLSConfiguration</a>*)configuration;</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>- (<a class="code hl_interface" href="interface_g_a_h_t_l_s_configuration.html">GAHTLSConfiguration</a>*)currentGRESTLSConfiguration;</div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span> </div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span> </div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>-(NSString *)getGAHUrl;</div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>__attribute__((visibility(<span class="stringliteral">&quot;default&quot;</span>)))</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="keyword">@interface </span>GAHCoreConfig : GAHConfig</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>+ (instancetype)sharedConfigurationWithUrl:(NSString*)url;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>+ (instancetype)getsharedConfigManagerObject;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>-(void)setHTTPConnectionTimeout:(NSUInteger)timeout;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>- (void)setSDKErrorListener:(GAHErrorListener*)errorListener;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>- (GAHErrorListener*)getSDKErrorListener;</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>-(NSUInteger)getHTTPConnectionTimeout;</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>-(void)setSignalCollectionGlobalTimeout:(NSUInteger)timeout;</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>-(NSUInteger)getSignalCollectionGlobalTimeout;</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> </div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>- (void)GRESTLSConfiguration:(GAHTLSConfiguration*)configuration;</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span> </div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>- (void)GRESTLSConfiguration:(NSArray*)certificates withRESDKTLSConfiguration:(GAHTLSConfiguration*)configuration;</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span> </div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span> </div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>- (GAHTLSConfiguration*)currentGRESTLSConfiguration;</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span> </div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>-(NSString *)getGAHUrl;</div>
 <div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span> </div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span><span class="keyword">@end</span></div>
-<div class="ttc" id="ainterface_g_a_h_config_html"><div class="ttname"><a href="interface_g_a_h_config.html">GAHConfig</a></div><div class="ttdef"><b>Definition</b> GAHConfig.h:33</div></div>
-<div class="ttc" id="ainterface_g_a_h_core_config_html"><div class="ttname"><a href="interface_g_a_h_core_config.html">GAHCoreConfig</a></div><div class="ttdef"><b>Definition</b> GAHCoreConfig.h:68</div></div>
-<div class="ttc" id="ainterface_g_a_h_error_listener_html"><div class="ttname"><a href="interface_g_a_h_error_listener.html">GAHErrorListener</a></div><div class="ttdef"><b>Definition</b> GAHErrorListener.h:32</div></div>
-<div class="ttc" id="ainterface_g_a_h_t_l_s_configuration_html"><div class="ttname"><a href="interface_g_a_h_t_l_s_configuration.html">GAHTLSConfiguration</a></div><div class="ttdef"><b>Definition</b> GAHCoreConfig.h:34</div></div>
-<div class="ttc" id="ainterface_g_a_h_t_l_s_configuration_html_a047b6b13eb326c4ddc7257138bdf95da"><div class="ttname"><a href="interface_g_a_h_t_l_s_configuration.html#a047b6b13eb326c4ddc7257138bdf95da">GAHTLSConfiguration::selfSignedCertAllowed</a></div><div class="ttdeci">BOOL selfSignedCertAllowed</div><div class="ttdef"><b>Definition</b> GAHCoreConfig.h:46</div></div>
-<div class="ttc" id="ainterface_g_a_h_t_l_s_configuration_html_a4108a8bece367c0deb88e02bcd8f4a90"><div class="ttname"><a href="interface_g_a_h_t_l_s_configuration.html#a4108a8bece367c0deb88e02bcd8f4a90">GAHTLSConfiguration::certificates</a></div><div class="ttdeci">NSArray * certificates</div><div class="ttdef"><b>Definition</b> GAHCoreConfig.h:58</div></div>
-<div class="ttc" id="ainterface_g_a_h_t_l_s_configuration_html_ac73eb98f2f9bffe8deeefb671f9259bf"><div class="ttname"><a href="interface_g_a_h_t_l_s_configuration.html#ac73eb98f2f9bffe8deeefb671f9259bf">GAHTLSConfiguration::insecureConnectionAllowed</a></div><div class="ttdeci">BOOL insecureConnectionAllowed</div><div class="ttdef"><b>Definition</b> GAHCoreConfig.h:40</div></div>
-<div class="ttc" id="ainterface_g_a_h_t_l_s_configuration_html_afbc1505db97da8addf0db9129f16d3f0"><div class="ttname"><a href="interface_g_a_h_t_l_s_configuration.html#afbc1505db97da8addf0db9129f16d3f0">GAHTLSConfiguration::hostnameMismatchAllowed</a></div><div class="ttdeci">BOOL hostnameMismatchAllowed</div><div class="ttdef"><b>Definition</b> GAHCoreConfig.h:52</div></div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span> </div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span> </div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span><span class="keyword">@end</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

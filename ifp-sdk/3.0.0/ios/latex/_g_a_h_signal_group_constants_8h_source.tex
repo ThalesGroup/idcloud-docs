@@ -1,5 +1,5 @@
 \doxysection{GAHSignal\+Group\+Constants.\+h}
-\hypertarget{_g_a_h_signal_group_constants_8h_source}{}\label{_g_a_h_signal_group_constants_8h_source}\index{build/external/Release/GAHRiskEngine.xcframework/ios-\/arm64/GAHRiskEngine.framework/Versions/A/Headers/GAHSignalGroupConstants.h@{build/external/Release/GAHRiskEngine.xcframework/ios-\/arm64/GAHRiskEngine.framework/Versions/A/Headers/GAHSignalGroupConstants.h}}
+\hypertarget{_g_a_h_signal_group_constants_8h_source}{}\label{_g_a_h_signal_group_constants_8h_source}\index{build/external/Release/GAHRiskEngine.xcframework/ios-\/arm64/GAHRiskEngine.framework/Headers/GAHSignalGroupConstants.h@{build/external/Release/GAHRiskEngine.xcframework/ios-\/arm64/GAHRiskEngine.framework/Headers/GAHSignalGroupConstants.h}}
 
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00001\ \textcolor{comment}{/*\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
@@ -30,87 +30,143 @@
 \DoxyCodeLine{00026\ \textcolor{preprocessor}{\#import\ <Foundation/Foundation.h>}}
 \DoxyCodeLine{00027\ }
 \DoxyCodeLine{00028\ }
-\DoxyCodeLine{00033\ \textcolor{keyword}{@interface\ }\mbox{\hyperlink{interface_g_a_h_signal_group_constants}{GAHSignalGroupConstants}}\ :\ NSObject}
-\DoxyCodeLine{00034\ }
-\DoxyCodeLine{00035\ \textcolor{comment}{//\ List\ of\ Signal\ Group\ Name}}
-\DoxyCodeLine{00036\ extern\ NSString*\ SIGNAL\_GROUP\_DEVICE;}
-\DoxyCodeLine{00037\ extern\ NSString*\ SIGNAL\_GROUP\_LOCATION;}
-\DoxyCodeLine{00038\ extern\ NSString*\ SIGNAL\_GROUP\_NETWORK;}
-\DoxyCodeLine{00039\ extern\ NSString*\ SIGNAL\_GROUP\_PLATFORM;}
-\DoxyCodeLine{00040\ extern\ NSString*\ SIGNAL\_GROUP\_PLATFORMSETTING;}
-\DoxyCodeLine{00041\ extern\ NSString*\ SIGNAL\_GROUP\_APP;}
-\DoxyCodeLine{00042\ extern\ NSString*\ SIGNAL\_GROUP\_SDK;}
-\DoxyCodeLine{00043\ extern\ NSString*\ SIGNAL\_GROUP\_SIM;}
-\DoxyCodeLine{00044\ extern\ NSString*\ SIGNAL\_GROUP\_NETWORKSETTINGS;}
-\DoxyCodeLine{00045\ extern\ NSString*\ SIGNAL\_GROUP\_BROWSER;}
-\DoxyCodeLine{00046\ extern\ NSString*\ SIGNAL\_GROUP\_THREATMETRIX;}
-\DoxyCodeLine{00047\ }
-\DoxyCodeLine{00048\ \textcolor{comment}{//Sub\ Signals\ of\ Device\ Signal\ Group}}
-\DoxyCodeLine{00049\ extern\ NSString*\ DEVICE\_SIGNAL\_MANUFACTURER;}
-\DoxyCodeLine{00050\ extern\ NSString*\ DEVICE\_SIGNAL\_MODEL;}
-\DoxyCodeLine{00051\ extern\ NSString*\ DEVICE\_SIGNAL\_IDENTIFIERFORVENDOR;}
-\DoxyCodeLine{00052\ extern\ NSString*\ DEVICE\_SIGNAL\_FINGERPRINT;}
-\DoxyCodeLine{00053\ extern\ NSString*\ DEVICE\_SIGNAL\_SCREEN\_WIDTH;}
-\DoxyCodeLine{00054\ extern\ NSString*\ DEVICE\_SIGNAL\_SCREEN\_HEIGHT;}
-\DoxyCodeLine{00055\ extern\ NSString*\ DEVICE\_SIGNAL\_BATTERY;}
-\DoxyCodeLine{00056\ extern\ NSString*\ DEVICE\_SIGNAL\_MEMORY;}
-\DoxyCodeLine{00057\ extern\ NSString*\ DEVICE\_SIGNAL\_PROCESSOR;}
-\DoxyCodeLine{00058\ }
-\DoxyCodeLine{00059\ \ \textcolor{comment}{//Sub\ Signals\ of\ Location\ Signal\ Group}}
-\DoxyCodeLine{00060\ extern\ NSString*\ PROVIDER\_LOCATION\_SIGNAL;}
-\DoxyCodeLine{00061\ extern\ NSString*\ PROVIDER\_COUNTRY\_NAME;}
-\DoxyCodeLine{00062\ extern\ NSString*\ PROVIDER\_COUNTRY\_CODE;}
-\DoxyCodeLine{00063\ }
-\DoxyCodeLine{00064\ extern\ NSString*\ LOCATION\_SIGNAL\_NULL\_CALLBACK;}
-\DoxyCodeLine{00065\ extern\ NSString*\ LOCATION\_SIGNAL\_NULL\_SIGNALNAMES;}
-\DoxyCodeLine{00066\ }
-\DoxyCodeLine{00067\ \ \textcolor{comment}{//Sub\ Signals\ of\ of\ Platform\ signal\ Group}}
-\DoxyCodeLine{00068\ extern\ NSString*\ PLATFORM\_SIGNAL\_FAMILY;}
-\DoxyCodeLine{00069\ extern\ NSString*\ PLATFORM\_SIGNAL\_TYPE;}
-\DoxyCodeLine{00070\ extern\ NSString*\ PLATFORM\_SIGNAL\_VERSION;}
-\DoxyCodeLine{00071\ extern\ NSString*\ PLATFORM\_SIGNAL\_ISROOTED;}
-\DoxyCodeLine{00072\ }
-\DoxyCodeLine{00073\ \ \textcolor{comment}{//Sub\ Signals\ of\ Network\ Signal\ Group}}
-\DoxyCodeLine{00074\ extern\ NSString*\ NETWORK\_SIGNAL\_CARRIERNAME;}
-\DoxyCodeLine{00075\ extern\ NSString*\ NETWORK\_SIGNAL\_TYPE;}
-\DoxyCodeLine{00076\ extern\ NSString*\ NETWORK\_SIGNAL\_HWADDRESS;}
-\DoxyCodeLine{00077\ }
-\DoxyCodeLine{00078\ \ \textcolor{comment}{//Sub\ Signals\ of\ PlatformSettings\ Signal\ Group}}
-\DoxyCodeLine{00079\ extern\ NSString*\ PLATFORMSETTING\_SIGNAL\_TIMEZONE;}
-\DoxyCodeLine{00080\ extern\ NSString*\ PLATFORMSETTING\_SIGNAL\_LOCALE;}
-\DoxyCodeLine{00081\ extern\ NSString*\ PLATFORMSETTING\_SIGNAL\_ISWIFIENABLED;}
-\DoxyCodeLine{00082\ extern\ NSString*\ PLATFORMSETTING\_SIGNAL\_ISLOCATIONENABLED;}
-\DoxyCodeLine{00083\ extern\ NSString*\ PLATFORMSETTING\_SIGNAL\_DEVICELOCK;}
-\DoxyCodeLine{00084\ extern\ NSString*\ PLATFORMSETTING\_SIGNAL\_ISUNTRUSTEDAPPALLOWED;}
-\DoxyCodeLine{00085\ }
-\DoxyCodeLine{00086\ \textcolor{comment}{//Sub\ Signals\ of\ APP\ Signal\ Group}}
-\DoxyCodeLine{00087\ extern\ NSString*\ APP\_SIGNAL\_ID;}
-\DoxyCodeLine{00088\ extern\ NSString*\ APP\_SIGNAL\_NAME;}
-\DoxyCodeLine{00089\ extern\ NSString*\ APP\_SIGNAL\_VERSION;}
-\DoxyCodeLine{00090\ extern\ NSString*\ APP\_SIGNAL\_LOCALE;}
-\DoxyCodeLine{00091\ extern\ NSString*\ APP\_SIGNAL\_ISREGISTERDFORREMOTENOTIFICATION;}
-\DoxyCodeLine{00092\ extern\ NSString*\ APP\_SIGNAL\_INSTALLTIME;}
-\DoxyCodeLine{00093\ extern\ NSString*\ APP\_SIGNAL\_LASTUPDATETIME;}
-\DoxyCodeLine{00094\ extern\ NSString*\ APP\_SIGNAL\_INSTANCEID;}
-\DoxyCodeLine{00095\ extern\ NSString*\ APP\_SIGNAL\_APPFINGERPRINT;}
-\DoxyCodeLine{00096\ }
-\DoxyCodeLine{00097\ \textcolor{comment}{//Sub\ Signals\ of\ SDK\ Signal\ Group}}
-\DoxyCodeLine{00098\ extern\ NSString*\ SDK\_SIGNAL\_SUBCATEGORY\_VERSION;}
-\DoxyCodeLine{00099\ extern\ NSString*\ SDK\_SIGNAL\_SDK\_SUBCATEGORY\_NAME;}
-\DoxyCodeLine{00100\ }
-\DoxyCodeLine{00101\ \textcolor{comment}{//Sub\ Signals\ of\ Sim\ Signal\ Group}}
-\DoxyCodeLine{00102\ extern\ NSString*\ SIM\_SIGNAL\_IMSI;}
-\DoxyCodeLine{00103\ extern\ NSString*\ SIM\_SIGNAL\_ICCID;}
-\DoxyCodeLine{00104\ }
-\DoxyCodeLine{00105\ \textcolor{comment}{//Sub\ Signals\ of\ NetworkSettings\ Signal\ Group}}
-\DoxyCodeLine{00106\ extern\ NSString*\ NETWORKSETTINGS\_SIGNAL\_NAME;}
-\DoxyCodeLine{00107\ extern\ NSString*\ NETWORKSETTINGS\_SIGNAL\_SECURITY;}
-\DoxyCodeLine{00108\ }
-\DoxyCodeLine{00109\ \textcolor{comment}{//Sub\ Signals\ of\ Browser\ Signal\ Group}}
-\DoxyCodeLine{00110\ extern\ NSString*\ BROWSER\_SIGNAL\_USERAGENT;}
-\DoxyCodeLine{00111\ }
-\DoxyCodeLine{00112\ \textcolor{comment}{//Sub\ Signals\ of\ ThreatMetrix\ Signal\ Group}}
-\DoxyCodeLine{00113\ extern\ NSString*\ THREATMETRIX\_SIGNAL\_SESSIONID;}
-\DoxyCodeLine{00114\ \textcolor{keyword}{@end}}
+\DoxyCodeLine{00033\ \_\_attribute\_\_((visibility(\textcolor{stringliteral}{"{}default"{}})))}
+\DoxyCodeLine{00034\ \textcolor{keyword}{@interface\ }GAHSignalGroupConstants\ :\ NSObject}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \textcolor{comment}{//\ List\ of\ Signal\ Group\ Name}}
+\DoxyCodeLine{00037\ \_\_attribute\_\_((visibility("{}default"{})))}
+\DoxyCodeLine{00038\ extern\ NSString*\ SIGNAL\_GROUP\_DEVICE;}
+\DoxyCodeLine{00039\ \_\_attribute\_\_((visibility("{}default"{})))}
+\DoxyCodeLine{00040\ extern\ NSString*\ SIGNAL\_GROUP\_LOCATION;}
+\DoxyCodeLine{00041\ \_\_attribute\_\_((visibility("{}default"{})))}
+\DoxyCodeLine{00042\ extern\ NSString*\ SIGNAL\_GROUP\_NETWORK;}
+\DoxyCodeLine{00043\ \_\_attribute\_\_((visibility("{}default"{})))}
+\DoxyCodeLine{00044\ extern\ NSString*\ SIGNAL\_GROUP\_PLATFORM;}
+\DoxyCodeLine{00045\ \_\_attribute\_\_((visibility("{}default"{})))}
+\DoxyCodeLine{00046\ extern\ NSString*\ SIGNAL\_GROUP\_PLATFORMSETTING;}
+\DoxyCodeLine{00047\ \_\_attribute\_\_((visibility("{}default"{})))}
+\DoxyCodeLine{00048\ extern\ NSString*\ SIGNAL\_GROUP\_APP;}
+\DoxyCodeLine{00049\ \_\_attribute\_\_((visibility("{}default"{})))}
+\DoxyCodeLine{00050\ extern\ NSString*\ SIGNAL\_GROUP\_SDK;}
+\DoxyCodeLine{00051\ \_\_attribute\_\_((visibility("{}default"{})))}
+\DoxyCodeLine{00052\ extern\ NSString*\ SIGNAL\_GROUP\_SIM;}
+\DoxyCodeLine{00053\ \_\_attribute\_\_((visibility("{}default"{})))}
+\DoxyCodeLine{00054\ extern\ NSString*\ SIGNAL\_GROUP\_NETWORKSETTINGS;}
+\DoxyCodeLine{00055\ \_\_attribute\_\_((visibility("{}default"{})))}
+\DoxyCodeLine{00056\ extern\ NSString*\ SIGNAL\_GROUP\_BROWSER;}
+\DoxyCodeLine{00057\ \_\_attribute\_\_((visibility("{}default"{})))}
+\DoxyCodeLine{00058\ extern\ NSString*\ SIGNAL\_GROUP\_THREATMETRIX;}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \textcolor{comment}{//Sub\ Signals\ of\ Device\ Signal\ Group\ }}
+\DoxyCodeLine{00061\ \_\_attribute\_\_((visibility("{}default"{})))}
+\DoxyCodeLine{00062\ extern\ NSString*\ DEVICE\_SIGNAL\_MANUFACTURER;}
+\DoxyCodeLine{00063\ \_\_attribute\_\_((visibility("{}default"{})))}
+\DoxyCodeLine{00064\ extern\ NSString*\ DEVICE\_SIGNAL\_MODEL;}
+\DoxyCodeLine{00065\ \_\_attribute\_\_((visibility("{}default"{})))}
+\DoxyCodeLine{00066\ extern\ NSString*\ DEVICE\_SIGNAL\_IDENTIFIERFORVENDOR;}
+\DoxyCodeLine{00067\ \_\_attribute\_\_((visibility("{}default"{})))}
+\DoxyCodeLine{00068\ extern\ NSString*\ DEVICE\_SIGNAL\_FINGERPRINT;}
+\DoxyCodeLine{00069\ \_\_attribute\_\_((visibility("{}default"{})))}
+\DoxyCodeLine{00070\ extern\ NSString*\ DEVICE\_SIGNAL\_SCREEN\_WIDTH;}
+\DoxyCodeLine{00071\ \_\_attribute\_\_((visibility("{}default"{})))}
+\DoxyCodeLine{00072\ extern\ NSString*\ DEVICE\_SIGNAL\_SCREEN\_HEIGHT;}
+\DoxyCodeLine{00073\ \_\_attribute\_\_((visibility("{}default"{})))}
+\DoxyCodeLine{00074\ extern\ NSString*\ DEVICE\_SIGNAL\_BATTERY;}
+\DoxyCodeLine{00075\ \_\_attribute\_\_((visibility("{}default"{})))}
+\DoxyCodeLine{00076\ extern\ NSString*\ DEVICE\_SIGNAL\_MEMORY;}
+\DoxyCodeLine{00077\ \_\_attribute\_\_((visibility("{}default"{})))}
+\DoxyCodeLine{00078\ extern\ NSString*\ DEVICE\_SIGNAL\_PROCESSOR;}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00080\ \ \textcolor{comment}{//Sub\ Signals\ of\ Location\ Signal\ Group}}
+\DoxyCodeLine{00081\ \_\_attribute\_\_((visibility("{}default"{})))}
+\DoxyCodeLine{00082\ extern\ NSString*\ PROVIDER\_LOCATION\_SIGNAL;}
+\DoxyCodeLine{00083\ \_\_attribute\_\_((visibility("{}default"{})))}
+\DoxyCodeLine{00084\ extern\ NSString*\ PROVIDER\_COUNTRY\_NAME;}
+\DoxyCodeLine{00085\ \_\_attribute\_\_((visibility("{}default"{})))}
+\DoxyCodeLine{00086\ extern\ NSString*\ PROVIDER\_COUNTRY\_CODE;}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00088\ \_\_attribute\_\_((visibility("{}default"{})))}
+\DoxyCodeLine{00089\ extern\ NSString*\ LOCATION\_SIGNAL\_NULL\_CALLBACK;}
+\DoxyCodeLine{00090\ \_\_attribute\_\_((visibility("{}default"{})))}
+\DoxyCodeLine{00091\ extern\ NSString*\ LOCATION\_SIGNAL\_NULL\_SIGNALNAMES;}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00093\ \ \textcolor{comment}{//Sub\ Signals\ of\ of\ Platform\ signal\ Group}}
+\DoxyCodeLine{00094\ \_\_attribute\_\_((visibility("{}default"{})))}
+\DoxyCodeLine{00095\ extern\ NSString*\ PLATFORM\_SIGNAL\_FAMILY;}
+\DoxyCodeLine{00096\ \_\_attribute\_\_((visibility("{}default"{})))}
+\DoxyCodeLine{00097\ extern\ NSString*\ PLATFORM\_SIGNAL\_TYPE;}
+\DoxyCodeLine{00098\ \_\_attribute\_\_((visibility("{}default"{})))}
+\DoxyCodeLine{00099\ extern\ NSString*\ PLATFORM\_SIGNAL\_VERSION;}
+\DoxyCodeLine{00100\ \_\_attribute\_\_((visibility("{}default"{})))}
+\DoxyCodeLine{00101\ extern\ NSString*\ PLATFORM\_SIGNAL\_ISROOTED;}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00103\ \ \textcolor{comment}{//Sub\ Signals\ of\ Network\ Signal\ Group}}
+\DoxyCodeLine{00104\ \_\_attribute\_\_((visibility("{}default"{})))}
+\DoxyCodeLine{00105\ extern\ NSString*\ NETWORK\_SIGNAL\_CARRIERNAME;}
+\DoxyCodeLine{00106\ \_\_attribute\_\_((visibility("{}default"{})))}
+\DoxyCodeLine{00107\ extern\ NSString*\ NETWORK\_SIGNAL\_TYPE;}
+\DoxyCodeLine{00108\ \_\_attribute\_\_((visibility("{}default"{})))}
+\DoxyCodeLine{00109\ extern\ NSString*\ NETWORK\_SIGNAL\_HWADDRESS;}
+\DoxyCodeLine{00110\ }
+\DoxyCodeLine{00111\ \ \textcolor{comment}{//Sub\ Signals\ of\ PlatformSettings\ Signal\ Group}}
+\DoxyCodeLine{00112\ \_\_attribute\_\_((visibility("{}default"{})))}
+\DoxyCodeLine{00113\ extern\ NSString*\ PLATFORMSETTING\_SIGNAL\_TIMEZONE;}
+\DoxyCodeLine{00114\ \_\_attribute\_\_((visibility("{}default"{})))}
+\DoxyCodeLine{00115\ extern\ NSString*\ PLATFORMSETTING\_SIGNAL\_LOCALE;}
+\DoxyCodeLine{00116\ \_\_attribute\_\_((visibility("{}default"{})))}
+\DoxyCodeLine{00117\ extern\ NSString*\ PLATFORMSETTING\_SIGNAL\_ISWIFIENABLED;}
+\DoxyCodeLine{00118\ \_\_attribute\_\_((visibility("{}default"{})))}
+\DoxyCodeLine{00119\ extern\ NSString*\ PLATFORMSETTING\_SIGNAL\_ISLOCATIONENABLED;}
+\DoxyCodeLine{00120\ \_\_attribute\_\_((visibility("{}default"{})))}
+\DoxyCodeLine{00121\ extern\ NSString*\ PLATFORMSETTING\_SIGNAL\_DEVICELOCK;}
+\DoxyCodeLine{00122\ \_\_attribute\_\_((visibility("{}default"{})))}
+\DoxyCodeLine{00123\ extern\ NSString*\ PLATFORMSETTING\_SIGNAL\_ISUNTRUSTEDAPPALLOWED;}
+\DoxyCodeLine{00124\ }
+\DoxyCodeLine{00125\ \textcolor{comment}{//Sub\ Signals\ of\ APP\ Signal\ Group}}
+\DoxyCodeLine{00126\ \_\_attribute\_\_((visibility("{}default"{})))}
+\DoxyCodeLine{00127\ extern\ NSString*\ APP\_SIGNAL\_ID;}
+\DoxyCodeLine{00128\ \_\_attribute\_\_((visibility("{}default"{})))}
+\DoxyCodeLine{00129\ extern\ NSString*\ APP\_SIGNAL\_NAME;}
+\DoxyCodeLine{00130\ \_\_attribute\_\_((visibility("{}default"{})))}
+\DoxyCodeLine{00131\ extern\ NSString*\ APP\_SIGNAL\_VERSION;}
+\DoxyCodeLine{00132\ \_\_attribute\_\_((visibility("{}default"{})))}
+\DoxyCodeLine{00133\ extern\ NSString*\ APP\_SIGNAL\_LOCALE;}
+\DoxyCodeLine{00134\ \_\_attribute\_\_((visibility("{}default"{})))}
+\DoxyCodeLine{00135\ extern\ NSString*\ APP\_SIGNAL\_ISREGISTERDFORREMOTENOTIFICATION;}
+\DoxyCodeLine{00136\ \_\_attribute\_\_((visibility("{}default"{})))}
+\DoxyCodeLine{00137\ extern\ NSString*\ APP\_SIGNAL\_INSTALLTIME;}
+\DoxyCodeLine{00138\ \_\_attribute\_\_((visibility("{}default"{})))}
+\DoxyCodeLine{00139\ extern\ NSString*\ APP\_SIGNAL\_LASTUPDATETIME;}
+\DoxyCodeLine{00140\ \_\_attribute\_\_((visibility("{}default"{})))}
+\DoxyCodeLine{00141\ extern\ NSString*\ APP\_SIGNAL\_INSTANCEID;}
+\DoxyCodeLine{00142\ \_\_attribute\_\_((visibility("{}default"{})))}
+\DoxyCodeLine{00143\ extern\ NSString*\ APP\_SIGNAL\_APPFINGERPRINT;}
+\DoxyCodeLine{00144\ }
+\DoxyCodeLine{00145\ \textcolor{comment}{//Sub\ Signals\ of\ SDK\ Signal\ Group}}
+\DoxyCodeLine{00146\ \_\_attribute\_\_((visibility("{}default"{})))}
+\DoxyCodeLine{00147\ extern\ NSString*\ SDK\_SIGNAL\_SUBCATEGORY\_VERSION;}
+\DoxyCodeLine{00148\ \_\_attribute\_\_((visibility("{}default"{})))}
+\DoxyCodeLine{00149\ extern\ NSString*\ SDK\_SIGNAL\_SDK\_SUBCATEGORY\_NAME;}
+\DoxyCodeLine{00150\ }
+\DoxyCodeLine{00151\ \textcolor{comment}{//Sub\ Signals\ of\ Sim\ Signal\ Group}}
+\DoxyCodeLine{00152\ \_\_attribute\_\_((visibility("{}default"{})))}
+\DoxyCodeLine{00153\ extern\ NSString*\ SIM\_SIGNAL\_IMSI;}
+\DoxyCodeLine{00154\ \_\_attribute\_\_((visibility("{}default"{})))}
+\DoxyCodeLine{00155\ extern\ NSString*\ SIM\_SIGNAL\_ICCID;}
+\DoxyCodeLine{00156\ }
+\DoxyCodeLine{00157\ \textcolor{comment}{//Sub\ Signals\ of\ NetworkSettings\ Signal\ Group}}
+\DoxyCodeLine{00158\ \_\_attribute\_\_((visibility("{}default"{})))}
+\DoxyCodeLine{00159\ extern\ NSString*\ NETWORKSETTINGS\_SIGNAL\_NAME;}
+\DoxyCodeLine{00160\ \_\_attribute\_\_((visibility("{}default"{})))}
+\DoxyCodeLine{00161\ extern\ NSString*\ NETWORKSETTINGS\_SIGNAL\_SECURITY;}
+\DoxyCodeLine{00162\ }
+\DoxyCodeLine{00163\ \textcolor{comment}{//Sub\ Signals\ of\ Browser\ Signal\ Group}}
+\DoxyCodeLine{00164\ \_\_attribute\_\_((visibility("{}default"{})))}
+\DoxyCodeLine{00165\ extern\ NSString*\ BROWSER\_SIGNAL\_USERAGENT;}
+\DoxyCodeLine{00166\ }
+\DoxyCodeLine{00167\ \textcolor{comment}{//Sub\ Signals\ of\ ThreatMetrix\ Signal\ Group}}
+\DoxyCodeLine{00168\ \_\_attribute\_\_((visibility("{}default"{})))}
+\DoxyCodeLine{00169\ extern\ NSString*\ THREATMETRIX\_SIGNAL\_SESSIONID;}
+\DoxyCodeLine{00170\ \textcolor{keyword}{@end}}
 
 \end{DoxyCode}

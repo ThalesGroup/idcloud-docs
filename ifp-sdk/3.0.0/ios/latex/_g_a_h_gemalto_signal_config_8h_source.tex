@@ -1,5 +1,5 @@
 \doxysection{GAHGemalto\+Signal\+Config.\+h}
-\hypertarget{_g_a_h_gemalto_signal_config_8h_source}{}\label{_g_a_h_gemalto_signal_config_8h_source}\index{build/external/Release/GAHRiskEngine.xcframework/ios-\/arm64/GAHRiskEngine.framework/Versions/A/Headers/GAHGemaltoSignalConfig.h@{build/external/Release/GAHRiskEngine.xcframework/ios-\/arm64/GAHRiskEngine.framework/Versions/A/Headers/GAHGemaltoSignalConfig.h}}
+\hypertarget{_g_a_h_gemalto_signal_config_8h_source}{}\label{_g_a_h_gemalto_signal_config_8h_source}\index{build/external/Release/GAHRiskEngine.xcframework/ios-\/arm64/GAHRiskEngine.framework/Headers/GAHGemaltoSignalConfig.h@{build/external/Release/GAHRiskEngine.xcframework/ios-\/arm64/GAHRiskEngine.framework/Headers/GAHGemaltoSignalConfig.h}}
 
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00001\ \textcolor{comment}{/*\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
@@ -29,53 +29,54 @@
 \DoxyCodeLine{00025\ }
 \DoxyCodeLine{00026\ \textcolor{comment}{//\#import\ <GAHRiskEngine/GAHRiskEngine.h>}}
 \DoxyCodeLine{00027\ }
-\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#import\ "{}GAHConfig.h"{}}}
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#import\ <GAHRiskEngine/GAHConfig.h>}}
 \DoxyCodeLine{00029\ }
 \DoxyCodeLine{00030\ @\textcolor{keyword}{import}\ Foundation;}
 \DoxyCodeLine{00031\ }
-\DoxyCodeLine{00036\ \textcolor{keyword}{@interface\ }\mbox{\hyperlink{interface_g_a_h_gemalto_signal_config}{GAHGemaltoSignalConfig}}\ :\ \mbox{\hyperlink{interface_g_a_h_config}{GAHConfig}}}
-\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00036\ \_\_attribute\_\_((visibility(\textcolor{stringliteral}{"{}default"{}})))}
+\DoxyCodeLine{00037\ \textcolor{keyword}{@interface\ }GAHGemaltoSignalConfig\ :\ GAHConfig}
 \DoxyCodeLine{00038\ }
-\DoxyCodeLine{00045\ +(instancetype)\mbox{\hyperlink{interface_g_a_h_gemalto_signal_config_a68d20d2f84c501208dc4c72ad6c3275a}{sharedConfiguration}};}
-\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00046\ +(instancetype)sharedConfiguration;}
 \DoxyCodeLine{00047\ }
-\DoxyCodeLine{00053\ -\/\ (void)SetCustomData:(NSData\ *)byteArray;}
-\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00054\ -\/\ (void)SetCustomData:(NSData\ *)byteArray;}
 \DoxyCodeLine{00055\ }
 \DoxyCodeLine{00056\ }
-\DoxyCodeLine{00063\ -\/\ (void)setLocFetchTime:(NSInteger)locationFetchTimeOut;}
-\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00064\ -\/\ (void)setLocFetchTime:(NSInteger)locationFetchTimeOut;}
 \DoxyCodeLine{00065\ }
-\DoxyCodeLine{00072\ -\/\ (void)setLocAllowedFreshTime:(NSInteger)locationAllowedFetchTimeOut;}
-\DoxyCodeLine{00073\ }
-\DoxyCodeLine{00079\ -\/\ (void)setLocBackgrounCollectionTime:(NSInteger)locationBackgroundTimeOut;}
-\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00073\ -\/\ (void)setLocAllowedFreshTime:(NSInteger)locationAllowedFetchTimeOut;}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00080\ -\/\ (void)setLocBackgrounCollectionTime:(NSInteger)locationBackgroundTimeOut;}
 \DoxyCodeLine{00081\ }
-\DoxyCodeLine{00088\ -\/\ (NSData\ *)\mbox{\hyperlink{interface_g_a_h_gemalto_signal_config_abc45e2e979af9a7de3c00af6bf05980c}{getPropertyByteArray}};}
-\DoxyCodeLine{00089\ }
-\DoxyCodeLine{00095\ -\/\ (NSInteger)\mbox{\hyperlink{interface_g_a_h_gemalto_signal_config_a28da9618f8b61ec527a9941687bf0839}{getLocFetchTime}};}
-\DoxyCodeLine{00096\ }
-\DoxyCodeLine{00102\ -\/\ (NSInteger)\mbox{\hyperlink{interface_g_a_h_gemalto_signal_config_a1aac7534228708b2763bc1f0c884c01e}{getLocAllowedFreshTime}};}
-\DoxyCodeLine{00103\ }
-\DoxyCodeLine{00109\ -\/\ (NSInteger)\mbox{\hyperlink{interface_g_a_h_gemalto_signal_config_a55f29c7d79d36437622a6391abebe738}{getLocBackgrounCollectionTime}};}
-\DoxyCodeLine{00110\ }
-\DoxyCodeLine{00111\ \textcolor{preprocessor}{\#pragma\ internal\ methods\ to\ IdCloud\ Fraud\ Prevention\ SDK}}
-\DoxyCodeLine{00112\ }
-\DoxyCodeLine{00119\ -\/\ (void)setUserAgent:(NSString\ *)userAgent;}
-\DoxyCodeLine{00120\ }
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00089\ -\/\ (NSData\ *)getPropertyByteArray;}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00096\ -\/\ (NSInteger)getLocFetchTime;}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00103\ -\/\ (NSInteger)getLocAllowedFreshTime;}
+\DoxyCodeLine{00104\ }
+\DoxyCodeLine{00110\ -\/\ (NSInteger)getLocBackgrounCollectionTime;}
+\DoxyCodeLine{00111\ }
+\DoxyCodeLine{00112\ \textcolor{preprocessor}{\#pragma\ internal\ methods\ to\ IdCloud\ Fraud\ Prevention\ SDK}}
+\DoxyCodeLine{00113\ }
+\DoxyCodeLine{00120\ -\/\ (void)setUserAgent:(NSString\ *)userAgent;}
 \DoxyCodeLine{00121\ }
-\DoxyCodeLine{00128\ -\/\ (NSString\ *)\mbox{\hyperlink{interface_g_a_h_gemalto_signal_config_a56170ae0d6ce2de54e8fbf7212fc8670}{getUserAgent}};}
-\DoxyCodeLine{00129\ }
-\DoxyCodeLine{00138\ \textcolor{keyword}{@property}(nonatomic,readwrite)\textcolor{keywordtype}{double}\ \mbox{\hyperlink{interface_g_a_h_gemalto_signal_config_ae3bc877eee0f2a93b067050d9698c3c9}{signalPrefetchTimeout}};}
-\DoxyCodeLine{00139\ }
-\DoxyCodeLine{00151\ \textcolor{keyword}{@property}(nonatomic,readwrite)\textcolor{keywordtype}{double}\ \mbox{\hyperlink{interface_g_a_h_gemalto_signal_config_a4e6d353c8d7e2e86d666634e41185062}{signalCacheTimeout}};}
-\DoxyCodeLine{00152\ }
-\DoxyCodeLine{00158\ -\/\ (void)setFetchTimeOut:(NSInteger)timeOut;}
-\DoxyCodeLine{00159\ }
+\DoxyCodeLine{00122\ }
+\DoxyCodeLine{00129\ -\/\ (NSString\ *)getUserAgent;}
+\DoxyCodeLine{00130\ }
+\DoxyCodeLine{00139\ \textcolor{keyword}{@property}(nonatomic,readwrite)\textcolor{keywordtype}{double}\ signalPrefetchTimeout;}
+\DoxyCodeLine{00140\ }
+\DoxyCodeLine{00152\ \textcolor{keyword}{@property}(nonatomic,readwrite)\textcolor{keywordtype}{double}\ signalCacheTimeout;}
+\DoxyCodeLine{00153\ }
+\DoxyCodeLine{00159\ -\/\ (void)setFetchTimeOut:(NSInteger)timeOut;}
 \DoxyCodeLine{00160\ }
-\DoxyCodeLine{00166\ -\/\ (NSInteger)\mbox{\hyperlink{interface_g_a_h_gemalto_signal_config_a99715a6f8526ee7077dac0a0537af631}{getFetchTimeOut}};}
-\DoxyCodeLine{00167\ }
+\DoxyCodeLine{00161\ }
+\DoxyCodeLine{00167\ -\/\ (NSInteger)getFetchTimeOut;}
 \DoxyCodeLine{00168\ }
-\DoxyCodeLine{00169\ \textcolor{keyword}{@end}}
+\DoxyCodeLine{00169\ }
+\DoxyCodeLine{00170\ \textcolor{keyword}{@end}}
 
 \end{DoxyCode}

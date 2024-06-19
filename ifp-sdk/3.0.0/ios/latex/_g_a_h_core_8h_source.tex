@@ -1,5 +1,5 @@
 \doxysection{GAHCore.\+h}
-\hypertarget{_g_a_h_core_8h_source}{}\label{_g_a_h_core_8h_source}\index{build/external/Release/GAHRiskEngine.xcframework/ios-\/arm64/GAHRiskEngine.framework/Versions/A/Headers/GAHCore.h@{build/external/Release/GAHRiskEngine.xcframework/ios-\/arm64/GAHRiskEngine.framework/Versions/A/Headers/GAHCore.h}}
+\hypertarget{_g_a_h_core_8h_source}{}\label{_g_a_h_core_8h_source}\index{build/external/Release/GAHRiskEngine.xcframework/ios-\/arm64/GAHRiskEngine.framework/Headers/GAHCore.h@{build/external/Release/GAHRiskEngine.xcframework/ios-\/arm64/GAHRiskEngine.framework/Headers/GAHCore.h}}
 
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00001\ \textcolor{comment}{/*\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
@@ -28,10 +28,10 @@
 \DoxyCodeLine{00024\ \textcolor{comment}{\ */}}
 \DoxyCodeLine{00025\ }
 \DoxyCodeLine{00026\ \textcolor{preprocessor}{\#import\ <Foundation/Foundation.h>}}
-\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#import\ "{}GAHConfig.h"{}}}
-\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#import\ "{}GAHProfilingOptions.h"{}}}
-\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#import\ "{}GAHSignalGroupConstants.h"{}}}
-\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#import\ "{}GAHMetaInformation.h"{}}}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#import\ <GAHRiskEngine/GAHConfig.h>}}
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#import\ <GAHRiskEngine/GAHProfilingOptions.h>}}
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#import\ <GAHRiskEngine/GAHSignalGroupConstants.h>}}
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#import\ <GAHRiskEngine/GAHMetaInformation.h>}}
 \DoxyCodeLine{00031\ }
 \DoxyCodeLine{00037\ \textcolor{keyword}{typedef}\ void\ (\string^GAHSuccessHandler)(NSString\ *visitID);}
 \DoxyCodeLine{00038\ }
@@ -43,41 +43,42 @@
 \DoxyCodeLine{00054\ }
 \DoxyCodeLine{00061\ \textcolor{keyword}{typedef}\ void\ (\string^GAHPrefetechStatus)(NSInteger\ statusCode,\ NSString\ *statusMessage);}
 \DoxyCodeLine{00062\ }
-\DoxyCodeLine{00067\ \textcolor{keyword}{@interface\ }\mbox{\hyperlink{interface_g_a_h_core}{GAHCore}}\ :\ NSObject}
-\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00067\ \_\_attribute\_\_((visibility(\textcolor{stringliteral}{"{}default"{}})))}
+\DoxyCodeLine{00068\ \textcolor{keyword}{@interface\ }GAHCore\ :\ NSObject}
 \DoxyCodeLine{00069\ }
-\DoxyCodeLine{00076\ +\ (void)initialize:(NSSet<\mbox{\hyperlink{interface_g_a_h_config}{GAHConfig}}*>*)\ configs;}
-\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00077\ +\ (void)initialize:(NSSet<GAHConfig*>*)\ configs;}
 \DoxyCodeLine{00078\ }
-\DoxyCodeLine{00083\ +\ (void)\mbox{\hyperlink{interface_g_a_h_core_ad0aabafb3c5b6ce0c5cc121150e8a126}{startPrefetchSignals}};}
-\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00084\ +\ (void)startPrefetchSignals;}
 \DoxyCodeLine{00085\ }
-\DoxyCodeLine{00092\ +(void)setActiveSignals:(NSDictionary\ *)activeSignals;}
-\DoxyCodeLine{00093\ }
-\DoxyCodeLine{00100\ +(void)setActiveSignalsGroup:(NSArray\ *)activeGroupSignalsArray;}
-\DoxyCodeLine{00101\ }
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00093\ +(void)setActiveSignals:(NSDictionary\ *)activeSignals;}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00101\ +(void)setActiveSignalsGroup:(NSArray\ *)activeGroupSignalsArray;}
 \DoxyCodeLine{00102\ }
-\DoxyCodeLine{00109\ +\ (void)\mbox{\hyperlink{interface_g_a_h_core_aa391dbf5ca396001ba5c254486dfdba7}{setTransactionAsCritical}};}
-\DoxyCodeLine{00110\ }
-\DoxyCodeLine{00116\ +\ (void)setCustomSignalOptionsTMX:(\mbox{\hyperlink{interface_g_a_h_profiling_options}{GAHProfilingOptions}}\ *)options;}
-\DoxyCodeLine{00117\ }
-\DoxyCodeLine{00124\ +(void)requestVisitID:(GAHSuccessHandler)successHandler}
-\DoxyCodeLine{00125\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ failure:(GAHFailureHandler)failHandler;}
-\DoxyCodeLine{00126\ }
-\DoxyCodeLine{00131\ +\ (void)\mbox{\hyperlink{interface_g_a_h_core_a8caebfb5a694069d0f208f1592734a32}{stopPrefetchSignals}};}
-\DoxyCodeLine{00132\ }
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00110\ +\ (void)setTransactionAsCritical;}
+\DoxyCodeLine{00111\ }
+\DoxyCodeLine{00117\ +\ (void)setCustomSignalOptionsTMX:(GAHProfilingOptions\ *)options;}
+\DoxyCodeLine{00118\ }
+\DoxyCodeLine{00125\ +(void)requestVisitID:(GAHSuccessHandler)successHandler}
+\DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ failure:(GAHFailureHandler)failHandler;}
+\DoxyCodeLine{00127\ }
+\DoxyCodeLine{00132\ +\ (void)stopPrefetchSignals;}
 \DoxyCodeLine{00133\ }
-\DoxyCodeLine{00139\ +(NSString\ *)\mbox{\hyperlink{interface_g_a_h_core_af71bc60508e983cb95f09950508d9f58}{getSignalValuesJson}};}
-\DoxyCodeLine{00140\ }
+\DoxyCodeLine{00134\ }
+\DoxyCodeLine{00140\ +(NSString\ *)getSignalValuesJson;}
 \DoxyCodeLine{00141\ }
-\DoxyCodeLine{00147\ +(\mbox{\hyperlink{interface_g_a_h_meta_information}{GAHMetaInformation}}*)\mbox{\hyperlink{interface_g_a_h_core_a20c301c51cee6c3110bc384dcb9facb8}{getSDKVersionInfo}};}
-\DoxyCodeLine{00148\ }
+\DoxyCodeLine{00142\ }
+\DoxyCodeLine{00148\ +(GAHMetaInformation*)getSDKVersionInfo;}
 \DoxyCodeLine{00149\ }
-\DoxyCodeLine{00156\ +(void)requestSignalCollectionTiming:(NSString*)config\ :(GRESignalCollectionCallback)callbackHandler;}
-\DoxyCodeLine{00157\ }
+\DoxyCodeLine{00150\ }
+\DoxyCodeLine{00157\ +(void)requestSignalCollectionTiming:(NSString*)config\ :(GRESignalCollectionCallback)callbackHandler;}
 \DoxyCodeLine{00158\ }
-\DoxyCodeLine{00167\ +(void)requestPrefetchStatus:(GAHPrefetechStatus)prefetchStatus;}
-\DoxyCodeLine{00168\ }
-\DoxyCodeLine{00169\ \textcolor{keyword}{@end}}
+\DoxyCodeLine{00159\ }
+\DoxyCodeLine{00168\ +(void)requestPrefetchStatus:(GAHPrefetechStatus)prefetchStatus;}
+\DoxyCodeLine{00169\ }
+\DoxyCodeLine{00170\ \textcolor{keyword}{@end}}
 
 \end{DoxyCode}

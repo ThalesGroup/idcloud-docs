@@ -1,5 +1,5 @@
 \doxysection{GAHCore\+Config.\+h}
-\hypertarget{_g_a_h_core_config_8h_source}{}\label{_g_a_h_core_config_8h_source}\index{build/external/Release/GAHRiskEngine.xcframework/ios-\/arm64/GAHRiskEngine.framework/Versions/A/Headers/GAHCoreConfig.h@{build/external/Release/GAHRiskEngine.xcframework/ios-\/arm64/GAHRiskEngine.framework/Versions/A/Headers/GAHCoreConfig.h}}
+\hypertarget{_g_a_h_core_config_8h_source}{}\label{_g_a_h_core_config_8h_source}\index{build/external/Release/GAHRiskEngine.xcframework/ios-\/arm64/GAHRiskEngine.framework/Headers/GAHCoreConfig.h@{build/external/Release/GAHRiskEngine.xcframework/ios-\/arm64/GAHRiskEngine.framework/Headers/GAHCoreConfig.h}}
 
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00001\ \textcolor{comment}{/*\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
@@ -27,59 +27,61 @@
 \DoxyCodeLine{00023\ \textcolor{comment}{\ *\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
 \DoxyCodeLine{00024\ \textcolor{comment}{\ */}}
 \DoxyCodeLine{00025\ }
-\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#import\ "{}GAHConfig.h"{}}}
-\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#import\ "{}GAHErrorListener.h"{}}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#import\ <GAHRiskEngine/GAHConfig.h>}}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#import\ <GAHRiskEngine/GAHErrorListener.h>}}
 \DoxyCodeLine{00028\ }
-\DoxyCodeLine{00033\ \textcolor{keyword}{@interface\ }\mbox{\hyperlink{interface_g_a_h_t_l_s_configuration}{GAHTLSConfiguration}}\ :\ NSObject}
-\DoxyCodeLine{00034\ }
-\DoxyCodeLine{00040\ \textcolor{keyword}{@property}\ BOOL\ \mbox{\hyperlink{interface_g_a_h_t_l_s_configuration_ac73eb98f2f9bffe8deeefb671f9259bf}{insecureConnectionAllowed}};}
-\DoxyCodeLine{00041\ }
-\DoxyCodeLine{00046\ \textcolor{keyword}{@property}\ BOOL\ \mbox{\hyperlink{interface_g_a_h_t_l_s_configuration_a047b6b13eb326c4ddc7257138bdf95da}{selfSignedCertAllowed}};}
-\DoxyCodeLine{00047\ }
-\DoxyCodeLine{00052\ \textcolor{keyword}{@property}\ BOOL\ \mbox{\hyperlink{interface_g_a_h_t_l_s_configuration_afbc1505db97da8addf0db9129f16d3f0}{hostnameMismatchAllowed}};}
-\DoxyCodeLine{00053\ }
-\DoxyCodeLine{00058\ \textcolor{keyword}{@property}\ (strong,\ nonatomic)\ NSArray\ *\ \mbox{\hyperlink{interface_g_a_h_t_l_s_configuration_a4108a8bece367c0deb88e02bcd8f4a90}{certificates}};}
-\DoxyCodeLine{00059\ }
-\DoxyCodeLine{00060\ \textcolor{keyword}{@end}}
-\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00033\ \_\_attribute\_\_((visibility(\textcolor{stringliteral}{"{}default"{}})))}
+\DoxyCodeLine{00034\ \textcolor{keyword}{@interface\ }GAHTLSConfiguration\ :\ NSObject}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00041\ \textcolor{keyword}{@property}\ BOOL\ insecureConnectionAllowed;}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00047\ \textcolor{keyword}{@property}\ BOOL\ selfSignedCertAllowed;}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00053\ \textcolor{keyword}{@property}\ BOOL\ hostnameMismatchAllowed;}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00059\ \textcolor{keyword}{@property}\ (strong,\ nonatomic)\ NSArray\ *\ certificates;}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \textcolor{keyword}{@end}}
 \DoxyCodeLine{00062\ }
-\DoxyCodeLine{00067\ \textcolor{keyword}{@interface\ }\mbox{\hyperlink{interface_g_a_h_core_config}{GAHCoreConfig}}\ :\ \mbox{\hyperlink{interface_g_a_h_config}{GAHConfig}}}
-\DoxyCodeLine{00068\ }
-\DoxyCodeLine{00069\ }
-\DoxyCodeLine{00076\ +\ (instancetype)sharedConfigurationWithUrl:(NSString*)url;}
-\DoxyCodeLine{00077\ }
-\DoxyCodeLine{00078\ }
-\DoxyCodeLine{00085\ +\ (instancetype)getsharedConfigManagerObject;}
-\DoxyCodeLine{00086\ }
-\DoxyCodeLine{00093\ -\/(void)setHTTPConnectionTimeout:(NSUInteger)timeout;}
-\DoxyCodeLine{00094\ }
-\DoxyCodeLine{00095\ }
-\DoxyCodeLine{00101\ -\/\ (void)setSDKErrorListener:(\mbox{\hyperlink{interface_g_a_h_error_listener}{GAHErrorListener}}*)errorListener;}
-\DoxyCodeLine{00102\ }
-\DoxyCodeLine{00103\ }
-\DoxyCodeLine{00111\ -\/\ (\mbox{\hyperlink{interface_g_a_h_error_listener}{GAHErrorListener}}*)getSDKErrorListener;}
-\DoxyCodeLine{00112\ }
-\DoxyCodeLine{00113\ }
-\DoxyCodeLine{00119\ -\/(NSUInteger)getHTTPConnectionTimeout;}
-\DoxyCodeLine{00120\ }
-\DoxyCodeLine{00121\ }
-\DoxyCodeLine{00128\ -\/(void)setSignalCollectionGlobalTimeout:(NSUInteger)timeout;}
-\DoxyCodeLine{00129\ }
-\DoxyCodeLine{00130\ }
-\DoxyCodeLine{00136\ -\/(NSUInteger)getSignalCollectionGlobalTimeout;}
-\DoxyCodeLine{00137\ }
-\DoxyCodeLine{00143\ -\/\ (void)GRESTLSConfiguration:(\mbox{\hyperlink{interface_g_a_h_t_l_s_configuration}{GAHTLSConfiguration}}*)configuration;}
-\DoxyCodeLine{00144\ }
-\DoxyCodeLine{00151\ -\/\ (void)GRESTLSConfiguration:(NSArray*)certificates\ withRESDKTLSConfiguration:(\mbox{\hyperlink{interface_g_a_h_t_l_s_configuration}{GAHTLSConfiguration}}*)configuration;}
-\DoxyCodeLine{00152\ }
-\DoxyCodeLine{00153\ }
-\DoxyCodeLine{00159\ -\/\ (\mbox{\hyperlink{interface_g_a_h_t_l_s_configuration}{GAHTLSConfiguration}}*)currentGRESTLSConfiguration;}
-\DoxyCodeLine{00160\ }
-\DoxyCodeLine{00161\ }
-\DoxyCodeLine{00167\ -\/(NSString\ *)getGAHUrl;}
-\DoxyCodeLine{00168\ }
-\DoxyCodeLine{00169\ }
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00068\ \_\_attribute\_\_((visibility(\textcolor{stringliteral}{"{}default"{}})))}
+\DoxyCodeLine{00069\ \textcolor{keyword}{@interface\ }GAHCoreConfig\ :\ GAHConfig}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00078\ +\ (instancetype)sharedConfigurationWithUrl:(NSString*)url;}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00087\ +\ (instancetype)getsharedConfigManagerObject;}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00095\ -\/(void)setHTTPConnectionTimeout:(NSUInteger)timeout;}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00103\ -\/\ (void)setSDKErrorListener:(GAHErrorListener*)errorListener;}
+\DoxyCodeLine{00104\ }
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00113\ -\/\ (GAHErrorListener*)getSDKErrorListener;}
+\DoxyCodeLine{00114\ }
+\DoxyCodeLine{00115\ }
+\DoxyCodeLine{00121\ -\/(NSUInteger)getHTTPConnectionTimeout;}
+\DoxyCodeLine{00122\ }
+\DoxyCodeLine{00123\ }
+\DoxyCodeLine{00130\ -\/(void)setSignalCollectionGlobalTimeout:(NSUInteger)timeout;}
+\DoxyCodeLine{00131\ }
+\DoxyCodeLine{00132\ }
+\DoxyCodeLine{00138\ -\/(NSUInteger)getSignalCollectionGlobalTimeout;}
+\DoxyCodeLine{00139\ }
+\DoxyCodeLine{00145\ -\/\ (void)GRESTLSConfiguration:(GAHTLSConfiguration*)configuration;}
+\DoxyCodeLine{00146\ }
+\DoxyCodeLine{00153\ -\/\ (void)GRESTLSConfiguration:(NSArray*)certificates\ withRESDKTLSConfiguration:(GAHTLSConfiguration*)configuration;}
+\DoxyCodeLine{00154\ }
+\DoxyCodeLine{00155\ }
+\DoxyCodeLine{00161\ -\/\ (GAHTLSConfiguration*)currentGRESTLSConfiguration;}
+\DoxyCodeLine{00162\ }
+\DoxyCodeLine{00163\ }
+\DoxyCodeLine{00169\ -\/(NSString\ *)getGAHUrl;}
 \DoxyCodeLine{00170\ }
-\DoxyCodeLine{00171\ \textcolor{keyword}{@end}}
+\DoxyCodeLine{00171\ }
+\DoxyCodeLine{00172\ }
+\DoxyCodeLine{00173\ \textcolor{keyword}{@end}}
 
 \end{DoxyCode}
