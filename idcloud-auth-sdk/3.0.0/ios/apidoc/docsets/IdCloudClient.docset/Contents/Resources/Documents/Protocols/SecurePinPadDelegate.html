@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SecurePinPadDelegate Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Protocol/SecurePinPadDelegate" class="dashAnchor"></a>
+    <a title="SecurePinPadDelegate Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">IdCloud FIDO SDK</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">IdCloudClient</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        <a href="../Protocols.html">Protocols</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        SecurePinPadDelegate Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Guides.html">Guides</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../terms-of-use.html">Terms of use</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AddAuthenticatorRequest.html">AddAuthenticatorRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:13IdCloudClient24AddAuthenticatorResponseC">AddAuthenticatorResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Authenticator.html">Authenticator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AuthenticatorDescriptor.html">AuthenticatorDescriptor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ChangePinRequest.html">ChangePinRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:13IdCloudClient17ChangePinResponseC">ChangePinResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EnrollRequest.html">EnrollRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EnrollResponse.html">EnrollResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EnrollmentToken.html">EnrollmentToken</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FetchRequest.html">FetchRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:13IdCloudClient13FetchResponseC">FetchResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IDCIdCloudClient.html">IDCIdCloudClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:13IdCloudClient18PlatformControllerC">PlatformController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ProcessNotificationRequest.html">ProcessNotificationRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:13IdCloudClient27ProcessNotificationResponseC">ProcessNotificationResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RefreshPushTokenRequest.html">RefreshPushTokenRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:13IdCloudClient24RefreshPushTokenResponseC">RefreshPushTokenResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RemoveAuthenticatorRequest.html">RemoveAuthenticatorRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:13IdCloudClient27RemoveAuthenticatorResponseC">RemoveAuthenticatorResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ScenarioContext.html">ScenarioContext</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ScenarioContext/Key.html">– Key</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TransactionContext.html">TransactionContext</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UnenrollAllRequest.html">UnenrollAllRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:13IdCloudClient19UnenrollAllResponseC">UnenrollAllResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UnenrollRequest.html">UnenrollRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:13IdCloudClient16UnenrollResponseC">UnenrollResponse</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/AuthenticatorType.html">AuthenticatorType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/IDCProgress.html">IDCProgress</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SecurePinPadKey.html">SecurePinPadKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SecurePinPadUsage.html">SecurePinPadUsage</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/BiometricUiDelegate.html">BiometricUiDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CommonUiDelegate.html">CommonUiDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/PlatformUiDelegate.html">PlatformUiDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SecurePinPad.html">SecurePinPad</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SecurePinPadDelegate.html">SecurePinPadDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SecurePinPadUiDelegate.html">SecurePinPadUiDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/EnrollmentTokenFactory.html">EnrollmentTokenFactory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/IDCConfig.html">IDCConfig</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/IDCError.html">IDCError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/IDCError/Code.html">– Code</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PinConfig.html">PinConfig</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PinConfig/PinRule.html">– PinRule</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/UiDelegates.html">UiDelegates</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:13IdCloudClient13IDCCompletiona">IDCCompletion</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:13IdCloudClient18IDCProgressClosurea">IDCProgressClosure</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>SecurePinPadDelegate</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SecurePinPadDelegate</span></code></pre>
+
+                </div>
+              </div>
+            <p>A delegate that contains methods for managing PIN pad UI.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    1.0.0
+
+</div>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@IdCloudClient@objc(pl)SecurePinPadDelegate(im)frameFor:"></a>
+                    <a name="//apple_ref/swift/Method/frame(for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@IdCloudClient@objc(pl)SecurePinPadDelegate(im)frameFor:">frame(for:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called prior to drawing the secure PIN pad.
+This delegate serves as an input to generate specific frame of the secure PIN pad.
+Frame initializations are final and MUST NOT be modified on runtime.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">frame</span><span class="p">(</span><span class="k">for</span> <span class="nv">securePinPad</span><span class="p">:</span> <span class="kt"><a href="../Protocols/SecurePinPad.html">SecurePinPad</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">CGRect</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>securePinPad</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The secure PIN pad informing the delegate about the
+impending authentication.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@IdCloudClient@objc(pl)SecurePinPadDelegate(im)securePinPad:didReceiveKey:"></a>
+                    <a name="//apple_ref/swift/Method/securePinPad(_:didReceiveKey:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@IdCloudClient@objc(pl)SecurePinPadDelegate(im)securePinPad:didReceiveKey:">securePinPad(_:<wbr>didReceiveKey:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when a key is pressed on the secure PIN pad.
+Developer should update the UI to reflect the changes.
+Examples include:
+<code><a href="../Enums/SecurePinPadKey.html#/c:@M@IdCloudClient@E@SecurePinPadKey@SecurePinPadKeyInput">SecurePinPadKey.input</a></code> - Add a new secure character
+(⬤) to the text field entry.
+<code><a href="../Enums/SecurePinPadKey.html#/c:@M@IdCloudClient@E@SecurePinPadKey@SecurePinPadKeyDelete">SecurePinPadKey.delete</a></code> - Remove a secure character
+from the text field entry.
+<code><a href="../Enums/SecurePinPadKey.html#/c:@M@IdCloudClient@E@SecurePinPadKey@SecurePinPadKeyDone">SecurePinPadKey.done</a></code> - PIN entry is validated.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">securePinPad</span><span class="p">(</span><span class="n">_</span> <span class="nv">securePinPad</span><span class="p">:</span> <span class="kt"><a href="../Protocols/SecurePinPad.html">SecurePinPad</a></span><span class="p">,</span> <span class="n">didReceiveKey</span> <span class="nv">key</span><span class="p">:</span> <span class="kt"><a href="../Enums/SecurePinPadKey.html">SecurePinPadKey</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>securePinPad</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The secure PIN pad informing the delegate about the
+impending authentication.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>key</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Type of key being pressed.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@IdCloudClient@objc(pl)SecurePinPadDelegate(im)securePinPad:didChangeUsage:"></a>
+                    <a name="//apple_ref/swift/Method/securePinPad(_:didChangeUsage:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@IdCloudClient@objc(pl)SecurePinPadDelegate(im)securePinPad:didChangeUsage:">securePinPad(_:<wbr>didChangeUsage:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when usage for secure PIN pad changed.
+For example, during enrollment, user need to enter and confirm
+its PIN. At first, developer will receive
+<code><a href="../Enums/SecurePinPadUsage.html#/c:@M@IdCloudClient@E@SecurePinPadUsage@SecurePinPadUsageEnrollNew">SecurePinPadUsage.enrollNew</a></code>.
+During confirmation UI, developer will receive
+<code><a href="../Enums/SecurePinPadUsage.html#/c:@M@IdCloudClient@E@SecurePinPadUsage@SecurePinPadUsageEnrollConfirm">SecurePinPadUsage.enrollConfirm</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">securePinPad</span><span class="p">(</span><span class="n">_</span> <span class="nv">securePinPad</span><span class="p">:</span> <span class="kt"><a href="../Protocols/SecurePinPad.html">SecurePinPad</a></span><span class="p">,</span> <span class="n">didChangeUsage</span> <span class="nv">usage</span><span class="p">:</span> <span class="kt"><a href="../Enums/SecurePinPadUsage.html">SecurePinPadUsage</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>securePinPad</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The secure PIN pad informing the delegate about the
+impending authentication.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>usage</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The current usage.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@IdCloudClient@objc(pl)SecurePinPadDelegate(im)securePinPad:didFailVerifyWithRetryCountRemaining:"></a>
+                    <a name="//apple_ref/swift/Method/securePinPad(_:didFailVerifyWithRetryCountRemaining:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@IdCloudClient@objc(pl)SecurePinPadDelegate(im)securePinPad:didFailVerifyWithRetryCountRemaining:">securePinPad(_:<wbr>didFailVerifyWithRetryCountRemaining:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when authentication failed.
+Retry count limit is 5 before an error with domain <code>IDCErrorDomain</code> and
+code <code>IDCError.userLockout</code> is returned.
+Retry count will reset upon successful PIN authentication.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">securePinPad</span><span class="p">(</span><span class="n">_</span> <span class="nv">securePinPad</span><span class="p">:</span> <span class="kt"><a href="../Protocols/SecurePinPad.html">SecurePinPad</a></span><span class="p">,</span> <span class="n">didFailVerifyWithRetryCountRemaining</span> <span class="nv">retryCountRemaining</span><span class="p">:</span> <span class="kt">UInt</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>securePinPad</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The secure PIN pad informing the delegate about the
+impending authentication.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>retryCountRemaining</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Retry count remaining. On first authentication
+failed, the value of this property will be 4. On last authentication before
+<code>IDCError.userLockout</code> will trigger, the value of this property will be 1.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@IdCloudClient@objc(pl)SecurePinPadDelegate(im)securePinPad:didFailPinRuleWithError:"></a>
+                    <a name="//apple_ref/swift/Method/securePinPad(_:didFailPinRuleWithError:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@IdCloudClient@objc(pl)SecurePinPadDelegate(im)securePinPad:didFailPinRuleWithError:">securePinPad(_:<wbr>didFailPinRuleWithError:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called during enrollment or change PIN.
+This callback is invoked when the inputted PIN code violates the required PIN rules.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    2.2.0
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">securePinPad</span><span class="p">(</span><span class="n">_</span> <span class="nv">securePinPad</span><span class="p">:</span> <span class="kt"><a href="../Protocols/SecurePinPad.html">SecurePinPad</a></span><span class="p">,</span> <span class="n">didFailPinRuleWithError</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>securePinPad</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The secure PIN pad informing the delegate about the
+impending authentication.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>error</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An error representing the respective PIN rule violation.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>Copyright © 2025 THALES. All rights reserved.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>

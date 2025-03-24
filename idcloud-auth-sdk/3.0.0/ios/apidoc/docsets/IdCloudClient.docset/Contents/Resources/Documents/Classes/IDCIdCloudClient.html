@@ -1,0 +1,1364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>IDCIdCloudClient Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/IDCIdCloudClient" class="dashAnchor"></a>
+    <a title="IDCIdCloudClient Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">IdCloud FIDO SDK</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">IdCloudClient</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        <a href="../Classes.html">Classes</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        IDCIdCloudClient Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Guides.html">Guides</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../terms-of-use.html">Terms of use</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AddAuthenticatorRequest.html">AddAuthenticatorRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:13IdCloudClient24AddAuthenticatorResponseC">AddAuthenticatorResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Authenticator.html">Authenticator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AuthenticatorDescriptor.html">AuthenticatorDescriptor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ChangePinRequest.html">ChangePinRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:13IdCloudClient17ChangePinResponseC">ChangePinResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EnrollRequest.html">EnrollRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EnrollResponse.html">EnrollResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EnrollmentToken.html">EnrollmentToken</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FetchRequest.html">FetchRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:13IdCloudClient13FetchResponseC">FetchResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IDCIdCloudClient.html">IDCIdCloudClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:13IdCloudClient18PlatformControllerC">PlatformController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ProcessNotificationRequest.html">ProcessNotificationRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:13IdCloudClient27ProcessNotificationResponseC">ProcessNotificationResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RefreshPushTokenRequest.html">RefreshPushTokenRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:13IdCloudClient24RefreshPushTokenResponseC">RefreshPushTokenResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RemoveAuthenticatorRequest.html">RemoveAuthenticatorRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:13IdCloudClient27RemoveAuthenticatorResponseC">RemoveAuthenticatorResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ScenarioContext.html">ScenarioContext</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ScenarioContext/Key.html">– Key</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TransactionContext.html">TransactionContext</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UnenrollAllRequest.html">UnenrollAllRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:13IdCloudClient19UnenrollAllResponseC">UnenrollAllResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UnenrollRequest.html">UnenrollRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:13IdCloudClient16UnenrollResponseC">UnenrollResponse</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/AuthenticatorType.html">AuthenticatorType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/IDCProgress.html">IDCProgress</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SecurePinPadKey.html">SecurePinPadKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SecurePinPadUsage.html">SecurePinPadUsage</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/BiometricUiDelegate.html">BiometricUiDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CommonUiDelegate.html">CommonUiDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/PlatformUiDelegate.html">PlatformUiDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SecurePinPad.html">SecurePinPad</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SecurePinPadDelegate.html">SecurePinPadDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SecurePinPadUiDelegate.html">SecurePinPadUiDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/EnrollmentTokenFactory.html">EnrollmentTokenFactory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/IDCConfig.html">IDCConfig</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/IDCError.html">IDCError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/IDCError/Code.html">– Code</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PinConfig.html">PinConfig</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PinConfig/PinRule.html">– PinRule</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/UiDelegates.html">UiDelegates</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:13IdCloudClient13IDCCompletiona">IDCCompletion</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:13IdCloudClient18IDCProgressClosurea">IDCProgressClosure</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>IDCIdCloudClient</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">IDCIdCloudClient</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>A class that creates the request for all of IdCloud client operations.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    1.0.0
+
+</div>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13IdCloudClient05IDCIdbC0C3url06tenantA0ACSS_SStKcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(url:tenantId:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13IdCloudClient05IDCIdbC0C3url06tenantA0ACSS_SStKcfc">init(url:<wbr>tenantId:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns an IdCloud client object initialized with IdCloud server URL.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    2.2.0
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">tenantId</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>url</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>IdCloud server URL. The URL should contain scheme(https://), domain and path.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>tenantId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>IdCloud server tenantId.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13IdCloudClient05IDCIdbC0C10sdkVersionSSyFZ"></a>
+                    <a name="//apple_ref/swift/Method/sdkVersion()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13IdCloudClient05IDCIdbC0C10sdkVersionSSyFZ">sdkVersion()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the IdCloud FIDO SDK Version</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    2.1.0
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">sdkVersion</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>SDK version</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13IdCloudClient05IDCIdbC0C19createEnrollRequest4with11uiDelegates8progress10completionAA0fG0CAA15EnrollmentTokenC_AA02UiJ0VyAA11IDCProgressOcyAA0F8ResponseCSg_AA8IDCErrorVSgtctF"></a>
+                    <a name="//apple_ref/swift/Method/createEnrollRequest(with:uiDelegates:progress:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13IdCloudClient05IDCIdbC0C19createEnrollRequest4with11uiDelegates8progress10completionAA0fG0CAA15EnrollmentTokenC_AA02UiJ0VyAA11IDCProgressOcyAA0F8ResponseCSg_AA8IDCErrorVSgtctF">createEnrollRequest(with:<wbr>uiDelegates:<wbr>progress:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates an enrollment request.
+The request&rsquo;s execution is triggered separately through <code><a href="../Classes/EnrollRequest.html#/s:13IdCloudClient13EnrollRequestC7executeyyF">EnrollRequest.execute()</a></code>.</p>
+
+<ul>
+<li>progress - The current progress. See <code>Progress</code> for progress types.</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">createEnrollRequest</span><span class="p">(</span><span class="n">with</span> <span class="nv">enrollmentToken</span><span class="p">:</span> <span class="kt"><a href="../Classes/EnrollmentToken.html">EnrollmentToken</a></span><span class="p">,</span> <span class="nv">uiDelegates</span><span class="p">:</span> <span class="kt"><a href="../Structs/UiDelegates.html">UiDelegates</a></span><span class="p">,</span> <span class="nv">progress</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:13IdCloudClient18IDCProgressClosurea">IDCProgressClosure</a></span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:13IdCloudClient13IDCCompletiona">IDCCompletion</a></span><span class="o">&lt;</span><span class="kt"><a href="../Classes/EnrollResponse.html">EnrollResponse</a></span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/EnrollRequest.html">EnrollRequest</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>enrollmentToken</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>contains token to initiate enrollment with the IdCloud server.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>uiDelegates</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>group of ui delegates allowing developers to show the UI
+during PIN or biometric authentication.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>progress</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The handler to report progress. This handler is
+executed on the main thread.
+It takes the following parameter:</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The completion handler to call when the execution is complete.
+This handler is executed on the main thread.
+It takes the following parameters:
+
+<ul>
+<li>response - Success when it is not nil.</li>
+<li>error - Error details. See <code><a href="../Structs/IDCError.html">IDCError</a></code> for error types.</li>
+</ul></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An <code>IDCEnrollRequest</code> instance.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13IdCloudClient05IDCIdbC0C18createFetchRequest4with8progress10completionAA0fG0CAA11UiDelegatesV_yAA11IDCProgressOcyAA0F8ResponseCSg_AA8IDCErrorVSgtctF"></a>
+                    <a name="//apple_ref/swift/Method/createFetchRequest(with:progress:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13IdCloudClient05IDCIdbC0C18createFetchRequest4with8progress10completionAA0fG0CAA11UiDelegatesV_yAA11IDCProgressOcyAA0F8ResponseCSg_AA8IDCErrorVSgtctF">createFetchRequest(with:<wbr>progress:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a fetch request.
+The request&rsquo;s execution is triggered separately through <code>FetchRequest.execute</code>.</p>
+
+<ul>
+<li>progress - The current progress. See <code>Progress</code> for progress types.</li>
+<li>response - Success when it is not nil.
+
+<ul>
+<li>error - Error details. See <code><a href="../Structs/IDCError.html">IDCError</a></code> for error types.</li>
+</ul></li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">createFetchRequest</span><span class="p">(</span><span class="n">with</span> <span class="nv">uiDelegates</span><span class="p">:</span> <span class="kt"><a href="../Structs/UiDelegates.html">UiDelegates</a></span><span class="p">,</span> <span class="nv">progress</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:13IdCloudClient18IDCProgressClosurea">IDCProgressClosure</a></span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:13IdCloudClient13IDCCompletiona">IDCCompletion</a></span><span class="o">&lt;</span><span class="kt"><a href="../Classes.html#/s:13IdCloudClient13FetchResponseC">FetchResponse</a></span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/FetchRequest.html">FetchRequest</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>uiDelegates</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>group of ui delegates allowing developers to show the UI during PIN or
+biometric authentication.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>progressBlock</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The handler to report progress. This handler is
+executed on the main thread.
+It takes the following parameter:</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completionBlock</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The completion handler to call when the execution is complete.
+This handler is executed on the main thread.
+It takes the following parameters:</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An <code><a href="../Classes/FetchRequest.html">FetchRequest</a></code> instance.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13IdCloudClient05IDCIdbC0C22createChangePinRequest4with8progress10completionAA0fgH0CAA06SecureG13PadUiDelegate_p_yAA11IDCProgressOcyAA0fG8ResponseCSg_AA8IDCErrorVSgtctF"></a>
+                    <a name="//apple_ref/swift/Method/createChangePinRequest(with:progress:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13IdCloudClient05IDCIdbC0C22createChangePinRequest4with8progress10completionAA0fgH0CAA06SecureG13PadUiDelegate_p_yAA11IDCProgressOcyAA0fG8ResponseCSg_AA8IDCErrorVSgtctF">createChangePinRequest(with:<wbr>progress:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a change PIN request.
+The request&rsquo;s execution is triggered separately through <code>-[IDCChangePinRequest execute]</code>.</p>
+
+<ul>
+<li>progress - The current progress. See <code>Progress</code> for progress types.</li>
+<li>response - Success when it is not nil.</li>
+<li>error - Error details. See <code><a href="../Structs/IDCError.html">IDCError</a></code> for error types.</li>
+</ul><div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    1.1.0
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">createChangePinRequest</span><span class="p">(</span><span class="n">with</span> <span class="nv">pinPadUiDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/SecurePinPadUiDelegate.html">SecurePinPadUiDelegate</a></span><span class="p">,</span> <span class="nv">progress</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:13IdCloudClient18IDCProgressClosurea">IDCProgressClosure</a></span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:13IdCloudClient13IDCCompletiona">IDCCompletion</a></span><span class="o">&lt;</span><span class="kt"><a href="../Classes.html#/s:13IdCloudClient17ChangePinResponseC">ChangePinResponse</a></span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/ChangePinRequest.html">ChangePinRequest</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>pinPadUiDelegate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>a UI delegate to handle the display of the secure PIN pad during the change PIN use-case.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>progressBlock</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The handler to report progress. This handler is
+executed on the main thread.
+It takes the following parameter:</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completionBlock</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The completion handler to call when the execution is complete.
+This handler is executed on the main thread.
+It takes the following parameters:</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An <code>IDCChangePinRequest</code> instance.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13IdCloudClient05IDCIdbC0C29createAddAuthenticatorRequest4with8progress10completionAA0fgH0CAA11UiDelegatesV_yAA11IDCProgressOcyAA0fG8ResponseCSg_AA8IDCErrorVSgtctF"></a>
+                    <a name="//apple_ref/swift/Method/createAddAuthenticatorRequest(with:progress:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13IdCloudClient05IDCIdbC0C29createAddAuthenticatorRequest4with8progress10completionAA0fgH0CAA11UiDelegatesV_yAA11IDCProgressOcyAA0fG8ResponseCSg_AA8IDCErrorVSgtctF">createAddAuthenticatorRequest(with:<wbr>progress:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates an add authenticator request.
+The request&rsquo;s execution is triggered separately through <code>-[IDCAddAuthenticatorRequest execute]</code>.</p>
+
+<ul>
+<li>progress - The current progress. See <code>Progress</code> for progress types.</li>
+<li>response - Success when it is not nil.
+
+<ul>
+<li>error - Error details. See <code><a href="../Structs/IDCError.html">IDCError</a></code> for error types.</li>
+</ul></li>
+</ul><div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    1.1.0
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">createAddAuthenticatorRequest</span><span class="p">(</span><span class="n">with</span> <span class="nv">uiDelegates</span><span class="p">:</span> <span class="kt"><a href="../Structs/UiDelegates.html">UiDelegates</a></span><span class="p">,</span> <span class="nv">progress</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:13IdCloudClient18IDCProgressClosurea">IDCProgressClosure</a></span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:13IdCloudClient13IDCCompletiona">IDCCompletion</a></span><span class="o">&lt;</span><span class="kt"><a href="../Classes.html#/s:13IdCloudClient24AddAuthenticatorResponseC">AddAuthenticatorResponse</a></span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/AddAuthenticatorRequest.html">AddAuthenticatorRequest</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>uiDelegates</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>group of ui delegates allowing developers to show the UI during PIN or
+biometric authentication.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>progressBlock</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The handler to report progress. This handler is
+executed on the main thread.
+It takes the following parameter:</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completionBlock</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The completion handler to call when the execution is complete.
+This handler is executed on the main thread.
+It takes the following parameters:</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An <code>IDCAddAuthenticatorRequest</code> instance.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13IdCloudClient05IDCIdbC0C21createUnenrollRequest8progress10completionAA0fG0CyAA11IDCProgressOcSg_yAA0F8ResponseCSg_AA8IDCErrorVSgtctF"></a>
+                    <a name="//apple_ref/swift/Method/createUnenrollRequest(progress:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13IdCloudClient05IDCIdbC0C21createUnenrollRequest8progress10completionAA0fG0CyAA11IDCProgressOcSg_yAA0F8ResponseCSg_AA8IDCErrorVSgtctF">createUnenrollRequest(progress:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates an unenroll request.
+The request&rsquo;s execution is triggered separately through <code>-[IDCUnenrollRequest execute]</code>.</p>
+
+<ul>
+<li>progress - The current progress. See <code>Progress</code> for progress types.</li>
+<li>response - Success when it is not nil.</li>
+<li>error - Error details. See <code><a href="../Structs/IDCError.html">IDCError</a></code> for error types.</li>
+</ul><div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    1.1.0
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">createUnenrollRequest</span><span class="p">(</span><span class="nv">progress</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:13IdCloudClient18IDCProgressClosurea">IDCProgressClosure</a></span><span class="p">?,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:13IdCloudClient13IDCCompletiona">IDCCompletion</a></span><span class="o">&lt;</span><span class="kt"><a href="../Classes.html#/s:13IdCloudClient16UnenrollResponseC">UnenrollResponse</a></span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/UnenrollRequest.html">UnenrollRequest</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>progressBlock</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The handler to report progress. This handler is executed on the main thread.
+It takes the following parameter:</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completionBlock</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The completion handler to call when the execution is complete.
+This handler is executed on the main thread.
+It takes the following parameters:</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An <code>IDCUnenrollRequest</code> instance.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13IdCloudClient05IDCIdbC0C24createUnenrollAllRequest8progress10completionAA0fgH0CyAA11IDCProgressOcSg_yAA0fG8ResponseCSg_AA8IDCErrorVSgtctF"></a>
+                    <a name="//apple_ref/swift/Method/createUnenrollAllRequest(progress:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13IdCloudClient05IDCIdbC0C24createUnenrollAllRequest8progress10completionAA0fgH0CyAA11IDCProgressOcSg_yAA0fG8ResponseCSg_AA8IDCErrorVSgtctF">createUnenrollAllRequest(progress:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates unenroll All request.
+The request&rsquo;s execution is triggered separately through <code>-[IDCUnenrollAllRequest execute]</code>.</p>
+
+<ul>
+<li>progress - The current progress. See <code>Progress</code> for progress types.</li>
+<li>response - Success when it is not nil.</li>
+<li>error - Error details. See <code><a href="../Structs/IDCError.html">IDCError</a></code> for error types.</li>
+</ul><div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    2.5.0
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">createUnenrollAllRequest</span><span class="p">(</span><span class="nv">progress</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:13IdCloudClient18IDCProgressClosurea">IDCProgressClosure</a></span><span class="p">?,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:13IdCloudClient13IDCCompletiona">IDCCompletion</a></span><span class="o">&lt;</span><span class="kt"><a href="../Classes.html#/s:13IdCloudClient19UnenrollAllResponseC">UnenrollAllResponse</a></span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/UnenrollAllRequest.html">UnenrollAllRequest</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>progressBlock</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The handler to report progress. This handler is
+executed on the main thread.
+It takes the following parameter:</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completionBlock</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The completion handler to call when the execution is complete.
+This handler is executed on the main thread.
+It takes the following parameters:</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An <code>IDCUnenrollAllRequest</code> instance.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13IdCloudClient05IDCIdbC0C23activatedAuthenticatorsSayAA13AuthenticatorCGyKF"></a>
+                    <a name="//apple_ref/swift/Method/activatedAuthenticators()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13IdCloudClient05IDCIdbC0C23activatedAuthenticatorsSayAA13AuthenticatorCGyKF">activatedAuthenticators()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Fetches the list of activated authenticators for the enrolled credential</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    2.2.0
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">activatedAuthenticators</span><span class="p">()</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt"><a href="../Classes/Authenticator.html">Authenticator</a></span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>error</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>If an error occurs, an NSError is returned with the resulting error. An optional NULL may be passed instead.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An array of <code><a href="../Classes/Authenticator.html">Authenticator</a></code> representing the various activated authenticators.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13IdCloudClient05IDCIdbC0C8clientIDSSSgyF"></a>
+                    <a name="//apple_ref/swift/Method/clientID()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13IdCloudClient05IDCIdbC0C8clientIDSSSgyF">clientID()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Fetch the clientID of the enrolled credential.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    2.2.0
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">clientID</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Client ID</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13IdCloudClient05IDCIdbC0C32createRemoveAuthenticatorRequest4with8progress10completionAA0fgH0CAA0G0C_yAA11IDCProgressOcyAA0fG8ResponseCSg_AA8IDCErrorVSgtctF"></a>
+                    <a name="//apple_ref/swift/Method/createRemoveAuthenticatorRequest(with:progress:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13IdCloudClient05IDCIdbC0C32createRemoveAuthenticatorRequest4with8progress10completionAA0fgH0CAA0G0C_yAA11IDCProgressOcyAA0fG8ResponseCSg_AA8IDCErrorVSgtctF">createRemoveAuthenticatorRequest(with:<wbr>progress:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a remove authenticator request.
+The request&rsquo;s execution is triggered separately through <code>-[IDCRemoveAuthenticatorRequest execute]</code>.</p>
+
+<ul>
+<li>progress - The current progress. See <code>Progress</code> for progress types.</li>
+<li>response - Success when it is not nil.
+
+<ul>
+<li>error - Error details. See <code><a href="../Structs/IDCError.html">IDCError</a></code> for error types.</li>
+</ul></li>
+</ul><div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    2.0.0
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">createRemoveAuthenticatorRequest</span><span class="p">(</span><span class="n">with</span> <span class="nv">authenticator</span><span class="p">:</span> <span class="kt"><a href="../Classes/Authenticator.html">Authenticator</a></span><span class="p">,</span> <span class="nv">progress</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:13IdCloudClient18IDCProgressClosurea">IDCProgressClosure</a></span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:13IdCloudClient13IDCCompletiona">IDCCompletion</a></span><span class="o">&lt;</span><span class="kt"><a href="../Classes.html#/s:13IdCloudClient27RemoveAuthenticatorResponseC">RemoveAuthenticatorResponse</a></span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/RemoveAuthenticatorRequest.html">RemoveAuthenticatorRequest</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>authenticator</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The previously retrieved activated authenticator to be removed.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>progressBlock</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The handler to report progress. This handler is
+executed on the main thread.
+It takes the following parameter:</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completionBlock</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The completion handler to call when the execution is complete.
+This handler is executed on the main thread.
+It takes the following parameters:</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An <code>IDCRemoveAuthenticatorRequest</code> instance.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13IdCloudClient05IDCIdbC0C32createProcessNotificationRequest04withG011uiDelegates8progress10completionAA0fgH0CSDys11AnyHashableVypG_AA02UiK0VyAA11IDCProgressOcSgyAA0fG8ResponseCSg_AA8IDCErrorVSgtctF"></a>
+                    <a name="//apple_ref/swift/Method/createProcessNotificationRequest(withNotification:uiDelegates:progress:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13IdCloudClient05IDCIdbC0C32createProcessNotificationRequest04withG011uiDelegates8progress10completionAA0fgH0CSDys11AnyHashableVypG_AA02UiK0VyAA11IDCProgressOcSgyAA0fG8ResponseCSg_AA8IDCErrorVSgtctF">createProcessNotificationRequest(withNotification:<wbr>uiDelegates:<wbr>progress:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a Process Notification request.
+The request&rsquo;s execution is triggered separately through <code>-[IDCProcessNotificationRequest execute]</code>.</p>
+
+<ul>
+<li>progress - The current progress. See <code>Progress</code> for progress types.</li>
+<li>response - Success when it is not nil.</li>
+<li>error - Error details. See <code><a href="../Structs/IDCError.html">IDCError</a></code> for error types.</li>
+</ul><div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    2.1.0
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">createProcessNotificationRequest</span><span class="p">(</span><span class="n">withNotification</span> <span class="nv">notification</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">],</span> <span class="nv">uiDelegates</span><span class="p">:</span> <span class="kt"><a href="../Structs/UiDelegates.html">UiDelegates</a></span><span class="p">,</span> <span class="nv">progress</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:13IdCloudClient18IDCProgressClosurea">IDCProgressClosure</a></span><span class="p">?,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:13IdCloudClient13IDCCompletiona">IDCCompletion</a></span><span class="o">&lt;</span><span class="kt"><a href="../Classes.html#/s:13IdCloudClient27ProcessNotificationResponseC">ProcessNotificationResponse</a></span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/ProcessNotificationRequest.html">ProcessNotificationRequest</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>notification</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>contains the push notification json dictionary from the IdCloud server.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>uiDelegates</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>group of ui delegates allowing developers to show the UI
+during PIN or biometric authentication.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>progressBlock</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The handler to report progress. This handler is
+executed on the main thread.
+It takes the following parameter:</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completionBlock</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The completion handler to call when the execution is complete.
+This handler is executed on the main thread.
+It takes the following parameters:</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An <code>IDCProcessNotificationRequest</code> instance.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13IdCloudClient05IDCIdbC0C29createRefreshPushTokenRequest010withDeviceH08progress10completionAA0fghI0CSS_yAA11IDCProgressOcSgyAA0fgH8ResponseCSg_AA8IDCErrorVSgtctF"></a>
+                    <a name="//apple_ref/swift/Method/createRefreshPushTokenRequest(withDeviceToken:progress:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13IdCloudClient05IDCIdbC0C29createRefreshPushTokenRequest010withDeviceH08progress10completionAA0fghI0CSS_yAA11IDCProgressOcSgyAA0fgH8ResponseCSg_AA8IDCErrorVSgtctF">createRefreshPushTokenRequest(withDeviceToken:<wbr>progress:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a Refresh push device token request.
+The request&rsquo;s execution is triggered separately through <code>-[IDCRefreshPushTokenRequest execute]</code>.</p>
+
+<ul>
+<li>progress - The current progress. See <code>Progress</code> for progress types.</li>
+<li>response - Success when it is not nil.</li>
+<li>error - Error details. See <code><a href="../Structs/IDCError.html">IDCError</a></code> for error types.</li>
+</ul><div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    2.1.0
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">createRefreshPushTokenRequest</span><span class="p">(</span><span class="n">withDeviceToken</span> <span class="nv">deviceToken</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">progress</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:13IdCloudClient18IDCProgressClosurea">IDCProgressClosure</a></span><span class="p">?,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:13IdCloudClient13IDCCompletiona">IDCCompletion</a></span><span class="o">&lt;</span><span class="kt"><a href="../Classes.html#/s:13IdCloudClient24RefreshPushTokenResponseC">RefreshPushTokenResponse</a></span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/RefreshPushTokenRequest.html">RefreshPushTokenRequest</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>deviceToken</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The device token string
+executed on the main thread.
+It takes the following parameter:</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completionBlock</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The completion handler to call when the execution is complete.
+This handler is executed on the main thread.
+It takes the following parameters:</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An <code>IDCRefreshPushTokenRequest</code> instance.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13IdCloudClient05IDCIdbC0C03setC2IDyySSKF"></a>
+                    <a name="//apple_ref/swift/Method/setClientID(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13IdCloudClient05IDCIdbC0C03setC2IDyySSKF">setClientID(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set the clientID.
+The clientId needs to be configured for all use cases aside from the Enrollment.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    2.5.0
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setClientID</span><span class="p">(</span><span class="n">_</span> <span class="nv">clientID</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>clientID</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>To set the current clientId</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>error</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>If an error occurs, an NSError is returned with the resulting error. An optional NULL may be passed instead.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Result of setting ClientID.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13IdCloudClient05IDCIdbC0C9clientIDsSaySSGyF"></a>
+                    <a name="//apple_ref/swift/Method/clientIDs()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13IdCloudClient05IDCIdbC0C9clientIDsSaySSGyF">clientIDs()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Retrieve all clientIDs.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    2.5.0
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">clientIDs</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>an Array of <code>String</code> which represent the clientIDs</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13IdCloudClient05IDCIdbC0C5resetyyFZ"></a>
+                    <a name="//apple_ref/swift/Method/reset()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13IdCloudClient05IDCIdbC0C5resetyyFZ">reset()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Resets the SDK to its initial state by removing all stored data.
+Example usage:</p>
+<pre class="highlight swift"><code> <span class="kt">IDCIdCloudClient</span><span class="o">.</span><span class="nf">reset</span><span class="p">()</span>
+</code></pre>
+<div class="aside aside-important">
+    <p class="aside-title">Important</p>
+    <p>This operation cannot be undone. All stored data will be permanently deleted.</p>
+
+</div><div class="aside aside-version">
+    <p class="aside-title">Version</p>
+    <p>3.0.0</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">reset</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>Copyright © 2025 THALES. All rights reserved.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>
