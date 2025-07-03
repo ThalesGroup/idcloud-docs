@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"com.thalesgroup.gemalto.fido2"},{"l":"com.thalesgroup.gemalto.fido2.authenticator.biometric"},{"l":"com.thalesgroup.gemalto.fido2.authenticator.passcode"},{"l":"com.thalesgroup.gemalto.fido2.client"}];updateSearchResults();
