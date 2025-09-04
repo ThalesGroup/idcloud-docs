@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>TGFFido2UiDelegate Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Protocol/TGFFido2UiDelegate" class="dashAnchor"></a>
+    <a title="TGFFido2UiDelegate Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">FIDO2 SDK</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">fido2</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        <a href="../Protocols.html">Protocols</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        TGFFido2UiDelegate Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/TGFAuthenticatorDescriptor.html">TGFAuthenticatorDescriptor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TGFFido2AuthenticatorInfo.html">TGFFido2AuthenticatorInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TGFFido2AuthenticatorRegistrationInfo.html">TGFFido2AuthenticatorRegistrationInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TGFFido2Client.html">TGFFido2Client</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TGFFido2ClientFactory.html">TGFFido2ClientFactory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TGFFido2Config.html">TGFFido2Config</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TGFFido2OperationInfo.html">TGFFido2OperationInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TGFFido2Request.html">TGFFido2Request</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TGFFido2RequestFactory.html">TGFFido2RequestFactory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TGFFido2RespondArgs.html">TGFFido2RespondArgs</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TGFFido2RespondArgsBuilder.html">TGFFido2RespondArgsBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TGFPasscodeAuthenticator.html">TGFPasscodeAuthenticator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TGFPasscodeConfig.html">TGFPasscodeConfig</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)TGFPasscodeRule">TGFPasscodeRule</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TGFPasscodeRuleLength.html">TGFPasscodeRuleLength</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)TGFPasscodeRulePalindrome">TGFPasscodeRulePalindrome</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)TGFPasscodeRuleSeries">TGFPasscodeRuleSeries</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)TGFPasscodeRuleUniform">TGFPasscodeRuleUniform</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:TGFError.h@TGFErrorDomain">TGFErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:TGFPasscodeRuleError.h@TGFPasscodeRuleErrorDomain">TGFPasscodeRuleErrorDomain</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/TGFError.html">TGFError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TGFFido2OperationType.html">TGFFido2OperationType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TGFKeyboardKey.html">TGFKeyboardKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TGFKeyboardUsage.html">TGFKeyboardUsage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TGFPasscodeRuleError.html">TGFPasscodeRuleError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TGFVerifyMethod.html">TGFVerifyMethod</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/TGFAuthenticator.html">TGFAuthenticator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TGFBiometricAuthenticatorDelegate.html">TGFBiometricAuthenticatorDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TGFFido2Response.html">TGFFido2Response</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/c:objc(pl)TGFFido2Task">TGFFido2Task</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TGFFido2UiDelegate.html">TGFFido2UiDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TGFKeyboard.html">TGFKeyboard</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TGFKeyboardDelegate.html">TGFKeyboardDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TGFPasscodeAuthenticatorDelegate.html">TGFPasscodeAuthenticatorDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>TGFFido2UiDelegate</h1>
+              <div class="declaration">
+                <div class="language">
+                  <p class="aside-title">Objective-C</p>
+                  <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">TGFFido2UiDelegate</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+
+                </div>
+                <div class="language">
+                  <p class="aside-title">Swift</p>
+                  <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">TGFFido2UiDelegate</span> <span class="p">:</span> <span class="kt">NSObjectProtocol</span></code></pre>
+
+                </div>
+              </div>
+            <p>A delegate protocol that an application must implement to handle user interactions during a FIDO2 operation.
+The FIDO2 SDK does not provide any UI and relies on the conforming delegate to display information and capture user input.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    All delegate callbacks are invoked on the Main thread.
+
+</div>
+
+<p>@since 1.0.0</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)TGFFido2UiDelegate(im)showAuthenticators:forOperationInfo:authenticatorSelectionHandler:cancelHandler:"></a>
+                    <a name="//apple_ref/objc/Method/-showAuthenticators:forOperationInfo:authenticatorSelectionHandler:cancelHandler:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)TGFFido2UiDelegate(im)showAuthenticators:forOperationInfo:authenticatorSelectionHandler:cancelHandler:">-showAuthenticators:<wbr>forOperationInfo:<wbr>authenticatorSelectionHandler:<wbr>cancelHandler:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when a FIDO2 request matches more than one available authenticator.
+Your application must implement this method to display a list of authenticators and allow the user to select one.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">showAuthenticators</span><span class="p">:</span>
+            <span class="p">(</span><span class="n">NSArray</span><span class="o">&lt;</span><span class="n"><a href="../Classes/TGFFido2AuthenticatorInfo.html">TGFFido2AuthenticatorInfo</a></span> <span class="o">*&gt;</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">authenticators</span>
+                 <span class="nf">forOperationInfo</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/TGFFido2OperationInfo.html">TGFFido2OperationInfo</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">operationInfo</span>
+    <span class="nf">authenticatorSelectionHandler</span><span class="p">:</span>
+        <span class="p">(</span><span class="n">nonnull</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n"><a href="../Classes/TGFFido2AuthenticatorInfo.html">TGFFido2AuthenticatorInfo</a></span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">))</span>
+            <span class="n">authenticatorSelectionHandler</span>
+                    <span class="n">cancelHandler</span><span class="o">:</span><span class="p">(</span><span class="n">nonnull</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="kt">void</span><span class="p">))</span><span class="n">cancelHandler</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">showAuthenticators</span><span class="p">(</span><span class="n">_</span> <span class="nv">authenticators</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/TGFFido2AuthenticatorInfo.html">TGFFido2AuthenticatorInfo</a></span><span class="p">],</span> <span class="nv">operationInfo</span><span class="p">:</span> <span class="kt"><a href="../Classes/TGFFido2OperationInfo.html">TGFFido2OperationInfo</a></span><span class="p">,</span> <span class="nv">authenticatorSelectionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Classes/TGFFido2AuthenticatorInfo.html">TGFFido2AuthenticatorInfo</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">,</span> <span class="nv">cancelHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>authenticators</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An array of <code><a href="../Classes/TGFFido2AuthenticatorInfo.html">TGFFido2AuthenticatorInfo</a></code> objects, each representing an authenticator that the user can choose.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>operationInfo</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code><a href="../Classes/TGFFido2OperationInfo.html">TGFFido2OperationInfo</a></code> object containing details about the FIDO2 operation (e.g., Relying Party information).</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>authenticatorSelectionHandler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A block to be called with the authenticator the user selected. You MUST call either this handler or <code>cancelHandler</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cancelHandler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A block to be called if the user cancels the selection. You MUST call either this handler or <code>authenticatorSelectionHandler</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)TGFFido2UiDelegate(im)retrieveAuthenticatorDescription:authenticatorDescriptionHandler:cancelHandler:"></a>
+                    <a name="//apple_ref/objc/Method/-retrieveAuthenticatorDescription:authenticatorDescriptionHandler:cancelHandler:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)TGFFido2UiDelegate(im)retrieveAuthenticatorDescription:authenticatorDescriptionHandler:cancelHandler:">-retrieveAuthenticatorDescription:<wbr>authenticatorDescriptionHandler:<wbr>cancelHandler:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called after a new authenticator is registered, allowing the application to provide a user-friendly name or description for it.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">retrieveAuthenticatorDescription</span><span class="p">:</span>
+            <span class="p">(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/TGFFido2AuthenticatorInfo.html">TGFFido2AuthenticatorInfo</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">selectedAuthenticator</span>
+         <span class="nf">authenticatorDescriptionHandler</span><span class="p">:</span>
+             <span class="p">(</span><span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="n">_Nonnull</span><span class="p">)(</span><span class="n"><a href="../Classes/TGFAuthenticatorDescriptor.html">TGFAuthenticatorDescriptor</a></span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">))</span>
+                 <span class="n">authenticatorDescriptionHandler</span>
+                           <span class="n">cancelHandler</span><span class="o">:</span><span class="p">(</span><span class="n">nonnull</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="kt">void</span><span class="p">))</span><span class="n">cancelHandler</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">retrieveAuthenticatorDescription</span><span class="p">(</span><span class="n">_</span> <span class="nv">selectedAuthenticator</span><span class="p">:</span> <span class="kt"><a href="../Classes/TGFFido2AuthenticatorInfo.html">TGFFido2AuthenticatorInfo</a></span><span class="p">,</span> <span class="nv">authenticatorDescriptionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Classes/TGFAuthenticatorDescriptor.html">TGFAuthenticatorDescriptor</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">,</span> <span class="nv">cancelHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>selectedAuthenticator</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Information about the authenticator that was just registered.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>authenticatorDescriptionHandler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A block to be called with a <code><a href="../Classes/TGFAuthenticatorDescriptor.html">TGFAuthenticatorDescriptor</a></code> containing the new friendly name. You MUST call either this handler or <code>cancelHandler</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cancelHandler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A block to be called if the user cancels the process of naming the authenticator. You MUST call either this handler or <code>authenticatorDescriptionHandler</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)TGFFido2UiDelegate(im)showTransactionDetails:proceedHandler:cancelHandler:"></a>
+                    <a name="//apple_ref/objc/Method/-showTransactionDetails:proceedHandler:cancelHandler:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)TGFFido2UiDelegate(im)showTransactionDetails:proceedHandler:cancelHandler:">-showTransactionDetails:<wbr>proceedHandler:<wbr>cancelHandler:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when user confirmation is required for a FIDO2 operation with transaction details (Transaction Confirmation).
+Your application must display the transaction details and ask the user to confirm or cancel.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">showTransactionDetails</span><span class="p">:</span>
+            <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSDictionary</span><span class="o">&lt;</span><span class="n">NSString</span> <span class="o">*</span><span class="p">,</span> <span class="n">NSString</span> <span class="o">*&gt;</span> <span class="o">*</span><span class="p">)</span><span class="nv">transactionDetails</span>
+                <span class="nf">proceedHandler</span><span class="p">:(</span><span class="n">nonnull</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="kt">void</span><span class="p">))</span><span class="nv">proceedHandler</span>
+                 <span class="nf">cancelHandler</span><span class="p">:(</span><span class="n">nonnull</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="kt">void</span><span class="p">))</span><span class="nv">cancelHandler</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">showTransactionDetails</span><span class="p">(</span><span class="n">_</span> <span class="nv">transactionDetails</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">String</span><span class="p">],</span> <span class="nv">proceedHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">,</span> <span class="nv">cancelHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>transactionDetails</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A dictionary containing the transaction details to be displayed to the user.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>proceedHandler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A block to be called to inform the SDK to proceed with the transaction. You MUST call either this handler or <code>cancelHandler</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cancelHandler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A block to be called to cancel the transaction. You MUST call either this handler or <code>proceedHandler</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>Copyright © 2025 THALES. All rights reserved.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>TGFPasscodeConfig Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Class/TGFPasscodeConfig" class="dashAnchor"></a>
+    <a title="TGFPasscodeConfig Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">FIDO2 SDK</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">fido2</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        <a href="../Classes.html">Classes</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        TGFPasscodeConfig Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/TGFAuthenticatorDescriptor.html">TGFAuthenticatorDescriptor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TGFFido2AuthenticatorInfo.html">TGFFido2AuthenticatorInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TGFFido2AuthenticatorRegistrationInfo.html">TGFFido2AuthenticatorRegistrationInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TGFFido2Client.html">TGFFido2Client</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TGFFido2ClientFactory.html">TGFFido2ClientFactory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TGFFido2Config.html">TGFFido2Config</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TGFFido2OperationInfo.html">TGFFido2OperationInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TGFFido2Request.html">TGFFido2Request</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TGFFido2RequestFactory.html">TGFFido2RequestFactory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TGFFido2RespondArgs.html">TGFFido2RespondArgs</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TGFFido2RespondArgsBuilder.html">TGFFido2RespondArgsBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TGFPasscodeAuthenticator.html">TGFPasscodeAuthenticator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TGFPasscodeConfig.html">TGFPasscodeConfig</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)TGFPasscodeRule">TGFPasscodeRule</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TGFPasscodeRuleLength.html">TGFPasscodeRuleLength</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)TGFPasscodeRulePalindrome">TGFPasscodeRulePalindrome</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)TGFPasscodeRuleSeries">TGFPasscodeRuleSeries</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)TGFPasscodeRuleUniform">TGFPasscodeRuleUniform</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:TGFError.h@TGFErrorDomain">TGFErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:TGFPasscodeRuleError.h@TGFPasscodeRuleErrorDomain">TGFPasscodeRuleErrorDomain</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/TGFError.html">TGFError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TGFFido2OperationType.html">TGFFido2OperationType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TGFKeyboardKey.html">TGFKeyboardKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TGFKeyboardUsage.html">TGFKeyboardUsage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TGFPasscodeRuleError.html">TGFPasscodeRuleError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TGFVerifyMethod.html">TGFVerifyMethod</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/TGFAuthenticator.html">TGFAuthenticator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TGFBiometricAuthenticatorDelegate.html">TGFBiometricAuthenticatorDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TGFFido2Response.html">TGFFido2Response</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/c:objc(pl)TGFFido2Task">TGFFido2Task</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TGFFido2UiDelegate.html">TGFFido2UiDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TGFKeyboard.html">TGFKeyboard</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TGFKeyboardDelegate.html">TGFKeyboardDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TGFPasscodeAuthenticatorDelegate.html">TGFPasscodeAuthenticatorDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>TGFPasscodeConfig</h1>
+              <div class="declaration">
+                <div class="language">
+                  <p class="aside-title">Objective-C</p>
+                  <pre class="highlight objective_c"><code>
+<span class="k">@interface</span> <span class="nc">TGFPasscodeConfig</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                </div>
+                <div class="language">
+                  <p class="aside-title">Swift</p>
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">TGFPasscodeConfig</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>A utility class for globally configuring the behavior of the Passcode Authenticator.</p>
+
+<p>@discussion By default, the FIDO2 SDK uses reasonable and secure settings. This class allows an application
+ to customize certain behaviors, such as passcode complexity rules or keyboard appearance.</p>
+
+<p>@since 1.0.0</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TGFPasscodeConfig(im)init"></a>
+                    <a name="//apple_ref/objc/Method/-init" class="dashAnchor"></a>
+                    <a class="token discouraged" href="#/c:objc(cs)TGFPasscodeConfig(im)init">-init</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="aside aside-unavailable">
+                        <p class="aside-title">Unavailable</p>
+                        
+                      </div>
+                      <div class="abstract">
+                        <p>There is no direct init function available.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="n">init</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TGFPasscodeConfig(cm)disableScrambled"></a>
+                    <a name="//apple_ref/objc/Method/+disableScrambled" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TGFPasscodeConfig(cm)disableScrambled">+disableScrambled</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Disables the scrambling of the keyboard keys.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">disableScrambled</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">disableScrambled</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TGFPasscodeConfig(cm)setPasscodeRules:error:"></a>
+                    <a name="//apple_ref/objc/Method/+setPasscodeRules:error:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TGFPasscodeConfig(cm)setPasscodeRules:error:">+setPasscodeRules:<wbr>error:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set the passcode rules for acceptable passcodes.</p>
+
+<p>@since 1.3.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="nf">setPasscodeRules</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSSet</span><span class="o">&lt;</span><span class="n"><a href="../Classes.html#/c:objc(cs)TGFPasscodeRule">TGFPasscodeRule</a></span> <span class="o">*&gt;</span> <span class="o">*</span><span class="p">)</span><span class="nv">rules</span>
+                   <span class="nf">error</span><span class="p">:(</span><span class="n">NSError</span> <span class="o">*</span><span class="n">_Nullable</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">error</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">setPasscodeRules</span><span class="p">(</span><span class="n">_</span> <span class="nv">rules</span><span class="p">:</span> <span class="kt">Set</span><span class="o">&lt;</span><span class="kt"><a href="../Classes.html#/c:objc(cs)TGFPasscodeRule">TGFPasscodeRule</a></span><span class="o">&gt;</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>error</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>If an error occurs, an NSError is returned with the resulting error. An optional NULL may be passed instead.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A boolean result indicating if the operation completed successfully.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>Copyright © 2025 THALES. All rights reserved.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>

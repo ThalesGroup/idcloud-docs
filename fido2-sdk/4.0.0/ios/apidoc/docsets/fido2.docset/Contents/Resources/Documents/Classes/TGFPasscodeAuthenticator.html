@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>TGFPasscodeAuthenticator Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Class/TGFPasscodeAuthenticator" class="dashAnchor"></a>
+    <a title="TGFPasscodeAuthenticator Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">FIDO2 SDK</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">fido2</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        <a href="../Classes.html">Classes</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        TGFPasscodeAuthenticator Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/TGFAuthenticatorDescriptor.html">TGFAuthenticatorDescriptor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TGFFido2AuthenticatorInfo.html">TGFFido2AuthenticatorInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TGFFido2AuthenticatorRegistrationInfo.html">TGFFido2AuthenticatorRegistrationInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TGFFido2Client.html">TGFFido2Client</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TGFFido2ClientFactory.html">TGFFido2ClientFactory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TGFFido2Config.html">TGFFido2Config</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TGFFido2OperationInfo.html">TGFFido2OperationInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TGFFido2Request.html">TGFFido2Request</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TGFFido2RequestFactory.html">TGFFido2RequestFactory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TGFFido2RespondArgs.html">TGFFido2RespondArgs</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TGFFido2RespondArgsBuilder.html">TGFFido2RespondArgsBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TGFPasscodeAuthenticator.html">TGFPasscodeAuthenticator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TGFPasscodeConfig.html">TGFPasscodeConfig</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)TGFPasscodeRule">TGFPasscodeRule</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TGFPasscodeRuleLength.html">TGFPasscodeRuleLength</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)TGFPasscodeRulePalindrome">TGFPasscodeRulePalindrome</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)TGFPasscodeRuleSeries">TGFPasscodeRuleSeries</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)TGFPasscodeRuleUniform">TGFPasscodeRuleUniform</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:TGFError.h@TGFErrorDomain">TGFErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:TGFPasscodeRuleError.h@TGFPasscodeRuleErrorDomain">TGFPasscodeRuleErrorDomain</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/TGFError.html">TGFError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TGFFido2OperationType.html">TGFFido2OperationType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TGFKeyboardKey.html">TGFKeyboardKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TGFKeyboardUsage.html">TGFKeyboardUsage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TGFPasscodeRuleError.html">TGFPasscodeRuleError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TGFVerifyMethod.html">TGFVerifyMethod</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/TGFAuthenticator.html">TGFAuthenticator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TGFBiometricAuthenticatorDelegate.html">TGFBiometricAuthenticatorDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TGFFido2Response.html">TGFFido2Response</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/c:objc(pl)TGFFido2Task">TGFFido2Task</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TGFFido2UiDelegate.html">TGFFido2UiDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TGFKeyboard.html">TGFKeyboard</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TGFKeyboardDelegate.html">TGFKeyboardDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TGFPasscodeAuthenticatorDelegate.html">TGFPasscodeAuthenticatorDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>TGFPasscodeAuthenticator</h1>
+              <div class="declaration">
+                <div class="language">
+                  <p class="aside-title">Objective-C</p>
+                  <pre class="highlight objective_c"><code>
+<span class="k">@interface</span> <span class="nc">TGFPasscodeAuthenticator</span> <span class="p">:</span> <span class="nc">NSObject</span> <span class="o">&lt;</span><span class="n"><a href="../Protocols/TGFAuthenticator.html">TGFAuthenticator</a></span><span class="o">&gt;</span></code></pre>
+
+                </div>
+                <div class="language">
+                  <p class="aside-title">Swift</p>
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">TGFPasscodeAuthenticator</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt"><a href="../Protocols/TGFAuthenticator.html">TGFAuthenticator</a></span></code></pre>
+
+                </div>
+              </div>
+            <p>A concrete implementation of the <code><a href="../Protocols/TGFAuthenticator.html">TGFAuthenticator</a></code> protocol that uses a
+user-provided passcode for FIDO2 user verification.</p>
+
+<p>This class manages the entire lifecycle of a passcode credential, including its
+creation, deletion, and modification. It uses a delegate pattern to request the
+presentation of a secure keyboard UI when user interaction is required.</p>
+
+<p>@since 1.0.0</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TGFPasscodeAuthenticator(im)init"></a>
+                    <a name="//apple_ref/objc/Method/-init" class="dashAnchor"></a>
+                    <a class="token discouraged" href="#/c:objc(cs)TGFPasscodeAuthenticator(im)init">-init</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="aside aside-unavailable">
+                        <p class="aside-title">Unavailable</p>
+                        
+                      </div>
+                      <div class="abstract">
+                        <p>Use the designated initializer <code>initWithDelegate:</code> instead.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">instancetype</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">init</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TGFPasscodeAuthenticator(im)initWithDelegate:"></a>
+                    <a name="//apple_ref/objc/Method/-initWithDelegate:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TGFPasscodeAuthenticator(im)initWithDelegate:">-initWithDelegate:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates and returns a new passcode authenticator.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithDelegate</span><span class="p">:</span>
+    <span class="p">(</span><span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/TGFPasscodeAuthenticatorDelegate.html">TGFPasscodeAuthenticatorDelegate</a></span><span class="o">&gt;</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">delegate</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">delegate</span><span class="p">:</span> <span class="p">(</span><span class="kd">any</span> <span class="kt"><a href="../Protocols/TGFPasscodeAuthenticatorDelegate.html">TGFPasscodeAuthenticatorDelegate</a></span><span class="p">)?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>delegate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The delegate object that will handle UI-related events, such as
+presenting the secure keyboard. While this parameter is nullable, a delegate must
+be provided to perform any operation that requires user interaction (e.g.,
+<code>createPasscode</code>, <code>deletePasscode</code>, <code>changePasscode</code>).</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An initialized <code>TGFPasscodeAuthenticator</code> instance.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TGFPasscodeAuthenticator(im)isPasscodeCreated"></a>
+                    <a name="//apple_ref/objc/Method/-isPasscodeCreated" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TGFPasscodeAuthenticator(im)isPasscodeCreated">-isPasscodeCreated</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Checks if a passcode has been created and enrolled for this authenticator.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="n">isPasscodeCreated</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">isPasscodeCreated</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>YES</code> if a passcode exists; otherwise, <code>NO</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TGFPasscodeAuthenticator(im)createPasscode"></a>
+                    <a name="//apple_ref/objc/Method/-createPasscode" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TGFPasscodeAuthenticator(im)createPasscode">-createPasscode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initiates the flow to create and enroll a new passcode.</p>
+
+<p>This method triggers the delegate method
+<code>passcodeAuthenticator:willStartKeyboard:operationInfo:cancelHandler:</code>,
+which provides the application with a secure keyboard view to present to the user
+for passcode entry.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>An error is delivered if this method is called on a previously enrolled user.</p>
+
+</div><div class="aside aside-see">
+    <p class="aside-title">See</p>
+    <p><code><a href="../Protocols/TGFPasscodeAuthenticatorDelegate.html">TGFPasscodeAuthenticatorDelegate</a></code> for handling the enrollment flow and result callbacks.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">createPasscode</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">createPasscode</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TGFPasscodeAuthenticator(im)deletePasscode"></a>
+                    <a name="//apple_ref/objc/Method/-deletePasscode" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TGFPasscodeAuthenticator(im)deletePasscode">-deletePasscode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initiates the flow to delete the existing passcode.</p>
+
+<p>User verification is required to complete this operation. This method triggers the
+delegate method <code>passcodeAuthenticator:willStartKeyboard:operationInfo:cancelHandler:</code>
+to present the secure keyboard for authentication.</p>
+<div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    <p>Upon successful deletion, all FIDO2 registrations associated with this
+authenticator will be permanently invalidated.</p>
+
+</div><div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>An error is delivered via the delegate if no passcode is currently enrolled.</p>
+
+</div><div class="aside aside-see">
+    <p class="aside-title">See</p>
+    <p><code><a href="../Protocols/TGFPasscodeAuthenticatorDelegate.html">TGFPasscodeAuthenticatorDelegate</a></code> for handling the deletion flow and result callbacks.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">deletePasscode</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">deletePasscode</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TGFPasscodeAuthenticator(im)changePasscode"></a>
+                    <a name="//apple_ref/objc/Method/-changePasscode" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TGFPasscodeAuthenticator(im)changePasscode">-changePasscode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initiates the flow to change the existing passcode.</p>
+
+<p>The process requires the user to first authenticate with their current passcode.
+After successful verification, the user will be prompted to enter and confirm a
+new passcode. The delegate will be called multiple times to present the necessary
+keyboard UIs for each step.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    An error is delivered via the delegate if no passcode is currently enrolled.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">changePasscode</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">changePasscode</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TGFPasscodeAuthenticator(cm)lockoutExpiryTimestamp:"></a>
+                    <a name="//apple_ref/objc/Method/+lockoutExpiryTimestamp:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TGFPasscodeAuthenticator(cm)lockoutExpiryTimestamp:">+lockoutExpiryTimestamp:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Retrieves the timestamp for when the current user lockout period expires.</p>
+
+<p>If a user fails authentication too many times, they will be locked out for a
+period of time. During this lockout, all authentication attempts will fail
+immediately with a <code>TGFFido2ErrorCodeUserLockout</code> error. The lockout duration
+starts at 30 seconds and increases exponentially with subsequent consecutive
+lockouts. The counter is reset upon a successful authentication.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">NSNumber</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nf">lockoutExpiryTimestamp</span><span class="p">:</span>
+    <span class="p">(</span><span class="n">NSError</span> <span class="o">*</span><span class="n">_Nullable</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">error</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">lockoutExpiryTimestamp</span><span class="p">()</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">NSNumber</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>error</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>On input, a pointer to an error object. If an error occurs while
+retrieving the lockout status, this pointer is set to an <code>NSError</code> object
+with information about the error.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An <code>NSNumber</code> containing the expiration timestamp as seconds since the
+Unix epoch (00:00:00 UTC on 1 January 1970). Returns <code>nil</code> if an error occurs.
+Returns a number with a value of <code>0</code> if the user is not currently locked out.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>Copyright © 2025 THALES. All rights reserved.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>TGFFido2RespondArgsBuilder Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Class/TGFFido2RespondArgsBuilder" class="dashAnchor"></a>
+    <a title="TGFFido2RespondArgsBuilder Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">FIDO2 SDK</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">fido2</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        <a href="../Classes.html">Classes</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        TGFFido2RespondArgsBuilder Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/TGFAuthenticatorDescriptor.html">TGFAuthenticatorDescriptor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TGFFido2AuthenticatorInfo.html">TGFFido2AuthenticatorInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TGFFido2AuthenticatorRegistrationInfo.html">TGFFido2AuthenticatorRegistrationInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TGFFido2Client.html">TGFFido2Client</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TGFFido2ClientFactory.html">TGFFido2ClientFactory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TGFFido2Config.html">TGFFido2Config</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TGFFido2OperationInfo.html">TGFFido2OperationInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TGFFido2Request.html">TGFFido2Request</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TGFFido2RequestFactory.html">TGFFido2RequestFactory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TGFFido2RespondArgs.html">TGFFido2RespondArgs</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TGFFido2RespondArgsBuilder.html">TGFFido2RespondArgsBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TGFPasscodeAuthenticator.html">TGFPasscodeAuthenticator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TGFPasscodeConfig.html">TGFPasscodeConfig</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)TGFPasscodeRule">TGFPasscodeRule</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TGFPasscodeRuleLength.html">TGFPasscodeRuleLength</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)TGFPasscodeRulePalindrome">TGFPasscodeRulePalindrome</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)TGFPasscodeRuleSeries">TGFPasscodeRuleSeries</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)TGFPasscodeRuleUniform">TGFPasscodeRuleUniform</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:TGFError.h@TGFErrorDomain">TGFErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:TGFPasscodeRuleError.h@TGFPasscodeRuleErrorDomain">TGFPasscodeRuleErrorDomain</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/TGFError.html">TGFError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TGFFido2OperationType.html">TGFFido2OperationType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TGFKeyboardKey.html">TGFKeyboardKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TGFKeyboardUsage.html">TGFKeyboardUsage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TGFPasscodeRuleError.html">TGFPasscodeRuleError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TGFVerifyMethod.html">TGFVerifyMethod</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/TGFAuthenticator.html">TGFAuthenticator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TGFBiometricAuthenticatorDelegate.html">TGFBiometricAuthenticatorDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TGFFido2Response.html">TGFFido2Response</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/c:objc(pl)TGFFido2Task">TGFFido2Task</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TGFFido2UiDelegate.html">TGFFido2UiDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TGFKeyboard.html">TGFKeyboard</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TGFKeyboardDelegate.html">TGFKeyboardDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TGFPasscodeAuthenticatorDelegate.html">TGFPasscodeAuthenticatorDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>TGFFido2RespondArgsBuilder</h1>
+              <div class="declaration">
+                <div class="language">
+                  <p class="aside-title">Objective-C</p>
+                  <pre class="highlight objective_c"><code>
+<span class="k">@interface</span> <span class="nc">TGFFido2RespondArgsBuilder</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                </div>
+                <div class="language">
+                  <p class="aside-title">Swift</p>
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">TGFFido2RespondArgsBuilder</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>A builder of TGFFido2RespondArgs instances.</p>
+
+<p>@since 1.0.0</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TGFFido2RespondArgsBuilder(im)initWithRequest:uiDelegate:"></a>
+                    <a name="//apple_ref/objc/Method/-initWithRequest:uiDelegate:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TGFFido2RespondArgsBuilder(im)initWithRequest:uiDelegate:">-initWithRequest:<wbr>uiDelegate:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initializes the builder with the required FIDO2 request and a UI delegate.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">instancetype</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nf">initWithRequest</span><span class="p">:(</span><span class="n"><a href="../Classes/TGFFido2Request.html">TGFFido2Request</a></span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">request</span>
+                              <span class="nf">uiDelegate</span><span class="p">:</span>
+                                  <span class="p">(</span><span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/TGFFido2UiDelegate.html">TGFFido2UiDelegate</a></span><span class="o">&gt;</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">uiDelegate</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">request</span><span class="p">:</span> <span class="kt"><a href="../Classes/TGFFido2Request.html">TGFFido2Request</a></span><span class="p">,</span> <span class="nv">uiDelegate</span><span class="p">:</span> <span class="kd">any</span> <span class="kt"><a href="../Protocols/TGFFido2UiDelegate.html">TGFFido2UiDelegate</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>request</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The FIDO2 request to be processed.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>uiDelegate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A delegate for handling common UI events.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An initialized <code>TGFFido2RespondArgsBuilder</code> instance.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TGFFido2RespondArgsBuilder(py)request"></a>
+                    <a name="//apple_ref/objc/Property/request" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TGFFido2RespondArgsBuilder(py)request">request</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The FIDO2 request to be processed.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">strong</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Classes/TGFFido2Request.html">TGFFido2Request</a></span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">request</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">request</span><span class="p">:</span> <span class="kt"><a href="../Classes/TGFFido2Request.html">TGFFido2Request</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TGFFido2RespondArgsBuilder(py)uiDelegate"></a>
+                    <a name="//apple_ref/objc/Property/uiDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TGFFido2RespondArgsBuilder(py)uiDelegate">uiDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A delegate for handling common UI events during the FIDO2 operation.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">weak</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/TGFFido2UiDelegate.html">TGFFido2UiDelegate</a></span><span class="o">&gt;</span> <span class="n">_Nullable</span> <span class="n">uiDelegate</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">weak</span> <span class="k">var</span> <span class="nv">uiDelegate</span><span class="p">:</span> <span class="p">(</span><span class="kd">any</span> <span class="kt"><a href="../Protocols/TGFFido2UiDelegate.html">TGFFido2UiDelegate</a></span><span class="p">)?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TGFFido2RespondArgsBuilder(py)passcodeAuthenticator"></a>
+                    <a name="//apple_ref/objc/Property/passcodeAuthenticator" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TGFFido2RespondArgsBuilder(py)passcodeAuthenticator">passcodeAuthenticator</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An instance of the passcode authenticator to be used for this operation.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">strong</span><span class="p">)</span> <span class="n"><a href="../Classes/TGFPasscodeAuthenticator.html">TGFPasscodeAuthenticator</a></span> <span class="o">*</span><span class="n">_Nullable</span> <span class="n">passcodeAuthenticator</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">passcodeAuthenticator</span><span class="p">:</span> <span class="kt"><a href="../Classes/TGFPasscodeAuthenticator.html">TGFPasscodeAuthenticator</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TGFFido2RespondArgsBuilder(py)uiBiometricAuthenticatorDelegate"></a>
+                    <a name="//apple_ref/objc/Property/uiBiometricAuthenticatorDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TGFFido2RespondArgsBuilder(py)uiBiometricAuthenticatorDelegate">uiBiometricAuthenticatorDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A delegate for handling UI specific to the biometric authenticator.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">weak</span><span class="p">)</span> <span class="n">id</span><span class="o">&lt;</span> <span class="n"><a href="../Protocols/TGFBiometricAuthenticatorDelegate.html">TGFBiometricAuthenticatorDelegate</a></span><span class="o">&gt;</span> <span class="n">_Nullable</span> <span class="n">uiBiometricAuthenticatorDelegate</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">weak</span> <span class="k">var</span> <span class="nv">uiBiometricAuthenticatorDelegate</span><span class="p">:</span> <span class="p">(</span><span class="kd">any</span> <span class="kt"><a href="../Protocols/TGFBiometricAuthenticatorDelegate.html">TGFBiometricAuthenticatorDelegate</a></span><span class="p">)?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TGFFido2RespondArgsBuilder(py)uiPasscodeAuthenticatorDelegate"></a>
+                    <a name="//apple_ref/objc/Property/uiPasscodeAuthenticatorDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TGFFido2RespondArgsBuilder(py)uiPasscodeAuthenticatorDelegate">uiPasscodeAuthenticatorDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A delegate for handling UI specific to the passcode authenticator.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">weak</span><span class="p">)</span> <span class="n">id</span><span class="o">&lt;</span> <span class="n"><a href="../Protocols/TGFPasscodeAuthenticatorDelegate.html">TGFPasscodeAuthenticatorDelegate</a></span><span class="o">&gt;</span> <span class="n">_Nullable</span> <span class="n">uiPasscodeAuthenticatorDelegate</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">weak</span> <span class="k">var</span> <span class="nv">uiPasscodeAuthenticatorDelegate</span><span class="p">:</span> <span class="p">(</span><span class="kd">any</span> <span class="kt"><a href="../Protocols/TGFPasscodeAuthenticatorDelegate.html">TGFPasscodeAuthenticatorDelegate</a></span><span class="p">)?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TGFFido2RespondArgsBuilder(py)uiPlatformAuthenticatorDelegate"></a>
+                    <a name="//apple_ref/objc/Property/uiPlatformAuthenticatorDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TGFFido2RespondArgsBuilder(py)uiPlatformAuthenticatorDelegate">uiPlatformAuthenticatorDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A delegate that provides a presentation context for the platform authenticator UI.</p>
+
+<p>@since 1.4.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">weak</span><span class="p">)</span> <span class="n">id</span><span class="o">&lt;</span> <span class="n">ASAuthorizationControllerPresentationContextProviding</span><span class="o">&gt;</span> <span class="n">_Nullable</span> <span class="n">uiPlatformAuthenticatorDelegate</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">weak</span> <span class="k">var</span> <span class="nv">uiPlatformAuthenticatorDelegate</span><span class="p">:</span> <span class="p">(</span><span class="kd">any</span> <span class="kt">ASAuthorizationControllerPresentationContextProviding</span><span class="p">)?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TGFFido2RespondArgsBuilder(im)respondArgs"></a>
+                    <a name="//apple_ref/objc/Method/-respondArgs" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TGFFido2RespondArgsBuilder(im)respondArgs">-respondArgs</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Builds and returns an immutable <code><a href="../Classes/TGFFido2RespondArgs.html">TGFFido2RespondArgs</a></code> object based on the current configuration of the builder.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/TGFFido2RespondArgs.html">TGFFido2RespondArgs</a></span> <span class="o">*</span><span class="p">)</span><span class="n">respondArgs</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">respondArgs</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/TGFFido2RespondArgs.html">TGFFido2RespondArgs</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A new <code><a href="../Classes/TGFFido2RespondArgs.html">TGFFido2RespondArgs</a></code> instance.
+@throws NSInvalidArgumentException If a required parameter is missing.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>Copyright © 2025 THALES. All rights reserved.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>
