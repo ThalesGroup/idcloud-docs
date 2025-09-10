@@ -54,42 +54,51 @@ loadScripts(document, 'script');</script>
 <dl class="index">
 <dt><a href="com/thalesgroup/gemalto/fido2/Fido2OperationType.html#AUTHENTICATION" class="member-name-link">AUTHENTICATION</a> - Enum constant in enum class com.thalesgroup.gemalto.fido2.<a href="com/thalesgroup/gemalto/fido2/Fido2OperationType.html" title="enum class in com.thalesgroup.gemalto.fido2">Fido2OperationType</a></dt>
 <dd>
-<div class="block">Request for authentication of an user with an authenticator.</div>
+<div class="block">An authentication operation, used to verify a user with a previously registered authenticator.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/AuthenticatorDescriptionCallback.html" class="type-name-link" title="interface in com.thalesgroup.gemalto.fido2.client">AuthenticatorDescriptionCallback</a> - Interface in <a href="com/thalesgroup/gemalto/fido2/client/package-summary.html">com.thalesgroup.gemalto.fido2.client</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">A callback for providing a custom description for an authenticator.</div>
+</dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/AuthenticatorDescriptor.html" class="type-name-link" title="class in com.thalesgroup.gemalto.fido2.client">AuthenticatorDescriptor</a> - Class in <a href="com/thalesgroup/gemalto/fido2/client/package-summary.html">com.thalesgroup.gemalto.fido2.client</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">A descriptor that provides a custom friendly name for an authenticator.</div>
+</dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/AuthenticatorDescriptor.html#%3Cinit%3E(java.lang.String)" class="member-name-link">AuthenticatorDescriptor(String)</a> - Constructor for class com.thalesgroup.gemalto.fido2.client.<a href="com/thalesgroup/gemalto/fido2/client/AuthenticatorDescriptor.html" title="class in com.thalesgroup.gemalto.fido2.client">AuthenticatorDescriptor</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Creates a new authenticator descriptor with a friendly name.</div>
+</dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/Fido2Client.html#authenticatorRegistrations()" class="member-name-link">authenticatorRegistrations()</a> - Method in interface com.thalesgroup.gemalto.fido2.client.<a href="com/thalesgroup/gemalto/fido2/client/Fido2Client.html" title="interface in com.thalesgroup.gemalto.fido2.client">Fido2Client</a></dt>
 <dd>
-<div class="block">Retrieve a list of registered FIDO2 Authenticators.</div>
+<div class="block">Retrieves a list of all FIDO2 credential registrations stored by the SDK.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/AuthenticatorSelectionCallback.html" class="type-name-link" title="interface in com.thalesgroup.gemalto.fido2.client">AuthenticatorSelectionCallback</a> - Interface in <a href="com/thalesgroup/gemalto/fido2/client/package-summary.html">com.thalesgroup.gemalto.fido2.client</a></dt>
 <dd>
-<div class="block">The interface to be implemented by the FIDO2 SDK to receive the selected username.</div>
+<div class="block">A callback for notifying the FIDO2 SDK about the user's choice of authenticator.</div>
 </dd>
 </dl>
 <h2 class="title" id="I:B">B</h2>
 <dl class="index">
 <dt><a href="com/thalesgroup/gemalto/fido2/client/VerifyMethod.html#BIOMETRIC" class="member-name-link">BIOMETRIC</a> - Enum constant in enum class com.thalesgroup.gemalto.fido2.client.<a href="com/thalesgroup/gemalto/fido2/client/VerifyMethod.html" title="enum class in com.thalesgroup.gemalto.fido2.client">VerifyMethod</a></dt>
 <dd>
-<div class="block">This flag MUST be set if the authenticator uses any type of measurement of a proprietary biometric for user verification.</div>
+<div class="block">User verification is performed using a biometric sensor on the device
+ (e.g., fingerprint, face recognition).</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/Constant.html#BIOMETRIC_AUTHENTICATOR_AAGUID" class="member-name-link">BIOMETRIC_AUTHENTICATOR_AAGUID</a> - Static variable in interface com.thalesgroup.gemalto.fido2.<a href="com/thalesgroup/gemalto/fido2/Constant.html" title="interface in com.thalesgroup.gemalto.fido2">Constant</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">The AAGUID for the Biometric Authenticator.</div>
+</dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/authenticator/biometric/BiometricAuthenticatorCallback.html" class="type-name-link" title="interface in com.thalesgroup.gemalto.fido2.authenticator.biometric">BiometricAuthenticatorCallback</a> - Interface in <a href="com/thalesgroup/gemalto/fido2/authenticator/biometric/package-summary.html">com.thalesgroup.gemalto.fido2.authenticator.biometric</a></dt>
 <dd>
-<div class="block">A callback to manage Biometric Prompt UI</div>
+<div class="block">A callback for providing a custom message to be displayed on the Biometric Prompt UI.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/authenticator/biometric/BiometricAuthenticatorCallback.html#biometricAuthenticatorCustomMessagePrompt(com.thalesgroup.gemalto.fido2.client.Fido2OperationInfo)" class="member-name-link">biometricAuthenticatorCustomMessagePrompt(Fido2OperationInfo)</a> - Method in interface com.thalesgroup.gemalto.fido2.authenticator.biometric.<a href="com/thalesgroup/gemalto/fido2/authenticator/biometric/BiometricAuthenticatorCallback.html" title="interface in com.thalesgroup.gemalto.fido2.authenticator.biometric">BiometricAuthenticatorCallback</a></dt>
 <dd>
-<div class="block">Called when the application set the custom message to the biometric prompt UI</div>
+<div class="block">Called by the SDK to get a custom message to display in the biometric prompt.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/Fido2RespondArgs.Builder.html#build()" class="member-name-link">build()</a> - Method in class com.thalesgroup.gemalto.fido2.client.<a href="com/thalesgroup/gemalto/fido2/client/Fido2RespondArgs.Builder.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2RespondArgs.Builder</a></dt>
 <dd>
-<div class="block">Builds an instance of a <code>Fido2RespondArgs</code>.</div>
+<div class="block">Builds the <code>Fido2RespondArgs</code> instance.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/Fido2RespondArgs.Builder.html#%3Cinit%3E()" class="member-name-link">Builder()</a> - Constructor for class com.thalesgroup.gemalto.fido2.client.<a href="com/thalesgroup/gemalto/fido2/client/Fido2RespondArgs.Builder.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2RespondArgs.Builder</a></dt>
 <dd>&nbsp;</dd>
@@ -98,45 +107,47 @@ loadScripts(document, 'script');</script>
 <dl class="index">
 <dt><a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/Controller.html#cancel()" class="member-name-link">cancel()</a> - Method in interface com.thalesgroup.gemalto.fido2.authenticator.passcode.<a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/Controller.html" title="interface in com.thalesgroup.gemalto.fido2.authenticator.passcode">Controller</a></dt>
 <dd>
-<div class="block">Cancel the process.</div>
+<div class="block">Cancels the ongoing passcode entry process.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/SetPasscodeCallback.html#cancel()" class="member-name-link">cancel()</a> - Method in interface com.thalesgroup.gemalto.fido2.authenticator.passcode.<a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/SetPasscodeCallback.html" title="interface in com.thalesgroup.gemalto.fido2.authenticator.passcode">SetPasscodeCallback</a></dt>
 <dd>
-<div class="block">To cancel the operation
-
-  It is called on the main thread.</div>
+<div class="block">Cancels the ongoing passcode operation.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/AuthenticatorDescriptionCallback.html#cancel()" class="member-name-link">cancel()</a> - Method in interface com.thalesgroup.gemalto.fido2.client.<a href="com/thalesgroup/gemalto/fido2/client/AuthenticatorDescriptionCallback.html" title="interface in com.thalesgroup.gemalto.fido2.client">AuthenticatorDescriptionCallback</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Cancels the operation to retrieve an authenticator description.</div>
+</dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/AuthenticatorSelectionCallback.html#cancel()" class="member-name-link">cancel()</a> - Method in interface com.thalesgroup.gemalto.fido2.client.<a href="com/thalesgroup/gemalto/fido2/client/AuthenticatorSelectionCallback.html" title="interface in com.thalesgroup.gemalto.fido2.client">AuthenticatorSelectionCallback</a></dt>
 <dd>
-<div class="block">Cancels an ongoing <a href="com/thalesgroup/gemalto/fido2/client/Fido2UiCallback.html#showAuthenticators(java.util.List,com.thalesgroup.gemalto.fido2.client.AuthenticatorSelectionCallback)"><code>Fido2UiCallback.showAuthenticators</code></a></div>
+<div class="block">Cancels the authenticator selection process.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/TransactionDetailsCallback.html#cancel()" class="member-name-link">cancel()</a> - Method in interface com.thalesgroup.gemalto.fido2.client.<a href="com/thalesgroup/gemalto/fido2/client/TransactionDetailsCallback.html" title="interface in com.thalesgroup.gemalto.fido2.client">TransactionDetailsCallback</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Notifies the SDK to cancel the transaction.</div>
+</dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/Fido2ResponseTask.html#cancel(boolean)" class="member-name-link">cancel(boolean)</a> - Method in interface com.thalesgroup.gemalto.fido2.client.<a href="com/thalesgroup/gemalto/fido2/client/Fido2ResponseTask.html" title="interface in com.thalesgroup.gemalto.fido2.client">Fido2ResponseTask</a></dt>
 <dd>
-<div class="block">Attempts to cancel execution of this task.</div>
+<div class="block">Attempts to cancel the execution of this task.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/KeyboardUsage.html#CHANGE_PASSCODE_CONFIRM" class="member-name-link">CHANGE_PASSCODE_CONFIRM</a> - Enum constant in enum class com.thalesgroup.gemalto.fido2.authenticator.passcode.<a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/KeyboardUsage.html" title="enum class in com.thalesgroup.gemalto.fido2.authenticator.passcode">KeyboardUsage</a></dt>
 <dd>
-<div class="block">Returned during change passcode when the keyboard needs to confirm the new passcode</div>
+<div class="block">Indicates the keyboard is for confirming the new passcode during a change passcode operation.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/KeyboardUsage.html#CHANGE_PASSCODE_NEW" class="member-name-link">CHANGE_PASSCODE_NEW</a> - Enum constant in enum class com.thalesgroup.gemalto.fido2.authenticator.passcode.<a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/KeyboardUsage.html" title="enum class in com.thalesgroup.gemalto.fido2.authenticator.passcode">KeyboardUsage</a></dt>
 <dd>
-<div class="block">Returned during change passcode when the keyboard needs a new passcode</div>
+<div class="block">Indicates the keyboard is for entering a new passcode during a change passcode operation.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/KeyboardUsage.html#CHANGE_PASSCODE_OLD" class="member-name-link">CHANGE_PASSCODE_OLD</a> - Enum constant in enum class com.thalesgroup.gemalto.fido2.authenticator.passcode.<a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/KeyboardUsage.html" title="enum class in com.thalesgroup.gemalto.fido2.authenticator.passcode">KeyboardUsage</a></dt>
 <dd>
-<div class="block">Returned during change passcode when the keyboard needs to authenticate to start a passcode change</div>
+<div class="block">Indicates the keyboard is for entering the old passcode during a change passcode operation.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeAuthenticator.html#changePasscode()" class="member-name-link">changePasscode()</a> - Method in class com.thalesgroup.gemalto.fido2.authenticator.passcode.<a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeAuthenticator.html" title="class in com.thalesgroup.gemalto.fido2.authenticator.passcode">PasscodeAuthenticator</a></dt>
 <dd>
-<div class="block">Change the existing passcode for the current Passcode Authenticator.</div>
+<div class="block">Starts the asynchronous process to change the existing passcode.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/Keyboard.html#clear()" class="member-name-link">clear()</a> - Method in class com.thalesgroup.gemalto.fido2.authenticator.passcode.<a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/Keyboard.html" title="class in com.thalesgroup.gemalto.fido2.authenticator.passcode">Keyboard</a></dt>
 <dd>
-<div class="block">Clear the currently entered keys.</div>
+<div class="block">Clears all digits currently entered on the keyboard.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/package-summary.html">com.thalesgroup.gemalto.fido2</a> - package com.thalesgroup.gemalto.fido2</dt>
 <dd>&nbsp;</dd>
@@ -147,19 +158,20 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/package-summary.html">com.thalesgroup.gemalto.fido2.client</a> - package com.thalesgroup.gemalto.fido2.client</dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/Constant.html" class="type-name-link" title="interface in com.thalesgroup.gemalto.fido2">Constant</a> - Interface in <a href="com/thalesgroup/gemalto/fido2/package-summary.html">com.thalesgroup.gemalto.fido2</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">An interface that contains Authenticator Attestation GUID (AAGUID) constants for FIDO2 authenticators.</div>
+</dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/Controller.html" class="type-name-link" title="interface in com.thalesgroup.gemalto.fido2.authenticator.passcode">Controller</a> - Interface in <a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/package-summary.html">com.thalesgroup.gemalto.fido2.authenticator.passcode</a></dt>
 <dd>
-<div class="block">A controller interface that allows the application to control the
- process.</div>
+<div class="block">A controller that allows the application to cancel an ongoing passcode operation.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/Fido2ClientFactory.html#createFido2Client(android.content.Context)" class="member-name-link">createFido2Client(Context)</a> - Static method in class com.thalesgroup.gemalto.fido2.client.<a href="com/thalesgroup/gemalto/fido2/client/Fido2ClientFactory.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2ClientFactory</a></dt>
 <dd>
-<div class="block">Creates FIDO client instances that process FIDO2 requests.</div>
+<div class="block">Creates a new instance of <a href="com/thalesgroup/gemalto/fido2/client/Fido2Client.html" title="interface in com.thalesgroup.gemalto.fido2.client"><code>Fido2Client</code></a>.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeAuthenticator.html#createPasscode()" class="member-name-link">createPasscode()</a> - Method in class com.thalesgroup.gemalto.fido2.authenticator.passcode.<a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeAuthenticator.html" title="class in com.thalesgroup.gemalto.fido2.authenticator.passcode">PasscodeAuthenticator</a></dt>
 <dd>
-<div class="block">Create the passcode of the Passcode Authenticator.</div>
+<div class="block">Starts the asynchronous process to create a new passcode.</div>
 </dd>
 </dl>
 <h2 class="title" id="I:D">D</h2>
@@ -174,41 +186,39 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/KeyboardKey.html#DELETE" class="member-name-link">DELETE</a> - Enum constant in enum class com.thalesgroup.gemalto.fido2.authenticator.passcode.<a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/KeyboardKey.html" title="enum class in com.thalesgroup.gemalto.fido2.authenticator.passcode">KeyboardKey</a></dt>
 <dd>
-<div class="block">Delete key</div>
+<div class="block">The delete key was pressed.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/Fido2Client.html#deleteAuthenticatorRegistration(com.thalesgroup.gemalto.fido2.client.Fido2AuthenticatorRegistrationInfo)" class="member-name-link">deleteAuthenticatorRegistration(Fido2AuthenticatorRegistrationInfo)</a> - Method in interface com.thalesgroup.gemalto.fido2.client.<a href="com/thalesgroup/gemalto/fido2/client/Fido2Client.html" title="interface in com.thalesgroup.gemalto.fido2.client">Fido2Client</a></dt>
 <dd>
-<div class="block">Delete Authenticator registration</div>
+<div class="block">Deletes a specific FIDO2 credential registration.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeAuthenticator.html#deletePasscode()" class="member-name-link">deletePasscode()</a> - Method in class com.thalesgroup.gemalto.fido2.authenticator.passcode.<a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeAuthenticator.html" title="class in com.thalesgroup.gemalto.fido2.authenticator.passcode">PasscodeAuthenticator</a></dt>
 <dd>
-<div class="block">Delete the previously created passcode of the Passcode Authenticator.</div>
+<div class="block">Starts the asynchronous process to delete the user's existing passcode.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeConfig.html#disableScramble()" class="member-name-link">disableScramble()</a> - Static method in class com.thalesgroup.gemalto.fido2.authenticator.passcode.<a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeConfig.html" title="class in com.thalesgroup.gemalto.fido2.authenticator.passcode">PasscodeConfig</a></dt>
 <dd>
-<div class="block">Disables the scrambling of the keyboard keys.</div>
+<div class="block">Disables the scrambling of the secure keyboard keys.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/KeyboardKey.html#DONE" class="member-name-link">DONE</a> - Enum constant in enum class com.thalesgroup.gemalto.fido2.authenticator.passcode.<a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/KeyboardKey.html" title="enum class in com.thalesgroup.gemalto.fido2.authenticator.passcode">KeyboardKey</a></dt>
 <dd>
-<div class="block">Done key</div>
+<div class="block">The "Done" or "OK" key was pressed to submit the passcode.</div>
 </dd>
 </dl>
 <h2 class="title" id="I:E">E</h2>
 <dl class="index">
 <dt><a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/KeyboardUsage.html#ENROLL_CONFIRM" class="member-name-link">ENROLL_CONFIRM</a> - Enum constant in enum class com.thalesgroup.gemalto.fido2.authenticator.passcode.<a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/KeyboardUsage.html" title="enum class in com.thalesgroup.gemalto.fido2.authenticator.passcode">KeyboardUsage</a></dt>
 <dd>
-<div class="block">Returned during enrollment when the keyboard needs to confirm the new passcode</div>
+<div class="block">Indicates the keyboard is for confirming a new passcode during enrollment.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/KeyboardUsage.html#ENROLL_NEW" class="member-name-link">ENROLL_NEW</a> - Enum constant in enum class com.thalesgroup.gemalto.fido2.authenticator.passcode.<a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/KeyboardUsage.html" title="enum class in com.thalesgroup.gemalto.fido2.authenticator.passcode">KeyboardUsage</a></dt>
 <dd>
-<div class="block">Returned during enrollment when the keyboard needs a new passcode</div>
+<div class="block">Indicates the keyboard is for entering a new passcode during enrollment.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/Fido2ErrorCode.html#ERROR_ABORTED" class="member-name-link">ERROR_ABORTED</a> - Enum constant in enum class com.thalesgroup.gemalto.fido2.<a href="com/thalesgroup/gemalto/fido2/Fido2ErrorCode.html" title="enum class in com.thalesgroup.gemalto.fido2">Fido2ErrorCode</a></dt>
 <dd>
 <div class="block">Operation aborted.</div>
 </dd>
-<dt><a href="com/thalesgroup/gemalto/fido2/Fido2ErrorCode.html#ERROR_CERT_PINNING_FAILED" class="member-name-link">ERROR_CERT_PINNING_FAILED</a> - Enum constant in enum class com.thalesgroup.gemalto.fido2.<a href="com/thalesgroup/gemalto/fido2/Fido2ErrorCode.html" title="enum class in com.thalesgroup.gemalto.fido2">Fido2ErrorCode</a></dt>
-<dd>&nbsp;</dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/Fido2ErrorCode.html#ERROR_DATA_ERROR" class="member-name-link">ERROR_DATA_ERROR</a> - Enum constant in enum class com.thalesgroup.gemalto.fido2.<a href="com/thalesgroup/gemalto/fido2/Fido2ErrorCode.html" title="enum class in com.thalesgroup.gemalto.fido2">Fido2ErrorCode</a></dt>
 <dd>
 <div class="block">Operation data is inadequate or contains error.</div>
@@ -298,27 +308,27 @@ loadScripts(document, 'script');</script>
 <dl class="index">
 <dt><a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/KeyboardUsage.html#FIDO_OPERATION" class="member-name-link">FIDO_OPERATION</a> - Enum constant in enum class com.thalesgroup.gemalto.fido2.authenticator.passcode.<a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/KeyboardUsage.html" title="enum class in com.thalesgroup.gemalto.fido2.authenticator.passcode">KeyboardUsage</a></dt>
 <dd>
-<div class="block">Returned during FIDO operation when the keyboard needs to authenticate before performing a FIDO operation</div>
+<div class="block">Indicates the keyboard is for authenticating the user for a FIDO operation.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/Fido2AuthenticatorInfo.html" class="type-name-link" title="interface in com.thalesgroup.gemalto.fido2.client">Fido2AuthenticatorInfo</a> - Interface in <a href="com/thalesgroup/gemalto/fido2/client/package-summary.html">com.thalesgroup.gemalto.fido2.client</a></dt>
 <dd>
-<div class="block">Information about an authenticator that helps a user decide which
- authenticator to select for an Fido2 request that matches multiple
- authenticators.</div>
+<div class="block">Provides descriptive information about an available FIDO2 authenticator.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/Fido2AuthenticatorRegistrationInfo.html" class="type-name-link" title="interface in com.thalesgroup.gemalto.fido2.client">Fido2AuthenticatorRegistrationInfo</a> - Interface in <a href="com/thalesgroup/gemalto/fido2/client/package-summary.html">com.thalesgroup.gemalto.fido2.client</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Provides information about a specific FIDO2 credential registration.</div>
+</dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/Fido2Client.html" class="type-name-link" title="interface in com.thalesgroup.gemalto.fido2.client">Fido2Client</a> - Interface in <a href="com/thalesgroup/gemalto/fido2/client/package-summary.html">com.thalesgroup.gemalto.fido2.client</a></dt>
 <dd>
-<div class="block">A FIDO2 client that processes FIDO2 requests and generates FIDO2 responses.</div>
+<div class="block">The main entry point for interacting with the FIDO2 SDK.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/Fido2ClientFactory.html" class="type-name-link" title="class in com.thalesgroup.gemalto.fido2.client">Fido2ClientFactory</a> - Class in <a href="com/thalesgroup/gemalto/fido2/client/package-summary.html">com.thalesgroup.gemalto.fido2.client</a></dt>
 <dd>
-<div class="block">A factory that create FIDO2 client objects.</div>
+<div class="block">A factory for creating <a href="com/thalesgroup/gemalto/fido2/client/Fido2Client.html" title="interface in com.thalesgroup.gemalto.fido2.client"><code>Fido2Client</code></a> instances.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/Fido2Config.html" class="type-name-link" title="class in com.thalesgroup.gemalto.fido2.client">Fido2Config</a> - Class in <a href="com/thalesgroup/gemalto/fido2/client/package-summary.html">com.thalesgroup.gemalto.fido2.client</a></dt>
 <dd>
-<div class="block">A global FIDO2 SDK configuration class.</div>
+<div class="block">A global configuration class for the FIDO2 SDK.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/Fido2Config.html#%3Cinit%3E()" class="member-name-link">Fido2Config()</a> - Constructor for class com.thalesgroup.gemalto.fido2.client.<a href="com/thalesgroup/gemalto/fido2/client/Fido2Config.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2Config</a></dt>
 <dd>&nbsp;</dd>
@@ -328,54 +338,56 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/Fido2Exception.html" class="type-name-link" title="class in com.thalesgroup.gemalto.fido2">Fido2Exception</a> - Exception in <a href="com/thalesgroup/gemalto/fido2/package-summary.html">com.thalesgroup.gemalto.fido2</a></dt>
 <dd>
-<div class="block">Thrown when an error prevents further FIDO2 request processing.</div>
+<div class="block">A custom exception thrown when a FIDO2 operation fails.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/Fido2Exception.html#%3Cinit%3E(com.thalesgroup.gemalto.fido2.Fido2ErrorCode,java.lang.Throwable,java.lang.String)" class="member-name-link">Fido2Exception(Fido2ErrorCode, Throwable, String)</a> - Constructor for exception com.thalesgroup.gemalto.fido2.<a href="com/thalesgroup/gemalto/fido2/Fido2Exception.html" title="class in com.thalesgroup.gemalto.fido2">Fido2Exception</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/Fido2OperationInfo.html" class="type-name-link" title="class in com.thalesgroup.gemalto.fido2.client">Fido2OperationInfo</a> - Class in <a href="com/thalesgroup/gemalto/fido2/client/package-summary.html">com.thalesgroup.gemalto.fido2.client</a></dt>
 <dd>
-<div class="block">A class that holds common information for an ongoing operation started from
-  Fido2Client that the UI needs to display to the user.</div>
+<div class="block">Holds common information about an ongoing FIDO2 operation that may be needed for UI display.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/Fido2OperationInfo.html#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.String,java.lang.String,com.thalesgroup.gemalto.fido2.Fido2OperationType)" class="member-name-link">Fido2OperationInfo(String, String, String, String, Fido2OperationType)</a> - Constructor for class com.thalesgroup.gemalto.fido2.client.<a href="com/thalesgroup/gemalto/fido2/client/Fido2OperationInfo.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2OperationInfo</a></dt>
 <dd>
-<div class="block">Constructor to initialize an Fido2OperationInfo.</div>
+<div class="block">Constructs a new <code>Fido2OperationInfo</code>.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/Fido2OperationType.html" class="type-name-link" title="enum class in com.thalesgroup.gemalto.fido2">Fido2OperationType</a> - Enum Class in <a href="com/thalesgroup/gemalto/fido2/package-summary.html">com.thalesgroup.gemalto.fido2</a></dt>
 <dd>
-<div class="block">Type of FIDO2 operations.</div>
+<div class="block">Represents the type of a FIDO2 operation.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/Fido2Request.html" class="type-name-link" title="class in com.thalesgroup.gemalto.fido2.client">Fido2Request</a> - Class in <a href="com/thalesgroup/gemalto/fido2/client/package-summary.html">com.thalesgroup.gemalto.fido2.client</a></dt>
 <dd>
-<div class="block">A FIDO2 request for registration, authentication, etc..</div>
+<div class="block">Represents a FIDO2 request received from a Relying Party, such as a registration
+ or authentication request.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/Fido2Request.html#%3Cinit%3E(com.thalesgroup.gemalto.fido2.Fido2OperationType)" class="member-name-link">Fido2Request(Fido2OperationType)</a> - Constructor for class com.thalesgroup.gemalto.fido2.client.<a href="com/thalesgroup/gemalto/fido2/client/Fido2Request.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2Request</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/Fido2RespondArgs.html" class="type-name-link" title="class in com.thalesgroup.gemalto.fido2.client">Fido2RespondArgs</a> - Class in <a href="com/thalesgroup/gemalto/fido2/client/package-summary.html">com.thalesgroup.gemalto.fido2.client</a></dt>
 <dd>
-<div class="block">An immutable composition of the arguments needed to respond to a FIDO2
- request in <a href="com/thalesgroup/gemalto/fido2/client/Fido2Client.html#respondWithArgs(com.thalesgroup.gemalto.fido2.client.Fido2RespondArgs,com.thalesgroup.gemalto.fido2.client.Fido2ResponseCallback)"><code>Fido2Client.respondWithArgs</code></a>.</div>
+<div class="block">An immutable container for the arguments required by <a href="com/thalesgroup/gemalto/fido2/client/Fido2Client.html#respondWithArgs(com.thalesgroup.gemalto.fido2.client.Fido2RespondArgs,com.thalesgroup.gemalto.fido2.client.Fido2ResponseCallback)"><code>Fido2Client.respondWithArgs(com.thalesgroup.gemalto.fido2.client.Fido2RespondArgs, com.thalesgroup.gemalto.fido2.client.Fido2ResponseCallback)</code></a>.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/Fido2RespondArgs.Builder.html" class="type-name-link" title="class in com.thalesgroup.gemalto.fido2.client">Fido2RespondArgs.Builder</a> - Class in <a href="com/thalesgroup/gemalto/fido2/client/package-summary.html">com.thalesgroup.gemalto.fido2.client</a></dt>
 <dd>
-<div class="block">A builder of <code>Fido2RespondArgs</code> instances.</div>
+<div class="block">A builder for creating <code>Fido2RespondArgs</code> instances.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/Fido2Response.html" class="type-name-link" title="class in com.thalesgroup.gemalto.fido2.client">Fido2Response</a> - Class in <a href="com/thalesgroup/gemalto/fido2/client/package-summary.html">com.thalesgroup.gemalto.fido2.client</a></dt>
 <dd>
-<div class="block">A FIDO2 request to a registration, authentication, etc request.</div>
+<div class="block">Represents the FIDO2 response sent back to the Relying Party.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/Fido2Response.html#%3Cinit%3E(java.lang.String,com.thalesgroup.gemalto.fido2.Fido2OperationType)" class="member-name-link">Fido2Response(String, Fido2OperationType)</a> - Constructor for class com.thalesgroup.gemalto.fido2.client.<a href="com/thalesgroup/gemalto/fido2/client/Fido2Response.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2Response</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/Fido2ResponseCallback.html" class="type-name-link" title="interface in com.thalesgroup.gemalto.fido2.client">Fido2ResponseCallback</a> - Interface in <a href="com/thalesgroup/gemalto/fido2/client/package-summary.html">com.thalesgroup.gemalto.fido2.client</a></dt>
 <dd>
-<div class="block">Callback interface the caller of <a href="com/thalesgroup/gemalto/fido2/client/Fido2Client.html#respondWithArgs(com.thalesgroup.gemalto.fido2.client.Fido2RespondArgs,com.thalesgroup.gemalto.fido2.client.Fido2ResponseCallback)"><code>Fido2Client.respondWithArgs</code></a> must implement to receive its results asynchronously.</div>
+<div class="block">A callback for receiving the result of a FIDO2 operation initiated by
+ <a href="com/thalesgroup/gemalto/fido2/client/Fido2Client.html#respondWithArgs(com.thalesgroup.gemalto.fido2.client.Fido2RespondArgs,com.thalesgroup.gemalto.fido2.client.Fido2ResponseCallback)"><code>Fido2Client.respondWithArgs(com.thalesgroup.gemalto.fido2.client.Fido2RespondArgs, com.thalesgroup.gemalto.fido2.client.Fido2ResponseCallback)</code></a>.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/Fido2ResponseTask.html" class="type-name-link" title="interface in com.thalesgroup.gemalto.fido2.client">Fido2ResponseTask</a> - Interface in <a href="com/thalesgroup/gemalto/fido2/client/package-summary.html">com.thalesgroup.gemalto.fido2.client</a></dt>
 <dd>
-<div class="block">A FIDO2 asynchronous task that can be cancelled.</div>
+<div class="block">Represents an asynchronous FIDO2 operation that can be cancelled.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/Fido2UiCallback.html" class="type-name-link" title="class in com.thalesgroup.gemalto.fido2.client">Fido2UiCallback</a> - Class in <a href="com/thalesgroup/gemalto/fido2/client/package-summary.html">com.thalesgroup.gemalto.fido2.client</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">An abstract callback class for handling UI-related tasks delegated by the FIDO2 SDK.</div>
+</dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/Fido2UiCallback.html#%3Cinit%3E()" class="member-name-link">Fido2UiCallback()</a> - Constructor for class com.thalesgroup.gemalto.fido2.client.<a href="com/thalesgroup/gemalto/fido2/client/Fido2UiCallback.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2UiCallback</a></dt>
 <dd>&nbsp;</dd>
 </dl>
@@ -383,62 +395,71 @@ loadScripts(document, 'script');</script>
 <dl class="index">
 <dt><a href="com/thalesgroup/gemalto/fido2/client/Fido2Client.html#getAuthenticatorRegistrations(java.lang.String)" class="member-name-link">getAuthenticatorRegistrations(String)</a> - Method in interface com.thalesgroup.gemalto.fido2.client.<a href="com/thalesgroup/gemalto/fido2/client/Fido2Client.html" title="interface in com.thalesgroup.gemalto.fido2.client">Fido2Client</a></dt>
 <dd>
-<div class="block">Retrieve a list of registered FIDO2 Authenticators for a specified userId.</div>
+<div class="block">Retrieves a list of FIDO2 credential registrations for a specific user ID.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/Fido2RespondArgs.html#getBiometricAuthenticatorCallback()" class="member-name-link">getBiometricAuthenticatorCallback()</a> - Method in class com.thalesgroup.gemalto.fido2.client.<a href="com/thalesgroup/gemalto/fido2/client/Fido2RespondArgs.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2RespondArgs</a></dt>
 <dd>
-<div class="block">Gets the Biometric Authenticator Callback</div>
+<div class="block">Gets the callback for the Biometric Authenticator.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeRuleException.ErrorCode.html#getCode()" class="member-name-link">getCode()</a> - Method in enum class com.thalesgroup.gemalto.fido2.authenticator.passcode.<a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeRuleException.ErrorCode.html" title="enum class in com.thalesgroup.gemalto.fido2.authenticator.passcode">PasscodeRuleException.ErrorCode</a></dt>
 <dd>
-<div class="block">Returns integer value of the enum.</div>
+<div class="block">Gets the integer value of the error code.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/Fido2ErrorCode.html#getCode()" class="member-name-link">getCode()</a> - Method in enum class com.thalesgroup.gemalto.fido2.<a href="com/thalesgroup/gemalto/fido2/Fido2ErrorCode.html" title="enum class in com.thalesgroup.gemalto.fido2">Fido2ErrorCode</a></dt>
 <dd>
 <div class="block">Returns integer value of the enum.</div>
 </dd>
+<dt><a href="com/thalesgroup/gemalto/fido2/client/Fido2AuthenticatorRegistrationInfo.html#getCreationDate()" class="member-name-link">getCreationDate()</a> - Method in interface com.thalesgroup.gemalto.fido2.client.<a href="com/thalesgroup/gemalto/fido2/client/Fido2AuthenticatorRegistrationInfo.html" title="interface in com.thalesgroup.gemalto.fido2.client">Fido2AuthenticatorRegistrationInfo</a></dt>
+<dd>
+<div class="block">Gets the date and time when this registration was created.</div>
+</dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/Fido2AuthenticatorRegistrationInfo.html#getCredentialId()" class="member-name-link">getCredentialId()</a> - Method in interface com.thalesgroup.gemalto.fido2.client.<a href="com/thalesgroup/gemalto/fido2/client/Fido2AuthenticatorRegistrationInfo.html" title="interface in com.thalesgroup.gemalto.fido2.client">Fido2AuthenticatorRegistrationInfo</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Gets the credential ID for this registration.</div>
+</dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeRuleException.html#getError()" class="member-name-link">getError()</a> - Method in exception com.thalesgroup.gemalto.fido2.authenticator.passcode.<a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeRuleException.html" title="class in com.thalesgroup.gemalto.fido2.authenticator.passcode">PasscodeRuleException</a></dt>
 <dd>
-<div class="block">Returns the error why the operation failed.</div>
+<div class="block">Gets the specific error code that indicates which rule was violated.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/Fido2Exception.html#getError()" class="member-name-link">getError()</a> - Method in exception com.thalesgroup.gemalto.fido2.<a href="com/thalesgroup/gemalto/fido2/Fido2Exception.html" title="class in com.thalesgroup.gemalto.fido2">Fido2Exception</a></dt>
 <dd>
-<div class="block">Returns the error why the operation failed.</div>
+<div class="block">Gets the specific error code that indicates why the operation failed.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/Keyboard.html#getFragment()" class="member-name-link">getFragment()</a> - Method in class com.thalesgroup.gemalto.fido2.authenticator.passcode.<a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/Keyboard.html" title="class in com.thalesgroup.gemalto.fido2.authenticator.passcode">Keyboard</a></dt>
 <dd>
-<div class="block">A secure keyboard to be presented for user verification.</div>
+<div class="block">Gets the secure keyboard UI as a <code>Fragment</code>.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/AuthenticatorDescriptor.html#getFriendlyName()" class="member-name-link">getFriendlyName()</a> - Method in class com.thalesgroup.gemalto.fido2.client.<a href="com/thalesgroup/gemalto/fido2/client/AuthenticatorDescriptor.html" title="class in com.thalesgroup.gemalto.fido2.client">AuthenticatorDescriptor</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Gets the friendly name of the authenticator.</div>
+</dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/Fido2AuthenticatorInfo.html#getIcon()" class="member-name-link">getIcon()</a> - Method in interface com.thalesgroup.gemalto.fido2.client.<a href="com/thalesgroup/gemalto/fido2/client/Fido2AuthenticatorInfo.html" title="interface in com.thalesgroup.gemalto.fido2.client">Fido2AuthenticatorInfo</a></dt>
 <dd>
-<div class="block">Gets the authenticator's icon encoded in PNG format that optionally can
- be displayed when asking the user to select an authenticator to use for
- this operation.</div>
+<div class="block">Gets an optional icon for the authenticator.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/Fido2AuthenticatorInfo.html#getId()" class="member-name-link">getId()</a> - Method in interface com.thalesgroup.gemalto.fido2.client.<a href="com/thalesgroup/gemalto/fido2/client/Fido2AuthenticatorInfo.html" title="interface in com.thalesgroup.gemalto.fido2.client">Fido2AuthenticatorInfo</a></dt>
 <dd>
-<div class="block">Gets the authenticator's unique identifier that can be used to look up
- authenticator metadata from FIDO2 Metadata Service.</div>
+<div class="block">Gets the authenticator's unique identifier, typically the AAGUID.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/Keyboard.html#getKeyboardUsage()" class="member-name-link">getKeyboardUsage()</a> - Method in class com.thalesgroup.gemalto.fido2.authenticator.passcode.<a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/Keyboard.html" title="class in com.thalesgroup.gemalto.fido2.authenticator.passcode">Keyboard</a></dt>
 <dd>
-<div class="block">Retrieve the keyboard usage.</div>
+<div class="block">Gets the current purpose of the keyboard.</div>
+</dd>
+<dt><a href="com/thalesgroup/gemalto/fido2/client/Fido2AuthenticatorRegistrationInfo.html#getLastUsedDate()" class="member-name-link">getLastUsedDate()</a> - Method in interface com.thalesgroup.gemalto.fido2.client.<a href="com/thalesgroup/gemalto/fido2/client/Fido2AuthenticatorRegistrationInfo.html" title="interface in com.thalesgroup.gemalto.fido2.client">Fido2AuthenticatorRegistrationInfo</a></dt>
+<dd>
+<div class="block">Gets the date and time when this authenticator was last used.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeAuthenticator.html#getLockoutExpiryTimestamp()" class="member-name-link">getLockoutExpiryTimestamp()</a> - Method in class com.thalesgroup.gemalto.fido2.authenticator.passcode.<a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeAuthenticator.html" title="class in com.thalesgroup.gemalto.fido2.authenticator.passcode">PasscodeAuthenticator</a></dt>
 <dd>
-<div class="block">Get the lockout expiry timestamp.</div>
+<div class="block">Gets the timestamp for when the current lockout period will expire.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeRuleLength.html#getMaximumLength()" class="member-name-link">getMaximumLength()</a> - Method in class com.thalesgroup.gemalto.fido2.authenticator.passcode.<a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeRuleLength.html" title="class in com.thalesgroup.gemalto.fido2.authenticator.passcode">PasscodeRuleLength</a></dt>
 <dd>
-<div class="block">Retrieve the currently set maximum length.</div>
+<div class="block">Gets the currently configured maximum length.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeRuleException.ErrorCode.html#getMessage()" class="member-name-link">getMessage()</a> - Method in enum class com.thalesgroup.gemalto.fido2.authenticator.passcode.<a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeRuleException.ErrorCode.html" title="enum class in com.thalesgroup.gemalto.fido2.authenticator.passcode">PasscodeRuleException.ErrorCode</a></dt>
 <dd>
-<div class="block">Returns message of the enum.</div>
+<div class="block">Gets the descriptive message for the error code.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/Fido2ErrorCode.html#getMessage()" class="member-name-link">getMessage()</a> - Method in enum class com.thalesgroup.gemalto.fido2.<a href="com/thalesgroup/gemalto/fido2/Fido2ErrorCode.html" title="enum class in com.thalesgroup.gemalto.fido2">Fido2ErrorCode</a></dt>
 <dd>
@@ -446,64 +467,79 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/Fido2Exception.html#getMessage()" class="member-name-link">getMessage()</a> - Method in exception com.thalesgroup.gemalto.fido2.<a href="com/thalesgroup/gemalto/fido2/Fido2Exception.html" title="class in com.thalesgroup.gemalto.fido2">Fido2Exception</a></dt>
 <dd>
-<div class="block">Returns detail message for the error.</div>
+<div class="block">Gets the detailed error message.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeRuleLength.html#getMinimumLength()" class="member-name-link">getMinimumLength()</a> - Method in class com.thalesgroup.gemalto.fido2.authenticator.passcode.<a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeRuleLength.html" title="class in com.thalesgroup.gemalto.fido2.authenticator.passcode">PasscodeRuleLength</a></dt>
 <dd>
-<div class="block">Retrieve the currently set minimum length.</div>
+<div class="block">Gets the currently configured minimum length.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/Fido2AuthenticatorInfo.html#getName()" class="member-name-link">getName()</a> - Method in interface com.thalesgroup.gemalto.fido2.client.<a href="com/thalesgroup/gemalto/fido2/client/Fido2AuthenticatorInfo.html" title="interface in com.thalesgroup.gemalto.fido2.client">Fido2AuthenticatorInfo</a></dt>
 <dd>
-<div class="block">Gets the authenticator's name</div>
+<div class="block">Gets the human-readable name of the authenticator (e.g., "Biometric").</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/Fido2OperationInfo.html#getOperationType()" class="member-name-link">getOperationType()</a> - Method in class com.thalesgroup.gemalto.fido2.client.<a href="com/thalesgroup/gemalto/fido2/client/Fido2OperationInfo.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2OperationInfo</a></dt>
 <dd>
-<div class="block">To get the Operation type</div>
+<div class="block">Gets the type of the FIDO2 operation (e.g., registration or authentication).</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/Fido2Response.html#getOperationType()" class="member-name-link">getOperationType()</a> - Method in class com.thalesgroup.gemalto.fido2.client.<a href="com/thalesgroup/gemalto/fido2/client/Fido2Response.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2Response</a></dt>
 <dd>
-<div class="block">Gets the FIDO2 response operation type (e.g.</div>
+<div class="block">Gets the type of the FIDO2 operation that this response corresponds to.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/Fido2RespondArgs.html#getPasscodeAuthenticatorCallback()" class="member-name-link">getPasscodeAuthenticatorCallback()</a> - Method in class com.thalesgroup.gemalto.fido2.client.<a href="com/thalesgroup/gemalto/fido2/client/Fido2RespondArgs.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2RespondArgs</a></dt>
 <dd>
-<div class="block">Gets the Passcode Authenticator Callback</div>
+<div class="block">Gets the callback for the Passcode Authenticator.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/Fido2RespondArgs.html#getRequest()" class="member-name-link">getRequest()</a> - Method in class com.thalesgroup.gemalto.fido2.client.<a href="com/thalesgroup/gemalto/fido2/client/Fido2RespondArgs.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2RespondArgs</a></dt>
 <dd>
-<div class="block">Gets the request to use in <a href="com/thalesgroup/gemalto/fido2/client/Fido2Client.html#respondWithArgs(com.thalesgroup.gemalto.fido2.client.Fido2RespondArgs,com.thalesgroup.gemalto.fido2.client.Fido2ResponseCallback)"><code>Fido2Client.respondWithArgs</code></a>.</div>
+<div class="block">Gets the FIDO2 request to be processed.</div>
+</dd>
+<dt><a href="com/thalesgroup/gemalto/fido2/client/Fido2AuthenticatorRegistrationInfo.html#getRpId()" class="member-name-link">getRpId()</a> - Method in interface com.thalesgroup.gemalto.fido2.client.<a href="com/thalesgroup/gemalto/fido2/client/Fido2AuthenticatorRegistrationInfo.html" title="interface in com.thalesgroup.gemalto.fido2.client">Fido2AuthenticatorRegistrationInfo</a></dt>
+<dd>
+<div class="block">Gets the Relying Party ID (rpId) associated with this registration.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/Fido2OperationInfo.html#getRpId()" class="member-name-link">getRpId()</a> - Method in class com.thalesgroup.gemalto.fido2.client.<a href="com/thalesgroup/gemalto/fido2/client/Fido2OperationInfo.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2OperationInfo</a></dt>
 <dd>
-<div class="block">To get the relying party id</div>
+<div class="block">Gets the Relying Party ID for the current operation.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/Fido2AuthenticatorRegistrationInfo.html#getRpIdHash()" class="member-name-link">getRpIdHash()</a> - Method in interface com.thalesgroup.gemalto.fido2.client.<a href="com/thalesgroup/gemalto/fido2/client/Fido2AuthenticatorRegistrationInfo.html" title="interface in com.thalesgroup.gemalto.fido2.client">Fido2AuthenticatorRegistrationInfo</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Gets the SHA-256 hash of the Relying Party ID (rpId) associated with this registration.</div>
+</dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/Fido2OperationInfo.html#getRpName()" class="member-name-link">getRpName()</a> - Method in class com.thalesgroup.gemalto.fido2.client.<a href="com/thalesgroup/gemalto/fido2/client/Fido2OperationInfo.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2OperationInfo</a></dt>
 <dd>
-<div class="block">To get the relying party name</div>
+<div class="block">Gets the Relying Party name for the current operation.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/Fido2Client.html#getSDKVersion()" class="member-name-link">getSDKVersion()</a> - Static method in interface com.thalesgroup.gemalto.fido2.client.<a href="com/thalesgroup/gemalto/fido2/client/Fido2Client.html" title="interface in com.thalesgroup.gemalto.fido2.client">Fido2Client</a></dt>
 <dd>
-<div class="block">Returns FIDO2 SDK version</div>
+<div class="block">Gets the version of the FIDO2 SDK.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/Fido2Request.html#getType()" class="member-name-link">getType()</a> - Method in class com.thalesgroup.gemalto.fido2.client.<a href="com/thalesgroup/gemalto/fido2/client/Fido2Request.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2Request</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Gets the type of the FIDO2 operation for this request.</div>
+</dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/Fido2RespondArgs.html#getUiCallback()" class="member-name-link">getUiCallback()</a> - Method in class com.thalesgroup.gemalto.fido2.client.<a href="com/thalesgroup/gemalto/fido2/client/Fido2RespondArgs.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2RespondArgs</a></dt>
 <dd>
-<div class="block">Gets the callback object to call when <a href="com/thalesgroup/gemalto/fido2/client/Fido2Client.html#respondWithArgs(com.thalesgroup.gemalto.fido2.client.Fido2RespondArgs,com.thalesgroup.gemalto.fido2.client.Fido2ResponseCallback)"><code>Fido2Client.respondWithArgs</code></a> delegates displaying UI to the calling
- application.</div>
+<div class="block">Gets the UI callback for handling delegated UI tasks.</div>
+</dd>
+<dt><a href="com/thalesgroup/gemalto/fido2/client/Fido2AuthenticatorRegistrationInfo.html#getUserDisplayName()" class="member-name-link">getUserDisplayName()</a> - Method in interface com.thalesgroup.gemalto.fido2.client.<a href="com/thalesgroup/gemalto/fido2/client/Fido2AuthenticatorRegistrationInfo.html" title="interface in com.thalesgroup.gemalto.fido2.client">Fido2AuthenticatorRegistrationInfo</a></dt>
+<dd>
+<div class="block">Gets the user display name associated with this registration.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/Fido2OperationInfo.html#getUserDisplayName()" class="member-name-link">getUserDisplayName()</a> - Method in class com.thalesgroup.gemalto.fido2.client.<a href="com/thalesgroup/gemalto/fido2/client/Fido2OperationInfo.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2OperationInfo</a></dt>
 <dd>
-<div class="block">To get the display name of the user</div>
+<div class="block">Gets the user's display name for the current operation.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/Fido2AuthenticatorRegistrationInfo.html#getUserId()" class="member-name-link">getUserId()</a> - Method in interface com.thalesgroup.gemalto.fido2.client.<a href="com/thalesgroup/gemalto/fido2/client/Fido2AuthenticatorRegistrationInfo.html" title="interface in com.thalesgroup.gemalto.fido2.client">Fido2AuthenticatorRegistrationInfo</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Gets the user ID associated with this registration.</div>
+</dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/Fido2AuthenticatorRegistrationInfo.html#getUserName()" class="member-name-link">getUserName()</a> - Method in interface com.thalesgroup.gemalto.fido2.client.<a href="com/thalesgroup/gemalto/fido2/client/Fido2AuthenticatorRegistrationInfo.html" title="interface in com.thalesgroup.gemalto.fido2.client">Fido2AuthenticatorRegistrationInfo</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Gets the user name associated with this registration.</div>
+</dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/Fido2OperationInfo.html#getUserName()" class="member-name-link">getUserName()</a> - Method in class com.thalesgroup.gemalto.fido2.client.<a href="com/thalesgroup/gemalto/fido2/client/Fido2OperationInfo.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2OperationInfo</a></dt>
 <dd>
-<div class="block">To get the user name</div>
+<div class="block">Gets the user name for the current operation.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/Fido2AuthenticatorInfo.html#getVerifyMethod()" class="member-name-link">getVerifyMethod()</a> - Method in interface com.thalesgroup.gemalto.fido2.client.<a href="com/thalesgroup/gemalto/fido2/client/Fido2AuthenticatorInfo.html" title="interface in com.thalesgroup.gemalto.fido2.client">Fido2AuthenticatorInfo</a></dt>
 <dd>
@@ -514,87 +550,87 @@ loadScripts(document, 'script');</script>
 <dl class="index">
 <dt><a href="com/thalesgroup/gemalto/fido2/client/Fido2Request.html#hybridJsonText(java.lang.String)" class="member-name-link">hybridJsonText(String)</a> - Static method in class com.thalesgroup.gemalto.fido2.client.<a href="com/thalesgroup/gemalto/fido2/client/Fido2Request.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2Request</a></dt>
 <dd>
-<div class="block">Creates a FIDO2 request from JSON with hybrid credential support enabled.</div>
+<div class="block">Creates a FIDO2 request from a JSON string, with support for hybrid (cross-device) flows enabled.</div>
 </dd>
 </dl>
 <h2 class="title" id="I:I">I</h2>
 <dl class="index">
 <dt><a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/KeyboardKey.html#INPUT" class="member-name-link">INPUT</a> - Enum constant in enum class com.thalesgroup.gemalto.fido2.authenticator.passcode.<a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/KeyboardKey.html" title="enum class in com.thalesgroup.gemalto.fido2.authenticator.passcode">KeyboardKey</a></dt>
 <dd>
-<div class="block">Any Input key other than Delete/Done</div>
+<div class="block">A numeric input key was pressed.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeAuthenticator.html#isPasscodeCreated()" class="member-name-link">isPasscodeCreated()</a> - Method in class com.thalesgroup.gemalto.fido2.authenticator.passcode.<a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeAuthenticator.html" title="class in com.thalesgroup.gemalto.fido2.authenticator.passcode">PasscodeAuthenticator</a></dt>
 <dd>
-<div class="block">Indicates if the passcode of the Passcode Authenticator has been created.</div>
+<div class="block">Synchronously checks if a passcode has been created for this authenticator.</div>
 </dd>
 </dl>
 <h2 class="title" id="I:J">J</h2>
 <dl class="index">
 <dt><a href="com/thalesgroup/gemalto/fido2/client/Fido2Request.html#jsonText(java.lang.String)" class="member-name-link">jsonText(String)</a> - Static method in class com.thalesgroup.gemalto.fido2.client.<a href="com/thalesgroup/gemalto/fido2/client/Fido2Request.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2Request</a></dt>
 <dd>
-<div class="block">Creates a standard FIDO2 request from the given JSON.</div>
+<div class="block">Creates a FIDO2 request from a JSON string.</div>
 </dd>
 </dl>
 <h2 class="title" id="I:K">K</h2>
 <dl class="index">
 <dt><a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/Keyboard.html" class="type-name-link" title="class in com.thalesgroup.gemalto.fido2.authenticator.passcode">Keyboard</a> - Class in <a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/package-summary.html">com.thalesgroup.gemalto.fido2.authenticator.passcode</a></dt>
 <dd>
-<div class="block">A class to construct and return a secure keyboard in a Fragment and subscribe to relevant keyboard events.</div>
+<div class="block">An abstract representation of the secure keyboard used for passcode entry.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/Keyboard.html#%3Cinit%3E()" class="member-name-link">Keyboard()</a> - Constructor for class com.thalesgroup.gemalto.fido2.authenticator.passcode.<a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/Keyboard.html" title="class in com.thalesgroup.gemalto.fido2.authenticator.passcode">Keyboard</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/KeyboardCallback.html" class="type-name-link" title="interface in com.thalesgroup.gemalto.fido2.authenticator.passcode">KeyboardCallback</a> - Interface in <a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/package-summary.html">com.thalesgroup.gemalto.fido2.authenticator.passcode</a></dt>
 <dd>
-<div class="block">An interface to receive relevant keyboard key events</div>
+<div class="block">A callback for receiving events from the secure keyboard.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/KeyboardKey.html" class="type-name-link" title="enum class in com.thalesgroup.gemalto.fido2.authenticator.passcode">KeyboardKey</a> - Enum Class in <a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/package-summary.html">com.thalesgroup.gemalto.fido2.authenticator.passcode</a></dt>
 <dd>
-<div class="block">An enum describing the type of key pressed.</div>
+<div class="block">Describes the type of key pressed on the secure keyboard.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/KeyboardUsage.html" class="type-name-link" title="enum class in com.thalesgroup.gemalto.fido2.authenticator.passcode">KeyboardUsage</a> - Enum Class in <a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/package-summary.html">com.thalesgroup.gemalto.fido2.authenticator.passcode</a></dt>
 <dd>
-<div class="block">An enum describing what the keyboard is for.</div>
+<div class="block">Describes the current purpose of the secure keyboard.</div>
 </dd>
 </dl>
 <h2 class="title" id="I:L">L</h2>
 <dl class="index">
 <dt><a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/Keyboard.html#length()" class="member-name-link">length()</a> - Method in class com.thalesgroup.gemalto.fido2.authenticator.passcode.<a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/Keyboard.html" title="class in com.thalesgroup.gemalto.fido2.authenticator.passcode">Keyboard</a></dt>
 <dd>
-<div class="block">Retrieve the length of the key input.</div>
+<div class="block">Gets the current number of digits entered on the keyboard.</div>
 </dd>
 </dl>
 <h2 class="title" id="I:N">N</h2>
 <dl class="index">
 <dt><a href="com/thalesgroup/gemalto/fido2/client/VerifyMethod.html#NONE" class="member-name-link">NONE</a> - Enum constant in enum class com.thalesgroup.gemalto.fido2.client.<a href="com/thalesgroup/gemalto/fido2/client/VerifyMethod.html" title="enum class in com.thalesgroup.gemalto.fido2.client">VerifyMethod</a></dt>
 <dd>
-<div class="block">This flag MUST be set if the authenticator will respond without any
- user interaction</div>
+<div class="block">No user verification is performed.</div>
 </dd>
 </dl>
 <h2 class="title" id="I:O">O</h2>
 <dl class="index">
 <dt><a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeAuthenticator.html#of(androidx.fragment.app.FragmentActivity,com.thalesgroup.gemalto.fido2.authenticator.passcode.PasscodeAuthenticatorCallback)" class="member-name-link">of(FragmentActivity, PasscodeAuthenticatorCallback)</a> - Static method in class com.thalesgroup.gemalto.fido2.authenticator.passcode.<a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeAuthenticator.html" title="class in com.thalesgroup.gemalto.fido2.authenticator.passcode">PasscodeAuthenticator</a></dt>
 <dd>
-<div class="block">Gets an instance of this class</div>
+<div class="block">Gets an instance of the <code>PasscodeAuthenticator</code>.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/KeyboardCallback.html#onAuthenticationFailed(int)" class="member-name-link">onAuthenticationFailed(int)</a> - Method in interface com.thalesgroup.gemalto.fido2.authenticator.passcode.<a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/KeyboardCallback.html" title="interface in com.thalesgroup.gemalto.fido2.authenticator.passcode">KeyboardCallback</a></dt>
 <dd>
-<div class="block">Called when Passcode authentication failed and user still has attempts remaining</div>
+<div class="block">Called when a passcode authentication attempt fails but the user still has attempts remaining.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/AuthenticatorDescriptionCallback.html#onAuthenticatorDescriptionProvided(com.thalesgroup.gemalto.fido2.client.AuthenticatorDescriptor)" class="member-name-link">onAuthenticatorDescriptionProvided(AuthenticatorDescriptor)</a> - Method in interface com.thalesgroup.gemalto.fido2.client.<a href="com/thalesgroup/gemalto/fido2/client/AuthenticatorDescriptionCallback.html" title="interface in com.thalesgroup.gemalto.fido2.client">AuthenticatorDescriptionCallback</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Called by the application to provide the custom authenticator description.</div>
+</dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/AuthenticatorSelectionCallback.html#onAuthenticatorSelected(int)" class="member-name-link">onAuthenticatorSelected(int)</a> - Method in interface com.thalesgroup.gemalto.fido2.client.<a href="com/thalesgroup/gemalto/fido2/client/AuthenticatorSelectionCallback.html" title="interface in com.thalesgroup.gemalto.fido2.client">AuthenticatorSelectionCallback</a></dt>
 <dd>
-<div class="block">Sends the selected authenticator index to FIDO2 SDK.</div>
+<div class="block">Notifies the FIDO2 SDK that the user has selected an authenticator.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeAuthenticatorCallback.html#onError(com.thalesgroup.gemalto.fido2.Fido2Exception)" class="member-name-link">onError(Fido2Exception)</a> - Method in interface com.thalesgroup.gemalto.fido2.authenticator.passcode.<a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeAuthenticatorCallback.html" title="interface in com.thalesgroup.gemalto.fido2.authenticator.passcode">PasscodeAuthenticatorCallback</a></dt>
 <dd>
-<div class="block">Called when the Passcode operation completes with a failure.</div>
+<div class="block">Called when a passcode management operation (create, change, or delete) fails.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/Fido2ResponseCallback.html#onError(com.thalesgroup.gemalto.fido2.Fido2Exception)" class="member-name-link">onError(Fido2Exception)</a> - Method in interface com.thalesgroup.gemalto.fido2.client.<a href="com/thalesgroup/gemalto/fido2/client/Fido2ResponseCallback.html" title="interface in com.thalesgroup.gemalto.fido2.client">Fido2ResponseCallback</a></dt>
 <dd>
-<div class="block">Called in a non-UI thread when the FIDO2 response completed with an
- error.</div>
+<div class="block">Called when the FIDO2 operation fails.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/KeyboardCallback.html#onKeyReceived(com.thalesgroup.gemalto.fido2.authenticator.passcode.KeyboardKey)" class="member-name-link">onKeyReceived(KeyboardKey)</a> - Method in interface com.thalesgroup.gemalto.fido2.authenticator.passcode.<a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/KeyboardCallback.html" title="interface in com.thalesgroup.gemalto.fido2.authenticator.passcode">KeyboardCallback</a></dt>
 <dd>
@@ -602,229 +638,236 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/SetPasscodeCallback.html#onPasscodeProvided(byte%5B%5D,byte%5B%5D)" class="member-name-link">onPasscodeProvided(byte[], byte[])</a> - Method in interface com.thalesgroup.gemalto.fido2.authenticator.passcode.<a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/SetPasscodeCallback.html" title="interface in com.thalesgroup.gemalto.fido2.authenticator.passcode">SetPasscodeCallback</a></dt>
 <dd>
-<div class="block">To set the passcode</div>
+<div class="block">Provides the passcode(s) to the SDK to complete an operation.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/KeyboardCallback.html#onPasscodeRuleFailed(com.thalesgroup.gemalto.fido2.Fido2Exception)" class="member-name-link">onPasscodeRuleFailed(Fido2Exception)</a> - Method in interface com.thalesgroup.gemalto.fido2.authenticator.passcode.<a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/KeyboardCallback.html" title="interface in com.thalesgroup.gemalto.fido2.authenticator.passcode">KeyboardCallback</a></dt>
 <dd>
 <div class="block">Called when the passcode input on the keyboard fails the passcode rule validation.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/TransactionDetailsCallback.html#onProceed()" class="member-name-link">onProceed()</a> - Method in interface com.thalesgroup.gemalto.fido2.client.<a href="com/thalesgroup/gemalto/fido2/client/TransactionDetailsCallback.html" title="interface in com.thalesgroup.gemalto.fido2.client">TransactionDetailsCallback</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Notifies the SDK to proceed with the transaction after user confirmation.</div>
+</dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/Fido2ResponseCallback.html#onResponded(com.thalesgroup.gemalto.fido2.client.Fido2Response)" class="member-name-link">onResponded(Fido2Response)</a> - Method in interface com.thalesgroup.gemalto.fido2.client.<a href="com/thalesgroup/gemalto/fido2/client/Fido2ResponseCallback.html" title="interface in com.thalesgroup.gemalto.fido2.client">Fido2ResponseCallback</a></dt>
 <dd>
-<div class="block">Called in a non-UI thread when the FIDO2 response completed
- successfully.</div>
+<div class="block">Called when the FIDO2 operation completes successfully.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeAuthenticatorCallback.html#onStart(com.thalesgroup.gemalto.fido2.authenticator.passcode.Keyboard,com.thalesgroup.gemalto.fido2.client.Fido2OperationInfo,com.thalesgroup.gemalto.fido2.authenticator.passcode.Controller)" class="member-name-link">onStart(Keyboard, Fido2OperationInfo, Controller)</a> - Method in interface com.thalesgroup.gemalto.fido2.authenticator.passcode.<a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeAuthenticatorCallback.html" title="interface in com.thalesgroup.gemalto.fido2.authenticator.passcode">PasscodeAuthenticatorCallback</a></dt>
 <dd>
-<div class="block">Called when a keyboard UI needs to be displayed.</div>
+<div class="block">Called when the SDK requires the user to enter a passcode via the secure keyboard UI.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeAuthenticatorCallback.html#onSuccess()" class="member-name-link">onSuccess()</a> - Method in interface com.thalesgroup.gemalto.fido2.authenticator.passcode.<a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeAuthenticatorCallback.html" title="interface in com.thalesgroup.gemalto.fido2.authenticator.passcode">PasscodeAuthenticatorCallback</a></dt>
 <dd>
-<div class="block">Called when the Passcode operation completes successfully.</div>
+<div class="block">Called when a passcode management operation (create, change, or delete) completes successfully.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/KeyboardCallback.html#onUsageChanged(com.thalesgroup.gemalto.fido2.authenticator.passcode.KeyboardUsage)" class="member-name-link">onUsageChanged(KeyboardUsage)</a> - Method in interface com.thalesgroup.gemalto.fido2.authenticator.passcode.<a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/KeyboardCallback.html" title="interface in com.thalesgroup.gemalto.fido2.authenticator.passcode">KeyboardCallback</a></dt>
 <dd>
-<div class="block">Called when the keyboard being displayed changed
-
- It is called on the main thread.</div>
+<div class="block">Called when the purpose of the keyboard changes (e.g., from entering a new passcode to confirming it).</div>
 </dd>
 </dl>
 <h2 class="title" id="I:P">P</h2>
 <dl class="index">
 <dt><a href="com/thalesgroup/gemalto/fido2/client/VerifyMethod.html#PASSCODE" class="member-name-link">PASSCODE</a> - Enum constant in enum class com.thalesgroup.gemalto.fido2.client.<a href="com/thalesgroup/gemalto/fido2/client/VerifyMethod.html" title="enum class in com.thalesgroup.gemalto.fido2.client">VerifyMethod</a></dt>
 <dd>
-<div class="block">This flag MUST be set if the authenticator uses any manner of passcode
- to verify the user.</div>
+<div class="block">User verification is performed using a passcode, PIN, or pattern entered by the user.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/Constant.html#PASSCODE_AUTHENTICATOR_AAGUID" class="member-name-link">PASSCODE_AUTHENTICATOR_AAGUID</a> - Static variable in interface com.thalesgroup.gemalto.fido2.<a href="com/thalesgroup/gemalto/fido2/Constant.html" title="interface in com.thalesgroup.gemalto.fido2">Constant</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">The AAGUID for the Passcode Authenticator.</div>
+</dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeAuthenticator.html" class="type-name-link" title="class in com.thalesgroup.gemalto.fido2.authenticator.passcode">PasscodeAuthenticator</a> - Class in <a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/package-summary.html">com.thalesgroup.gemalto.fido2.authenticator.passcode</a></dt>
 <dd>
-<div class="block">Manages the authenticator information regarding the Passcode Authenticator.</div>
+<div class="block">Manages the lifecycle of the Passcode Authenticator.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeAuthenticator.html#%3Cinit%3E()" class="member-name-link">PasscodeAuthenticator()</a> - Constructor for class com.thalesgroup.gemalto.fido2.authenticator.passcode.<a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeAuthenticator.html" title="class in com.thalesgroup.gemalto.fido2.authenticator.passcode">PasscodeAuthenticator</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeAuthenticatorCallback.html" class="type-name-link" title="interface in com.thalesgroup.gemalto.fido2.authenticator.passcode">PasscodeAuthenticatorCallback</a> - Interface in <a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/package-summary.html">com.thalesgroup.gemalto.fido2.authenticator.passcode</a></dt>
 <dd>
-<div class="block">A callback to show the keyboard UI and handle the Passcode enrollment/unenrollment events.</div>
+<div class="block">A callback for handling the UI and results of Passcode Authenticator operations.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeConfig.html" class="type-name-link" title="class in com.thalesgroup.gemalto.fido2.authenticator.passcode">PasscodeConfig</a> - Class in <a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/package-summary.html">com.thalesgroup.gemalto.fido2.authenticator.passcode</a></dt>
 <dd>
-<div class="block">A global Passcode configuration class.</div>
+<div class="block">A global configuration class for the Passcode Authenticator.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeConfig.html#%3Cinit%3E()" class="member-name-link">PasscodeConfig()</a> - Constructor for class com.thalesgroup.gemalto.fido2.authenticator.passcode.<a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeConfig.html" title="class in com.thalesgroup.gemalto.fido2.authenticator.passcode">PasscodeConfig</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeRule.html" class="type-name-link" title="class in com.thalesgroup.gemalto.fido2.authenticator.passcode">PasscodeRule</a> - Class in <a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/package-summary.html">com.thalesgroup.gemalto.fido2.authenticator.passcode</a></dt>
 <dd>
-<div class="block">A base class to represent the rules to set to a passcode.</div>
+<div class="block">An abstract base class for defining passcode complexity rules.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeRule.html#%3Cinit%3E()" class="member-name-link">PasscodeRule()</a> - Constructor for class com.thalesgroup.gemalto.fido2.authenticator.passcode.<a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeRule.html" title="class in com.thalesgroup.gemalto.fido2.authenticator.passcode">PasscodeRule</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeRuleException.html" class="type-name-link" title="class in com.thalesgroup.gemalto.fido2.authenticator.passcode">PasscodeRuleException</a> - Exception in <a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/package-summary.html">com.thalesgroup.gemalto.fido2.authenticator.passcode</a></dt>
 <dd>
-<div class="block">Passcode rule exceptions.</div>
+<div class="block">An exception thrown when a passcode fails to meet the configured complexity rules.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeRuleException.html#%3Cinit%3E(int,java.lang.String,java.lang.Throwable)" class="member-name-link">PasscodeRuleException(int, String, Throwable)</a> - Constructor for exception com.thalesgroup.gemalto.fido2.authenticator.passcode.<a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeRuleException.html" title="class in com.thalesgroup.gemalto.fido2.authenticator.passcode">PasscodeRuleException</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeRuleException.ErrorCode.html" class="type-name-link" title="enum class in com.thalesgroup.gemalto.fido2.authenticator.passcode">PasscodeRuleException.ErrorCode</a> - Enum Class in <a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/package-summary.html">com.thalesgroup.gemalto.fido2.authenticator.passcode</a></dt>
 <dd>
-<div class="block">Represent errors resulting from passcode rule violations.</div>
+<div class="block">Defines the specific error codes for passcode rule violations.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeRuleLength.html" class="type-name-link" title="class in com.thalesgroup.gemalto.fido2.authenticator.passcode">PasscodeRuleLength</a> - Class in <a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/package-summary.html">com.thalesgroup.gemalto.fido2.authenticator.passcode</a></dt>
 <dd>
-<div class="block">A passcode rule that requires the length to be within a specific range.</div>
+<div class="block">A <a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeRule.html" title="class in com.thalesgroup.gemalto.fido2.authenticator.passcode"><code>PasscodeRule</code></a> that requires the passcode length to be within a specific range.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeRuleLength.html#%3Cinit%3E()" class="member-name-link">PasscodeRuleLength()</a> - Constructor for class com.thalesgroup.gemalto.fido2.authenticator.passcode.<a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeRuleLength.html" title="class in com.thalesgroup.gemalto.fido2.authenticator.passcode">PasscodeRuleLength</a></dt>
 <dd>
-<div class="block">Initializes the passcode length rule with the default minimum and maximum lengths.</div>
+<div class="block">Initializes the passcode length rule with the default minimum (6) and maximum (8) lengths.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeRuleLength.html#%3Cinit%3E(int,int)" class="member-name-link">PasscodeRuleLength(int, int)</a> - Constructor for class com.thalesgroup.gemalto.fido2.authenticator.passcode.<a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeRuleLength.html" title="class in com.thalesgroup.gemalto.fido2.authenticator.passcode">PasscodeRuleLength</a></dt>
 <dd>
-<div class="block">Initializes the passcode length rule.</div>
+<div class="block">Initializes the passcode length rule with custom minimum and maximum lengths.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeRulePalindrome.html" class="type-name-link" title="class in com.thalesgroup.gemalto.fido2.authenticator.passcode">PasscodeRulePalindrome</a> - Class in <a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/package-summary.html">com.thalesgroup.gemalto.fido2.authenticator.passcode</a></dt>
 <dd>
-<div class="block">A passcode rule that prevents the passcode from being a palindrome (e.g.</div>
+<div class="block">A <a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeRule.html" title="class in com.thalesgroup.gemalto.fido2.authenticator.passcode"><code>PasscodeRule</code></a> that prevents the passcode from being a palindrome (e.g., "12321").</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeRulePalindrome.html#%3Cinit%3E()" class="member-name-link">PasscodeRulePalindrome()</a> - Constructor for class com.thalesgroup.gemalto.fido2.authenticator.passcode.<a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeRulePalindrome.html" title="class in com.thalesgroup.gemalto.fido2.authenticator.passcode">PasscodeRulePalindrome</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeRuleSeries.html" class="type-name-link" title="class in com.thalesgroup.gemalto.fido2.authenticator.passcode">PasscodeRuleSeries</a> - Class in <a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/package-summary.html">com.thalesgroup.gemalto.fido2.authenticator.passcode</a></dt>
 <dd>
-<div class="block">A passcode rule that prevents the passcode from being a series (e.g.</div>
+<div class="block">A <a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeRule.html" title="class in com.thalesgroup.gemalto.fido2.authenticator.passcode"><code>PasscodeRule</code></a> that prevents the passcode from being a sequential series of numbers,
+ either ascending (e.g., "123456") or descending (e.g., "654321").</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeRuleSeries.html#%3Cinit%3E()" class="member-name-link">PasscodeRuleSeries()</a> - Constructor for class com.thalesgroup.gemalto.fido2.authenticator.passcode.<a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeRuleSeries.html" title="class in com.thalesgroup.gemalto.fido2.authenticator.passcode">PasscodeRuleSeries</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeRuleUniform.html" class="type-name-link" title="class in com.thalesgroup.gemalto.fido2.authenticator.passcode">PasscodeRuleUniform</a> - Class in <a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/package-summary.html">com.thalesgroup.gemalto.fido2.authenticator.passcode</a></dt>
 <dd>
-<div class="block">A passcode rule that prevents the passcode from being a uniform value (e.g.</div>
+<div class="block">A <a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeRule.html" title="class in com.thalesgroup.gemalto.fido2.authenticator.passcode"><code>PasscodeRule</code></a> that prevents the passcode from consisting of a single repeated digit (e.g., "111111").</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeRuleUniform.html#%3Cinit%3E()" class="member-name-link">PasscodeRuleUniform()</a> - Constructor for class com.thalesgroup.gemalto.fido2.authenticator.passcode.<a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeRuleUniform.html" title="class in com.thalesgroup.gemalto.fido2.authenticator.passcode">PasscodeRuleUniform</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/Constant.html#PASSKEYS_AUTHENTICATOR_AAGUID" class="member-name-link">PASSKEYS_AUTHENTICATOR_AAGUID</a> - Static variable in interface com.thalesgroup.gemalto.fido2.<a href="com/thalesgroup/gemalto/fido2/Constant.html" title="interface in com.thalesgroup.gemalto.fido2">Constant</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">The AAGUID for the Passkeys Authenticator.</div>
+</dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/VerifyMethod.html#PLATFORM" class="member-name-link">PLATFORM</a> - Enum constant in enum class com.thalesgroup.gemalto.fido2.client.<a href="com/thalesgroup/gemalto/fido2/client/VerifyMethod.html" title="enum class in com.thalesgroup.gemalto.fido2.client">VerifyMethod</a></dt>
 <dd>
-<div class="block">This flag MUST be set if the authenticator uses any type of measurement of a roaming platform for user verification.</div>
+<div class="block">User verification is performed by a roaming authenticator (e.g., a security key)
+ connected to the client device.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/VerifyMethod.html#PLATFORM_LOCAL" class="member-name-link">PLATFORM_LOCAL</a> - Enum constant in enum class com.thalesgroup.gemalto.fido2.client.<a href="com/thalesgroup/gemalto/fido2/client/VerifyMethod.html" title="enum class in com.thalesgroup.gemalto.fido2.client">VerifyMethod</a></dt>
 <dd>
-<div class="block">This flag MUST be set if the authenticator uses any type of measurement of a local platform for user verification.</div>
+<div class="block">User verification is performed by a platform authenticator that is bound to the
+ client device (e.g., a TPM).</div>
 </dd>
 </dl>
 <h2 class="title" id="I:R">R</h2>
 <dl class="index">
 <dt><a href="com/thalesgroup/gemalto/fido2/client/Fido2Response.html#raw()" class="member-name-link">raw()</a> - Method in class com.thalesgroup.gemalto.fido2.client.<a href="com/thalesgroup/gemalto/fido2/client/Fido2Response.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2Response</a></dt>
 <dd>
-<div class="block">Gets the JSON string of the FIDO2 response.</div>
+<div class="block">Gets the raw FIDO2 response as a JSON string.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/Fido2OperationType.html#REGISTRATION" class="member-name-link">REGISTRATION</a> - Enum constant in enum class com.thalesgroup.gemalto.fido2.<a href="com/thalesgroup/gemalto/fido2/Fido2OperationType.html" title="enum class in com.thalesgroup.gemalto.fido2">Fido2OperationType</a></dt>
 <dd>
-<div class="block">Request for registration of an user with an authenticator.</div>
+<div class="block">A registration operation, used to create a new credential with an authenticator.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/Fido2Client.html#reset()" class="member-name-link">reset()</a> - Method in interface com.thalesgroup.gemalto.fido2.client.<a href="com/thalesgroup/gemalto/fido2/client/Fido2Client.html" title="interface in com.thalesgroup.gemalto.fido2.client">Fido2Client</a></dt>
 <dd>
-<div class="block">Delete all authenticator registrations.</div>
+<div class="block">Deletes all FIDO2 credential registrations and resets the state of all authenticators.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/Fido2Client.html#respondWithArgs(com.thalesgroup.gemalto.fido2.client.Fido2RespondArgs,com.thalesgroup.gemalto.fido2.client.Fido2ResponseCallback)" class="member-name-link">respondWithArgs(Fido2RespondArgs, Fido2ResponseCallback)</a> - Method in interface com.thalesgroup.gemalto.fido2.client.<a href="com/thalesgroup/gemalto/fido2/client/Fido2Client.html" title="interface in com.thalesgroup.gemalto.fido2.client">Fido2Client</a></dt>
 <dd>
-<div class="block">Responds asynchronously to a FIDO2 request by generating a FIDO2 response.</div>
+<div class="block">Asynchronously processes a FIDO2 request and generates a FIDO2 response.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/Fido2UiCallback.html#retrieveAuthenticatorDescription(com.thalesgroup.gemalto.fido2.client.Fido2AuthenticatorInfo,com.thalesgroup.gemalto.fido2.client.AuthenticatorDescriptionCallback)" class="member-name-link">retrieveAuthenticatorDescription(Fido2AuthenticatorInfo, AuthenticatorDescriptionCallback)</a> - Method in class com.thalesgroup.gemalto.fido2.client.<a href="com/thalesgroup/gemalto/fido2/client/Fido2UiCallback.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2UiCallback</a></dt>
 <dd>
-<div class="block">Called when there is a need to provide a custom authenticator description.</div>
+<div class="block">Called when the SDK needs a custom, user-friendly description for an authenticator.</div>
 </dd>
 </dl>
 <h2 class="title" id="I:S">S</h2>
 <dl class="index">
 <dt><a href="com/thalesgroup/gemalto/fido2/client/Fido2Client.html#setActivity(androidx.fragment.app.FragmentActivity)" class="member-name-link">setActivity(FragmentActivity)</a> - Method in interface com.thalesgroup.gemalto.fido2.client.<a href="com/thalesgroup/gemalto/fido2/client/Fido2Client.html" title="interface in com.thalesgroup.gemalto.fido2.client">Fido2Client</a></dt>
 <dd>
-<div class="block">Sets an optional FragmentActivity used for flows that require UI, such as Biometric, Platform Local and Platform Authenticator</div>
+<div class="block">Sets the <code>FragmentActivity</code> to be used for UI-related flows.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/Fido2Config.html#setBaseLockoutDuration(int)" class="member-name-link">setBaseLockoutDuration(int)</a> - Static method in class com.thalesgroup.gemalto.fido2.client.<a href="com/thalesgroup/gemalto/fido2/client/Fido2Config.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2Config</a></dt>
 <dd>
-<div class="block">Sets the base lockout penalty duration to be incurred upon exceeding the maximum number of possible retries during a user verification process.</div>
+<div class="block">Sets the base duration for the lockout penalty after too many failed verification attempts.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/Fido2RespondArgs.Builder.html#setBiometricAuthenticatorCallback(com.thalesgroup.gemalto.fido2.authenticator.biometric.BiometricAuthenticatorCallback)" class="member-name-link">setBiometricAuthenticatorCallback(BiometricAuthenticatorCallback)</a> - Method in class com.thalesgroup.gemalto.fido2.client.<a href="com/thalesgroup/gemalto/fido2/client/Fido2RespondArgs.Builder.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2RespondArgs.Builder</a></dt>
 <dd>
-<div class="block">Sets the callback for handling delegated Biometric Authenticator tasks</div>
+<div class="block">Sets the callback for handling UI related to the Biometric Authenticator.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/Keyboard.html#setCallback(com.thalesgroup.gemalto.fido2.authenticator.passcode.KeyboardCallback)" class="member-name-link">setCallback(KeyboardCallback)</a> - Method in class com.thalesgroup.gemalto.fido2.authenticator.passcode.<a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/Keyboard.html" title="class in com.thalesgroup.gemalto.fido2.authenticator.passcode">Keyboard</a></dt>
 <dd>
-<div class="block">To set the callback for keyboard events.</div>
+<div class="block">Sets the callback to receive keyboard events.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/Fido2RespondArgs.Builder.html#setFido2Request(com.thalesgroup.gemalto.fido2.client.Fido2Request)" class="member-name-link">setFido2Request(Fido2Request)</a> - Method in class com.thalesgroup.gemalto.fido2.client.<a href="com/thalesgroup/gemalto/fido2/client/Fido2RespondArgs.Builder.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2RespondArgs.Builder</a></dt>
 <dd>
-<div class="block">Constructs a <code>Fido2RespondArgs</code> builder instance to be used by
- <a href="com/thalesgroup/gemalto/fido2/client/Fido2Client.html#respondWithArgs(com.thalesgroup.gemalto.fido2.client.Fido2RespondArgs,com.thalesgroup.gemalto.fido2.client.Fido2ResponseCallback)"><code>Fido2Client.respondWithArgs(com.thalesgroup.gemalto.fido2.client.Fido2RespondArgs, com.thalesgroup.gemalto.fido2.client.Fido2ResponseCallback)</code></a>.</div>
+<div class="block">Sets the FIDO2 request to be processed.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeRuleLength.html#setMaximumLength(int)" class="member-name-link">setMaximumLength(int)</a> - Method in class com.thalesgroup.gemalto.fido2.authenticator.passcode.<a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeRuleLength.html" title="class in com.thalesgroup.gemalto.fido2.authenticator.passcode">PasscodeRuleLength</a></dt>
 <dd>
-<div class="block">Configures the maximum possible passcode length.</div>
+<div class="block">Sets the maximum allowed passcode length.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/Fido2Config.html#setMaximumRetryCount(int)" class="member-name-link">setMaximumRetryCount(int)</a> - Static method in class com.thalesgroup.gemalto.fido2.client.<a href="com/thalesgroup/gemalto/fido2/client/Fido2Config.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2Config</a></dt>
 <dd>
-<div class="block">Sets the maximum number of possible retries before incurring a lockout penalty during a user verification process.</div>
+<div class="block">Sets the maximum number of failed user verification attempts before the authenticator is locked.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeRuleLength.html#setMinimumLength(int)" class="member-name-link">setMinimumLength(int)</a> - Method in class com.thalesgroup.gemalto.fido2.authenticator.passcode.<a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeRuleLength.html" title="class in com.thalesgroup.gemalto.fido2.authenticator.passcode">PasscodeRuleLength</a></dt>
 <dd>
-<div class="block">Configures the minimum required passcode length.</div>
+<div class="block">Sets the minimum required passcode length.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeAuthenticatorCallback.html#setPasscode(boolean,com.thalesgroup.gemalto.fido2.client.Fido2OperationInfo,com.thalesgroup.gemalto.fido2.authenticator.passcode.SetPasscodeCallback)" class="member-name-link">setPasscode(boolean, Fido2OperationInfo, SetPasscodeCallback)</a> - Method in interface com.thalesgroup.gemalto.fido2.authenticator.passcode.<a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeAuthenticatorCallback.html" title="interface in com.thalesgroup.gemalto.fido2.authenticator.passcode">PasscodeAuthenticatorCallback</a></dt>
 <dd>
-<div class="block">Called when to set the PIN.</div>
+<div class="block">Called when the SDK requires a passcode to be provided programmatically.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/Fido2RespondArgs.Builder.html#setPasscodeAuthenticatorCallback(com.thalesgroup.gemalto.fido2.authenticator.passcode.PasscodeAuthenticatorCallback)" class="member-name-link">setPasscodeAuthenticatorCallback(PasscodeAuthenticatorCallback)</a> - Method in class com.thalesgroup.gemalto.fido2.client.<a href="com/thalesgroup/gemalto/fido2/client/Fido2RespondArgs.Builder.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2RespondArgs.Builder</a></dt>
 <dd>
-<div class="block">Sets the callback for handling delegated Passcode Authenticator tasks, such as
- displaying the keyboard and cancel the operation.</div>
+<div class="block">Sets the callback for handling UI and logic related to the Passcode Authenticator.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/SetPasscodeCallback.html" class="type-name-link" title="interface in com.thalesgroup.gemalto.fido2.authenticator.passcode">SetPasscodeCallback</a> - Interface in <a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/package-summary.html">com.thalesgroup.gemalto.fido2.authenticator.passcode</a></dt>
 <dd>
-<div class="block">A callback to provide the passcode to enroll/authenticate/change passcode.</div>
+<div class="block">A callback for programmatically providing a passcode to the SDK.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeConfig.html#setPasscodeRules(com.thalesgroup.gemalto.fido2.authenticator.passcode.PasscodeRule%5B%5D)" class="member-name-link">setPasscodeRules(PasscodeRule[])</a> - Static method in class com.thalesgroup.gemalto.fido2.authenticator.passcode.<a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/PasscodeConfig.html" title="class in com.thalesgroup.gemalto.fido2.authenticator.passcode">PasscodeConfig</a></dt>
 <dd>
-<div class="block">Set the passcode rules for acceptable passcodes.</div>
+<div class="block">Sets custom complexity rules for passcodes.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/Fido2Config.html#setSecureLog(com.thalesgroup.gemalto.securelog.SecureLog)" class="member-name-link">setSecureLog(SecureLog)</a> - Static method in class com.thalesgroup.gemalto.fido2.client.<a href="com/thalesgroup/gemalto/fido2/client/Fido2Config.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2Config</a></dt>
 <dd>
-<div class="block">Set the secure logger intended to log necessary retrievable information.</div>
+<div class="block">Sets a pre-configured secure logger instance for the SDK to use.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/Fido2Config.html#setTlsCertificates(java.security.cert.X509Certificate%5B%5D)" class="member-name-link">setTlsCertificates(X509Certificate[])</a> - Static method in class com.thalesgroup.gemalto.fido2.client.<a href="com/thalesgroup/gemalto/fido2/client/Fido2Config.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2Config</a></dt>
 <dd>
-<div class="block">Sets the TLS certificates for the relying party.</div>
+<div class="block">Sets the TLS certificates to be used for certificate pinning when communicating with the Relying Party.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/Fido2RespondArgs.Builder.html#setUiCallback(com.thalesgroup.gemalto.fido2.client.Fido2UiCallback)" class="member-name-link">setUiCallback(Fido2UiCallback)</a> - Method in class com.thalesgroup.gemalto.fido2.client.<a href="com/thalesgroup/gemalto/fido2/client/Fido2RespondArgs.Builder.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2RespondArgs.Builder</a></dt>
 <dd>
-<div class="block">Sets the callback for handling delegated UI tasks, such as
- displaying the transaction content for confirmation.</div>
+<div class="block">Sets the callback for handling UI tasks that are delegated to the application.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/Fido2Config.html#setUpSecureLog(com.thalesgroup.gemalto.securelog.SecureLogConfig)" class="member-name-link">setUpSecureLog(SecureLogConfig)</a> - Static method in class com.thalesgroup.gemalto.fido2.client.<a href="com/thalesgroup/gemalto/fido2/client/Fido2Config.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2Config</a></dt>
 <dd>
-<div class="block">Setup the secure logger intended to log necessary retrievable information.</div>
+<div class="block">Configures and initializes the secure logger for the SDK.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/Fido2UiCallback.html#showAuthenticators(java.util.List,com.thalesgroup.gemalto.fido2.client.AuthenticatorSelectionCallback)" class="member-name-link">showAuthenticators(List&lt;Fido2AuthenticatorInfo&gt;, AuthenticatorSelectionCallback)</a> - Method in class com.thalesgroup.gemalto.fido2.client.<a href="com/thalesgroup/gemalto/fido2/client/Fido2UiCallback.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2UiCallback</a></dt>
 <dd>
-<div class="block">Called when there is more than one authenticator matches the policy specified in FIDO2 request.</div>
+<div class="block">Called when more than one authenticator matches the policy in the FIDO2 request,
+ requiring the user to select one.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/Fido2UiCallback.html#showTransactionDetails(java.util.Map,com.thalesgroup.gemalto.fido2.client.TransactionDetailsCallback)" class="member-name-link">showTransactionDetails(Map&lt;String, String&gt;, TransactionDetailsCallback)</a> - Method in class com.thalesgroup.gemalto.fido2.client.<a href="com/thalesgroup/gemalto/fido2/client/Fido2UiCallback.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2UiCallback</a></dt>
 <dd>
-<div class="block">Called when user confirmation is required prior to proceeding with the Transaction Signing use-case.</div>
+<div class="block">Called when user confirmation is required for a transaction with payload (Transaction Confirmation Display).</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/Constant.html#SYSTEM_AUTHENTICATOR_AAGUID" class="member-name-link">SYSTEM_AUTHENTICATOR_AAGUID</a> - Static variable in interface com.thalesgroup.gemalto.fido2.<a href="com/thalesgroup/gemalto/fido2/Constant.html" title="interface in com.thalesgroup.gemalto.fido2">Constant</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">The AAGUID for the System (Google) Authenticator.</div>
+</dd>
 </dl>
 <h2 class="title" id="I:T">T</h2>
 <dl class="index">
 <dt><a href="com/thalesgroup/gemalto/fido2/client/TransactionDetailsCallback.html" class="type-name-link" title="interface in com.thalesgroup.gemalto.fido2.client">TransactionDetailsCallback</a> - Interface in <a href="com/thalesgroup/gemalto/fido2/client/package-summary.html">com.thalesgroup.gemalto.fido2.client</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">A callback for responding to a transaction confirmation request.</div>
+</dd>
 </dl>
 <h2 class="title" id="I:U">U</h2>
 <dl class="index">
 <dt><a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/KeyboardUsage.html#UNENROLL" class="member-name-link">UNENROLL</a> - Enum constant in enum class com.thalesgroup.gemalto.fido2.authenticator.passcode.<a href="com/thalesgroup/gemalto/fido2/authenticator/passcode/KeyboardUsage.html" title="enum class in com.thalesgroup.gemalto.fido2.authenticator.passcode">KeyboardUsage</a></dt>
 <dd>
-<div class="block">Returned during unenrollment when the keyboard needs to authenticate before unenrolling</div>
+<div class="block">Indicates the keyboard is for authenticating the user before deleting their passcode.</div>
 </dd>
 </dl>
 <h2 class="title" id="I:V">V</h2>
@@ -885,18 +928,18 @@ the order they are declared.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/VerifyMethod.html" class="type-name-link" title="enum class in com.thalesgroup.gemalto.fido2.client">VerifyMethod</a> - Enum Class in <a href="com/thalesgroup/gemalto/fido2/client/package-summary.html">com.thalesgroup.gemalto.fido2.client</a></dt>
 <dd>
-<div class="block">Methods for verifying user presence.</div>
+<div class="block">Enumerates the user verification methods supported by FIDO2 authenticators.</div>
 </dd>
 </dl>
 <h2 class="title" id="I:W">W</h2>
 <dl class="index">
 <dt><a href="com/thalesgroup/gemalto/fido2/client/Fido2Request.html#wipe()" class="member-name-link">wipe()</a> - Method in class com.thalesgroup.gemalto.fido2.client.<a href="com/thalesgroup/gemalto/fido2/client/Fido2Request.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2Request</a></dt>
 <dd>
-<div class="block">Wipes data</div>
+<div class="block">Securely wipes any sensitive data held by this request object from memory.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/fido2/client/Fido2RespondArgs.html#wipe()" class="member-name-link">wipe()</a> - Method in class com.thalesgroup.gemalto.fido2.client.<a href="com/thalesgroup/gemalto/fido2/client/Fido2RespondArgs.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2RespondArgs</a></dt>
 <dd>
-<div class="block">Wipes data</div>
+<div class="block">Securely wipes any sensitive data held by this object from memory.</div>
 </dd>
 </dl>
 <a href="#I:A">A</a>&nbsp;<a href="#I:B">B</a>&nbsp;<a href="#I:C">C</a>&nbsp;<a href="#I:D">D</a>&nbsp;<a href="#I:E">E</a>&nbsp;<a href="#I:F">F</a>&nbsp;<a href="#I:G">G</a>&nbsp;<a href="#I:H">H</a>&nbsp;<a href="#I:I">I</a>&nbsp;<a href="#I:J">J</a>&nbsp;<a href="#I:K">K</a>&nbsp;<a href="#I:L">L</a>&nbsp;<a href="#I:N">N</a>&nbsp;<a href="#I:O">O</a>&nbsp;<a href="#I:P">P</a>&nbsp;<a href="#I:R">R</a>&nbsp;<a href="#I:S">S</a>&nbsp;<a href="#I:T">T</a>&nbsp;<a href="#I:U">U</a>&nbsp;<a href="#I:V">V</a>&nbsp;<a href="#I:W">W</a>&nbsp;<br><a href="allclasses-index.html">All&nbsp;Classes&nbsp;and&nbsp;Interfaces</a><span class="vertical-separator">|</span><a href="allpackages-index.html">All&nbsp;Packages</a><span class="vertical-separator">|</span><a href="constant-values.html">Constant&nbsp;Field&nbsp;Values</a><span class="vertical-separator">|</span><a href="serialized-form.html">Serialized&nbsp;Form</a></main>

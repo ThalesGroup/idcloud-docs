@@ -77,8 +77,10 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="type-signature"><span class="modifiers">public class </span><span class="element-name type-name-label">Fido2OperationInfo</span>
 <span class="extends-implements">extends <a href="https://developer.android.com/reference/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></span></div>
-<div class="block">A class that holds common information for an ongoing operation started from
-  Fido2Client that the UI needs to display to the user.</div>
+<div class="block">Holds common information about an ongoing FIDO2 operation that may be needed for UI display.
+ <p>
+ An instance of this class is provided to various UI callbacks to give context about the
+ current operation, such as the Relying Party and user details.</div>
 <dl class="notes">
 <dt>Since:</dt>
 <dd>2.1.0</dd>
@@ -100,7 +102,7 @@ loadScripts(document, 'script');</script>
  <a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;userDisplayName,
  <a href="../Fido2OperationType.html" title="enum class in com.thalesgroup.gemalto.fido2">Fido2OperationType</a>&nbsp;operationType)</code></div>
 <div class="col-last even-row-color">
-<div class="block">Constructor to initialize an Fido2OperationInfo.</div>
+<div class="block">Constructs a new <code>Fido2OperationInfo</code>.</div>
 </div>
 </div>
 </section>
@@ -119,27 +121,27 @@ loadScripts(document, 'script');</script>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../Fido2OperationType.html" title="enum class in com.thalesgroup.gemalto.fido2">Fido2OperationType</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getOperationType()" class="member-name-link">getOperationType</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">To get the Operation type</div>
+<div class="block">Gets the type of the FIDO2 operation (e.g., registration or authentication).</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getRpId()" class="member-name-link">getRpId</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">To get the relying party id</div>
+<div class="block">Gets the Relying Party ID for the current operation.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getRpName()" class="member-name-link">getRpName</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">To get the relying party name</div>
+<div class="block">Gets the Relying Party name for the current operation.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getUserDisplayName()" class="member-name-link">getUserDisplayName</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">To get the display name of the user</div>
+<div class="block">Gets the user's display name for the current operation.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getUserName()" class="member-name-link">getUserName</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">To get the user name</div>
+<div class="block">Gets the user name for the current operation.</div>
 </div>
 </div>
 </div>
@@ -166,7 +168,17 @@ loadScripts(document, 'script');</script>
  <a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;userName,
  <a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;userDisplayName,
  <a href="../Fido2OperationType.html" title="enum class in com.thalesgroup.gemalto.fido2">Fido2OperationType</a>&nbsp;operationType)</span></div>
-<div class="block">Constructor to initialize an Fido2OperationInfo.</div>
+<div class="block">Constructs a new <code>Fido2OperationInfo</code>.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>rpId</code> - The ID of the Relying Party.</dd>
+<dd><code>rpName</code> - The name of the Relying Party.</dd>
+<dd><code>userName</code> - The name of the user.</dd>
+<dd><code>userDisplayName</code> - The display name of the user.</dd>
+<dd><code>operationType</code> - The type of the FIDO2 operation.</dd>
+<dt>Since:</dt>
+<dd>2.1.0</dd>
+</dl>
 </section>
 </li>
 </ul>
@@ -181,10 +193,12 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="getRpId()">
 <h3>getRpId</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">getRpId</span>()</div>
-<div class="block">To get the relying party id</div>
+<div class="block">Gets the Relying Party ID for the current operation.</div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd>Relying Party ID</dd>
+<dd>The Relying Party ID.</dd>
+<dt>Since:</dt>
+<dd>2.1.0</dd>
 </dl>
 </section>
 </li>
@@ -192,10 +206,14 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="getRpName()">
 <h3>getRpName</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">getRpName</span>()</div>
-<div class="block">To get the relying party name</div>
+<div class="block">Gets the Relying Party name for the current operation.
+ <p>
+ Note: This may be empty during an authentication operation.</div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd>Relying Party Name</dd>
+<dd>The Relying Party name.</dd>
+<dt>Since:</dt>
+<dd>2.1.0</dd>
 </dl>
 </section>
 </li>
@@ -203,10 +221,14 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="getUserName()">
 <h3>getUserName</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">getUserName</span>()</div>
-<div class="block">To get the user name</div>
+<div class="block">Gets the user name for the current operation.
+ <p>
+ Note: This may be empty during an authentication operation.</div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd>User Name</dd>
+<dd>The user name.</dd>
+<dt>Since:</dt>
+<dd>2.1.0</dd>
 </dl>
 </section>
 </li>
@@ -214,10 +236,14 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="getUserDisplayName()">
 <h3>getUserDisplayName</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">getUserDisplayName</span>()</div>
-<div class="block">To get the display name of the user</div>
+<div class="block">Gets the user's display name for the current operation.
+ <p>
+ Note: This may be empty during an authentication operation.</div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd>Display Name of the user</dd>
+<dd>The user's display name.</dd>
+<dt>Since:</dt>
+<dd>2.1.0</dd>
 </dl>
 </section>
 </li>
@@ -225,10 +251,12 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="getOperationType()">
 <h3>getOperationType</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../Fido2OperationType.html" title="enum class in com.thalesgroup.gemalto.fido2">Fido2OperationType</a></span>&nbsp;<span class="element-name">getOperationType</span>()</div>
-<div class="block">To get the Operation type</div>
+<div class="block">Gets the type of the FIDO2 operation (e.g., registration or authentication).</div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd>Fido2 Operation Type</dd>
+<dd>The <a href="../Fido2OperationType.html" title="enum class in com.thalesgroup.gemalto.fido2"><code>Fido2OperationType</code></a>.</dd>
+<dt>Since:</dt>
+<dd>2.1.0</dd>
 </dl>
 </section>
 </li>

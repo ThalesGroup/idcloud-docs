@@ -77,9 +77,10 @@ loadScripts(document, 'script');</script>
 </dl>
 <hr>
 <div class="type-signature"><span class="modifiers">public interface </span><span class="element-name type-name-label">Fido2AuthenticatorInfo</span></div>
-<div class="block">Information about an authenticator that helps a user decide which
- authenticator to select for an Fido2 request that matches multiple
- authenticators.</div>
+<div class="block">Provides descriptive information about an available FIDO2 authenticator.
+ <p>
+ This information is intended to be displayed in the UI to help the user
+ select an authenticator when multiple options are available for a FIDO2 operation.</div>
 <dl class="notes">
 <dt>Since:</dt>
 <dd>1.0.0</dd>
@@ -101,20 +102,17 @@ loadScripts(document, 'script');</script>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://developer.android.com/reference/android/graphics/Bitmap.html" title="class or interface in android.graphics" class="external-link">Bitmap</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getIcon()" class="member-name-link">getIcon</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Gets the authenticator's icon encoded in PNG format that optionally can
- be displayed when asking the user to select an authenticator to use for
- this operation.</div>
+<div class="block">Gets an optional icon for the authenticator.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getId()" class="member-name-link">getId</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Gets the authenticator's unique identifier that can be used to look up
- authenticator metadata from FIDO2 Metadata Service.</div>
+<div class="block">Gets the authenticator's unique identifier, typically the AAGUID.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getName()" class="member-name-link">getName</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Gets the authenticator's name</div>
+<div class="block">Gets the human-readable name of the authenticator (e.g., "Biometric").</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="VerifyMethod.html" title="enum class in com.thalesgroup.gemalto.fido2.client">VerifyMethod</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getVerifyMethod()" class="member-name-link">getVerifyMethod</a>()</code></div>
@@ -139,11 +137,12 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="getId()">
 <h3>getId</h3>
 <div class="member-signature"><span class="return-type"><a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">getId</span>()</div>
-<div class="block">Gets the authenticator's unique identifier that can be used to look up
- authenticator metadata from FIDO2 Metadata Service.</div>
+<div class="block">Gets the authenticator's unique identifier, typically the AAGUID.
+ <p>
+ This ID can be used to look up authenticator metadata from a FIDO Metadata Service.</div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd>authenticator ID</dd>
+<dd>The unique identifier of the authenticator.</dd>
 <dt>Since:</dt>
 <dd>1.0.0</dd>
 </dl>
@@ -153,10 +152,10 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="getName()">
 <h3>getName</h3>
 <div class="member-signature"><span class="return-type"><a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">getName</span>()</div>
-<div class="block">Gets the authenticator's name</div>
+<div class="block">Gets the human-readable name of the authenticator (e.g., "Biometric").</div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd>authenticator name</dd>
+<dd>The name of the authenticator.</dd>
 <dt>Since:</dt>
 <dd>1.0.0</dd>
 </dl>
@@ -166,12 +165,12 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="getIcon()">
 <h3>getIcon</h3>
 <div class="member-signature"><span class="return-type"><a href="https://developer.android.com/reference/android/graphics/Bitmap.html" title="class or interface in android.graphics" class="external-link">Bitmap</a></span>&nbsp;<span class="element-name">getIcon</span>()</div>
-<div class="block">Gets the authenticator's icon encoded in PNG format that optionally can
- be displayed when asking the user to select an authenticator to use for
- this operation.</div>
+<div class="block">Gets an optional icon for the authenticator.
+ <p>
+ This icon can be displayed in the UI to visually represent the authenticator.</div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd>The binary data of the PNG encoded icon</dd>
+<dd>A <a href="https://developer.android.com/reference/android/graphics/Bitmap.html" title="class or interface in android.graphics" class="external-link"><code>Bitmap</code></a> of the authenticator's icon, or <code>null</code> if no icon is available.</dd>
 <dt>Since:</dt>
 <dd>1.0.0</dd>
 </dl>
@@ -184,7 +183,7 @@ loadScripts(document, 'script');</script>
 <div class="block">Gets the user verification method supported by the authenticator.</div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd>user verification method</dd>
+<dd>The <a href="VerifyMethod.html" title="enum class in com.thalesgroup.gemalto.fido2.client"><code>VerifyMethod</code></a> used by the authenticator.</dd>
 <dt>Since:</dt>
 <dd>1.0.0</dd>
 </dl>

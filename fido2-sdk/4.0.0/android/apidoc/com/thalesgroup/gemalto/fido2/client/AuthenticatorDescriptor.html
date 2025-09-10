@@ -77,6 +77,14 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="type-signature"><span class="modifiers">public class </span><span class="element-name type-name-label">AuthenticatorDescriptor</span>
 <span class="extends-implements">extends <a href="https://developer.android.com/reference/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></span></div>
+<div class="block">A descriptor that provides a custom friendly name for an authenticator.
+ <p>
+ This is used to provide a more user-friendly name for an authenticator during
+ FIDO2 operations, which can be displayed in the UI.</div>
+<dl class="notes">
+<dt>Since:</dt>
+<dd>1.0.0</dd>
+</dl>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -89,7 +97,9 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-first">Constructor</div>
 <div class="table-header col-last">Description</div>
 <div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(java.lang.String)" class="member-name-link">AuthenticatorDescriptor</a><wbr>(<a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;friendlyName)</code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-last even-row-color">
+<div class="block">Creates a new authenticator descriptor with a friendly name.</div>
+</div>
 </div>
 </section>
 </li>
@@ -106,7 +116,9 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getFriendlyName()" class="member-name-link">getFriendlyName</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Gets the friendly name of the authenticator.</div>
+</div>
 </div>
 </div>
 </div>
@@ -127,7 +139,19 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="&lt;init&gt;(java.lang.String)">
 <h3>AuthenticatorDescriptor</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">AuthenticatorDescriptor</span><wbr><span class="parameters">(<a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;friendlyName)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">AuthenticatorDescriptor</span><wbr><span class="parameters">(@NonNull
+ <a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;friendlyName)</span></div>
+<div class="block">Creates a new authenticator descriptor with a friendly name.
+ <p>
+ If the provided name exceeds 128 characters, it will be truncated.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>friendlyName</code> - The user-friendly name for the authenticator. Must not be null.</dd>
+<dt>Throws:</dt>
+<dd><code><a href="https://developer.android.com/reference/java/lang/IllegalArgumentException.html" title="class or interface in java.lang" class="external-link">IllegalArgumentException</a></code> - if <code>friendlyName</code> is null.</dd>
+<dt>Since:</dt>
+<dd>1.0.0</dd>
+</dl>
 </section>
 </li>
 </ul>
@@ -142,6 +166,13 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="getFriendlyName()">
 <h3>getFriendlyName</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">getFriendlyName</span>()</div>
+<div class="block">Gets the friendly name of the authenticator.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The friendly name.</dd>
+<dt>Since:</dt>
+<dd>1.0.0</dd>
+</dl>
 </section>
 </li>
 </ul>

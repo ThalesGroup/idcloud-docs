@@ -73,8 +73,11 @@ loadScripts(document, 'script');</script>
 <section class="class-description" id="class-description">
 <hr>
 <div class="type-signature"><span class="modifiers">public interface </span><span class="element-name type-name-label">Controller</span></div>
-<div class="block">A controller interface that allows the application to control the
- process.</div>
+<div class="block">A controller that allows the application to cancel an ongoing passcode operation.
+ <p>
+ An instance of this controller is provided in the
+ <a href="PasscodeAuthenticatorCallback.html#onStart(com.thalesgroup.gemalto.fido2.authenticator.passcode.Keyboard,com.thalesgroup.gemalto.fido2.client.Fido2OperationInfo,com.thalesgroup.gemalto.fido2.authenticator.passcode.Controller)"><code>PasscodeAuthenticatorCallback.onStart(Keyboard, com.thalesgroup.gemalto.fido2.client.Fido2OperationInfo, Controller)</code></a>
+ callback.</div>
 <dl class="notes">
 <dt>Since:</dt>
 <dd>1.0.0</dd>
@@ -96,7 +99,7 @@ loadScripts(document, 'script');</script>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#cancel()" class="member-name-link">cancel</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Cancel the process.</div>
+<div class="block">Cancels the ongoing passcode entry process.</div>
 </div>
 </div>
 </div>
@@ -117,7 +120,7 @@ loadScripts(document, 'script');</script>
 <h3>cancel</h3>
 <div class="member-signature"><span class="annotations">@AnyThread
 </span><span class="return-type">void</span>&nbsp;<span class="element-name">cancel</span>()</div>
-<div class="block">Cancel the process.</div>
+<div class="block">Cancels the ongoing passcode entry process.</div>
 <dl class="notes">
 <dt>Since:</dt>
 <dd>1.0.0</dd>

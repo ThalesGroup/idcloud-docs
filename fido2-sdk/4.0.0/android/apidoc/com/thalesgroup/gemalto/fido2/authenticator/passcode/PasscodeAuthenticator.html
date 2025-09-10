@@ -77,11 +77,11 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="type-signature"><span class="modifiers">public abstract class </span><span class="element-name type-name-label">PasscodeAuthenticator</span>
 <span class="extends-implements">extends <a href="https://developer.android.com/reference/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></span></div>
-<div class="block">Manages the authenticator information regarding the Passcode Authenticator.
+<div class="block">Manages the lifecycle of the Passcode Authenticator.
  <p>
- A passcode creation process captures the user's passcode and generates a unique identifier. This passcode is then used to verify a user.
+ This class provides methods to create, change, and delete a user's passcode.
  </p><p>
- <b>Note:</b> A user MUST create the passcode before the Passcode authenticator can be used for FIDO2 operations.
+ <b>Note:</b> A user must create a passcode before this authenticator can be used for FIDO2 operations.
  </p></div>
 <dl class="notes">
 <dt>Since:</dt>
@@ -117,33 +117,33 @@ loadScripts(document, 'script');</script>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>abstract void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#changePasscode()" class="member-name-link">changePasscode</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Change the existing passcode for the current Passcode Authenticator.</div>
+<div class="block">Starts the asynchronous process to change the existing passcode.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>abstract void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#createPasscode()" class="member-name-link">createPasscode</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Create the passcode of the Passcode Authenticator.</div>
+<div class="block">Starts the asynchronous process to create a new passcode.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>abstract void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#deletePasscode()" class="member-name-link">deletePasscode</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Delete the previously created passcode of the Passcode Authenticator.</div>
+<div class="block">Starts the asynchronous process to delete the user's existing passcode.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>abstract long</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getLockoutExpiryTimestamp()" class="member-name-link">getLockoutExpiryTimestamp</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Get the lockout expiry timestamp.</div>
+<div class="block">Gets the timestamp for when the current lockout period will expire.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>abstract boolean</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#isPasscodeCreated()" class="member-name-link">isPasscodeCreated</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Indicates if the passcode of the Passcode Authenticator has been created.</div>
+<div class="block">Synchronously checks if a passcode has been created for this authenticator.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="PasscodeAuthenticator.html" title="class in com.thalesgroup.gemalto.fido2.authenticator.passcode">PasscodeAuthenticator</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#of(androidx.fragment.app.FragmentActivity,com.thalesgroup.gemalto.fido2.authenticator.passcode.PasscodeAuthenticatorCallback)" class="member-name-link">of</a><wbr>(androidx.fragment.app.FragmentActivity&nbsp;activity,
  <a href="PasscodeAuthenticatorCallback.html" title="interface in com.thalesgroup.gemalto.fido2.authenticator.passcode">PasscodeAuthenticatorCallback</a>&nbsp;callback)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
-<div class="block">Gets an instance of this class</div>
+<div class="block">Gets an instance of the <code>PasscodeAuthenticator</code>.</div>
 </div>
 </div>
 </div>
@@ -184,13 +184,14 @@ loadScripts(document, 'script');</script>
  androidx.fragment.app.FragmentActivity&nbsp;activity,
  @NonNull
  <a href="PasscodeAuthenticatorCallback.html" title="interface in com.thalesgroup.gemalto.fido2.authenticator.passcode">PasscodeAuthenticatorCallback</a>&nbsp;callback)</span></div>
-<div class="block">Gets an instance of this class</div>
+<div class="block">Gets an instance of the <code>PasscodeAuthenticator</code>.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>activity</code> - an Fragment Activity used to persist data</dd>
-<dd><code>callback</code> - the callback that receives event regarding the creation and deletion process.</dd>
+<dd><code>activity</code> - The <code>FragmentActivity</code> required for UI operations and context. Must not be null.</dd>
+<dd><code>callback</code> - The callback to receive events about the outcome of passcode management
+                 operations. Must not be null.</dd>
 <dt>Returns:</dt>
-<dd>a default instance of this class</dd>
+<dd>A new instance of <code>PasscodeAuthenticator</code>.</dd>
 <dt>Since:</dt>
 <dd>1.0.0</dd>
 </dl>
@@ -201,9 +202,10 @@ loadScripts(document, 'script');</script>
 <h3>createPasscode</h3>
 <div class="member-signature"><span class="annotations">@AnyThread
 </span><span class="modifiers">public abstract</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">createPasscode</span>()</div>
-<div class="block">Create the passcode of the Passcode Authenticator.
+<div class="block">Starts the asynchronous process to create a new passcode.
  <p>
- Users MUST create the passcode to perform FIDO2 operations with the Passcode Authenticator. The creation process stores a secure means of identification which will be used to verify the user when authentication is required.
+ The user must create a passcode to use this authenticator for FIDO2 operations.
+ The result of the operation is delivered via the <a href="PasscodeAuthenticatorCallback.html" title="interface in com.thalesgroup.gemalto.fido2.authenticator.passcode"><code>PasscodeAuthenticatorCallback</code></a>.
  </p></div>
 <dl class="notes">
 <dt>Since:</dt>
@@ -216,12 +218,14 @@ loadScripts(document, 'script');</script>
 <h3>deletePasscode</h3>
 <div class="member-signature"><span class="annotations">@AnyThread
 </span><span class="modifiers">public abstract</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">deletePasscode</span>()</div>
-<div class="block">Delete the previously created passcode of the Passcode Authenticator.
+<div class="block">Starts the asynchronous process to delete the user's existing passcode.
  <p>
-      User authentication is required prior to a successful deletion.
+ User authentication is required before the passcode can be deleted.
  </p>
  <p>
-      Upon successful deletion, all Fido2 registrations for the Passcode Authenticator will be invalidated. A subsequent creation is required to once again perform FIDO2 operations.
+ Upon successful deletion, all FIDO2 registrations associated with this authenticator will
+ be invalidated. The user will need to create a new passcode to use this authenticator again.
+ The result of the operation is delivered via the <a href="PasscodeAuthenticatorCallback.html" title="interface in com.thalesgroup.gemalto.fido2.authenticator.passcode"><code>PasscodeAuthenticatorCallback</code></a>.
  </p></div>
 <dl class="notes">
 <dt>Since:</dt>
@@ -234,11 +238,12 @@ loadScripts(document, 'script');</script>
 <h3>isPasscodeCreated</h3>
 <div class="member-signature"><span class="annotations">@AnyThread
 </span><span class="modifiers">public abstract</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isPasscodeCreated</span>()</div>
-<div class="block">Indicates if the passcode of the Passcode Authenticator has been created. Use this to determine if
- the user needs to create a passcode.</div>
+<div class="block">Synchronously checks if a passcode has been created for this authenticator.
+ <p>
+ Use this method to determine if the user needs to be prompted to create a passcode.</div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd>true if created</dd>
+<dd><code>true</code> if a passcode exists, <code>false</code> otherwise.</dd>
 <dt>Since:</dt>
 <dd>1.0.0</dd>
 </dl>
@@ -249,13 +254,11 @@ loadScripts(document, 'script');</script>
 <h3>changePasscode</h3>
 <div class="member-signature"><span class="annotations">@AnyThread
 </span><span class="modifiers">public abstract</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">changePasscode</span>()</div>
-<div class="block">Change the existing passcode for the current Passcode Authenticator.
-
- This authenticator will invoke the <a href="PasscodeAuthenticatorCallback.html#onStart(com.thalesgroup.gemalto.fido2.authenticator.passcode.Keyboard,com.thalesgroup.gemalto.fido2.client.Fido2OperationInfo,com.thalesgroup.gemalto.fido2.authenticator.passcode.Controller)"><code>PasscodeAuthenticatorCallback.onStart</code></a>
- to provide a secure keyboard which should be displayed on the UI layer
- to authenticate the user prior to changing the passcode.
+<div class="block">Starts the asynchronous process to change the existing passcode.
  <p>
- Upon authentication, the user would be requested to input and confirm a new passcode which SHALL then be used to for authentication henceforth.
+ This process requires the user to first authenticate with their old passcode, and then
+ enter and confirm a new one. The result of the operation is delivered via the
+ <a href="PasscodeAuthenticatorCallback.html" title="interface in com.thalesgroup.gemalto.fido2.authenticator.passcode"><code>PasscodeAuthenticatorCallback</code></a>.
  </p></div>
 <dl class="notes">
 <dt>Since:</dt>
@@ -269,10 +272,11 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="annotations">@WorkerThread
 </span><span class="modifiers">public abstract</span>&nbsp;<span class="return-type">long</span>&nbsp;<span class="element-name">getLockoutExpiryTimestamp</span>()
                                         throws <span class="exceptions"><a href="../../Fido2Exception.html" title="class in com.thalesgroup.gemalto.fido2">Fido2Exception</a></span></div>
-<div class="block">Get the lockout expiry timestamp.</div>
+<div class="block">Gets the timestamp for when the current lockout period will expire.</div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd>lockout expiry timestamp or 0 if the authenticator is not locked out</dd>
+<dd>The lockout expiry timestamp in milliseconds since the Unix epoch. Returns <code>0</code>
+         if the authenticator is not currently locked out.</dd>
 <dt>Throws:</dt>
 <dd><code><a href="../../Fido2Exception.html" title="class in com.thalesgroup.gemalto.fido2">Fido2Exception</a></code> - Exception when unsafe environment detected.</dd>
 <dt>Since:</dt>

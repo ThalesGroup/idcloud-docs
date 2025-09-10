@@ -89,7 +89,9 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="type-signature"><span class="modifiers">public class </span><span class="element-name type-name-label">Fido2Exception</span>
 <span class="extends-implements">extends com.thalesgroup.gemalto.fido2.internal.EnhancedErrorCodeException.PropagatingException</span></div>
-<div class="block">Thrown when an error prevents further FIDO2 request processing.</div>
+<div class="block">A custom exception thrown when a FIDO2 operation fails.
+ <p>
+ This exception provides a specific <a href="Fido2ErrorCode.html" title="enum class in com.thalesgroup.gemalto.fido2"><code>Fido2ErrorCode</code></a> to identify the cause of the failure.</div>
 <dl class="notes">
 <dt>Since:</dt>
 <dd>1.0.0</dd>
@@ -150,12 +152,12 @@ loadScripts(document, 'script');</script>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="Fido2ErrorCode.html" title="enum class in com.thalesgroup.gemalto.fido2">Fido2ErrorCode</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getError()" class="member-name-link">getError</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Returns the error why the operation failed.</div>
+<div class="block">Gets the specific error code that indicates why the operation failed.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getMessage()" class="member-name-link">getMessage</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Returns detail message for the error.</div>
+<div class="block">Gets the detailed error message.</div>
 </div>
 </div>
 </div>
@@ -204,10 +206,10 @@ loadScripts(document, 'script');</script>
 <h3>getError</h3>
 <div class="member-signature"><span class="annotations">@NonNull
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="Fido2ErrorCode.html" title="enum class in com.thalesgroup.gemalto.fido2">Fido2ErrorCode</a></span>&nbsp;<span class="element-name">getError</span>()</div>
-<div class="block">Returns the error why the operation failed.</div>
+<div class="block">Gets the specific error code that indicates why the operation failed.</div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd><a href="Fido2ErrorCode.html" title="enum class in com.thalesgroup.gemalto.fido2"><code>Fido2ErrorCode</code></a>.</dd>
+<dd>The <a href="Fido2ErrorCode.html" title="enum class in com.thalesgroup.gemalto.fido2"><code>Fido2ErrorCode</code></a> for this exception.</dd>
 <dt>Since:</dt>
 <dd>1.0.0</dd>
 </dl>
@@ -218,12 +220,14 @@ loadScripts(document, 'script');</script>
 <h3>getMessage</h3>
 <div class="member-signature"><span class="annotations">@NonNull
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">getMessage</span>()</div>
-<div class="block">Returns detail message for the error.</div>
+<div class="block">Gets the detailed error message.
+ <p>
+ The message includes the error code, a description, and any additional details.</div>
 <dl class="notes">
 <dt>Overrides:</dt>
 <dd><code>getMessage</code>&nbsp;in class&nbsp;<code>com.thalesgroup.gemalto.fido2.internal.EnhancedErrorCodeException.PropagatingException</code></dd>
 <dt>Returns:</dt>
-<dd>The error message.</dd>
+<dd>The complete error message.</dd>
 <dt>Since:</dt>
 <dd>1.0.0</dd>
 </dl>

@@ -83,9 +83,9 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="type-signature"><span class="modifiers">public enum </span><span class="element-name type-name-label">KeyboardUsage</span>
 <span class="extends-implements">extends <a href="https://developer.android.com/reference/java/lang/Enum.html" title="class or interface in java.lang" class="external-link">Enum</a>&lt;<a href="KeyboardUsage.html" title="enum class in com.thalesgroup.gemalto.fido2.authenticator.passcode">KeyboardUsage</a>&gt;</span></div>
-<div class="block">An enum describing what the keyboard is for.
+<div class="block">Describes the current purpose of the secure keyboard.
  <p>
- The App layer should utilize this enum in order to update their UI accordingly.
+ The application should use this enum to update its UI, for example, by changing prompt messages.
  </p></div>
 <dl class="notes">
 <dt>Since:</dt>
@@ -113,31 +113,31 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color"><code><a href="#CHANGE_PASSCODE_CONFIRM" class="member-name-link">CHANGE_PASSCODE_CONFIRM</a></code></div>
 <div class="col-last even-row-color">
-<div class="block">Returned during change passcode when the keyboard needs to confirm the new passcode</div>
+<div class="block">Indicates the keyboard is for confirming the new passcode during a change passcode operation.</div>
 </div>
 <div class="col-first odd-row-color"><code><a href="#CHANGE_PASSCODE_NEW" class="member-name-link">CHANGE_PASSCODE_NEW</a></code></div>
 <div class="col-last odd-row-color">
-<div class="block">Returned during change passcode when the keyboard needs a new passcode</div>
+<div class="block">Indicates the keyboard is for entering a new passcode during a change passcode operation.</div>
 </div>
 <div class="col-first even-row-color"><code><a href="#CHANGE_PASSCODE_OLD" class="member-name-link">CHANGE_PASSCODE_OLD</a></code></div>
 <div class="col-last even-row-color">
-<div class="block">Returned during change passcode when the keyboard needs to authenticate to start a passcode change</div>
+<div class="block">Indicates the keyboard is for entering the old passcode during a change passcode operation.</div>
 </div>
 <div class="col-first odd-row-color"><code><a href="#ENROLL_CONFIRM" class="member-name-link">ENROLL_CONFIRM</a></code></div>
 <div class="col-last odd-row-color">
-<div class="block">Returned during enrollment when the keyboard needs to confirm the new passcode</div>
+<div class="block">Indicates the keyboard is for confirming a new passcode during enrollment.</div>
 </div>
 <div class="col-first even-row-color"><code><a href="#ENROLL_NEW" class="member-name-link">ENROLL_NEW</a></code></div>
 <div class="col-last even-row-color">
-<div class="block">Returned during enrollment when the keyboard needs a new passcode</div>
+<div class="block">Indicates the keyboard is for entering a new passcode during enrollment.</div>
 </div>
 <div class="col-first odd-row-color"><code><a href="#FIDO_OPERATION" class="member-name-link">FIDO_OPERATION</a></code></div>
 <div class="col-last odd-row-color">
-<div class="block">Returned during FIDO operation when the keyboard needs to authenticate before performing a FIDO operation</div>
+<div class="block">Indicates the keyboard is for authenticating the user for a FIDO operation.</div>
 </div>
 <div class="col-first even-row-color"><code><a href="#UNENROLL" class="member-name-link">UNENROLL</a></code></div>
 <div class="col-last even-row-color">
-<div class="block">Returned during unenrollment when the keyboard needs to authenticate before unenrolling</div>
+<div class="block">Indicates the keyboard is for authenticating the user before deleting their passcode.</div>
 </div>
 </div>
 </section>
@@ -188,49 +188,49 @@ the order they are declared.</div>
 <section class="detail" id="ENROLL_NEW">
 <h3>ENROLL_NEW</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="KeyboardUsage.html" title="enum class in com.thalesgroup.gemalto.fido2.authenticator.passcode">KeyboardUsage</a></span>&nbsp;<span class="element-name">ENROLL_NEW</span></div>
-<div class="block">Returned during enrollment when the keyboard needs a new passcode</div>
+<div class="block">Indicates the keyboard is for entering a new passcode during enrollment.</div>
 </section>
 </li>
 <li>
 <section class="detail" id="ENROLL_CONFIRM">
 <h3>ENROLL_CONFIRM</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="KeyboardUsage.html" title="enum class in com.thalesgroup.gemalto.fido2.authenticator.passcode">KeyboardUsage</a></span>&nbsp;<span class="element-name">ENROLL_CONFIRM</span></div>
-<div class="block">Returned during enrollment when the keyboard needs to confirm the new passcode</div>
+<div class="block">Indicates the keyboard is for confirming a new passcode during enrollment.</div>
 </section>
 </li>
 <li>
 <section class="detail" id="FIDO_OPERATION">
 <h3>FIDO_OPERATION</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="KeyboardUsage.html" title="enum class in com.thalesgroup.gemalto.fido2.authenticator.passcode">KeyboardUsage</a></span>&nbsp;<span class="element-name">FIDO_OPERATION</span></div>
-<div class="block">Returned during FIDO operation when the keyboard needs to authenticate before performing a FIDO operation</div>
+<div class="block">Indicates the keyboard is for authenticating the user for a FIDO operation.</div>
 </section>
 </li>
 <li>
 <section class="detail" id="CHANGE_PASSCODE_OLD">
 <h3>CHANGE_PASSCODE_OLD</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="KeyboardUsage.html" title="enum class in com.thalesgroup.gemalto.fido2.authenticator.passcode">KeyboardUsage</a></span>&nbsp;<span class="element-name">CHANGE_PASSCODE_OLD</span></div>
-<div class="block">Returned during change passcode when the keyboard needs to authenticate to start a passcode change</div>
+<div class="block">Indicates the keyboard is for entering the old passcode during a change passcode operation.</div>
 </section>
 </li>
 <li>
 <section class="detail" id="CHANGE_PASSCODE_NEW">
 <h3>CHANGE_PASSCODE_NEW</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="KeyboardUsage.html" title="enum class in com.thalesgroup.gemalto.fido2.authenticator.passcode">KeyboardUsage</a></span>&nbsp;<span class="element-name">CHANGE_PASSCODE_NEW</span></div>
-<div class="block">Returned during change passcode when the keyboard needs a new passcode</div>
+<div class="block">Indicates the keyboard is for entering a new passcode during a change passcode operation.</div>
 </section>
 </li>
 <li>
 <section class="detail" id="CHANGE_PASSCODE_CONFIRM">
 <h3>CHANGE_PASSCODE_CONFIRM</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="KeyboardUsage.html" title="enum class in com.thalesgroup.gemalto.fido2.authenticator.passcode">KeyboardUsage</a></span>&nbsp;<span class="element-name">CHANGE_PASSCODE_CONFIRM</span></div>
-<div class="block">Returned during change passcode when the keyboard needs to confirm the new passcode</div>
+<div class="block">Indicates the keyboard is for confirming the new passcode during a change passcode operation.</div>
 </section>
 </li>
 <li>
 <section class="detail" id="UNENROLL">
 <h3>UNENROLL</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="KeyboardUsage.html" title="enum class in com.thalesgroup.gemalto.fido2.authenticator.passcode">KeyboardUsage</a></span>&nbsp;<span class="element-name">UNENROLL</span></div>
-<div class="block">Returned during unenrollment when the keyboard needs to authenticate before unenrolling</div>
+<div class="block">Indicates the keyboard is for authenticating the user before deleting their passcode.</div>
 </section>
 </li>
 </ul>

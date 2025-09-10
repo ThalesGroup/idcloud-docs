@@ -83,7 +83,7 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="type-signature"><span class="modifiers">public enum </span><span class="element-name type-name-label">VerifyMethod</span>
 <span class="extends-implements">extends <a href="https://developer.android.com/reference/java/lang/Enum.html" title="class or interface in java.lang" class="external-link">Enum</a>&lt;<a href="VerifyMethod.html" title="enum class in com.thalesgroup.gemalto.fido2.client">VerifyMethod</a>&gt;</span></div>
-<div class="block">Methods for verifying user presence.</div>
+<div class="block">Enumerates the user verification methods supported by FIDO2 authenticators.</div>
 <dl class="notes">
 <dt>Since:</dt>
 <dd>1.0.0</dd>
@@ -110,25 +110,26 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color"><code><a href="#BIOMETRIC" class="member-name-link">BIOMETRIC</a></code></div>
 <div class="col-last even-row-color">
-<div class="block">This flag MUST be set if the authenticator uses any type of measurement of a proprietary biometric for user verification.</div>
+<div class="block">User verification is performed using a biometric sensor on the device
+ (e.g., fingerprint, face recognition).</div>
 </div>
 <div class="col-first odd-row-color"><code><a href="#NONE" class="member-name-link">NONE</a></code></div>
 <div class="col-last odd-row-color">
-<div class="block">This flag MUST be set if the authenticator will respond without any
- user interaction</div>
+<div class="block">No user verification is performed.</div>
 </div>
 <div class="col-first even-row-color"><code><a href="#PASSCODE" class="member-name-link">PASSCODE</a></code></div>
 <div class="col-last even-row-color">
-<div class="block">This flag MUST be set if the authenticator uses any manner of passcode
- to verify the user.</div>
+<div class="block">User verification is performed using a passcode, PIN, or pattern entered by the user.</div>
 </div>
 <div class="col-first odd-row-color"><code><a href="#PLATFORM" class="member-name-link">PLATFORM</a></code></div>
 <div class="col-last odd-row-color">
-<div class="block">This flag MUST be set if the authenticator uses any type of measurement of a roaming platform for user verification.</div>
+<div class="block">User verification is performed by a roaming authenticator (e.g., a security key)
+ connected to the client device.</div>
 </div>
 <div class="col-first even-row-color"><code><a href="#PLATFORM_LOCAL" class="member-name-link">PLATFORM_LOCAL</a></code></div>
 <div class="col-last even-row-color">
-<div class="block">This flag MUST be set if the authenticator uses any type of measurement of a local platform for user verification.</div>
+<div class="block">User verification is performed by a platform authenticator that is bound to the
+ client device (e.g., a TPM).</div>
 </div>
 </div>
 </section>
@@ -179,37 +180,40 @@ the order they are declared.</div>
 <section class="detail" id="PLATFORM">
 <h3>PLATFORM</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="VerifyMethod.html" title="enum class in com.thalesgroup.gemalto.fido2.client">VerifyMethod</a></span>&nbsp;<span class="element-name">PLATFORM</span></div>
-<div class="block">This flag MUST be set if the authenticator uses any type of measurement of a roaming platform for user verification.</div>
+<div class="block">User verification is performed by a roaming authenticator (e.g., a security key)
+ connected to the client device. In modern terms, this often corresponds to a
+ syncable passkey (e.g., Google Passkeys).</div>
 </section>
 </li>
 <li>
 <section class="detail" id="PLATFORM_LOCAL">
 <h3>PLATFORM_LOCAL</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="VerifyMethod.html" title="enum class in com.thalesgroup.gemalto.fido2.client">VerifyMethod</a></span>&nbsp;<span class="element-name">PLATFORM_LOCAL</span></div>
-<div class="block">This flag MUST be set if the authenticator uses any type of measurement of a local platform for user verification.</div>
+<div class="block">User verification is performed by a platform authenticator that is bound to the
+ client device (e.g., a TPM). This corresponds to a device-bound passkey.</div>
 </section>
 </li>
 <li>
 <section class="detail" id="BIOMETRIC">
 <h3>BIOMETRIC</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="VerifyMethod.html" title="enum class in com.thalesgroup.gemalto.fido2.client">VerifyMethod</a></span>&nbsp;<span class="element-name">BIOMETRIC</span></div>
-<div class="block">This flag MUST be set if the authenticator uses any type of measurement of a proprietary biometric for user verification.</div>
+<div class="block">User verification is performed using a biometric sensor on the device
+ (e.g., fingerprint, face recognition).</div>
 </section>
 </li>
 <li>
 <section class="detail" id="PASSCODE">
 <h3>PASSCODE</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="VerifyMethod.html" title="enum class in com.thalesgroup.gemalto.fido2.client">VerifyMethod</a></span>&nbsp;<span class="element-name">PASSCODE</span></div>
-<div class="block">This flag MUST be set if the authenticator uses any manner of passcode
- to verify the user.</div>
+<div class="block">User verification is performed using a passcode, PIN, or pattern entered by the user.</div>
 </section>
 </li>
 <li>
 <section class="detail" id="NONE">
 <h3>NONE</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="VerifyMethod.html" title="enum class in com.thalesgroup.gemalto.fido2.client">VerifyMethod</a></span>&nbsp;<span class="element-name">NONE</span></div>
-<div class="block">This flag MUST be set if the authenticator will respond without any
- user interaction</div>
+<div class="block">No user verification is performed. The authenticator responds automatically.
+ This is typically used for user presence checks only.</div>
 </section>
 </li>
 </ul>

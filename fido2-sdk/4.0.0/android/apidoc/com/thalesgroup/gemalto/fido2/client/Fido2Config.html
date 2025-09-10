@@ -77,11 +77,11 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="type-signature"><span class="modifiers">public class </span><span class="element-name type-name-label">Fido2Config</span>
 <span class="extends-implements">extends <a href="https://developer.android.com/reference/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></span></div>
-<div class="block">A global FIDO2 SDK configuration class. In general FIDO SDK's default
- behavior is to be as secure as possible. However, sometimes an application
- may wish to disable a specific security feature or even enhance a security
- feature. A small set of configuration options are exposed to the application
- to modify or add to FIDO2 SDK's default behavior.</div>
+<div class="block">A global configuration class for the FIDO2 SDK.
+ <p>
+ The SDK is designed with secure defaults. This class provides a limited set of options
+ for applications that need to customize certain security features or behaviors,
+ such as rate limiting, logging, and TLS certificate pinning.</div>
 <dl class="notes">
 <dt>Since:</dt>
 <dd>1.0.0</dd>
@@ -116,27 +116,27 @@ loadScripts(document, 'script');</script>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#setBaseLockoutDuration(int)" class="member-name-link">setBaseLockoutDuration</a><wbr>(int&nbsp;durationInSecs)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
-<div class="block">Sets the base lockout penalty duration to be incurred upon exceeding the maximum number of possible retries during a user verification process.</div>
+<div class="block">Sets the base duration for the lockout penalty after too many failed verification attempts.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#setMaximumRetryCount(int)" class="member-name-link">setMaximumRetryCount</a><wbr>(int&nbsp;maxRetryCount)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
-<div class="block">Sets the maximum number of possible retries before incurring a lockout penalty during a user verification process.</div>
+<div class="block">Sets the maximum number of failed user verification attempts before the authenticator is locked.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#setSecureLog(com.thalesgroup.gemalto.securelog.SecureLog)" class="member-name-link">setSecureLog</a><wbr>(com.thalesgroup.gemalto.securelog.SecureLog&nbsp;securelog)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
-<div class="block">Set the secure logger intended to log necessary retrievable information.</div>
+<div class="block">Sets a pre-configured secure logger instance for the SDK to use.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#setTlsCertificates(java.security.cert.X509Certificate%5B%5D)" class="member-name-link">setTlsCertificates</a><wbr>(<a href="https://developer.android.com/reference/java/security/cert/X509Certificate.html" title="class or interface in java.security.cert" class="external-link">X509Certificate</a>[]&nbsp;certificates)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
-<div class="block">Sets the TLS certificates for the relying party.</div>
+<div class="block">Sets the TLS certificates to be used for certificate pinning when communicating with the Relying Party.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static com.thalesgroup.gemalto.securelog.SecureLog</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#setUpSecureLog(com.thalesgroup.gemalto.securelog.SecureLogConfig)" class="member-name-link">setUpSecureLog</a><wbr>(com.thalesgroup.gemalto.securelog.SecureLogConfig&nbsp;config)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
-<div class="block">Setup the secure logger intended to log necessary retrievable information.</div>
+<div class="block">Configures and initializes the secure logger for the SDK.</div>
 </div>
 </div>
 </div>
@@ -173,14 +173,18 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="setMaximumRetryCount(int)">
 <h3>setMaximumRetryCount</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setMaximumRetryCount</span><wbr><span class="parameters">(int&nbsp;maxRetryCount)</span></div>
-<div class="block">Sets the maximum number of possible retries before incurring a lockout penalty during a user verification process.
- This value defaults to 5.
- The minimum possible value is 1 otherwise, the provided value will be ignored.
- The maximum possible value is 5 otherwise, the provided value will be ignored.
- This value may only be configured ONCE per application runtime.</div>
+<div class="block">Sets the maximum number of failed user verification attempts before the authenticator is locked.
+ <p>
+ This value can only be configured once per application runtime. Subsequent calls will be ignored.
+ <ul>
+   <li>Default value: 5</li>
+   <li>Minimum value: 1</li>
+   <li>Maximum value: 5</li>
+ </ul>
+ Values outside the allowed range will be ignored.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>maxRetryCount</code> - maximumRetryCount The maximum number of possible retries.</dd>
+<dd><code>maxRetryCount</code> - The maximum number of retries.</dd>
 <dt>Since:</dt>
 <dd>1.0.0</dd>
 </dl>
@@ -190,12 +194,16 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="setBaseLockoutDuration(int)">
 <h3>setBaseLockoutDuration</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setBaseLockoutDuration</span><wbr><span class="parameters">(int&nbsp;durationInSecs)</span></div>
-<div class="block">Sets the base lockout penalty duration to be incurred upon exceeding the maximum number of possible retries during a user verification process.
- The penalty will increase exponentially with each subsequent verification failure.
- This value defaults to 30 seconds.
- The minimum possible value is 30 seconds otherwise the default value will be kept.
- The maximum possible value is 1800 seconds (i.e. 30 minutes) otherwise the default value will be kept.
- This value may only be configured ONCE per application runtime.</div>
+<div class="block">Sets the base duration for the lockout penalty after too many failed verification attempts.
+ <p>
+ The actual lockout duration increases exponentially with each subsequent lockout.
+ This value can only be configured once per application runtime. Subsequent calls will be ignored.
+ <ul>
+   <li>Default value: 30 seconds</li>
+   <li>Minimum value: 30 seconds</li>
+   <li>Maximum value: 1800 seconds (30 minutes)</li>
+ </ul>
+ Values outside the allowed range will be ignored.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>durationInSecs</code> - The base lockout duration in seconds.</dd>
@@ -207,35 +215,45 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="setUpSecureLog(com.thalesgroup.gemalto.securelog.SecureLogConfig)">
 <h3>setUpSecureLog</h3>
-<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">com.thalesgroup.gemalto.securelog.SecureLog</span>&nbsp;<span class="element-name">setUpSecureLog</span><wbr><span class="parameters">(com.thalesgroup.gemalto.securelog.SecureLogConfig&nbsp;config)</span></div>
-<div class="block">Setup the secure logger intended to log necessary retrievable information.</div>
+<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">com.thalesgroup.gemalto.securelog.SecureLog</span>&nbsp;<span class="element-name">setUpSecureLog</span><wbr><span class="parameters">(@Nullable
+ com.thalesgroup.gemalto.securelog.SecureLogConfig&nbsp;config)</span></div>
+<div class="block">Configures and initializes the secure logger for the SDK.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>config</code> - A configuration object of secure log.</dd>
+<dd><code>config</code> - The configuration for the secure logger.</dd>
 <dt>Returns:</dt>
-<dd>An instance of `SecureLog` or `null` if config set is `null`.</dd>
+<dd>An instance of <code>SecureLog</code>, or <code>null</code> if the provided config is <code>null</code>.</dd>
+<dt>Since:</dt>
+<dd>1.2.0</dd>
 </dl>
 </section>
 </li>
 <li>
 <section class="detail" id="setSecureLog(com.thalesgroup.gemalto.securelog.SecureLog)">
 <h3>setSecureLog</h3>
-<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setSecureLog</span><wbr><span class="parameters">(com.thalesgroup.gemalto.securelog.SecureLog&nbsp;securelog)</span></div>
-<div class="block">Set the secure logger intended to log necessary retrievable information.</div>
+<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setSecureLog</span><wbr><span class="parameters">(@Nullable
+ com.thalesgroup.gemalto.securelog.SecureLog&nbsp;securelog)</span></div>
+<div class="block">Sets a pre-configured secure logger instance for the SDK to use.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>securelog</code> - A previously created instance of secure log.</dd>
+<dd><code>securelog</code> - A previously created <code>SecureLog</code> instance.</dd>
+<dt>Since:</dt>
+<dd>1.2.0</dd>
 </dl>
 </section>
 </li>
 <li>
 <section class="detail" id="setTlsCertificates(java.security.cert.X509Certificate[])">
 <h3>setTlsCertificates</h3>
-<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setTlsCertificates</span><wbr><span class="parameters">(<a href="https://developer.android.com/reference/java/security/cert/X509Certificate.html" title="class or interface in java.security.cert" class="external-link">X509Certificate</a>[]&nbsp;certificates)</span></div>
-<div class="block">Sets the TLS certificates for the relying party.</div>
+<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setTlsCertificates</span><wbr><span class="parameters">(@Nullable
+ <a href="https://developer.android.com/reference/java/security/cert/X509Certificate.html" title="class or interface in java.security.cert" class="external-link">X509Certificate</a>[]&nbsp;certificates)</span></div>
+<div class="block">Sets the TLS certificates to be used for certificate pinning when communicating with the Relying Party.
+ <p>
+ This enhances security by ensuring the app communicates only with servers that have a trusted certificate.
+ If this is not set, standard system trust validation will be used.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>certificates</code> - List of X509 certificates.</dd>
+<dd><code>certificates</code> - An array of <a href="https://developer.android.com/reference/java/security/cert/X509Certificate.html" title="class or interface in java.security.cert" class="external-link"><code>X509Certificate</code></a> to pin against.</dd>
 <dt>Since:</dt>
 <dd>1.9.0</dd>
 </dl>

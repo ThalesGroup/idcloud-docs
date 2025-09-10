@@ -77,8 +77,9 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="type-signature"><span class="modifiers">public class </span><span class="element-name type-name-label">Fido2RespondArgs</span>
 <span class="extends-implements">extends <a href="https://developer.android.com/reference/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></span></div>
-<div class="block">An immutable composition of the arguments needed to respond to a FIDO2
- request in <a href="Fido2Client.html#respondWithArgs(com.thalesgroup.gemalto.fido2.client.Fido2RespondArgs,com.thalesgroup.gemalto.fido2.client.Fido2ResponseCallback)"><code>Fido2Client.respondWithArgs</code></a>.</div>
+<div class="block">An immutable container for the arguments required by <a href="Fido2Client.html#respondWithArgs(com.thalesgroup.gemalto.fido2.client.Fido2RespondArgs,com.thalesgroup.gemalto.fido2.client.Fido2ResponseCallback)"><code>Fido2Client.respondWithArgs(com.thalesgroup.gemalto.fido2.client.Fido2RespondArgs, com.thalesgroup.gemalto.fido2.client.Fido2ResponseCallback)</code></a>.
+ <p>
+ Use the <a href="Fido2RespondArgs.Builder.html" title="class in com.thalesgroup.gemalto.fido2.client"><code>Fido2RespondArgs.Builder</code></a> to construct an instance of this class.</div>
 <dl class="notes">
 <dt>Since:</dt>
 <dd>1.0.0</dd>
@@ -98,7 +99,7 @@ loadScripts(document, 'script');</script>
 <div class="col-first even-row-color"><code>static class&nbsp;</code></div>
 <div class="col-second even-row-color"><code><a href="Fido2RespondArgs.Builder.html" class="type-name-link" title="class in com.thalesgroup.gemalto.fido2.client">Fido2RespondArgs.Builder</a></code></div>
 <div class="col-last even-row-color">
-<div class="block">A builder of <code>Fido2RespondArgs</code> instances.</div>
+<div class="block">A builder for creating <code>Fido2RespondArgs</code> instances.</div>
 </div>
 </div>
 </section>
@@ -117,28 +118,27 @@ loadScripts(document, 'script');</script>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../authenticator/biometric/BiometricAuthenticatorCallback.html" title="interface in com.thalesgroup.gemalto.fido2.authenticator.biometric">BiometricAuthenticatorCallback</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getBiometricAuthenticatorCallback()" class="member-name-link">getBiometricAuthenticatorCallback</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Gets the Biometric Authenticator Callback</div>
+<div class="block">Gets the callback for the Biometric Authenticator.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../authenticator/passcode/PasscodeAuthenticatorCallback.html" title="interface in com.thalesgroup.gemalto.fido2.authenticator.passcode">PasscodeAuthenticatorCallback</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getPasscodeAuthenticatorCallback()" class="member-name-link">getPasscodeAuthenticatorCallback</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Gets the Passcode Authenticator Callback</div>
+<div class="block">Gets the callback for the Passcode Authenticator.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="Fido2Request.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2Request</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getRequest()" class="member-name-link">getRequest</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Gets the request to use in <a href="Fido2Client.html#respondWithArgs(com.thalesgroup.gemalto.fido2.client.Fido2RespondArgs,com.thalesgroup.gemalto.fido2.client.Fido2ResponseCallback)"><code>Fido2Client.respondWithArgs</code></a>.</div>
+<div class="block">Gets the FIDO2 request to be processed.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="Fido2UiCallback.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2UiCallback</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getUiCallback()" class="member-name-link">getUiCallback</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Gets the callback object to call when <a href="Fido2Client.html#respondWithArgs(com.thalesgroup.gemalto.fido2.client.Fido2RespondArgs,com.thalesgroup.gemalto.fido2.client.Fido2ResponseCallback)"><code>Fido2Client.respondWithArgs</code></a> delegates displaying UI to the calling
- application.</div>
+<div class="block">Gets the UI callback for handling delegated UI tasks.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#wipe()" class="member-name-link">wipe</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Wipes data</div>
+<div class="block">Securely wipes any sensitive data held by this object from memory.</div>
 </div>
 </div>
 </div>
@@ -162,10 +162,10 @@ loadScripts(document, 'script');</script>
 <h3>getRequest</h3>
 <div class="member-signature"><span class="annotations">@NonNull
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="Fido2Request.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2Request</a></span>&nbsp;<span class="element-name">getRequest</span>()</div>
-<div class="block">Gets the request to use in <a href="Fido2Client.html#respondWithArgs(com.thalesgroup.gemalto.fido2.client.Fido2RespondArgs,com.thalesgroup.gemalto.fido2.client.Fido2ResponseCallback)"><code>Fido2Client.respondWithArgs</code></a>.</div>
+<div class="block">Gets the FIDO2 request to be processed.</div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd>the JSON string representation of the request</dd>
+<dd>The <a href="Fido2Request.html" title="class in com.thalesgroup.gemalto.fido2.client"><code>Fido2Request</code></a>.</dd>
 <dt>Since:</dt>
 <dd>1.0.0</dd>
 </dl>
@@ -176,11 +176,10 @@ loadScripts(document, 'script');</script>
 <h3>getUiCallback</h3>
 <div class="member-signature"><span class="annotations">@NonNull
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="Fido2UiCallback.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2UiCallback</a></span>&nbsp;<span class="element-name">getUiCallback</span>()</div>
-<div class="block">Gets the callback object to call when <a href="Fido2Client.html#respondWithArgs(com.thalesgroup.gemalto.fido2.client.Fido2RespondArgs,com.thalesgroup.gemalto.fido2.client.Fido2ResponseCallback)"><code>Fido2Client.respondWithArgs</code></a> delegates displaying UI to the calling
- application.</div>
+<div class="block">Gets the UI callback for handling delegated UI tasks.</div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd>the callback</dd>
+<dd>The <a href="Fido2UiCallback.html" title="class in com.thalesgroup.gemalto.fido2.client"><code>Fido2UiCallback</code></a>.</dd>
 <dt>Since:</dt>
 <dd>1.0.0</dd>
 </dl>
@@ -191,10 +190,10 @@ loadScripts(document, 'script');</script>
 <h3>getPasscodeAuthenticatorCallback</h3>
 <div class="member-signature"><span class="annotations">@Nullable
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../authenticator/passcode/PasscodeAuthenticatorCallback.html" title="interface in com.thalesgroup.gemalto.fido2.authenticator.passcode">PasscodeAuthenticatorCallback</a></span>&nbsp;<span class="element-name">getPasscodeAuthenticatorCallback</span>()</div>
-<div class="block">Gets the Passcode Authenticator Callback</div>
+<div class="block">Gets the callback for the Passcode Authenticator.</div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd>PasscodeAuthenticatorCallback</dd>
+<dd>The <a href="../authenticator/passcode/PasscodeAuthenticatorCallback.html" title="interface in com.thalesgroup.gemalto.fido2.authenticator.passcode"><code>PasscodeAuthenticatorCallback</code></a>, or <code>null</code> if not set.</dd>
 <dt>Since:</dt>
 <dd>1.0.0</dd>
 </dl>
@@ -205,12 +204,12 @@ loadScripts(document, 'script');</script>
 <h3>getBiometricAuthenticatorCallback</h3>
 <div class="member-signature"><span class="annotations">@Nullable
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../authenticator/biometric/BiometricAuthenticatorCallback.html" title="interface in com.thalesgroup.gemalto.fido2.authenticator.biometric">BiometricAuthenticatorCallback</a></span>&nbsp;<span class="element-name">getBiometricAuthenticatorCallback</span>()</div>
-<div class="block">Gets the Biometric Authenticator Callback</div>
+<div class="block">Gets the callback for the Biometric Authenticator.</div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd>BiometricAuthenticatorCallback</dd>
+<dd>The <a href="../authenticator/biometric/BiometricAuthenticatorCallback.html" title="interface in com.thalesgroup.gemalto.fido2.authenticator.biometric"><code>BiometricAuthenticatorCallback</code></a>, or <code>null</code> if not set.</dd>
 <dt>Since:</dt>
-<dd>1.0.0</dd>
+<dd>1.1.0</dd>
 </dl>
 </section>
 </li>
@@ -218,7 +217,7 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="wipe()">
 <h3>wipe</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">wipe</span>()</div>
-<div class="block">Wipes data</div>
+<div class="block">Securely wipes any sensitive data held by this object from memory.</div>
 <dl class="notes">
 <dt>Since:</dt>
 <dd>1.2.0</dd>

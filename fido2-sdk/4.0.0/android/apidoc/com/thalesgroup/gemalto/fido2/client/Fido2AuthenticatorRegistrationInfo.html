@@ -78,6 +78,14 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="type-signature"><span class="modifiers">public interface </span><span class="element-name type-name-label">Fido2AuthenticatorRegistrationInfo</span><span class="extends-implements">
 extends <a href="Fido2AuthenticatorInfo.html" title="interface in com.thalesgroup.gemalto.fido2.client">Fido2AuthenticatorInfo</a></span></div>
+<div class="block">Provides information about a specific FIDO2 credential registration.
+ <p>
+ This extends <a href="Fido2AuthenticatorInfo.html" title="interface in com.thalesgroup.gemalto.fido2.client"><code>Fido2AuthenticatorInfo</code></a> with details about a credential
+ that has been registered with a relying party, such as the credential ID and user information.</div>
+<dl class="notes">
+<dt>Since:</dt>
+<dd>1.0.0</dd>
+</dl>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -92,18 +100,46 @@ extends <a href="Fido2AuthenticatorInfo.html" title="interface in com.thalesgrou
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>byte[]</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getCredentialId()" class="member-name-link">getCredentialId</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://developer.android.com/reference/java/util/Date.html" title="class or interface in java.util" class="external-link">Date</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getCreationDate()" class="member-name-link">getCreationDate</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Gets the date and time when this registration was created.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>byte[]</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getRpIdHash()" class="member-name-link">getRpIdHash</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getCredentialId()" class="member-name-link">getCredentialId</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Gets the credential ID for this registration.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://developer.android.com/reference/java/util/Date.html" title="class or interface in java.util" class="external-link">Date</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getLastUsedDate()" class="member-name-link">getLastUsedDate</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Gets the date and time when this authenticator was last used.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getRpId()" class="member-name-link">getRpId</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Gets the Relying Party ID (rpId) associated with this registration.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>byte[]</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getRpIdHash()" class="member-name-link">getRpIdHash</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Gets the SHA-256 hash of the Relying Party ID (rpId) associated with this registration.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getUserDisplayName()" class="member-name-link">getUserDisplayName</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Gets the user display name associated with this registration.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getUserId()" class="member-name-link">getUserId</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Gets the user ID associated with this registration.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getUserName()" class="member-name-link">getUserName</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Gets the user name associated with this registration.</div>
+</div>
 </div>
 </div>
 </div>
@@ -125,24 +161,104 @@ extends <a href="Fido2AuthenticatorInfo.html" title="interface in com.thalesgrou
 <section class="detail" id="getCredentialId()">
 <h3>getCredentialId</h3>
 <div class="member-signature"><span class="return-type">byte[]</span>&nbsp;<span class="element-name">getCredentialId</span>()</div>
+<div class="block">Gets the credential ID for this registration.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The byte array representing the credential ID.</dd>
+<dt>Since:</dt>
+<dd>1.0.0</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="getRpIdHash()">
 <h3>getRpIdHash</h3>
 <div class="member-signature"><span class="return-type">byte[]</span>&nbsp;<span class="element-name">getRpIdHash</span>()</div>
+<div class="block">Gets the SHA-256 hash of the Relying Party ID (rpId) associated with this registration.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The byte array of the rpId hash.</dd>
+<dt>Since:</dt>
+<dd>1.0.0</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="getUserId()">
 <h3>getUserId</h3>
 <div class="member-signature"><span class="return-type"><a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">getUserId</span>()</div>
+<div class="block">Gets the user ID associated with this registration.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The user ID string.</dd>
+<dt>Since:</dt>
+<dd>1.0.0</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="getUserName()">
 <h3>getUserName</h3>
 <div class="member-signature"><span class="return-type"><a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">getUserName</span>()</div>
+<div class="block">Gets the user name associated with this registration.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The user name string.</dd>
+<dt>Since:</dt>
+<dd>1.0.0</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="getUserDisplayName()">
+<h3>getUserDisplayName</h3>
+<div class="member-signature"><span class="return-type"><a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">getUserDisplayName</span>()</div>
+<div class="block">Gets the user display name associated with this registration.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The user display name string.</dd>
+<dt>Since:</dt>
+<dd>4.0.0</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="getRpId()">
+<h3>getRpId</h3>
+<div class="member-signature"><span class="return-type"><a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">getRpId</span>()</div>
+<div class="block">Gets the Relying Party ID (rpId) associated with this registration.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The Relying Party ID string.</dd>
+<dt>Since:</dt>
+<dd>4.0.0</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="getLastUsedDate()">
+<h3>getLastUsedDate</h3>
+<div class="member-signature"><span class="return-type"><a href="https://developer.android.com/reference/java/util/Date.html" title="class or interface in java.util" class="external-link">Date</a></span>&nbsp;<span class="element-name">getLastUsedDate</span>()</div>
+<div class="block">Gets the date and time when this authenticator was last used.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The Date object representing the last time used.</dd>
+<dt>Since:</dt>
+<dd>4.0.0</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="getCreationDate()">
+<h3>getCreationDate</h3>
+<div class="member-signature"><span class="return-type"><a href="https://developer.android.com/reference/java/util/Date.html" title="class or interface in java.util" class="external-link">Date</a></span>&nbsp;<span class="element-name">getCreationDate</span>()</div>
+<div class="block">Gets the date and time when this registration was created.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The Date object representing the creation date.</dd>
+<dt>Since:</dt>
+<dd>4.0.0</dd>
+</dl>
 </section>
 </li>
 </ul>

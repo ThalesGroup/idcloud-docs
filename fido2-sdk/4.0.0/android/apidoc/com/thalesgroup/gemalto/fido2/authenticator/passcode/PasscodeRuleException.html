@@ -87,7 +87,9 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="type-signature"><span class="modifiers">public abstract class </span><span class="element-name type-name-label">PasscodeRuleException</span>
 <span class="extends-implements">extends com.thalesgroup.gemalto.fido2.internal.EnhancedErrorCodeException</span></div>
-<div class="block">Passcode rule exceptions.</div>
+<div class="block">An exception thrown when a passcode fails to meet the configured complexity rules.
+ <p>
+ This exception is typically the cause of a <a href="../../Fido2Exception.html" title="class in com.thalesgroup.gemalto.fido2"><code>Fido2Exception</code></a>.</div>
 <dl class="notes">
 <dt>Since:</dt>
 <dd>1.3.0</dd>
@@ -113,7 +115,7 @@ loadScripts(document, 'script');</script>
 <div class="col-first even-row-color"><code>static enum&nbsp;</code></div>
 <div class="col-second even-row-color"><code><a href="PasscodeRuleException.ErrorCode.html" class="type-name-link" title="enum class in com.thalesgroup.gemalto.fido2.authenticator.passcode">PasscodeRuleException.ErrorCode</a></code></div>
 <div class="col-last even-row-color">
-<div class="block">Represent errors resulting from passcode rule violations.</div>
+<div class="block">Defines the specific error codes for passcode rule violations.</div>
 </div>
 </div>
 <div class="inherited-list">
@@ -159,7 +161,7 @@ loadScripts(document, 'script');</script>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>abstract <a href="PasscodeRuleException.ErrorCode.html" title="enum class in com.thalesgroup.gemalto.fido2.authenticator.passcode">PasscodeRuleException.ErrorCode</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getError()" class="member-name-link">getError</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Returns the error why the operation failed.</div>
+<div class="block">Gets the specific error code that indicates which rule was violated.</div>
 </div>
 </div>
 </div>
@@ -205,10 +207,10 @@ loadScripts(document, 'script');</script>
 <h3>getError</h3>
 <div class="member-signature"><span class="annotations">@NonNull
 </span><span class="modifiers">public abstract</span>&nbsp;<span class="return-type"><a href="PasscodeRuleException.ErrorCode.html" title="enum class in com.thalesgroup.gemalto.fido2.authenticator.passcode">PasscodeRuleException.ErrorCode</a></span>&nbsp;<span class="element-name">getError</span>()</div>
-<div class="block">Returns the error why the operation failed.</div>
+<div class="block">Gets the specific error code that indicates which rule was violated.</div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd><a href="PasscodeRuleException.ErrorCode.html" title="enum class in com.thalesgroup.gemalto.fido2.authenticator.passcode"><code>PasscodeRuleException.ErrorCode</code></a>.</dd>
+<dd>The <a href="PasscodeRuleException.ErrorCode.html" title="enum class in com.thalesgroup.gemalto.fido2.authenticator.passcode"><code>PasscodeRuleException.ErrorCode</code></a> for this exception.</dd>
 <dt>Since:</dt>
 <dd>1.3.0</dd>
 </dl>

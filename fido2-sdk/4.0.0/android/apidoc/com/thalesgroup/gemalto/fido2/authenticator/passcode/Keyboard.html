@@ -77,7 +77,9 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="type-signature"><span class="modifiers">public abstract class </span><span class="element-name type-name-label">Keyboard</span>
 <span class="extends-implements">extends <a href="https://developer.android.com/reference/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></span></div>
-<div class="block">A class to construct and return a secure keyboard in a Fragment and subscribe to relevant keyboard events.</div>
+<div class="block">An abstract representation of the secure keyboard used for passcode entry.
+ <p>
+ This class provides access to the keyboard's UI fragment and methods to interact with it.</div>
 <dl class="notes">
 <dt>Since:</dt>
 <dd>1.0.0</dd>
@@ -112,27 +114,27 @@ loadScripts(document, 'script');</script>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>abstract void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#clear()" class="member-name-link">clear</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Clear the currently entered keys.</div>
+<div class="block">Clears all digits currently entered on the keyboard.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>abstract androidx.fragment.app.Fragment</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getFragment()" class="member-name-link">getFragment</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">A secure keyboard to be presented for user verification.</div>
+<div class="block">Gets the secure keyboard UI as a <code>Fragment</code>.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>abstract <a href="KeyboardUsage.html" title="enum class in com.thalesgroup.gemalto.fido2.authenticator.passcode">KeyboardUsage</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getKeyboardUsage()" class="member-name-link">getKeyboardUsage</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Retrieve the keyboard usage.</div>
+<div class="block">Gets the current purpose of the keyboard.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>abstract int</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#length()" class="member-name-link">length</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Retrieve the length of the key input.</div>
+<div class="block">Gets the current number of digits entered on the keyboard.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>abstract void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setCallback(com.thalesgroup.gemalto.fido2.authenticator.passcode.KeyboardCallback)" class="member-name-link">setCallback</a><wbr>(<a href="KeyboardCallback.html" title="interface in com.thalesgroup.gemalto.fido2.authenticator.passcode">KeyboardCallback</a>&nbsp;callback)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">To set the callback for keyboard events.</div>
+<div class="block">Sets the callback to receive keyboard events.</div>
 </div>
 </div>
 </div>
@@ -169,7 +171,7 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="getFragment()">
 <h3>getFragment</h3>
 <div class="member-signature"><span class="modifiers">public abstract</span>&nbsp;<span class="return-type">androidx.fragment.app.Fragment</span>&nbsp;<span class="element-name">getFragment</span>()</div>
-<div class="block">A secure keyboard to be presented for user verification.
+<div class="block">Gets the secure keyboard UI as a <code>Fragment</code>.
  <p>
  This Fragment should be displayed on the App layer to provide a secure passcode entry.
  </p><p>
@@ -178,6 +180,8 @@ loadScripts(document, 'script');</script>
 <dl class="notes">
 <dt>Returns:</dt>
 <dd>a Fragment containing the secure keyboard.</dd>
+<dt>Since:</dt>
+<dd>1.0.0</dd>
 </dl>
 </section>
 </li>
@@ -185,10 +189,12 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="length()">
 <h3>length</h3>
 <div class="member-signature"><span class="modifiers">public abstract</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">length</span>()</div>
-<div class="block">Retrieve the length of the key input.</div>
+<div class="block">Gets the current number of digits entered on the keyboard.</div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd>length of the key input.</dd>
+<dd>The length of the entered passcode.</dd>
+<dt>Since:</dt>
+<dd>1.0.0</dd>
 </dl>
 </section>
 </li>
@@ -196,20 +202,27 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="clear()">
 <h3>clear</h3>
 <div class="member-signature"><span class="modifiers">public abstract</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">clear</span>()</div>
-<div class="block">Clear the currently entered keys.
+<div class="block">Clears all digits currently entered on the keyboard.
  <p>
- <b>Note:</b> This method would also reset the key input length to 0.
+ <b>Note:</b> This method also resets the input length to 0.
  </p></div>
+<dl class="notes">
+<dt>Since:</dt>
+<dd>1.0.0</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="setCallback(com.thalesgroup.gemalto.fido2.authenticator.passcode.KeyboardCallback)">
 <h3>setCallback</h3>
-<div class="member-signature"><span class="modifiers">public abstract</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setCallback</span><wbr><span class="parameters">(<a href="KeyboardCallback.html" title="interface in com.thalesgroup.gemalto.fido2.authenticator.passcode">KeyboardCallback</a>&nbsp;callback)</span></div>
-<div class="block">To set the callback for keyboard events.</div>
+<div class="member-signature"><span class="modifiers">public abstract</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setCallback</span><wbr><span class="parameters">(@Nullable
+ <a href="KeyboardCallback.html" title="interface in com.thalesgroup.gemalto.fido2.authenticator.passcode">KeyboardCallback</a>&nbsp;callback)</span></div>
+<div class="block">Sets the callback to receive keyboard events.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>callback</code> - the callback to listen to for keyboard events.</dd>
+<dd><code>callback</code> - The callback to listen for keyboard events, or <code>null</code> to remove the callback.</dd>
+<dt>Since:</dt>
+<dd>1.0.0</dd>
 </dl>
 </section>
 </li>
@@ -217,10 +230,12 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="getKeyboardUsage()">
 <h3>getKeyboardUsage</h3>
 <div class="member-signature"><span class="modifiers">public abstract</span>&nbsp;<span class="return-type"><a href="KeyboardUsage.html" title="enum class in com.thalesgroup.gemalto.fido2.authenticator.passcode">KeyboardUsage</a></span>&nbsp;<span class="element-name">getKeyboardUsage</span>()</div>
-<div class="block">Retrieve the keyboard usage.</div>
+<div class="block">Gets the current purpose of the keyboard.</div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd>the keyboard usage</dd>
+<dd>The current <a href="KeyboardUsage.html" title="enum class in com.thalesgroup.gemalto.fido2.authenticator.passcode"><code>KeyboardUsage</code></a>.</dd>
+<dt>Since:</dt>
+<dd>1.0.0</dd>
 </dl>
 </section>
 </li>

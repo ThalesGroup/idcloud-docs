@@ -73,7 +73,7 @@ loadScripts(document, 'script');</script>
 <section class="class-description" id="class-description">
 <hr>
 <div class="type-signature"><span class="modifiers">public interface </span><span class="element-name type-name-label">KeyboardCallback</span></div>
-<div class="block">An interface to receive relevant keyboard key events</div>
+<div class="block">A callback for receiving events from the secure keyboard.</div>
 <dl class="notes">
 <dt>Since:</dt>
 <dd>1.0.0</dd>
@@ -95,7 +95,7 @@ loadScripts(document, 'script');</script>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#onAuthenticationFailed(int)" class="member-name-link">onAuthenticationFailed</a><wbr>(int&nbsp;retryCountRemaining)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Called when Passcode authentication failed and user still has attempts remaining</div>
+<div class="block">Called when a passcode authentication attempt fails but the user still has attempts remaining.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#onKeyReceived(com.thalesgroup.gemalto.fido2.authenticator.passcode.KeyboardKey)" class="member-name-link">onKeyReceived</a><wbr>(<a href="KeyboardKey.html" title="enum class in com.thalesgroup.gemalto.fido2.authenticator.passcode">KeyboardKey</a>&nbsp;key)</code></div>
@@ -110,9 +110,7 @@ loadScripts(document, 'script');</script>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#onUsageChanged(com.thalesgroup.gemalto.fido2.authenticator.passcode.KeyboardUsage)" class="member-name-link">onUsageChanged</a><wbr>(<a href="KeyboardUsage.html" title="enum class in com.thalesgroup.gemalto.fido2.authenticator.passcode">KeyboardUsage</a>&nbsp;usage)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Called when the keyboard being displayed changed
-
- It is called on the main thread.</div>
+<div class="block">Called when the purpose of the keyboard changes (e.g., from entering a new passcode to confirming it).</div>
 </div>
 </div>
 </div>
@@ -135,7 +133,7 @@ loadScripts(document, 'script');</script>
 </span><span class="return-type">void</span>&nbsp;<span class="element-name">onKeyReceived</span><wbr><span class="parameters">(<a href="KeyboardKey.html" title="enum class in com.thalesgroup.gemalto.fido2.authenticator.passcode">KeyboardKey</a>&nbsp;key)</span></div>
 <div class="block">Called when a key is pressed on the keyboard.
  <p>
- The App layer should utilize this callback in order to determine the number of characters to be displayed on a secure input view.
+ The application should use this callback to update its UI, such as displaying dots for each entered digit.
  </p>
  <p>
  Key examples include:
@@ -147,7 +145,7 @@ loadScripts(document, 'script');</script>
      <a href="KeyboardKey.html#DONE"><code>KeyboardKey.DONE</code></a> - Passcode entry is submitted to the FIDO SDK.
  </p>
 
- It is called on the main thread.</div>
+ This method is called on the main thread.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>key</code> - An enum of type <a href="KeyboardKey.html" title="enum class in com.thalesgroup.gemalto.fido2.authenticator.passcode"><code>KeyboardKey</code></a> indicating the type of key pressed.</dd>
@@ -161,18 +159,20 @@ loadScripts(document, 'script');</script>
 <h3>onAuthenticationFailed</h3>
 <div class="member-signature"><span class="annotations">@MainThread
 </span><span class="return-type">void</span>&nbsp;<span class="element-name">onAuthenticationFailed</span><wbr><span class="parameters">(int&nbsp;retryCountRemaining)</span></div>
-<div class="block">Called when Passcode authentication failed and user still has attempts remaining
+<div class="block">Called when a passcode authentication attempt fails but the user still has attempts remaining.
  <p>
- Retry count limit is 5 before a {Fido2Exception} whose error is {Fido2ErrorCode#USER_LOCKOUT} is thrown. Retry count will reset upon successful user authentication.
+ The retry count limit is configured via <a href="../../client/Fido2Config.html#setMaximumRetryCount(int)"><code>Fido2Config.setMaximumRetryCount(int)</code></a>.
+ If the user exceeds this limit, a <a href="../../Fido2Exception.html" title="class in com.thalesgroup.gemalto.fido2"><code>Fido2Exception</code></a> with the error code
+ <a href="../../Fido2ErrorCode.html#ERROR_USER_LOCKOUT"><code>Fido2ErrorCode.ERROR_USER_LOCKOUT</code></a> is thrown. The retry count resets upon a successful authentication.
  </p>
  <p>
- The entered password will be cleared on a failed authentication.
+ The entered passcode is automatically cleared after a failed attempt.
  </p>
 
- It is called on the main thread.</div>
+ This method is called on the main thread.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>retryCountRemaining</code> - retry count remaining. On first authentication failed, the value of this property will be 4. On last authentication before  will trigger, the value of this property will be 1.</dd>
+<dd><code>retryCountRemaining</code> - The number of remaining authentication attempts.</dd>
 <dt>Since:</dt>
 <dd>1.0.0</dd>
 </dl>
@@ -183,10 +183,13 @@ loadScripts(document, 'script');</script>
 <h3>onPasscodeRuleFailed</h3>
 <div class="member-signature"><span class="annotations">@MainThread
 </span><span class="return-type">void</span>&nbsp;<span class="element-name">onPasscodeRuleFailed</span><wbr><span class="parameters">(<a href="../../Fido2Exception.html" title="class in com.thalesgroup.gemalto.fido2">Fido2Exception</a>&nbsp;exception)</span></div>
-<div class="block">Called when the passcode input on the keyboard fails the passcode rule validation.</div>
+<div class="block">Called when the passcode input on the keyboard fails the passcode rule validation.
+ <p>
+ This method is called on the main thread.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>exception</code> - An error representing the respective passcode rule violation.</dd>
+<dd><code>exception</code> - A <a href="../../Fido2Exception.html" title="class in com.thalesgroup.gemalto.fido2"><code>Fido2Exception</code></a> containing a <a href="PasscodeRuleException.html" title="class in com.thalesgroup.gemalto.fido2.authenticator.passcode"><code>PasscodeRuleException</code></a> as its cause,
+                  which provides details about the specific rule violation.</dd>
 <dt>Since:</dt>
 <dd>1.3.0</dd>
 </dl>
@@ -197,9 +200,9 @@ loadScripts(document, 'script');</script>
 <h3>onUsageChanged</h3>
 <div class="member-signature"><span class="annotations">@MainThread
 </span><span class="return-type">void</span>&nbsp;<span class="element-name">onUsageChanged</span><wbr><span class="parameters">(<a href="KeyboardUsage.html" title="enum class in com.thalesgroup.gemalto.fido2.authenticator.passcode">KeyboardUsage</a>&nbsp;usage)</span></div>
-<div class="block">Called when the keyboard being displayed changed
+<div class="block">Called when the purpose of the keyboard changes (e.g., from entering a new passcode to confirming it).
 
- It is called on the main thread.</div>
+ This method is called on the main thread.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>usage</code> - An enum of type <a href="KeyboardUsage.html" title="enum class in com.thalesgroup.gemalto.fido2.authenticator.passcode"><code>KeyboardUsage</code></a> indicating what the keyboard is used for</dd>

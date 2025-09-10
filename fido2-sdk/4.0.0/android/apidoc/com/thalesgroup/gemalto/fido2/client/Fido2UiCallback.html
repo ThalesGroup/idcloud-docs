@@ -77,6 +77,15 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="type-signature"><span class="modifiers">public abstract class </span><span class="element-name type-name-label">Fido2UiCallback</span>
 <span class="extends-implements">extends <a href="https://developer.android.com/reference/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></span></div>
+<div class="block">An abstract callback class for handling UI-related tasks delegated by the FIDO2 SDK.
+ <p>
+ The application must provide a concrete implementation of this class to handle
+ UI interactions such as authenticator selection and transaction confirmation.
+ All methods in this callback are invoked on the main UI thread.</div>
+<dl class="notes">
+<dt>Since:</dt>
+<dd>1.0.0</dd>
+</dl>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -108,19 +117,20 @@ loadScripts(document, 'script');</script>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#retrieveAuthenticatorDescription(com.thalesgroup.gemalto.fido2.client.Fido2AuthenticatorInfo,com.thalesgroup.gemalto.fido2.client.AuthenticatorDescriptionCallback)" class="member-name-link">retrieveAuthenticatorDescription</a><wbr>(<a href="Fido2AuthenticatorInfo.html" title="interface in com.thalesgroup.gemalto.fido2.client">Fido2AuthenticatorInfo</a>&nbsp;selectedAuthenticator,
  <a href="AuthenticatorDescriptionCallback.html" title="interface in com.thalesgroup.gemalto.fido2.client">AuthenticatorDescriptionCallback</a>&nbsp;callback)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Called when there is a need to provide a custom authenticator description.</div>
+<div class="block">Called when the SDK needs a custom, user-friendly description for an authenticator.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>abstract void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#showAuthenticators(java.util.List,com.thalesgroup.gemalto.fido2.client.AuthenticatorSelectionCallback)" class="member-name-link">showAuthenticators</a><wbr>(<a href="https://developer.android.com/reference/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="Fido2AuthenticatorInfo.html" title="interface in com.thalesgroup.gemalto.fido2.client">Fido2AuthenticatorInfo</a>&gt;&nbsp;authenticators,
  <a href="AuthenticatorSelectionCallback.html" title="interface in com.thalesgroup.gemalto.fido2.client">AuthenticatorSelectionCallback</a>&nbsp;callback)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Called when there is more than one authenticator matches the policy specified in FIDO2 request.</div>
+<div class="block">Called when more than one authenticator matches the policy in the FIDO2 request,
+ requiring the user to select one.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>abstract void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#showTransactionDetails(java.util.Map,com.thalesgroup.gemalto.fido2.client.TransactionDetailsCallback)" class="member-name-link">showTransactionDetails</a><wbr>(<a href="https://developer.android.com/reference/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>,<wbr><a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;&nbsp;transactionDetails,
  <a href="TransactionDetailsCallback.html" title="interface in com.thalesgroup.gemalto.fido2.client">TransactionDetailsCallback</a>&nbsp;callback)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Called when user confirmation is required prior to proceeding with the Transaction Signing use-case.</div>
+<div class="block">Called when user confirmation is required for a transaction with payload (Transaction Confirmation Display).</div>
 </div>
 </div>
 </div>
@@ -157,23 +167,29 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="showAuthenticators(java.util.List,com.thalesgroup.gemalto.fido2.client.AuthenticatorSelectionCallback)">
 <h3>showAuthenticators</h3>
 <div class="member-signature"><span class="annotations">@MainThread
-</span><span class="modifiers">public abstract</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">showAuthenticators</span><wbr><span class="parameters">(<a href="https://developer.android.com/reference/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="Fido2AuthenticatorInfo.html" title="interface in com.thalesgroup.gemalto.fido2.client">Fido2AuthenticatorInfo</a>&gt;&nbsp;authenticators,
+</span><span class="modifiers">public abstract</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">showAuthenticators</span><wbr><span class="parameters">(@NonNull
+ <a href="https://developer.android.com/reference/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="Fido2AuthenticatorInfo.html" title="interface in com.thalesgroup.gemalto.fido2.client">Fido2AuthenticatorInfo</a>&gt;&nbsp;authenticators,
+ @NonNull
  <a href="AuthenticatorSelectionCallback.html" title="interface in com.thalesgroup.gemalto.fido2.client">AuthenticatorSelectionCallback</a>&nbsp;callback)</span>
                                  throws <span class="exceptions"><a href="../Fido2Exception.html" title="class in com.thalesgroup.gemalto.fido2">Fido2Exception</a></span></div>
-<div class="block">Called when there is more than one authenticator matches the policy specified in FIDO2 request.
- The authenticators are represented as single-dimensional array.
- This Single-dimensional array can be seen as a list of sets.
- Elements within a set indicate that multiple authenticators are used for verification.
- If this function is not implemented, the first set of the list will be selected.
-
- It is called on the main thread.</div>
+<div class="block">Called when more than one authenticator matches the policy in the FIDO2 request,
+ requiring the user to select one.
+ <p>
+ The application should display a list of the provided authenticators to the user.
+ Once the user makes a selection, the application must call
+ <a href="AuthenticatorSelectionCallback.html#onAuthenticatorSelected(int)"><code>AuthenticatorSelectionCallback.onAuthenticatorSelected(int)</code></a> to proceed,
+ or <a href="AuthenticatorSelectionCallback.html#cancel()"><code>AuthenticatorSelectionCallback.cancel()</code></a> to abort the operation.
+ <p>
+ If this method is not implemented, the SDK will automatically select the first
+ available authenticator.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>authenticators</code> - Single-dimensional array containing authenticators that matches the policy.</dd>
-<dd><code>callback</code> - The callback which will be implemented and passed in by FIDO2 SDK to receive the result</dd>
+<dd><code>authenticators</code> - A list of <a href="Fido2AuthenticatorInfo.html" title="interface in com.thalesgroup.gemalto.fido2.client"><code>Fido2AuthenticatorInfo</code></a> objects representing the
+                       available authenticators.</dd>
+<dd><code>callback</code> - The callback to be used to return the user's selection to the SDK.</dd>
 <dt>Throws:</dt>
-<dd><code><a href="../Fido2Exception.html" title="class in com.thalesgroup.gemalto.fido2">Fido2Exception</a></code> - thrown when authenticators given are not applicable. (e.g. not
-                        enrolled).</dd>
+<dd><code><a href="../Fido2Exception.html" title="class in com.thalesgroup.gemalto.fido2">Fido2Exception</a></code> - if an error occurs, for example, if none of the provided
+                        authenticators are usable.</dd>
 <dt>Since:</dt>
 <dd>1.0.0</dd>
 </dl>
@@ -183,15 +199,18 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="retrieveAuthenticatorDescription(com.thalesgroup.gemalto.fido2.client.Fido2AuthenticatorInfo,com.thalesgroup.gemalto.fido2.client.AuthenticatorDescriptionCallback)">
 <h3>retrieveAuthenticatorDescription</h3>
 <div class="member-signature"><span class="annotations">@MainThread
-</span><span class="modifiers">public abstract</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">retrieveAuthenticatorDescription</span><wbr><span class="parameters">(<a href="Fido2AuthenticatorInfo.html" title="interface in com.thalesgroup.gemalto.fido2.client">Fido2AuthenticatorInfo</a>&nbsp;selectedAuthenticator,
+</span><span class="modifiers">public abstract</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">retrieveAuthenticatorDescription</span><wbr><span class="parameters">(@NonNull
+ <a href="Fido2AuthenticatorInfo.html" title="interface in com.thalesgroup.gemalto.fido2.client">Fido2AuthenticatorInfo</a>&nbsp;selectedAuthenticator,
+ @NonNull
  <a href="AuthenticatorDescriptionCallback.html" title="interface in com.thalesgroup.gemalto.fido2.client">AuthenticatorDescriptionCallback</a>&nbsp;callback)</span></div>
-<div class="block">Called when there is a need to provide a custom authenticator description.
-
- It is called on the main thread.</div>
+<div class="block">Called when the SDK needs a custom, user-friendly description for an authenticator.
+ <p>
+ The application can provide a custom name (e.g., "My Phone's Fingerprint")
+ by calling <a href="AuthenticatorDescriptionCallback.html#onAuthenticatorDescriptionProvided(com.thalesgroup.gemalto.fido2.client.AuthenticatorDescriptor)"><code>AuthenticatorDescriptionCallback.onAuthenticatorDescriptionProvided(AuthenticatorDescriptor)</code></a>.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>selectedAuthenticator</code> - Information of the selected authenticator.</dd>
-<dd><code>callback</code> - The callback which will be implemented and passed in by FIDO2 SDK to receive the result</dd>
+<dd><code>selectedAuthenticator</code> - Information about the authenticator that needs a description.</dd>
+<dd><code>callback</code> - The callback to return the custom <a href="AuthenticatorDescriptor.html" title="class in com.thalesgroup.gemalto.fido2.client"><code>AuthenticatorDescriptor</code></a>.</dd>
 <dt>Since:</dt>
 <dd>1.0.0</dd>
 </dl>
@@ -201,15 +220,19 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="showTransactionDetails(java.util.Map,com.thalesgroup.gemalto.fido2.client.TransactionDetailsCallback)">
 <h3>showTransactionDetails</h3>
 <div class="member-signature"><span class="annotations">@MainThread
-</span><span class="modifiers">public abstract</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">showTransactionDetails</span><wbr><span class="parameters">(<a href="https://developer.android.com/reference/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>,<wbr><a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;&nbsp;transactionDetails,
+</span><span class="modifiers">public abstract</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">showTransactionDetails</span><wbr><span class="parameters">(@NonNull
+ <a href="https://developer.android.com/reference/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>,<wbr><a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;&nbsp;transactionDetails,
+ @NonNull
  <a href="TransactionDetailsCallback.html" title="interface in com.thalesgroup.gemalto.fido2.client">TransactionDetailsCallback</a>&nbsp;callback)</span></div>
-<div class="block">Called when user confirmation is required prior to proceeding with the Transaction Signing use-case.
-
- It is called on the main thread.</div>
+<div class="block">Called when user confirmation is required for a transaction with payload (Transaction Confirmation Display).
+ <p>
+ The application should display the transaction details to the user and ask for
+ confirmation. The application must then call <a href="TransactionDetailsCallback.html#onProceed()"><code>TransactionDetailsCallback.onProceed()</code></a>
+ to continue or <a href="TransactionDetailsCallback.html#cancel()"><code>TransactionDetailsCallback.cancel()</code></a> to abort.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>transactionDetails</code> - A dictionary representation of the transaction details.</dd>
-<dd><code>callback</code> - The callback which will be implemented and passed to proceed with or cancel the operation.</dd>
+<dd><code>transactionDetails</code> - A map containing the transaction details to be displayed.</dd>
+<dd><code>callback</code> - The callback to signal the user's decision.</dd>
 <dt>Since:</dt>
 <dd>1.2.0</dd>
 </dl>

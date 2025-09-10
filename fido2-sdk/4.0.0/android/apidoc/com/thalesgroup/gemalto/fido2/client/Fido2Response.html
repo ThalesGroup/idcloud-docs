@@ -77,7 +77,10 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="type-signature"><span class="modifiers">public abstract class </span><span class="element-name type-name-label">Fido2Response</span>
 <span class="extends-implements">extends <a href="https://developer.android.com/reference/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></span></div>
-<div class="block">A FIDO2 request to a registration, authentication, etc request.</div>
+<div class="block">Represents the FIDO2 response sent back to the Relying Party.
+ <p>
+ This object contains the response data in JSON format, which should be
+ forwarded to the FIDO2 server for verification.</div>
 <dl class="notes">
 <dt>Since:</dt>
 <dd>1.0.0</dd>
@@ -115,12 +118,12 @@ loadScripts(document, 'script');</script>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../Fido2OperationType.html" title="enum class in com.thalesgroup.gemalto.fido2">Fido2OperationType</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getOperationType()" class="member-name-link">getOperationType</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Gets the FIDO2 response operation type (e.g.</div>
+<div class="block">Gets the type of the FIDO2 operation that this response corresponds to.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#raw()" class="member-name-link">raw</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Gets the JSON string of the FIDO2 response.</div>
+<div class="block">Gets the raw FIDO2 response as a JSON string.</div>
 </div>
 </div>
 </div>
@@ -158,10 +161,12 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="raw()">
 <h3>raw</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">raw</span>()</div>
-<div class="block">Gets the JSON string of the FIDO2 response.</div>
+<div class="block">Gets the raw FIDO2 response as a JSON string.
+ <p>
+ This is the payload that should be sent to the FIDO2 server.</div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd>the JSON string</dd>
+<dd>The JSON string representation of the FIDO2 response.</dd>
 <dt>Since:</dt>
 <dd>1.0.0</dd>
 </dl>
@@ -171,10 +176,10 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="getOperationType()">
 <h3>getOperationType</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../Fido2OperationType.html" title="enum class in com.thalesgroup.gemalto.fido2">Fido2OperationType</a></span>&nbsp;<span class="element-name">getOperationType</span>()</div>
-<div class="block">Gets the FIDO2 response operation type (e.g. registration).</div>
+<div class="block">Gets the type of the FIDO2 operation that this response corresponds to.</div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd>the operation type</dd>
+<dd>The <a href="../Fido2OperationType.html" title="enum class in com.thalesgroup.gemalto.fido2"><code>Fido2OperationType</code></a> (e.g., <code>REGISTRATION</code> or <code>AUTHENTICATION</code>).</dd>
 <dt>Since:</dt>
 <dd>1.0.0</dd>
 </dl>

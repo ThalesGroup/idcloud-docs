@@ -81,9 +81,7 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="type-signature"><span class="modifiers">public static class </span><span class="element-name type-name-label">Fido2RespondArgs.Builder</span>
 <span class="extends-implements">extends <a href="https://developer.android.com/reference/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></span></div>
-<div class="block">A builder of <code>Fido2RespondArgs</code> instances.  Required arguments
- are provided in the constructor while optional arguments are provided as
- fluent setters.</div>
+<div class="block">A builder for creating <code>Fido2RespondArgs</code> instances.</div>
 <dl class="notes">
 <dt>Since:</dt>
 <dd>1.0.0</dd>
@@ -118,30 +116,27 @@ loadScripts(document, 'script');</script>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="Fido2RespondArgs.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2RespondArgs</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#build()" class="member-name-link">build</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Builds an instance of a <code>Fido2RespondArgs</code>.</div>
+<div class="block">Builds the <code>Fido2RespondArgs</code> instance.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="Fido2RespondArgs.Builder.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2RespondArgs.Builder</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setBiometricAuthenticatorCallback(com.thalesgroup.gemalto.fido2.authenticator.biometric.BiometricAuthenticatorCallback)" class="member-name-link">setBiometricAuthenticatorCallback</a><wbr>(<a href="../authenticator/biometric/BiometricAuthenticatorCallback.html" title="interface in com.thalesgroup.gemalto.fido2.authenticator.biometric">BiometricAuthenticatorCallback</a>&nbsp;biometricAuthenticatorCallback)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Sets the callback for handling delegated Biometric Authenticator tasks</div>
+<div class="block">Sets the callback for handling UI related to the Biometric Authenticator.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="Fido2RespondArgs.Builder.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2RespondArgs.Builder</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setFido2Request(com.thalesgroup.gemalto.fido2.client.Fido2Request)" class="member-name-link">setFido2Request</a><wbr>(<a href="Fido2Request.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2Request</a>&nbsp;request)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Constructs a <code>Fido2RespondArgs</code> builder instance to be used by
- <a href="Fido2Client.html#respondWithArgs(com.thalesgroup.gemalto.fido2.client.Fido2RespondArgs,com.thalesgroup.gemalto.fido2.client.Fido2ResponseCallback)"><code>Fido2Client.respondWithArgs(com.thalesgroup.gemalto.fido2.client.Fido2RespondArgs, com.thalesgroup.gemalto.fido2.client.Fido2ResponseCallback)</code></a>.</div>
+<div class="block">Sets the FIDO2 request to be processed.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="Fido2RespondArgs.Builder.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2RespondArgs.Builder</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setPasscodeAuthenticatorCallback(com.thalesgroup.gemalto.fido2.authenticator.passcode.PasscodeAuthenticatorCallback)" class="member-name-link">setPasscodeAuthenticatorCallback</a><wbr>(<a href="../authenticator/passcode/PasscodeAuthenticatorCallback.html" title="interface in com.thalesgroup.gemalto.fido2.authenticator.passcode">PasscodeAuthenticatorCallback</a>&nbsp;passcodeAuthenticatorCallback)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Sets the callback for handling delegated Passcode Authenticator tasks, such as
- displaying the keyboard and cancel the operation.</div>
+<div class="block">Sets the callback for handling UI and logic related to the Passcode Authenticator.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="Fido2RespondArgs.Builder.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2RespondArgs.Builder</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setUiCallback(com.thalesgroup.gemalto.fido2.client.Fido2UiCallback)" class="member-name-link">setUiCallback</a><wbr>(<a href="Fido2UiCallback.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2UiCallback</a>&nbsp;uiCallback)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Sets the callback for handling delegated UI tasks, such as
- displaying the transaction content for confirmation.</div>
+<div class="block">Sets the callback for handling UI tasks that are delegated to the application.</div>
 </div>
 </div>
 </div>
@@ -179,13 +174,12 @@ loadScripts(document, 'script');</script>
 <h3>setFido2Request</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="Fido2RespondArgs.Builder.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2RespondArgs.Builder</a></span>&nbsp;<span class="element-name">setFido2Request</span><wbr><span class="parameters">(@NonNull
  <a href="Fido2Request.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2Request</a>&nbsp;request)</span></div>
-<div class="block">Constructs a <code>Fido2RespondArgs</code> builder instance to be used by
- <a href="Fido2Client.html#respondWithArgs(com.thalesgroup.gemalto.fido2.client.Fido2RespondArgs,com.thalesgroup.gemalto.fido2.client.Fido2ResponseCallback)"><code>Fido2Client.respondWithArgs(com.thalesgroup.gemalto.fido2.client.Fido2RespondArgs, com.thalesgroup.gemalto.fido2.client.Fido2ResponseCallback)</code></a>.</div>
+<div class="block">Sets the FIDO2 request to be processed.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>request</code> - the FIDO2 request to process</dd>
+<dd><code>request</code> - The <a href="Fido2Request.html" title="class in com.thalesgroup.gemalto.fido2.client"><code>Fido2Request</code></a> from the Relying Party. Must not be null.</dd>
 <dt>Returns:</dt>
-<dd><code>this</code> object for chaining calls</dd>
+<dd><code>this</code> builder for chaining.</dd>
 <dt>Since:</dt>
 <dd>1.0.0</dd>
 </dl>
@@ -196,13 +190,14 @@ loadScripts(document, 'script');</script>
 <h3>setUiCallback</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="Fido2RespondArgs.Builder.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2RespondArgs.Builder</a></span>&nbsp;<span class="element-name">setUiCallback</span><wbr><span class="parameters">(@NonNull
  <a href="Fido2UiCallback.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2UiCallback</a>&nbsp;uiCallback)</span></div>
-<div class="block">Sets the callback for handling delegated UI tasks, such as
- displaying the transaction content for confirmation.</div>
+<div class="block">Sets the callback for handling UI tasks that are delegated to the application.
+ <p>
+ This includes tasks like displaying transaction confirmation or an authenticator selection list.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>uiCallback</code> - Common UI implementation.</dd>
+<dd><code>uiCallback</code> - The UI callback implementation. Must not be null.</dd>
 <dt>Returns:</dt>
-<dd><code>this</code> object for chaining calls</dd>
+<dd><code>this</code> builder for chaining.</dd>
 <dt>Since:</dt>
 <dd>1.0.0</dd>
 </dl>
@@ -213,13 +208,14 @@ loadScripts(document, 'script');</script>
 <h3>setPasscodeAuthenticatorCallback</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="Fido2RespondArgs.Builder.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2RespondArgs.Builder</a></span>&nbsp;<span class="element-name">setPasscodeAuthenticatorCallback</span><wbr><span class="parameters">(@Nullable
  <a href="../authenticator/passcode/PasscodeAuthenticatorCallback.html" title="interface in com.thalesgroup.gemalto.fido2.authenticator.passcode">PasscodeAuthenticatorCallback</a>&nbsp;passcodeAuthenticatorCallback)</span></div>
-<div class="block">Sets the callback for handling delegated Passcode Authenticator tasks, such as
- displaying the keyboard and cancel the operation.</div>
+<div class="block">Sets the callback for handling UI and logic related to the Passcode Authenticator.
+ <p>
+ This is required if the Passcode Authenticator might be used for the operation.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>passcodeAuthenticatorCallback</code> - Passcode Authenticator Callback implementation.</dd>
+<dd><code>passcodeAuthenticatorCallback</code> - The callback for the Passcode Authenticator.</dd>
 <dt>Returns:</dt>
-<dd><code>this</code> object for chaining calls</dd>
+<dd><code>this</code> builder for chaining.</dd>
 <dt>Since:</dt>
 <dd>1.0.0</dd>
 </dl>
@@ -230,12 +226,12 @@ loadScripts(document, 'script');</script>
 <h3>setBiometricAuthenticatorCallback</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="Fido2RespondArgs.Builder.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2RespondArgs.Builder</a></span>&nbsp;<span class="element-name">setBiometricAuthenticatorCallback</span><wbr><span class="parameters">(@Nullable
  <a href="../authenticator/biometric/BiometricAuthenticatorCallback.html" title="interface in com.thalesgroup.gemalto.fido2.authenticator.biometric">BiometricAuthenticatorCallback</a>&nbsp;biometricAuthenticatorCallback)</span></div>
-<div class="block">Sets the callback for handling delegated Biometric Authenticator tasks</div>
+<div class="block">Sets the callback for handling UI related to the Biometric Authenticator.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>biometricAuthenticatorCallback</code> - Biometric Authenticator Callback implementation.</dd>
+<dd><code>biometricAuthenticatorCallback</code> - The callback for the Biometric Authenticator.</dd>
 <dt>Returns:</dt>
-<dd><code>this</code> object for chaining calls</dd>
+<dd><code>this</code> builder for chaining.</dd>
 <dt>Since:</dt>
 <dd>1.1.0</dd>
 </dl>
@@ -246,10 +242,14 @@ loadScripts(document, 'script');</script>
 <h3>build</h3>
 <div class="member-signature"><span class="annotations">@NonNull
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="Fido2RespondArgs.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2RespondArgs</a></span>&nbsp;<span class="element-name">build</span>()</div>
-<div class="block">Builds an instance of a <code>Fido2RespondArgs</code>.</div>
+<div class="block">Builds the <code>Fido2RespondArgs</code> instance.</div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd>the args to use in <a href="Fido2Client.html#respondWithArgs(com.thalesgroup.gemalto.fido2.client.Fido2RespondArgs,com.thalesgroup.gemalto.fido2.client.Fido2ResponseCallback)"><code>Fido2Client.respondWithArgs(com.thalesgroup.gemalto.fido2.client.Fido2RespondArgs, com.thalesgroup.gemalto.fido2.client.Fido2ResponseCallback)</code></a></dd>
+<dd>A new, configured <a href="Fido2RespondArgs.html" title="class in com.thalesgroup.gemalto.fido2.client"><code>Fido2RespondArgs</code></a> object.</dd>
+<dt>Throws:</dt>
+<dd><code><a href="https://developer.android.com/reference/java/lang/IllegalArgumentException.html" title="class or interface in java.lang" class="external-link">IllegalArgumentException</a></code> - if the required arguments (request, uiCallback) are not set.</dd>
+<dt>Since:</dt>
+<dd>1.0.0</dd>
 </dl>
 </section>
 </li>

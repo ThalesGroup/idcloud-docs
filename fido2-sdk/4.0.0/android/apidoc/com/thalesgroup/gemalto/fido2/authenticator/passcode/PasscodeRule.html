@@ -77,7 +77,11 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="type-signature"><span class="modifiers">public abstract class </span><span class="element-name type-name-label">PasscodeRule</span>
 <span class="extends-implements">extends <a href="https://developer.android.com/reference/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></span></div>
-<div class="block">A base class to represent the rules to set to a passcode.</div>
+<div class="block">An abstract base class for defining passcode complexity rules.
+ <p>
+ Concrete implementations of this class (e.g., <a href="PasscodeRuleLength.html" title="class in com.thalesgroup.gemalto.fido2.authenticator.passcode"><code>PasscodeRuleLength</code></a>, <a href="PasscodeRuleSeries.html" title="class in com.thalesgroup.gemalto.fido2.authenticator.passcode"><code>PasscodeRuleSeries</code></a>)
+ can be passed to <a href="PasscodeConfig.html#setPasscodeRules(com.thalesgroup.gemalto.fido2.authenticator.passcode.PasscodeRule%5B%5D)"><code>PasscodeConfig.setPasscodeRules(PasscodeRule[])</code></a> to enforce
+ custom passcode policies.</div>
 <dl class="notes">
 <dt>Since:</dt>
 <dd>1.3.0</dd>

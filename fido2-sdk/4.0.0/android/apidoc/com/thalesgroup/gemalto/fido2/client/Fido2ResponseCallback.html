@@ -73,7 +73,10 @@ loadScripts(document, 'script');</script>
 <section class="class-description" id="class-description">
 <hr>
 <div class="type-signature"><span class="modifiers">public interface </span><span class="element-name type-name-label">Fido2ResponseCallback</span></div>
-<div class="block">Callback interface the caller of <a href="Fido2Client.html#respondWithArgs(com.thalesgroup.gemalto.fido2.client.Fido2RespondArgs,com.thalesgroup.gemalto.fido2.client.Fido2ResponseCallback)"><code>Fido2Client.respondWithArgs</code></a> must implement to receive its results asynchronously.</div>
+<div class="block">A callback for receiving the result of a FIDO2 operation initiated by
+ <a href="Fido2Client.html#respondWithArgs(com.thalesgroup.gemalto.fido2.client.Fido2RespondArgs,com.thalesgroup.gemalto.fido2.client.Fido2ResponseCallback)"><code>Fido2Client.respondWithArgs(com.thalesgroup.gemalto.fido2.client.Fido2RespondArgs, com.thalesgroup.gemalto.fido2.client.Fido2ResponseCallback)</code></a>.
+ <p>
+ The methods in this callback are invoked on a background thread.</div>
 <dl class="notes">
 <dt>Since:</dt>
 <dd>1.0.0</dd>
@@ -95,14 +98,12 @@ loadScripts(document, 'script');</script>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#onError(com.thalesgroup.gemalto.fido2.Fido2Exception)" class="member-name-link">onError</a><wbr>(<a href="../Fido2Exception.html" title="class in com.thalesgroup.gemalto.fido2">Fido2Exception</a>&nbsp;exception)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Called in a non-UI thread when the FIDO2 response completed with an
- error.</div>
+<div class="block">Called when the FIDO2 operation fails.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#onResponded(com.thalesgroup.gemalto.fido2.client.Fido2Response)" class="member-name-link">onResponded</a><wbr>(<a href="Fido2Response.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2Response</a>&nbsp;response)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Called in a non-UI thread when the FIDO2 response completed
- successfully.</div>
+<div class="block">Called when the FIDO2 operation completes successfully.</div>
 </div>
 </div>
 </div>
@@ -124,14 +125,13 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="annotations">@WorkerThread
 </span><span class="return-type">void</span>&nbsp;<span class="element-name">onResponded</span><wbr><span class="parameters">(@NonNull
  <a href="Fido2Response.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2Response</a>&nbsp;response)</span></div>
-<div class="block">Called in a non-UI thread when the FIDO2 response completed
- successfully. The implementor must then forward the JSON response to the
- FIDO2 server.
-
- It is called on a background thread.</div>
+<div class="block">Called when the FIDO2 operation completes successfully.
+ <p>
+ The application should forward the provided <a href="Fido2Response.html" title="class in com.thalesgroup.gemalto.fido2.client"><code>Fido2Response</code></a> to the
+ FIDO2 server for verification. This method is invoked on a background thread.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>response</code> - the FIDO2 response</dd>
+<dd><code>response</code> - The successful <a href="Fido2Response.html" title="class in com.thalesgroup.gemalto.fido2.client"><code>Fido2Response</code></a>. Must not be null.</dd>
 <dt>Since:</dt>
 <dd>1.0.0</dd>
 </dl>
@@ -143,14 +143,12 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="annotations">@WorkerThread
 </span><span class="return-type">void</span>&nbsp;<span class="element-name">onError</span><wbr><span class="parameters">(@NonNull
  <a href="../Fido2Exception.html" title="class in com.thalesgroup.gemalto.fido2">Fido2Exception</a>&nbsp;exception)</span></div>
-<div class="block">Called in a non-UI thread when the FIDO2 response completed with an
- error.
-
- It is called on a background thread.</div>
+<div class="block">Called when the FIDO2 operation fails.
+ <p>
+ This method is invoked on a background thread.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>exception</code> - the exception which is likely a <a href="../Fido2Exception.html" title="class in com.thalesgroup.gemalto.fido2"><code>Fido2Exception</code></a> (see also
- <a href="Fido2Client.html#respondWithArgs(com.thalesgroup.gemalto.fido2.client.Fido2RespondArgs,com.thalesgroup.gemalto.fido2.client.Fido2ResponseCallback)"><code>Fido2Client.respondWithArgs</code></a> for further details on possible causes)</dd>
+<dd><code>exception</code> - The <a href="../Fido2Exception.html" title="class in com.thalesgroup.gemalto.fido2"><code>Fido2Exception</code></a> that caused the failure. Must not be null.</dd>
 <dt>Since:</dt>
 <dd>1.0.0</dd>
 </dl>

@@ -73,7 +73,10 @@ loadScripts(document, 'script');</script>
 <section class="class-description" id="class-description">
 <hr>
 <div class="type-signature"><span class="modifiers">public interface </span><span class="element-name type-name-label">Fido2ResponseTask</span></div>
-<div class="block">A FIDO2 asynchronous task that can be cancelled.</div>
+<div class="block">Represents an asynchronous FIDO2 operation that can be cancelled.
+ <p>
+ An instance of this interface is returned by <a href="Fido2Client.html#respondWithArgs(com.thalesgroup.gemalto.fido2.client.Fido2RespondArgs,com.thalesgroup.gemalto.fido2.client.Fido2ResponseCallback)"><code>Fido2Client.respondWithArgs(com.thalesgroup.gemalto.fido2.client.Fido2RespondArgs, com.thalesgroup.gemalto.fido2.client.Fido2ResponseCallback)</code></a>
+ to allow for cancellation of the ongoing operation.</div>
 <dl class="notes">
 <dt>Since:</dt>
 <dd>1.0.0</dd>
@@ -95,7 +98,7 @@ loadScripts(document, 'script');</script>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#cancel(boolean)" class="member-name-link">cancel</a><wbr>(boolean&nbsp;mayInterruptIfRunning)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Attempts to cancel execution of this task.</div>
+<div class="block">Attempts to cancel the execution of this task.</div>
 </div>
 </div>
 </div>
@@ -115,24 +118,19 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="cancel(boolean)">
 <h3>cancel</h3>
 <div class="member-signature"><span class="return-type">boolean</span>&nbsp;<span class="element-name">cancel</span><wbr><span class="parameters">(boolean&nbsp;mayInterruptIfRunning)</span></div>
-<div class="block">Attempts to cancel execution of this task. This attempt will fail if the
- task has already completed, already been cancelled, or could not be
- cancelled for some other reason. If successful, and this task has not
- started when cancel is called, this task should never run. If the task
- has already started, then the <code>mayInterruptIfRunning</code> parameter determines
- whether the thread executing this task should be interrupted in an
- attempt to stop the task.
+<div class="block">Attempts to cancel the execution of this task.
  <p>
- <b>Side effects</b>: <a href="Fido2ResponseCallback.html#onError(com.thalesgroup.gemalto.fido2.Fido2Exception)"><code>Fido2ResponseCallback.onError</code></a> will be called with a <a href="../Fido2Exception.html" title="class in com.thalesgroup.gemalto.fido2"><code>Fido2Exception</code></a> whose error is
+ If cancellation is successful, the <a href="Fido2ResponseCallback.html#onError(com.thalesgroup.gemalto.fido2.Fido2Exception)"><code>Fido2ResponseCallback.onError(com.thalesgroup.gemalto.fido2.Fido2Exception)</code></a> method
+ will be invoked with a <a href="../Fido2Exception.html" title="class in com.thalesgroup.gemalto.fido2"><code>Fido2Exception</code></a> whose error code is
  <a href="../Fido2ErrorCode.html#ERROR_ABORTED"><code>Fido2ErrorCode.ERROR_ABORTED</code></a>.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>mayInterruptIfRunning</code> - <code>true</code> if the thread executing this
- task should be interrupted; otherwise, in-progress tasks are allowed to
- complete.</dd>
+                              task should be interrupted; otherwise, in-progress tasks are allowed
+                              to complete.</dd>
 <dt>Returns:</dt>
-<dd><code>false</code> if the task could not be cancelled, typically
- because it has already completed normally; <code>true</code> otherwise</dd>
+<dd><code>false</code> if the task could not be cancelled, typically because it has
+         already completed; <code>true</code> otherwise.</dd>
 <dt>Since:</dt>
 <dd>1.0.0</dd>
 </dl>

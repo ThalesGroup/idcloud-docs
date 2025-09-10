@@ -73,12 +73,10 @@ loadScripts(document, 'script');</script>
 <section class="class-description" id="class-description">
 <hr>
 <div class="type-signature"><span class="modifiers">public interface </span><span class="element-name type-name-label">BiometricAuthenticatorCallback</span></div>
-<div class="block">A callback to manage Biometric Prompt UI
+<div class="block">A callback for providing a custom message to be displayed on the Biometric Prompt UI.
  <p>
- Methods called from this callback will inform the App layer of the outcome of these processes as well as to display the Biometric Prompt UI.
- </p>
- <p>
- <b>Note:</b> All callbacks are invoked on the Main thread.
+ The application can implement this callback to customize the text shown to the user
+ during a biometric authentication or registration operation.
  </p></div>
 <dl class="notes">
 <dt>Since:</dt>
@@ -101,7 +99,7 @@ loadScripts(document, 'script');</script>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#biometricAuthenticatorCustomMessagePrompt(com.thalesgroup.gemalto.fido2.client.Fido2OperationInfo)" class="member-name-link">biometricAuthenticatorCustomMessagePrompt</a><wbr>(<a href="../../client/Fido2OperationInfo.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2OperationInfo</a>&nbsp;operationInfo)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Called when the application set the custom message to the biometric prompt UI</div>
+<div class="block">Called by the SDK to get a custom message to display in the biometric prompt.</div>
 </div>
 </div>
 </div>
@@ -122,10 +120,16 @@ loadScripts(document, 'script');</script>
 <h3>biometricAuthenticatorCustomMessagePrompt</h3>
 <div class="member-signature"><span class="annotations">@WorkerThread
 </span><span class="return-type"><a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">biometricAuthenticatorCustomMessagePrompt</span><wbr><span class="parameters">(<a href="../../client/Fido2OperationInfo.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2OperationInfo</a>&nbsp;operationInfo)</span></div>
-<div class="block">Called when the application set the custom message to the biometric prompt UI
+<div class="block">Called by the SDK to get a custom message to display in the biometric prompt.
  <p>
- It is called on a background thread.</div>
+ This method is invoked on a background thread before the biometric prompt is shown.
+ The returned string will be used as the title of the prompt.</div>
 <dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>operationInfo</code> - Information about the ongoing FIDO2 operation (e.g., RP name, user name),
+                      which can be used to construct a context-aware message.</dd>
+<dt>Returns:</dt>
+<dd>The custom message string to be displayed to the user.</dd>
 <dt>Since:</dt>
 <dd>2.1.0</dd>
 </dl>

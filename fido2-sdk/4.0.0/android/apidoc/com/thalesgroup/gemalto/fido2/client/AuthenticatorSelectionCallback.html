@@ -73,10 +73,19 @@ loadScripts(document, 'script');</script>
 <section class="class-description" id="class-description">
 <hr>
 <div class="type-signature"><span class="modifiers">public interface </span><span class="element-name type-name-label">AuthenticatorSelectionCallback</span></div>
-<div class="block">The interface to be implemented by the FIDO2 SDK to receive the selected username.</div>
+<div class="block">A callback for notifying the FIDO2 SDK about the user's choice of authenticator.
+ <p>
+ When multiple authenticators are available for a FIDO2 operation, the application
+ uses this callback to inform the SDK which authenticator the user has selected.</div>
 <dl class="notes">
 <dt>Since:</dt>
 <dd>1.0.0</dd>
+<dt>See Also:</dt>
+<dd>
+<ul class="see-list-long">
+<li><a href="Fido2UiCallback.html#showAuthenticators(java.util.List,com.thalesgroup.gemalto.fido2.client.AuthenticatorSelectionCallback)"><code>Fido2UiCallback.showAuthenticators(List, AuthenticatorSelectionCallback)</code></a></li>
+</ul>
+</dd>
 </dl>
 </section>
 <section class="summary">
@@ -95,12 +104,12 @@ loadScripts(document, 'script');</script>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#cancel()" class="member-name-link">cancel</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Cancels an ongoing <a href="Fido2UiCallback.html#showAuthenticators(java.util.List,com.thalesgroup.gemalto.fido2.client.AuthenticatorSelectionCallback)"><code>Fido2UiCallback.showAuthenticators</code></a></div>
+<div class="block">Cancels the authenticator selection process.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#onAuthenticatorSelected(int)" class="member-name-link">onAuthenticatorSelected</a><wbr>(int&nbsp;index)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Sends the selected authenticator index to FIDO2 SDK.</div>
+<div class="block">Notifies the FIDO2 SDK that the user has selected an authenticator.</div>
 </div>
 </div>
 </div>
@@ -120,14 +129,17 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="onAuthenticatorSelected(int)">
 <h3>onAuthenticatorSelected</h3>
 <div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">onAuthenticatorSelected</span><wbr><span class="parameters">(int&nbsp;index)</span></div>
-<div class="block">Sends the selected authenticator index to FIDO2 SDK. Once called, FIDO2 SDK
- continues responding to the request.
- <p><b>Side effect</b>: If called from the UI thread, then FIDO2 SDK
- continues executing from the UI thread. This should be avoided for
- performance reasons.</div>
+<div class="block">Notifies the FIDO2 SDK that the user has selected an authenticator.
+ <p>
+ After this method is called, the FIDO2 SDK proceeds with the operation
+ using the selected authenticator.
+ <p><b>Warning:</b> If this method is called from the main UI thread, the FIDO2 SDK
+ will continue its execution on that thread. To avoid blocking the UI,
+ it is recommended to handle the selection logic off the main thread.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>index</code> - The selected authenticator index</dd>
+<dd><code>index</code> - The index of the selected authenticator in the list provided to
+              <a href="Fido2UiCallback.html#showAuthenticators(java.util.List,com.thalesgroup.gemalto.fido2.client.AuthenticatorSelectionCallback)"><code>Fido2UiCallback.showAuthenticators(List, AuthenticatorSelectionCallback)</code></a>.</dd>
 <dt>Since:</dt>
 <dd>1.0.0</dd>
 </dl>
@@ -137,7 +149,9 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="cancel()">
 <h3>cancel</h3>
 <div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">cancel</span>()</div>
-<div class="block">Cancels an ongoing <a href="Fido2UiCallback.html#showAuthenticators(java.util.List,com.thalesgroup.gemalto.fido2.client.AuthenticatorSelectionCallback)"><code>Fido2UiCallback.showAuthenticators</code></a></div>
+<div class="block">Cancels the authenticator selection process.
+ <p>
+ This will terminate the ongoing FIDO2 operation that was waiting for authenticator selection.</div>
 <dl class="notes">
 <dt>Since:</dt>
 <dd>1.0.0</dd>

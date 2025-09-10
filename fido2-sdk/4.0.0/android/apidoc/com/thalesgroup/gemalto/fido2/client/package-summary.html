@@ -84,70 +84,78 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-first">Class</div>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color class-summary class-summary-tab1"><a href="AuthenticatorDescriptionCallback.html" title="interface in com.thalesgroup.gemalto.fido2.client">AuthenticatorDescriptionCallback</a></div>
-<div class="col-last even-row-color class-summary class-summary-tab1">&nbsp;</div>
+<div class="col-last even-row-color class-summary class-summary-tab1">
+<div class="block">A callback for providing a custom description for an authenticator.</div>
+</div>
 <div class="col-first odd-row-color class-summary class-summary-tab2"><a href="AuthenticatorDescriptor.html" title="class in com.thalesgroup.gemalto.fido2.client">AuthenticatorDescriptor</a></div>
-<div class="col-last odd-row-color class-summary class-summary-tab2">&nbsp;</div>
+<div class="col-last odd-row-color class-summary class-summary-tab2">
+<div class="block">A descriptor that provides a custom friendly name for an authenticator.</div>
+</div>
 <div class="col-first even-row-color class-summary class-summary-tab1"><a href="AuthenticatorSelectionCallback.html" title="interface in com.thalesgroup.gemalto.fido2.client">AuthenticatorSelectionCallback</a></div>
 <div class="col-last even-row-color class-summary class-summary-tab1">
-<div class="block">The interface to be implemented by the FIDO2 SDK to receive the selected username.</div>
+<div class="block">A callback for notifying the FIDO2 SDK about the user's choice of authenticator.</div>
 </div>
 <div class="col-first odd-row-color class-summary class-summary-tab1"><a href="Fido2AuthenticatorInfo.html" title="interface in com.thalesgroup.gemalto.fido2.client">Fido2AuthenticatorInfo</a></div>
 <div class="col-last odd-row-color class-summary class-summary-tab1">
-<div class="block">Information about an authenticator that helps a user decide which
- authenticator to select for an Fido2 request that matches multiple
- authenticators.</div>
+<div class="block">Provides descriptive information about an available FIDO2 authenticator.</div>
 </div>
 <div class="col-first even-row-color class-summary class-summary-tab1"><a href="Fido2AuthenticatorRegistrationInfo.html" title="interface in com.thalesgroup.gemalto.fido2.client">Fido2AuthenticatorRegistrationInfo</a></div>
-<div class="col-last even-row-color class-summary class-summary-tab1">&nbsp;</div>
+<div class="col-last even-row-color class-summary class-summary-tab1">
+<div class="block">Provides information about a specific FIDO2 credential registration.</div>
+</div>
 <div class="col-first odd-row-color class-summary class-summary-tab1"><a href="Fido2Client.html" title="interface in com.thalesgroup.gemalto.fido2.client">Fido2Client</a></div>
 <div class="col-last odd-row-color class-summary class-summary-tab1">
-<div class="block">A FIDO2 client that processes FIDO2 requests and generates FIDO2 responses.</div>
+<div class="block">The main entry point for interacting with the FIDO2 SDK.</div>
 </div>
 <div class="col-first even-row-color class-summary class-summary-tab2"><a href="Fido2ClientFactory.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2ClientFactory</a></div>
 <div class="col-last even-row-color class-summary class-summary-tab2">
-<div class="block">A factory that create FIDO2 client objects.</div>
+<div class="block">A factory for creating <a href="Fido2Client.html" title="interface in com.thalesgroup.gemalto.fido2.client"><code>Fido2Client</code></a> instances.</div>
 </div>
 <div class="col-first odd-row-color class-summary class-summary-tab2"><a href="Fido2Config.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2Config</a></div>
 <div class="col-last odd-row-color class-summary class-summary-tab2">
-<div class="block">A global FIDO2 SDK configuration class.</div>
+<div class="block">A global configuration class for the FIDO2 SDK.</div>
 </div>
 <div class="col-first even-row-color class-summary class-summary-tab2"><a href="Fido2OperationInfo.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2OperationInfo</a></div>
 <div class="col-last even-row-color class-summary class-summary-tab2">
-<div class="block">A class that holds common information for an ongoing operation started from
-  Fido2Client that the UI needs to display to the user.</div>
+<div class="block">Holds common information about an ongoing FIDO2 operation that may be needed for UI display.</div>
 </div>
 <div class="col-first odd-row-color class-summary class-summary-tab2"><a href="Fido2Request.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2Request</a></div>
 <div class="col-last odd-row-color class-summary class-summary-tab2">
-<div class="block">A FIDO2 request for registration, authentication, etc..</div>
+<div class="block">Represents a FIDO2 request received from a Relying Party, such as a registration
+ or authentication request.</div>
 </div>
 <div class="col-first even-row-color class-summary class-summary-tab2"><a href="Fido2RespondArgs.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2RespondArgs</a></div>
 <div class="col-last even-row-color class-summary class-summary-tab2">
-<div class="block">An immutable composition of the arguments needed to respond to a FIDO2
- request in <a href="Fido2Client.html#respondWithArgs(com.thalesgroup.gemalto.fido2.client.Fido2RespondArgs,com.thalesgroup.gemalto.fido2.client.Fido2ResponseCallback)"><code>Fido2Client.respondWithArgs</code></a>.</div>
+<div class="block">An immutable container for the arguments required by <a href="Fido2Client.html#respondWithArgs(com.thalesgroup.gemalto.fido2.client.Fido2RespondArgs,com.thalesgroup.gemalto.fido2.client.Fido2ResponseCallback)"><code>Fido2Client.respondWithArgs(com.thalesgroup.gemalto.fido2.client.Fido2RespondArgs, com.thalesgroup.gemalto.fido2.client.Fido2ResponseCallback)</code></a>.</div>
 </div>
 <div class="col-first odd-row-color class-summary class-summary-tab2"><a href="Fido2RespondArgs.Builder.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2RespondArgs.Builder</a></div>
 <div class="col-last odd-row-color class-summary class-summary-tab2">
-<div class="block">A builder of <code>Fido2RespondArgs</code> instances.</div>
+<div class="block">A builder for creating <code>Fido2RespondArgs</code> instances.</div>
 </div>
 <div class="col-first even-row-color class-summary class-summary-tab2"><a href="Fido2Response.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2Response</a></div>
 <div class="col-last even-row-color class-summary class-summary-tab2">
-<div class="block">A FIDO2 request to a registration, authentication, etc request.</div>
+<div class="block">Represents the FIDO2 response sent back to the Relying Party.</div>
 </div>
 <div class="col-first odd-row-color class-summary class-summary-tab1"><a href="Fido2ResponseCallback.html" title="interface in com.thalesgroup.gemalto.fido2.client">Fido2ResponseCallback</a></div>
 <div class="col-last odd-row-color class-summary class-summary-tab1">
-<div class="block">Callback interface the caller of <a href="Fido2Client.html#respondWithArgs(com.thalesgroup.gemalto.fido2.client.Fido2RespondArgs,com.thalesgroup.gemalto.fido2.client.Fido2ResponseCallback)"><code>Fido2Client.respondWithArgs</code></a> must implement to receive its results asynchronously.</div>
+<div class="block">A callback for receiving the result of a FIDO2 operation initiated by
+ <a href="Fido2Client.html#respondWithArgs(com.thalesgroup.gemalto.fido2.client.Fido2RespondArgs,com.thalesgroup.gemalto.fido2.client.Fido2ResponseCallback)"><code>Fido2Client.respondWithArgs(com.thalesgroup.gemalto.fido2.client.Fido2RespondArgs, com.thalesgroup.gemalto.fido2.client.Fido2ResponseCallback)</code></a>.</div>
 </div>
 <div class="col-first even-row-color class-summary class-summary-tab1"><a href="Fido2ResponseTask.html" title="interface in com.thalesgroup.gemalto.fido2.client">Fido2ResponseTask</a></div>
 <div class="col-last even-row-color class-summary class-summary-tab1">
-<div class="block">A FIDO2 asynchronous task that can be cancelled.</div>
+<div class="block">Represents an asynchronous FIDO2 operation that can be cancelled.</div>
 </div>
 <div class="col-first odd-row-color class-summary class-summary-tab2"><a href="Fido2UiCallback.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2UiCallback</a></div>
-<div class="col-last odd-row-color class-summary class-summary-tab2">&nbsp;</div>
+<div class="col-last odd-row-color class-summary class-summary-tab2">
+<div class="block">An abstract callback class for handling UI-related tasks delegated by the FIDO2 SDK.</div>
+</div>
 <div class="col-first even-row-color class-summary class-summary-tab1"><a href="TransactionDetailsCallback.html" title="interface in com.thalesgroup.gemalto.fido2.client">TransactionDetailsCallback</a></div>
-<div class="col-last even-row-color class-summary class-summary-tab1">&nbsp;</div>
+<div class="col-last even-row-color class-summary class-summary-tab1">
+<div class="block">A callback for responding to a transaction confirmation request.</div>
+</div>
 <div class="col-first odd-row-color class-summary class-summary-tab3"><a href="VerifyMethod.html" title="enum class in com.thalesgroup.gemalto.fido2.client">VerifyMethod</a></div>
 <div class="col-last odd-row-color class-summary class-summary-tab3">
-<div class="block">Methods for verifying user presence.</div>
+<div class="block">Enumerates the user verification methods supported by FIDO2 authenticators.</div>
 </div>
 </div>
 </div>

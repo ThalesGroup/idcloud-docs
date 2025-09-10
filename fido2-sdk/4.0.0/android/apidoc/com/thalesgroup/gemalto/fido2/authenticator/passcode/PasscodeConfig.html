@@ -77,12 +77,14 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="type-signature"><span class="modifiers">public class </span><span class="element-name type-name-label">PasscodeConfig</span>
 <span class="extends-implements">extends <a href="https://developer.android.com/reference/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></span></div>
-<div class="block">A global Passcode configuration class. In general FIDO2 SDK's default behavior is to choose reasonable and secure defaults.
- <br><br>
- An application may however wish to deviate from the default behavior to make Passcode verification easier for the user.</div>
+<div class="block">A global configuration class for the Passcode Authenticator.
+ <p>
+ The SDK provides reasonable and secure defaults. However, an application may use this class
+ to customize the behavior, for example, by disabling keyboard scrambling or setting
+ custom passcode complexity rules.</div>
 <dl class="notes">
 <dt>Since:</dt>
-<dd>1.0</dd>
+<dd>1.0.0</dd>
 </dl>
 </section>
 <section class="summary">
@@ -114,12 +116,12 @@ loadScripts(document, 'script');</script>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#disableScramble()" class="member-name-link">disableScramble</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
-<div class="block">Disables the scrambling of the keyboard keys.</div>
+<div class="block">Disables the scrambling of the secure keyboard keys.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#setPasscodeRules(com.thalesgroup.gemalto.fido2.authenticator.passcode.PasscodeRule%5B%5D)" class="member-name-link">setPasscodeRules</a><wbr>(<a href="PasscodeRule.html" title="class in com.thalesgroup.gemalto.fido2.authenticator.passcode">PasscodeRule</a>[]&nbsp;rules)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
-<div class="block">Set the passcode rules for acceptable passcodes.</div>
+<div class="block">Sets custom complexity rules for passcodes.</div>
 </div>
 </div>
 </div>
@@ -156,7 +158,15 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="disableScramble()">
 <h3>disableScramble</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">disableScramble</span>()</div>
-<div class="block">Disables the scrambling of the keyboard keys.</div>
+<div class="block">Disables the scrambling of the secure keyboard keys.
+ <p>
+ By default, the keyboard is scrambled for security. Disabling this feature may
+ improve usability but reduces security against shoulder-surfing attacks. This method
+ should be called before any passcode operation is initiated.</div>
+<dl class="notes">
+<dt>Since:</dt>
+<dd>1.0.0</dd>
+</dl>
 </section>
 </li>
 <li>
@@ -165,7 +175,10 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setPasscodeRules</span><wbr><span class="parameters">(@NonNull
  <a href="PasscodeRule.html" title="class in com.thalesgroup.gemalto.fido2.authenticator.passcode">PasscodeRule</a>[]&nbsp;rules)</span>
                              throws <span class="exceptions"><a href="../../Fido2Exception.html" title="class in com.thalesgroup.gemalto.fido2">Fido2Exception</a></span></div>
-<div class="block">Set the passcode rules for acceptable passcodes.</div>
+<div class="block">Sets custom complexity rules for passcodes.
+ <p>
+ This replaces the default set of rules. This method should be called before any passcode
+ creation or change operation is initiated.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>rules</code> - An array of <a href="PasscodeRule.html" title="class in com.thalesgroup.gemalto.fido2.authenticator.passcode"><code>PasscodeRule</code></a> instances.</dd>

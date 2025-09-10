@@ -73,7 +73,11 @@ loadScripts(document, 'script');</script>
 <section class="class-description" id="class-description">
 <hr>
 <div class="type-signature"><span class="modifiers">public interface </span><span class="element-name type-name-label">Fido2Client</span></div>
-<div class="block">A FIDO2 client that processes FIDO2 requests and generates FIDO2 responses.</div>
+<div class="block">The main entry point for interacting with the FIDO2 SDK.
+ <p>
+ This client is responsible for processing FIDO2 registration and authentication requests
+ from a Relying Party and generating the corresponding responses. It orchestrates the
+ interaction with the various authenticators available on the device.</div>
 <dl class="notes">
 <dt>Since:</dt>
 <dd>1.0.0</dd>
@@ -95,38 +99,38 @@ loadScripts(document, 'script');</script>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://developer.android.com/reference/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="Fido2AuthenticatorRegistrationInfo.html" title="interface in com.thalesgroup.gemalto.fido2.client">Fido2AuthenticatorRegistrationInfo</a>&gt;</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#authenticatorRegistrations()" class="member-name-link">authenticatorRegistrations</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Retrieve a list of registered FIDO2 Authenticators.</div>
+<div class="block">Retrieves a list of all FIDO2 credential registrations stored by the SDK.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#deleteAuthenticatorRegistration(com.thalesgroup.gemalto.fido2.client.Fido2AuthenticatorRegistrationInfo)" class="member-name-link">deleteAuthenticatorRegistration</a><wbr>(<a href="Fido2AuthenticatorRegistrationInfo.html" title="interface in com.thalesgroup.gemalto.fido2.client">Fido2AuthenticatorRegistrationInfo</a>&nbsp;authenticatorRegistration)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Delete Authenticator registration</div>
+<div class="block">Deletes a specific FIDO2 credential registration.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://developer.android.com/reference/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="Fido2AuthenticatorRegistrationInfo.html" title="interface in com.thalesgroup.gemalto.fido2.client">Fido2AuthenticatorRegistrationInfo</a>&gt;</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getAuthenticatorRegistrations(java.lang.String)" class="member-name-link">getAuthenticatorRegistrations</a><wbr>(<a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;userId)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Retrieve a list of registered FIDO2 Authenticators for a specified userId.</div>
+<div class="block">Retrieves a list of FIDO2 credential registrations for a specific user ID.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1"><code>static <a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab1"><code><a href="#getSDKVersion()" class="member-name-link">getSDKVersion</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1">
-<div class="block">Returns FIDO2 SDK version</div>
+<div class="block">Gets the version of the FIDO2 SDK.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#reset()" class="member-name-link">reset</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Delete all authenticator registrations.</div>
+<div class="block">Deletes all FIDO2 credential registrations and resets the state of all authenticators.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="Fido2ResponseTask.html" title="interface in com.thalesgroup.gemalto.fido2.client">Fido2ResponseTask</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#respondWithArgs(com.thalesgroup.gemalto.fido2.client.Fido2RespondArgs,com.thalesgroup.gemalto.fido2.client.Fido2ResponseCallback)" class="member-name-link">respondWithArgs</a><wbr>(<a href="Fido2RespondArgs.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2RespondArgs</a>&nbsp;respondArgs,
  <a href="Fido2ResponseCallback.html" title="interface in com.thalesgroup.gemalto.fido2.client">Fido2ResponseCallback</a>&nbsp;responseCallback)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Responds asynchronously to a FIDO2 request by generating a FIDO2 response.</div>
+<div class="block">Asynchronously processes a FIDO2 request and generates a FIDO2 response.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setActivity(androidx.fragment.app.FragmentActivity)" class="member-name-link">setActivity</a><wbr>(androidx.fragment.app.FragmentActivity&nbsp;activity)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Sets an optional FragmentActivity used for flows that require UI, such as Biometric, Platform Local and Platform Authenticator</div>
+<div class="block">Sets the <code>FragmentActivity</code> to be used for UI-related flows.</div>
 </div>
 </div>
 </div>
@@ -146,15 +150,24 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="respondWithArgs(com.thalesgroup.gemalto.fido2.client.Fido2RespondArgs,com.thalesgroup.gemalto.fido2.client.Fido2ResponseCallback)">
 <h3>respondWithArgs</h3>
 <div class="member-signature"><span class="annotations">@NonNull
-</span><span class="return-type"><a href="Fido2ResponseTask.html" title="interface in com.thalesgroup.gemalto.fido2.client">Fido2ResponseTask</a></span>&nbsp;<span class="element-name">respondWithArgs</span><wbr><span class="parameters">(<a href="Fido2RespondArgs.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2RespondArgs</a>&nbsp;respondArgs,
+</span><span class="return-type"><a href="Fido2ResponseTask.html" title="interface in com.thalesgroup.gemalto.fido2.client">Fido2ResponseTask</a></span>&nbsp;<span class="element-name">respondWithArgs</span><wbr><span class="parameters">(@NonNull
+ <a href="Fido2RespondArgs.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2RespondArgs</a>&nbsp;respondArgs,
+ @NonNull
  <a href="Fido2ResponseCallback.html" title="interface in com.thalesgroup.gemalto.fido2.client">Fido2ResponseCallback</a>&nbsp;responseCallback)</span></div>
-<div class="block">Responds asynchronously to a FIDO2 request by generating a FIDO2 response.
- This operation may run for a long period of time and all UI is
- delegated to the caller.</div>
+<div class="block">Asynchronously processes a FIDO2 request and generates a FIDO2 response.
+ <p>
+ This is the primary method for handling FIDO2 operations. The operation may be long-running
+ and involves user interaction. All UI-related tasks, such as displaying prompts or
+ authenticator selection lists, are delegated to the callbacks provided in the
+ <a href="Fido2RespondArgs.html" title="class in com.thalesgroup.gemalto.fido2.client"><code>Fido2RespondArgs</code></a>.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>respondArgs</code> - FIDO2 request plus other arguments required to fulfill the request.</dd>
-<dd><code>responseCallback</code> - callback to call when the execution is complete.</dd>
+<dd><code>respondArgs</code> - The arguments required to process the request, including the
+                         <a href="Fido2Request.html" title="class in com.thalesgroup.gemalto.fido2.client"><code>Fido2Request</code></a> and UI callbacks. Must not be null.</dd>
+<dd><code>responseCallback</code> - The callback to be invoked with the <a href="Fido2Response.html" title="class in com.thalesgroup.gemalto.fido2.client"><code>Fido2Response</code></a> on success
+                         or a <a href="../Fido2Exception.html" title="class in com.thalesgroup.gemalto.fido2"><code>Fido2Exception</code></a> on failure. Must not be null.</dd>
+<dt>Returns:</dt>
+<dd>A <a href="Fido2ResponseTask.html" title="interface in com.thalesgroup.gemalto.fido2.client"><code>Fido2ResponseTask</code></a> that can be used to cancel the ongoing operation.</dd>
 <dt>Since:</dt>
 <dd>1.0.0</dd>
 </dl>
@@ -166,11 +179,14 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="annotations">@NonNull
 @WorkerThread
 </span><span class="return-type"><a href="https://developer.android.com/reference/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="Fido2AuthenticatorRegistrationInfo.html" title="interface in com.thalesgroup.gemalto.fido2.client">Fido2AuthenticatorRegistrationInfo</a>&gt;</span>&nbsp;<span class="element-name">authenticatorRegistrations</span>()</div>
-<div class="block">Retrieve a list of registered FIDO2 Authenticators.
- It is recommended to be called on a background thread.</div>
+<div class="block">Retrieves a list of all FIDO2 credential registrations stored by the SDK.
+ <p>
+ This method should be called on a background thread to avoid blocking the UI.</div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd>An array of Fido2AuthenticatorRegistrationInfo representing the registered Authenticators</dd>
+<dd>A <a href="https://developer.android.com/reference/java/util/List.html" title="class or interface in java.util" class="external-link"><code>List</code></a> of <a href="Fido2AuthenticatorRegistrationInfo.html" title="interface in com.thalesgroup.gemalto.fido2.client"><code>Fido2AuthenticatorRegistrationInfo</code></a> objects,
+         each representing a registered credential. Returns an empty list if no
+         credentials are registered.</dd>
 <dt>Since:</dt>
 <dd>1.0.0</dd>
 </dl>
@@ -180,14 +196,17 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="getAuthenticatorRegistrations(java.lang.String)">
 <h3>getAuthenticatorRegistrations</h3>
 <div class="member-signature"><span class="annotations">@WorkerThread
-</span><span class="return-type"><a href="https://developer.android.com/reference/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="Fido2AuthenticatorRegistrationInfo.html" title="interface in com.thalesgroup.gemalto.fido2.client">Fido2AuthenticatorRegistrationInfo</a>&gt;</span>&nbsp;<span class="element-name">getAuthenticatorRegistrations</span><wbr><span class="parameters">(<a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;userId)</span></div>
-<div class="block">Retrieve a list of registered FIDO2 Authenticators for a specified userId.
- It is recommended to be called on a background thread.</div>
+</span><span class="return-type"><a href="https://developer.android.com/reference/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="Fido2AuthenticatorRegistrationInfo.html" title="interface in com.thalesgroup.gemalto.fido2.client">Fido2AuthenticatorRegistrationInfo</a>&gt;</span>&nbsp;<span class="element-name">getAuthenticatorRegistrations</span><wbr><span class="parameters">(@NonNull
+ <a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;userId)</span></div>
+<div class="block">Retrieves a list of FIDO2 credential registrations for a specific user ID.
+ <p>
+ This method should be called on a background thread.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>userId</code> - The intended userid of the authenticators</dd>
+<dd><code>userId</code> - The user ID for which to retrieve registrations. Must not be null.</dd>
 <dt>Returns:</dt>
-<dd>An array of Fido2AuthenticatorRegistrationInfo representing the registered Authenticators for particular userId.</dd>
+<dd>A <a href="https://developer.android.com/reference/java/util/List.html" title="class or interface in java.util" class="external-link"><code>List</code></a> of <a href="Fido2AuthenticatorRegistrationInfo.html" title="interface in com.thalesgroup.gemalto.fido2.client"><code>Fido2AuthenticatorRegistrationInfo</code></a> for the specified user.
+         Returns an empty list if no credentials are found for that user.</dd>
 <dt>Since:</dt>
 <dd>1.6.0</dd>
 </dl>
@@ -196,12 +215,15 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="deleteAuthenticatorRegistration(com.thalesgroup.gemalto.fido2.client.Fido2AuthenticatorRegistrationInfo)">
 <h3>deleteAuthenticatorRegistration</h3>
-<div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">deleteAuthenticatorRegistration</span><wbr><span class="parameters">(<a href="Fido2AuthenticatorRegistrationInfo.html" title="interface in com.thalesgroup.gemalto.fido2.client">Fido2AuthenticatorRegistrationInfo</a>&nbsp;authenticatorRegistration)</span>
+<div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">deleteAuthenticatorRegistration</span><wbr><span class="parameters">(@NonNull
+ <a href="Fido2AuthenticatorRegistrationInfo.html" title="interface in com.thalesgroup.gemalto.fido2.client">Fido2AuthenticatorRegistrationInfo</a>&nbsp;authenticatorRegistration)</span>
                               throws <span class="exceptions"><a href="../Fido2Exception.html" title="class in com.thalesgroup.gemalto.fido2">Fido2Exception</a></span></div>
-<div class="block">Delete Authenticator registration</div>
+<div class="block">Deletes a specific FIDO2 credential registration.</div>
 <dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>authenticatorRegistration</code> - The registration information of the credential to delete. Must not be null.</dd>
 <dt>Throws:</dt>
-<dd><code><a href="../Fido2Exception.html" title="class in com.thalesgroup.gemalto.fido2">Fido2Exception</a></code> - Exception when unsafe environment detected.</dd>
+<dd><code><a href="../Fido2Exception.html" title="class in com.thalesgroup.gemalto.fido2">Fido2Exception</a></code> - if an error occurs, such as an unsafe environment being detected.</dd>
 <dt>Since:</dt>
 <dd>1.0.0</dd>
 </dl>
@@ -212,12 +234,14 @@ loadScripts(document, 'script');</script>
 <h3>reset</h3>
 <div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">reset</span>()
     throws <span class="exceptions"><a href="../Fido2Exception.html" title="class in com.thalesgroup.gemalto.fido2">Fido2Exception</a></span></div>
-<div class="block">Delete all authenticator registrations.
-
- This method will also delete Passcode Authenticator enrollment.</div>
+<div class="block">Deletes all FIDO2 credential registrations and resets the state of all authenticators.
+ <p>
+ This is a destructive operation that will remove all stored credentials. For authenticators
+ that require enrollment (like the Passcode Authenticator), this will also remove the enrollment,
+ requiring the user to enroll again.</div>
 <dl class="notes">
 <dt>Throws:</dt>
-<dd><code><a href="../Fido2Exception.html" title="class in com.thalesgroup.gemalto.fido2">Fido2Exception</a></code> - Exception when unsafe environment detected.</dd>
+<dd><code><a href="../Fido2Exception.html" title="class in com.thalesgroup.gemalto.fido2">Fido2Exception</a></code> - if an error occurs, such as an unsafe environment being detected.</dd>
 <dt>Since:</dt>
 <dd>1.3.0</dd>
 </dl>
@@ -227,10 +251,10 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="getSDKVersion()">
 <h3>getSDKVersion</h3>
 <div class="member-signature"><span class="modifiers">static</span>&nbsp;<span class="return-type"><a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">getSDKVersion</span>()</div>
-<div class="block">Returns FIDO2 SDK version</div>
+<div class="block">Gets the version of the FIDO2 SDK.</div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd>FIDO2 SDK version</dd>
+<dd>A string representing the SDK version.</dd>
 <dt>Since:</dt>
 <dd>1.2.0</dd>
 </dl>
@@ -241,10 +265,13 @@ loadScripts(document, 'script');</script>
 <h3>setActivity</h3>
 <div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">setActivity</span><wbr><span class="parameters">(@Nullable
  androidx.fragment.app.FragmentActivity&nbsp;activity)</span></div>
-<div class="block">Sets an optional FragmentActivity used for flows that require UI, such as Biometric, Platform Local and Platform Authenticator</div>
+<div class="block">Sets the <code>FragmentActivity</code> to be used for UI-related flows.
+ <p>
+ This is required for operations that display system UI, such as those involving
+ the Biometric prompt or platform authenticators (Google Passkeys).</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>activity</code> - FragmentActivity to use, or null to unset</dd>
+<dd><code>activity</code> - The <code>FragmentActivity</code> to use for displaying UI, or <code>null</code> to clear it.</dd>
 <dt>Since:</dt>
 <dd>4.0.0</dd>
 </dl>

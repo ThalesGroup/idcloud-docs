@@ -73,6 +73,20 @@ loadScripts(document, 'script');</script>
 <section class="class-description" id="class-description">
 <hr>
 <div class="type-signature"><span class="modifiers">public interface </span><span class="element-name type-name-label">AuthenticatorDescriptionCallback</span></div>
+<div class="block">A callback for providing a custom description for an authenticator.
+ <p>
+ This callback is used by the FIDO2 SDK to receive the application-provided
+ <a href="AuthenticatorDescriptor.html" title="class in com.thalesgroup.gemalto.fido2.client"><code>AuthenticatorDescriptor</code></a> for a selected authenticator.</div>
+<dl class="notes">
+<dt>Since:</dt>
+<dd>1.0.0</dd>
+<dt>See Also:</dt>
+<dd>
+<ul class="see-list-long">
+<li><a href="Fido2UiCallback.html#retrieveAuthenticatorDescription(com.thalesgroup.gemalto.fido2.client.Fido2AuthenticatorInfo,com.thalesgroup.gemalto.fido2.client.AuthenticatorDescriptionCallback)"><code>Fido2UiCallback.retrieveAuthenticatorDescription(Fido2AuthenticatorInfo, AuthenticatorDescriptionCallback)</code></a></li>
+</ul>
+</dd>
+</dl>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -89,10 +103,14 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#cancel()" class="member-name-link">cancel</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Cancels the operation to retrieve an authenticator description.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#onAuthenticatorDescriptionProvided(com.thalesgroup.gemalto.fido2.client.AuthenticatorDescriptor)" class="member-name-link">onAuthenticatorDescriptionProvided</a><wbr>(<a href="AuthenticatorDescriptor.html" title="class in com.thalesgroup.gemalto.fido2.client">AuthenticatorDescriptor</a>&nbsp;authenticatorDescriptor)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Called by the application to provide the custom authenticator description.</div>
+</div>
 </div>
 </div>
 </div>
@@ -110,13 +128,26 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="onAuthenticatorDescriptionProvided(com.thalesgroup.gemalto.fido2.client.AuthenticatorDescriptor)">
 <h3>onAuthenticatorDescriptionProvided</h3>
-<div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">onAuthenticatorDescriptionProvided</span><wbr><span class="parameters">(<a href="AuthenticatorDescriptor.html" title="class in com.thalesgroup.gemalto.fido2.client">AuthenticatorDescriptor</a>&nbsp;authenticatorDescriptor)</span></div>
+<div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">onAuthenticatorDescriptionProvided</span><wbr><span class="parameters">(@NonNull
+ <a href="AuthenticatorDescriptor.html" title="class in com.thalesgroup.gemalto.fido2.client">AuthenticatorDescriptor</a>&nbsp;authenticatorDescriptor)</span></div>
+<div class="block">Called by the application to provide the custom authenticator description.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>authenticatorDescriptor</code> - The custom descriptor for the authenticator. Must not be null.</dd>
+<dt>Since:</dt>
+<dd>1.0.0</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="cancel()">
 <h3>cancel</h3>
 <div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">cancel</span>()</div>
+<div class="block">Cancels the operation to retrieve an authenticator description.</div>
+<dl class="notes">
+<dt>Since:</dt>
+<dd>1.0.0</dd>
+</dl>
 </section>
 </li>
 </ul>

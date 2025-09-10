@@ -74,68 +74,68 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color class-summary class-summary-tab1"><a href="Controller.html" title="interface in com.thalesgroup.gemalto.fido2.authenticator.passcode">Controller</a></div>
 <div class="col-last even-row-color class-summary class-summary-tab1">
-<div class="block">A controller interface that allows the application to control the
- process.</div>
+<div class="block">A controller that allows the application to cancel an ongoing passcode operation.</div>
 </div>
 <div class="col-first odd-row-color class-summary class-summary-tab2"><a href="Keyboard.html" title="class in com.thalesgroup.gemalto.fido2.authenticator.passcode">Keyboard</a></div>
 <div class="col-last odd-row-color class-summary class-summary-tab2">
-<div class="block">A class to construct and return a secure keyboard in a Fragment and subscribe to relevant keyboard events.</div>
+<div class="block">An abstract representation of the secure keyboard used for passcode entry.</div>
 </div>
 <div class="col-first even-row-color class-summary class-summary-tab1"><a href="KeyboardCallback.html" title="interface in com.thalesgroup.gemalto.fido2.authenticator.passcode">KeyboardCallback</a></div>
 <div class="col-last even-row-color class-summary class-summary-tab1">
-<div class="block">An interface to receive relevant keyboard key events</div>
+<div class="block">A callback for receiving events from the secure keyboard.</div>
 </div>
 <div class="col-first odd-row-color class-summary class-summary-tab3"><a href="KeyboardKey.html" title="enum class in com.thalesgroup.gemalto.fido2.authenticator.passcode">KeyboardKey</a></div>
 <div class="col-last odd-row-color class-summary class-summary-tab3">
-<div class="block">An enum describing the type of key pressed.</div>
+<div class="block">Describes the type of key pressed on the secure keyboard.</div>
 </div>
 <div class="col-first even-row-color class-summary class-summary-tab3"><a href="KeyboardUsage.html" title="enum class in com.thalesgroup.gemalto.fido2.authenticator.passcode">KeyboardUsage</a></div>
 <div class="col-last even-row-color class-summary class-summary-tab3">
-<div class="block">An enum describing what the keyboard is for.</div>
+<div class="block">Describes the current purpose of the secure keyboard.</div>
 </div>
 <div class="col-first odd-row-color class-summary class-summary-tab2"><a href="PasscodeAuthenticator.html" title="class in com.thalesgroup.gemalto.fido2.authenticator.passcode">PasscodeAuthenticator</a></div>
 <div class="col-last odd-row-color class-summary class-summary-tab2">
-<div class="block">Manages the authenticator information regarding the Passcode Authenticator.</div>
+<div class="block">Manages the lifecycle of the Passcode Authenticator.</div>
 </div>
 <div class="col-first even-row-color class-summary class-summary-tab1"><a href="PasscodeAuthenticatorCallback.html" title="interface in com.thalesgroup.gemalto.fido2.authenticator.passcode">PasscodeAuthenticatorCallback</a></div>
 <div class="col-last even-row-color class-summary class-summary-tab1">
-<div class="block">A callback to show the keyboard UI and handle the Passcode enrollment/unenrollment events.</div>
+<div class="block">A callback for handling the UI and results of Passcode Authenticator operations.</div>
 </div>
 <div class="col-first odd-row-color class-summary class-summary-tab2"><a href="PasscodeConfig.html" title="class in com.thalesgroup.gemalto.fido2.authenticator.passcode">PasscodeConfig</a></div>
 <div class="col-last odd-row-color class-summary class-summary-tab2">
-<div class="block">A global Passcode configuration class.</div>
+<div class="block">A global configuration class for the Passcode Authenticator.</div>
 </div>
 <div class="col-first even-row-color class-summary class-summary-tab2"><a href="PasscodeRule.html" title="class in com.thalesgroup.gemalto.fido2.authenticator.passcode">PasscodeRule</a></div>
 <div class="col-last even-row-color class-summary class-summary-tab2">
-<div class="block">A base class to represent the rules to set to a passcode.</div>
+<div class="block">An abstract base class for defining passcode complexity rules.</div>
 </div>
 <div class="col-first odd-row-color class-summary class-summary-tab5"><a href="PasscodeRuleException.html" title="class in com.thalesgroup.gemalto.fido2.authenticator.passcode">PasscodeRuleException</a></div>
 <div class="col-last odd-row-color class-summary class-summary-tab5">
-<div class="block">Passcode rule exceptions.</div>
+<div class="block">An exception thrown when a passcode fails to meet the configured complexity rules.</div>
 </div>
 <div class="col-first even-row-color class-summary class-summary-tab3"><a href="PasscodeRuleException.ErrorCode.html" title="enum class in com.thalesgroup.gemalto.fido2.authenticator.passcode">PasscodeRuleException.ErrorCode</a></div>
 <div class="col-last even-row-color class-summary class-summary-tab3">
-<div class="block">Represent errors resulting from passcode rule violations.</div>
+<div class="block">Defines the specific error codes for passcode rule violations.</div>
 </div>
 <div class="col-first odd-row-color class-summary class-summary-tab2"><a href="PasscodeRuleLength.html" title="class in com.thalesgroup.gemalto.fido2.authenticator.passcode">PasscodeRuleLength</a></div>
 <div class="col-last odd-row-color class-summary class-summary-tab2">
-<div class="block">A passcode rule that requires the length to be within a specific range.</div>
+<div class="block">A <a href="PasscodeRule.html" title="class in com.thalesgroup.gemalto.fido2.authenticator.passcode"><code>PasscodeRule</code></a> that requires the passcode length to be within a specific range.</div>
 </div>
 <div class="col-first even-row-color class-summary class-summary-tab2"><a href="PasscodeRulePalindrome.html" title="class in com.thalesgroup.gemalto.fido2.authenticator.passcode">PasscodeRulePalindrome</a></div>
 <div class="col-last even-row-color class-summary class-summary-tab2">
-<div class="block">A passcode rule that prevents the passcode from being a palindrome (e.g.</div>
+<div class="block">A <a href="PasscodeRule.html" title="class in com.thalesgroup.gemalto.fido2.authenticator.passcode"><code>PasscodeRule</code></a> that prevents the passcode from being a palindrome (e.g., "12321").</div>
 </div>
 <div class="col-first odd-row-color class-summary class-summary-tab2"><a href="PasscodeRuleSeries.html" title="class in com.thalesgroup.gemalto.fido2.authenticator.passcode">PasscodeRuleSeries</a></div>
 <div class="col-last odd-row-color class-summary class-summary-tab2">
-<div class="block">A passcode rule that prevents the passcode from being a series (e.g.</div>
+<div class="block">A <a href="PasscodeRule.html" title="class in com.thalesgroup.gemalto.fido2.authenticator.passcode"><code>PasscodeRule</code></a> that prevents the passcode from being a sequential series of numbers,
+ either ascending (e.g., "123456") or descending (e.g., "654321").</div>
 </div>
 <div class="col-first even-row-color class-summary class-summary-tab2"><a href="PasscodeRuleUniform.html" title="class in com.thalesgroup.gemalto.fido2.authenticator.passcode">PasscodeRuleUniform</a></div>
 <div class="col-last even-row-color class-summary class-summary-tab2">
-<div class="block">A passcode rule that prevents the passcode from being a uniform value (e.g.</div>
+<div class="block">A <a href="PasscodeRule.html" title="class in com.thalesgroup.gemalto.fido2.authenticator.passcode"><code>PasscodeRule</code></a> that prevents the passcode from consisting of a single repeated digit (e.g., "111111").</div>
 </div>
 <div class="col-first odd-row-color class-summary class-summary-tab1"><a href="SetPasscodeCallback.html" title="interface in com.thalesgroup.gemalto.fido2.authenticator.passcode">SetPasscodeCallback</a></div>
 <div class="col-last odd-row-color class-summary class-summary-tab1">
-<div class="block">A callback to provide the passcode to enroll/authenticate/change passcode.</div>
+<div class="block">A callback for programmatically providing a passcode to the SDK.</div>
 </div>
 </div>
 </div>

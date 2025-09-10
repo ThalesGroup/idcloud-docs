@@ -73,12 +73,14 @@ loadScripts(document, 'script');</script>
 <section class="class-description" id="class-description">
 <hr>
 <div class="type-signature"><span class="modifiers">public interface </span><span class="element-name type-name-label">PasscodeAuthenticatorCallback</span></div>
-<div class="block">A callback to show the keyboard UI and handle the Passcode enrollment/unenrollment events.
+<div class="block">A callback for handling the UI and results of Passcode Authenticator operations.
  <p>
- Methods called from this callback will inform the App layer of the outcome of these processes as well as to display the secure keyboard UI.
+ An implementation of this interface is required to handle both UI-driven passcode entry
+ (via the secure keyboard) and programmatic passcode entry. It also receives the final
+ success or error result of management operations like creating, changing, or deleting a passcode.
  </p>
  <p>
- <b>Note:</b> All callbacks are invoked on the Main thread.
+ <b>Note:</b> All methods in this callback are invoked on the main UI thread.
  </p></div>
 <dl class="notes">
 <dt>Since:</dt>
@@ -101,26 +103,26 @@ loadScripts(document, 'script');</script>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#onError(com.thalesgroup.gemalto.fido2.Fido2Exception)" class="member-name-link">onError</a><wbr>(<a href="../../Fido2Exception.html" title="class in com.thalesgroup.gemalto.fido2">Fido2Exception</a>&nbsp;exception)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Called when the Passcode operation completes with a failure.</div>
+<div class="block">Called when a passcode management operation (create, change, or delete) fails.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#onStart(com.thalesgroup.gemalto.fido2.authenticator.passcode.Keyboard,com.thalesgroup.gemalto.fido2.client.Fido2OperationInfo,com.thalesgroup.gemalto.fido2.authenticator.passcode.Controller)" class="member-name-link">onStart</a><wbr>(<a href="Keyboard.html" title="class in com.thalesgroup.gemalto.fido2.authenticator.passcode">Keyboard</a>&nbsp;keyboard,
  <a href="../../client/Fido2OperationInfo.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2OperationInfo</a>&nbsp;fido2OperationInfo,
  <a href="Controller.html" title="interface in com.thalesgroup.gemalto.fido2.authenticator.passcode">Controller</a>&nbsp;controller)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
-<div class="block">Called when a keyboard UI needs to be displayed.</div>
+<div class="block">Called when the SDK requires the user to enter a passcode via the secure keyboard UI.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#onSuccess()" class="member-name-link">onSuccess</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Called when the Passcode operation completes successfully.</div>
+<div class="block">Called when a passcode management operation (create, change, or delete) completes successfully.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#setPasscode(boolean,com.thalesgroup.gemalto.fido2.client.Fido2OperationInfo,com.thalesgroup.gemalto.fido2.authenticator.passcode.SetPasscodeCallback)" class="member-name-link">setPasscode</a><wbr>(boolean&nbsp;isChangePasscode,
  <a href="../../client/Fido2OperationInfo.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2OperationInfo</a>&nbsp;fido2OperationInfo,
  <a href="SetPasscodeCallback.html" title="interface in com.thalesgroup.gemalto.fido2.authenticator.passcode">SetPasscodeCallback</a>&nbsp;setPasscodeCallback)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
-<div class="block">Called when to set the PIN.</div>
+<div class="block">Called when the SDK requires a passcode to be provided programmatically.</div>
 </div>
 </div>
 </div>
@@ -143,16 +145,18 @@ loadScripts(document, 'script');</script>
 </span><span class="modifiers">default</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">onStart</span><wbr><span class="parameters">(<a href="Keyboard.html" title="class in com.thalesgroup.gemalto.fido2.authenticator.passcode">Keyboard</a>&nbsp;keyboard,
  <a href="../../client/Fido2OperationInfo.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2OperationInfo</a>&nbsp;fido2OperationInfo,
  <a href="Controller.html" title="interface in com.thalesgroup.gemalto.fido2.authenticator.passcode">Controller</a>&nbsp;controller)</span></div>
-<div class="block">Called when a keyboard UI needs to be displayed.
-
- This is an optional method. Implement this method to input the passcode using secure keypad.
-
- This is called on the main thread.</div>
+<div class="block">Called when the SDK requires the user to enter a passcode via the secure keyboard UI.
+ <p>
+ The application should display the <code>Fragment</code> provided by the <a href="Keyboard.html" title="class in com.thalesgroup.gemalto.fido2.authenticator.passcode"><code>Keyboard</code></a> object.
+ This method is one of two ways to provide a passcode, the other being the programmatic
+ <a href="#setPasscode(boolean,com.thalesgroup.gemalto.fido2.client.Fido2OperationInfo,com.thalesgroup.gemalto.fido2.authenticator.passcode.SetPasscodeCallback)"><code>setPasscode(boolean, Fido2OperationInfo, SetPasscodeCallback)</code></a> method. An application
+ must implement at least one of them.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>keyboard</code> - <a href="Keyboard.html" title="class in com.thalesgroup.gemalto.fido2.authenticator.passcode"><code>Keyboard</code></a> object that has a secure keyboard in a fragment that needs to be displayed for passcode entry</dd>
-<dd><code>fido2OperationInfo</code> - object holds common information that the UI needs to display to the user</dd>
-<dd><code>controller</code> - an object that can control the process.</dd>
+<dd><code>keyboard</code> - The <a href="Keyboard.html" title="class in com.thalesgroup.gemalto.fido2.authenticator.passcode"><code>Keyboard</code></a> object, which contains the secure keyboard <code>Fragment</code>
+                           to be displayed.</dd>
+<dd><code>fido2OperationInfo</code> - Information about the ongoing operation for UI display purposes.</dd>
+<dd><code>controller</code> - A <a href="Controller.html" title="interface in com.thalesgroup.gemalto.fido2.authenticator.passcode"><code>Controller</code></a> to cancel the operation.</dd>
 <dt>Throws:</dt>
 <dd><code><a href="https://developer.android.com/reference/java/lang/UnsupportedOperationException.html" title="class or interface in java.lang" class="external-link">UnsupportedOperationException</a></code> - throws an exception when the implementation is not provided.</dd>
 <dt>Since:</dt>
@@ -167,15 +171,18 @@ loadScripts(document, 'script');</script>
 </span><span class="modifiers">default</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setPasscode</span><wbr><span class="parameters">(boolean&nbsp;isChangePasscode,
  <a href="../../client/Fido2OperationInfo.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2OperationInfo</a>&nbsp;fido2OperationInfo,
  <a href="SetPasscodeCallback.html" title="interface in com.thalesgroup.gemalto.fido2.authenticator.passcode">SetPasscodeCallback</a>&nbsp;setPasscodeCallback)</span></div>
-<div class="block">Called when to set the PIN.
- This is an optional method. Implement this method to set the passcode programmatically.
-
- This is called on the main thread.</div>
+<div class="block">Called when the SDK requires a passcode to be provided programmatically.
+ <p>
+ The application should provide the passcode using the <a href="SetPasscodeCallback.html" title="interface in com.thalesgroup.gemalto.fido2.authenticator.passcode"><code>SetPasscodeCallback</code></a>.
+ This method is one of two ways to provide a passcode, the other being the UI-driven
+ <a href="#onStart(com.thalesgroup.gemalto.fido2.authenticator.passcode.Keyboard,com.thalesgroup.gemalto.fido2.client.Fido2OperationInfo,com.thalesgroup.gemalto.fido2.authenticator.passcode.Controller)"><code>onStart(Keyboard, Fido2OperationInfo, Controller)</code></a> method. An application
+ must implement at least one of them.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>isChangePasscode</code> - true during change passcode operation, otherwise false.</dd>
-<dd><code>fido2OperationInfo</code> - object holds common information that the UI needs to display to the user.</dd>
-<dd><code>setPasscodeCallback</code> - a callback to provide the passcode.</dd>
+<dd><code>isChangePasscode</code> - <code>true</code> if the operation is to change the passcode, which requires
+                            providing both the old and new passcode. <code>false</code> otherwise.</dd>
+<dd><code>fido2OperationInfo</code> - Information about the ongoing operation for UI display purposes.</dd>
+<dd><code>setPasscodeCallback</code> - The callback to use for providing the passcode to the SDK.</dd>
 <dt>Throws:</dt>
 <dd><code><a href="https://developer.android.com/reference/java/lang/UnsupportedOperationException.html" title="class or interface in java.lang" class="external-link">UnsupportedOperationException</a></code> - throws an exception when the implementation is not provided.</dd>
 <dt>Since:</dt>
@@ -188,12 +195,11 @@ loadScripts(document, 'script');</script>
 <h3>onSuccess</h3>
 <div class="member-signature"><span class="annotations">@MainThread
 </span><span class="return-type">void</span>&nbsp;<span class="element-name">onSuccess</span>()</div>
-<div class="block">Called when the Passcode operation completes successfully. No
- further callbacks will be issued.
+<div class="block">Called when a passcode management operation (create, change, or delete) completes successfully.
+ No further callbacks will be issued for this operation.
  <p>
- <b>Note:</b> This callback is NOT invoked during FIDO2 Registration/Authentication operations.
- <p>
- <b>Thread safety:</b> called from main UI thread</div>
+ <b>Note:</b> This callback is not invoked for FIDO2 registration or authentication operations.
+ It is only for the management operations in <a href="PasscodeAuthenticator.html" title="class in com.thalesgroup.gemalto.fido2.authenticator.passcode"><code>PasscodeAuthenticator</code></a>.</div>
 <dl class="notes">
 <dt>Since:</dt>
 <dd>1.0.0</dd>
@@ -205,15 +211,14 @@ loadScripts(document, 'script');</script>
 <h3>onError</h3>
 <div class="member-signature"><span class="annotations">@MainThread
 </span><span class="return-type">void</span>&nbsp;<span class="element-name">onError</span><wbr><span class="parameters">(<a href="../../Fido2Exception.html" title="class in com.thalesgroup.gemalto.fido2">Fido2Exception</a>&nbsp;exception)</span></div>
-<div class="block">Called when the Passcode operation completes with a failure.
- No further callbacks will be issued.
+<div class="block">Called when a passcode management operation (create, change, or delete) fails.
+ No further callbacks will be issued for this operation.
  <p>
- <b>Note:</b> This callback is NOT invoked during FIDO2 Registration/Authentication operations.
- <p>
- <b>Thread safety:</b> called from main UI thread</div>
+ <b>Note:</b> This callback is not invoked for FIDO2 registration or authentication operations.
+ It is only for the management operations in <a href="PasscodeAuthenticator.html" title="class in com.thalesgroup.gemalto.fido2.authenticator.passcode"><code>PasscodeAuthenticator</code></a>.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>exception</code> - exception that specifies what went wrong.</dd>
+<dd><code>exception</code> - A <a href="../../Fido2Exception.html" title="class in com.thalesgroup.gemalto.fido2"><code>Fido2Exception</code></a> that specifies what went wrong.</dd>
 <dt>Since:</dt>
 <dd>1.0.0</dd>
 </dl>

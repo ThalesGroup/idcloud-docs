@@ -77,10 +77,14 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="type-signature"><span class="modifiers">public abstract class </span><span class="element-name type-name-label">Fido2Request</span>
 <span class="extends-implements">extends <a href="https://developer.android.com/reference/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></span></div>
-<div class="block">A FIDO2 request for registration, authentication, etc..</div>
+<div class="block">Represents a FIDO2 request received from a Relying Party, such as a registration
+ or authentication request.
+ <p>
+ This class is the starting point for processing a FIDO2 operation. An instance is
+ created from a JSON string provided by the FIDO2 server.</div>
 <dl class="notes">
 <dt>Since:</dt>
-<dd>1.0</dd>
+<dd>1.0.0</dd>
 </dl>
 </section>
 <section class="summary">
@@ -113,21 +117,23 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../Fido2OperationType.html" title="enum class in com.thalesgroup.gemalto.fido2">Fido2OperationType</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getType()" class="member-name-link">getType</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Gets the type of the FIDO2 operation for this request.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="Fido2Request.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2Request</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#hybridJsonText(java.lang.String)" class="member-name-link">hybridJsonText</a><wbr>(<a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;jsonText)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
-<div class="block">Creates a FIDO2 request from JSON with hybrid credential support enabled.</div>
+<div class="block">Creates a FIDO2 request from a JSON string, with support for hybrid (cross-device) flows enabled.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="Fido2Request.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2Request</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#jsonText(java.lang.String)" class="member-name-link">jsonText</a><wbr>(<a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;jsonText)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
-<div class="block">Creates a standard FIDO2 request from the given JSON.</div>
+<div class="block">Creates a FIDO2 request from a JSON string.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>abstract void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#wipe()" class="member-name-link">wipe</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Wipes data</div>
+<div class="block">Securely wipes any sensitive data held by this request object from memory.</div>
 </div>
 </div>
 </div>
@@ -166,14 +172,20 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="Fido2Request.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2Request</a></span>&nbsp;<span class="element-name">hybridJsonText</span><wbr><span class="parameters">(@NonNull
  <a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;jsonText)</span>
                                    throws <span class="exceptions"><a href="../Fido2Exception.html" title="class in com.thalesgroup.gemalto.fido2">Fido2Exception</a></span></div>
-<div class="block">Creates a FIDO2 request from JSON with hybrid credential support enabled.</div>
+<div class="block">Creates a FIDO2 request from a JSON string, with support for hybrid (cross-device) flows enabled.
+ <p>
+ This factory method parses the JSON to determine if it's a registration or authentication
+ request and creates the appropriate request object.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>jsonText</code> - JSON-formatted FIDO2 request</dd>
+<dd><code>jsonText</code> - The FIDO2 request in JSON format. Must not be null.</dd>
 <dt>Returns:</dt>
-<dd>Fido2Request instance</dd>
+<dd>A new <a href="Fido2Request.html" title="class in com.thalesgroup.gemalto.fido2.client"><code>Fido2Request</code></a> instance.</dd>
 <dt>Throws:</dt>
-<dd><code><a href="../Fido2Exception.html" title="class in com.thalesgroup.gemalto.fido2">Fido2Exception</a></code> - if parsing fails</dd>
+<dd><code><a href="../Fido2Exception.html" title="class in com.thalesgroup.gemalto.fido2">Fido2Exception</a></code> - If the JSON is malformed or represents an unsupported request type.</dd>
+<dd><code><a href="https://developer.android.com/reference/java/lang/IllegalArgumentException.html" title="class or interface in java.lang" class="external-link">IllegalArgumentException</a></code> - if <code>jsonText</code> is null.</dd>
+<dt>Since:</dt>
+<dd>1.8.0</dd>
 </dl>
 </section>
 </li>
@@ -183,14 +195,20 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="Fido2Request.html" title="class in com.thalesgroup.gemalto.fido2.client">Fido2Request</a></span>&nbsp;<span class="element-name">jsonText</span><wbr><span class="parameters">(@NonNull
  <a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;jsonText)</span>
                              throws <span class="exceptions"><a href="../Fido2Exception.html" title="class in com.thalesgroup.gemalto.fido2">Fido2Exception</a></span></div>
-<div class="block">Creates a standard FIDO2 request from the given JSON.</div>
+<div class="block">Creates a FIDO2 request from a JSON string.
+ <p>
+ This factory method parses the JSON to determine if it's a registration or authentication
+ request and creates the appropriate request object.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>jsonText</code> - JSON-formatted FIDO2 request.</dd>
+<dd><code>jsonText</code> - The FIDO2 request in JSON format. Must not be null.</dd>
 <dt>Returns:</dt>
-<dd>A Fido2Request instance.</dd>
+<dd>A new <a href="Fido2Request.html" title="class in com.thalesgroup.gemalto.fido2.client"><code>Fido2Request</code></a> instance.</dd>
 <dt>Throws:</dt>
-<dd><code><a href="../Fido2Exception.html" title="class in com.thalesgroup.gemalto.fido2">Fido2Exception</a></code> - If parsing fails.</dd>
+<dd><code><a href="../Fido2Exception.html" title="class in com.thalesgroup.gemalto.fido2">Fido2Exception</a></code> - If the JSON is malformed or represents an unsupported request type.</dd>
+<dd><code><a href="https://developer.android.com/reference/java/lang/IllegalArgumentException.html" title="class or interface in java.lang" class="external-link">IllegalArgumentException</a></code> - if <code>jsonText</code> is null.</dd>
+<dt>Since:</dt>
+<dd>1.0.0</dd>
 </dl>
 </section>
 </li>
@@ -198,13 +216,20 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="getType()">
 <h3>getType</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../Fido2OperationType.html" title="enum class in com.thalesgroup.gemalto.fido2">Fido2OperationType</a></span>&nbsp;<span class="element-name">getType</span>()</div>
+<div class="block">Gets the type of the FIDO2 operation for this request.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The <a href="../Fido2OperationType.html" title="enum class in com.thalesgroup.gemalto.fido2"><code>Fido2OperationType</code></a> (e.g., <code>REGISTRATION</code> or <code>AUTHENTICATION</code>).</dd>
+<dt>Since:</dt>
+<dd>1.0.0</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="wipe()">
 <h3>wipe</h3>
 <div class="member-signature"><span class="modifiers">public abstract</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">wipe</span>()</div>
-<div class="block">Wipes data</div>
+<div class="block">Securely wipes any sensitive data held by this request object from memory.</div>
 <dl class="notes">
 <dt>Since:</dt>
 <dd>1.2.0</dd>

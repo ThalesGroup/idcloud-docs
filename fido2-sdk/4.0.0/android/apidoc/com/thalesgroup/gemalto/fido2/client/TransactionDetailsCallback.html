@@ -73,6 +73,17 @@ loadScripts(document, 'script');</script>
 <section class="class-description" id="class-description">
 <hr>
 <div class="type-signature"><span class="modifiers">public interface </span><span class="element-name type-name-label">TransactionDetailsCallback</span></div>
+<div class="block">A callback for responding to a transaction confirmation request.</div>
+<dl class="notes">
+<dt>Since:</dt>
+<dd>1.2.0</dd>
+<dt>See Also:</dt>
+<dd>
+<ul class="see-list-long">
+<li><a href="Fido2UiCallback.html#showTransactionDetails(java.util.Map,com.thalesgroup.gemalto.fido2.client.TransactionDetailsCallback)"><code>Fido2UiCallback.showTransactionDetails(Map, TransactionDetailsCallback)</code></a></li>
+</ul>
+</dd>
+</dl>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -89,10 +100,14 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#cancel()" class="member-name-link">cancel</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Notifies the SDK to cancel the transaction.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#onProceed()" class="member-name-link">onProceed</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Notifies the SDK to proceed with the transaction after user confirmation.</div>
+</div>
 </div>
 </div>
 </div>
@@ -111,12 +126,22 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="onProceed()">
 <h3>onProceed</h3>
 <div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">onProceed</span>()</div>
+<div class="block">Notifies the SDK to proceed with the transaction after user confirmation.</div>
+<dl class="notes">
+<dt>Since:</dt>
+<dd>1.2.0</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="cancel()">
 <h3>cancel</h3>
 <div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">cancel</span>()</div>
+<div class="block">Notifies the SDK to cancel the transaction.</div>
+<dl class="notes">
+<dt>Since:</dt>
+<dd>1.2.0</dd>
+</dl>
 </section>
 </li>
 </ul>

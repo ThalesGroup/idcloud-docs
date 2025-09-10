@@ -73,9 +73,11 @@ loadScripts(document, 'script');</script>
 <section class="class-description" id="class-description">
 <hr>
 <div class="type-signature"><span class="modifiers">public interface </span><span class="element-name type-name-label">SetPasscodeCallback</span></div>
-<div class="block">A callback to provide the passcode to enroll/authenticate/change passcode.
+<div class="block">A callback for programmatically providing a passcode to the SDK.
  <p>
- Methods called from this callback will inform the App layer of the outcome of these processes.
+ An instance of this callback is provided in the
+ <a href="PasscodeAuthenticatorCallback.html#setPasscode(boolean,com.thalesgroup.gemalto.fido2.client.Fido2OperationInfo,com.thalesgroup.gemalto.fido2.authenticator.passcode.SetPasscodeCallback)"><code>PasscodeAuthenticatorCallback.setPasscode(boolean, com.thalesgroup.gemalto.fido2.client.Fido2OperationInfo, SetPasscodeCallback)</code></a>
+ method.
  </p></div>
 <dl class="notes">
 <dt>Since:</dt>
@@ -98,15 +100,13 @@ loadScripts(document, 'script');</script>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#cancel()" class="member-name-link">cancel</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">To cancel the operation
-
-  It is called on the main thread.</div>
+<div class="block">Cancels the ongoing passcode operation.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#onPasscodeProvided(byte%5B%5D,byte%5B%5D)" class="member-name-link">onPasscodeProvided</a><wbr>(byte[]&nbsp;passcode,
  byte[]&nbsp;updatePasscode)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">To set the passcode</div>
+<div class="block">Provides the passcode(s) to the SDK to complete an operation.</div>
 </div>
 </div>
 </div>
@@ -129,13 +129,18 @@ loadScripts(document, 'script');</script>
  byte[]&nbsp;passcode,
  @Nullable
  byte[]&nbsp;updatePasscode)</span></div>
-<div class="block">To set the passcode</div>
+<div class="block">Provides the passcode(s) to the SDK to complete an operation.
+ <p>
+ For enrollment and authentication, only the <code>passcode</code> parameter is required.
+ For changing a passcode, both <code>passcode</code> (the old one) and <code>updatePasscode</code>
+ (the new one) are required.
+ </p></div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>passcode</code> - a byte array for the passcode.</dd>
-<dd><code>updatePasscode</code> - a byte array to update to a new passcode. This should only be provided during the change passcode operation.
-
-  It is called on the main thread.</dd>
+<dd><code>passcode</code> - The user's passcode for enrollment or authentication, or the user's
+                       <i>old</i> passcode for a change operation. Must not be null.</dd>
+<dd><code>updatePasscode</code> - The user's <i>new</i> passcode. This should only be provided during a
+                       change passcode operation; otherwise, it should be <code>null</code>.</dd>
 <dt>Since:</dt>
 <dd>1.8.0</dd>
 </dl>
@@ -145,9 +150,10 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="cancel()">
 <h3>cancel</h3>
 <div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">cancel</span>()</div>
-<div class="block">To cancel the operation
-
-  It is called on the main thread.</div>
+<div class="block">Cancels the ongoing passcode operation.
+ <p>
+ This will result in the <a href="PasscodeAuthenticatorCallback.html#onError(com.thalesgroup.gemalto.fido2.Fido2Exception)"><code>PasscodeAuthenticatorCallback.onError(com.thalesgroup.gemalto.fido2.Fido2Exception)</code></a>
+ method being called with a user cancellation error.</div>
 <dl class="notes">
 <dt>Since:</dt>
 <dd>1.9.0</dd>

@@ -83,9 +83,9 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="type-signature"><span class="modifiers">public enum </span><span class="element-name type-name-label">KeyboardKey</span>
 <span class="extends-implements">extends <a href="https://developer.android.com/reference/java/lang/Enum.html" title="class or interface in java.lang" class="external-link">Enum</a>&lt;<a href="KeyboardKey.html" title="enum class in com.thalesgroup.gemalto.fido2.authenticator.passcode">KeyboardKey</a>&gt;</span></div>
-<div class="block">An enum describing the type of key pressed.
+<div class="block">Describes the type of key pressed on the secure keyboard.
  <p>
- The App layer should utilize this enum in order to determine the number of characters to be displayed on a secure input view.
+ The application can use this enum to update its UI in response to user input.
  </p></div>
 <dl class="notes">
 <dt>Since:</dt>
@@ -113,15 +113,15 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color"><code><a href="#DELETE" class="member-name-link">DELETE</a></code></div>
 <div class="col-last even-row-color">
-<div class="block">Delete key</div>
+<div class="block">The delete key was pressed.</div>
 </div>
 <div class="col-first odd-row-color"><code><a href="#DONE" class="member-name-link">DONE</a></code></div>
 <div class="col-last odd-row-color">
-<div class="block">Done key</div>
+<div class="block">The "Done" or "OK" key was pressed to submit the passcode.</div>
 </div>
 <div class="col-first even-row-color"><code><a href="#INPUT" class="member-name-link">INPUT</a></code></div>
 <div class="col-last even-row-color">
-<div class="block">Any Input key other than Delete/Done</div>
+<div class="block">A numeric input key was pressed.</div>
 </div>
 </div>
 </section>
@@ -172,21 +172,21 @@ the order they are declared.</div>
 <section class="detail" id="INPUT">
 <h3>INPUT</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="KeyboardKey.html" title="enum class in com.thalesgroup.gemalto.fido2.authenticator.passcode">KeyboardKey</a></span>&nbsp;<span class="element-name">INPUT</span></div>
-<div class="block">Any Input key other than Delete/Done</div>
+<div class="block">A numeric input key was pressed.</div>
 </section>
 </li>
 <li>
 <section class="detail" id="DELETE">
 <h3>DELETE</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="KeyboardKey.html" title="enum class in com.thalesgroup.gemalto.fido2.authenticator.passcode">KeyboardKey</a></span>&nbsp;<span class="element-name">DELETE</span></div>
-<div class="block">Delete key</div>
+<div class="block">The delete key was pressed.</div>
 </section>
 </li>
 <li>
 <section class="detail" id="DONE">
 <h3>DONE</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="KeyboardKey.html" title="enum class in com.thalesgroup.gemalto.fido2.authenticator.passcode">KeyboardKey</a></span>&nbsp;<span class="element-name">DONE</span></div>
-<div class="block">Done key</div>
+<div class="block">The "Done" or "OK" key was pressed to submit the passcode.</div>
 </section>
 </li>
 </ul>
