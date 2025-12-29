@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"com.thalesgroup.gemalto.securelog","l":"SecureLogConfig.Builder"},{"p":"com.thalesgroup.gemalto.securelog","l":"SecureLog"},{"p":"com.thalesgroup.gemalto.securelog","l":"SecureLogConfig"},{"p":"com.thalesgroup.gemalto.securelog","l":"SecureLogLevel"}];updateSearchResults();
