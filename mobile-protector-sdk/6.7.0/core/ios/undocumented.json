@@ -1,0 +1,110 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/lijzhang/Documents/gitlab-cpl/oath_pipeline/sdk/dev/idpoath/ios/lib/idp/build/jazzy_framework_root/EzioMobile/EMCCasError.h",
+      "line": 34,
+      "symbol": "EMCCasErrorDomain",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lijzhang/Documents/gitlab-cpl/oath_pipeline/sdk/dev/idpoath/ios/lib/idp/build/jazzy_framework_root/EzioMobile/EMCasClient.h",
+      "line": 45,
+      "symbol": "EMCasClient.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lijzhang/Documents/gitlab-cpl/oath_pipeline/sdk/dev/idpoath/ios/lib/idp/build/jazzy_framework_root/EzioMobile/EMJailbreakDetector.h",
+      "line": 38,
+      "symbol": "EMStaticColorHandler",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lijzhang/Documents/gitlab-cpl/oath_pipeline/sdk/dev/idpoath/ios/lib/idp/build/jazzy_framework_root/EzioMobile/EMPinRule.h",
+      "line": 40,
+      "symbol": "EMPinRuleErrorDomain",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lijzhang/Documents/gitlab-cpl/oath_pipeline/sdk/dev/idpoath/ios/lib/idp/build/jazzy_framework_root/EzioMobile/EMSecureInputEncryptionConfig.h",
+      "line": 60,
+      "symbol": "EMSecureInputEncryptionConfig",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lijzhang/Documents/gitlab-cpl/oath_pipeline/sdk/dev/idpoath/ios/lib/idp/build/jazzy_framework_root/EzioMobile/EMSecureInputEncryptionConfig.h",
+      "line": 62,
+      "symbol": "EMSecureInputEncryptionConfig.encryptionMode",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lijzhang/Documents/gitlab-cpl/oath_pipeline/sdk/dev/idpoath/ios/lib/idp/build/jazzy_framework_root/EzioMobile/EMSecureInputEncryptionConfig.h",
+      "line": 63,
+      "symbol": "EMSecureInputEncryptionConfig.publicKey",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lijzhang/Documents/gitlab-cpl/oath_pipeline/sdk/dev/idpoath/ios/lib/idp/build/jazzy_framework_root/EzioMobile/EMSecureInputEncryptionConfig.h",
+      "line": 64,
+      "symbol": "EMSecureInputEncryptionConfig.userData",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lijzhang/Documents/gitlab-cpl/oath_pipeline/sdk/dev/idpoath/ios/lib/idp/build/jazzy_framework_root/EzioMobile/EMSecureInputEncryptionConfig.h",
+      "line": 68,
+      "symbol": "EMSecureInputEncryptionConfig.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lijzhang/Documents/gitlab-cpl/oath_pipeline/sdk/dev/idpoath/ios/lib/idp/build/jazzy_framework_root/EzioMobile/em_detector.h",
+      "line": 82,
+      "symbol": "EMDynamicHandler",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lijzhang/Documents/gitlab-cpl/oath_pipeline/sdk/dev/idpoath/ios/lib/idp/build/jazzy_framework_root/EzioMobile/em_detector.h",
+      "line": 102,
+      "symbol": "EMDynamicRotateKey",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lijzhang/Documents/gitlab-cpl/oath_pipeline/sdk/dev/idpoath/ios/lib/idp/build/jazzy_framework_root/EzioMobile/em_detector.h",
+      "line": 123,
+      "symbol": "EMDynamicSwapKey",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lijzhang/Documents/gitlab-cpl/oath_pipeline/sdk/dev/idpoath/ios/lib/idp/build/jazzy_framework_root/EzioMobile/em_detector.h",
+      "line": 136,
+      "symbol": "EMDynamicDeleteKey",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lijzhang/Documents/gitlab-cpl/oath_pipeline/sdk/dev/idpoath/ios/lib/idp/build/jazzy_framework_root/EzioMobile/em_detector.h",
+      "line": 146,
+      "symbol": "EMDynamicUpdateKey",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lijzhang/Documents/gitlab-cpl/oath_pipeline/sdk/dev/idpoath/ios/lib/idp/build/jazzy_framework_root/EzioMobile/em_detector.h",
+      "line": 164,
+      "symbol": "EMDynamicCreateKey",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/lijzhang/Documents/gitlab-cpl/oath_pipeline/sdk/dev/idpoath/ios/lib/idp"
+}
