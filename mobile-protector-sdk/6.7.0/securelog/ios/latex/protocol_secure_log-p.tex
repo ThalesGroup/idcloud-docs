@@ -1,0 +1,75 @@
+\doxysection{\texorpdfstring{$<$}{<}Secure\+Log\texorpdfstring{$>$}{>} Protocol Reference}
+\hypertarget{protocol_secure_log-p}{}\label{protocol_secure_log-p}\index{$<$SecureLog$>$@{$<$SecureLog$>$}}
+
+
+{\ttfamily \#include $<$Secure\+Log.\+h$>$}
+
+Inheritance diagram for \texorpdfstring{$<$}{<}Secure\+Log\texorpdfstring{$>$}{>}\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{protocol_secure_log-p}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) -\/ \mbox{\hyperlink{protocol_secure_log-p_a7538dbc9709490f4d73167c7b04316b4}{NS\+\_\+\+UNAVAILABLE}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_secure_log-p_a822e2c0202c3b25c980eaa5452265c4b}{set\+Level\+:}}
+\begin{DoxyCompactList}\small\item\em Set the secure log level to write in log file. \end{DoxyCompactList}\item 
+(NSArray$<$ NSURL \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*}) -\/ \mbox{\hyperlink{protocol_secure_log-p_abb999f1dc5d428ad1e5eb145420a2a23}{files}}
+\begin{DoxyCompactList}\small\item\em Return array of log files that logged by secure log. \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{protocol_secure_log-p_a89a6949b8b0aeeed75241a1de4598494}{delete\+Files}}
+\begin{DoxyCompactList}\small\item\em Delete all logs that logged by secure log. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The protocol contains all functions to the app integrators to interact with Secure Log 
+
+\label{doc-func-members}
+\Hypertarget{protocol_secure_log-p_doc-func-members}
+\doxysubsection{Method Documentation}
+\Hypertarget{protocol_secure_log-p_a89a6949b8b0aeeed75241a1de4598494}\index{$<$SecureLog$>$@{$<$SecureLog$>$}!deleteFiles@{deleteFiles}}
+\index{deleteFiles@{deleteFiles}!$<$SecureLog$>$@{$<$SecureLog$>$}}
+\doxysubsubsection{\texorpdfstring{deleteFiles}{deleteFiles}}
+{\footnotesize\ttfamily \label{protocol_secure_log-p_a89a6949b8b0aeeed75241a1de4598494} 
+-\/ (void) delete\+Files \begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}}
+
+
+
+Delete all logs that logged by secure log. 
+
+\Hypertarget{protocol_secure_log-p_abb999f1dc5d428ad1e5eb145420a2a23}\index{$<$SecureLog$>$@{$<$SecureLog$>$}!files@{files}}
+\index{files@{files}!$<$SecureLog$>$@{$<$SecureLog$>$}}
+\doxysubsubsection{\texorpdfstring{files}{files}}
+{\footnotesize\ttfamily \label{protocol_secure_log-p_abb999f1dc5d428ad1e5eb145420a2a23} 
+-\/ (NSArray$<$ NSURL \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*}) files \begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}}
+
+
+
+Return array of log files that logged by secure log. 
+
+\begin{DoxyReturn}{Returns}
+array of log files. 
+\end{DoxyReturn}
+\Hypertarget{protocol_secure_log-p_a7538dbc9709490f4d73167c7b04316b4}\index{$<$SecureLog$>$@{$<$SecureLog$>$}!NS\_UNAVAILABLE@{NS\_UNAVAILABLE}}
+\index{NS\_UNAVAILABLE@{NS\_UNAVAILABLE}!$<$SecureLog$>$@{$<$SecureLog$>$}}
+\doxysubsubsection{\texorpdfstring{NS\_UNAVAILABLE}{NS\_UNAVAILABLE}}
+{\footnotesize\ttfamily \label{protocol_secure_log-p_a7538dbc9709490f4d73167c7b04316b4} 
+-\/ (instancetype) NS\+\_\+\+UNAVAILABLE \begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}}
+
+There is no direct init function available. Cast the Secure\+Log\+Impl object to this protocol and call below function to interact with Secure Log \Hypertarget{protocol_secure_log-p_a822e2c0202c3b25c980eaa5452265c4b}\index{$<$SecureLog$>$@{$<$SecureLog$>$}!setLevel:@{setLevel:}}
+\index{setLevel:@{setLevel:}!$<$SecureLog$>$@{$<$SecureLog$>$}}
+\doxysubsubsection{\texorpdfstring{setLevel:}{setLevel:}}
+{\footnotesize\ttfamily \label{protocol_secure_log-p_a822e2c0202c3b25c980eaa5452265c4b} 
+-\/ (void) set\+Level\+: \begin{DoxyParamCaption}\item[{(Secure\+Log\+Level)}]{log\+Level}{}\end{DoxyParamCaption}}
+
+
+
+Set the secure log level to write in log file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em log\+Level} & log level. \\
+\hline
+\end{DoxyParams}
