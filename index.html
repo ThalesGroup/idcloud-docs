@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IdCloud SDK API Documentation</title>
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 15px;
+      line-height: 1.6;
+      color: #1a1a2e;
+      background-color: #f4f6f9;
+      padding: 40px 24px 80px;
+    }
+
+    .page-wrapper {
+      max-width: 780px;
+      margin: 0 auto;
+    }
+
+    header {
+      margin-bottom: 36px;
+    }
+
+    header h1 {
+      font-size: 26px;
+      font-weight: 700;
+      color: #0d1b4b;
+      letter-spacing: -0.3px;
+    }
+
+    header p {
+      margin-top: 8px;
+      color: #5a6478;
+      font-size: 14px;
+    }
+
+    .card {
+      background: #ffffff;
+      border: 1px solid #dde2ed;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    thead tr {
+      background-color: #0d1b4b;
+    }
+
+    thead th {
+      padding: 13px 20px;
+      text-align: left;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+      color: #c8d0e8;
+    }
+
+    thead th:not(:first-child) {
+      text-align: center;
+    }
+
+    tbody tr {
+      border-bottom: 1px solid #eaedf3;
+      transition: background-color 0.12s ease;
+    }
+
+    tbody tr:last-child {
+      border-bottom: none;
+    }
+
+    tbody tr:hover {
+      background-color: #f0f3fa;
+    }
+
+    td {
+      padding: 14px 20px;
+      vertical-align: middle;
+    }
+
+    td:not(:first-child) {
+      text-align: center;
+    }
+
+    .sdk-name {
+      font-weight: 600;
+      color: #0d1b4b;
+      font-size: 14px;
+    }
+
+    .sdk-version {
+      display: inline-block;
+      margin-left: 8px;
+      font-size: 11px;
+      font-weight: 600;
+      color: #4a6cf7;
+      background-color: #eef1fd;
+      border-radius: 4px;
+      padding: 1px 7px;
+      vertical-align: middle;
+      letter-spacing: 0.2px;
+    }
+
+    .doc-link {
+      display: inline-block;
+      padding: 5px 14px;
+      font-size: 13px;
+      font-weight: 500;
+      color: #4a6cf7;
+      background-color: #eef1fd;
+      border: 1px solid #c5cef7;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.12s ease, color 0.12s ease, border-color 0.12s ease;
+    }
+
+    .doc-link:hover {
+      background-color: #4a6cf7;
+      color: #ffffff;
+      border-color: #4a6cf7;
+      text-decoration: none;
+    }
+
+    .cell-links {
+      display: inline-flex;
+      flex-direction: column;
+      gap: 6px;
+      align-items: center;
+    }
+
+    .securelog-link {
+      display: inline-block;
+      padding: 4px 10px;
+      font-size: 11px;
+      font-weight: 500;
+      color: #6b7a99;
+      background-color: #f0f2f6;
+      border: 1px solid #d5dae5;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.12s ease, color 0.12s ease, border-color 0.12s ease;
+    }
+
+    .securelog-link:hover {
+      background-color: #6b7a99;
+      color: #ffffff;
+      border-color: #6b7a99;
+    }
+
+    .not-available {
+      color: #b0b8cc;
+      font-size: 14px;
+      letter-spacing: 0.5px;
+    }
+
+    footer {
+      margin-top: 28px;
+      font-size: 12px;
+      color: #8a93a8;
+      text-align: right;
+    }
+  </style>
+</head>
+<body>
+  <div class="page-wrapper">
+
+    <header>
+      <h1>IdCloud SDK API Documentation</h1>
+      <p>API reference documentation for all available SDK versions.</p>
+    </header>
+
+    <div class="card">
+      <table>
+        <thead>
+          <tr>
+            <th>Project</th>
+            <th>Android</th>
+            <th>iOS</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <span class="sdk-name">FIDO2 SDK</span>
+            </td>
+            <td>
+              <div class="cell-links">
+                <a class="doc-link" href="fido2-sdk/4.0.0/android/apidoc/index.html">4.0.0</a>
+                <a class="securelog-link" href="fido2-sdk/4.0.0/android/securelog/index.html">SecureLog</a>
+              </div>
+            </td>
+            <td>
+              <div class="cell-links">
+                <a class="doc-link" href="fido2-sdk/4.0.0/ios/apidoc/index.html">4.0.0</a>
+                <a class="securelog-link" href="fido2-sdk/4.0.0/ios/securelog/html/index.html">SecureLog</a>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span class="sdk-name">Mobile Protector SDK</span>
+            </td>
+            <td>
+              <span class="not-available">&#8212;</span>
+            </td>
+            <td>
+              <a class="doc-link" href="mobile-protector-sdk/6.8.0/core/ios/index.html">6.8.0</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span class="sdk-name">IdCloud Auth SDK</span>
+            </td>
+            <td>
+              <div class="cell-links">
+                <a class="doc-link" href="idcloud-auth-sdk/2.8.0/android/apidoc/index.html">2.8.0</a>
+                <a class="securelog-link" href="idcloud-auth-sdk/2.8.0/android/securelog/index.html">SecureLog</a>
+              </div>
+            </td>
+            <td>
+              <span class="not-available">&#8212;</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span class="sdk-name">IdCloud Auth SDK</span>
+            </td>
+            <td>
+              <span class="not-available">&#8212;</span>
+            </td>
+            <td>
+              <div class="cell-links">
+                <a class="doc-link" href="idcloud-auth-sdk/3.0.0/ios/apidoc/index.html">3.0.0</a>
+                <a class="securelog-link" href="idcloud-auth-sdk/3.0.0/ios/securelog/html/index.html">SecureLog</a>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <footer>
+      IdCloud SDK Documentation
+    </footer>
+
+  </div>
+</body>
+</html>
