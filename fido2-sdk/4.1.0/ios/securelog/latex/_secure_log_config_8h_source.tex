@@ -1,0 +1,96 @@
+\doxysection{Secure\+Log\+Config.\+h}
+\hypertarget{_secure_log_config_8h_source}{}\label{_secure_log_config_8h_source}\mbox{\hyperlink{_secure_log_config_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *\ \ \ \ \ Copyright\ ©\ 2020-\/2022\ THALES.\ All\ Rights\ Reserved.}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ *\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ *\ THE\ SOFTWARE\ IS\ PROVIDED\ “AS\ IS”\ AND\ THALES\ MAKES\ NO\ REPRESENTATIONS\ OR}}
+\DoxyCodeLine{00007\ \textcolor{comment}{\ *\ WARRANTIES\ ABOUT\ THE\ SUITABILITY\ OF\ THE\ SOFTWARE,\ EITHER\ EXPRESS\ OR\ IMPLIED,}}
+\DoxyCodeLine{00008\ \textcolor{comment}{\ *\ INCLUDING\ BUT\ NOT\ LIMITED\ TO\ THE\ IMPLIED\ WARRANTIES\ OF\ MERCHANTABILITY,}}
+\DoxyCodeLine{00009\ \textcolor{comment}{\ *\ FITNESS\ FOR\ A\ PARTICULAR\ PURPOSE,\ OR\ NON-\/INFRINGEMENT.\ THALES\ SHALL\ NOT\ BE}}
+\DoxyCodeLine{00010\ \textcolor{comment}{\ *\ LIABLE\ FOR\ ANY\ DAMAGES\ SUFFERED\ BY\ LICENSEE\ AS\ A\ RESULT\ OF\ USING,}}
+\DoxyCodeLine{00011\ \textcolor{comment}{\ *\ MODIFYING\ OR\ DISTRIBUTING\ THIS\ SOFTWARE\ OR\ ITS\ DERIVATIVES\ TO\ THE}}
+\DoxyCodeLine{00012\ \textcolor{comment}{\ *\ EXTENT\ PERMITTED\ BY\ LAW.}}
+\DoxyCodeLine{00013\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00014\ \textcolor{comment}{\ *\ THIS\ SOFTWARE\ IS\ NOT\ DESIGNED\ OR\ INTENDED\ FOR\ USE\ OR\ RESALE\ AS\ ON-\/LINE}}
+\DoxyCodeLine{00015\ \textcolor{comment}{\ *\ CONTROL\ EQUIPMENT\ IN\ HAZARDOUS\ ENVIRONMENTS\ REQUIRING\ FAIL-\/SAFE}}
+\DoxyCodeLine{00016\ \textcolor{comment}{\ *\ PERFORMANCE,\ SUCH\ AS\ IN\ THE\ OPERATION\ OF\ NUCLEAR\ FACILITIES,\ AIRCRAFT}}
+\DoxyCodeLine{00017\ \textcolor{comment}{\ *\ NAVIGATION\ OR\ COMMUNICATION\ SYSTEMS,\ AIR\ TRAFFIC\ CONTROL,\ DIRECT\ LIFE}}
+\DoxyCodeLine{00018\ \textcolor{comment}{\ *\ SUPPORT\ MACHINES,\ OR\ WEAPONS\ SYSTEMS,\ IN\ WHICH\ THE\ FAILURE\ OF\ THE}}
+\DoxyCodeLine{00019\ \textcolor{comment}{\ *\ SOFTWARE\ COULD\ LEAD\ DIRECTLY\ TO\ DEATH,\ PERSONAL\ INJURY,\ OR\ SEVERE}}
+\DoxyCodeLine{00020\ \textcolor{comment}{\ *\ PHYSICAL\ OR\ ENVIRONMENTAL\ DAMAGE\ ("{}HIGH\ RISK\ ACTIVITIES"{}).\ THALES}}
+\DoxyCodeLine{00021\ \textcolor{comment}{\ *\ SPECIFICALLY\ DISCLAIMS\ ANY\ EXPRESS\ OR\ IMPLIED\ WARRANTY\ OF\ FITNESS\ AND}}
+\DoxyCodeLine{00022\ \textcolor{comment}{\ *\ ANY\ LIABILITIES\ TO\ THE\ EXTENT\ PERMITTED\ BY\ LAW\ FOR\ HIGH\ RISK\ ACTIVITIES.}}
+\DoxyCodeLine{00023\ \textcolor{comment}{\ *\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00024\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#ifndef\ SecureLogAPI\_SecureLogConfig\_h}}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#define\ SecureLogAPI\_SecureLogConfig\_h}}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#import\ <Foundation/Foundation.h>}}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ NS\_ASSUME\_NONNULL\_BEGIN}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00036\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{_secure_log_config_8h_ad894a6332fe64503a1c7e7e1530aba8d}{NS\_ENUM}}(NSInteger,\ SecureLogLevel)\ \{}
+\DoxyCodeLine{00040\ \ \ \ \ SecureLogLevelOff\ \ \ =\ 0,}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00045\ \ \ \ \ SecureLogLevelFatal\ =\ 2,}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00050\ \ \ \ \ SecureLogLevelError\ =\ 3,}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00055\ \ \ \ \ SecureLogLevelWarn\ \ =\ 4,}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00060\ \ \ \ \ SecureLogLevelInfo\ \ =\ 6,}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00065\ \ \ \ \ SecureLogLevelDebug\ =\ 7}
+\DoxyCodeLine{00066\ \};}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00072\ \textcolor{keyword}{@interface\ }\mbox{\hyperlink{interface_secure_log_config_components}{SecureLogConfigComponents}}\ :\ NSObject}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00082\ \textcolor{keyword}{@property}\ (nonatomic,\ strong)\ NSString\ *\mbox{\hyperlink{interface_secure_log_config_components_aa57225555a747f896e1058c0b2048e64}{fileID}};}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00090\ \textcolor{keyword}{@property}\ (nonatomic,\ strong)\ NSData\ *\mbox{\hyperlink{interface_secure_log_config_components_aee555567c23bb8edd8863ba4ab001d47}{publicKeyModulus}};}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00098\ \textcolor{keyword}{@property}\ (nonatomic,\ strong)\ NSData\ *\mbox{\hyperlink{interface_secure_log_config_components_a87a6594f62459060fe10aaf271fa9aa8}{publicKeyExponent}};}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00107\ \textcolor{keyword}{@property}\ (nonatomic,\ assign)\ NSUInteger\ \mbox{\hyperlink{interface_secure_log_config_components_a04821a2052e1dae9f0d92536de0902f6}{rollingFileMaxCount}};}
+\DoxyCodeLine{00108\ }
+\DoxyCodeLine{00116\ \textcolor{keyword}{@property}\ (nonatomic,\ assign)\ NSUInteger\ \mbox{\hyperlink{interface_secure_log_config_components_aa381f1c492de7da17294b9212ab5c848}{rollingSizeInKB}};}
+\DoxyCodeLine{00117\ }
+\DoxyCodeLine{00125\ \textcolor{keyword}{@property}\ (nonatomic,\ strong)\ NSURL\ *\mbox{\hyperlink{interface_secure_log_config_components_aa758d51134ca2039f9b8b60a2685c9fa}{directory}};}
+\DoxyCodeLine{00126\ }
+\DoxyCodeLine{00134\ \textcolor{keyword}{@property}\ (nonatomic,\ assign)\ SecureLogLevel\ \mbox{\hyperlink{interface_secure_log_config_components_a966d16ac1a975043ab31268d7749fced}{logLevel}};}
+\DoxyCodeLine{00135\ }
+\DoxyCodeLine{00136\ \textcolor{keyword}{@end}}
+\DoxyCodeLine{00137\ }
+\DoxyCodeLine{00138\ }
+\DoxyCodeLine{00139\ }
+\DoxyCodeLine{00144\ \textcolor{keyword}{@interface\ }\mbox{\hyperlink{interface_secure_log_config}{SecureLogConfig}}\ :\ NSObject}
+\DoxyCodeLine{00145\ }
+\DoxyCodeLine{00149\ \textcolor{keyword}{@property}\ (nonatomic,\ readonly,\ strong)\ NSString\ *\mbox{\hyperlink{interface_secure_log_config_a3b37d675479afaf4c5a50d0dfaae7871}{fileID}};}
+\DoxyCodeLine{00150\ }
+\DoxyCodeLine{00154\ \textcolor{keyword}{@property}\ (nonatomic,\ readonly,\ strong)\ NSData\ *\mbox{\hyperlink{interface_secure_log_config_a137702a8e1fed9d99c9c66a2a90fc15a}{publicKeyModulus}};}
+\DoxyCodeLine{00155\ }
+\DoxyCodeLine{00159\ \textcolor{keyword}{@property}\ (nonatomic,\ readonly,\ strong)\ NSData\ *\mbox{\hyperlink{interface_secure_log_config_aa37950021965a3ed92ca52e8021678cc}{publicKeyExponent}};}
+\DoxyCodeLine{00160\ }
+\DoxyCodeLine{00164\ \textcolor{keyword}{@property}\ (nonatomic,\ readonly,\ strong)\ NSURL\ *\mbox{\hyperlink{interface_secure_log_config_af08174e71434c0ba87c82002537e1886}{directory}};}
+\DoxyCodeLine{00165\ }
+\DoxyCodeLine{00169\ \textcolor{keyword}{@property}\ (nonatomic,\ readonly)\ NSUInteger\ \mbox{\hyperlink{interface_secure_log_config_a745d0170aebb4e4fcc67cbaaaf5c99db}{rollingFileMaxCount}};}
+\DoxyCodeLine{00170\ }
+\DoxyCodeLine{00174\ \textcolor{keyword}{@property}\ (nonatomic,\ readonly)\ NSUInteger\ \mbox{\hyperlink{interface_secure_log_config_aa8970be499b6a3fcd41a0e071d266b29}{rollingSizeInKB}};}
+\DoxyCodeLine{00175\ }
+\DoxyCodeLine{00179\ \textcolor{keyword}{@property}\ (nonatomic,\ readonly)\ SecureLogLevel\ \mbox{\hyperlink{interface_secure_log_config_a387a65e49022ad4ec81b4f79f11c7660}{logLevel}};}
+\DoxyCodeLine{00180\ }
+\DoxyCodeLine{00184\ -\/\ (instancetype)init\ \mbox{\hyperlink{interface_secure_log_config_a960974e512a2be73aa1f1ad979fbca90}{NS\_UNAVAILABLE}};}
+\DoxyCodeLine{00185\ }
+\DoxyCodeLine{00191\ -\/\ (instancetype)initWithConfigComponentsBuilder:(\textcolor{keywordtype}{void}(\string^)(\mbox{\hyperlink{interface_secure_log_config_components}{SecureLogConfigComponents}}\ *))componentsBuilder;}
+\DoxyCodeLine{00192\ }
+\DoxyCodeLine{00193\ \textcolor{keyword}{@end}}
+\DoxyCodeLine{00194\ }
+\DoxyCodeLine{00195\ NS\_ASSUME\_NONNULL\_END}
+\DoxyCodeLine{00196\ }
+\DoxyCodeLine{00197\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

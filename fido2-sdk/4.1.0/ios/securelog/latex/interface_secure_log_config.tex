@@ -1,0 +1,116 @@
+\doxysection{Secure\+Log\+Config Class Reference}
+\hypertarget{interface_secure_log_config}{}\label{interface_secure_log_config}\index{SecureLogConfig@{SecureLogConfig}}
+
+
+{\ttfamily \#include $<$Secure\+Log\+Config.\+h$>$}
+
+Inheritance diagram for Secure\+Log\+Config\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_secure_log_config}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) -\/ \mbox{\hyperlink{interface_secure_log_config_a960974e512a2be73aa1f1ad979fbca90}{NS\+\_\+\+UNAVAILABLE}}
+\item 
+(instancetype) -\/ \mbox{\hyperlink{interface_secure_log_config_ae757fd8f1c9e610a70c835e1292e4ffd}{init\+With\+Config\+Components\+Builder\+:}}
+\begin{DoxyCompactList}\small\item\em Init secure log config with components builder. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+NSString \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{interface_secure_log_config_a3b37d675479afaf4c5a50d0dfaae7871}{file\+ID}}
+\item 
+NSData \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{interface_secure_log_config_a137702a8e1fed9d99c9c66a2a90fc15a}{public\+Key\+Modulus}}
+\item 
+NSData \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{interface_secure_log_config_aa37950021965a3ed92ca52e8021678cc}{public\+Key\+Exponent}}
+\item 
+NSURL \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{interface_secure_log_config_af08174e71434c0ba87c82002537e1886}{directory}}
+\item 
+NSUInteger \mbox{\hyperlink{interface_secure_log_config_a745d0170aebb4e4fcc67cbaaaf5c99db}{rolling\+File\+Max\+Count}}
+\item 
+NSUInteger \mbox{\hyperlink{interface_secure_log_config_aa8970be499b6a3fcd41a0e071d266b29}{rolling\+Size\+In\+KB}}
+\item 
+Secure\+Log\+Level \mbox{\hyperlink{interface_secure_log_config_a387a65e49022ad4ec81b4f79f11c7660}{log\+Level}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The class to provide initialisation function to initialise \doxylink{protocol_secure_log-p}{Secure\+Log} config, it takes the parameters from \doxylink{interface_secure_log_config_components}{Secure\+Log\+Config\+Components}. All of parameters is read-\/only and can\textquotesingle{}t be changed after the init\+With\+Config\+Components\+Builder function is called 
+
+\label{doc-func-members}
+\Hypertarget{interface_secure_log_config_doc-func-members}
+\doxysubsection{Method Documentation}
+\Hypertarget{interface_secure_log_config_ae757fd8f1c9e610a70c835e1292e4ffd}\index{SecureLogConfig@{SecureLogConfig}!initWithConfigComponentsBuilder:@{initWithConfigComponentsBuilder:}}
+\index{initWithConfigComponentsBuilder:@{initWithConfigComponentsBuilder:}!SecureLogConfig@{SecureLogConfig}}
+\doxysubsubsection{\texorpdfstring{initWithConfigComponentsBuilder:}{initWithConfigComponentsBuilder:}}
+{\footnotesize\ttfamily \label{interface_secure_log_config_ae757fd8f1c9e610a70c835e1292e4ffd} 
+-\/ (instancetype) init\+With\+Config\+Components\+Builder\+: \begin{DoxyParamCaption}\item[{(void(\texorpdfstring{$^\wedge$}{\string^})(\mbox{\hyperlink{interface_secure_log_config_components}{Secure\+Log\+Config\+Components}} \texorpdfstring{$\ast$}{*}))}]{components\+Builder}{}\end{DoxyParamCaption}}
+
+
+
+Init secure log config with components builder. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em components\+Builder} & components builder. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Instance of secure log config. 
+\end{DoxyReturn}
+\Hypertarget{interface_secure_log_config_a960974e512a2be73aa1f1ad979fbca90}\index{SecureLogConfig@{SecureLogConfig}!NS\_UNAVAILABLE@{NS\_UNAVAILABLE}}
+\index{NS\_UNAVAILABLE@{NS\_UNAVAILABLE}!SecureLogConfig@{SecureLogConfig}}
+\doxysubsubsection{\texorpdfstring{NS\_UNAVAILABLE}{NS\_UNAVAILABLE}}
+{\footnotesize\ttfamily \label{interface_secure_log_config_a960974e512a2be73aa1f1ad979fbca90} 
+-\/ (instancetype) NS\+\_\+\+UNAVAILABLE \begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}}
+
+There is no direct init function available. The init function shall be done via \doxylink{interface_secure_log_config_components}{Secure\+Log\+Config\+Components} and return \doxylink{interface_secure_log_config}{Secure\+Log\+Config} object to use 
+
+\label{doc-property-members}
+\Hypertarget{interface_secure_log_config_doc-property-members}
+\doxysubsection{Property Documentation}
+\Hypertarget{interface_secure_log_config_af08174e71434c0ba87c82002537e1886}\index{SecureLogConfig@{SecureLogConfig}!directory@{directory}}
+\index{directory@{directory}!SecureLogConfig@{SecureLogConfig}}
+\doxysubsubsection{\texorpdfstring{directory}{directory}}
+{\footnotesize\ttfamily \label{interface_secure_log_config_af08174e71434c0ba87c82002537e1886} 
+-\/ (NSURL\texorpdfstring{$\ast$}{*}) directory\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+Get the config logs directory. \Hypertarget{interface_secure_log_config_a3b37d675479afaf4c5a50d0dfaae7871}\index{SecureLogConfig@{SecureLogConfig}!fileID@{fileID}}
+\index{fileID@{fileID}!SecureLogConfig@{SecureLogConfig}}
+\doxysubsubsection{\texorpdfstring{fileID}{fileID}}
+{\footnotesize\ttfamily \label{interface_secure_log_config_a3b37d675479afaf4c5a50d0dfaae7871} 
+-\/ (NSString\texorpdfstring{$\ast$}{*}) file\+ID\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+Get the config file Id. \Hypertarget{interface_secure_log_config_a387a65e49022ad4ec81b4f79f11c7660}\index{SecureLogConfig@{SecureLogConfig}!logLevel@{logLevel}}
+\index{logLevel@{logLevel}!SecureLogConfig@{SecureLogConfig}}
+\doxysubsubsection{\texorpdfstring{logLevel}{logLevel}}
+{\footnotesize\ttfamily \label{interface_secure_log_config_a387a65e49022ad4ec81b4f79f11c7660} 
+-\/ (Secure\+Log\+Level) log\+Level\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+Get the config log level. \Hypertarget{interface_secure_log_config_aa37950021965a3ed92ca52e8021678cc}\index{SecureLogConfig@{SecureLogConfig}!publicKeyExponent@{publicKeyExponent}}
+\index{publicKeyExponent@{publicKeyExponent}!SecureLogConfig@{SecureLogConfig}}
+\doxysubsubsection{\texorpdfstring{publicKeyExponent}{publicKeyExponent}}
+{\footnotesize\ttfamily \label{interface_secure_log_config_aa37950021965a3ed92ca52e8021678cc} 
+-\/ (NSData\texorpdfstring{$\ast$}{*}) public\+Key\+Exponent\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+Get the config public key exponent. \Hypertarget{interface_secure_log_config_a137702a8e1fed9d99c9c66a2a90fc15a}\index{SecureLogConfig@{SecureLogConfig}!publicKeyModulus@{publicKeyModulus}}
+\index{publicKeyModulus@{publicKeyModulus}!SecureLogConfig@{SecureLogConfig}}
+\doxysubsubsection{\texorpdfstring{publicKeyModulus}{publicKeyModulus}}
+{\footnotesize\ttfamily \label{interface_secure_log_config_a137702a8e1fed9d99c9c66a2a90fc15a} 
+-\/ (NSData\texorpdfstring{$\ast$}{*}) public\+Key\+Modulus\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+Get the config public key modulus. \Hypertarget{interface_secure_log_config_a745d0170aebb4e4fcc67cbaaaf5c99db}\index{SecureLogConfig@{SecureLogConfig}!rollingFileMaxCount@{rollingFileMaxCount}}
+\index{rollingFileMaxCount@{rollingFileMaxCount}!SecureLogConfig@{SecureLogConfig}}
+\doxysubsubsection{\texorpdfstring{rollingFileMaxCount}{rollingFileMaxCount}}
+{\footnotesize\ttfamily \label{interface_secure_log_config_a745d0170aebb4e4fcc67cbaaaf5c99db} 
+-\/ (NSUInteger) rolling\+File\+Max\+Count\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+Get the config rolling file max count. \Hypertarget{interface_secure_log_config_aa8970be499b6a3fcd41a0e071d266b29}\index{SecureLogConfig@{SecureLogConfig}!rollingSizeInKB@{rollingSizeInKB}}
+\index{rollingSizeInKB@{rollingSizeInKB}!SecureLogConfig@{SecureLogConfig}}
+\doxysubsubsection{\texorpdfstring{rollingSizeInKB}{rollingSizeInKB}}
+{\footnotesize\ttfamily \label{interface_secure_log_config_aa8970be499b6a3fcd41a0e071d266b29} 
+-\/ (NSUInteger) rolling\+Size\+In\+KB\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+Get the config rolling size. 
